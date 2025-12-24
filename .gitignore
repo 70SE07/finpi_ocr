@@ -1,0 +1,36 @@
+# Credentials (НИКОГДА не коммитить!)
+config/google_credentials.json
+*.json.bak
+
+# Локальные фото (не загружать на GitHub)
+photo/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (локальные файлы)
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep

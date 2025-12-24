@@ -1,0 +1,10 @@
+# Google Cloud Vision API
+google-cloud-vision>=3.5.0
+
+# Обработка изображений
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+
+# Логирование
+loguru>=0.7.0
