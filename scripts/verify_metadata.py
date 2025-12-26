@@ -4,10 +4,17 @@ from pathlib import Path
 # Добавляем корень проекта в пути
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.pipeline import OcrPipeline
+# TODO: Обновить для использования новых entry points
+# from src.pipeline import OcrPipeline
+# Временно закомментировано, так как pipeline.py будет удалён
 
 def verify():
-    pipeline = OcrPipeline()
+    # TODO: Обновить для использования новой архитектуры (Extraction + Parsing домены)
+    raise NotImplementedError(
+        "Этот скрипт требует обновления для новой архитектуры. "
+        "Используйте scripts/run_pipeline.py для запуска полного пайплайна."
+    )
+    # pipeline = OcrPipeline()
     input_path = Path("data/input")
     
     # Находим все изображения

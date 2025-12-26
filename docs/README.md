@@ -6,6 +6,7 @@
 
 ### [/architecture](file:///Users/sergejevsukov/Downloads/Finpi_OCR/docs/architecture)
 Фундаментальные решения, схемы и правила взаимодействия модулей.
+- [architecture_overview.md](file:///Users/sergejevsukov/Downloads/Finpi_OCR/docs/architecture/architecture_overview.md) — Общий обзор архитектуры проекта, независимые домены, контракты между ними
 - [contract_registry.md](file:///Users/sergejevsukov/Downloads/Finpi_OCR/docs/architecture/contract_registry.md) — Главный реестр обязательств (ЦКП) каждого модуля.
 
 ### [/hypotheses](file:///Users/sergejevsukov/Downloads/Finpi_OCR/docs/hypotheses)
@@ -14,6 +15,7 @@
 ---
 
 ## Правила работы с документацией
-1. **Актуальность:** При изменении ЦКП модуля, в первую очередь обновляется `contract_registry.md`.
-2. **Интуитивность:** Документ должен быть понятен без глубокого погружения в код.
-3. **Системность:** Документируем алгоритмические решения, а не разовые фиксы.
+1. **Актуальность:** При изменении архитектуры, в первую очередь обновляется `architecture_overview.md`.
+2. **Контракты:** При изменении ЦКП модуля, обновляется `contract_registry.md`.
+3. **Интуитивность:** Документ должен быть понятен без глубокого погружения в код.
+4. **Системность:** Документируем алгоритмические решения, а не разовые фиксы.

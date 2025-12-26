@@ -1,0 +1,107 @@
+# Конфигурация локали: Польша (pl_PL)
+# Справочник по форматам чеков Польши
+
+# Базовая информация о локали
+locale:
+  code: pl_PL
+  name: Poland
+  language: pl
+  region: PL
+  rtl: false
+
+# Конфигурация валюты
+currency:
+  code: PLN
+  symbol: "zł"
+  decimal_separator: ","
+  thousands_separator: " "
+  symbol_position: after  # "1,99 zł"
+  format: "1 234,56"
+
+# Форматы даты
+date_formats:
+  - "DD.MM.YYYY"  # 25.12.2025
+  - "DD.MM.YY"    # 25.12.25
+  - "DD.MM."       # 25.12.
+
+# Ключевые слова и паттерны
+patterns:
+  # Ключевые слова для определения итоговой суммы
+  total_keywords:
+    - "suma"
+    - "razem"
+    - "do zapłaty"
+    - "kwota"
+    - "należność"
+  
+  # Ключевые слова для скидок
+  discount_keywords:
+    - "upust"
+    - "rabat"
+    - "znizka"
+    - "zniżka"
+    - "promocja"
+    - "bon"
+    - "kupon"
+  
+  # Шумовые слова (игнорируются при поиске магазина)
+  noise_keywords:
+    - "tel."
+    - "fax."
+    - "nr."
+    - "terminał"
+    - "nr paragonu"
+    - "data"
+    - "godzina"
+    - "vat"
+    - "należność"
+
+# Настройки экстракторов
+extractors:
+  store_detection:
+    # Сколько первых строк проверять на наличие бренда
+    scan_limit: 15
+    # Сколько строк проверять в fallback-режиме
+    fallback_limit: 8
+    # Минимальная длина названия магазина
+    min_name_length: 3
+    # Популярные бренды в Польше (для приоритетного поиска)
+    known_brands:
+      - "biedronka"
+      - "zabka"
+      - "lidl"
+      - "aldi"
+      - "kaufland"
+      - "polex"
+      - "rossmann"
+      - "dm"
+      - "jysk"
+      - "media expert"
+      - "media markt"
+      - "rtv euro agd"
+      - "carrefour"
+      - "auchan"
+      - "leclerc"
+      - "tesco"
+  
+  total_detection:
+    # Сколько последних строк проверять
+    bottom_n_lines: 10
+    # Диапазон валидных сумм (злотых)
+    amount_range: [0.01, 100000.0]
+    # Минимальное число ключевых слов для детекции
+    min_keyword_matches: 1
+  
+  date_detection:
+    # Валидация даты: текущий год +/- отступ
+    max_year_offset_past: 2
+    max_year_offset_future: 1
+
+# Описание типичных форматов польских чеков:
+# - Шапка: название магазина, адрес, NIP (tax id)
+# - Дата и время (обычно в шапке)
+# - Список товаров (количество × cena = suma)
+# - Налог (VAT) с процентами (23%, 8%, 5%)
+# - Итоговая сумма с ключевыми словами "Suma" или "Razem"
+# - Способ оплаты (gotówka/karta)
+

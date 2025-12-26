@@ -19,14 +19,34 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.settings import validate_config, INPUT_DIR, OUTPUT_DIR
-from src.pipeline import OcrPipeline
+import subprocess
 
+
+def run_extraction(args):
+    """Запускает домен Extraction."""
+    cmd = [sys.executable, "scripts/extract_raw_ocr.py"]
+    if args.path:
+        cmd.append(args.path)
+    if args.no_cache:
+        cmd.append("--no-cache")
+    
+    print(f"\n[EXTRACTION] Запуск: {' '.join(cmd)}")
+    result = subprocess.run(cmd)
+    return result.returncode == 0
+
+def run_parsing():
+    """Запускает домен Parsing."""
+    cmd = [sys.executable, "scripts/parse_receipt.py"]
+    
+    print(f"\n[PARSING] Запуск: {' '.join(cmd)}")
+    result = subprocess.run(cmd)
+    return result.returncode == 0
 
 def main():
-    """Главная функция запуска пайплайна."""
+    """Главная функция запуска полного пайплайна."""
     
     print("\n" + "="*60)
-    print("  FINPI OCR - Тренировочный стенд Google Vision")
+    print("  FINPI OCR - Полный пайплайн (Extraction + Parsing)")
     print("="*60)
     
     # Проверяем конфигурацию
@@ -41,41 +61,31 @@ def main():
     print(f"[OK] Output директория: {OUTPUT_DIR}")
     
     # Парсинг аргументов
-    parser = argparse.ArgumentParser(description="FINPI OCR Pipeline Runner")
+    parser = argparse.ArgumentParser(description="FINPI OCR Full Pipeline Runner")
     parser.add_argument("path", nargs="?", help="Путь к изображению (опционально)")
     parser.add_argument("--no-cache", action="store_true", help="Принудительный перезапуск всех этапов")
     args = parser.parse_args()
     
-    # Инициализируем пайплайн
-    pipeline = OcrPipeline()
-    use_cache = not args.no_cache
+    # Запускаем оба домена последовательно
+    print("\n" + "="*60)
+    print("  ЭТАП 1: Extraction (Pre-OCR + OCR)")
+    print("="*60)
     
-    # Определяем что обрабатывать
-    if args.path:
-        # Конкретный файл
-        image_path = Path(args.path)
-        if not image_path.exists():
-            print(f"\n[ERROR] Файл не найден: {image_path}")
-            sys.exit(1)
-        
-        result = pipeline.process_image(image_path, use_cache=use_cache)
-        print(f"\n{'='*60}")
-        print("РЕЗУЛЬТАТ:")
-        print(f"{'='*60}")
-        print(f"\nПолный текст:\n{result.full_text[:500]}...")
-    else:
-        # Все файлы из input/
-        results = pipeline.process_directory(use_cache=use_cache)
-        
-        if results:
-            print(f"\n{'='*60}")
-            print("СВОДКА РЕЗУЛЬТАТОВ:")
-            print(f"{'='*60}")
-            for dto in results:
-                print(f"\n{dto.source_file}:")
-                print(f"  - Строк: {len(dto.lines)}")
-                print(f"  - Символов: {len(dto.full_text)}")
-                print(f"  - Уверенность: {dto.ocr_confidence:.2%}")
+    if not run_extraction(args):
+        print("\n[ERROR] Extraction этап завершился с ошибкой")
+        sys.exit(1)
+    
+    print("\n" + "="*60)
+    print("  ЭТАП 2: Parsing (обработка сырых OCR)")
+    print("="*60)
+    
+    if not run_parsing():
+        print("\n[ERROR] Parsing этап завершился с ошибкой")
+        sys.exit(1)
+    
+    print("\n" + "="*60)
+    print("  [SUCCESS] Полный пайплайн выполнен успешно!")
+    print("="*60)
 
 
 if __name__ == "__main__":

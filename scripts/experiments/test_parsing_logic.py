@@ -2,10 +2,7 @@
 import sys
 import unittest
 from pathlib import Path
-
-import sys
 from types import ModuleType
-from pathlib import Path
 
 # Add project root to path
 PROJECT_ROOT = Path(__file__).parent.parent.parent
@@ -37,7 +34,9 @@ dci_line_grouping.WordData = MockWordData
 dci_line_grouping.LineData = MockLineData
 # -------------------------------
 
-from src.post_ocr.old_project.context_line import ContextLine
+# TODO: Обновить импорт после перемещения old_project
+# from src.parsing.old_project.context_line import ContextLine
+# Временно закомментировано, так как файл context_line.py не найден
 
 # We use the MockLineData from the mock module now
 

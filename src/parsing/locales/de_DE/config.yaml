@@ -1,0 +1,108 @@
+# Конфигурация локали: Германия (de_DE)
+# Справочник по форматам чеков Германии
+
+# Базовая информация о локали
+locale:
+  code: de_DE
+  name: Germany
+  language: de
+  region: DE
+  rtl: false
+
+# Конфигурация валюты
+currency:
+  code: EUR
+  symbol: "€"
+  decimal_separator: ","
+  thousands_separator: "."
+  symbol_position: after  # "1,99€"
+  format: "1.234,56"
+
+# Форматы даты
+date_formats:
+  - "DD.MM.YYYY"  # 25.12.2025
+  - "DD.MM.YY"    # 25.12.25
+  - "DD.MM."      # 25.12.
+
+# Ключевые слова и паттерны
+patterns:
+  # Ключевые слова для определения итоговой суммы
+  total_keywords:
+    - "gesamtbetrag"
+    - "summe"
+    - "zu zahlen"
+    - "belegsumme"
+    - "endbetrag"
+    - "rechnungsbetrag"
+    - "betrag"
+  
+  # Ключевые слова для скидок
+  discount_keywords:
+    - "preisvorteil"
+    - "rabatt"
+    - "nachlass"
+    - "aktionsnachlass"
+    - "coupon"
+    - "gutschein"
+    - "ermäßigung"
+  
+  # Шумовые слова (игнорируются при поиске магазина)
+  noise_keywords:
+    - "tel."
+    - "fax."
+    - "obj.-nr."
+    - "terminal"
+    - "beleg-nr."
+    - "datum"
+    - "uhrzeit"
+    - "mwst"
+    - "eu"
+
+# Настройки экстракторов
+extractors:
+  store_detection:
+    # Сколько первых строк проверять на наличие бренда
+    scan_limit: 15
+    # Сколько строк проверять в fallback-режиме
+    fallback_limit: 8
+    # Минимальная длина названия магазина
+    min_name_length: 3
+    # Популярные бренды в Германии (для приоритетного поиска)
+    known_brands:
+      - "rewe"
+      - "aldi"
+      - "lidl"
+      - "edeka"
+      - "penny"
+      - "kaufland"
+      - "netto"
+      - "globus"
+      - "norma"
+      - "hit"
+      - "rossmann"
+      - "dm"
+      - "müller"
+      - "billa"
+      - "spar"
+  
+  total_detection:
+    # Сколько последних строк проверять
+    bottom_n_lines: 10
+    # Диапазон валидных сумм (евро)
+    amount_range: [0.01, 100000.0]
+    # Минимальное число ключевых слов для детекции
+    min_keyword_matches: 1
+  
+  date_detection:
+    # Валидация даты: текущий год +/- отступ
+    max_year_offset_past: 2
+    max_year_offset_future: 1
+
+# Описание типичных форматов немецких чеков:
+# - Шапка: название магазина, адрес, телефон
+# - Дата и время (обычно в шапке)
+# - Список товаров (кол-во × цена = сумма)
+# - Налог (MwSt) с процентами (7%, 19%)
+# - Итоговая сумма с ключевыми словами "Gesamtbetrag" или "Summe"
+# - Наличные/карта/Zahlung
+
