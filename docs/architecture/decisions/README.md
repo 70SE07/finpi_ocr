@@ -20,18 +20,33 @@
 | [003](003_raw_ocr_contract_stability.md) | Стабильность RawOCRResult | Принято | Q1.3 |
 | [004](004_dto_contracts.md) | Контракты DTO между доменами | Принято | Q2.0 |
 | [005](005_contract_boundaries.md) | Границы контрактов (жесткие/гибкие) | Принято | Q2.0 (финал) |
+| [006](006_d1_d2_contract_design.md) | Дизайн контракта D1→D2 | Принято | Новый |
 
 ---
 
-## Верифицированные контракты
+## Контракты системы
 
 **Дата верификации:** 2025-12-29
 
 | Контракт | Источник истины | Наш файл | Статус |
 |----------|-----------------|----------|--------|
+| D1 → D2 | **Наш дизайн (ADR-006)** | `contracts/d1_extraction_dto.py` | **Принято** |
 | D2 → D3 | `finpi_parser_photo/domain/dto/raw_receipt_dto.py` | `contracts/d2_parsing_dto.py` | **1 в 1** |
 | D3 → Orchestrator | `finpi_parser_photo/domain/dto/parse_receipt_dto.py` | `contracts/d3_categorization_dto.py` | **1 в 1** |
-| D1 → D2 | Наш дизайн | `contracts/d1_extraction_dto.py` | Гибкий |
+
+### D1 → D2: Ключевое решение (ADR-006)
+
+**Передавать и `full_text`, и `words[]` с координатами.**
+
+```python
+@dataclass
+class RawOCRResult:
+    full_text: str           # Для regex, паттернов, локали
+    words: List[Word]        # Для layout, структуры, точности
+    metadata: OCRMetadata    # Метаданные обработки
+```
+
+Это дает D2 максимум информации для достижения 99.9% качества.
 
 ---
 
@@ -42,7 +57,7 @@
 | Q1.1 | ЦКП Домена 1 - правильно понят? | Отвечено (ADR-002) |
 | Q1.2 | Причины разделения доменов | Отвечено (ADR-001) |
 | Q1.3 | RawOCRResult стабилен? | Отвечено (ADR-003) |
-| Q2.0 | Контракты DTO между доменами | Отвечено (ADR-004, ADR-005) |
+| Q2.0 | Контракты DTO между доменами | Отвечено (ADR-004, ADR-005, ADR-006) |
 | Q2.2 | raw_name cleaned или как есть? | Ожидает |
 | Q2.3 | Сигналы качества на уровне чека? | Ожидает |
 | Q2.4 | Вариант A (100%) или B (сигналы)? | Ожидает |

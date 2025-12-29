@@ -1,97 +1,88 @@
 """
-DTO Домена 1 (Extraction).
+DTO контракт: D1 (Extraction) -> D2 (Parsing)
 
-Контракт: D1 → D2
-ЦКП: Эталонный цифровой слепок текста, очищенный от физических шумов носителя.
-Гарантия: 99.9% текста с чека оцифровано без потерь.
+Результат OCR обработки изображения чека.
+Содержит полный текст И слова с координатами для максимального качества парсинга.
+
+ВАЖНО: Это НАША зона свободы. Мы авторы этого контракта.
+Оптимизируем для достижения 99.9% качества парсинга.
+
+Решение: ADR-006 - передавать и full_text, и words[] с координатами.
 """
 
 from dataclasses import dataclass, field
-from typing import List, Dict, Any, Optional
+from typing import List, Optional
 
 
 @dataclass
 class BoundingBox:
-    """Координаты текстового блока на изображении."""
-    x: float
-    y: float
-    width: float
-    height: float
+    """
+    Координаты слова на изображении.
+    """
+    x: int          # Левый верхний угол X
+    y: int          # Левый верхний угол Y
+    width: int      # Ширина
+    height: int     # Высота
 
 
 @dataclass
-class TextBlock:
-    """Текстовый блок (параграф) из OCR результата."""
-    text: str
-    confidence: float  # 0.0 - 1.0
-    bounding_box: BoundingBox
-    block_type: str = "PARAGRAPH"
-
-
-@dataclass
-class RawAnnotation:
-    """Сырая аннотация от Google Vision API."""
-    description: str
-    bounding_poly: List[Dict[str, float]]
+class Word:
+    """
+    Отдельное слово распознанное OCR.
+    
+    Используется для:
+    - Понимания layout (где левая колонка, где правая)
+    - Разделения названия товара от цены по X-координате
+    - Группировки слов в строки по Y-координате
+    - Понимания качества распознавания (confidence)
+    """
+    text: str                    # Текст слова
+    bounding_box: BoundingBox    # Координаты на изображении
+    confidence: float = 1.0      # Уверенность OCR (0.0 - 1.0)
 
 
 @dataclass
 class OCRMetadata:
-    """Метаданные OCR процесса."""
-    timestamp: str  # ISO format datetime string
-    source_file: str  # Имя исходного файла без расширения
+    """
+    Метаданные OCR обработки.
+    """
+    source_file: str                              # Имя исходного файла
+    image_width: int                              # Ширина изображения (px)
+    image_height: int                             # Высота изображения (px)
+    processed_at: str                             # Timestamp обработки (ISO 8601)
+    preprocessing_applied: List[str] = field(default_factory=list)  # Что применено (grayscale, deskew, etc.)
 
 
 @dataclass
 class RawOCRResult:
     """
-    DTO Домена 1 (Extraction).
+    Результат OCR обработки изображения.
     
-    Это контракт между D1 (Extraction) и D2 (Parsing).
+    Содержит ДВА представления данных:
+    1. full_text - для быстрых regex, поиска паттернов, определения локали
+    2. words[] - для понимания layout, структуры, точного извлечения
     
-    Поля:
-    - full_text: Полный текст чека одной строкой
-    - blocks: Текстовые блоки с координатами и confidence
-    - raw_annotations: Сырые аннотации от OCR провайдера
-    - metadata: Метаданные процесса (timestamp, source_file)
+    Это дает D2 максимум информации для достижения 99.9% качества.
     
-    Правила изменения:
-    - Поля НЕ удаляем и НЕ переименовываем
-    - Новые поля можно добавлять (backward compatible)
-    - Обязательные поля: full_text, blocks
+    Примеры использования:
+    
+    # Быстрый поиск локали
+    if "zu zahlen" in raw_ocr.full_text.lower():
+        locale = "de_DE"
+    
+    # Точное извлечение цен (правая колонка)
+    for word in raw_ocr.words:
+        if word.bounding_box.x > image_width * 0.7:
+            prices.append(word.text)
     """
-    full_text: str = ""
-    blocks: List[TextBlock] = field(default_factory=list)
-    raw_annotations: List[RawAnnotation] = field(default_factory=list)
-    metadata: Optional[OCRMetadata] = None
     
-    def to_dict(self) -> Dict[str, Any]:
-        """Конвертирует в словарь для сериализации в JSON."""
-        return {
-            "full_text": self.full_text,
-            "blocks": [
-                {
-                    "text": block.text,
-                    "confidence": block.confidence,
-                    "bounding_box": {
-                        "x": block.bounding_box.x,
-                        "y": block.bounding_box.y,
-                        "width": block.bounding_box.width,
-                        "height": block.bounding_box.height
-                    },
-                    "block_type": block.block_type
-                }
-                for block in self.blocks
-            ],
-            "raw_annotations": [
-                {
-                    "description": ann.description,
-                    "bounding_poly": ann.bounding_poly
-                }
-                for ann in self.raw_annotations
-            ],
-            "metadata": {
-                "timestamp": self.metadata.timestamp if self.metadata else "",
-                "source_file": self.metadata.source_file if self.metadata else ""
-            } if self.metadata else None
-        }
+    # Полный текст одной строкой
+    # Используется для: regex, поиска паттернов, определения локали
+    full_text: str = ""
+    
+    # Слова с координатами
+    # Используется для: layout, структуры, точного извлечения
+    words: List[Word] = field(default_factory=list)
+    
+    # Метаданные обработки
+    metadata: Optional[OCRMetadata] = None
