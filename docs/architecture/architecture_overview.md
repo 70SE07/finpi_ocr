@@ -275,26 +275,113 @@ python scripts/run_pipeline.py --no-cache
 [data/output/IMG_XXXX/result.json]
 ```
 
-## Контракт между доменами
+## Контракты между доменами
 
-### RawOCRResult (`contracts/raw_ocr_schema.py`)
+### Архитектура контрактов
 
-Структура данных, которая передается от Extraction к Parsing.
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                      ЗОНА СВОБОДЫ (D1 → D2)                         │
+│                                                                     │
+│   D1 (Extraction)  ───────────→  D2 (Parsing)                       │
+│                                                                     │
+│   - Любая структура данных                                          │
+│   - Оптимизируем для качества 99.9%                                 │
+│   - МЫ АВТОРЫ                                                       │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                 ЖЕСТКИЕ КОНТРАКТЫ (1 в 1 с finpi_parser_photo)      │
+│                                                                     │
+│   D2 ──→ D3:           RawReceiptDTO                                │
+│   D3 ──→ Orchestrator: ParseResultDTO                               │
+│                                                                     │
+│   НЕЛЬЗЯ МЕНЯТЬ - внешние сервисы зависят                           │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Верифицированные контракты (2025-12-29)
+
+| Контракт | Наш файл | Источник истины | Статус |
+|----------|----------|-----------------|--------|
+| D1 → D2 | `contracts/d1_extraction_dto.py` | Наш дизайн | Гибкий |
+| D2 → D3 | `contracts/d2_parsing_dto.py` | `finpi_parser_photo/domain/dto/raw_receipt_dto.py` | **1 в 1** |
+| D3 → Orchestrator | `contracts/d3_categorization_dto.py` | `finpi_parser_photo/domain/dto/parse_receipt_dto.py` | **1 в 1** |
+
+### D1 → D2: RawOCRResult (Гибкий)
+
+Структура данных от Extraction к Parsing. Наша зона - определяем сами.
 
 ```python
 @dataclass
 class RawOCRResult:
     full_text: str
-    blocks: List[TextBlock]       # Список текстовых блоков с bounding boxes
-    raw_annotations: List[RawAnnotation]  # Сырые аннотации от Google Vision
-    metadata: Optional[OCRMetadata]  # Метаданные OCR процесса
+    blocks: List[TextBlock]       # Текстовые блоки с bounding boxes
+    raw_annotations: List[Dict]   # Сырые аннотации от OCR
+    metadata: Optional[OCRMetadata]
+```
+
+### D2 → D3: RawReceiptDTO (Жесткий, 1 в 1)
+
+Структура данных от Parsing к Categorization. **Нельзя менять.**
+
+```python
+class RawReceiptItem(BaseModel):
+    name: str                     # Название товара
+    quantity: float | None
+    price: float | None
+    total: float | None
+    date: datetime | None
+
+class RawReceiptDTO(BaseModel):
+    items: list[RawReceiptItem]
+    total_amount: float | None
+    merchant: str | None
+    store_address: str | None
+    date: datetime | None
+    receipt_id: str | None
+    ocr_text: str | None
+    detected_locale: str | None
+    metrics: dict[str, float]
+```
+
+### D3 → Orchestrator: ParseResultDTO (Жесткий, 1 в 1)
+
+Финальный результат системы. **Нельзя менять.**
+
+```python
+class ReceiptItem(BaseModel):
+    name: str
+    quantity: float | None
+    price: float | None
+    total: float | None
+    product_type: str           # L1
+    product_category: str       # L2
+    product_subcategory_l1: str # L3
+    product_subcategory_l2: str | None  # L4
+    product_subcategory_l3: list[str] | None  # L5
+    needs_manual_review: bool | None
+    merchant: str | None
+    store_address: str | None
+    date: datetime | None
+
+class ParseResultDTO(BaseModel):
+    success: bool
+    items: list[ReceiptItem]
+    sums: ReceiptSums | None
+    error: str | None
+    receipt_id: str | None
+    data_validity: DataValidityInfo | None
+    total_amount: float | None  # deprecated
 ```
 
 **Почему это важно:**
-- Extraction и Parsing развиваются независимо
-- Extraction может использовать любой OCR провайдер
-- Parsing может использовать любой алгоритм парсинга
-- Контракт стабилен и обратно совместим
+- D2→D3 и D3→Orchestrator - публичные контракты
+- Внешние сервисы (Telegram, Frontend) зависят от них
+- D1→D2 - наша зона, оптимизируем для качества
 
 ## Система локалей
 
