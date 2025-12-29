@@ -1,0 +1,69 @@
+{
+  "store": {
+    "brand": "CenterShop",
+    "type": "Non-food discount store",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["024"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ".",
+      "thousands_separator": ",",
+      "WARNING": "DIFFERENT from other German stores!",
+      "example": "12.99 instead of 12,99"
+    },
+    
+    "tax_class": {
+      "format": "percentage",
+      "values": ["19%", "7%"],
+      "note": "Shows percentage, not letter!"
+    },
+    
+    "item_line": {
+      "format": "ean name total tax%"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "EAN-13",
+      "length": "13 digits",
+      "example": "4047834300063"
+    },
+    
+    "categories": {
+      "present": false
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "critical_differences": {
+    "decimal_separator": {
+      "WARNING": "CRITICAL",
+      "description": "Uses DOT as decimal separator (12.99)",
+      "comparison": {
+        "CenterShop": "12.99",
+        "Other_German": "12,99"
+      }
+    },
+    "tax_format": {
+      "description": "Shows percentage (19%) not letter (A/B)"
+    }
+  },
+
+  "notes": [
+    "CRITICAL: Decimal separator is DOT (.) not comma!",
+    "Tax shown as percentage (19%, 7%)",
+    "EAN-13 barcode on receipt",
+    "Non-food discount store"
+  ]
+}

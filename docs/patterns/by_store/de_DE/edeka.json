@@ -1,0 +1,96 @@
+{
+  "store": {
+    "brand": "EDEKA",
+    "type": "Supermarket (full-range)",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["027", "028", "029", "030"],
+    "total_receipts": 4,
+    "branches": [
+      {"name": "EDEKA Overath area", "receipts": ["027", "028", "029", "030"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "letter_with_modifiers",
+      "values": ["A", "B", "+", "AW"],
+      "meaning": {
+        "A": {"rate": "7%", "description": "Reduced VAT"},
+        "B": {"rate": "19%", "description": "Standard VAT"},
+        "+": {"rate": "?%", "description": "Modifier"},
+        "AW": {"rate": "?%", "description": "Special category"}
+      },
+      "position": "end_of_line",
+      "inverted": false
+    },
+    
+    "item_line": {
+      "format": "name [qty x unit_price] total tax",
+      "examples": [
+        "Bananen 1,206 kg x 1,99 2,40 A",
+        "Käse Gouda 3,99 A"
+      ]
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "keywords": ["Rabatt", "Aktion"],
+      "format": "separate_line_negative"
+    },
+    
+    "pfand": {
+      "present": true,
+      "tax_class": "+B",
+      "note": "Pfand uses +B modifier"
+    },
+    
+    "weighted_items": {
+      "present": true,
+      "format": "qty kg x price EUR/kg"
+    },
+    
+    "date_format": {
+      "format": "DD.MM.YYYY"
+    },
+    
+    "payment_methods": {
+      "observed": ["EC-Karte", "Bar"]
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "Tax class modifiers",
+      "description": "+B, AW special codes",
+      "implication": "tax_class can have modifiers"
+    }
+  ],
+
+  "notes": [
+    "Standard tax (A=7%, B=19%) - NOT inverted",
+    "Tax class can have modifiers (+, AW)",
+    "No SKU on receipt",
+    "Weighted items supported"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "041",
+  "source_file": "photo/GOODS/Lidl/IMG_1868.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl St. Augustin",
+    "address": "Bonner Straße 137, 53757 St. Augustin"
+  },
+  "metadata": {
+    "date": "2025-09-18",
+    "time": "14:56",
+    "receipt_total": 20.97,
+    "currency": "EUR",
+    "payment_method": "Karte (girocard)",
+    "tax_block": {
+      "A_7%": {"netto": 18.25, "mwst": 1.28, "brutto": 19.53},
+      "B_19%": {"netto": 1.21, "mwst": 0.23, "brutto": 1.44},
+      "total": {"netto": 19.46, "mwst": 1.51, "brutto": 20.97}
+    },
+    "savings": 0.60
+  },
+  "items": [
+    {"raw_name": "Kiwi lose", "qty": 14, "unit_price": 0.49, "total_price": 6.86, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.56, "total_price": -0.56, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Snickers Eisriegel W", "qty": 1, "unit_price": 3.49, "total_price": 3.49, "tax_class": "A"},
+    {"raw_name": "Käsewürstchen", "qty": 1, "unit_price": 3.99, "total_price": 3.99, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.04, "total_price": -0.04, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Nestle Lion Cereals", "qty": 1, "unit_price": 5.79, "total_price": 5.79, "tax_class": "A"},
+    {"raw_name": "Fanta Exotic", "qty": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "B"},
+    {"raw_name": "Pfand 0,25 M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "B"},
+    {"raw_name": "Papiertasche", "qty": 1, "unit_price": 0.20, "total_price": 0.20, "tax_class": "B"}
+  ],
+  "validation": {
+    "items_sum": 20.97,
+    "expected_total": 20.97,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Другой филиал - St. Augustin",
+    "Kiwi lose 14 штук",
+    "Papiertasche (бумажный пакет) 0.20 EUR"
+  ]
+}
+

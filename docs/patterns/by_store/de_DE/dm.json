@@ -1,0 +1,96 @@
+{
+  "store": {
+    "brand": "dm",
+    "legal_name": "dm-drogerie markt GmbH + Co. KG",
+    "type": "Drugstore",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["013", "026"],
+    "total_receipts": 2,
+    "branches": [
+      {"name": "dm Overath", "receipts": ["013", "026"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "numeric_with_paragraph",
+      "values": ["1", "§1"],
+      "meaning": {
+        "1": {"rate": "19%", "description": "Standard VAT"},
+        "§1": {"rate": "19%", "description": "Same as 1, with paragraph symbol"}
+      },
+      "position": "end_of_line",
+      "note": "dm uses NUMERIC tax class, not letters!"
+    },
+    
+    "item_line": {
+      "format": "name total tax",
+      "examples": [
+        "babylove Windeln Newb.XS 24St 2,95 1",
+        "Denkmit Spülmasch.Tabs 5,45 §1"
+      ]
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "keywords": ["Rabatt", "Aktion"],
+      "format": "separate_line_negative"
+    },
+    
+    "pfand": {
+      "present": true,
+      "tax_class": "§1",
+      "note": "Pfand uses §1 tax class"
+    },
+    
+    "date_format": {
+      "format": "DD.MM.YYYY"
+    },
+    
+    "payment_methods": {
+      "observed": ["Kartenzahlung", "PayPal"]
+    },
+    
+    "loyalty_program": {
+      "present": true,
+      "name": "PAYBACK",
+      "points_shown": true
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "Numeric tax class",
+      "description": "Uses 1 or §1 instead of A/B",
+      "implication": "tax_class is Optional[str], can be any format"
+    }
+  ],
+
+  "notes": [
+    "Tax class is NUMERIC (1, §1) not letters",
+    "PAYBACK loyalty program",
+    "No SKU on receipt",
+    "Drugstore items (not food)"
+  ]
+}

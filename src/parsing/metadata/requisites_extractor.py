@@ -58,3 +58,4 @@ class RequisitesExtractor:
         return RequisitesResult(phone=phone, vat_id=vat_id, confidence=min(confidence, 1.0))
 
 
+

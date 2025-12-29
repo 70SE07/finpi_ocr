@@ -1,0 +1,41 @@
+{
+  "id": "015",
+  "source_file": "data/input/IMG_1390.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "Lidl",
+    "address": "Steinhauser Auel 1, 51491 Overath-Vilkerath"
+  },
+  "metadata": {
+    "date": "14.08.25",
+    "time": "15:14",
+    "currency": "EUR",
+    "payment_method": "Kartenzahlung girocard",
+    "receipt_total": 18.57,
+    "total_discount": 2.00,
+    "tax_block": {
+      "A": {"rate": "7%", "netto": 17.36, "mwst": 1.21, "brutto": 18.57}
+    }
+  },
+  "items": [
+    {"raw_name": "Dattelcherrytomaten", "quantity": 1, "unit_price": null, "total_price": 1.99, "tax_class": "A"},
+    {"raw_name": "Bio Gurken", "quantity": 1, "unit_price": null, "total_price": 1.19, "tax_class": "A"},
+    {"raw_name": "Ayran Joghurtgetränk", "quantity": 1, "unit_price": null, "total_price": 1.49, "tax_class": "A"},
+    {"raw_name": "Kefir", "quantity": 5, "unit_price": 0.89, "total_price": 4.45, "tax_class": "A"},
+    {"raw_name": "Dovgan Fam.33% Fett", "quantity": 5, "unit_price": 2.29, "total_price": 11.45, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "quantity": null, "unit_price": null, "total_price": -2.00, "tax_class": null, "is_discount": true}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == zu zahlen",
+    "items_sum": 18.57,
+    "expected_total": 18.57,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "All items tax A = 7% (food products)",
+    "Preisvorteil = discount -2,00",
+    "Gesamter Preisvorteil shown at bottom",
+    "Format qty: 0,89 x 5 = total"
+  ]
+}
+

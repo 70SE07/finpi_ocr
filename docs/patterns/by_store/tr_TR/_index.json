@@ -1,0 +1,26 @@
+{
+  "locale": "tr_TR",
+  "country": "Turkey",
+  "language": "Turkish",
+  "currency": "TRY",
+  
+  "stores": {
+    "f33-enva": {"file": "f33-enva.json", "receipts": 1, "type": "Restaurant"}
+  },
+  
+  "total_receipts": 1,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ",", "thousands": "."},
+    "tax_system": "KDV",
+    "tax_rates": ["10%", "18%"],
+    "tax_format": "%XX inline"
+  },
+  
+  "critical_warnings": [
+    "Price with asterisk prefix: *85,00",
+    "Tax as percentage inline: %10",
+    "KDV = Turkish VAT",
+    "Turkish special characters: İ, Ş, Ü, Ö, Ç, Ğ, ı"
+  ]
+}

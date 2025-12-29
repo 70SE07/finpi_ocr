@@ -1,0 +1,46 @@
+{
+  "id": "014",
+  "source_file": "data/input/IMG_1256.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "Netto Marken-Discount",
+    "address": "51491 Overath, Bensberger Str. 18",
+    "website": "WWW.NETTO-ONLINE.DE",
+    "steuer_nr": "DE133822409",
+    "type": "Discounter"
+  },
+  "metadata": {
+    "date": "29.07.25",
+    "time": "17:34",
+    "currency": "EUR",
+    "payment_method": "Kartenzahlung EUR",
+    "receipt_total": 47.44,
+    "tax_block": {
+      "A": {"rate": "19%", "netto": 20.13, "mwst": 3.03, "brutto": 23.96},
+      "B": {"rate": "7%", "netto": 21.94, "mwst": 1.54, "brutto": 23.48}
+    }
+  },
+  "items": [
+    {"raw_name": "Buchenholzkohle 2,5kg", "quantity": 1, "unit_price": null, "total_price": 4.99, "tax_class": "A"},
+    {"raw_name": "Doppio Primitivo 0,75L", "quantity": 1, "unit_price": null, "total_price": 7.99, "tax_class": "A"},
+    {"raw_name": "Grillanzuender flues 1L", "quantity": 1, "unit_price": null, "total_price": 2.99, "tax_class": "A"},
+    {"raw_name": "Doppio Primitivo BIO 0,75L", "quantity": 3, "unit_price": 3.49, "total_price": 10.47, "tax_class": "A", "note": "3 x 3,49"},
+    {"raw_name": "Putensteaks Texas 400g", "quantity": 1, "unit_price": null, "total_price": 10.47, "tax_class": "B"},
+    {"raw_name": "SB XXL BigWings ca2,5kg9S", "quantity": 2.897, "unit": "kg", "unit_price": 4.49, "total_price": 13.01, "tax_class": "B"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "items_sum": 49.92,
+    "expected_total": 47.44,
+    "note": "Possible hidden discount or partial list",
+    "tax_block_sum": 47.44
+  },
+  "notes": [
+    "EUR explicitly in item line",
+    "Tax A = 19%, B = 7%",
+    "Weighted items: multiline format",
+    "Qty on separate line: 3 x 3,49",
+    "SUMME [8] - number in brackets"
+  ]
+}
+

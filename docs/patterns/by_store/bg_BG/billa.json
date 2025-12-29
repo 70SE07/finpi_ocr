@@ -1,0 +1,137 @@
+{
+  "store": {
+    "brand": "Billa",
+    "legal_name": "БИЛЛА БЪЛГАРИЯ ЕООД",
+    "type": "Supermarket",
+    "locale": "bg_BG"
+  },
+  
+  "sources": {
+    "receipt_ids": ["007"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "530 ВАРНА", "address": "ул. ДУБРОВНИК 48", "receipts": ["007"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ".",
+      "thousands_separator": " ",
+      "example": "26.13"
+    },
+    
+    "tax_class": {
+      "format": "cyrillic_with_asterisk",
+      "values": ["*Б"],
+      "meaning": {
+        "*Б": {"description": "Standard rate with asterisk prefix"}
+      },
+      "note": "Cyrillic Б with asterisk prefix!"
+    },
+    
+    "item_line": {
+      "format": "name total [tax]",
+      "examples": [
+        "ЯЙЦА L10 АКВИЛОН 4.99",
+        "ОТСТ. СУПЕР ЦЕНА -1.20"
+      ]
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "keywords": ["ОТСТ.", "ОТСТЪПКА"],
+      "format": "separate_line_after_item",
+      "example": "ОТСТ. СУПЕР ЦЕНА -1.20",
+      "note": "ОТСТ = discount in Bulgarian"
+    },
+    
+    "weighted_items": {
+      "present": false,
+      "note": "No weight info observed"
+    },
+    
+    "dual_currency": {
+      "present": true,
+      "primary": {"code": "BGN", "symbol": "лв."},
+      "secondary": {"code": "EUR", "symbol": "ЕВРО"},
+      "exchange_rate_shown": true,
+      "example": "Курс 1 ЕВРО = 1.95583 ЛВ."
+    },
+    
+    "savings_block": {
+      "present": true,
+      "keyword": "#ТИ СПЕСТИ#",
+      "description": "Shows total savings",
+      "example": "#ТИ СПЕСТИ: 2.30 лв.#"
+    },
+    
+    "date_format": {
+      "format": "DD.MM.YYYY",
+      "example": "01.09.2025"
+    },
+    
+    "payment_methods": {
+      "observed": ["В БРОЙ"],
+      "translation": {"В БРОЙ": "Cash"}
+    },
+    
+    "receipt_total": {
+      "keywords": ["ОБЩА СУМА"],
+      "translation": {"ОБЩА СУМА": "Total"}
+    },
+    
+    "language": {
+      "script": "Cyrillic",
+      "example_items": ["ЯЙЦА L10 АКВИЛОН", "ПИЛЕШКИ ДОЛЕН БУТ", "BARILLA ЛИНГУИНИ"],
+      "note": "Bulgarian Cyrillic, may include Latin brand names"
+    },
+    
+    "legal_info": {
+      "eik": "130007884",
+      "zdds": "BG130007884"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items) == ОБША СУМА",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00,
+    "savings_check": {
+      "method": "SUM(discounts) == ТИ СПЕСТИ",
+      "passed": true
+    }
+  },
+
+  "critical_differences": {
+    "decimal_separator": {
+      "description": "DOT (.) not comma - different from most EU",
+      "example": "26.13"
+    },
+    "tax_class_format": {
+      "description": "Cyrillic with asterisk: *Б",
+      "note": "Asterisk prefix + Cyrillic letter"
+    },
+    "dual_currency": {
+      "description": "Shows both BGN and EUR",
+      "note": "Bulgaria not in Eurozone"
+    }
+  },
+
+  "notes": [
+    "Decimal separator: DOT (.)",
+    "Tax class: Cyrillic *Б with asterisk",
+    "Dual currency: BGN + EUR with exchange rate",
+    "ОТСТ. = discount keyword",
+    "#ТИ СПЕСТИ# = savings block",
+    "Bulgarian Cyrillic script",
+    "No quantity/unit_price shown"
+  ]
+}

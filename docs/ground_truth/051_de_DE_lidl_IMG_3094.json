@@ -1,0 +1,51 @@
+{
+  "id": "051",
+  "source_file": "photo/GOODS/Lidl/IMG_3094.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl Overath-Vilkerath",
+    "address": "Steinhauser Auel 1, 51491 Overath-Vilkerath"
+  },
+  "metadata": {
+    "date": "2025-05-21",
+    "time": "08:11",
+    "receipt_total": 43.55,
+    "currency": "EUR",
+    "payment_method": "Kreditkarte (VISA)",
+    "tax_block": {
+      "A_7%": {"netto": 27.41, "mwst": 0.72, "brutto": 10.93},
+      "B_19%": {"netto": 10.21, "mwst": 5.21, "brutto": 32.62},
+      "total": {"netto": 37.62, "mwst": 5.93, "brutto": 43.55}
+    },
+    "savings": 0.42
+  },
+  "items": [
+    {"raw_name": "Erdbeeren kg", "qty": 1, "unit_price": 2.98, "total_price": 2.98, "tax_class": "A", "weight_kg": 0.554, "price_per_kg": 5.38},
+    {"raw_name": "Aktionsrabatt", "qty": 1, "unit_price": -0.22, "total_price": -0.22, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Dovgan Joghurtgetränk", "qty": 2, "unit_price": 0.49, "total_price": 0.98, "tax_class": "A"},
+    {"raw_name": "Pfand 0,25 7% M Kefir", "qty": 2, "unit_price": 0.25, "total_price": 0.50, "tax_class": "A"},
+    {"raw_name": "Red Bull Energy", "qty": 24, "unit_price": 1.39, "total_price": 33.36, "tax_class": "B"},
+    {"raw_name": "Pfand 0,25 M", "qty": 24, "unit_price": 0.25, "total_price": 6.00, "tax_class": "B"},
+    {"raw_name": "Wiener Würstchen", "qty": 2, "unit_price": 0.99, "total_price": 1.98, "tax_class": "A"},
+    {"raw_name": "Franzbr.Croiss. M", "qty": 2, "unit_price": 0.79, "total_price": 1.58, "tax_class": "A"},
+    {"raw_name": "VoliK.Sandwi. Toast", "qty": 2, "unit_price": 0.99, "total_price": 1.98, "tax_class": "A"},
+    {"raw_name": "Knoblauchbröt.Toastr.", "qty": 1, "unit_price": 1.29, "total_price": 1.29, "tax_class": "A"},
+    {"raw_name": "Pfandrückgabe 0%", "qty": 1, "unit_price": -0.25, "total_price": -0.25, "tax_class": "B"},
+    {"raw_name": "Pfandrückgabe 0%", "qty": 1, "unit_price": -6.75, "total_price": -6.75, "tax_class": "B"},
+    {"raw_name": "Aktionsrabatt", "qty": 1, "unit_price": -0.20, "total_price": -0.20, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Pfandrückgabe", "qty": 1, "unit_price": -0.01, "total_price": -0.01, "tax_class": "B"}
+  ],
+  "validation": {
+    "items_sum": 43.55,
+    "expected_total": 43.55,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Горизонтальное фото (повернут на 90°)",
+    "Red Bull 24 штуки",
+    "Pfandrückgabe (возврат тары) -6.75, -0.25, -0.01",
+    "Aktionsrabatt (акционная скидка)"
+  ]
+}
+

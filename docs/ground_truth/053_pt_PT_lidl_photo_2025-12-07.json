@@ -1,0 +1,42 @@
+{
+  "id": "053",
+  "source_file": "photo/GOODS/Lidl/photo_2025-12-07 13.26.33.jpeg",
+  "locale": "pt_PT",
+  "store": {
+    "brand": "Lidl",
+    "name": "LIDL & Cia - Lisboa - R Maria da Fonte",
+    "address": "R M. Fonte - M. F. Tijolo, Lj37 - Lisboa",
+    "nif": "503340855",
+    "capital_social": "498.880 EUR"
+  },
+  "metadata": {
+    "date": "2025-11-08",
+    "time": "17:11",
+    "receipt_total": 3.37,
+    "currency": "EUR",
+    "payment_method": "MULTIBANCO",
+    "tax_block": {
+      "A_23%": {"base_imp": 2.74, "val_total": 3.37, "val_iva": 0.63}
+    },
+    "document_type": "FATURA SIMPLIFICADA",
+    "document_number": "FS 018800125/205509"
+  },
+  "items": [
+    {"raw_name": "TRANCA COM NOZ PECA", "qty": 1, "unit_price": 0.89, "total_price": 0.89, "tax_class": "A"},
+    {"raw_name": "PIZZA FIAMBRE E QUEIJO", "qty": 1, "unit_price": 1.49, "total_price": 1.49, "tax_class": "A"},
+    {"raw_name": "FOLHADO DE CARNE MISTO", "qty": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "A"}
+  ],
+  "validation": {
+    "items_sum": 3.37,
+    "expected_total": 3.37,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "ПОРТУГАЛИЯ - Lidl Lisboa!",
+    "IVA 23% (НДС Португалии)",
+    "FATURA SIMPLIFICADA (упрощённый счёт)",
+    "MULTIBANCO - португальская платёжная система",
+    "Названия на португальском: TRANCA, PIZZA, FOLHADO"
+  ]
+}
+

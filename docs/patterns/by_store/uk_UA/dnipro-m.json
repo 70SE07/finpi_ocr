@@ -1,0 +1,122 @@
+{
+  "store": {
+    "brand": "Dnipro-M",
+    "type": "Hardware store",
+    "locale": "uk_UA"
+  },
+  
+  "sources": {
+    "receipt_ids": ["005"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": " ",
+      "whole_numbers": true,
+      "example": "15 305",
+      "note": "Prices often shown as whole numbers (hryvnias without kopecks)"
+    },
+    
+    "tax_class": {
+      "format": "cyrillic_letter",
+      "values": ["Я"],
+      "meaning": {
+        "Я": {"description": "No VAT (tax exempt)"}
+      },
+      "note": "Cyrillic Я for tax class!"
+    },
+    
+    "item_line": {
+      "format": "multiline",
+      "structure": [
+        "Line 1: name",
+        "Line 2: qty unit x unit_price = total tax"
+      ],
+      "example": [
+        "Шліфмашина кутова DeWALT DWE4257",
+        "1 шт X 4248 = 4248 Я"
+      ],
+      "WARNING": "Items span MULTIPLE lines!"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "keywords": ["Знижка"],
+      "format": "separate_line_after_item",
+      "example": "Знижка -637",
+      "note": "Discount immediately after discounted item"
+    },
+    
+    "weighted_items": {
+      "present": false,
+      "note": "Hardware store - no weighted items"
+    },
+    
+    "unit": {
+      "values": ["шт"],
+      "translation": {"шт": "pieces"}
+    },
+    
+    "date_format": {
+      "format": "YYYY-MM-DD",
+      "example": "2025-10-18"
+    },
+    
+    "payment_methods": {
+      "observed": ["БЕЗГОТІВКОВА"],
+      "translation": {"БЕЗГОТІВКОВА": "Card payment"}
+    },
+    
+    "language": {
+      "script": "Cyrillic",
+      "example_items": ["Шліфмашина кутова DeWALT", "Диск відрізний по металу"],
+      "note": "Ukrainian Cyrillic script"
+    },
+    
+    "currency": {
+      "code": "UAH",
+      "name": "Ukrainian Hryvnia",
+      "note": "Often shown as whole numbers without kopecks"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price including discounts) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "critical_differences": {
+    "multiline_items": {
+      "WARNING": "CRITICAL",
+      "description": "Items span multiple lines",
+      "implication": "Parser must join lines before extracting item data"
+    },
+    "cyrillic_tax_class": {
+      "description": "Tax class is Cyrillic Я",
+      "implication": "tax_class can be non-Latin characters"
+    },
+    "whole_numbers": {
+      "description": "Prices without decimal part",
+      "example": "4248 (not 4248,00)"
+    }
+  },
+
+  "notes": [
+    "CRITICAL: Multiline item format",
+    "Cyrillic tax class: Я",
+    "Whole number prices (UAH without kopecks)",
+    "Ukrainian language",
+    "Space as thousands separator",
+    "Hardware/tools store"
+  ]
+}

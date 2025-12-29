@@ -1,0 +1,37 @@
+{
+  "id": "056",
+  "source_file": "photo/GOODS/Hit/IMG_3025.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "HIT 033 Overath",
+    "code": "HIT 4033",
+    "address": "Probsteistr. 18-22, 51491 Overath",
+    "hours": "MO-SA 08:00-22:00 Uhr"
+  },
+  "metadata": {
+    "date": "17.06.25",
+    "time": "20:17",
+    "currency": "EUR",
+    "payment_method": "Girocard (kontaktlos)",
+    "items_count": 1,
+    "receipt_total": 13.99,
+    "tax_block": {
+      "A": {"rate": "19%", "netto": 11.76, "mwst": 2.23, "brutto": 13.99}
+    }
+  },
+  "items": [
+    {"raw_name": "Taylors Ruby Sel", "sku": "(536)", "quantity": null, "unit_price": null, "total_price": 13.99, "tax_class": "A", "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME[1]",
+    "items_sum": 13.99,
+    "expected_total": 13.99,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Single item receipt",
+    "Category: WEIN/SPIRITUOSEN/SEKT/CHAMPA",
+    "Only tax A = 19% (alcohol)",
+    "Port wine"
+  ]
+}

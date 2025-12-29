@@ -1,0 +1,42 @@
+{
+  "id": "023",
+  "source_file": "photo/GOODS/Carrefour/IMG_3048.jpeg",
+  "locale": "pl_PL",
+  "store": {
+    "name": "CARREFOUR Polska Sp. z o. o.",
+    "location": "CH Wileńska",
+    "address": "03-734 Warszawa ul. Targowa 72",
+    "nip": "937-00-08-168"
+  },
+  "metadata": {
+    "date": "2025-11-13",
+    "time": "15:56",
+    "currency": "PLN",
+    "payment_method": "KARTAPŁATNI",
+    "receipt_number": "383752",
+    "receipt_total": 86.11,
+    "donation": 3.87,
+    "tax_block": {
+      "C": {"rate": "5%", "base": 86.11, "tax": 4.10}
+    }
+  },
+  "items": [
+    {"raw_name": "C_SER KRÓLEWSKI SIE", "quantity": 1, "unit_price": 8.05, "total_price": 8.05, "tax_class": "C"},
+    {"raw_name": "C_PÓŁBAGIETKA Z SE", "quantity": 2, "unit_price": 2.19, "total_price": 4.38, "tax_class": "C"},
+    {"raw_name": "C_NAPÓJ AYRAN 330ML", "quantity": 2, "unit_price": 3.85, "total_price": 7.70, "tax_class": "C"},
+    {"raw_name": "C_MOWI ŁOSOS WĘDZ.", "quantity": 1, "unit_price": 32.99, "total_price": 32.99, "tax_class": "C"},
+    {"raw_name": "C_MOWI ŁOSOS WĘDZ.", "quantity": 1, "unit_price": 32.99, "total_price": 32.99, "tax_class": "C"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMA PLN",
+    "items_sum": 86.11,
+    "expected_total": 86.11,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "5 items, all tax C (5%)",
+    "NIEFISKALNY block with Donateo donation",
+    "Donation 3,87 PLN does NOT affect SUMA"
+  ]
+}
+

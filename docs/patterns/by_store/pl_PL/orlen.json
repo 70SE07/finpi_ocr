@@ -1,0 +1,66 @@
+{
+  "store": {
+    "brand": "Orlen",
+    "type": "Gas station / Convenience store",
+    "locale": "pl_PL"
+  },
+  
+  "sources": {
+    "receipt_ids": ["012"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ".",
+      "thousands_separator": ",",
+      "WARNING": "DIFFERENT from Carrefour! Uses DOT as decimal",
+      "example": "12.99 instead of 12,99"
+    },
+    
+    "tax_class": {
+      "format": "letter",
+      "values": ["A", "B"],
+      "meaning": {
+        "A": {"rate": "23%"},
+        "B": {"rate": "8%"}
+      }
+    },
+    
+    "item_line": {
+      "format": "name total tax"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "critical_differences": {
+    "decimal_separator": {
+      "WARNING": "CRITICAL",
+      "description": "Uses DOT (.) not comma as decimal separator",
+      "comparison": {
+        "Orlen": "12.99",
+        "Carrefour": "12,99"
+      },
+      "implication": "Same country, different decimal separator!"
+    }
+  },
+
+  "notes": [
+    "CRITICAL: Decimal separator is DOT (.) - different from Carrefour!",
+    "Gas station convenience store",
+    "Polish state oil company"
+  ]
+}

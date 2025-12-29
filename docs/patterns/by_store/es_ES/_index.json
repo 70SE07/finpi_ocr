@@ -1,0 +1,25 @@
+{
+  "locale": "es_ES",
+  "country": "Spain",
+  "language": "Spanish",
+  "currency": "EUR",
+  
+  "stores": {
+    "consum": {"file": "consum.json", "receipts": 2, "type": "Supermarket"}
+  },
+  
+  "total_receipts": 2,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ",", "thousands": "."},
+    "tax_system": "IVA",
+    "tax_rates": ["4%", "10%", "21%"],
+    "tax_class_shown": false
+  },
+  
+  "notes": [
+    "IVA (VAT) with 3 rates: 4%, 10%, 21%",
+    "Tax class not shown per item",
+    "Weighted items: qty kg x price format"
+  ]
+}

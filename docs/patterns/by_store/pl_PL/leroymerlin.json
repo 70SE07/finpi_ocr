@@ -1,0 +1,119 @@
+{
+  "store": {
+    "brand": "Leroy Merlin",
+    "type": "DIY / Hardware store",
+    "locale": "pl_PL"
+  },
+  
+  "sources": {
+    "receipt_ids": ["054"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "ARKADIA", "address": "ul. Jana Pawła II 82, 00-175 Warszawa", "receipts": ["054"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "example": "170,74"
+    },
+    
+    "tax_class": {
+      "format": "single_letter",
+      "values": ["A"],
+      "meaning": {
+        "A": {"rate": "23%", "description": "Standard PTU"}
+      },
+      "position": "end_of_line",
+      "note": "PTU = Polish VAT"
+    },
+    
+    "item_line": {
+      "format": "sku name qty * unit_price total tax",
+      "examples": [
+        "43187305 FIR/MB 320CM IDALIA TV-01BIAŁ 3 * 29,90 89,70 A",
+        "84340216 TORBA PAPIEROWA 30,5X17X34CM 1 * 1,79 1,79 A"
+      ],
+      "quantity_position": "after_name",
+      "unit_price_marker": "*"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "8_digits",
+      "position": "before_name",
+      "examples": ["43187305", "19990236", "91639939"]
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "format": "not_observed",
+      "note": "No discounts in analyzed receipts"
+    },
+    
+    "date_format": {
+      "format": "YYYY-MM-DD",
+      "example": "2025-11-13"
+    },
+    
+    "payment_methods": {
+      "observed": ["Karta"]
+    },
+    
+    "tax_block": {
+      "present": true,
+      "keywords": ["Sprzed. opod. PTU", "Kwota PTU"],
+      "format": {
+        "A": {"rate": "23%", "sprzed_opod": "float", "kwota_ptu": "float"}
+      }
+    },
+    
+    "receipt_total": {
+      "keywords": ["SUMA PLN"],
+      "position": "after_items"
+    },
+    
+    "document_type": {
+      "value": "PARAGON FISKALNY",
+      "description": "Polish fiscal receipt"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "8-digit SKU before item name",
+      "description": "Product code at start of line",
+      "example": "43187305 FIR/MB 320CM..."
+    },
+    {
+      "feature": "Asterisk multiplication",
+      "description": "qty * unit_price format",
+      "example": "3 * 29,90"
+    }
+  ],
+
+  "differences_from_carrefour": {
+    "sku": "Present in Leroy Merlin, absent in Carrefour",
+    "tax_prefix": "No A_/C_ prefix in item name (unlike Carrefour)"
+  },
+
+  "notes": [
+    "DIY/Hardware store (like Hornbach in cs_CZ)",
+    "8-digit SKU before item name",
+    "qty * unit_price format",
+    "PTU A = 23% (Polish VAT)",
+    "PARAGON FISKALNY = fiscal receipt",
+    "No tax prefix in item name (unlike Carrefour)"
+  ]
+}

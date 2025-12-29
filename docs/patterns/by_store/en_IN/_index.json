@@ -1,0 +1,27 @@
+{
+  "locale": "en_IN",
+  "country": "India",
+  "language": "English",
+  "currency": "INR",
+  
+  "stores": {
+    "nybc": {"file": "nybc.json", "receipts": 1, "type": "Restaurant"}
+  },
+  
+  "total_receipts": 1,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ".", "thousands": ","},
+    "tax_system": "GST",
+    "tax_components": ["CGST", "SGST"],
+    "item_format": "tabular"
+  },
+  
+  "critical_warnings": [
+    "CRITICAL: GST split into CGST + SGST",
+    "Tabular format for items",
+    "GSTIN legal identifier",
+    "English language",
+    "0.01 rounding tolerance for GST"
+  ]
+}

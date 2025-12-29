@@ -1,0 +1,139 @@
+{
+  "store": {
+    "brand": "ALDI SÜD",
+    "type": "Discount supermarket",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["019", "020"],
+    "total_receipts": 2,
+    "branches": [
+      {"name": "Overath", "address": "Wiesenauel 1, 51491 Overath", "receipts": ["019", "020"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "example": "1.234,56"
+    },
+    
+    "tax_class": {
+      "format": "single_letter",
+      "values": ["A", "B"],
+      "meaning": {
+        "A": {"rate": "7%", "description": "Reduced VAT"},
+        "B": {"rate": "19%", "description": "Standard VAT"}
+      },
+      "position": "end_of_line",
+      "inverted": false
+    },
+    
+    "item_line": {
+      "format": "sku name [qty x unit_price] total tax",
+      "examples": [
+        "826945 Allzwecktragetasch 0,99 B",
+        "807611 Bio FT Lose Banane 0,834 kg x 1,99 EUR/kg 1,66 A"
+      ],
+      "quantity_position": "after_name",
+      "unit_price_marker": "x"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "numeric",
+      "length": "4-6 digits",
+      "position": "before_name",
+      "examples": ["826945", "807611", "2938", "6205"]
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "format": "percentage_shown",
+      "keywords": ["Rabatt"],
+      "examples": [
+        {"keyword": "Rabatt 30,0%", "example": "Rabatt 30,0% -1,65"}
+      ],
+      "position": "after_discounted_item",
+      "value_sign": "negative",
+      "note": "UNIQUE: Shows discount percentage!"
+    },
+    
+    "pfand": {
+      "present": true,
+      "keywords": ["Pfand"],
+      "tax_class": "B",
+      "format": "sku Pfand amount tax",
+      "example": "6205 Pfand 0,25 B"
+    },
+    
+    "weighted_items": {
+      "present": true,
+      "format": "qty kg x price EUR/kg",
+      "example": "0,834 kg x 1,99 EUR/kg"
+    },
+    
+    "date_format": {
+      "format": "DD.MM.YYYY",
+      "example": "06.09.2025"
+    },
+    
+    "payment_methods": {
+      "observed": ["Kartenzahlung girocard"]
+    },
+    
+    "tax_block": {
+      "present": true,
+      "format": {
+        "A": {"netto": "float", "mwst": "float"},
+        "B": {"netto": "float", "mwst": "float"}
+      }
+    },
+    
+    "receipt_total": {
+      "keywords": ["Summe"],
+      "position": "after_items"
+    },
+
+    "store_header": {
+      "slogan": "ALDI SÜD - Gutes für alle.",
+      "ust_id_nr": "DE 813192189",
+      "opening_hours": "Mo - Sa: 8:00 Uhr - 20:00 Uhr"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "SKU before item name",
+      "description": "4-6 digit product code",
+      "example": "826945 Allzwecktragetasch"
+    },
+    {
+      "feature": "Discount percentage shown",
+      "description": "Rabatt 30,0% format",
+      "example": "Rabatt 30,0% -1,65"
+    }
+  ],
+
+  "differences_from_lidl": {
+    "sku": "Present in ALDI, absent in Lidl",
+    "discount_format": "ALDI shows percentage, Lidl shows keywords only"
+  },
+
+  "notes": [
+    "SKU is UNIQUE to ALDI among German discounters",
+    "Discount percentage format is UNIQUE to ALDI",
+    "Same tax class meaning as Lidl (A=7%, B=19%)"
+  ]
+}

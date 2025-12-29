@@ -1,0 +1,91 @@
+{
+  "store": {
+    "brand": "Consum",
+    "legal_name": "Consum S.COOP.V.",
+    "type": "Supermarket cooperative",
+    "locale": "es_ES"
+  },
+  
+  "sources": {
+    "receipt_ids": ["003", "025"],
+    "total_receipts": 2,
+    "branches": [
+      {"name": "Valencia", "receipts": ["003", "025"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "example": "1.234,56"
+    },
+    
+    "tax_class": {
+      "format": "none_shown",
+      "note": "Tax class not shown on individual items",
+      "tax_system": "IVA included in price"
+    },
+    
+    "item_line": {
+      "format": "name [qty unit x price] total",
+      "examples": [
+        "TOMATE RAF ASURCAD 0,580 kg x 1,75 1,02",
+        "LECHE ENTERA 1L 2 x 0,95 1,90"
+      ],
+      "quantity_position": "after_name",
+      "unit_price_marker": "x"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "weighted_items": {
+      "present": true,
+      "format": "qty kg x price",
+      "example": "0,580 kg x 1,75"
+    },
+    
+    "discounts": {
+      "format": "not_observed"
+    },
+    
+    "date_format": {
+      "format": "YYYY-MM-DD",
+      "example": "2025-10-15"
+    },
+    
+    "payment_methods": {
+      "observed": ["Tarj. Crédito"]
+    },
+    
+    "tax_block": {
+      "present": true,
+      "system": "IVA",
+      "rates": ["4%", "10%", "21%"],
+      "note": "Spanish IVA system with 3 rates"
+    },
+    
+    "legal_info": {
+      "nif": "F46078986"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "notes": [
+    "Spanish cooperative supermarket",
+    "IVA (VAT) system with 3 rates",
+    "Tax class not shown per item",
+    "Weighted items: qty kg x price format"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "006",
+  "source_file": "data/input/cz_001.jpeg",
+  "locale": "cs_CZ",
+  "store": {
+    "name": "Hornbach (предположительно)",
+    "address": "Praha 9, Sídlo: Chlumecká 2398, 198 00",
+    "dic": "CZ47117559",
+    "note": "ПРОБЛЕМНЫЙ ЧЕК - без шапки!"
+  },
+  "metadata": {
+    "date": "2025-12-26",
+    "time": "18:05:26",
+    "currency": "CZK",
+    "payment_method": "Hotovost (Cash)",
+    "receipt_total": 1136.00,
+    "soucet": 1135.78,
+    "zaokrouhleni": 0.22,
+    "cash_given": 1200.00,
+    "change": -64.00,
+    "tax_block": {
+      "1": {"rate": "21%", "brutto": 1135.78, "dph": 197.12, "netto": 938.66}
+    }
+  },
+  "items": [
+    {"raw_name": "ÚPRAVA DESEK/MATERIA", "sku": "7144934", "quantity": 1.000, "unit": "Jedvyk", "unit_price": 20.00, "total_price": 20.00, "tax_class": "1"},
+    {"raw_name": "Papírová taška HORNB", "sku": "8596140003596", "quantity": 1, "unit": "Kus", "unit_price": 7.00, "total_price": 7.00, "tax_class": "1"},
+    {"raw_name": "Rouno zakrývací 1x 3", "sku": "4013307334026", "quantity": 1, "unit": "Kus", "unit_price": 95.00, "total_price": 95.00, "tax_class": "1"},
+    {"raw_name": "HYDROIZOLACE JEDNOSL", "sku": "8595100133175", "quantity": 1, "unit": "Kus", "unit_price": 575.00, "total_price": 575.00, "tax_class": "1"},
+    {"raw_name": "BUCK BÍLÉ vel. 10\"/X", "sku": "8592390065636", "quantity": 2, "unit": "Pár", "unit_price": 22.00, "total_price": 44.00, "tax_class": "1"},
+    {"raw_name": "Sedlový úhelník s v", "sku": "4004338329914", "quantity": 4, "unit": "Kus", "unit_price": 21.00, "total_price": 84.00, "tax_class": "1"},
+    {"raw_name": "rohový úhelník pozin", "sku": "4004338332853", "quantity": 4, "unit": "Kus", "unit_price": 19.00, "total_price": 76.00, "tax_class": "1"},
+    {"raw_name": "STĚRKA VÍCEÚČELOVÁ P", "sku": "8590804039105", "quantity": 2, "unit": "Kus", "unit_price": 30.00, "total_price": 60.00, "tax_class": "1"},
+    {"raw_name": "Váleček malířský 12c", "sku": "8595026063846", "quantity": 1, "unit": "Kus", "unit_price": 59.00, "total_price": 59.00, "tax_class": "1"},
+    {"raw_name": "Nůž odlamovací 18mm", "sku": "4013307322672", "quantity": 1, "unit": "Kus", "unit_price": 23.00, "total_price": 23.00, "tax_class": "1"},
+    {"raw_name": "HAK S METR ZÁVITEM z", "sku": "8524", "quantity": 0.020, "unit": "kg", "unit_price": 613.00, "total_price": 12.26, "tax_class": "1"},
+    {"raw_name": "VRUT UNIV. ZH 4,5x20", "sku": "9867", "quantity": 0.099, "unit": "kg", "unit_price": 284.00, "total_price": 28.12, "tax_class": "1"},
+    {"raw_name": "HŘEBÍK STAVEBNÍ ZH 1", "sku": "6302", "quantity": 0.246, "unit": "kg", "unit_price": 213.00, "total_price": 52.40, "tax_class": "1"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SOUČET, SOUČET + Zaokrouhlení == K zaplacení",
+    "items_sum": 1135.78,
+    "soucet": 1135.78,
+    "zaokrouhleni": 0.22,
+    "expected_total": 1136.00,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "PROBLEMATIC: No header - store identified by indirect signs",
+    "Art/Ean on separate line before item",
+    "Multiline format (3 lines per item)",
+    "Zaokrouhlení = rounding to whole CZK",
+    "Tax code is numeric (1) not letter",
+    "Weighted items in kg with price per kg"
+  ]
+}
+

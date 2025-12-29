@@ -1,0 +1,41 @@
+{
+  "id": "058",
+  "source_file": "photo/GOODS/Hit/IMG_3096.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "HIT 033 Overath",
+    "code": "HIT 4033",
+    "address": "Probsteistr. 18-22, 51491 Overath",
+    "hours": "MO-SA 08:00-22:00 Uhr",
+    "ust_id": "DE276299025"
+  },
+  "metadata": {
+    "date": "22.05.25",
+    "time": "19:58",
+    "currency": "EUR",
+    "payment_method": "Visa CREDIT (kontaktlos)",
+    "items_count": 1,
+    "receipt_total": 19.49,
+    "tax_block": {
+      "A": {"rate": "19%", "netto": 16.38, "mwst": 3.11, "brutto": 19.49}
+    }
+  },
+  "items": [
+    {"raw_name": "Ronco di Sassi Pr", "sku": "(621)", "quantity": null, "unit_price": null, "total_price": 19.99, "tax_class": "A", "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"},
+    {"raw_name": "Leergut 0,25", "sku": "(108)", "quantity": 2, "unit_price": -0.25, "total_price": -0.50, "tax_class": "A", "category": "PFAND/LEERGUT", "is_pfand": true, "note": "* nicht rabattfähig - Rückgabe"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME[1]",
+    "items_sum": 19.49,
+    "expected_total": 19.49,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Image rotated 90 degrees",
+    "Categories: WEIN/SPIRITUOSEN/SEKT/CHAMPA, PFAND/LEERGUT",
+    "Leergut return: -2x 0,25 = -0,50 EUR",
+    "Payment: Visa CREDIT (different from usual Girocard)",
+    "Only tax A = 19% (alcohol + pfand)",
+    "SUMME[1] but 2 line items (Leergut counts differently)"
+  ]
+}

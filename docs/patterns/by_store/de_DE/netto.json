@@ -1,0 +1,62 @@
+{
+  "store": {
+    "brand": "Netto",
+    "type": "Discount supermarket",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["014"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "single_letter",
+      "values": ["A", "B"],
+      "meaning": {
+        "A": {"rate": "7%", "description": "Reduced VAT"},
+        "B": {"rate": "19%", "description": "Standard VAT"}
+      },
+      "inverted": false
+    },
+    
+    "item_line": {
+      "format": "name total tax"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "keywords": ["Rabatt"],
+      "format": "separate_line_negative"
+    },
+    
+    "pfand": {
+      "present": true
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "notes": [
+    "Standard tax (A=7%, B=19%) - NOT inverted",
+    "Discount retailer",
+    "No SKU on receipt"
+  ]
+}

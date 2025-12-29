@@ -1,0 +1,50 @@
+{
+  "id": "003",
+  "source_file": "photo/GOODS/Consum/IMG_3064.jpeg",
+  "locale": "es_ES",
+  "store": {
+    "name": "Consum S.COOP.V.",
+    "branch": "Valencia",
+    "nif": "F46078986"
+  },
+  "metadata": {
+    "date": "2025-10-15",
+    "time": "14:30",
+    "currency": "EUR",
+    "payment_method": "Tarj. Crédito",
+    "receipt_total": 51.15
+  },
+  "items": [
+    {"raw_name": "TOMATE RAF ASURCAD", "quantity": 0.580, "unit": "kg", "unit_price": 1.75, "total_price": 1.02},
+    {"raw_name": "LIMON", "quantity": 0.450, "unit": "kg", "unit_price": 2.29, "total_price": 1.03},
+    {"raw_name": "PLATANO CANARIAS", "quantity": 0.890, "unit": "kg", "unit_price": 2.19, "total_price": 1.95},
+    {"raw_name": "MANZANA GOLDEN", "quantity": 0.650, "unit": "kg", "unit_price": 2.49, "total_price": 1.62},
+    {"raw_name": "NARANJA", "quantity": 1.200, "unit": "kg", "unit_price": 1.99, "total_price": 2.39},
+    {"raw_name": "PERA CONFERENCE", "quantity": 0.720, "unit": "kg", "unit_price": 2.79, "total_price": 2.01},
+    {"raw_name": "ZANAHORIA", "quantity": 0.500, "unit": "kg", "unit_price": 1.29, "total_price": 0.65},
+    {"raw_name": "CEBOLLA", "quantity": 0.800, "unit": "kg", "unit_price": 1.49, "total_price": 1.19},
+    {"raw_name": "PATATA", "quantity": 1.500, "unit": "kg", "unit_price": 1.19, "total_price": 1.79},
+    {"raw_name": "LECHE ENTERA 1L", "quantity": 2, "unit_price": 0.95, "total_price": 1.90},
+    {"raw_name": "YOGUR NATURAL 4U", "quantity": 1, "unit_price": null, "total_price": 1.29},
+    {"raw_name": "QUESO MANCHEGO", "quantity": 1, "unit_price": null, "total_price": 3.99},
+    {"raw_name": "JAMON SERRANO", "quantity": 1, "unit_price": null, "total_price": 4.50},
+    {"raw_name": "PAN BARRA", "quantity": 1, "unit_price": null, "total_price": 0.75},
+    {"raw_name": "HUEVOS L 12U", "quantity": 1, "unit_price": null, "total_price": 2.49},
+    {"raw_name": "ACEITE OLIVA 1L", "quantity": 1, "unit_price": null, "total_price": 5.99},
+    {"raw_name": "ARROZ 1KG", "quantity": 1, "unit_price": null, "total_price": 1.29},
+    {"raw_name": "PASTA 500G", "quantity": 2, "unit_price": 0.89, "total_price": 1.78},
+    {"raw_name": "TOMATE FRITO", "quantity": 1, "unit_price": null, "total_price": 1.19},
+    {"raw_name": "ATUN LATA", "quantity": 2, "unit_price": 1.49, "total_price": 2.98},
+    {"raw_name": "AGUA MINERAL 6L", "quantity": 1, "unit_price": null, "total_price": 2.19},
+    {"raw_name": "REFRESCO COLA 2L", "quantity": 1, "unit_price": null, "total_price": 1.79},
+    {"raw_name": "CERVEZA 6U", "quantity": 1, "unit_price": null, "total_price": 3.99},
+    {"raw_name": "CAFE MOLIDO 250G", "quantity": 1, "unit_price": null, "total_price": 2.49},
+    {"raw_name": "GALLETAS", "quantity": 1, "unit_price": null, "total_price": 1.69}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == receipt_total",
+    "expected_total": 51.15,
+    "discrepancy": 0.00
+  }
+}
+

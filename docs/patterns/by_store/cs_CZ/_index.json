@@ -1,0 +1,27 @@
+{
+  "locale": "cs_CZ",
+  "country": "Czech Republic",
+  "language": "Czech",
+  "currency": "CZK",
+  
+  "stores": {
+    "hornbach": {"file": "hornbach.json", "receipts": 1, "type": "Hardware"}
+  },
+  
+  "total_receipts": 1,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ",", "thousands": " "},
+    "tax_system": "DPH",
+    "tax_class": "numeric (1)",
+    "item_format": "multiline (3 lines)",
+    "rounding": "Zaokrouhlení"
+  },
+  
+  "critical_warnings": [
+    "CRITICAL: 3-line format per item (EAN, name, qty/price)",
+    "CRITICAL: Zaokrouhlení (rounding to whole CZK)",
+    "Numeric tax class (1) like German dm",
+    "DPH = Czech VAT"
+  ]
+}

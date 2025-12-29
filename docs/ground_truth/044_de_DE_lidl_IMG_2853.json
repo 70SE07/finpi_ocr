@@ -1,0 +1,23 @@
+{
+  "id": "044",
+  "source_file": "photo/GOODS/Lidl/IMG_2853.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl Overath-Vilkerath",
+    "address": "Steinhauser Auel 1, 51491 Overath-Vilkerath"
+  },
+  "metadata": {
+    "date": "2025-11-11",
+    "time": "08:57",
+    "receipt_total": 105.79,
+    "currency": "EUR",
+    "payment_method": "Karte (girocard)"
+  },
+  "duplicate_of": "043",
+  "notes": [
+    "Дубликат чека 043 (IMG_2852)",
+    "Тот же чек, просто другой ракурс фото"
+  ]
+}
+

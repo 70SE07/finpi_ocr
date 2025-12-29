@@ -1,0 +1,120 @@
+{
+  "store": {
+    "brand": "Lidl",
+    "legal_name": "LIDL & Cia",
+    "type": "Discount supermarket",
+    "locale": "pt_PT"
+  },
+  
+  "sources": {
+    "receipt_ids": ["053"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "Lisboa - R Maria da Fonte", "address": "R M. Fonte - M. F. Tijolo, Lj37 - Lisboa", "receipts": ["053"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "example": "1.234,56"
+    },
+    
+    "tax_class": {
+      "format": "single_letter",
+      "values": ["A"],
+      "meaning": {
+        "A": {"rate": "23%", "description": "IVA normal rate Portugal"}
+      },
+      "position": "end_of_line",
+      "note": "Portugal uses 23% IVA (not 7%/19% like Germany)"
+    },
+    
+    "item_line": {
+      "format": "name qty x unit_price total tax",
+      "examples": [
+        "TRANCA COM NOZ PECA 1 x 0,89 0,89 A"
+      ],
+      "quantity_position": "after_name",
+      "unit_price_marker": "x"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "format": "not_observed",
+      "note": "No discounts in analyzed receipts"
+    },
+    
+    "pfand": {
+      "present": false,
+      "note": "Portugal does not have Pfand system"
+    },
+    
+    "date_format": {
+      "format": "DD-MM-YYYY",
+      "example": "08-11-2025"
+    },
+    
+    "payment_methods": {
+      "observed": ["MULTIBANCO"],
+      "note": "MULTIBANCO is Portuguese payment network"
+    },
+    
+    "tax_block": {
+      "present": true,
+      "format": {
+        "A_23%": {"base_imp": "float", "val_iva": "float", "val_total": "float"}
+      },
+      "keywords": ["IVA", "Base Imp", "Val Total"],
+      "position": "end_of_receipt"
+    },
+    
+    "receipt_total": {
+      "keywords": ["Total", "TOTAL"],
+      "position": "after_items"
+    },
+    
+    "document_type": {
+      "present": true,
+      "value": "FATURA SIMPLIFICADA",
+      "description": "Simplified invoice (Portuguese legal requirement)"
+    },
+    
+    "legal_info": {
+      "nif": "required",
+      "capital_social": "shown",
+      "example": "NIF: 503340855, Capital Social: 498.880 EUR"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "differences_from_de_DE": {
+    "tax_rate": "23% vs 7%/19%",
+    "tax_block_format": "Base Imp / Val IVA / Val Total (PT) vs Netto / MwSt / Brutto (DE)",
+    "pfand": "Not present in Portugal",
+    "document_type": "FATURA SIMPLIFICADA required in Portugal",
+    "payment_system": "MULTIBANCO (PT) vs girocard (DE)",
+    "language": "Portuguese vs German"
+  },
+
+  "notes": [
+    "Same brand (Lidl) but VERY different patterns from de_DE",
+    "Portuguese tax system: IVA 23%",
+    "No Pfand deposit system",
+    "FATURA SIMPLIFICADA = legal document type",
+    "MULTIBANCO = Portuguese national payment system"
+  ]
+}

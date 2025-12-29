@@ -1,0 +1,68 @@
+{
+  "store": {
+    "brand": "Shell",
+    "type": "Gas station / Convenience store",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["016"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "letter_with_plus",
+      "values": ["+A", "+B"],
+      "meaning": {
+        "+A": {"rate": "7%", "description": "Reduced VAT with plus prefix"},
+        "+B": {"rate": "19%", "description": "Standard VAT with plus prefix"}
+      },
+      "note": "Shell uses + prefix on tax class!"
+    },
+    
+    "item_line": {
+      "format": "name total tax"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "barcode",
+      "note": "EAN shown on some items"
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "keywords": ["Rabatt"],
+      "format": "separate_line_negative"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "Plus prefix on tax class",
+      "description": "+A, +B format",
+      "implication": "tax_class can have + prefix"
+    }
+  ],
+
+  "notes": [
+    "Gas station convenience store",
+    "Tax class with + prefix: +A, +B",
+    "May include fuel purchases"
+  ]
+}

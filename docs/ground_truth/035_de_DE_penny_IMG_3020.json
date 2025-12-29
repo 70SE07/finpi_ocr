@@ -1,0 +1,49 @@
+{
+  "id": "035",
+  "source_file": "photo/GOODS/Penny/IMG_3020.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "*** P E N N Y - M A R K T ***",
+    "company": "H-SCHMAND OGT GmbH",
+    "uid_nr": "DE202748117",
+    "address": "Steinhofplatz 1, 51491 Overath",
+    "type": "Discounter (REWE Group)"
+  },
+  "metadata": {
+    "date": "16.06.2025",
+    "time": "18:03:26",
+    "currency": "EUR",
+    "payment_method": "EC-Cash",
+    "receipt_total": 21.80,
+    "tax_block": {
+      "A": {"rate": "19%", "netto": 8.85, "steuer": 1.68, "brutto": 10.53},
+      "B": {"rate": "7%", "netto": 10.53, "steuer": 0.74, "brutto": 11.27}
+    }
+  },
+  "items": [
+    {"raw_name": "PELMENI SCHWEIN", "total_price": 0.89, "tax_class": "B"},
+    {"raw_name": "PLOMBIR SCHNE", "total_price": 5.99, "tax_class": "A"},
+    {"raw_name": "Fanta Cassis", "total_price": 0.99, "tax_class": "A"},
+    {"raw_name": "Red Bull 0,33l 75", "total_price": 1.75, "tax_class": "A"},
+    {"raw_name": "PFAND STK x 0,25 EURO", "total_price": 0.25, "tax_class": "A", "is_pfand": true},
+    {"raw_name": "Capri Sun Mango", "total_price": 7.00, "tax_class": "A"},
+    {"raw_name": "Item", "total_price": 1.00, "tax_class": "A"},
+    {"raw_name": "Item", "total_price": 1.29, "tax_class": "A"},
+    {"raw_name": "H-SCHMAND OGT", "total_price": 1.29, "tax_class": "B"},
+    {"raw_name": "Item", "total_price": 1.35, "tax_class": "B"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "expected_total": 21.80,
+    "discrepancy": 0.00,
+    "note": "Receipt rotated 90 degrees, some items hard to read"
+  },
+  "notes": [
+    "Store name with spaces: *** P E N N Y - M A R K T ***",
+    "EUR explicitly in item line",
+    "Tax A = 19%, B = 7% (INVERTED like HIT!)",
+    "Pfand separate line",
+    "Receipt rotated - reading difficulty"
+  ]
+}
+

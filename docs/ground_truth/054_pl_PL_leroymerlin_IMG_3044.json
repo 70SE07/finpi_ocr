@@ -1,0 +1,48 @@
+{
+  "id": "054",
+  "source_file": "photo/GOODS/Leroy Merlin/IMG_3044.jpeg",
+  "locale": "pl_PL",
+  "store": {
+    "name": "Leroy Merlin",
+    "legal_name": "LEROY-MERLIN POLSKA SP. Z O.O.",
+    "address": "ul. Jana Pawła II 82, 00-175 Warszawa",
+    "branch": "SKLEP LEROY - MERLIN ARKADIA",
+    "nip": "113-00-89-950",
+    "bdo": "000003773",
+    "tel": "(12)351-05-70"
+  },
+  "metadata": {
+    "date": "2025-11-13",
+    "time": "19:07",
+    "receipt_total": 170.74,
+    "currency": "PLN",
+    "payment_method": "Karta",
+    "tax_block": {
+      "A": {"rate": "23%", "sprzed_opod": 170.74, "kwota_ptu": 31.93}
+    },
+    "document_type": "PARAGON FISKALNY",
+    "receipt_number": "622268/1244",
+    "transaction_number": "014-005-000002 3741"
+  },
+  "items": [
+    {"raw_name": "FIR/MB 320CM IDALIA TV-01BIAŁ", "sku": "43187305", "quantity": 3, "unit_price": 29.90, "total_price": 89.70, "tax_class": "A"},
+    {"raw_name": "SCOTCH TAŚMA MONT DWUS WEWNE 1", "sku": "19990236", "quantity": 1, "unit_price": 23.99, "total_price": 23.99, "tax_class": "A"},
+    {"raw_name": "SUPER GLUE LIQUID 3X1G", "sku": "91639939", "quantity": 1, "unit_price": 13.79, "total_price": 13.79, "tax_class": "A"},
+    {"raw_name": "MALWO PĘDZEL 70MM DO DEKORACJI", "sku": "43268295", "quantity": 1, "unit_price": 10.49, "total_price": 10.49, "tax_class": "A"},
+    {"raw_name": "LUXENS PIGMENT 80ML NR26 CZARN", "sku": "45173212", "quantity": 1, "unit_price": 15.99, "total_price": 15.99, "tax_class": "A"},
+    {"raw_name": "PODGRZ. ZAPACH. 4H 18SZT SILEN", "sku": "97927103", "quantity": 1, "unit_price": 14.99, "total_price": 14.99, "tax_class": "A"},
+    {"raw_name": "TORBA PAPIEROWA 30,5X17X34CM", "sku": "84340216", "quantity": 1, "unit_price": 1.79, "total_price": 1.79, "tax_class": "A"}
+  ],
+  "validation": {
+    "items_sum": 170.74,
+    "expected_total": 170.74,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Leroy Merlin - строительный гипермаркет",
+    "SKU 8 цифр перед названием товара",
+    "Формат: SKU NAME qty * unit_price total tax",
+    "Все товары tax class A (23% PTU)",
+    "www.leroymerlin.pl внизу чека"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "032",
+  "source_file": "photo/GOODS/Hit/IMG_1392.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "HIT 033 Overath",
+    "address": "Probsteistr. 18-22, 51491 Overath"
+  },
+  "metadata": {
+    "date": "14.08.25",
+    "time": "15:48",
+    "currency": "EUR",
+    "payment_method": "Girocard",
+    "items_count": 2,
+    "receipt_total": 12.81,
+    "tax_block": {
+      "B": {"rate": "7%", "netto": 11.97, "mwst": 0.84, "brutto": 12.81}
+    }
+  },
+  "items": [
+    {"raw_name": "WSH HIT Klassik", "sku": "(568)", "quantity": 2, "unit_price": 5.66, "total_price": 11.32, "tax_class": "B", "category": "THEKE/SB HF", "is_discount": true, "discount_label": "*** Discount Preis ***"},
+    {"raw_name": "Coraya Surimi", "sku": "(762)", "total_price": 1.49, "tax_class": "B", "category": "GEKÜHLTE LEBENSMITTEL", "is_fresh": true}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME[2]",
+    "items_sum": 12.81,
+    "expected_total": 12.81,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "2x 5,66 € format for qty",
+    "Categories: THEKE/SB HF, GEKÜHLTE LEBENSMITTEL",
+    "Only tax B = 7% (food products)"
+  ]
+}
+

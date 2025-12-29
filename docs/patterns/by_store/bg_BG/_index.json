@@ -1,0 +1,26 @@
+{
+  "locale": "bg_BG",
+  "country": "Bulgaria",
+  "language": "Bulgarian",
+  "currency": "BGN",
+  
+  "stores": {
+    "billa": {"file": "billa.json", "receipts": 1, "type": "Supermarket"}
+  },
+  
+  "total_receipts": 1,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ".", "thousands": " "},
+    "script": "Cyrillic",
+    "tax_class": "Cyrillic with asterisk (*Б)",
+    "dual_currency": ["BGN", "EUR"]
+  },
+  
+  "critical_warnings": [
+    "Decimal separator: DOT (.) - different from most EU",
+    "Tax class: Cyrillic with asterisk (*Б)",
+    "Dual currency display: BGN + EUR",
+    "ОТСТ. = discount keyword (Bulgarian)"
+  ]
+}

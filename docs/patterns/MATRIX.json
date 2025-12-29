@@ -1,0 +1,134 @@
+{
+  "$schema": "Aggregated patterns across all locales and stores",
+  "version": "2.0",
+  "last_updated": "2025-12-27",
+  "total_receipts_analyzed": 58,
+  "total_locales": 10,
+  "total_stores": 20,
+
+  "locales": {
+    "de_DE": {"receipts": 40, "stores": 11, "index": "by_store/de_DE/_index.json"},
+    "pl_PL": {"receipts": 8, "stores": 4, "index": "by_store/pl_PL/_index.json"},
+    "es_ES": {"receipts": 2, "stores": 1, "index": "by_store/es_ES/_index.json"},
+    "pt_PT": {"receipts": 2, "stores": 2, "index": "by_store/pt_PT/_index.json"},
+    "th_TH": {"receipts": 1, "stores": 1, "index": "by_store/th_TH/_index.json"},
+    "uk_UA": {"receipts": 1, "stores": 1, "index": "by_store/uk_UA/_index.json"},
+    "cs_CZ": {"receipts": 1, "stores": 1, "index": "by_store/cs_CZ/_index.json"},
+    "bg_BG": {"receipts": 1, "stores": 1, "index": "by_store/bg_BG/_index.json"},
+    "tr_TR": {"receipts": 1, "stores": 1, "index": "by_store/tr_TR/_index.json"},
+    "en_IN": {"receipts": 1, "stores": 1, "index": "by_store/en_IN/_index.json"}
+  },
+
+  "global_patterns": {
+    "decimal_separators": {
+      "comma": ["de_DE", "pl_PL", "es_ES", "pt_PT", "uk_UA", "cs_CZ", "tr_TR"],
+      "dot": ["th_TH", "bg_BG", "en_IN"],
+      "mixed_in_locale": ["de_DE (CenterShop)", "pl_PL (Orlen)"],
+      "WARNING": "Cannot assume decimal separator by locale alone!"
+    },
+
+    "tax_class_formats": {
+      "single_letter": ["A", "B", "C", "F", "M"],
+      "numeric": ["1", "§1"],
+      "cyrillic": ["Я", "*Б"],
+      "with_modifiers": ["+A", "+B", "AW"],
+      "percentage": ["%10", "%18", "19%", "7%"],
+      "prefix_in_name": ["A_", "C_"],
+      "none_shown": ["es_ES"],
+      "WARNING": "tax_class MUST be Optional[str] - too many variations!"
+    },
+
+    "tax_class_inversion": {
+      "standard": {"A": "reduced", "B": "standard"},
+      "inverted": {"stores": ["hit", "penny"], "meaning": {"A": "standard", "B": "reduced"}},
+      "WARNING": "Do NOT interpret tax class percentage - just pass as string!"
+    },
+
+    "quantity_position": {
+      "after_name": ["de_DE", "pl_PL", "es_ES", "pt_PT"],
+      "start_of_line": ["th_TH"],
+      "WARNING": "Thailand has quantity at START of line!"
+    },
+
+    "unit_price_markers": {
+      "x": ["de_DE", "es_ES", "pt_PT"],
+      "@": ["th_TH"],
+      "*": ["pl_PL (Carrefour)"]
+    },
+
+    "multiline_items": {
+      "present_in": ["uk_UA", "cs_CZ"],
+      "lines_per_item": {"uk_UA": 2, "cs_CZ": 3},
+      "WARNING": "Parser must handle multiline items!"
+    },
+
+    "calendar_systems": {
+      "gregorian": "all except th_TH",
+      "buddhist": "th_TH",
+      "offset": 543,
+      "WARNING": "Thailand uses Buddhist calendar (year - 543)!"
+    },
+
+    "categories_on_receipt": {
+      "present_in": ["de_DE (HIT)", "pt_PT (Continente)"],
+      "useful_for": "Pre-categorization before Domain 3"
+    },
+
+    "sku_presence": {
+      "present": ["aldi", "hit", "shell", "baeckerei", "hornbach", "nybc"],
+      "formats": ["numeric", "EAN-13", "(xxx)", "#xxx", "alphanumeric"],
+      "absent": ["lidl", "dm", "edeka", "penny", "netto", "consum"]
+    },
+
+    "discount_formats": {
+      "separate_line_negative": ["de_DE", "uk_UA"],
+      "inline_marker": ["de_DE (HIT)"],
+      "separate_block": ["th_TH"],
+      "prefix_in_name": ["pl_PL"],
+      "keywords": {
+        "de_DE": ["Preisvorteil", "RABATT", "Rabatt", "Rabattaktion"],
+        "pl_PL": ["Anulowano sprzedaż"],
+        "pt_PT": ["POUPANCA"],
+        "bg_BG": ["ОТСТ.", "ОТСТЪПКА"]
+      }
+    },
+
+    "pfand_system": {
+      "present_in": ["de_DE"],
+      "absent_in": ["pt_PT", "es_ES", "th_TH", "uk_UA", "cs_CZ", "bg_BG", "tr_TR", "en_IN"],
+      "note": "German-specific bottle deposit system"
+    },
+
+    "tax_systems": {
+      "MwSt": ["de_DE"],
+      "IVA": ["es_ES", "pt_PT"],
+      "DPH": ["cs_CZ"],
+      "KDV": ["tr_TR"],
+      "GST": ["en_IN"],
+      "VAT_included": ["th_TH", "bg_BG"]
+    }
+  },
+
+  "dto_implications": {
+    "raw_name": "REQUIRED - exact string from receipt",
+    "total_price": "REQUIRED - final price for line",
+    "quantity": "OPTIONAL - not always shown",
+    "unit_price": "OPTIONAL - not always shown",
+    "tax_class": "OPTIONAL, str - too many format variations",
+    "sku": "OPTIONAL - varies by store",
+    "unit": "OPTIONAL - varies (шт, Kus, kg, etc.)",
+    "category": "OPTIONAL - only HIT and Continente have it",
+    "is_discount": "REQUIRED - bool",
+    "raw_line": "RECOMMENDED - for debugging"
+  },
+
+  "critical_parsing_rules": [
+    "1. Do NOT assume decimal separator by locale - check per store",
+    "2. Do NOT interpret tax class percentage - pass as string",
+    "3. Handle multiline items (uk_UA, cs_CZ)",
+    "4. Handle quantity at line start (th_TH)",
+    "5. Convert Buddhist calendar dates (th_TH)",
+    "6. Handle rounding adjustments (cs_CZ - Zaokrouhlení)",
+    "7. Tax class A/B can be INVERTED (hit, penny)"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "048",
+  "source_file": "photo/GOODS/Lidl/IMG_3017.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl Overath-Vilkerath",
+    "address": "Steinhauser Auel 1, 51491 Overath-Vilkerath"
+  },
+  "metadata": {
+    "date": "2025-12-06",
+    "time": "~12:00",
+    "receipt_total": 179.24,
+    "currency": "EUR",
+    "payment_method": "Karte",
+    "tax_block": {
+      "A_7%": {"netto": 158.43, "mwst": 11.09, "brutto": 169.52},
+      "B_19%": {"netto": 8.17, "mwst": 1.55, "brutto": 9.72},
+      "total": {"netto": 166.60, "mwst": 12.64, "brutto": 179.24}
+    },
+    "savings": 1.60
+  },
+  "items": [
+    {"raw_name": "Lachsseite", "qty": 1, "unit_price": 20.52, "total_price": 20.52, "tax_class": "A", "weight_kg": 5.19, "price_per_kg": 14.99},
+    {"raw_name": "Dattelcherrytomaten", "qty": 12, "unit_price": 1.39, "total_price": 16.68, "tax_class": "A"},
+    {"raw_name": "Bio Avocado 2Stück", "qty": 2, "unit_price": 0.97, "total_price": 1.94, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.08, "total_price": -0.08, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Knoblauch", "qty": 2, "unit_price": 0.88, "total_price": 1.76, "tax_class": "A"},
+    {"raw_name": "Dill", "qty": 2, "unit_price": 1.59, "total_price": 3.18, "tax_class": "A"},
+    {"raw_name": "Bioland Zwiebeln", "qty": 2, "unit_price": 1.29, "total_price": 2.58, "tax_class": "A"},
+    {"raw_name": "Saure Sahne 10%", "qty": 4, "unit_price": 0.69, "total_price": 2.76, "tax_class": "A"},
+    {"raw_name": "Saure Fam Sahnige", "qty": 4, "unit_price": 1.69, "total_price": 6.76, "tax_class": "A"},
+    {"raw_name": "Frischkäse Sahnige", "qty": 2, "unit_price": 1.69, "total_price": 3.38, "tax_class": "A"},
+    {"raw_name": "Butterkäse [OGT]", "qty": 2, "unit_price": 2.99, "total_price": 5.98, "tax_class": "A"},
+    {"raw_name": "Tilsiter Scheiben", "qty": 2, "unit_price": 2.99, "total_price": 5.98, "tax_class": "A"},
+    {"raw_name": "Edamer Scheiben", "qty": 2, "unit_price": 2.99, "total_price": 5.98, "tax_class": "A"},
+    {"raw_name": "Edelat geschnit.", "qty": 2, "unit_price": 2.99, "total_price": 5.98, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.90, "total_price": -0.90, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Streichbare Sahne", "qty": 2, "unit_price": 0.99, "total_price": 1.98, "tax_class": "A"},
+    {"raw_name": "Haltbare Sahne", "qty": 9, "unit_price": 0.99, "total_price": 8.91, "tax_class": "A"},
+    {"raw_name": "Rabattaktion", "qty": 1, "unit_price": -3.96, "total_price": -3.96, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Schmand", "qty": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "A"},
+    {"raw_name": "Eier Freiland. XXL", "qty": 4, "unit_price": 3.99, "total_price": 15.96, "tax_class": "A"},
+    {"raw_name": "Rabattaktion", "qty": 1, "unit_price": -0.40, "total_price": -0.40, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Paprika edelsüß", "qty": 1, "unit_price": 0.85, "total_price": 0.85, "tax_class": "A"},
+    {"raw_name": "Oro d.P stick Tomate", "qty": 4, "unit_price": 1.99, "total_price": 7.96, "tax_class": "A"},
+    {"raw_name": "Bio Passierte Tomat.", "qty": 2, "unit_price": 0.69, "total_price": 1.38, "tax_class": "A"},
+    {"raw_name": "Wasser still", "qty": 18, "unit_price": 0.29, "total_price": 5.22, "tax_class": "B"},
+    {"raw_name": "Pfand 0,25 EM", "qty": 18, "unit_price": 0.25, "total_price": 4.50, "tax_class": "B"},
+    {"raw_name": "Farmer Cookies Hazel", "qty": 2, "unit_price": 0.99, "total_price": 1.98, "tax_class": "A"},
+    {"raw_name": "Hamburger Brötchen", "qty": 2, "unit_price": 0.99, "total_price": 1.98, "tax_class": "A"},
+    {"raw_name": "Megaburger/Hamburger", "qty": 2, "unit_price": 1.09, "total_price": 2.18, "tax_class": "A"},
+    {"raw_name": "Weizen Sandwi. Toast", "qty": 2, "unit_price": 0.99, "total_price": 1.98, "tax_class": "A"},
+    {"raw_name": "Milchbrötchen", "qty": 2, "unit_price": 1.09, "total_price": 2.18, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.10, "total_price": -0.10, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Farmer Cookie White", "qty": 2, "unit_price": 1.79, "total_price": 3.58, "tax_class": "A"},
+    {"raw_name": "Farmer Cookie Triple", "qty": 2, "unit_price": 1.79, "total_price": 3.58, "tax_class": "A"},
+    {"raw_name": "Schinkengulasch", "qty": 2, "unit_price": 5.79, "total_price": 11.58, "tax_class": "A"},
+    {"raw_name": "Minutensteaks", "qty": 2, "unit_price": 5.59, "total_price": 11.18, "tax_class": "A"},
+    {"raw_name": "Hackfleisch gemischt", "qty": 2, "unit_price": 5.99, "total_price": 11.98, "tax_class": "A"},
+    {"raw_name": "Hamburger v. Rind", "qty": 1, "unit_price": 10.99, "total_price": 10.99, "tax_class": "A"},
+    {"raw_name": "Hähnchenbrustfilet", "qty": 1, "unit_price": 9.99, "total_price": 9.99, "tax_class": "A"}
+  ],
+  "validation": {
+    "items_sum": 179.24,
+    "expected_total": 179.24,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Самый крупный чек - 179.24 EUR",
+    "Горизонтальное фото (повернут на 90°)",
+    "Лосось по весу: 5.19 kg x 14.99 EUR/kg",
+    "Много мяса, молочки, овощей"
+  ]
+}
+

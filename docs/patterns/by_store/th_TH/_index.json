@@ -1,0 +1,28 @@
+{
+  "locale": "th_TH",
+  "country": "Thailand",
+  "language": "Thai",
+  "currency": "THB",
+  
+  "stores": {
+    "7-eleven": {"file": "7-eleven.json", "receipts": 1, "type": "Convenience"}
+  },
+  
+  "total_receipts": 1,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ".", "thousands": ","},
+    "script": "Thai",
+    "calendar": "Buddhist",
+    "calendar_offset": 543,
+    "quantity_position": "start_of_line"
+  },
+  
+  "critical_warnings": [
+    "CRITICAL: Buddhist calendar year (year - 543 = Gregorian)",
+    "CRITICAL: Quantity at START of line, not end",
+    "Unit price marker: @ (not x)",
+    "Discounts in separate block, not inline",
+    "All text in Thai script"
+  ]
+}

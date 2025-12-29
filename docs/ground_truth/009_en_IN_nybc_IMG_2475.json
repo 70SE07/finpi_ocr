@@ -1,0 +1,50 @@
+{
+  "id": "009",
+  "source_file": "photo/Mumbai/IMG_2475.jpeg",
+  "locale": "en_IN",
+  "store": {
+    "name": "NEW YORK BURRITO COMPANY",
+    "address": "14A, Plot no-89, 14th Floor, Cumballa H, Mumbai International Airport",
+    "pin": "400026",
+    "city": "Mumbai, Maharashtra, India",
+    "gstin": "27AAPFN0717N1ZT"
+  },
+  "metadata": {
+    "date": "30-09-2025",
+    "time": "07:08",
+    "currency": "INR",
+    "payment_method": "Card",
+    "receipt_number": "NYBC02P122120969",
+    "employee": "Vitesh Pawar",
+    "receipt_total": 450.00,
+    "subtotal": 428.57,
+    "total_tax": 21.42
+  },
+  "items": [
+    {"raw_name": "Tex Mex Veg Bowl (M), Regular", "sku": "NYB023", "quantity": 1.00, "unit_price": 450.00, "total_price": 450.00}
+  ],
+  "tax_summary": {
+    "taxable_value": 428.57,
+    "cgst": {"rate": 2.50, "amount": 10.71},
+    "sgst": {"rate": 2.50, "amount": 10.71},
+    "total_gst": 21.42
+  },
+  "validation": {
+    "checksum_method": "Subtotal + GST == Total",
+    "subtotal": 428.57,
+    "gst": 21.42,
+    "calculated_total": 449.99,
+    "expected_total": 450.00,
+    "discrepancy": 0.01,
+    "note": "GST rounding - allowed 0.01 tolerance"
+  },
+  "notes": [
+    "English language (en_IN)",
+    "GSTIN format: 27AAPFN0717N1ZT",
+    "GST system: CGST + SGST = 5% total",
+    "Tax Summary table on receipt",
+    "Tabular format: ITEM NAME QTY PRICE Total",
+    "SKU code: NYB023"
+  ]
+}
+

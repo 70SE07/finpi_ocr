@@ -1,0 +1,93 @@
+{
+  "store": {
+    "brand": "Continente",
+    "type": "Hypermarket",
+    "locale": "pt_PT"
+  },
+  
+  "sources": {
+    "receipt_ids": ["004"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "letter",
+      "values": ["A"],
+      "meaning": {
+        "A": {"rate": "6%", "description": "Reduced IVA for food"}
+      }
+    },
+    
+    "item_line": {
+      "format": "name qty kg x price total tax",
+      "examples": [
+        "DIOSPIRO 2,200 kg x 3,99 8,78 A"
+      ]
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": true,
+      "WARNING": "UNIQUE - categories on receipt!",
+      "values": ["Frutas e Legumes"],
+      "note": "Like HIT in Germany, shows product categories"
+    },
+    
+    "weighted_items": {
+      "present": true,
+      "format": "qty kg x price"
+    },
+    
+    "discounts": {
+      "keywords": ["POUPANCA"],
+      "format": "separate_line",
+      "note": "POUPANCA = savings/discount in Portuguese"
+    },
+    
+    "date_format": {
+      "format": "YYYY-MM-DD"
+    },
+    
+    "payment_methods": {
+      "observed": ["Cartão"]
+    },
+    
+    "tax_block": {
+      "present": true,
+      "format": {
+        "A": {"rate": "6%", "total_liq": "float", "iva": "float", "total": "float"}
+      },
+      "system": "IVA"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "Categories on receipt",
+      "description": "Frutas e Legumes category shown",
+      "implication": "Useful for pre-categorization (like HIT)"
+    }
+  ],
+
+  "notes": [
+    "UNIQUE: Categories on receipt (like HIT in Germany)",
+    "POUPANCA = discount keyword",
+    "IVA 6% for food (lower than Germany)",
+    "Portuguese hypermarket chain"
+  ]
+}

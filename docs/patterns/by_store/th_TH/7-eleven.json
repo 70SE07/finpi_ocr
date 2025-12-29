@@ -1,0 +1,131 @@
+{
+  "store": {
+    "brand": "7-Eleven",
+    "type": "Convenience store",
+    "locale": "th_TH"
+  },
+  
+  "sources": {
+    "receipt_ids": ["002"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "สาขาถนนศรีสุข ซ.1", "city": "ขอนแก่น", "receipts": ["002"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ".",
+      "thousands_separator": ",",
+      "example": "758.25"
+    },
+    
+    "tax_class": {
+      "format": "none",
+      "note": "VAT included, no tax class shown per item"
+    },
+    
+    "item_line": {
+      "format": "qty name [@ unit_price] total",
+      "examples": [
+        "3 ผัดมักกะโรนีไก่ @ 37.00 111.00",
+        "1 ข้าวผัดปู 45.00"
+      ],
+      "quantity_position": "start_of_line",
+      "unit_price_marker": "@",
+      "WARNING": "Quantity at START of line, not end!"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "format": "separate_block",
+      "keywords": ["ส่วนลดโปร", "ส่วนลดสมาชิก"],
+      "examples": [
+        "ส่วนลดโปร -15.00",
+        "ส่วนลดสมาชิก -10.00"
+      ],
+      "position": "after_items_before_total",
+      "note": "Discounts in separate block, NOT after each item"
+    },
+    
+    "weighted_items": {
+      "present": false,
+      "note": "No weighted items in convenience store"
+    },
+    
+    "calendar": {
+      "system": "Buddhist",
+      "offset": 543,
+      "example": "26/10/2568 = 26/10/2025 Gregorian",
+      "WARNING": "Must convert year: Buddhist - 543 = Gregorian"
+    },
+    
+    "date_format": {
+      "format": "DD/MM/YYYY",
+      "example": "26/10/2568",
+      "note": "Buddhist calendar year!"
+    },
+    
+    "payment_methods": {
+      "observed": ["เงินสด"],
+      "translation": {"เงินสด": "Cash"}
+    },
+    
+    "receipt_total": {
+      "keywords": ["รวม", "ยอดชำระ"],
+      "translation": {"รวม": "Total", "ยอดชำระ": "Amount to pay"}
+    },
+    
+    "language": {
+      "script": "Thai",
+      "example_items": ["ผัดมักกะโรนีไก่", "ข้าวผัดปู", "น้ำดื่ม"],
+      "note": "All item names in Thai script"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "subtotal - discounts == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "critical_differences": {
+    "quantity_position": {
+      "WARNING": "CRITICAL",
+      "description": "Quantity at START of line, not end",
+      "comparison": {
+        "Thailand": "3 ผัดมักกะโรนีไก่",
+        "Germany": "ผัดมักกะโรนีไก่ x 3"
+      }
+    },
+    "calendar_system": {
+      "WARNING": "CRITICAL",
+      "description": "Buddhist calendar (year + 543)",
+      "conversion": "2568 - 543 = 2025"
+    },
+    "unit_price_marker": {
+      "description": "@ instead of x",
+      "example": "3 @ 37.00"
+    },
+    "discount_format": {
+      "description": "Separate block, not inline",
+      "note": "Discounts grouped together, not after each item"
+    }
+  },
+
+  "notes": [
+    "CRITICAL: Quantity at START of line",
+    "CRITICAL: Buddhist calendar (year - 543 for Gregorian)",
+    "Unit price marker: @ (not x)",
+    "Discounts in separate block",
+    "All text in Thai script",
+    "VAT included, no tax class per item"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "024",
+  "source_file": "photo/GOODS/CentrShop/IMG_1400.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "CENTERSHOP Korn Vertriebs GmbH & Co.KG",
+    "address": "Olper Str. 107-117, 51491 Overath",
+    "type": "Non-food store"
+  },
+  "metadata": {
+    "date": "07.08.25",
+    "time": "11:47",
+    "currency": "EUR",
+    "decimal_separator": ".",
+    "payment_method": "EC / SEPA Lastschrift",
+    "register": "2",
+    "receipt_total": 16.70,
+    "tax_block": {
+      "19%": {"netto": 14.03, "mwst": 2.67, "brutto": 16.70}
+    }
+  },
+  "items": [
+    {"raw_name": "Energy Drink 250ml", "sku": "90162565", "quantity": 1, "total_price": 1.99},
+    {"raw_name": "Pfand 25 Cent", "sku": "4047834300063", "quantity": 1, "total_price": 0.25, "is_pfand": true, "note": "*0.25"},
+    {"raw_name": "20Stk Poliboy Stau", "sku": "4016100252016", "quantity": 1, "total_price": 3.49},
+    {"raw_name": "3-fach Schuko-Tisc", "sku": "4250040934728", "quantity": 1, "total_price": 5.99},
+    {"raw_name": "Lebensmittelkorb K", "sku": "8694064015906", "quantity": 1, "total_price": 2.49},
+    {"raw_name": "Lebensmittelkorb K", "sku": "8694064015906", "quantity": 1, "total_price": 2.49}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == Kaufsumme",
+    "items_sum": 16.70,
+    "expected_total": 16.70,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "CRITICAL: DOT as decimal separator (16.70)!",
+    "EAN-13 codes as SKU",
+    "Pfand marked with *",
+    "Only 19% MwSt (non-food)",
+    "Rare format in Germany"
+  ]
+}
+

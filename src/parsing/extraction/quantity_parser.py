@@ -49,3 +49,4 @@ class QuantityParser:
         return Decimal(val.replace(',', '.'))
 
 
+

@@ -1,0 +1,151 @@
+{
+  "store": {
+    "brand": "Hornbach",
+    "type": "Hardware store / DIY",
+    "locale": "cs_CZ"
+  },
+  
+  "sources": {
+    "receipt_ids": ["006"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "Praha 9", "address": "Chlumecká 2398, 198 00", "receipts": ["006"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": " ",
+      "example": "1 135,78"
+    },
+    
+    "tax_class": {
+      "format": "numeric",
+      "values": ["1"],
+      "meaning": {
+        "1": {"rate": "21%", "description": "Standard DPH (VAT)"}
+      },
+      "note": "Numeric tax class like German dm"
+    },
+    
+    "item_line": {
+      "format": "multiline",
+      "structure": [
+        "Line 1: Art/Ean code",
+        "Line 2: name",
+        "Line 3: qty unit x price = total tax"
+      ],
+      "example": [
+        "4013307334026",
+        "Rouno zakrývací 1x 3",
+        "1 Kus x 95,00 = 95,00 1"
+      ],
+      "WARNING": "3-line format per item!"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "EAN-13 or short code",
+      "position": "line_before_name",
+      "examples": ["4013307334026", "7144934"]
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "weighted_items": {
+      "present": true,
+      "format": "qty kg x price",
+      "example": "0,020 kg x 613,00 = 12,26 1"
+    },
+    
+    "unit": {
+      "values": ["Kus", "Pár", "kg", "Jedvyk"],
+      "translation": {
+        "Kus": "piece",
+        "Pár": "pair",
+        "Jedvyk": "service unit"
+      }
+    },
+    
+    "rounding": {
+      "present": true,
+      "keyword": "Zaokrouhlení",
+      "description": "CZK rounded to whole number",
+      "example": "Zaokrouhlení: +0,22",
+      "note": "Total rounded to whole CZK"
+    },
+    
+    "date_format": {
+      "format": "YYYY-MM-DD",
+      "example": "2025-12-26"
+    },
+    
+    "payment_methods": {
+      "observed": ["Hotovost"],
+      "translation": {"Hotovost": "Cash"}
+    },
+    
+    "tax_block": {
+      "present": true,
+      "format": {
+        "1": {"rate": "21%", "brutto": "float", "dph": "float", "netto": "float"}
+      },
+      "keyword": "DPH",
+      "note": "DPH = Czech VAT"
+    },
+    
+    "receipt_total": {
+      "keywords": ["K zaplacení", "SOUČET"],
+      "note": "K zaplacení = amount to pay (after rounding)"
+    },
+    
+    "legal_info": {
+      "dic": "CZ47117559"
+    },
+    
+    "language": {
+      "script": "Latin with diacritics",
+      "characters": ["č", "ř", "ž", "š", "ě", "ý", "á", "í", "ú"]
+    },
+    
+    "receipt_issue": {
+      "WARNING": "PROBLEMATIC",
+      "description": "No store header on receipt",
+      "note": "Store identified by indirect signs (DIC, address)"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items) == SOUČET, SOUČET + Zaokrouhlení == K zaplacení",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "critical_differences": {
+    "multiline_items": {
+      "WARNING": "CRITICAL",
+      "description": "3-line format per item (EAN, name, qty/price)"
+    },
+    "rounding": {
+      "WARNING": "CRITICAL",
+      "description": "Zaokrouhlení - receipt total rounded to whole CZK",
+      "tolerance": "up to 0.49 CZK"
+    },
+    "problematic_receipt": {
+      "description": "No header - store identified indirectly"
+    }
+  },
+
+  "notes": [
+    "CRITICAL: 3-line format per item",
+    "CRITICAL: Zaokrouhlení (rounding to whole CZK)",
+    "PROBLEMATIC: No store header",
+    "Numeric tax class (1) like dm",
+    "EAN/SKU on separate line before item",
+    "Czech language with diacritics",
+    "DIY/hardware store"
+  ]
+}

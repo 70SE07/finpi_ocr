@@ -1,0 +1,28 @@
+{
+  "locale": "pt_PT",
+  "country": "Portugal",
+  "language": "Portuguese",
+  "currency": "EUR",
+  
+  "stores": {
+    "lidl": {"file": "lidl.json", "receipts": 1, "type": "Discount"},
+    "continente": {"file": "continente.json", "receipts": 1, "type": "Hypermarket"}
+  },
+  
+  "total_receipts": 2,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ",", "thousands": "."},
+    "tax_system": "IVA",
+    "tax_rates": ["6%", "13%", "23%"],
+    "document_type": "FATURA SIMPLIFICADA",
+    "payment_system": "MULTIBANCO"
+  },
+  
+  "unique_features": [
+    "Continente has CATEGORIES on receipt (like HIT in Germany)",
+    "FATURA SIMPLIFICADA = legal document type",
+    "MULTIBANCO = Portuguese payment network",
+    "POUPANCA = savings/discount keyword"
+  ]
+}

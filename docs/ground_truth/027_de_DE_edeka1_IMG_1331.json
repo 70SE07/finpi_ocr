@@ -1,0 +1,39 @@
+{
+  "id": "027",
+  "source_file": "photo/GOODS/Edeka/IMG_1331.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "EDEKA Felbecker",
+    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden",
+    "phone": "02206 / 912784",
+    "website": "www.edeka.de",
+    "steuernummer": "204/5085/2941"
+  },
+  "metadata": {
+    "date": "06.08.2025",
+    "time": "19:26:49",
+    "currency": "EUR",
+    "payment_method": "EC-Cash",
+    "posten": 2,
+    "receipt_total": 16.12,
+    "tax_block": {
+      "A": {"rate": "7%", "netto": 15.07, "mwst": 1.05, "umsatz": 16.12}
+    }
+  },
+  "items": [
+    {"raw_name": "Beleg Frischfleisch + Geflüg", "quantity": 1, "total_price": 13.23},
+    {"raw_name": "Leerdamm.Delacreme", "quantity": 1, "total_price": 2.89, "tax_class": "A"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "items_sum": 16.12,
+    "expected_total": 16.12,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Posten: 2 - number of items",
+    "SUMME € format",
+    "All items tax A = 7%"
+  ]
+}
+

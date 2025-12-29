@@ -1,0 +1,37 @@
+{
+  "id": "039",
+  "source_file": "photo/GOODS/Lidl/IMG_1761.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl Overath-Vilkerath",
+    "address": "Steinhauser Auel 1, 51491 Overath-Vilkerath"
+  },
+  "metadata": {
+    "date": "2025-09-11",
+    "time": "17:43",
+    "receipt_total": 25.87,
+    "currency": "EUR",
+    "payment_method": "Karte (girocard)",
+    "tax_block": {
+      "A_7%": {"netto": 24.18, "mwst": 1.69, "brutto": 25.87},
+      "total": {"netto": 24.18, "mwst": 1.69, "brutto": 25.87}
+    }
+  },
+  "items": [
+    {"raw_name": "Meistersteaks BBQ", "qty": 2, "unit_price": 4.95, "total_price": 9.90, "tax_class": "A"},
+    {"raw_name": "Hähnchenflügel Diav.", "qty": 1, "unit_price": 5.99, "total_price": 5.99, "tax_class": "A"},
+    {"raw_name": "QSHähn.Grill-&Ofenp.", "qty": 2, "unit_price": 4.99, "total_price": 9.98, "tax_class": "A"}
+  ],
+  "validation": {
+    "items_sum": 25.87,
+    "expected_total": 25.87,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Только мясо/гриль товары",
+    "Короткий чек - 3 позиции",
+    "Только категория A (7%)"
+  ]
+}
+

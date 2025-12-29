@@ -1,0 +1,56 @@
+{
+  "id": "052",
+  "source_file": "photo/GOODS/Lidl/pfandruckgabe_001.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl Overath-Vilkerath",
+    "address": "Steinhauser Auel 1, 51491 Overath-Vilkerath"
+  },
+  "metadata": {
+    "date": "2025-06-13",
+    "time": "13:02",
+    "receipt_total": 13.48,
+    "currency": "EUR",
+    "payment_method": "Karte (girocard)",
+    "tax_block": {
+      "A_7%": {"netto": 34.09, "mwst": 2.39, "brutto": 36.48},
+      "B_19%": {"netto": -19.33, "mwst": -3.67, "brutto": -23.00},
+      "total": {"netto": 14.76, "mwst": -1.28, "brutto": 13.48}
+    },
+    "savings": 1.17
+  },
+  "items": [
+    {"raw_name": "Erdbeeren kg", "qty": 1, "unit_price": 3.20, "total_price": 3.20, "tax_class": "A", "weight_kg": 0.698, "price_per_kg": 4.58},
+    {"raw_name": "WassereisWass.melone", "qty": 1, "unit_price": 2.39, "total_price": 2.39, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.40, "total_price": -0.40, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Magnum Classic", "qty": 1, "unit_price": 3.99, "total_price": 3.99, "tax_class": "A"},
+    {"raw_name": "Dovgan Fam.33% Fett", "qty": 2, "unit_price": 2.29, "total_price": 4.58, "tax_class": "A"},
+    {"raw_name": "Dovgan Fam.2,5% Fett", "qty": 2, "unit_price": 2.29, "total_price": 4.58, "tax_class": "A"},
+    {"raw_name": "Gouda in ScheibenXXL", "qty": 1, "unit_price": 4.29, "total_price": 4.29, "tax_class": "A"},
+    {"raw_name": "Schmand", "qty": 3, "unit_price": 0.89, "total_price": 2.67, "tax_class": "A"},
+    {"raw_name": "Rabattaktion", "qty": 1, "unit_price": -0.27, "total_price": -0.27, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Eier Freiland. XXL", "qty": 1, "unit_price": 3.99, "total_price": 3.99, "tax_class": "A"},
+    {"raw_name": "Schmelzkäse Toast", "qty": 1, "unit_price": 1.99, "total_price": 1.99, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.20, "total_price": -0.20, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Schmelzkäse Cheddary", "qty": 1, "unit_price": 1.99, "total_price": 1.99, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.20, "total_price": -0.20, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Croissant Cremefüll.", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
+    {"raw_name": "Rosinenstuten", "qty": 1, "unit_price": 1.49, "total_price": 1.49, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.10, "total_price": -0.10, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Pfandrückgabe", "qty": 92, "unit_price": -0.25, "total_price": -23.00, "tax_class": "B"},
+    {"raw_name": "Pfandrückgabe", "qty": 2, "unit_price": -0.25, "total_price": -0.50, "tax_class": "A"}
+  ],
+  "validation": {
+    "items_sum": 13.48,
+    "expected_total": 13.48,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "ВАЖНО: Большой возврат тары (Pfandrückgabe)",
+    "92 x 0.25 EUR = -23.00 EUR возврат",
+    "2 x 0.25 EUR = -0.50 EUR возврат",
+    "Отрицательный налог B из-за возврата тары"
+  ]
+}
+

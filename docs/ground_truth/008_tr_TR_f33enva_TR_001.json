@@ -1,0 +1,50 @@
+{
+  "id": "008",
+  "source_file": "data/input/TR_001.jpeg",
+  "locale": "tr_TR",
+  "store": {
+    "name": "F33 ENVA",
+    "company": "AKINCI RESTORAN İŞLETMECİLİĞİ GİDA SANAYİ TİCARET ANONİM ŞİRKETİ",
+    "address": "TAYAKADIN MH. TERMİNAL CD., HAVALİMANI TERMİNAL BİNASI NO:1, ARNAVUTKÖY/İSTANBUL",
+    "vd": "Küçükköy V.D 0270562743",
+    "type": "Restaurant (Airport)"
+  },
+  "metadata": {
+    "date": "13/10/2025",
+    "time": "13:43:08",
+    "currency": "TRY",
+    "currency_symbol": "TL",
+    "payment_method": "KREDİ (Card)",
+    "payment_bank": "ZIRAATBANK",
+    "card_last4": "9474",
+    "receipt_number": "0290",
+    "receipt_total": 85.00,
+    "kdv_total": 7.73
+  },
+  "items": [
+    {"raw_name": "Su 0,5 ml", "quantity": 1, "unit_price": null, "total_price": 85.00, "tax_rate": 10}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == TOPLAM",
+    "items_sum": 85.00,
+    "expected_total": 85.00,
+    "kdv_check": {
+      "base": 77.27,
+      "kdv_10_percent": 7.73,
+      "total": 85.00,
+      "match": true
+    },
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Simple receipt - only 1 item",
+    "Price with asterisk prefix *85,00",
+    "Tax rate in line %10",
+    "TOPKDV = total KDV (VAT)",
+    "TOPLAM = total",
+    "KREDİ = card payment",
+    "Turkish special characters: İ, Ş, Ü, Ö, Ç, Ğ",
+    "Double receipt (store + terminal)"
+  ]
+}
+

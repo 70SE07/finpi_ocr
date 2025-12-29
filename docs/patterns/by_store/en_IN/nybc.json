@@ -1,0 +1,129 @@
+{
+  "store": {
+    "brand": "New York Burrito Company (NYBC)",
+    "type": "Restaurant (Fast food)",
+    "locale": "en_IN"
+  },
+  
+  "sources": {
+    "receipt_ids": ["009"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "Mumbai Airport", "address": "14A, Plot no-89, 14th Floor, Cumballa H, Mumbai International Airport", "city": "Mumbai, Maharashtra", "pin": "400026", "receipts": ["009"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ".",
+      "thousands_separator": ",",
+      "example": "450.00"
+    },
+    
+    "tax_class": {
+      "format": "gst_table",
+      "system": "GST (Goods and Services Tax)",
+      "components": {
+        "CGST": {"description": "Central GST", "rate": "2.5%"},
+        "SGST": {"description": "State GST", "rate": "2.5%"}
+      },
+      "total_gst": "5%",
+      "note": "GST split into Central and State components"
+    },
+    
+    "item_line": {
+      "format": "tabular",
+      "columns": ["ITEM NAME", "QTY", "PRICE", "Total"],
+      "example": "Tex Mex Veg Bowl (M), Regular | 1.00 | 450.00 | 450.00"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "alphanumeric",
+      "example": "NYB023"
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "format": "not_observed"
+    },
+    
+    "weighted_items": {
+      "present": false
+    },
+    
+    "tax_summary": {
+      "present": true,
+      "format": "table",
+      "columns": ["Description", "Taxable Value", "Rate", "CGST", "SGST", "Total Tax"],
+      "note": "Detailed tax breakdown table"
+    },
+    
+    "date_format": {
+      "format": "DD-MM-YYYY",
+      "example": "30-09-2025"
+    },
+    
+    "payment_methods": {
+      "observed": ["Card"]
+    },
+    
+    "receipt_total": {
+      "keywords": ["Total", "Grand Total"],
+      "note": "Subtotal + GST = Total"
+    },
+    
+    "language": {
+      "script": "Latin",
+      "language": "English",
+      "note": "English language receipt"
+    },
+    
+    "legal_info": {
+      "gstin": "27AAPFN0717N1ZT",
+      "note": "GSTIN format: 2-digit state code + 10-char PAN + 1 entity + 1 check"
+    },
+    
+    "employee_info": {
+      "present": true,
+      "example": "Vitesh Pawar"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "Subtotal + GST == Total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.01,
+    "note": "0.01 tolerance for GST rounding"
+  },
+
+  "critical_differences": {
+    "gst_system": {
+      "WARNING": "CRITICAL",
+      "description": "GST split into CGST + SGST",
+      "calculation": "Total GST = CGST + SGST",
+      "example": "CGST 2.5% + SGST 2.5% = 5% total"
+    },
+    "tax_summary_table": {
+      "description": "Detailed tax breakdown as table",
+      "note": "Different from European receipts"
+    },
+    "tabular_format": {
+      "description": "Items in tabular format with columns",
+      "columns": ["ITEM NAME", "QTY", "PRICE", "Total"]
+    }
+  },
+
+  "notes": [
+    "CRITICAL: GST system with CGST + SGST split",
+    "Tabular format for items",
+    "GSTIN legal identifier",
+    "English language",
+    "Decimal: DOT (.)",
+    "Airport restaurant",
+    "0.01 rounding tolerance for GST"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "locale": "de_DE",
+  "country": "Germany",
+  "language": "German",
+  "currency": "EUR",
+  
+  "stores": {
+    "lidl": {"file": "lidl.json", "receipts": 18, "type": "Discount"},
+    "aldi": {"file": "aldi.json", "receipts": 2, "type": "Discount"},
+    "hit": {"file": "hit.json", "receipts": 8, "type": "Supermarket"},
+    "edeka": {"file": "edeka.json", "receipts": 4, "type": "Supermarket"},
+    "penny": {"file": "penny.json", "receipts": 1, "type": "Discount"},
+    "netto": {"file": "netto.json", "receipts": 1, "type": "Discount"},
+    "dm": {"file": "dm.json", "receipts": 2, "type": "Drugstore"},
+    "shell": {"file": "shell.json", "receipts": 1, "type": "Gas station"},
+    "centershop": {"file": "centershop.json", "receipts": 1, "type": "Non-food"},
+    "baeckerei": {"file": "baeckerei.json", "receipts": 1, "type": "Bakery"},
+    "kleins-backstube": {"file": "kleins-backstube.json", "receipts": 1, "type": "Bakery"}
+  },
+  
+  "total_receipts": 40,
+  
+  "locale_patterns": {
+    "number_format": {
+      "standard": {"decimal": ",", "thousands": "."},
+      "exception": {"store": "centershop", "decimal": ".", "thousands": ","}
+    },
+    
+    "tax_classes": {
+      "standard": {"A": "7%", "B": "19%"},
+      "inverted": ["hit", "penny"],
+      "numeric": ["dm"],
+      "with_modifiers": ["shell", "edeka"],
+      "WARNING": "Tax class meaning varies by store!"
+    },
+    
+    "pfand_system": {
+      "present": true,
+      "stores_with_pfand": ["lidl", "aldi", "hit", "edeka", "penny", "netto", "dm"]
+    }
+  },
+  
+  "critical_warnings": [
+    "HIT and Penny have INVERTED tax classes (A=19%, B=7%)",
+    "CenterShop uses DOT as decimal separator",
+    "dm uses NUMERIC tax class (1, §1)",
+    "Shell uses + prefix on tax class (+A, +B)",
+    "tax_class must be Optional[str] - varies too much"
+  ]
+}

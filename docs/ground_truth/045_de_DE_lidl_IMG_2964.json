@@ -1,0 +1,46 @@
+{
+  "id": "045",
+  "source_file": "photo/GOODS/Lidl/IMG_2964.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl Overath-Vilkerath",
+    "address": "Steinhauser Auel 1, 51491 Overath-Vilkerath"
+  },
+  "metadata": {
+    "date": "2025-11-24",
+    "time": "18:18",
+    "receipt_total": 23.10,
+    "currency": "EUR",
+    "payment_method": "Bar (наличные)",
+    "tax_block": {
+      "A_7%": {"netto": 21.59, "mwst": 1.51, "brutto": 23.10},
+      "total": {"netto": 21.59, "mwst": 1.51, "brutto": 23.10}
+    },
+    "savings": 0.14
+  },
+  "items": [
+    {"raw_name": "Banane Fair Bio", "qty": 1, "unit_price": 1.63, "total_price": 1.63, "tax_class": "A", "weight_kg": 0.820, "price_per_kg": 1.99},
+    {"raw_name": "Zitronen Bio", "qty": 2, "unit_price": 0.79, "total_price": 1.58, "tax_class": "A"},
+    {"raw_name": "Ehrm.H.Protein Schok", "qty": 6, "unit_price": 1.49, "total_price": 8.94, "tax_class": "A"},
+    {"raw_name": "Ehrm.H.Protein Vanil", "qty": 2, "unit_price": 1.49, "total_price": 2.98, "tax_class": "A"},
+    {"raw_name": "Ehrmann HP White Ch.", "qty": 1, "unit_price": 1.49, "total_price": 1.49, "tax_class": "A"},
+    {"raw_name": "Frischmilch 3,5%", "qty": 1, "unit_price": 1.09, "total_price": 1.09, "tax_class": "A"},
+    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.14, "total_price": -0.14, "tax_class": "A", "is_discount": true},
+    {"raw_name": "Müller Kalinka Ayran", "qty": 1, "unit_price": 1.29, "total_price": 1.29, "tax_class": "A"},
+    {"raw_name": "Pfand 0,25 7% M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "A"},
+    {"raw_name": "Eier Freiland. XXL", "qty": 1, "unit_price": 3.99, "total_price": 3.99, "tax_class": "A"}
+  ],
+  "validation": {
+    "items_sum": 23.10,
+    "expected_total": 23.10,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Оплата наличными (Bar)",
+    "Bio товары: Banane Fair Bio, Zitronen Bio",
+    "Протеиновые продукты Ehrmann HP",
+    "Pfand 7% - особый тип залога"
+  ]
+}
+

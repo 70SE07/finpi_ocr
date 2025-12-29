@@ -1,0 +1,75 @@
+{
+  "store": {
+    "brand": "Bäckerei Müller",
+    "type": "Bakery",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["017"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "letter_and_percentage",
+      "values": ["C", "7%"],
+      "meaning": {
+        "C": {"rate": "7%", "description": "Reduced VAT for bakery items"}
+      },
+      "note": "Uses C instead of A!"
+    },
+    
+    "item_line": {
+      "format": "#code name total tax",
+      "example": "#414 Brötchen 0,35 C"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "hash_prefix",
+      "example": "#414",
+      "note": "Product code with # prefix"
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "present": false,
+      "note": "No discounts observed"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "Hash prefix SKU",
+      "description": "#414 format",
+      "implication": "sku can have # prefix"
+    },
+    {
+      "feature": "Tax class C",
+      "description": "Uses C instead of A",
+      "implication": "tax_class values vary by store"
+    }
+  ],
+
+  "notes": [
+    "Small bakery receipt",
+    "SKU with # prefix: #414",
+    "Tax class C (not A/B)",
+    "All items usually 7% VAT (food)"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "locale": "uk_UA",
+  "country": "Ukraine",
+  "language": "Ukrainian",
+  "currency": "UAH",
+  
+  "stores": {
+    "dnipro-m": {"file": "dnipro-m.json", "receipts": 1, "type": "Hardware"}
+  },
+  
+  "total_receipts": 1,
+  
+  "locale_patterns": {
+    "number_format": {"decimal": ",", "thousands": " "},
+    "script": "Cyrillic",
+    "tax_class": "Cyrillic (Я)",
+    "item_format": "multiline"
+  },
+  
+  "critical_warnings": [
+    "CRITICAL: Items span MULTIPLE lines",
+    "Tax class is Cyrillic: Я",
+    "Prices often whole numbers (without kopecks)",
+    "Ukrainian Cyrillic script"
+  ]
+}

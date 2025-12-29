@@ -1,0 +1,39 @@
+{
+  "locale": "pl_PL",
+  "country": "Poland",
+  "language": "Polish",
+  "currency": "PLN",
+  
+  "stores": {
+    "carrefour": {"file": "carrefour.json", "receipts": 5, "type": "Hypermarket"},
+    "cropp": {"file": "cropp.json", "receipts": 1, "type": "Clothing"},
+    "orlen": {"file": "orlen.json", "receipts": 1, "type": "Gas station"},
+    "leroymerlin": {"file": "leroymerlin.json", "receipts": 1, "type": "DIY/Hardware"}
+  },
+  
+  "total_receipts": 8,
+  
+  "locale_patterns": {
+    "number_format": {
+      "standard": {"decimal": ",", "thousands": " "},
+      "exception": {"store": "orlen", "decimal": ".", "thousands": ","}
+    },
+    
+    "tax_classes": {
+      "standard": {"A": "23%", "B": "8%", "C": "5%"},
+      "format_carrefour": "prefix_in_name",
+      "WARNING": "Carrefour uses tax prefix in item name: A_TORBA"
+    },
+    
+    "document_type": "PARAGON FISKALNY"
+  },
+  
+  "critical_warnings": [
+    "Orlen uses DOT as decimal separator - different from Carrefour!",
+    "Carrefour has tax class PREFIX in item name (A_TORBA)",
+    "Leroy Merlin has 8-digit SKU BEFORE item name",
+    "qty*price= format for weighted items (Carrefour)",
+    "qty * unit_price format (Leroy Merlin)",
+    "Same country, different decimal separators!"
+  ]
+}

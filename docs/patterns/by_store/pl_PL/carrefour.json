@@ -1,0 +1,132 @@
+{
+  "store": {
+    "brand": "Carrefour",
+    "legal_name": "CARREFOUR Polska Sp. z o. o.",
+    "type": "Hypermarket",
+    "locale": "pl_PL"
+  },
+  
+  "sources": {
+    "receipt_ids": ["010", "021", "022", "023", "036"],
+    "total_receipts": 5,
+    "branches": [
+      {"name": "CH Wileńska", "address": "03-734 Warszawa ul. Targowa 72", "receipts": ["010", "036"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": " ",
+      "example": "254,32"
+    },
+    
+    "tax_class": {
+      "format": "prefix_in_name",
+      "values": ["A", "C"],
+      "meaning": {
+        "A": {"rate": "23%", "description": "Standard VAT"},
+        "C": {"rate": "5%", "description": "Reduced VAT (food)"}
+      },
+      "position": "prefix_in_item_name",
+      "WARNING": "Tax class is PREFIX in item name: A_TORBA, C_JOG",
+      "examples": ["A_TORBA RECYKLING", "C_JOG.D/P SKYR"]
+    },
+    
+    "item_line": {
+      "format": "tax_name qty*price= total tax",
+      "examples": [
+        "A_TORBA RECYKLING 0,79 A",
+        "C_ZIEMNIAKI SŁODKIE 0,694*9,99= 6,93 C"
+      ],
+      "quantity_position": "inline_with_asterisk",
+      "unit_price_marker": "*",
+      "note": "qty*price= format for weighted items"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "format": "return_marker",
+      "keywords": ["***Anulowano sprzedaż***"],
+      "example": "C_JZN JABŁKA CHAMPI -3,33 C ***Anulowano sprzedaż***",
+      "note": "Return/void shown with negative price and marker"
+    },
+    
+    "weighted_items": {
+      "present": true,
+      "format": "qty*price= total",
+      "example": "0,694*9,99= 6,93"
+    },
+    
+    "date_format": {
+      "format": "YYYY-MM-DD",
+      "example": "2025-11-19"
+    },
+    
+    "payment_methods": {
+      "observed": ["KARTAPŁATNI"]
+    },
+    
+    "tax_block": {
+      "present": true,
+      "format": {
+        "A": {"rate": "23%", "base": "float", "tax": "float"},
+        "C": {"rate": "5%", "base": "float", "tax": "float"}
+      }
+    },
+    
+    "legal_info": {
+      "nip": "937-00-08-168",
+      "bdo": "000009699"
+    },
+    
+    "loyalty_program": {
+      "present": true,
+      "name": "PAYBACK"
+    },
+    
+    "document_type": {
+      "value": "PARAGON FISKALNY",
+      "description": "Fiscal receipt (legal requirement in Poland)"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "Tax class prefix in item name",
+      "description": "A_TORBA, C_JOG format",
+      "implication": "raw_name includes tax prefix - do NOT strip!"
+    },
+    {
+      "feature": "Asterisk multiplication",
+      "description": "qty*price= format",
+      "implication": "Different from German x marker"
+    },
+    {
+      "feature": "Anulowano sprzedaż",
+      "description": "Void/return marker in Polish",
+      "implication": "Discount detection needs Polish keywords"
+    }
+  ],
+
+  "notes": [
+    "UNIQUE: Tax class as PREFIX in item name (A_, C_)",
+    "Weighted items: qty*price= format",
+    "Returns: ***Anulowano sprzedaż*** marker",
+    "PARAGON FISKALNY = fiscal receipt",
+    "PAYBACK loyalty program"
+  ]
+}

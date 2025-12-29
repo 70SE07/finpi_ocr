@@ -1,0 +1,57 @@
+{
+  "id": "007",
+  "source_file": "data/input/BG_001.jpeg",
+  "locale": "bg_BG",
+  "store": {
+    "name": "БИЛЛА БЪЛГАРИЯ ЕООД",
+    "address": "СОФИЯ бул. БЪЛГАРИЯ 55",
+    "eik": "130007884",
+    "branch": "530 (ВАРНА ул. ДУБРОВНИК 48)",
+    "zdds": "BG130007884"
+  },
+  "metadata": {
+    "date": "01.09.2025",
+    "time": "17:29:57",
+    "currency": "BGN",
+    "currency_symbol": "лв.",
+    "payment_method": "В БРОЙ (Cash)",
+    "receipt_total": 26.13,
+    "receipt_total_eur": 13.36,
+    "eur_rate": 1.95583,
+    "cash_given": 30.00,
+    "change": 3.87,
+    "total_savings": 2.30,
+    "items_count": 7
+  },
+  "items": [
+    {"raw_name": "ЯЙЦА L10 АКВИЛОН", "quantity": 1, "unit_price": null, "total_price": 4.99, "tax_class": "*Б"},
+    {"raw_name": "ОТСТ. СУПЕР ЦЕНА", "quantity": null, "unit_price": null, "total_price": -1.20, "tax_class": "*Б", "is_discount": true},
+    {"raw_name": "ПИЛЕШКИ ДОЛЕН БУТ", "quantity": 1, "unit_price": null, "total_price": 4.79, "tax_class": "*Б"},
+    {"raw_name": "БИСКВ.МИРАЖ БОРОВ.", "quantity": 1, "unit_price": null, "total_price": 3.39, "tax_class": "*Б"},
+    {"raw_name": "ОТСТЪПКА АКЦИЯ", "quantity": null, "unit_price": null, "total_price": -1.10, "tax_class": "*Б", "is_discount": true},
+    {"raw_name": "ПИЛЕШКИ ДОЛЕН БУТ", "quantity": 1, "unit_price": null, "total_price": 4.79, "tax_class": "*Б"},
+    {"raw_name": "КРЕО ТОН ФИЛЕ", "quantity": 1, "unit_price": null, "total_price": 3.09, "tax_class": "*Б"},
+    {"raw_name": "СКУМР.КОТЛЕТИ,Д.С", "quantity": 1, "unit_price": null, "total_price": 3.79, "tax_class": "*Б"},
+    {"raw_name": "BARILLA ЛИНГУИНИ", "quantity": 1, "unit_price": null, "total_price": 3.59, "tax_class": "*Б"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == ОБЩА СУМА",
+    "items_sum": 26.13,
+    "expected_total": 26.13,
+    "discrepancy": 0.00,
+    "savings_check": {
+      "discounts_sum": 2.30,
+      "ti_spesti": 2.30,
+      "match": true
+    }
+  },
+  "notes": [
+    "Bulgarian Cyrillic script",
+    "Tax class *Б with asterisk",
+    "Discounts immediately after item",
+    "Two currencies shown (BGN and EUR)",
+    "#ТИ СПЕСТИ# block shows total savings",
+    "No qty/unit_price - only total_price"
+  ]
+}
+

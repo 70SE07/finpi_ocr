@@ -1,0 +1,163 @@
+{
+  "store": {
+    "brand": "HIT",
+    "legal_name": "HIT Verbrauchermarkt GmbH",
+    "type": "Supermarket (full-range)",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["031", "032", "033", "034", "055", "056", "057", "058"],
+    "total_receipts": 8,
+    "branches": [
+      {"name": "HIT 033 Overath", "address": "Probsteistraße 18-22, 51491 Overath", "receipts": ["031", "032", "033", "034", "055", "056", "057", "058"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "example": "1.234,56"
+    },
+    
+    "tax_class": {
+      "format": "single_letter",
+      "values": ["A", "B", "F"],
+      "meaning": {
+        "A": {"rate": "19%", "description": "Standard VAT - INVERTED!"},
+        "B": {"rate": "7%", "description": "Reduced VAT - INVERTED!"},
+        "F": {"rate": "?%", "description": "Fresh counter marker"}
+      },
+      "position": "end_of_line",
+      "inverted": true,
+      "WARNING": "A and B are INVERTED compared to Lidl/ALDI!"
+    },
+    
+    "item_line": {
+      "format": "name (sku) total tax",
+      "examples": [
+        "Lammkarree fr. (399) 6,01 B",
+        "TawnyPortAlVarez (341) 2 x 6,49 12,98 A"
+      ],
+      "quantity_position": "after_name"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "parentheses",
+      "examples": ["(399)", "(945)", "(527)", "(341)"],
+      "position": "after_name",
+      "note": "SKU in parentheses, 3 digits"
+    },
+    
+    "categories": {
+      "present": true,
+      "WARNING": "UNIQUE FEATURE - categories on receipt!",
+      "values": [
+        "THEKE/SBHF",
+        "Bedientheke",
+        "LEBENSMITTEL",
+        "GEKÜHLTE LEBENSMITTEL",
+        "TIEFKÜHLKOST",
+        "GETRÄNKE",
+        "NON FOOD",
+        "PFAND/LEERGUT",
+        "WEIN/SPIRITUOSEN/SEKT/CHAMPAGNER"
+      ],
+      "format": "category_header_before_items",
+      "note": "Categories group items - extremely useful for pre-categorization!"
+    },
+    
+    "discounts": {
+      "format": "marker_in_line",
+      "keywords": ["*** Discount Preis ***"],
+      "example": "TawnyPortAlVarez (341) 2 x 6,49 12,98 A *** Discount Preis ***",
+      "position": "end_of_line",
+      "note": "Discount marker at end, price already reduced"
+    },
+    
+    "fresh_counter": {
+      "present": true,
+      "marker": "F",
+      "description": "Items from Bedientheke (service counter)",
+      "examples": ["Lammkarree fr.", "Spieße Kreta", "Schw.Nacken"]
+    },
+    
+    "pfand": {
+      "present": true,
+      "category": "PFAND/LEERGUT"
+    },
+    
+    "date_format": {
+      "format": "DD.MM.YY",
+      "example": "12.08.25",
+      "note": "Short year format (YY not YYYY)"
+    },
+    
+    "payment_methods": {
+      "observed": ["EC-Lastschrift", "Girocard", "Girocard (kontaktlos)", "Visa CREDIT (kontaktlos)"]
+    },
+    
+    "external_vendors": {
+      "present": true,
+      "markers": ["EH"],
+      "meaning": {"EH": "EatHappy - external vendor, nicht rabattfähig"},
+      "note": "Items sold by external vendors in HIT store"
+    },
+    
+    "leergut_return": {
+      "present": true,
+      "format": "negative_price",
+      "example": "Leergut 0,25 (108) -0,50 A* (-2x)",
+      "note": "Bottle return reduces total"
+    },
+    
+    "tax_block": {
+      "present": true,
+      "format": {
+        "A": {"rate": "19%", "netto": "float", "mwst": "float", "brutto": "float"},
+        "B": {"rate": "7%", "netto": "float", "mwst": "float", "brutto": "float"}
+      }
+    },
+    
+    "receipt_total": {
+      "format": "SUMME[N]",
+      "note": "N = number of items",
+      "example": "SUMME[3] 107,12"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "critical_differences": {
+    "tax_class_inverted": {
+      "WARNING": "CRITICAL",
+      "description": "Tax classes A and B have OPPOSITE meaning compared to Lidl/ALDI/dm",
+      "comparison": {
+        "HIT": {"A": "19%", "B": "7%"},
+        "Lidl_ALDI_dm": {"A": "7%", "B": "19%"}
+      },
+      "implication": "Parser must NOT interpret tax class percentage - just pass through as string"
+    },
+    "categories_on_receipt": {
+      "WARNING": "UNIQUE",
+      "description": "HIT is the only German store that prints product categories",
+      "implication": "Can be used for pre-categorization before Domain 3"
+    }
+  },
+
+  "notes": [
+    "CRITICAL: Tax classes INVERTED (A=19%, B=7%)",
+    "UNIQUE: Categories printed on receipt",
+    "SKU in parentheses: (399)",
+    "Fresh counter marker: F",
+    "*** Discount Preis *** marker",
+    "Date format: DD.MM.YY (short year)",
+    "SUMME[N] format shows item count"
+  ]
+}

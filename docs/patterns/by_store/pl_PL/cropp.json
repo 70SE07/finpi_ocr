@@ -1,0 +1,53 @@
+{
+  "store": {
+    "brand": "Cropp",
+    "type": "Clothing retail",
+    "locale": "pl_PL"
+  },
+  
+  "sources": {
+    "receipt_ids": ["011"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": " "
+    },
+    
+    "tax_class": {
+      "format": "letter",
+      "values": ["A"],
+      "meaning": {
+        "A": {"rate": "23%", "description": "Standard VAT (clothing)"}
+      }
+    },
+    
+    "item_line": {
+      "format": "name total tax"
+    },
+    
+    "sku": {
+      "present": true,
+      "format": "alphanumeric",
+      "note": "Product code for clothing items"
+    },
+    
+    "categories": {
+      "present": false
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "notes": [
+    "Clothing store (LPP Group)",
+    "Standard 23% VAT on all items",
+    "SKU present for clothing tracking"
+  ]
+}

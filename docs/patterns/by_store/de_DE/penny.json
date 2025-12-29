@@ -1,0 +1,82 @@
+{
+  "store": {
+    "brand": "Penny",
+    "type": "Discount supermarket",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["035"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "Penny", "receipts": ["035"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "single_letter",
+      "values": ["A", "B"],
+      "meaning": {
+        "A": {"rate": "19%", "description": "Standard VAT - INVERTED!"},
+        "B": {"rate": "7%", "description": "Reduced VAT - INVERTED!"}
+      },
+      "position": "end_of_line",
+      "inverted": true,
+      "WARNING": "Same inversion as HIT! A=19%, B=7%"
+    },
+    
+    "item_line": {
+      "format": "name total tax"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "keywords": ["Rabatt"],
+      "format": "separate_line_negative"
+    },
+    
+    "pfand": {
+      "present": true
+    },
+    
+    "date_format": {
+      "format": "DD.MM.YYYY"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "critical_differences": {
+    "tax_class_inverted": {
+      "WARNING": "CRITICAL",
+      "description": "Same as HIT - tax classes INVERTED",
+      "comparison": {
+        "Penny_HIT": {"A": "19%", "B": "7%"},
+        "Lidl_ALDI_dm_EDEKA": {"A": "7%", "B": "19%"}
+      }
+    }
+  },
+
+  "notes": [
+    "CRITICAL: Tax classes INVERTED (A=19%, B=7%) - same as HIT",
+    "Discount retailer (REWE Group)",
+    "No SKU on receipt"
+  ]
+}

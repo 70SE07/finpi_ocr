@@ -1,0 +1,36 @@
+{
+  "id": "020",
+  "source_file": "photo/GOODS/Aldi/IMG_2529.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "ALDI SÜD",
+    "address": "Wiesenauel 1, 51491 Overath"
+  },
+  "metadata": {
+    "date": "15.10.2025",
+    "time": "13:01",
+    "currency": "EUR",
+    "payment_method": "Kartenzahlung girocard",
+    "receipt_total": 10.17,
+    "tax_block": {
+      "A": {"rate": "7%", "netto": 9.50, "mwst": 0.67}
+    }
+  },
+  "items": [
+    {"raw_name": "Eier Bodenh. 18er", "sku": "715057", "quantity": 1, "total_price": 3.39, "tax_class": "A"},
+    {"raw_name": "Eier Bodenh. 18er", "sku": "715057", "quantity": 1, "total_price": 3.39, "tax_class": "A"},
+    {"raw_name": "Eier Bodenh. 18er", "sku": "715057", "quantity": 1, "total_price": 3.39, "tax_class": "A"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == Summe",
+    "items_sum": 10.17,
+    "expected_total": 10.17,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Simple receipt - 3 identical items",
+    "All items tax A = 7%",
+    "SKU 715057 repeated"
+  ]
+}
+

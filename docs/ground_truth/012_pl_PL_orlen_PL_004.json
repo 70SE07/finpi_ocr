@@ -1,0 +1,45 @@
+{
+  "id": "012",
+  "source_file": "data/input/PL_004.jpeg",
+  "locale": "pl_PL",
+  "store": {
+    "name": "ORLEN S.A.",
+    "hq_address": "09-411 Płock, ul. Chemików 7",
+    "store_location": "STACJA PALIW NR 4375 W ŁĄCE",
+    "store_address": "ŁĄKA 28A, 59-700 BOLESŁAWIEC",
+    "nip": "774-00-01-454",
+    "bdo": "000007103",
+    "type": "Gas station"
+  },
+  "metadata": {
+    "date": "21-11-2025",
+    "time": "20:35",
+    "currency": "PLN",
+    "decimal_separator": ".",
+    "payment_method": "Karta",
+    "receipt_number": "W072500",
+    "receipt_total": 50.97,
+    "tax_block": {
+      "A": {"rate": "23%", "base": 39.98, "tax": 7.48},
+      "C": {"rate": "5%", "base": 10.99, "tax": 0.52}
+    }
+  },
+  "items": [
+    {"raw_name": "ORZESZ.MIESZAN.STUDENCKA 150g", "quantity": 1, "unit_price": 10.99, "total_price": 10.99, "tax_class": "C"},
+    {"raw_name": "P TEREA AMBER SELECTION", "quantity": 2, "unit_price": 19.99, "total_price": 39.98, "tax_class": "A"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == DO ZAPŁATY",
+    "items_sum": 50.97,
+    "expected_total": 50.97,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "CRITICAL: DOT as decimal separator (50.97 not 50,97)!",
+    "Gas station shop",
+    "Tax class shown twice: in parentheses (C) and at end 10.99C",
+    "Multiline: total on separate line",
+    "VITAY loyalty program"
+  ]
+}
+

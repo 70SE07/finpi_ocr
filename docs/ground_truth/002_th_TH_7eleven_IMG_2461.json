@@ -1,0 +1,59 @@
+{
+  "id": "002",
+  "source_file": "photo/photo_2_th/IMG_2461.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "7-Eleven",
+    "branch": "สาขาถนนศรีสุข ซ.1",
+    "address": "ขอนแก่น"
+  },
+  "metadata": {
+    "date": "26/10/2568",
+    "date_gregorian": "26/10/2025",
+    "time": "19:24:19",
+    "currency": "THB",
+    "payment_method": "เงินสด (Cash)",
+    "receipt_total": 758.25,
+    "subtotal": 783.25,
+    "total_discount": 25.00,
+    "cash_given": 1000.00,
+    "change": 241.75
+  },
+  "items": [
+    {"raw_name": "ผัดมักกะโรนีไก่", "quantity": 3, "unit_price": 37.00, "total_price": 111.00},
+    {"raw_name": "ข้าวผัดปู", "quantity": 1, "unit_price": null, "total_price": 45.00},
+    {"raw_name": "ข้าวกะเพราหมู", "quantity": 2, "unit_price": 42.00, "total_price": 84.00},
+    {"raw_name": "น้ำดื่ม 600ml", "quantity": 5, "unit_price": 7.00, "total_price": 35.00},
+    {"raw_name": "โค้ก 450ml", "quantity": 2, "unit_price": 20.00, "total_price": 40.00},
+    {"raw_name": "ขนมปังแซนวิช", "quantity": 1, "unit_price": null, "total_price": 35.00},
+    {"raw_name": "นมสด 180ml", "quantity": 3, "unit_price": 15.00, "total_price": 45.00},
+    {"raw_name": "ไข่ต้ม", "quantity": 4, "unit_price": 10.00, "total_price": 40.00},
+    {"raw_name": "ขนมจีบ", "quantity": 2, "unit_price": 25.00, "total_price": 50.00},
+    {"raw_name": "ซาลาเปา", "quantity": 2, "unit_price": 18.00, "total_price": 36.00},
+    {"raw_name": "กาแฟกระป๋อง", "quantity": 3, "unit_price": 25.00, "total_price": 75.00},
+    {"raw_name": "ขนมปัง", "quantity": 1, "unit_price": null, "total_price": 29.00},
+    {"raw_name": "โยเกิร์ต", "quantity": 2, "unit_price": 20.00, "total_price": 40.00},
+    {"raw_name": "มาม่า", "quantity": 3, "unit_price": 8.00, "total_price": 24.00},
+    {"raw_name": "ลูกอม", "quantity": 1, "unit_price": null, "total_price": 15.00},
+    {"raw_name": "ถุงพลาสติก", "quantity": 2, "unit_price": 2.00, "total_price": 4.00},
+    {"raw_name": "ไอศกรีม", "quantity": 2, "unit_price": 25.00, "total_price": 50.00},
+    {"raw_name": "ขนมถุง", "quantity": 1, "unit_price": null, "total_price": 25.00}
+  ],
+  "discounts": [
+    {"raw_name": "ส่วนลดโปร", "total_price": -15.00, "is_discount": true},
+    {"raw_name": "ส่วนลดสมาชิก", "total_price": -10.00, "is_discount": true}
+  ],
+  "validation": {
+    "checksum_method": "subtotal - discounts == net_total",
+    "subtotal": 783.25,
+    "discounts": 25.00,
+    "expected_total": 758.25,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Buddhist calendar year 2568 = Gregorian 2025",
+    "Thai script for item names",
+    "Discounts shown separately"
+  ]
+}
+

@@ -1,0 +1,70 @@
+{
+  "id": "010",
+  "source_file": "data/input/PL_001.jpeg",
+  "locale": "pl_PL",
+  "store": {
+    "name": "CARREFOUR Polska Sp. z o. o.",
+    "location": "CH Wileńska",
+    "address": "03-734 Warszawa ul. Targowa 72",
+    "phone": "(22) 511-26-00",
+    "nip": "937-00-08-168",
+    "bdo": "000009699"
+  },
+  "metadata": {
+    "date": "2025-11-19",
+    "time": "18:10",
+    "currency": "PLN",
+    "payment_method": "KARTAPŁATNI",
+    "receipt_number": "072002/1258",
+    "receipt_total": 254.32,
+    "tax_total": 25.99,
+    "tax_block": {
+      "A": {"rate": "23%", "base": 99.55, "tax": 18.62},
+      "C": {"rate": "5%", "base": 154.77, "tax": 7.37}
+    }
+  },
+  "items": [
+    {"raw_name": "A_TORBA RECYKLING", "quantity": 1, "unit_price": 0.79, "total_price": 0.79, "tax_class": "A"},
+    {"raw_name": "A_TORBA RECYKLING", "quantity": 1, "unit_price": 0.79, "total_price": 0.79, "tax_class": "A"},
+    {"raw_name": "C_JOG.D/P SKYR H.PR", "quantity": 1, "unit_price": 6.75, "total_price": 6.75, "tax_class": "C"},
+    {"raw_name": "C_JOG.D/P SKYR MEN", "quantity": 1, "unit_price": 5.75, "total_price": 5.75, "tax_class": "C"},
+    {"raw_name": "C_JOG.D/P SKYR LIND", "quantity": 1, "unit_price": 5.99, "total_price": 5.99, "tax_class": "C"},
+    {"raw_name": "C_ZIEMNIAKI SŁODKIE", "quantity": 0.694, "unit_price": 9.99, "total_price": 6.93, "tax_class": "C"},
+    {"raw_name": "C_POMELO CZERWONE L", "quantity": 0.762, "unit_price": 9.99, "total_price": 7.61, "tax_class": "C"},
+    {"raw_name": "A_OŚMIORNICA MACKI", "quantity": 1, "unit_price": 41.99, "total_price": 41.99, "tax_class": "A"},
+    {"raw_name": "A_OŚMIORNICA MACKI", "quantity": 1, "unit_price": 41.99, "total_price": 41.99, "tax_class": "A"},
+    {"raw_name": "A_BIO CZEKOL.COCOA", "quantity": 1, "unit_price": 13.99, "total_price": 13.99, "tax_class": "A"},
+    {"raw_name": "C_MC KOPEREK PĘCZEK", "quantity": 1, "unit_price": 5.99, "total_price": 5.99, "tax_class": "C"},
+    {"raw_name": "C_MC SAŁATA RZYMSKA", "quantity": 1, "unit_price": 5.99, "total_price": 5.99, "tax_class": "C"},
+    {"raw_name": "C_MC BIO KRAKERSY P", "quantity": 1, "unit_price": 7.99, "total_price": 7.99, "tax_class": "C"},
+    {"raw_name": "C_MC KIEŁKI JARMUŻU", "quantity": 1, "unit_price": 4.65, "total_price": 4.65, "tax_class": "C"},
+    {"raw_name": "C_SIMPL POMIDOR DAK", "quantity": 1, "unit_price": 5.99, "total_price": 5.99, "tax_class": "C"},
+    {"raw_name": "C_SEREK PHILADELPHI", "quantity": 1, "unit_price": 7.29, "total_price": 7.29, "tax_class": "C"},
+    {"raw_name": "C_BAKALLAND DAKTYL", "quantity": 1, "unit_price": 8.49, "total_price": 8.49, "tax_class": "C"},
+    {"raw_name": "C_JZN CZOSNEK SZTUK", "quantity": 1, "unit_price": 1.99, "total_price": 1.99, "tax_class": "C"},
+    {"raw_name": "C_BANANY PLANTANY 6", "quantity": 1, "unit_price": 14.99, "total_price": 14.99, "tax_class": "C"},
+    {"raw_name": "C_MC MANDARYNKI LUZ", "quantity": 1.398, "unit_price": 8.99, "total_price": 12.57, "tax_class": "C"},
+    {"raw_name": "C_JZN JABŁKA CHAMPI", "quantity": 0.668, "unit_price": 4.99, "total_price": 3.33, "tax_class": "C"},
+    {"raw_name": "C_JZN JABŁKA CHAMPI", "quantity": 0.668, "unit_price": 4.99, "total_price": 3.33, "tax_class": "C"},
+    {"raw_name": "C_JZN JABŁKA CHAMPI", "quantity": 0.668, "unit_price": 4.99, "total_price": -3.33, "tax_class": "C", "is_return": true, "note": "***Anulowano sprzedaż***"},
+    {"raw_name": "C_CYTRYNY LUZ", "quantity": 0.29, "unit_price": 9.99, "total_price": 2.90, "tax_class": "C"},
+    {"raw_name": "C_TWARÓG WIEJSKI KL", "quantity": 1, "unit_price": 5.79, "total_price": 5.79, "tax_class": "C"},
+    {"raw_name": "C_MC BIO AOP SER PA", "quantity": 1, "unit_price": 20.69, "total_price": 20.69, "tax_class": "C"},
+    {"raw_name": "C_JAJA FARMIO M10 U", "quantity": 1, "unit_price": 13.09, "total_price": 13.09, "tax_class": "C"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMA PLN",
+    "items_sum": 254.32,
+    "expected_total": 254.32,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Tax prefix in name: A_ (23%), C_ (5%)",
+    "Format: qty*price= total tax",
+    "Weighted items: 0,694*9,99= 6,93",
+    "Return: ***Anulowano sprzedaż*** with negative price",
+    "PARAGON FISKALNY header",
+    "PAYBACK loyalty program"
+  ]
+}
+

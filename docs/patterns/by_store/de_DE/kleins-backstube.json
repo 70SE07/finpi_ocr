@@ -1,0 +1,71 @@
+{
+  "store": {
+    "brand": "Kleins Backstube",
+    "type": "Bakery",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["018"],
+    "total_receipts": 1
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": "."
+    },
+    
+    "tax_class": {
+      "format": "letter",
+      "values": ["A", "B"],
+      "meaning": {
+        "A": {"rate": "7%"},
+        "B": {"rate": "19%"}
+      },
+      "inverted": false
+    },
+    
+    "item_line": {
+      "format": "time name total tax",
+      "example": "12:45 Croissant 1,20 A",
+      "note": "UNIQUE: Timestamp per item!"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "timestamp_per_item": {
+      "present": true,
+      "format": "HH:MM",
+      "description": "Each item has time when added",
+      "note": "UNIQUE feature among all stores!"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "unique_features": [
+    {
+      "feature": "Timestamp per item",
+      "description": "Each item shows time when added",
+      "example": "12:45 Croissant 1,20 A",
+      "implication": "Item line starts with time, need special parsing"
+    }
+  ],
+
+  "notes": [
+    "UNIQUE: Timestamp per item (HH:MM)",
+    "Standard tax (A=7%, B=19%)",
+    "Bakery chain"
+  ]
+}

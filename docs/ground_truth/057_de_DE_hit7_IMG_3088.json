@@ -1,0 +1,43 @@
+{
+  "id": "057",
+  "source_file": "photo/GOODS/Hit/IMG_3088.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "HIT 033 Overath",
+    "code": "HIT 4033",
+    "address": "Probsteistraße 18-22, 51491 Overath",
+    "hours": "MO-SA 08:00-22:00 Uhr",
+    "ust_id": "DE276299025"
+  },
+  "metadata": {
+    "date": "18.09.25",
+    "time": "20:01",
+    "currency": "EUR",
+    "payment_method": "Girocard (kontaktlos)",
+    "items_count": 4,
+    "receipt_total": 21.46,
+    "tax_block": {
+      "B": {"rate": "7%", "netto": 20.05, "mwst": 1.40, "brutto": 21.46}
+    }
+  },
+  "items": [
+    {"raw_name": "Petersilie kraus", "sku": "(033)", "quantity": null, "unit_price": null, "total_price": 0.99, "tax_class": "B", "category": "OBST & GEMÜSE"},
+    {"raw_name": "Happy Mix", "sku": "(035)", "quantity": null, "unit_price": null, "total_price": 16.99, "tax_class": "B", "category": "LEBENSMITTEL", "note": "* EH (EatHappy - nicht rabattfähig)"},
+    {"raw_name": "Coraya Surimi", "sku": "(762)", "quantity": null, "unit_price": null, "total_price": 1.49, "tax_class": "B", "category": "GEKÜHLTE LEBENSMITTEL", "is_fresh": true, "is_discount": true, "discount_label": "*** Discount Preis ***"},
+    {"raw_name": "Eier M Bodenhalt", "sku": "(602)", "quantity": null, "unit_price": null, "total_price": 1.99, "tax_class": "B", "category": "GEKÜHLTE LEBENSMITTEL"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME[4]",
+    "items_sum": 21.46,
+    "expected_total": 21.46,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Categories: OBST & GEMÜSE, LEBENSMITTEL, GEKÜHLTE LEBENSMITTEL",
+    "EH marker = EatHappy (external vendor)",
+    "F marker = HIT Frische (fresh counter)",
+    "Only tax B = 7% (food products)",
+    "Tax INVERTED: B=7%",
+    "Kennzeichenlegende at bottom explains * and EH markers"
+  ]
+}

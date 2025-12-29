@@ -1,0 +1,44 @@
+{
+  "id": "011",
+  "source_file": "data/input/PL_002.jpeg",
+  "locale": "pl_PL",
+  "store": {
+    "name": "CROPP (LPP S.A.)",
+    "hq_address": "80-769 Gdańsk, ul. Łąkowa 39/44",
+    "store_address": "00-120 Warszawa, ul. Złota 59",
+    "nip": "583-10-14-898",
+    "bdo": "0000002920",
+    "type": "Clothing store"
+  },
+  "metadata": {
+    "date": "2025-11-12",
+    "time": "17:19",
+    "currency": "PLN",
+    "payment_method": "Karta kredytowa",
+    "receipt_number": "270400/0851",
+    "receipt_total": 200.97,
+    "tax_block": {
+      "A": {"rate": "23%", "base": 200.97, "tax": 37.58}
+    }
+  },
+  "items": [
+    {"raw_name": "TORBA PAPIEROWA", "sku": "H7177-XXX-ONE", "quantity": 1, "unit_price": 1.00, "total_price": 1.00, "tax_class": "A"},
+    {"raw_name": "KOSZULKA MĘSKA", "sku": "686AT-08X-XXL", "quantity": 1, "unit_price": 69.99, "total_price": 69.99, "tax_class": "A"},
+    {"raw_name": "KOSZULKA MĘSKA", "sku": "686AT-08X-XXL", "quantity": 1, "unit_price": 69.99, "total_price": 69.99, "tax_class": "A"},
+    {"raw_name": "KOSZULKA MĘSKA", "sku": "571FN-78X-XXL", "quantity": 1, "unit_price": 59.99, "total_price": 59.99, "tax_class": "A"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMA PLN",
+    "items_sum": 200.97,
+    "expected_total": 200.97,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Clothing store receipt",
+    "SKU before name: 686AT-08X-XXL",
+    "Size in SKU: XXL",
+    "Only tax class A (23%)",
+    "Format: sku name qty * price total tax"
+  ]
+}
+

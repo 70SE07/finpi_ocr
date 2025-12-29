@@ -1,0 +1,45 @@
+{
+  "id": "017",
+  "source_file": "photo/Еда вне дома/IMG_2034.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "Bäckerei Müller GmbH & Co.KG",
+    "address": "Bahnhofsplatz 11, 51491 Overath",
+    "phone": "02206 - 4728",
+    "ust_id": "DE320679010",
+    "type": "Bakery"
+  },
+  "metadata": {
+    "date": "24.09.2025",
+    "time": "12:31",
+    "currency": "EUR",
+    "document_type": "Rechnung",
+    "payment_method": "Kartenzahlung",
+    "receipt_number": "#2509240002 0005 0198",
+    "filiale": "0002",
+    "kasse": "Fil. 2 K2",
+    "employee": "Jennifer Selbach-Wirtz",
+    "receipt_total": 5.85,
+    "tax_block": {
+      "C": {"rate": "19%", "netto": 4.92, "mwst": 0.93, "brutto": 5.85}
+    }
+  },
+  "items": [
+    {"raw_name": "Cappuccino", "quantity": 1.00, "unit": "Stück", "unit_price": 3.20, "total_price": 3.20, "tax_class": "C"},
+    {"raw_name": "Kaffee Pott", "quantity": 1.00, "unit": "Stück", "unit_price": 2.65, "total_price": 2.65, "tax_class": "C"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == Gesamtsumme",
+    "items_sum": 5.85,
+    "expected_total": 5.85,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Tax class C (not A/B) = 19%!",
+    "Rechnung format with table headers",
+    "Multiline: name on first line, qty/price on second",
+    "Unit always shown: Stück",
+    "Bakery/café - different format than retail"
+  ]
+}
+

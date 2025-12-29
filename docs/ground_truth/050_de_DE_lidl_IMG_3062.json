@@ -1,0 +1,36 @@
+{
+  "id": "050",
+  "source_file": "photo/GOODS/Lidl/IMG_3062.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "brand": "Lidl",
+    "name": "Lidl Heiden",
+    "address": "Industriestr. 1, 46359 Heiden"
+  },
+  "metadata": {
+    "date": "2025-11-05",
+    "time": "13:33",
+    "receipt_total": 11.41,
+    "currency": "EUR",
+    "payment_method": "Kreditkarte (MasterCard)",
+    "tax_block": {
+      "A_7%": {"netto": 10.66, "mwst": 0.75, "brutto": 11.41},
+      "total": {"netto": 10.66, "mwst": 0.75, "brutto": 11.41}
+    }
+  },
+  "items": [
+    {"raw_name": "Schweinenackenbraten", "qty": 1, "unit_price": 11.03, "total_price": 11.03, "tax_class": "A", "weight_kg": 1.227, "price_per_kg": 8.99},
+    {"raw_name": "Brötchen Weizen", "qty": 2, "unit_price": 0.19, "total_price": 0.38, "tax_class": "A"}
+  ],
+  "validation": {
+    "items_sum": 11.41,
+    "expected_total": 11.41,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Другой филиал - Heiden",
+    "Весовой товар: Schweinenackenbraten",
+    "Минимальный чек - 2 позиции"
+  ]
+}
+

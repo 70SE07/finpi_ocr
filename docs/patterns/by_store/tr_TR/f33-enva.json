@@ -1,0 +1,134 @@
+{
+  "store": {
+    "brand": "F33 ENVA",
+    "legal_name": "AKINCI RESTORAN İŞLETMECİLİĞİ GİDA SANAYİ TİCARET ANONİM ŞİRKETİ",
+    "type": "Restaurant (Airport)",
+    "locale": "tr_TR"
+  },
+  
+  "sources": {
+    "receipt_ids": ["008"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "İstanbul Airport", "address": "TAYAKADIN MH. TERMİNAL CD., HAVALİMANI TERMİNAL BİNASI NO:1, ARNAVUTKÖY/İSTANBUL", "receipts": ["008"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "price_prefix": "*",
+      "example": "*85,00",
+      "note": "Prices have asterisk prefix!"
+    },
+    
+    "tax_class": {
+      "format": "percentage_inline",
+      "values": ["%10", "%18"],
+      "meaning": {
+        "%10": {"rate": "10%", "description": "Reduced KDV for food"},
+        "%18": {"rate": "18%", "description": "Standard KDV"}
+      },
+      "position": "in_line_with_item",
+      "note": "Tax rate shown as %XX in item line"
+    },
+    
+    "item_line": {
+      "format": "name *price %tax",
+      "example": "Su 0,5 ml *85,00 %10",
+      "note": "Price with asterisk, tax as percentage"
+    },
+    
+    "sku": {
+      "present": false
+    },
+    
+    "categories": {
+      "present": false
+    },
+    
+    "discounts": {
+      "format": "not_observed"
+    },
+    
+    "weighted_items": {
+      "present": false,
+      "note": "Restaurant - no weighted items"
+    },
+    
+    "date_format": {
+      "format": "DD/MM/YYYY",
+      "example": "13/10/2025"
+    },
+    
+    "payment_methods": {
+      "observed": ["KREDİ"],
+      "translation": {"KREDİ": "Credit card"},
+      "bank_shown": true,
+      "example": "ZIRAATBANK"
+    },
+    
+    "tax_block": {
+      "present": true,
+      "keyword": "TOPKDV",
+      "translation": {"TOPKDV": "Total KDV (VAT)"},
+      "format": "base + kdv = total"
+    },
+    
+    "receipt_total": {
+      "keywords": ["TOPLAM"],
+      "translation": {"TOPLAM": "Total"}
+    },
+    
+    "language": {
+      "script": "Latin with Turkish characters",
+      "special_characters": ["İ", "Ş", "Ü", "Ö", "Ç", "Ğ", "ı"],
+      "note": "Turkish Latin alphabet with special chars"
+    },
+    
+    "legal_info": {
+      "vd": "Küçükköy V.D 0270562743"
+    },
+    
+    "dual_receipt": {
+      "present": true,
+      "description": "Store receipt + payment terminal receipt",
+      "note": "Two receipts printed together"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items) == TOPLAM",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00,
+    "kdv_check": {
+      "method": "base * tax_rate == kdv",
+      "passed": true
+    }
+  },
+
+  "critical_differences": {
+    "price_asterisk": {
+      "description": "Prices have * prefix",
+      "example": "*85,00"
+    },
+    "tax_percentage_inline": {
+      "description": "Tax shown as %XX in item line",
+      "example": "%10"
+    },
+    "turkish_characters": {
+      "description": "Special Turkish letters",
+      "characters": ["İ", "Ş", "Ü", "Ö", "Ç", "Ğ", "ı"]
+    }
+  },
+
+  "notes": [
+    "Price with asterisk prefix: *85,00",
+    "Tax as percentage inline: %10",
+    "KDV = Turkish VAT (KDV = Katma Değer Vergisi)",
+    "Turkish special characters",
+    "Airport restaurant",
+    "Dual receipt format"
+  ]
+}

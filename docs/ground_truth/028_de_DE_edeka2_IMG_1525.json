@@ -1,0 +1,43 @@
+{
+  "id": "028",
+  "source_file": "photo/GOODS/Edeka/IMG_1525.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "EDEKA Felbecker",
+    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden"
+  },
+  "metadata": {
+    "date": "26.08.2025",
+    "time": "16:06:04",
+    "currency": "EUR",
+    "payment_method": "Mastercard",
+    "posten": 7,
+    "receipt_total": 9.69,
+    "tax_block": {
+      "A": {"rate": "7%", "netto": 7.90, "mwst": 0.55, "umsatz": 8.45},
+      "B": {"rate": "19%", "netto": 1.04, "mwst": 0.20, "umsatz": 1.24}
+    }
+  },
+  "items": [
+    {"raw_name": "Red Bull 0,25l", "quantity": 1, "total_price": 0.99, "tax_class": "BW"},
+    {"raw_name": "Pfand", "quantity": 1, "total_price": 0.25, "tax_class": "+B", "is_pfand": true},
+    {"raw_name": "G&G Butterkäse", "quantity": 1, "total_price": 2.79, "tax_class": "A"},
+    {"raw_name": "G&G Gef.Mortadella", "quantity": 1, "total_price": 1.29, "tax_class": "A"},
+    {"raw_name": "G&G Mortadella", "quantity": 1, "total_price": 1.29, "tax_class": "A"},
+    {"raw_name": "Herz.M.Pfl.Tomaten", "quantity": 1, "total_price": 1.99, "tax_class": "A"},
+    {"raw_name": "G&G Sandw.Toast V.", "quantity": 1, "total_price": 1.09, "tax_class": "A"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "items_sum": 9.69,
+    "expected_total": 9.69,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Extended tax codes: BW, +B, A",
+    "Pfand with + prefix: +B",
+    "Posten: 7",
+    "*Position nicht rabattberechtigt"
+  ]
+}
+

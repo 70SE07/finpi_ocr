@@ -1,0 +1,150 @@
+{
+  "store": {
+    "brand": "Lidl",
+    "type": "Discount supermarket",
+    "locale": "de_DE"
+  },
+  
+  "sources": {
+    "receipt_ids": ["001", "015", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052"],
+    "total_receipts": 18,
+    "branches": [
+      {"name": "Overath-Vilkerath", "address": "Steinhauser Auel 1, 51491", "receipts": ["001", "015", "037", "038", "039", "040", "041", "042", "052"]},
+      {"name": "St. Augustin", "address": "Bonner Str. 32-34, 53757", "receipts": ["047", "048", "049", "050"]},
+      {"name": "Heiden", "address": "Bahnhofstr. 1, 46359", "receipts": ["051"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "example": "1.234,56"
+    },
+    
+    "tax_class": {
+      "format": "single_letter",
+      "values": ["A", "B", "M"],
+      "meaning": {
+        "A": {"rate": "7%", "description": "Reduced VAT (food, books)"},
+        "B": {"rate": "19%", "description": "Standard VAT (non-food, drinks)"},
+        "M": {"rate": "0%", "description": "Pfand exempt", "note": "Used in older receipts, newer use A/B for Pfand"}
+      },
+      "position": "end_of_line",
+      "inverted": false
+    },
+    
+    "item_line": {
+      "format": "name [qty x unit_price] total tax",
+      "examples": [
+        "Schweinenackenbraten 1,207 kg x 8,99 EUR/kg 10,85 A",
+        "Gouda in ScheibenXXL 2 x 4,29 8,58 A",
+        "Butter 250g 1,85 A"
+      ],
+      "quantity_position": "after_name",
+      "unit_price_marker": "x",
+      "weighted_items": {
+        "present": true,
+        "format": "qty kg x price EUR/kg",
+        "example": "1,207 kg x 8,99 EUR/kg"
+      }
+    },
+    
+    "sku": {
+      "present": false,
+      "note": "Lidl does not print SKU/EAN on receipts"
+    },
+    
+    "categories": {
+      "present": false,
+      "note": "No product categories on receipt"
+    },
+    
+    "discounts": {
+      "format": "separate_line_negative",
+      "keywords": ["Preisvorteil", "RABATT", "Rabatt", "Rabattaktion", "Aktionsnachlass"],
+      "examples": [
+        {"keyword": "Preisvorteil", "example": "Preisvorteil -0,50 A"},
+        {"keyword": "RABATT 20%", "example": "RABATT 20% -1,86 A"},
+        {"keyword": "Rabattaktion", "example": "Rabattaktion -0,27 A"}
+      ],
+      "position": "after_discounted_item",
+      "value_sign": "negative"
+    },
+    
+    "pfand": {
+      "present": true,
+      "keywords": ["Pfand", "Pfandrückgabe"],
+      "formats": [
+        {"type": "deposit", "example": "Pfand 0,25 EM 24 x 0,25 6,00 B"},
+        {"type": "refund", "example": "Pfandrückgabe 92 x -0,25 -23,00 B"}
+      ],
+      "tax_class": "B",
+      "note": "Older receipts used M for Pfand, newer use B (19%)"
+    },
+    
+    "date_format": {
+      "format": "DD.MM.YYYY",
+      "examples": ["31.07.2025", "2025-08-07"]
+    },
+    
+    "payment_methods": {
+      "observed": ["Kartenzahlung girocard", "Karte (girocard)", "Bar"]
+    },
+    
+    "tax_block": {
+      "present": true,
+      "format": {
+        "A_7%": {"netto": "float", "mwst": "float", "brutto": "float"},
+        "B_19%": {"netto": "float", "mwst": "float", "brutto": "float"}
+      },
+      "position": "end_of_receipt"
+    },
+    
+    "receipt_total": {
+      "keywords": ["Summe", "SUMME", "Zu zahlen"],
+      "position": "after_items"
+    },
+    
+    "savings": {
+      "present": true,
+      "keywords": ["Sie sparten", "Ersparnis"],
+      "position": "after_total"
+    }
+  },
+
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "all_receipts_passed": true,
+    "discrepancy": 0.00
+  },
+
+  "special_cases": [
+    {
+      "case": "Pfandrückgabe (bottle return)",
+      "description": "Large negative amounts when returning bottles",
+      "example": "92 x -0,25 = -23,00 EUR",
+      "source": "052"
+    },
+    {
+      "case": "Weighted items",
+      "description": "Meat, fruits with weight in kg",
+      "example": "Schweinenackenbraten 1,207 kg x 8,99 EUR/kg 10,85 A",
+      "source": "001"
+    },
+    {
+      "case": "Percentage discount",
+      "description": "RABATT with percentage shown",
+      "example": "RABATT 20% -1,86 A",
+      "source": "037"
+    }
+  ],
+
+  "notes": [
+    "Largest sample: 18 receipts across 3 branches",
+    "Consistent format across all branches",
+    "No SKU/EAN on receipts",
+    "Tax class A=7%, B=19% (NOT inverted)",
+    "Pfand can be positive (deposit) or negative (refund)"
+  ]
+}
