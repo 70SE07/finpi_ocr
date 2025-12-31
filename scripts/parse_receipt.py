@@ -11,6 +11,8 @@
     
     # Обработать директорию с результатами extraction
     python scripts/parse_receipt.py --dir path/to/output/dir
+
+ВАЖНО: Принимает RawOCRResult из contracts/d1_extraction_dto.py
 """
 
 import sys
@@ -24,7 +26,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.settings import OUTPUT_DIR
-from contracts.raw_ocr_schema import RawOCRResult
+from contracts.d1_extraction_dto import RawOCRResult
 from src.parsing.parser.receipt_parser import ReceiptParser
 
 
@@ -44,15 +46,15 @@ def parse_raw_ocr(raw_ocr_file: Path, output_dir: Path) -> bool:
         with open(raw_ocr_file, 'r', encoding='utf-8') as f:
             raw_data = json.load(f)
         
-        # Конвертируем в RawOCRResult
-        raw_result = RawOCRResult.from_dict(raw_data)
+        # Конвертируем в RawOCRResult (Pydantic валидация)
+        raw_result = RawOCRResult.model_validate(raw_data)
         
-        print(f"  [1/2] Загружено: {len(raw_result.blocks)} блоков, {len(raw_result.full_text)} символов")
+        print(f"  [1/2] Загружено: {len(raw_result.words)} слов, {len(raw_result.full_text)} символов")
         
-        # Парсим через ReceiptParser
+        # Парсим через ReceiptParser (передаём dict)
         print(f"  [2/2] Парсинг через ReceiptParser")
         parser = ReceiptParser()
-        result = parser.parse(raw_result.to_dict())
+        result = parser.parse(raw_result.model_dump())
         
         # Сохраняем структурированные результаты
         result_file = output_dir / "parsed_results.json"

@@ -11,6 +11,8 @@
     
     # Принудительный перезапуск (игнорировать кэш)
     python scripts/extract_raw_ocr.py --no-cache
+
+ВАЖНО: Возвращает RawOCRResult из contracts/d1_extraction_dto.py
 """
 
 import sys
@@ -25,7 +27,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.settings import validate_config, INPUT_DIR, OUTPUT_DIR
 from src.extraction import ImagePreprocessor, GoogleVisionOCR
-from contracts.raw_ocr_schema import RawOCRResult
+from contracts.d1_extraction_dto import RawOCRResult
 
 
 def process_image(image_path: Path, output_dir: Path, no_cache: bool = False) -> bool:
@@ -57,14 +59,15 @@ def process_image(image_path: Path, output_dir: Path, no_cache: bool = False) ->
         
         print(f"  [2/2] OCR через Google Vision")
         ocr = GoogleVisionOCR()
-        raw_result = ocr.recognize(processed_image)
+        raw_result = ocr.recognize(processed_image, source_file=image_path.stem)
         
-        # Сохраняем сырые результаты
-        result_dict = raw_result.to_dict()
+        # Сохраняем сырые результаты (Pydantic -> dict)
+        result_dict = raw_result.model_dump()
         with open(raw_ocr_file, 'w', encoding='utf-8') as f:
             json.dump(result_dict, f, ensure_ascii=False, indent=2)
         
         print(f"  [SAVED] Сырые результаты сохранены: {raw_ocr_file}")
+        print(f"  [INFO]  Слов: {len(raw_result.words)}, символов: {len(raw_result.full_text)}")
         return True
         
     except Exception as e:

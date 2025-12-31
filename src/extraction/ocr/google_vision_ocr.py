@@ -4,23 +4,32 @@ OCR: Google Vision API интеграция.
 Этап 2 пайплайна extraction домена:
 - Отправка изображения в Google Vision
 - Получение сырых результатов OCR
-- Сохранение raw_ocr в JSON
+- Формирование RawOCRResult (контракт D1->D2)
+
+ВАЖНО: Возвращает RawOCRResult из contracts/d1_extraction_dto.py
 """
 
-import json
 import os
 from datetime import datetime
 from pathlib import Path
-from typing import List, Optional
+from typing import Optional
+
 from google.cloud import vision
 from google.cloud.vision_v1 import types
+from loguru import logger
 
-from config.settings import GOOGLE_APPLICATION_CREDENTIALS, OCR_LANGUAGE_HINTS, OUTPUT_DIR
-from contracts.raw_ocr_schema import RawOCRResult, TextBlock, BoundingBox, RawAnnotation, OCRMetadata
+from config.settings import GOOGLE_APPLICATION_CREDENTIALS, OCR_LANGUAGE_HINTS
+from contracts.d1_extraction_dto import RawOCRResult, Word, BoundingBox, OCRMetadata
 
 
 class GoogleVisionOCR:
-    """Обёртка над Google Cloud Vision API."""
+    """
+    Обёртка над Google Cloud Vision API.
+    
+    Возвращает RawOCRResult с:
+    - full_text: полный текст для regex/паттернов
+    - words[]: слова с координатами для layout-анализа
+    """
     
     def __init__(self, credentials_path: Optional[str] = None):
         """
@@ -46,17 +55,26 @@ class GoogleVisionOCR:
         
         self.client = vision.ImageAnnotatorClient()
         self.language_hints = OCR_LANGUAGE_HINTS
+        
+        logger.info("[GoogleVisionOCR] Клиент инициализирован")
     
-    def recognize(self, image_content: bytes) -> RawOCRResult:
+    def recognize(
+        self, 
+        image_content: bytes, 
+        source_file: str = "unknown"
+    ) -> RawOCRResult:
         """
         Распознаёт текст на изображении.
         
         Args:
             image_content: Байты изображения
+            source_file: Имя исходного файла (для метаданных)
             
         Returns:
-            dict: Сырой результат от Google Vision
+            RawOCRResult: Контракт D1->D2 с full_text и words[]
         """
+        logger.debug(f"[GoogleVisionOCR] Распознавание: {source_file}")
+        
         image = types.Image(content=image_content)
         
         # Настройка запроса с подсказками языка
@@ -73,74 +91,83 @@ class GoogleVisionOCR:
         if response.error.message:
             raise Exception(f"Google Vision API error: {response.error.message}")
         
-        return self._parse_response(response)
+        return self._parse_response(response, source_file)
     
-    def _parse_response(self, response) -> RawOCRResult:
-        """Парсит ответ Google Vision в структурированные данные."""
-        result = RawOCRResult(
-            full_text="",
-            blocks=[],
-            raw_annotations=[]
-        )
+    def _parse_response(self, response, source_file: str) -> RawOCRResult:
+        """
+        Парсит ответ Google Vision в RawOCRResult.
+        
+        Извлекает:
+        - full_text: весь текст одной строкой
+        - words[]: каждое слово с координатами и confidence
+        """
+        words = []
+        full_text = ""
+        image_width = 0
+        image_height = 0
         
         # Полный текст
         if response.full_text_annotation:
-            result.full_text = response.full_text_annotation.text
-        
-        # Обрабатываем блоки текста
-        if response.full_text_annotation:
+            full_text = response.full_text_annotation.text
+            
+            # Извлекаем слова с координатами
             for page in response.full_text_annotation.pages:
+                # Размеры изображения
+                image_width = page.width
+                image_height = page.height
+                
                 for block in page.blocks:
                     for paragraph in block.paragraphs:
-                        # Собираем текст параграфа
-                        para_text = ""
-                        para_confidence = 0.0
-                        word_count = 0
-                        
                         for word in paragraph.words:
+                            # Собираем текст слова
                             word_text = "".join(
                                 symbol.text for symbol in word.symbols
                             )
-                            para_text += word_text + " "
-                            para_confidence += word.confidence
-                            word_count += 1
-                        
-                        para_text = para_text.strip()
-                        avg_confidence = para_confidence / word_count if word_count > 0 else 0.0
-                        
-                        # Получаем bounding box
-                        bbox = self._get_bounding_box(paragraph.bounding_box)
-                        
-                        result.blocks.append(TextBlock(
-                            text=para_text,
-                            confidence=avg_confidence,
-                            bounding_box=BoundingBox(
-                                x=bbox["x"],
-                                y=bbox["y"],
-                                width=bbox["width"],
-                                height=bbox["height"]
-                            ),
-                            block_type="PARAGRAPH"
-                        ))
+                            
+                            # Получаем bounding box
+                            bbox = self._get_bounding_box(word.bounding_box)
+                            
+                            # Пропускаем слова с нулевыми размерами
+                            if bbox["width"] <= 0 or bbox["height"] <= 0:
+                                continue
+                            
+                            words.append(Word(
+                                text=word_text,
+                                bounding_box=BoundingBox(
+                                    x=bbox["x"],
+                                    y=bbox["y"],
+                                    width=bbox["width"],
+                                    height=bbox["height"]
+                                ),
+                                confidence=word.confidence
+                            ))
         
-        # Сохраняем raw annotations для отладки
-        for annotation in response.text_annotations:
-            result.raw_annotations.append(RawAnnotation(
-                description=annotation.description,
-                bounding_poly=[
-                    {"x": v.x, "y": v.y} 
-                    for v in annotation.bounding_poly.vertices
-                ]
-            ))
+        logger.debug(f"[GoogleVisionOCR] Извлечено слов: {len(words)}")
         
-        return result
+        # Формируем метаданные
+        metadata = OCRMetadata(
+            source_file=source_file,
+            image_width=image_width or 1,  # Fallback если не определено
+            image_height=image_height or 1,
+            processed_at=datetime.now().isoformat(),
+            preprocessing_applied=[]
+        )
+        
+        return RawOCRResult(
+            full_text=full_text,
+            words=words,
+            metadata=metadata
+        )
     
     def _get_bounding_box(self, bounding_poly) -> dict:
         """Преобразует bounding_poly в простой bbox."""
         vertices = bounding_poly.vertices
         
-        xs = [v.x for v in vertices]
-        ys = [v.y for v in vertices]
+        xs = [v.x for v in vertices if v.x is not None]
+        ys = [v.y for v in vertices if v.y is not None]
+        
+        if not xs or not ys:
+            return {"x": 0, "y": 0, "width": 0, "height": 0}
         
         x_min = min(xs)
         y_min = min(ys)
@@ -148,13 +175,13 @@ class GoogleVisionOCR:
         y_max = max(ys)
         
         return {
-            "x": x_min,
-            "y": y_min,
-            "width": x_max - x_min,
-            "height": y_max - y_min
+            "x": max(0, x_min),
+            "y": max(0, y_min),
+            "width": max(1, x_max - x_min),
+            "height": max(1, y_max - y_min)
         }
     
-    def recognize_from_file(self, image_path: Path) -> dict:
+    def recognize_from_file(self, image_path: Path) -> RawOCRResult:
         """
         Распознаёт текст из файла изображения.
         
@@ -162,68 +189,9 @@ class GoogleVisionOCR:
             image_path: Путь к файлу
             
         Returns:
-            dict: Результат OCR
+            RawOCRResult: Контракт D1->D2
         """
         with open(image_path, "rb") as f:
             content = f.read()
         
-        return self.recognize(content)
-    
-    def save_raw_ocr(self, result: RawOCRResult, filename: str) -> Path:
-        """
-        Сохраняет сырой результат OCR в JSON файл.
-        
-        Args:
-            result: Результат OCR (dict)
-            filename: Имя файла (без расширения)
-            
-        Returns:
-            Path: Путь к сохранённому файлу
-        """
-        raw_ocr_dir = OUTPUT_DIR / "raw_ocr"
-        raw_ocr_dir.mkdir(parents=True, exist_ok=True)
-        
-        output_path = raw_ocr_dir / f"{filename}.json"
-        
-        # Добавляем метаданные
-        result.metadata = OCRMetadata(
-            timestamp=datetime.now().isoformat(),
-            source_file=filename
-        )
-        
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(result.to_dict(), f, ensure_ascii=False, indent=2)
-        
-        return output_path
-    
-    def recognize_and_save(self, image_content: bytes, filename: str) -> tuple[RawOCRResult, Path]:
-        """
-        Распознаёт текст и сохраняет raw результат в JSON.
-        
-        Args:
-            image_content: Байты изображения
-            filename: Имя исходного файла (без расширения)
-            
-        Returns:
-            tuple: (результат OCR, путь к JSON файлу)
-        """
-        result = self.recognize(image_content)
-        json_path = self.save_raw_ocr(result, filename)
-        return result, json_path
-    
-    def recognize_from_file_and_save(self, image_path: Path) -> tuple[RawOCRResult, Path]:
-        """
-        Распознаёт текст из файла и сохраняет raw результат.
-        
-        Args:
-            image_path: Путь к изображению
-            
-        Returns:
-            tuple: (результат OCR, путь к JSON файлу)
-        """
-        with open(image_path, "rb") as f:
-            content = f.read()
-        
-        filename = image_path.stem  # Имя без расширения
-        return self.recognize_and_save(content, filename)
-
+        return self.recognize(content, source_file=image_path.stem)

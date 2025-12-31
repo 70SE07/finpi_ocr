@@ -2,16 +2,18 @@
 Адаптер для GoogleVisionOCR, реализующий интерфейс IOCRProvider (домен Extraction).
 
 Позволяет использовать существующий GoogleVisionOCR через единый интерфейс домена Extraction.
+
+ВАЖНО: Возвращает RawOCRResult из contracts/d1_extraction_dto.py
 """
 
 from pathlib import Path
-from typing import Dict, Any, Optional
+from typing import Optional
 from loguru import logger
 
 from ...domain.interfaces import IOCRProvider
 from ...domain.exceptions import OCRProviderError, OCRResponseError
 from ...ocr.google_vision_ocr import GoogleVisionOCR as OriginalGoogleVisionOCR
-from contracts.raw_ocr_schema import RawOCRResult
+from contracts.d1_extraction_dto import RawOCRResult
 
 
 class GoogleVisionOCRAdapter(IOCRProvider):
@@ -19,6 +21,7 @@ class GoogleVisionOCRAdapter(IOCRProvider):
     Адаптер для GoogleVisionOCR (домен Extraction).
     
     Реализует интерфейс IOCRProvider, делегируя вызовы оригинальному GoogleVisionOCR.
+    Возвращает RawOCRResult — контракт D1->D2.
     """
     
     def __init__(self, credentials_path: Optional[str] = None):
@@ -38,33 +41,23 @@ class GoogleVisionOCRAdapter(IOCRProvider):
                 original_error=e
             )
     
-    def recognize(self, image_content: bytes) -> Dict[str, Any]:
+    def recognize(self, image_content: bytes, source_file: str = "unknown") -> RawOCRResult:
         """
         Распознает текст на изображении.
         
         Args:
             image_content: Байты изображения
+            source_file: Имя исходного файла (для метаданных)
             
         Returns:
-            Словарь с результатами OCR в формате raw_ocr
+            RawOCRResult: Контракт D1->D2 с full_text и words[]
             
         Raises:
             OCRResponseError: Если произошла ошибка при распознавании
         """
         try:
             logger.debug("[Extraction] Вызов GoogleVisionOCR.recognize()")
-            result = self._original_ocr.recognize(image_content)
-            
-            # Конвертируем RawOCRResult в словарь
-            if isinstance(result, RawOCRResult):
-                return result.to_dict()
-            elif isinstance(result, dict):
-                return result
-            else:
-                raise OCRResponseError(
-                    message=f"Неожиданный тип результата: {type(result)}",
-                    component="GoogleVisionOCRAdapter"
-                )
+            return self._original_ocr.recognize(image_content, source_file)
                 
         except Exception as e:
             raise OCRResponseError(
@@ -73,7 +66,7 @@ class GoogleVisionOCRAdapter(IOCRProvider):
                 original_error=e
             )
     
-    def recognize_from_file(self, image_path: Path) -> Dict[str, Any]:
+    def recognize_from_file(self, image_path: Path) -> RawOCRResult:
         """
         Распознает текст из файла изображения.
         
@@ -81,25 +74,14 @@ class GoogleVisionOCRAdapter(IOCRProvider):
             image_path: Путь к файлу изображения
             
         Returns:
-            Словарь с результатами OCR в формате raw_ocr
+            RawOCRResult: Контракт D1->D2
             
         Raises:
             OCRResponseError: Если произошла ошибка при распознавании
         """
         try:
             logger.debug(f"[Extraction] Вызов GoogleVisionOCR.recognize_from_file() для {image_path}")
-            result = self._original_ocr.recognize_from_file(image_path)
-            
-            # Конвертируем RawOCRResult в словарь
-            if isinstance(result, RawOCRResult):
-                return result.to_dict()
-            elif isinstance(result, dict):
-                return result
-            else:
-                raise OCRResponseError(
-                    message=f"Неожиданный тип результата: {type(result)}",
-                    component="GoogleVisionOCRAdapter"
-                )
+            return self._original_ocr.recognize_from_file(image_path)
                 
         except Exception as e:
             raise OCRResponseError(

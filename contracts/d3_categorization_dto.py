@@ -5,12 +5,14 @@ DTO контракт: D3 (Categorization) -> Orchestrator
 Это output всей системы, готовый для передачи внешним сервисам.
 
 ВАЖНО: Структура 1 в 1 соответствует ParseResultDTO из finpi_parser_photo.
+
+ВАЛИДАЦИЯ: Pydantic гарантирует корректность данных.
 """
 
 from datetime import datetime
 from typing import List, Optional
 
-from pydantic import BaseModel, ConfigDict, Field, validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class ReceiptItem(BaseModel):
@@ -37,21 +39,21 @@ class ReceiptItem(BaseModel):
     store_address: str | None = Field(None, description="Адрес магазина для позиции")
     date: datetime | None = Field(None, description="Дата для позиции")
 
-    @validator("quantity")
+    model_config = ConfigDict(frozen=True, from_attributes=True)
+
+    @field_validator("quantity")
+    @classmethod
     def validate_quantity(cls, v: float | None) -> float | None:
         if v is not None and v <= 0:
             raise ValueError("Quantity must be positive")
         return v
 
-    @validator("product_type")
+    @field_validator("product_type")
+    @classmethod
     def validate_product_type(cls, v: str) -> str:
         if v not in ["GOODS", "SERVICE"]:
             raise ValueError(f"Invalid product_type: {v}. Must be GOODS or SERVICE.")
         return v
-
-    class Config:
-        frozen = True
-        from_attributes = True
 
 
 class ReceiptSums(BaseModel):
@@ -61,9 +63,7 @@ class ReceiptSums(BaseModel):
 
     total: float | None = Field(None, description="Итоговая сумма")
 
-    class Config:
-        frozen = True
-        from_attributes = True
+    model_config = ConfigDict(frozen=True, from_attributes=True)
 
 
 class DataValidityInfo(BaseModel):
@@ -74,9 +74,7 @@ class DataValidityInfo(BaseModel):
     sum_validation_passed: bool = Field(..., description="Совпадение суммы по чеку и сумме позиций")
     sum_difference: float | None = Field(None, description="Разница между суммой позиций и суммой чека")
 
-    class Config:
-        frozen = True
-        from_attributes = True
+    model_config = ConfigDict(frozen=True, from_attributes=True)
 
 
 class ParseResultDTO(BaseModel):
@@ -95,6 +93,4 @@ class ParseResultDTO(BaseModel):
     # Поле для обратной совместимости (будет удалено позже)
     total_amount: float | None = Field(None, description="Общая сумма чека (deprecated, используйте sums.total)")
 
-    class Config:
-        frozen = True
-        from_attributes = True
+    model_config = ConfigDict(frozen=True, from_attributes=True)
