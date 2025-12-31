@@ -43,7 +43,7 @@
 - Семантическое извлечение товаров (название, количество, цена)
 
 ### Контракт между доменами
-`contracts/raw_ocr_schema.py` определяет `RawOCRResult` - стабильный формат передачи данных от Extraction к Parsing.
+`contracts/d1_extraction_dto.py` определяет `RawOCRResult` - стабильный формат передачи данных от Extraction к Parsing (ADR-006).
 
 **Важно:** Домены развиваются независимо. Extraction может использовать любой OCR провайдер (Google Vision → GPT-4 Vision → другое). Parsing может использовать любой алгоритм парсинга (текущий → Gemini → другое).
 
@@ -55,8 +55,10 @@ Finpi_OCR/
 │   ├── settings.py              # Параметры системы
 │   └── google_credentials.json   # Google Cloud credentials (НЕ в git!)
 │
-├── contracts/                    # Контракты между доменами
-│   └── raw_ocr_schema.py       # RawOCRResult (Extraction → Parsing)
+├── contracts/                    # Контракты между доменами (Pydantic)
+│   ├── d1_extraction_dto.py    # D1→D2: RawOCRResult (words + full_text)
+│   ├── d2_parsing_dto.py       # D2→D3: RawReceiptDTO
+│   └── d3_categorization_dto.py # D3→Orchestrator: ParseResultDTO
 │
 ├── data/                         # Данные
 │   ├── input/                   # Входные изображения чеков
@@ -233,26 +235,36 @@ patterns:
 - [Обзор архитектуры](docs/architecture/architecture_overview.md) — независимые домены, контракты, использование
 - [Реестр контрактов](docs/architecture/contract_registry.md) — обязательства модулей
 
-## Формат RawOCRResult
+## Формат RawOCRResult (D1→D2)
+
+По ADR-006, контракт содержит `full_text` и `words[]` с координатами:
 
 ```json
 {
-  "metadata": {
-    "timestamp": "2025-12-26T14:54:27",
-    "source_file": "IMG_1292"
-  },
   "full_text": "Полный текст чека...",
-  "blocks": [
+  "words": [
     {
-      "text": "Строка текста",
-      "confidence": 0.98,
-      "bounding_box": {"x": 10, "y": 20, "width": 200, "height": 40},
-      "block_type": "PARAGRAPH"
+      "text": "REWE",
+      "bounding_box": {"x": 100, "y": 50, "width": 80, "height": 20},
+      "confidence": 0.98
+    },
+    {
+      "text": "Milch",
+      "bounding_box": {"x": 50, "y": 200, "width": 60, "height": 18},
+      "confidence": 0.95
     }
   ],
-  "raw_annotations": [...]
+  "metadata": {
+    "source_file": "IMG_1292",
+    "image_width": 800,
+    "image_height": 1200,
+    "processed_at": "2024-12-31T10:30:00",
+    "preprocessing_applied": ["grayscale", "deskew"]
+  }
 }
 ```
+
+**Почему `words[]` вместо `blocks[]`:** Слова с координатами позволяют D2 группировать их в строки по Y-координате и понимать layout (колонки, отступы).
 
 ## Принципы разработки
 

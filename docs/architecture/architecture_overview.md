@@ -11,10 +11,10 @@ Finpi OCR - тренировочный стенд для эксперимент�
    - Parsing домен: layout, locale, metadata, semantic extraction
    - Домены изолированы и могут развиваться независимо
 
-2. **Контракт между доменами**
-   - Stable contract через `contracts/raw_ocr_schema.py`
-   - Extraction → Parsing через `RawOCRResult`
-   - Parsing → клиент (контракт в разработке)
+2. **Контракт между доменами (Pydantic)**
+   - D1→D2: `contracts/d1_extraction_dto.py` — `RawOCRResult` (words + full_text)
+   - D2→D3: `contracts/d2_parsing_dto.py` — `RawReceiptDTO`
+   - D3→Orchestrator: `contracts/d3_categorization_dto.py` — `ParseResultDTO`
 
 3. **Интерфейсы и адаптеры**
    - Каждый домен имеет свои интерфейсы (абстрактные классы)
@@ -34,8 +34,10 @@ Finpi_OCR/
 │   ├── settings.py            # Настройки системы
 │   └── google_credentials.json # Google Cloud credentials
 │
-├── contracts/                 # Контракты между доменами
-│   └── raw_ocr_schema.py     # RawOCRResult (Extraction → Parsing)
+├── contracts/                 # Контракты между доменами (Pydantic)
+│   ├── d1_extraction_dto.py  # D1→D2: RawOCRResult
+│   ├── d2_parsing_dto.py     # D2→D3: RawReceiptDTO
+│   └── d3_categorization_dto.py # D3→Orchestrator
 │
 ├── data/                      # Данные
 │   ├── input/                 # Входные изображения чеков
