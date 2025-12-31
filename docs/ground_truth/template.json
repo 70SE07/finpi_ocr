@@ -1,0 +1,66 @@
+{
+  "id": "XXX",
+  "source_file": "photo/GOODS/{Store}/{filename}",
+  "locale": "xx_XX",
+  
+  "store": {
+    "name": "",
+    "address": ""
+  },
+  
+  "metadata": {
+    "date": "",
+    "time": "",
+    "currency": "",
+    "payment_method": "",
+    "receipt_total": 0.00,
+    "tax_block": {
+      "A": {"rate": "", "netto": 0.00, "mwst": 0.00, "brutto": 0.00},
+      "B": {"rate": "", "netto": 0.00, "mwst": 0.00, "brutto": 0.00}
+    }
+  },
+  
+  "items": [
+    {
+      "raw_name": "",
+      "quantity": null,
+      "unit": null,
+      "unit_price": null,
+      "total_price": 0.00,
+      "tax_class": ""
+    }
+  ],
+  
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "expected_total": 0.00,
+    "discrepancy": 0.00
+  },
+  
+  "observations": {
+    "critical": {
+      "decimal_separator": "",
+      "tax_class": {
+        "format": "",
+        "values": [],
+        "inverted": false
+      },
+      "date_format": ""
+    },
+    "important": {
+      "sku_present": false,
+      "sku_format": null,
+      "multiline_items": false,
+      "weighted_items": false,
+      "pfand_present": false,
+      "discounts_present": false,
+      "quantity_position": ""
+    },
+    "store_specific": {
+      "currency_symbol": "",
+      "has_categories": false,
+      "receipt_language": ""
+    },
+    "free_notes": []
+  }
+}
