@@ -97,6 +97,22 @@ ParseResultDTO:
 
 ---
 
+---
+
+## Известные ограничения
+
+### D1 → D2: Потеря семантики блоков
+
+Google Vision возвращает тип блока (TEXT, TABLE, BARCODE), но мы его не сохраняем в `Word`.
+
+**Почему приемлемо:** Чеки — линейные документы, структура восстанавливается по координатам.
+
+**План:** При необходимости добавить `block_type: Optional[str]` в `Word`.
+
+См. [ADR-006: Известные ограничения](../docs/architecture/decisions/006_d1_d2_contract_design.md#известные-ограничения)
+
+---
+
 ## Связанные ADR
 
 - [ADR-005: Contract Boundaries](../docs/architecture/decisions/005_contract_boundaries.md)
