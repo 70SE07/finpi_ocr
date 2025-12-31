@@ -118,7 +118,7 @@ class LocaleConfigLoader:
         # Date config
         date_data = data.get("date_formats")
         if date_data:
-        if isinstance(date_data, list):
+            if isinstance(date_data, list):
                 config_dict["date"] = {"formats": date_data}
             else:
                 config_dict["date"] = {"formats": date_data.get("formats", ["DD.MM.YYYY"])}

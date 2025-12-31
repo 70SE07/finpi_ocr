@@ -8,10 +8,11 @@
     "carrefour": {"file": "carrefour.json", "receipts": 5, "type": "Hypermarket"},
     "cropp": {"file": "cropp.json", "receipts": 1, "type": "Clothing"},
     "orlen": {"file": "orlen.json", "receipts": 1, "type": "Gas station"},
-    "leroymerlin": {"file": "leroymerlin.json", "receipts": 1, "type": "DIY/Hardware"}
+    "leroymerlin": {"file": "leroymerlin.json", "receipts": 1, "type": "DIY/Hardware"},
+    "zabka": {"file": "zabka.json", "receipts": 1, "type": "Convenience store (franchise)"}
   },
   
-  "total_receipts": 8,
+  "total_receipts": 9,
   
   "locale_patterns": {
     "number_format": {
@@ -31,9 +32,11 @@
   "critical_warnings": [
     "Orlen uses DOT as decimal separator - different from Carrefour!",
     "Carrefour has tax class PREFIX in item name (A_TORBA)",
+    "Żabka has tax class SUFFIX after price (like German Lidl)",
     "Leroy Merlin has 8-digit SKU BEFORE item name",
     "qty*price= format for weighted items (Carrefour)",
     "qty * unit_price format (Leroy Merlin)",
-    "Same country, different decimal separators!"
+    "Żabka uses ISO date format (YYYY-MM-DD) - different from others!",
+    "Same country, different decimal separators and tax formats!"
   ]
 }

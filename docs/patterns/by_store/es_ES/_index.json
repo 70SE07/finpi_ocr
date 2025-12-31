@@ -5,10 +5,11 @@
   "currency": "EUR",
   
   "stores": {
-    "consum": {"file": "consum.json", "receipts": 2, "type": "Supermarket"}
+    "consum": {"file": "consum.json", "receipts": 2, "type": "Supermarket"},
+    "mercadona": {"file": "mercadona.json", "receipts": 1, "type": "Supermarket (largest chain)"}
   },
   
-  "total_receipts": 2,
+  "total_receipts": 3,
   
   "locale_patterns": {
     "number_format": {"decimal": ",", "thousands": "."},

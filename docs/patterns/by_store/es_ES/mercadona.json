@@ -1,0 +1,102 @@
+{
+  "store": {
+    "brand": "Mercadona",
+    "type": "Supermarket (largest chain in Spain)",
+    "locale": "es_ES"
+  },
+
+  "sources": {
+    "receipt_ids": ["059"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "Torrevieja", "address": "AVDA. ORIHUELA, S/N, 03186", "receipts": ["059"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": ".",
+      "example": "1.234,56"
+    },
+
+    "tax_class": {
+      "format": "none_in_line",
+      "values": ["4%", "10%", "21%"],
+      "meaning": {
+        "4%": {"description": "Super reduced VAT (basic food)"},
+        "10%": {"description": "Reduced VAT (food, transport)"},
+        "21%": {"description": "Standard VAT (general)"}
+      },
+      "position": "only_in_tax_block",
+      "inverted": false,
+      "note": "Tax class NOT shown per item line - only in IVA block at bottom"
+    },
+
+    "item_line": {
+      "format": "qty name [weight price_per_unit] total",
+      "examples": [
+        "1 ANTIOX FRUTAS ROJAS                     1,75",
+        "1 PIMIENTO ROJO",
+        "  0,674 kg     2,70 €/kg                  1,82"
+      ],
+      "quantity_position": "before_name",
+      "multiline": true,
+      "lines_per_item": "1-2 (weighted items use 2 lines)",
+      "columns": ["Descripcion", "P. Unit", "Imp.(€)"]
+    },
+
+    "sku": {
+      "present": false,
+      "note": "No SKU/barcode on receipt"
+    },
+
+    "categories": {
+      "present": false,
+      "note": "No product categories on receipt"
+    },
+
+    "discounts": {
+      "format": "unknown",
+      "keywords": [],
+      "note": "No discounts in analyzed receipts"
+    },
+
+    "weighted_items": {
+      "present": true,
+      "format": "qty kg  price €/kg",
+      "example": "0,674 kg     2,70 €/kg",
+      "position": "second_line"
+    },
+
+    "date_format": {
+      "format": "DD/MM/YYYY HH:MM",
+      "example": "11/11/2025 21:19",
+      "calendar": "gregorian"
+    },
+
+    "totals": {
+      "keywords": ["TOTAL (€)"],
+      "format": "TOTAL (€)          value",
+      "cash_keywords": ["ENTREGA EFECTIVO"],
+      "change_keywords": ["DEVOLUCIÓN"]
+    },
+
+    "receipt_type": {
+      "name": "FACTURA SIMPLIFICADA",
+      "note": "Simplified invoice format in Spain"
+    }
+  },
+
+  "anomalies": [
+    "Tax class NOT shown in item lines - only in IVA summary block",
+    "Weighted items span 2 lines (name on first, weight/price on second)"
+  ],
+
+  "notes": [
+    "Mercadona is the largest supermarket chain in Spain",
+    "Three IVA rates: 4% (basic food), 10% (food), 21% (general)",
+    "Clean format without SKU or tax markers per line",
+    "Cash payment shows ENTREGA EFECTIVO (given) and DEVOLUCION (change)"
+  ]
+}

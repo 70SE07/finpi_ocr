@@ -1,0 +1,111 @@
+{
+  "store": {
+    "brand": "Żabka",
+    "type": "Convenience store (franchise, largest chain in Poland)",
+    "locale": "pl_PL"
+  },
+
+  "sources": {
+    "receipt_ids": ["060"],
+    "total_receipts": 1,
+    "branches": [
+      {"name": "Z6502 Warszawa Targowa", "address": "ul. Targowa 21/LU1, 03-728 Warszawa", "receipts": ["060"]}
+    ]
+  },
+
+  "patterns": {
+    "number_format": {
+      "decimal_separator": ",",
+      "thousands_separator": " ",
+      "example": "1 234,56"
+    },
+
+    "tax_class": {
+      "format": "single_letter_suffix",
+      "values": ["A", "B", "C", "D"],
+      "meaning": {
+        "A": {"rate": "23%", "description": "Standard VAT"},
+        "B": {"rate": "8%", "description": "Reduced VAT"},
+        "C": {"rate": "5%", "description": "Super reduced VAT (food)"},
+        "D": {"rate": "0%", "description": "Zero VAT"}
+      },
+      "position": "end_of_line",
+      "inverted": false,
+      "note": "Tax class shown as single letter suffix after total price"
+    },
+
+    "item_line": {
+      "format": "name qty x unit_price = total tax_class",
+      "examples": [
+        "ESPRESSO 40ml GX-A        1szt. x4,99 4,99A",
+        "KAWA Z MLEKIEM 200ml GX-A 1szt. x4,99 4,99A",
+        "WKL TYT SIENNA-A          1szt. x19,99 19,99A"
+      ],
+      "quantity_position": "after_name",
+      "quantity_format": "Nszt.",
+      "multiline": false,
+      "lines_per_item": 1
+    },
+
+    "sku": {
+      "present": false,
+      "note": "Internal codes like GX-A appear in product name, not as separate SKU"
+    },
+
+    "categories": {
+      "present": false,
+      "note": "No product categories on receipt"
+    },
+
+    "discounts": {
+      "format": "unknown",
+      "keywords": [],
+      "note": "No discounts in analyzed receipts"
+    },
+
+    "date_format": {
+      "format": "YYYY-MM-DD HH:MM",
+      "example": "2025-11-18 08:43",
+      "calendar": "gregorian",
+      "note": "ISO format - unusual for Polish receipts!"
+    },
+
+    "totals": {
+      "keywords": ["SUMA PLN"],
+      "format": "SUMA PLN          value",
+      "tax_keywords": ["SPRZEDAŻ OPODATKOWANA", "PTU"],
+      "note": "PTU = Polish term for VAT"
+    },
+
+    "receipt_type": {
+      "name": "PARAGON FISKALNY",
+      "note": "Fiscal receipt (required by law)"
+    },
+
+    "franchise": {
+      "present": true,
+      "format": "Owner name in header",
+      "note": "Żabka is franchise - each store has different owner"
+    }
+  },
+
+  "anomalies": [
+    "ISO date format (YYYY-MM-DD) - different from Carrefour (DD-MM-YYYY)",
+    "Internal product codes in name (GX-A) - not SKU but product variant",
+    "Franchise owner name in header"
+  ],
+
+  "notes": [
+    "Żabka is the largest convenience store chain in Poland (9000+ stores)",
+    "Franchise model - each store has different NIP (tax ID)",
+    "Tax class as single letter suffix (like German Lidl)",
+    "PTU = Podatek od Towarów i Usług (VAT in Polish)",
+    "Quantity format: Nszt. (N pieces)"
+  ],
+
+  "comparison_with_carrefour": {
+    "tax_format": "Żabka: suffix 'A' | Carrefour: prefix 'A_'",
+    "date_format": "Żabka: YYYY-MM-DD | Carrefour: DD-MM-YYYY",
+    "decimal": "Both use comma"
+  }
+}

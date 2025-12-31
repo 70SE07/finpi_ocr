@@ -85,6 +85,15 @@
     "tax_a_brutto": 112.24,
     "tax_b_brutto": 31.13,
     "discrepancy": 0.00
-  }
+  },
+  "notes": [
+    "Tax A = 7% (food), B = 19% (non-food), M = 0% (Pfand)",
+    "Weighted items: qty kg x price EUR/kg format",
+    "Aktionsnachlass = discount (negative value)",
+    "Pfand separate line with M tax class",
+    "LARGEST receipt in dataset (60+ items)",
+    "Decimal separator: comma",
+    "Item names often truncated"
+  ]
 }
 

@@ -1,10 +1,10 @@
 # Pattern Matrix - Агрегированный Анализ Паттернов
 
-**Версия:** 2.0  
-**Дата обновления:** 2025-12-27  
-**Проанализировано чеков:** 53  
+**Версия:** 2.1  
+**Дата обновления:** 2025-12-29  
+**Проанализировано чеков:** 55  
 **Локалей:** 10  
-**Магазинов:** 19
+**Магазинов:** 21
 
 ## Структура Документации
 
@@ -31,10 +31,12 @@ docs/patterns/
     │   ├── _index.json
     │   ├── carrefour.json  # 5 чеков (A_prefix)
     │   ├── cropp.json      # 1 чек
-    │   └── orlen.json      # 1 чек (DOT decimal!)
+    │   ├── orlen.json      # 1 чек (DOT decimal!)
+    │   └── zabka.json      # 1 чек (ISO date, suffix tax)
     ├── es_ES/
     │   ├── _index.json
-    │   └── consum.json     # 2 чека
+    │   ├── consum.json     # 2 чека
+    │   └── mercadona.json  # 1 чек (no tax in line!)
     ├── pt_PT/
     │   ├── _index.json
     │   ├── lidl.json       # 1 чек
@@ -84,7 +86,8 @@ docs/patterns/
 | Процент | %10, %18, 19% | CenterShop, tr_TR |
 | Кириллица | Я, *Б | uk_UA, bg_BG |
 | Префикс в имени | A_TORBA | Carrefour (pl_PL) |
-| Не показан | - | Consum (es_ES) |
+| Суффикс после цены | 4,99A | Zabka (pl_PL) |
+| Не показан | - | Consum, Mercadona (es_ES) |
 
 **ВЫВОД:** `tax_class` ДОЛЖЕН быть `Optional[str]` - слишком много вариаций!
 
@@ -131,6 +134,9 @@ docs/patterns/
 | Kleins (de_DE) | Время на каждый товар | HH:MM |
 | Hornbach (cs_CZ) | Zaokrouhlení | Округление к целым CZK |
 | Billa (bg_BG) | Двойная валюта | BGN + EUR |
+| Mercadona (es_ES) | Налог только в блоке IVA | 4%/10%/21% |
+| Zabka (pl_PL) | ISO формат даты | YYYY-MM-DD |
+| Zabka (pl_PL) | Франшиза | Владелец в header |
 
 ---
 
@@ -170,8 +176,8 @@ class ParsedReceiptItem:
 | Локаль | Чеков | Магазинов | Валюта |
 |--------|-------|-----------|--------|
 | de_DE | 36 | 11 | EUR |
-| pl_PL | 7 | 3 | PLN |
-| es_ES | 2 | 1 | EUR |
+| pl_PL | 8 | 4 | PLN |
+| es_ES | 3 | 2 | EUR |
 | pt_PT | 2 | 2 | EUR |
 | th_TH | 1 | 1 | THB |
 | uk_UA | 1 | 1 | UAH |
@@ -179,4 +185,4 @@ class ParsedReceiptItem:
 | bg_BG | 1 | 1 | BGN |
 | tr_TR | 1 | 1 | TRY |
 | en_IN | 1 | 1 | INR |
-| **ИТОГО** | **53** | **19** | **8 валют** |
+| **ИТОГО** | **55** | **21** | **8 валют** |

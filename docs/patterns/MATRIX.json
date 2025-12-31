@@ -1,15 +1,15 @@
 {
   "$schema": "Aggregated patterns across all locales and stores",
-  "version": "2.0",
-  "last_updated": "2025-12-27",
-  "total_receipts_analyzed": 58,
+  "version": "2.1",
+  "last_updated": "2025-12-29",
+  "total_receipts_analyzed": 55,
   "total_locales": 10,
-  "total_stores": 20,
+  "total_stores": 21,
 
   "locales": {
-    "de_DE": {"receipts": 40, "stores": 11, "index": "by_store/de_DE/_index.json"},
+    "de_DE": {"receipts": 36, "stores": 11, "index": "by_store/de_DE/_index.json"},
     "pl_PL": {"receipts": 8, "stores": 4, "index": "by_store/pl_PL/_index.json"},
-    "es_ES": {"receipts": 2, "stores": 1, "index": "by_store/es_ES/_index.json"},
+    "es_ES": {"receipts": 3, "stores": 2, "index": "by_store/es_ES/_index.json"},
     "pt_PT": {"receipts": 2, "stores": 2, "index": "by_store/pt_PT/_index.json"},
     "th_TH": {"receipts": 1, "stores": 1, "index": "by_store/th_TH/_index.json"},
     "uk_UA": {"receipts": 1, "stores": 1, "index": "by_store/uk_UA/_index.json"},
@@ -34,7 +34,8 @@
       "with_modifiers": ["+A", "+B", "AW"],
       "percentage": ["%10", "%18", "19%", "7%"],
       "prefix_in_name": ["A_", "C_"],
-      "none_shown": ["es_ES"],
+      "suffix_after_price": ["pl_PL (Zabka)"],
+      "none_shown": ["es_ES (Consum, Mercadona)"],
       "WARNING": "tax_class MUST be Optional[str] - too many variations!"
     },
 
