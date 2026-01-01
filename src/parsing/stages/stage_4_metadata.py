@@ -94,8 +94,8 @@ class MetadataStage:
         """
         if config_loader is None:
             # Default: создаём локальный загрузчик
-            from ..locales.locale_config import LocaleConfig
-            config_loader = LocaleConfig()
+            from ..locales.config_loader import ConfigLoader
+            config_loader = ConfigLoader()
         
         self.config_loader = config_loader
     
