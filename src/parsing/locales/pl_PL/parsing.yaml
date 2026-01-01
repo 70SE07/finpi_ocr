@@ -1,0 +1,46 @@
+# Конфигурация парсинга для польских чеков (pl_PL)
+# Наследует: src/parsing/locales/base.yaml
+
+extends: base.yaml
+
+locale_code: pl_PL
+currency: PLN
+
+# === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
+
+# Ключевые слова для поиска итоговой суммы в чеке
+total_keywords:
+  - do zaplaty         # "К оплате"
+  - suma               # "Сумма"
+  - razem              # "Всего"
+  - total              # Интернациональный
+
+# === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
+
+skip_keywords:
+  # Наследуемые из base.yaml
+  - $extends: common_skip_keywords
+  
+  # Польские итоговые слова
+  - do zaplaty          # "К оплате"
+  - suma                # "Сумма"
+  
+  # Способы оплаты (польские)
+  - karta               # "Карта"
+  - kartą płatniczą    # "Платёжная карта"
+  - gotówka             # "Наличные"
+  - płatność gotówkowa  # "Оплата наличными"
+  - płatność karta      # "Оплата картой"
+  
+  # Польские налоги
+  - ptu                 # "Налог на добавленную стоимость"
+  - vat                  # "Налог"
+  - nr nip               # "Налоговый номер"
+  
+  # Польские фразы
+  - dziękujemy           # "Спасибо"
+
+discount_keywords:
+  - rabat               # "Скидка"
+  - znizka              # "Скидка"
+  - promocja             # "Акция"

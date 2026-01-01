@@ -55,7 +55,7 @@ class GoogleVisionOCR:
         
         self.client = vision.ImageAnnotatorClient()
         self.language_hints = OCR_LANGUAGE_HINTS
-        
+    
         logger.info("[GoogleVisionOCR] Клиент инициализирован")
     
     def recognize(
@@ -109,7 +109,7 @@ class GoogleVisionOCR:
         # Полный текст
         if response.full_text_annotation:
             full_text = response.full_text_annotation.text
-            
+        
             # Извлекаем слова с координатами
             for page in response.full_text_annotation.pages:
                 # Размеры изображения
@@ -123,22 +123,22 @@ class GoogleVisionOCR:
                             word_text = "".join(
                                 symbol.text for symbol in word.symbols
                             )
-                            
-                            # Получаем bounding box
+                        
+                        # Получаем bounding box
                             bbox = self._get_bounding_box(word.bounding_box)
-                            
+                        
                             # Пропускаем слова с нулевыми размерами
                             if bbox["width"] <= 0 or bbox["height"] <= 0:
                                 continue
                             
                             words.append(Word(
                                 text=word_text,
-                                bounding_box=BoundingBox(
-                                    x=bbox["x"],
-                                    y=bbox["y"],
-                                    width=bbox["width"],
-                                    height=bbox["height"]
-                                ),
+                            bounding_box=BoundingBox(
+                                x=bbox["x"],
+                                y=bbox["y"],
+                                width=bbox["width"],
+                                height=bbox["height"]
+                            ),
                                 confidence=word.confidence
                             ))
         

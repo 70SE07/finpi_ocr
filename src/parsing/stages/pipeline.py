@@ -22,6 +22,9 @@ from .stage_4_metadata import MetadataStage, MetadataResult
 from .stage_5_semantic import SemanticStage, SemanticResult
 from .stage_6_validation import ValidationStage, ValidationResult
 
+# Конфигурационный загрузчик для локалей
+from ..locales.config_loader import ConfigLoader
+
 
 @dataclass
 class PipelineResult:
@@ -82,21 +85,23 @@ class ParsingPipeline:
         metadata_stage: Optional[MetadataStage] = None,
         semantic_stage: Optional[SemanticStage] = None,
         validation_stage: Optional[ValidationStage] = None,
+        config_loader: Optional[ConfigLoader] = None,
     ):
         """
         Инициализация пайплайна.
         
         Args:
             Все этапы опциональны — по умолчанию создаются стандартные.
+            config_loader: Загрузчик конфигов локалей
         """
         self.layout_stage = layout_stage or LayoutStage()
         self.locale_stage = locale_stage or LocaleStage()
         self.store_stage = store_stage or StoreStage()
-        self.metadata_stage = metadata_stage or MetadataStage()
-        self.semantic_stage = semantic_stage or SemanticStage()
+        self.metadata_stage = metadata_stage or MetadataStage(config_loader=config_loader)
+        self.semantic_stage = semantic_stage or SemanticStage(config_loader=config_loader)
         self.validation_stage = validation_stage or ValidationStage()
         
-        logger.info("[ParsingPipeline] Инициализирован (6 этапов)")
+        logger.info("[ParsingPipeline] Инициализирован (6 этапов с ConfigLoader)")
     
     def process(self, raw_ocr: RawOCRResult) -> PipelineResult:
         """

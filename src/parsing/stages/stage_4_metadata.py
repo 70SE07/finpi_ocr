@@ -15,64 +15,13 @@ Stage 4: Metadata Extraction
 import re
 from dataclasses import dataclass, field
 from datetime import datetime, date
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Any
 from loguru import logger
 
 from .stage_1_layout import LayoutResult
 from .stage_2_locale import LocaleResult
 from .stage_3_store import StoreResult
-
-
-# Паттерны дат по локалям
-DATE_PATTERNS: Dict[str, List[str]] = {
-    "de_DE": [
-        r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
-        r"(\d{2})\.(\d{2})\.(\d{2})",    # 31.12.24
-    ],
-    "pl_PL": [
-        r"(\d{4})-(\d{2})-(\d{2})",      # 2024-12-31 (ISO)
-        r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
-        r"(\d{2})-(\d{2})-(\d{4})",      # 31-12-2024
-    ],
-    "es_ES": [
-        r"(\d{2})/(\d{2})/(\d{4})",      # 31/12/2024
-        r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
-    ],
-    "pt_PT": [
-        r"(\d{2})/(\d{2})/(\d{4})",      # 31/12/2024
-        r"(\d{2})-(\d{2})-(\d{4})",      # 31-12-2024
-    ],
-    "default": [
-        r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
-        r"(\d{2})/(\d{2})/(\d{4})",      # 31/12/2024
-        r"(\d{4})-(\d{2})-(\d{2})",      # 2024-12-31 (ISO)
-    ],
-}
-
-# Ключевые слова для поиска итоговой суммы
-TOTAL_KEYWORDS: Dict[str, List[str]] = {
-    "de_DE": ["summe", "gesamt", "gesamtbetrag", "zu zahlen", "total"],
-    "pl_PL": ["suma", "razem", "do zaplaty", "total"],
-    "es_ES": ["total", "importe", "a pagar"],
-    "pt_PT": ["total", "valor", "a pagar"],
-    "cs_CZ": ["celkem", "k uhrade"],
-    "default": ["total", "sum", "summe"],
-}
-
-# Валюты по локалям
-CURRENCIES: Dict[str, str] = {
-    "de_DE": "EUR",
-    "pl_PL": "PLN",
-    "es_ES": "EUR",
-    "pt_PT": "EUR",
-    "cs_CZ": "CZK",
-    "bg_BG": "BGN",
-    "uk_UA": "UAH",
-    "tr_TR": "TRY",
-    "th_TH": "THB",
-    "en_IN": "INR",
-    "default": "EUR",
-}
+from ..locales.config_loader import ConfigLoader, ParsingConfig
 
 
 @dataclass
@@ -105,15 +54,50 @@ class MetadataStage:
     Stage 4: Metadata Extraction.
     
     ЦКП: Извлечение даты и итоговой суммы.
+    
+    Загружает конфигурацию локали (ключевые слова для итоговой суммы, валюта).
     """
+    
+    # Хардкоженные паттерны дат (остаються в коде — это логика, не данные)
+    DATE_PATTERNS: Dict[str, List[str]] = {
+        "de_DE": [
+            r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
+            r"(\d{2})\.(\d{2})\.(\d{2})",    # 31.12.24
+        ],
+        "pl_PL": [
+            r"(\d{4})-(\d{2})-(\d{2})",      # 2024-12-31 (ISO)
+            r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
+            r"(\d{2})-(\d{2})-(\d{4})",      # 31-12-2024
+        ],
+        "es_ES": [
+            r"(\d{2})/(\d{2})/(\d{4})",      # 31/12/2024
+            r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
+        ],
+        "pt_PT": [
+            r"(\d{2})/(\d{2})/(\d{4})",      # 31/12/2024
+            r"(\d{2})-(\d{2})-(\d{4})",      # 31-12-2024
+        ],
+        "default": [
+            r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
+            r"(\d{2})/(\d{2})/(\d{4})",      # 31/12/2024
+            r"(\d{4})-(\d{2})-(\d{2})",      # 2024-12-31 (ISO)
+        ],
+    }
     
     def __init__(
         self,
-        date_patterns: Optional[Dict[str, List[str]]] = None,
-        total_keywords: Optional[Dict[str, List[str]]] = None,
+        config_loader: Optional[ConfigLoader] = None,
     ):
-        self.date_patterns = date_patterns or DATE_PATTERNS
-        self.total_keywords = total_keywords or TOTAL_KEYWORDS
+        """
+        Args:
+            config_loader: Загрузчик конфигов локалей
+        """
+        if config_loader is None:
+            # Default: создаём локальный загрузчик
+            from ..locales.config_loader import ConfigLoader
+            config_loader = ConfigLoader()
+        
+        self.config_loader = config_loader
     
     def process(
         self,
@@ -134,14 +118,17 @@ class MetadataStage:
         """
         logger.debug(f"[Stage 4: Metadata] Извлечение для локали {locale.locale_code}")
         
+        # Загружаем конфиг для локали
+        config = self.config_loader.load(locale.locale_code)
+        
         # Извлекаем дату
-        receipt_date, date_raw = self._extract_date(layout, locale.locale_code)
+        receipt_date, date_raw = self._extract_date(layout)
         
-        # Извлекаем итоговую сумму
-        receipt_total, total_raw, total_line = self._extract_total(layout, locale.locale_code)
+        # Извлекаем итоговую сумму (из конфига)
+        receipt_total, total_raw, total_line = self._extract_total(layout, config)
         
-        # Определяем валюту
-        currency = CURRENCIES.get(locale.locale_code, CURRENCIES["default"])
+        # Валюта из конфига
+        currency = config.currency
         
         result = MetadataResult(
             receipt_date=receipt_date,
@@ -159,10 +146,30 @@ class MetadataStage:
         return result
     
     def _extract_date(
-        self, layout: LayoutResult, locale_code: str
+        self, layout: LayoutResult
     ) -> Tuple[Optional[date], Optional[str]]:
-        """Извлекает дату из текста."""
-        patterns = self.date_patterns.get(locale_code, self.date_patterns["default"])
+        """
+        Извлекает дату из чека.
+        
+        Использует хардкоженные паттерны (логика).
+        Паттерны зависят от региона, а не от языка.
+        """
+        # Хардкоженные паттерны дат — это логика, не данные
+        # Остаються в коде (ADR-013: логика в коде, данные в конфигах)
+        patterns = self.DATE_PATTERNS.get("default", [])
+        
+        for line in layout.lines:
+            for pattern in patterns:
+                match = re.search(pattern, line.text)
+                if match:
+                    try:
+                        parsed_date = self._parse_date_match(match, pattern)
+                        if parsed_date:
+                            return parsed_date, match.group(0)
+                    except ValueError:
+                        continue
+        
+        return None, None
         
         for line in layout.lines:
             for pattern in patterns:
@@ -198,32 +205,71 @@ class MetadataStage:
         return None
     
     def _extract_total(
-        self, layout: LayoutResult, locale_code: str
+        self, layout: LayoutResult, config: ParsingConfig
     ) -> Tuple[Optional[float], Optional[str], int]:
-        """Извлекает итоговую сумму."""
-        keywords = self.total_keywords.get(locale_code, self.total_keywords["default"])
+        """
+        Извлекает итоговую сумму.
         
-        # Сканируем снизу вверх (итог обычно в конце)
-        for i, line in enumerate(reversed(layout.lines)):
+        Алгоритм:
+        1. Ищем строки с ключевыми словами (из конфига локали)
+        2. Приоритет строкам в нижней половине чека
+        3. Если найдено несколько — берём наибольшую сумму
+        4. Fallback: наибольшая сумма в нижней трети чека
+        
+        Args:
+            layout: Результат LayoutStage
+            config: Конфигурация локали из parsing.yaml
+        """
+        keywords = config.total_keywords
+        total_lines = len(layout.lines)
+        
+        # Собираем кандидатов с ключевыми словами
+        candidates: List[Tuple[float, str, int]] = []
+        
+        for i, line in enumerate(layout.lines):
             line_lower = line.text.lower()
-            actual_line_num = len(layout.lines) - 1 - i
             
-            # Проверяем ключевые слова
             for keyword in keywords:
                 if keyword in line_lower:
-                    # Ищем число в строке
                     total, raw = self._extract_price_from_line(line.text)
-                    if total is not None:
-                        return total, raw, actual_line_num
+                    if total is not None and total > 0:
+                        # Вес: строки ниже имеют больший приоритет
+                        candidates.append((total, raw, i))
+                        logger.debug(f"[Stage 4] Кандидат: '{line.text}' -> {total} (keyword: {keyword})")
+                    break  # Одно ключевое слово достаточно
         
-        # Fallback: ищем последнюю большую сумму
-        for i, line in enumerate(reversed(layout.lines)):
-            actual_line_num = len(layout.lines) - 1 - i
+        if candidates:
+            # Сортируем: сначала по позиции (ниже = лучше), потом по сумме (больше = лучше)
+            # Выбираем строку с наибольшей суммой из нижней половины
+            lower_half = [c for c in candidates if c[2] >= total_lines // 2]
+            if lower_half:
+                best = max(lower_half, key=lambda x: x[0])
+            else:
+                best = max(candidates, key=lambda x: x[0])
+            
+            logger.debug(f"[Stage 4] Выбрана сумма: {best[0]} из строки {best[2]}")
+            return best[0], best[1], best[2]
+        
+        # Fallback: наибольшая сумма в нижней трети чека
+        logger.debug("[Stage 4] Fallback: поиск наибольшей суммы в нижней трети")
+        lower_third_start = total_lines * 2 // 3
+        max_total = None
+        max_raw = None
+        max_line = -1
+        
+        for i in range(lower_third_start, total_lines):
+            line = layout.lines[i]
             total, raw = self._extract_price_from_line(line.text)
             if total is not None and total > 1.0:
-                return total, raw, actual_line_num
+                if max_total is None or total > max_total:
+                    max_total = total
+                    max_raw = raw
+                    max_line = i
         
-        return None, None, -1
+        if max_total is not None:
+            logger.debug(f"[Stage 4] Fallback: выбрана сумма {max_total} из строки {max_line}")
+        
+        return max_total, max_raw, max_line
     
     def _extract_price_from_line(self, text: str) -> Tuple[Optional[float], Optional[str]]:
         """Извлекает цену из строки."""

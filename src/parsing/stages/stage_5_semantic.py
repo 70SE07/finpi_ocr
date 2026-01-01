@@ -10,6 +10,10 @@ Stage 5: Semantic Extraction
 1. Классификация строк (ITEM, HEADER, FOOTER, TOTAL, DISCOUNT)
 2. Парсинг строк-товаров (name, quantity, price, total)
 3. Обработка скидок и многострочных товаров
+
+Архитектурный принцип:
+- Конфигурация (ключевые слова, паттерны) загружается из YAML
+- Логика (обработка, фильтрация) в коде
 """
 
 import re
@@ -21,32 +25,7 @@ from .stage_1_layout import LayoutResult, Line
 from .stage_2_locale import LocaleResult
 from .stage_3_store import StoreResult
 from .stage_4_metadata import MetadataResult
-
-
-# Ключевые слова для классификации строк
-SKIP_KEYWORDS = {
-    # Заголовки
-    "tel", "telefon", "fax", "email", "www", "http",
-    "ust-id", "steuer", "mwst", "vat", "ptu", "iva",
-    "kassenbon", "quittung", "beleg", "paragon", "ticket", "recibo",
-    # Итоги
-    "summe", "gesamt", "total", "suma", "razem", "importe",
-    "bar", "gegeben", "ruckgeld", "wechselgeld",
-    "gotowka", "reszta", "efectivo", "cambio",
-    # Налоги
-    "netto", "brutto", "steuer", "tax",
-    # Прочее
-    "danke", "vielen dank", "dziekujemy", "gracias", "obrigado",
-    "uid", "bon-nr", "kassen", "filiale",
-}
-
-# Ключевые слова скидок
-DISCOUNT_KEYWORDS = {
-    "rabatt", "discount", "nachlass", "ersparnis",  # DE
-    "rabat", "znizka", "promocja",  # PL
-    "descuento", "dto",  # ES
-    "desconto",  # PT
-}
+from ..locales.config_loader import ConfigLoader, ParsingConfig
 
 
 @dataclass
@@ -122,11 +101,18 @@ class SemanticStage:
     
     def __init__(
         self,
-        skip_keywords: Optional[set] = None,
-        discount_keywords: Optional[set] = None,
+        config_loader: Optional[ConfigLoader] = None,
     ):
-        self.skip_keywords = skip_keywords or SKIP_KEYWORDS
-        self.discount_keywords = discount_keywords or DISCOUNT_KEYWORDS
+        """
+        Args:
+            config_loader: Загрузчик конфигов локалей
+        """
+        if config_loader is None:
+            # Default: создаём локальный загрузчик
+            from ..locales.config_loader import ConfigLoader
+            config_loader = ConfigLoader()
+        
+        self.config_loader = config_loader
     
     def process(
         self,
@@ -149,6 +135,9 @@ class SemanticStage:
         """
         logger.debug(f"[Stage 5: Semantic] Обработка {len(layout.lines)} строк")
         
+        # Загружаем конфигурацию локали
+        config = self.config_loader.load(locale.locale_code)
+        
         items: List[ParsedItem] = []
         discounts: List[ParsedItem] = []
         skipped = 0
@@ -168,12 +157,12 @@ class SemanticStage:
                 continue
             
             # Пропускаем служебные строки
-            if self._should_skip_line(line.text):
+            if self._should_skip_line(line.text, config):
                 skipped += 1
                 continue
             
             # Парсим строку
-            item = self._parse_item_line(line, locale.locale_code)
+            item = self._parse_item_line(line, config)
             
             if item:
                 parsed += 1
@@ -214,33 +203,58 @@ class SemanticStage:
         # По умолчанию до последних 5 строк
         return max(0, len(layout.lines) - 5)
     
-    def _should_skip_line(self, text: str) -> bool:
-        """Проверяет, нужно ли пропустить строку."""
+    def _should_skip_line(self, text: str, config: ParsingConfig) -> bool:
+        """
+        Проверяет, нужно ли пропустить строку.
+        
+        Args:
+            text: Текст строки
+            config: Конфигурация локали (ключевые слова, паттерны)
+        """
         text_lower = text.lower()
         
         # Слишком короткая
         if len(text.strip()) < 3:
             return True
         
-        # Содержит skip-слова
-        for keyword in self.skip_keywords:
+        # Проверяем skip-слова из конфига
+        for keyword in config.skip_keywords:
             if keyword in text_lower:
+                logger.debug(f"[Stage 5] Skip по ключевому слову: '{text}' ({keyword})")
+                return True
+        
+        # Проверяем паттерны веса из конфига
+        for pattern in config.weight_patterns:
+            if re.match(pattern, text, re.IGNORECASE):
+                logger.debug(f"[Stage 5] Skip по паттерну веса: '{text}'")
+                return True
+        
+        # Проверяем паттерны налогов из конфига
+        for pattern in config.tax_patterns:
+            if re.match(pattern, text.strip(), re.IGNORECASE):
+                logger.debug(f"[Stage 5] Skip по паттерну налога: '{text}'")
                 return True
         
         return False
     
-    def _parse_item_line(self, line: Line, locale_code: str) -> Optional[ParsedItem]:
-        """Парсит строку как товар."""
+    def _parse_item_line(self, line: Line, config: ParsingConfig) -> Optional[ParsedItem]:
+        """
+        Парсит строку как товар.
+        
+        Args:
+            line: Строка для парсинга
+            config: Конфигурация локали (ключевые слова скидок)
+        """
         text = line.text.strip()
         
-        # Проверяем на скидку
-        is_discount = self._is_discount_line(text)
+        # Проверяем на скидку (из конфига)
+        is_discount = self._is_discount_line(text, config.discount_keywords)
         
         # Проверяем на Pfand
         is_pfand = "pfand" in text.lower() or "leergut" in text.lower()
         
         # Извлекаем компоненты
-        name, quantity, price, total = self._extract_item_components(text, locale_code)
+        name, quantity, price, total = self._extract_item_components(text)
         
         # Если не удалось извлечь имя или цену — пропускаем
         if not name or (total is None and price is None):
@@ -257,12 +271,18 @@ class SemanticStage:
             raw_text=text,
         )
     
-    def _is_discount_line(self, text: str) -> bool:
-        """Проверяет, является ли строка скидкой."""
+    def _is_discount_line(self, text: str, discount_keywords: List[str]) -> bool:
+        """
+        Проверяет, является ли строка скидкой.
+        
+        Args:
+            text: Текст строки
+            discount_keywords: Ключевые слова скидок из конфига
+        """
         text_lower = text.lower()
         
-        # Проверяем ключевые слова
-        for keyword in self.discount_keywords:
+        # Проверяем ключевые слова скидок
+        for keyword in discount_keywords:
             if keyword in text_lower:
                 return True
         
@@ -273,22 +293,22 @@ class SemanticStage:
         return False
     
     def _extract_item_components(
-        self, text: str, locale_code: str
+        self, text: str
     ) -> Tuple[Optional[str], Optional[float], Optional[float], Optional[float]]:
         """
         Извлекает компоненты товара из строки.
         
         Returns:
             (name, quantity, price, total)
-        """
-        # Паттерн: НАЗВАНИЕ [QTY x PRICE] TOTAL
-        # Примеры:
-        # "Milch 3.5% 1,29 A"
-        # "Brot 2 x 0,99 1,98 B"
-        # "JOGURT GRECKI 3,49"
         
-        # Определяем десятичный разделитель по локали
-        decimal_sep = "," if locale_code in ["de_DE", "pl_PL", "es_ES", "pt_PT"] else "."
+        Паттерн: НАЗВАНИЕ [QTY x PRICE] TOTAL
+        Примеры:
+        "Milch 3.5% 1,29 A"
+        "Brot 2 x 0,99 1,98 B"
+        "JOGURT GRECKI 3,49"
+        """
+        # Определяем десятичный разделитель (по умолчанию — европейский)
+        decimal_sep = ","
         
         # Находим все числа в строке
         if decimal_sep == ",":
@@ -299,7 +319,7 @@ class SemanticStage:
         prices = re.findall(price_pattern, text)
         
         if not prices:
-            return None, None, None, None
+            return None, None, None
         
         # Последняя цена — это total
         total_match = prices[-1]
@@ -315,18 +335,20 @@ class SemanticStage:
         name = self._clean_item_name(name)
         
         if not name:
-            return None, None, None, None
+            return None, None, None
         
         # Ищем количество (например, "2 x" или "2x" или "2 St")
         quantity = None
         price = None
         
-        qty_match = re.search(r"(\d+)\s*[xX×]\s*", text)
+        # Паттерн: целое число + x + пробел/число
+        # НЕ захватывает числа из цен (например, "4,29 x 2" — это 2, а не 4,29)
+        qty_match = re.search(r"(?:^|\s)(\d{1,3})\s*[xX×]\s*(?:\d|$)", text)
         if qty_match:
             quantity = float(qty_match.group(1))
-            # Если есть quantity и несколько цен, вторая с конца — unit price
+            # Если есть quantity и несколько цен, первая — unit price
             if len(prices) >= 2:
-                price_match = prices[-2]
+                price_match = prices[0]
                 price = float(f"{price_match[0]}.{price_match[1]}")
         
         return name, quantity, price, total

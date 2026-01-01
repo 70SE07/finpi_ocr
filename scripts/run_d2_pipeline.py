@@ -25,6 +25,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from config.settings import INPUT_DIR, OUTPUT_DIR
 from src.extraction.application.factory import ExtractionComponentFactory
 from src.parsing.stages.pipeline import ParsingPipeline
+from src.parsing.locales.config_loader import ConfigLoader
 
 
 def process_image(image_path: Path, save_output: bool = True) -> dict:
@@ -69,7 +70,9 @@ def process_image(image_path: Path, save_output: bool = True) -> dict:
         print("\n[D2] Parsing (6 этапов по ADR-015)...")
         d2_start = time.time()
         
-        parser = ParsingPipeline()
+        # Создаём ConfigLoader для локалей
+        config_loader = ConfigLoader()
+        parser = ParsingPipeline(config_loader=config_loader)
         result = parser.process(raw_ocr)
         
         d2_time = (time.time() - d2_start) * 1000

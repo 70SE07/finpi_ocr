@@ -1,0 +1,44 @@
+# Конфигурация парсинга для португальских чеков (pt_PT)
+# Наследует: src/parsing/locales/base.yaml
+
+extends: base.yaml
+
+locale_code: pt_PT
+currency: EUR
+
+# === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
+
+# Ключевые слова для поиска итоговой суммы в чеке
+total_keywords:
+  - a pagar             # "К оплате"
+  - total              # "Итого"
+  - valor              # "Сумма"
+
+# === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
+
+skip_keywords:
+  # Наследуемые из base.yaml
+  - $extends: common_skip_keywords
+  
+  # Португальские итоговые слова
+  - a pagar             # "К оплате"
+  - total              # "Итого"
+  
+  # Способы оплаты (португальские)
+  - cartão             # "Карта"
+  - pagamento           # "Оплата"
+  - dinheiro            # "Наличные"
+  - multibanco          # "Платёжная система"
+  
+  # Португальские налоги
+  - nif                 # "Налоговый номер"
+  - iva                 # "Налог"
+  
+  # Португальские фразы
+  - obrigado            # "Спасибо"
+  - obrigada            # "Спасибо (ж.р.)"
+
+discount_keywords:
+  - desconto            # "Скидка"
+  - dto                 # "Скидка" (аббревиатура)
+  - promoção            # "Акция"
