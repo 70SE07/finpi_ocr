@@ -25,7 +25,7 @@ from .stage_1_layout import LayoutResult, Line
 from .stage_2_locale import LocaleResult
 from .stage_3_store import StoreResult
 from .stage_4_metadata import MetadataResult
-from ..locales.config_loader import ConfigLoader, ParsingConfig
+from ..locales.config_loader import ConfigLoader, SemanticConfig, LocaleConfig
 
 
 @dataclass
@@ -97,22 +97,40 @@ class SemanticStage:
     Stage 5: Semantic Extraction.
     
     ЦКП: Извлечение товаров из строк чека.
+    
+    Загружает конфигурацию локали (ключевые слова, паттерны для фильтрации).
     """
     
     def __init__(
         self,
         config_loader: Optional[ConfigLoader] = None,
+        config: Optional[LocaleConfig] = None,
     ):
         """
         Args:
-            config_loader: Загрузчик конфигов локалей
+            config_loader: DI для загрузки конфигов (для мульти-локальной поддержки)
+            config: Статическая конфигурация (legacy/testing)
         """
-        if config_loader is None:
-            # Default: создаём локальный загрузчик
-            from ..locales.config_loader import ConfigLoader
-            config_loader = ConfigLoader()
-        
-        self.config_loader = config_loader
+        self.config_loader = config_loader or ConfigLoader()
+        # Если передан статический конфиг, используем его как кэш/дефолт
+        self.config = config
+    
+    @staticmethod
+    def _empty_metadata_config() -> "MetadataConfig":
+        """Создаёт пустую конфигурацию метаданных."""
+        from ..locales.locale_config import MetadataConfig
+        return MetadataConfig(total_keywords=[])
+    
+    @staticmethod
+    def _empty_semantic_config() -> "SemanticConfig":
+        """Создаёт пустую конфигурацию семантического этапа."""
+        from ..locales.locale_config import SemanticConfig
+        return SemanticConfig(
+            skip_keywords=[],
+            discount_keywords=[],
+            weight_patterns=[],
+            tax_patterns=[],
+        )
     
     def process(
         self,
@@ -135,8 +153,18 @@ class SemanticStage:
         """
         logger.debug(f"[Stage 5: Semantic] Обработка {len(layout.lines)} строк")
         
-        # Загружаем конфигурацию локали
-        config = self.config_loader.load(locale.locale_code)
+        # Получаем конфигурацию семантики из LocaleConfig
+        if self.config:
+             # Legacy/Testing: используем статическую
+             semantic_config = self.config.semantic
+        else:
+             # Production: загружаем динамически по локали
+             try:
+                 full_config = self.config_loader.load(locale.locale_code)
+                 semantic_config = full_config.semantic
+             except Exception as e:
+                 logger.warning(f"[SemanticStage] Ошибка загрузки конфига для {locale.locale_code}: {e}")
+                 semantic_config = self._empty_semantic_config()
         
         items: List[ParsedItem] = []
         discounts: List[ParsedItem] = []
@@ -144,7 +172,6 @@ class SemanticStage:
         parsed = 0
         
         # Определяем границы области товаров
-        # (пропускаем заголовок и футер)
         start_line = self._find_items_start(layout, store)
         end_line = self._find_items_end(layout, metadata)
         
@@ -156,13 +183,13 @@ class SemanticStage:
                 skipped += 1
                 continue
             
-            # Пропускаем служебные строки
-            if self._should_skip_line(line.text, config):
+            # Пропускаем служебные строки (из конфига)
+            if self._should_skip_line(line.text, semantic_config):
                 skipped += 1
                 continue
             
             # Парсим строку
-            item = self._parse_item_line(line, config)
+            item = self._parse_item_line(line, semantic_config)
             
             if item:
                 parsed += 1
@@ -203,13 +230,13 @@ class SemanticStage:
         # По умолчанию до последних 5 строк
         return max(0, len(layout.lines) - 5)
     
-    def _should_skip_line(self, text: str, config: ParsingConfig) -> bool:
+    def _should_skip_line(self, text: str, config: "SemanticConfig") -> bool:
         """
         Проверяет, нужно ли пропустить строку.
         
         Args:
             text: Текст строки
-            config: Конфигурация локали (ключевые слова, паттерны)
+            config: Конфигурация локали (из LocaleConfig.semantic)
         """
         text_lower = text.lower()
         
@@ -237,13 +264,13 @@ class SemanticStage:
         
         return False
     
-    def _parse_item_line(self, line: Line, config: ParsingConfig) -> Optional[ParsedItem]:
+    def _parse_item_line(self, line: Line, config: "SemanticConfig") -> Optional[ParsedItem]:
         """
         Парсит строку как товар.
         
         Args:
             line: Строка для парсинга
-            config: Конфигурация локали (ключевые слова скидок)
+            config: Конфигурация локали (из LocaleConfig.semantic)
         """
         text = line.text.strip()
         
@@ -319,7 +346,7 @@ class SemanticStage:
         prices = re.findall(price_pattern, text)
         
         if not prices:
-            return None, None, None
+            return None, None, None, None
         
         # Последняя цена — это total
         total_match = prices[-1]
@@ -335,7 +362,7 @@ class SemanticStage:
         name = self._clean_item_name(name)
         
         if not name:
-            return None, None, None
+            return None, None, None, None
         
         # Ищем количество (например, "2 x" или "2x" или "2 St")
         quantity = None

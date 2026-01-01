@@ -1,35 +1,10 @@
 """
-Система локалей для домена Parsing.
+Модуль конфигурации локалей парсинга.
 
-Содержит:
-- LocaleConfig: DTO конфигурации локали (с Pydantic валидацией)
-- LocaleConfigLoader: Загрузчик конфигураций из YAML файлов
-- LocaleDetector: Автоматическое определение локали по тексту чека
-- LocaleRegistry: Централизованный реестр всех доступных локалей
+Экспортирует единую модель LocaleConfig, которая содержит
+все настройки для Stage 4 и Stage 5.
 """
 
-from .locale_config import (
-    LocaleConfig, CurrencyConfig, DateConfig, 
-    PatternsConfig, ExtractorConfig
-)
-from .locale_config_loader import LocaleConfigLoader
-from .locale_detector import LocaleDetector
-from .locale_registry import LocaleRegistry
+from .locale_config import LocaleConfig
 
-__all__ = [
-    # Конфигурация локали
-    "LocaleConfig",
-    "CurrencyConfig",
-    "DateConfig",
-    "PatternsConfig",
-    "ExtractorConfig",
-    
-    # Загрузчик конфигураций
-    "LocaleConfigLoader",
-    
-    # Детектор локали
-    "LocaleDetector",
-    
-    # Реестр локалей
-    "LocaleRegistry",
-]
+__all__ = ["LocaleConfig"]

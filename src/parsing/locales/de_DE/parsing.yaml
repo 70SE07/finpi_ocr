@@ -4,42 +4,40 @@ locale_code: de_DE
 currency: EUR
 
 # === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
-
-# Ключевые слова для поиска итоговой суммы в чеке
-# Порядок важен: более специфичные слова проверяются первыми
 total_keywords:
-  - gesamtbetrag      # "Общая сумма" (наиболее специфичный)
-  - zu zahlen          # "К оплате"
-  - summe              # "Сумма"
-  - gesamt             # "Итого"
-  - betrag             # "Сумма" (часто в платёжных терминалах)
-  - total              # Интернациональный
+  - gesamtbetrag
+  - zu zahlen
+  - summe
+  - gesamt
+  - betrag
+  - total
 
 # === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
-
-# Слова, которые указывают что строка НЕ является товаром
 skip_keywords:
-  # Немецкие итоговые слова
-  - zu zahlen          # "К оплате" (всё что после этого — не товары)
+  # Наследуем общие skip-слова
+  - $extends: common_skip_keywords
   
-  # Способы оплаты (немецкие)
-  - karte              # "Карта"
-  - kartenzahlung      # "Оплата картой"
-  - girocard           # "Платёжная карта"
-  - ec-karte           # "EC-карта"
-  - bargeld            # "Наличные"
-  - kreditkarte         # "Кредитная карта"
-  
-  # Немецкие налоги
-  - ust-id             # "Налоговый номер"
-  - mwst               # "Налог на добавленную стоимость"
-  
-  # Немецкие фразы
-  - vielen dank        # "Большое спасибо"
+  # Немецкие специфичные слова
+  - zu zahlen
+  - karte
+  - kartenzahlung
+  - girocard
+  - ec-karte
+  - bargeld
+  - kreditkarte
+  - ust-id
+  - mwst
+  - vielen dank
 
-# Слова которые указывают что строка является скидкой
 discount_keywords:
-  - rabatt             # "Скидка"
-  - nachlass           # "Скидка"
-  - ersparnis          # "Экономия"
-  - preisvorteil        # "Выгода по цене"
+  - rabatt
+  - nachlass
+  - ersparnis
+  - preisvorteil
+
+# Паттерны подключаем через $extends
+weight_patterns:
+  - "$extends: weight_patterns"
+
+tax_patterns:
+  - "$extends: tax_patterns"

@@ -1,119 +1,196 @@
 """
 Config Loader для конфигураций локалей парсинга.
 
-ЦКП: Загрузка и мержинг YAML конфигов с поддержкой наследования.
+ЦКП: Загрузка единой модели LocaleConfig для локали.
 
 Архитектурный принцип:
-- Данные (ключевые слова, паттерны) в конфигах
-- Логика (загрузка, мержинг) в коде
+- Единая модель LocaleConfig для всех локалей
+- LocaleConfig = metadata_config + semantic_config
+- ConfigLoader загружает и собирает LocaleConfig из YAML файлов
 """
 
 import copy
 import yaml
 from pathlib import Path
-from typing import Dict, List, Any, Optional
-from dataclasses import dataclass
+from typing import Dict, List, Any, Optional, ClassVar
+from dataclasses import dataclass, field
 from loguru import logger
 
 
 @dataclass
-class ParsingConfig:
+class MetadataConfig:
     """
-    Конфигурация парсинга для одной локали.
+    Конфигурация для Stage 4: Metadata Extraction.
     
-    Содержит все необходимые данные для Stage 4 и Stage 5.
+    Содержит ключевые слова для поиска итоговой суммы.
     """
-    locale_code: str
-    currency: str
-    
-    # Stage 4: Metadata
     total_keywords: List[str]
+
+
+@dataclass
+class SemanticConfig:
+    """
+    Конфигурация для Stage 5: Semantic Extraction.
     
-    # Stage 5: Semantic
+    Содержит все данные для классификации строк:
+    - skip_keywords: Слова которые НЕ являются товарами
+    - discount_keywords: Слова скидок
+    - weight_patterns: Паттерны строк веса (доп. инфо)
+    - tax_patterns: Паттерны налоговых строк
+    """
     skip_keywords: List[str]
     discount_keywords: List[str]
     weight_patterns: List[str]
     tax_patterns: List[str]
 
 
-class ConfigLoader:
+@dataclass
+class LocaleConfig:
     """
-    Загрузчик конфигов локалей с поддержкой наследования.
+    Единая конфигурация локали для парсинга.
+    
+    Содержит все необходимые данные для всех этапов пайплайна D2.
+    Объединяет MetadataConfig и SemanticConfig.
+    Поддерживает обратную совместимость (flat properties).
     """
+    locale_code: str
+    currency: str
     
-    def __init__(self, locales_dir: Optional[Path] = None):
-        """
-        Args:
-            locales_dir: Директория с конфигами (по умолчанию src/parsing/locales/)
-        """
-        if locales_dir is None:
-            # Default: относительно файла config_loader.py
-            current_file = Path(__file__)
-            locales_dir = current_file.parent
-        
-        self.locales_dir = Path(locales_dir)
-        self.base_config: Optional[Dict[str, Any]] = None
-        self._cache: Dict[str, ParsingConfig] = {}
+    # Stage 4: Metadata
+    metadata: MetadataConfig
     
-    def load(self, locale_code: str) -> ParsingConfig:
-        """
-        Загружает конфигурацию для локали.
+    # Stage 5: Semantic
+    semantic: SemanticConfig
+    
+    # Внутренние поля (кеш и директория)
+    _config_dir: Optional[Path] = None
+    _cache: ClassVar[Dict[str, "LocaleConfig"]] = {}
+    _source_file: Optional[str] = None
+    
+    # === Backward Compatibility Properties ===
+    @property
+    def total_keywords(self) -> List[str]:
+        return self.metadata.total_keywords
         
-        Args:
-            locale_code: Код локали (например, "de_DE", "pl_PL")
-            
-        Returns:
-            ParsingConfig: Загруженный конфиг
-            
-        Raises:
-            FileNotFoundError: Если конфиг не найден
-            ValueError: Если конфиг невалиден
+    @property
+    def skip_keywords(self) -> List[str]:
+        return self.semantic.skip_keywords
+        
+    @property
+    def discount_keywords(self) -> List[str]:
+        return self.semantic.discount_keywords
+        
+    @property
+    def weight_patterns(self) -> List[str]:
+        return self.semantic.weight_patterns
+        
+    @property
+    def tax_patterns(self) -> List[str]:
+        return self.semantic.tax_patterns
+
+    @classmethod
+    def load(cls, locale_code: str) -> "LocaleConfig":
+        """
+        Загружает конфигурацию локали из YAML файлов.
         """
         # Проверяем кеш
-        if locale_code in self._cache:
-            return self._cache[locale_code]
+        if locale_code in cls._cache:
+            return cls._cache[locale_code]
         
-        # 1. Загружаем базовый конфиг
-        base_config = self._load_base_config()
+        # 1. Определяем директорию
+        if cls._config_dir is None:
+            # Default: относительно файла locale_config.py
+            current_file = Path(__file__)
+            cls._config_dir = current_file.parent
+            cls._source_file = current_file.name
+        
+        config_dir = Path(cls._config_dir)
         
         # 2. Загружаем конфиг локали
-        locale_config = self._load_locale_config(locale_code)
+        locale_config = cls._load_locale_yaml(config_dir, locale_code)
         
-        # 3. Мержим (locale перекрывает base)
-        merged_config = self._merge_configs(base_config, locale_config)
-        
-        # 4. Парсим в ParsingConfig
-        parsing_config = self._parse_config(merged_config, locale_code)
-        
-        # Кешируем
-        self._cache[locale_code] = parsing_config
+        # 3. Сохраняем в кеш
+        cls._cache[locale_code] = locale_config
         
         logger.debug(
-            f"[ConfigLoader] Загружен конфиг для {locale_code}: "
-            f"{len(parsing_config.total_keywords)} total_keywords, "
-            f"{len(parsing_config.skip_keywords)} skip_keywords"
+            f"[ConfigLoader] Загружен LocaleConfig для {locale_code}: "
+            f"{len(locale_config.metadata.total_keywords)} total_keywords, "
+            f"{len(locale_config.semantic.skip_keywords)} skip_keywords"
         )
         
-        return parsing_config
-    
-    def _load_base_config(self) -> Optional[Dict[str, Any]]:
-        """Загружает базовый конфиг (base.yaml)."""
-        if self.base_config is not None:
-            base_file = self.locales_dir / "base.yaml"
-            
-            if not base_file.exists():
-                logger.warning(f"[ConfigLoader] base.yaml не найден в {self.locales_dir}")
-                self.base_config = {}
-                return {}
-            
-            with open(base_file, 'r', encoding='utf-8') as f:
-                self.base_config = yaml.safe_load(f)
+        return locale_config
+
+    @classmethod
+    def _load_base_config(cls, config_dir: Path) -> dict:
+        """Загружает базовую конфигурацию из base.yaml."""
+        base_file = config_dir / "base.yaml"
         
-        return self.base_config
-    
-    def _load_locale_config(self, locale_code: str) -> Dict[str, Any]:
-        """Загружает конфиг специфичный для локали."""
-        config_file = self.locales_dir / locale_code / "parsing.yaml"
+        if not base_file.exists():
+            logger.warning(f"[ConfigLoader] base.yaml не найден: {base_file}")
+            return {}
+        
+        with open(base_file, 'r', encoding='utf-8') as f:
+            return yaml.safe_load(f) or {}
+
+    @classmethod
+    def _resolve_extends(cls, value: Any, base_config: dict) -> Any:
+        """
+        Обрабатывает ТОЛЬКО выборочное наследование через $extends для списков.
+        Поддерживает форматы:
+        - Строка: "$extends: keys"
+        - Словарь: {"$extends": "keys"} (автоматически из YAML без кавычек)
+        """
+        if isinstance(value, list):
+            result = []
+            for item in value:
+                extended_key = None
+                
+                # Case 1: String "$extends: key"
+                if isinstance(item, str) and item.startswith("$extends:"):
+                    extended_key = item.split(":", 1)[1].strip()
+                
+                # Case 2: Dict {"$extends": "key"}
+                elif isinstance(item, dict) and "$extends" in item:
+                    extended_key = item["$extends"]
+                
+                # Case 3: Dict with "pattern" (base.yaml format)
+                elif isinstance(item, dict) and "pattern" in item:
+                    # Это объект паттерна из base.yaml, нам нужен только regex
+                    result.append(item["pattern"])
+                    continue
+                
+                if extended_key:
+                    extended = base_config.get(extended_key, [])
+                    if not extended:
+                        logger.warning(f"[ConfigLoader] Ключ '{extended_key}' для $extends не найден в base.yaml")
+                    else:
+                        logger.debug(f"[ConfigLoader] Inheriting {len(extended)} items for '{extended_key}'")
+                    
+                    # Рекурсивно обрабатываем extended (там тоже могут быть dicts)
+                    # Но пока просто добавляем, потому что рекурсия для списков тут не реализована
+                    # Улучшение: проходимся по extended и извлекаем pattern если есть
+                    for ext_item in extended:
+                        if isinstance(ext_item, dict) and "pattern" in ext_item:
+                            result.append(ext_item["pattern"])
+                        else:
+                            result.append(ext_item)
+                else:
+                    result.append(item)
+            return result
+        
+        return value
+
+    @classmethod
+    def _load_locale_yaml(
+        cls, 
+        config_dir: Path, 
+        locale_code: str
+    ) -> "LocaleConfig":
+        """Загружает конфиг локали из YAML файла."""
+        # 1. Загружаем base.yaml
+        base_config = cls._load_base_config(config_dir)
+
+        config_file = config_dir / locale_code / "parsing.yaml"
         
         if not config_file.exists():
             raise FileNotFoundError(
@@ -121,61 +198,62 @@ class ConfigLoader:
             )
         
         with open(config_file, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    
-    def _merge_configs(
-        self, 
-        base: Optional[Dict[str, Any]], 
-        locale: Dict[str, Any]
-    ) -> Dict[str, Any]:
-        """
-        Мержит базовый и локальный конфиг.
+            config_data = yaml.safe_load(f)
         
-        Правила мержинга:
-        1. locale перекрывает base
-        2. Для списков — расширяет (base + locale)
-        """
-        import copy
-        merged = copy.deepcopy(base or {})
+        # Валидация обязательных полей
+        if "locale_code" not in config_data:
+            raise ValueError(f"[ConfigLoader] Отсутствует locale_code в {config_file}")
         
-        for key, locale_value in locale.items():
-            # Простой тип (списки, скаляры) — заменяем
-            if isinstance(locale_value, (list, str, int, float, bool)):
-                merged[key] = locale_value
-                continue
-            
-            # dict типа — мержинг списков
-            if isinstance(locale_value, dict):
-                # Поддержка extends (legacy формат)
-                if "extends" in locale_value:
-                    extends_key = locale_value["extends"]
-                    base_value = merged.get(extends_key, [])
-                    
-                    if isinstance(base_value, list):
-                        # Расширяем список
-                        additional = locale_value.get("additional", [])
-                        merged[key] = base_value + additional
-                    else:
-                        # Если base не список — берём только additional
-                        merged[key] = locale_value.get("additional", [])
-                else:
-                    # Простое перекрытие (без extends)
-                    merged[key] = locale_value
+        if "currency" not in config_data:
+            raise ValueError(f"[ConfigLoader] Отсутствует currency в {config_file}")
         
-        return merged
-    
-    def _parse_config(self, config: Dict[str, Any], locale_code: str) -> ParsingConfig:
-        """Парсит словарь конфига в ParsingConfig."""
-        return ParsingConfig(
-            locale_code=locale_code,
-            currency=config.get("currency", "EUR"),
-            total_keywords=config.get("total_keywords", ["total"]),
-            skip_keywords=config.get("skip_keywords", []),
-            discount_keywords=config.get("discount_keywords", []),
-            weight_patterns=config.get("weight_patterns", []),
-            tax_patterns=config.get("tax_patterns", []),
+        # Парсим конфигурацию этапов
+        total_keywords = cls._resolve_extends(
+             config_data.get("total_keywords", ["total"]),
+             base_config
         )
-    
-    def clear_cache(self):
-        """Очищает кеш конфигов."""
-        self._cache.clear()
+        metadata_config = MetadataConfig(total_keywords=total_keywords)
+        
+        skip_keywords = cls._resolve_extends(
+            config_data.get("skip_keywords", []), 
+            base_config
+        )
+        discount_keywords = cls._resolve_extends(
+             config_data.get("discount_keywords", []),
+             base_config
+        )
+        weight_patterns = cls._resolve_extends(
+            config_data.get("weight_patterns", []), 
+            base_config
+        )
+        tax_patterns = cls._resolve_extends(
+            config_data.get("tax_patterns", []), 
+            base_config
+        )
+        
+        semantic_config = SemanticConfig(
+            skip_keywords=skip_keywords,
+            discount_keywords=discount_keywords,
+            weight_patterns=weight_patterns,
+            tax_patterns=tax_patterns,
+        )
+        
+        return LocaleConfig(
+            locale_code=locale_code,
+            currency=config_data["currency"],
+            metadata=metadata_config,
+            semantic=semantic_config,
+        )
+
+
+# Aliases and wrapper
+class ConfigLoader:
+    """
+    Загрузчик конфигураций.
+    Обертка над LocaleConfig.load для совместимости с DI.
+    """
+    def load(self, locale_code: str) -> "LocaleConfig":
+        return LocaleConfig.load(locale_code)
+
+
+ParsingConfig = LocaleConfig

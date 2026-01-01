@@ -23,7 +23,7 @@ from .stage_5_semantic import SemanticStage, SemanticResult
 from .stage_6_validation import ValidationStage, ValidationResult
 
 # Конфигурационный загрузчик для локалей
-from ..locales.config_loader import ConfigLoader
+from ..locales.config_loader import LocaleConfig, ConfigLoader
 
 
 @dataclass

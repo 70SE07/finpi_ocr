@@ -90,12 +90,12 @@ class MetadataStage:
     ):
         """
         Args:
-            config_loader: Загрузчик конфигов локалей
+            config_loader: Загрузчик конфигов локалей (LocaleConfig)
         """
         if config_loader is None:
             # Default: создаём локальный загрузчик
-            from ..locales.config_loader import ConfigLoader
-            config_loader = ConfigLoader()
+            from ..locales.locale_config import LocaleConfig
+            config_loader = LocaleConfig()
         
         self.config_loader = config_loader
     
