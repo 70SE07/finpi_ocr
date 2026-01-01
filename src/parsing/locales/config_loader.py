@@ -8,6 +8,7 @@ Config Loader для конфигураций локалей парсинга.
 - Логика (загрузка, мержинг) в коде
 """
 
+import copy
 import yaml
 from pathlib import Path
 from typing import Dict, List, Any, Optional
@@ -28,7 +29,7 @@ class ParsingConfig:
     # Stage 4: Metadata
     total_keywords: List[str]
     
-    # Stage5: Semantic
+    # Stage 5: Semantic
     skip_keywords: List[str]
     discount_keywords: List[str]
     weight_patterns: List[str]
@@ -90,13 +91,12 @@ class ConfigLoader:
         logger.debug(
             f"[ConfigLoader] Загружен конфиг для {locale_code}: "
             f"{len(parsing_config.total_keywords)} total_keywords, "
-            f"{len(parsing_config.skip_keywords)} skip_keywords, "
-            f"{len(parsing_config.discount_keywords)} discount_keywords"
+            f"{len(parsing_config.skip_keywords)} skip_keywords"
         )
         
         return parsing_config
     
-    def _load_base_config(self) -> Dict[str, Any]:
+    def _load_base_config(self) -> Optional[Dict[str, Any]]:
         """Загружает базовый конфиг (base.yaml)."""
         if self.base_config is not None:
             base_file = self.locales_dir / "base.yaml"
@@ -125,7 +125,7 @@ class ConfigLoader:
     
     def _merge_configs(
         self, 
-        base: Dict[str, Any], 
+        base: Optional[Dict[str, Any]], 
         locale: Dict[str, Any]
     ) -> Dict[str, Any]:
         """
@@ -134,39 +134,25 @@ class ConfigLoader:
         Правила мержинга:
         1. locale перекрывает base
         2. Для списков — расширяет (base + locale)
-        
-        Формат в YAML:
-        ```yaml
-        skip_keywords:
-          - common_keyword_1
-          - common_keyword_2
-        ```
-        
-        ```yaml
-        # locales/de_DE/parsing.yaml
-        extends: base_config
-        skip_keywords:
-          extends: common_skip_keywords
-          additional:
-            - de_specific_skip_1
-        ```
         """
-        merged = base.copy()
+        import copy
+        merged = copy.deepcopy(base or {})
         
         for key, locale_value in locale.items():
-            # Простой тип — заменяем
+            # Простой тип (списки, скаляры) — заменяем
             if isinstance(locale_value, (list, str, int, float, bool)):
                 merged[key] = locale_value
                 continue
             
             # dict типа — мержинг списков
             if isinstance(locale_value, dict):
+                # Поддержка extends (legacy формат)
                 if "extends" in locale_value:
-                    # Наследование списков: base + additional
                     extends_key = locale_value["extends"]
                     base_value = merged.get(extends_key, [])
                     
                     if isinstance(base_value, list):
+                        # Расширяем список
                         additional = locale_value.get("additional", [])
                         merged[key] = base_value + additional
                     else:

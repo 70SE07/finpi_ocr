@@ -1,7 +1,4 @@
 # Конфигурация парсинга для немецких чеков (de_DE)
-# Наследует: src/parsing/locales/base.yaml
-
-extends: base.yaml
 
 locale_code: de_DE
 currency: EUR
@@ -16,15 +13,12 @@ total_keywords:
   - summe              # "Сумма"
   - gesamt             # "Итого"
   - betrag             # "Сумма" (часто в платёжных терминалах)
-  - total              # Интернациональный (fallback)
+  - total              # Интернациональный
 
 # === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
 
 # Слова, которые указывают что строка НЕ является товаром
 skip_keywords:
-  # Наследуемые из base.yaml
-  - $extends: common_skip_keywords
-  
   # Немецкие итоговые слова
   - zu zahlen          # "К оплате" (всё что после этого — не товары)
   
@@ -36,7 +30,7 @@ skip_keywords:
   - bargeld            # "Наличные"
   - kreditkarte         # "Кредитная карта"
   
-  # Немецкие налоги (дополнительные к tax_patterns)
+  # Немецкие налоги
   - ust-id             # "Налоговый номер"
   - mwst               # "Налог на добавленную стоимость"
   
