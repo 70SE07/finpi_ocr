@@ -28,6 +28,7 @@ skip_keywords:
   - ust-id
   - mwst
   - vielen dank
+  - gesamter preisvorteil  # Сумма скидок (не нужно вычитать повторно)
 
 discount_keywords:
   - rabatt

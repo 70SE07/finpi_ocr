@@ -59,37 +59,37 @@ def mock_config_files(tmp_path):
 
 def test_load_base_config_success(mock_config_files):
     """Test that base config is loaded correctly."""
-    config = ConfigLoader._load_base_config(mock_config_files)
+    config = LocaleConfig._load_base_config(mock_config_files)
     assert "common_skip" in config
     assert "weight_patterns" in config
     assert config["common_skip"] == ["skip1", "skip2"]
 
 def test_resolve_extends_list(mock_config_files):
     """Test resolution of $extends in a list."""
-    base_config = ConfigLoader._load_base_config(mock_config_files)
+    base_config = LocaleConfig._load_base_config(mock_config_files)
     
     # Case 1: Extend + Local
     input_list = ["$extends: common_skip", "local_item"]
-    resolved = ConfigLoader._resolve_extends(input_list, base_config)
+    resolved = LocaleConfig._resolve_extends(input_list, base_config)
     assert resolved == ["skip1", "skip2", "local_item"]
     
     # Case 2: Only Extend
     input_list = ["$extends: weight_patterns"]
-    resolved = ConfigLoader._resolve_extends(input_list, base_config)
+    resolved = LocaleConfig._resolve_extends(input_list, base_config)
     assert resolved == ["^\\d+kg"]
     
     # Case 3: No Extend
     input_list = ["pure_local"]
-    resolved = ConfigLoader._resolve_extends(input_list, base_config)
+    resolved = LocaleConfig._resolve_extends(input_list, base_config)
     assert resolved == ["pure_local"]
 
 def test_resolve_extends_missing_key(mock_config_files):
     """Test that missing key in base config is handled gracefully."""
-    base_config = ConfigLoader._load_base_config(mock_config_files)
+    base_config = LocaleConfig._load_base_config(mock_config_files)
     input_list = ["$extends: invalid_key", "local"]
     
     # Should log warning but continue
-    resolved = ConfigLoader._resolve_extends(input_list, base_config)
+    resolved = LocaleConfig._resolve_extends(input_list, base_config)
     assert resolved == ["local"]
 
 def test_full_config_loading_inheritance(mock_config_files):
@@ -98,7 +98,7 @@ def test_full_config_loading_inheritance(mock_config_files):
     # Since ConfigLoader.load uses internal caching and paths, we might need to verify logic via _load_locale_yaml directly if we don't want to mock the recursive calls too deeply or class attributes.
     # However, ConfigLoader._load_locale_yaml is a classmethod that takes config_dir
     
-    config = ConfigLoader._load_locale_yaml(mock_config_files, "test_LOC")
+    config = LocaleConfig._load_locale_yaml(mock_config_files, "test_LOC")
     
     # Check Skip Keywords (Inherited + Local)
     assert "skip1" in config.semantic.skip_keywords
