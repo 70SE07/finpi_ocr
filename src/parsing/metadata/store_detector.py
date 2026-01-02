@@ -27,34 +27,6 @@ class StoreDetector:
     Поддерживает LocaleConfig для локализации брендов и настроек.
     """
     
-    # База брендов (fallback - если нет locale_config)
-    BRANDS = {
-        "Lidl": [r"\blidl\b", r"\bli dl\b"],
-        "Aldi": [r"\baldi\b", r"\baldi süd\b", r"\baldi nord\b"],
-        "REWE": [r"\brewe\b"],
-        "Edeka": [r"\bedeka\b"],
-        "Penny": [r"\bpenny\b"],
-        "Netto": [r"\bnetto\b(?!\s*mwst)", r"\bnetto\s+markt\b"], # Избегаем Netto MwSt
-        "Kaufland": [r"\bkaufland\b"],
-        "Rossmann": [r"\brossmann\b"],
-        "dm": [r"\bdm-drogerie\b", r"\bdm\b"],
-        "Billa": [r"\bbilla\b", r"\bбилла\b", r"\bбилл\b"],
-        "Dnipro-M": [r"dnipro\s*[-–—]\s*m", r"дніпро\s*[-–—]\s*м", r"\bdniprom\b"],
-        "Biedronka": [r"\bbiedronka\b"],
-        "Pingo Doce": [r"\bpingo doce\b", r"\bpingo\b"],
-        "Migros": [r"\bmigros\b"],
-        "Carrefour": [r"\bcarrefour\b"],
-        "Shell": [r"\bshell\b"],
-    }
-
-    # Слова, которые НЕ могут быть названием магазина (заголовки)
-    BLACKLIST = [
-        r"tax invoice", r"invoice", r"faktura", r"paragon", r"fiskalny",
-        r"receipt", r"check", r"квитанция", r"чек", r"рахунок",
-        r"suma", r"total", r"итого", r"оплата", r"betrag", r"summe",
-        r"customer copy", r"kundenbeleg", r"schweine", r"hähn",
-        r"pfand", r"rabatt", r"eur/kg", r"zaziki", r"baguette"
-    ]
 
     def detect(
         self, 
@@ -69,10 +41,13 @@ class StoreDetector:
         Args:
             texts: Список строк чека
             address_res: Результат извлечения адреса
-            locale_config: Конфигурация локали (опционально)
+            locale_config: Конфигурация локали (обязательно)
         """
-        # Получаем настройки из locale_config или используем дефолтные
-        if locale_config and locale_config.extractors:
+        if not locale_config:
+            raise ValueError("Locale config is required for StoreDetector")
+        
+        # Получаем настройки из locale_config
+        if locale_config.extractors and locale_config.extractors.store_detection:
             scan_limit = locale_config.extractors.store_detection.get("scan_limit", STORE_SCAN_LIMIT)
             fallback_limit = locale_config.extractors.store_detection.get("fallback_limit", STORE_FALLBACK_LIMIT)
             min_name_length = locale_config.extractors.store_detection.get("min_name_length", MIN_STORE_NAME_LENGTH)
@@ -81,15 +56,14 @@ class StoreDetector:
             if "known_brands" in locale_config.extractors.store_detection:
                 brands_dict = self._build_brands_dict(locale_config.extractors.store_detection["known_brands"])
             else:
-                brands_dict = self.BRANDS
+                brands_dict = {}
+            
+            # Используем blacklist из locale_config
+            blacklist = locale_config.patterns.noise_keywords if locale_config.patterns else []
             
             logger.debug(f"[StoreDetector] Используем настройки из {locale_config.code}: scan_limit={scan_limit}")
         else:
-            scan_limit = STORE_SCAN_LIMIT
-            fallback_limit = STORE_FALLBACK_LIMIT
-            min_name_length = MIN_STORE_NAME_LENGTH
-            brands_dict = self.BRANDS
-            logger.debug("[StoreDetector] Используем настройки из settings.py")
+            raise ValueError("Store detection config is required in locale_config")
         
         # Берем первые N строк, так как название обычно в заголовке
         header_text = "\n".join(texts[:scan_limit]).lower()
@@ -117,7 +91,7 @@ class StoreDetector:
             for i, text in enumerate(texts[:15]):
                 if first_addr_line in text and i > 0:
                     potential_name = texts[i-1].strip()
-                    if potential_name and not any(re.search(bl, potential_name.lower()) for bl in self.BLACKLIST):
+                    if potential_name and not any(re.search(bl, potential_name.lower()) for bl in blacklist):
                          logger.debug(f"[StoreDetector] Имя магазина определено из строки НАД адресом: '{potential_name}'")
                          return StoreResult(name=potential_name, brand=None, confidence=0.7)
 
@@ -125,7 +99,7 @@ class StoreDetector:
         for text in texts[:fallback_limit]:
             clean_text = text.strip()
             # Проверяем черный список
-            if any(re.search(bl, clean_text.lower()) for bl in self.BLACKLIST):
+            if any(re.search(bl, clean_text.lower()) for bl in blacklist):
                 continue
                 
             # Имя магазина обычно содержит буквы, не слишком короткое

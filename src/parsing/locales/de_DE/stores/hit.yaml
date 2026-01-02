@@ -1,0 +1,3 @@
+# Override: HIT имеет инвертированные tax classes
+tax:
+  inverted: true  # A=19%, B=7%

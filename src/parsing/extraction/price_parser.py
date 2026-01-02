@@ -89,12 +89,29 @@ class PriceParser:
         return raw_price.replace(',', '.')
 
     def _is_date_or_time(self, text: str) -> bool:
-        """Проверка на паттерны даты/времени, чтобы не принять их за цену."""
-        date_patterns = [
-            r'\d{2}\.\d{2}\.\d{2,4}',  # 24.12.2025
-            r'\d{2}:\d{2}:\d{2}',      # 18:05:00
-            r'\d{2}:\d{2}'             # 18:05
-        ]
+        """Проверка на паттерны даты/времени из locale_config."""
+        if not self.locale_config or not self.locale_config.date:
+            # Fallback: базовые паттерны
+            date_patterns = [
+                r'\d{2}\.\d{2}\.\d{2,4}',
+                r'\d{2}:\d{2}:\d{2}',
+                r'\d{2}:\d{2}'
+            ]
+        else:
+            # Используем форматы из locale_config
+            date_patterns = []
+            for fmt in self.locale_config.date.formats:
+                # Преобразуем формат даты в regex
+                # DD.MM.YYYY -> \d{2}\.\d{2}\.\d{4}
+                regex = fmt.replace('DD', r'\d{2}').replace('MM', r'\d{2}').replace('YYYY', r'\d{4}').replace('YY', r'\d{2}')
+                date_patterns.append(regex)
+            
+            # Добавляем паттерны времени
+            date_patterns.extend([
+                r'\d{2}:\d{2}:\d{2}',
+                r'\d{2}:\d{2}'
+            ])
+        
         for p in date_patterns:
             if re.search(p, text):
                 return True

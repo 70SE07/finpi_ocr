@@ -39,44 +39,73 @@ class LocaleConfigLoader:
         else:
             self.locales_dir = Path(locales_dir)
     
-    def load(self, locale_code: str) -> LocaleConfig:
+    def load(self, locale_code: str, store_name: Optional[str] = None) -> LocaleConfig:
         """
-        Загружает конфигурацию для указанной локали с валидацией.
+        Загружает конфигурацию для указанной локали и магазина.
         
         Args:
             locale_code: Код локали (de_DE, pl_PL, ...)
-            
-        Returns:
-            LocaleConfig: Валидированная конфигурация
-            
-        Raises:
-            FileNotFoundError: Если конфиг не найден
-            ValidationError: Если конфигурация невалидна (Pydantic)
+            store_name: Имя магазина (опционально)
         """
+        # Загружаем базовую конфигурацию локали
         config_path = self.locales_dir / locale_code / "config.yaml"
-        
-        if not config_path.exists():
-            available = self._get_available_locales()
-            raise FileNotFoundError(
-                f"Конфигурация для локали '{locale_code}' не найдена: {config_path}\n"
-                f"Доступные локали: {available}\n"
-                f"Используйте одну из доступных локалей или создайте конфигурацию."
-            )
-        
-        logger.debug(f"[LocaleConfigLoader] Загрузка конфига для {locale_code}")
         
         with open(config_path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
         
-        try:
-            return self._parse_and_validate(data, locale_code)
-        except ValidationError as e:
-            logger.error(f"[LocaleConfigLoader] Ошибка валидации конфигурации для {locale_code}")
-            logger.error(f"[LocaleConfigLoader] Ошибки Pydantic:\n{e}")
-            raise ValueError(
-                f"Конфигурация для локали '{locale_code}' невалидна.\n"
-                f"Пожалуйста, исправьте ошибки в {config_path}:\n{e}"
-            ) from e
+        # Если указан магазин, загружаем его конфиг и мержим с locale config
+        if store_name:
+            store_config_path = self.locales_dir / locale_code / "stores" / f"{store_name}.yaml"
+            
+            if store_config_path.exists():
+                with open(store_config_path, "r", encoding="utf-8") as f:
+                    store_data = yaml.safe_load(f)
+                
+                # Мержим store config в locale config
+                data = self._merge_configs(data, store_data)
+                logger.debug(f"[LocaleConfigLoader] Loaded store config: {store_name}")
+            else:
+                logger.warning(
+                    f"[LocaleConfigLoader] Store config not found: {store_config_path}"
+                )
+        
+        return self._parse_and_validate(data, locale_code)
+    
+    def _merge_configs(self, base_config: dict, override_config: dict) -> dict:
+        """
+        Мержит store config в locale config.
+        
+        Store config может override следующие секции:
+        - currency (decimal_separator, thousands_separator)
+        - patterns (total_keywords, discount_keywords, noise_keywords)
+        - extractors (store_detection, total_detection, semantic_extraction)
+        """
+        merged = base_config.copy()
+        
+        # Merge currency
+        if "currency" in override_config:
+            if "currency" not in merged:
+                merged["currency"] = {}
+            for key, value in override_config["currency"].items():
+                merged["currency"][key] = value
+        
+        # Merge patterns
+        if "patterns" in override_config:
+            if "patterns" not in merged:
+                merged["patterns"] = {}
+            for key, value in override_config["patterns"].items():
+                if key not in merged["patterns"]:
+                    merged["patterns"][key] = []
+                merged["patterns"][key].extend(value)
+        
+        # Merge extractors
+        if "extractors" in override_config:
+            if "extractors" not in merged:
+                merged["extractors"] = {}
+            for key, value in override_config["extractors"].items():
+                merged["extractors"][key] = value
+        
+        return merged
     
     def _parse_and_validate(self, data: dict, locale_code: str) -> LocaleConfig:
         """
@@ -89,6 +118,24 @@ class LocaleConfigLoader:
         Returns:
             Валидированный LocaleConfig
         """
+        # Проверка обязательных полей
+        required_fields = ["locale", "currency", "patterns"]
+        for field in required_fields:
+            if field not in data:
+                raise ValueError(
+                    f"Required field '{field}' is missing in locale config for {locale_code}"
+                )
+        
+        # Проверка обязательных полей в patterns
+        if "patterns" in data:
+            patterns = data["patterns"]
+            required_pattern_fields = ["total_keywords", "discount_keywords", "noise_keywords"]
+            for field in required_pattern_fields:
+                if field not in patterns:
+                    raise ValueError(
+                        f"Required field 'patterns.{field}' is missing in locale config for {locale_code}"
+                    )
+        
         # Базовые поля локали
         locale_data = data.get("locale", {})
         if not locale_data:
@@ -145,8 +192,10 @@ class LocaleConfigLoader:
             return LocaleConfig(**config_dict)
         except ValidationError as e:
             # Re-raise для понятных сообщений об ошибках
-            raise
-    
+            raise ValueError(
+                f"Конфигурация для локали '{locale_code}' невалидна.\n"
+                f"Пожалуйста, исправьте ошибки в {self.locales_dir / locale_code / 'config.yaml'}:\n{e}"
+            ) from e
     def _get_available_locales(self) -> list:
         """Возвращает список доступных локалей."""
         if not self.locales_dir.exists():

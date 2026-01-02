@@ -57,6 +57,14 @@ patterns:
     - "uhrzeit"
     - "mwst"
     - "eu"
+  
+  # Единицы измерения (для парсинга количества)
+  quantity_units:
+    - "kg"
+    - "stk"
+    - "g"
+    - "ml"
+    - "l"
 
 # Настройки экстракторов
 extractors:
@@ -97,6 +105,13 @@ extractors:
     # Валидация даты: текущий год +/- отступ
     max_year_offset_past: 2
     max_year_offset_future: 1
+  
+  semantic_extraction:
+    # Порядок фиксов для семантического извлечения
+    fixers:
+      - "cyrillic_fixer"
+      - "ghost_suffix_fixer"
+      - "decimal_fixer"
 
 # Описание типичных форматов немецких чеков:
 # - Шапка: название магазина, адрес, телефон

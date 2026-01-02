@@ -63,13 +63,14 @@ class ReceiptParser(IReceiptParser):
         
         logger.info("[Parsing] ReceiptParser инициализирован")
     
-    def parse(self, ocr_data: Dict[str, Any], source_file: str = "") -> Dict[str, Any]:
+    def parse(self, ocr_data: Dict[str, Any], source_file: str = "", store_name: Optional[str] = None) -> Dict[str, Any]:
         """
         Парсит сырые данные OCR в структурированный формат.
         
         Args:
             ocr_data: Сырые данные OCR (формат raw_ocr)
             source_file: Имя исходного файла
+            store_name: Имя магазина (опционально) для загрузки store config
             
         Returns:
             Структурированные данные чека
@@ -86,7 +87,7 @@ class ReceiptParser(IReceiptParser):
             
             # 2. Определение локали
             logger.debug("[Parsing] Шаг 2: Определение локали")
-            locale_code, locale_config = self._detect_locale(lines, source_file)
+            locale_code, locale_config = self._detect_locale(lines, source_file, store_name)
             
             # 3. Извлечение метаданных
             logger.debug("[Parsing] Шаг 3: Извлечение метаданных")
@@ -119,12 +120,13 @@ class ReceiptParser(IReceiptParser):
                 original_error=e
             )
     
-    def parse_from_file(self, ocr_file_path: Path) -> Dict[str, Any]:
+    def parse_from_file(self, ocr_file_path: Path, store_name: Optional[str] = None) -> Dict[str, Any]:
         """
         Парсит данные OCR из файла.
         
         Args:
             ocr_file_path: Путь к файлу с OCR данными (raw_ocr.json)
+            store_name: Имя магазина (опционально) для загрузки store config
             
         Returns:
             Структурированные данные чека
@@ -146,7 +148,7 @@ class ReceiptParser(IReceiptParser):
             source_file = ocr_data.get("metadata", {}).get("source_file", ocr_file_path.stem)
             
             # Парсим данные
-            return self.parse(ocr_data, source_file)
+            return self.parse(ocr_data, source_file, store_name)
             
         except Exception as e:
             raise ParsingError(
@@ -174,8 +176,18 @@ class ReceiptParser(IReceiptParser):
                 original_error=e
             )
     
-    def _detect_locale(self, lines: List[Dict[str, Any]], source_file: str) -> tuple[str, Dict[str, Any]]:
-        """Определяет локаль чека."""
+    def _detect_locale(self, lines: List[Dict[str, Any]], source_file: str, store_name: Optional[str] = None) -> tuple[str, Dict[str, Any]]:
+        """
+        Определяет локаль чека и загружает конфигурацию.
+        
+        Args:
+            lines: Список строк чека
+            source_file: Имя исходного файла
+            store_name: Имя магазина (опционально)
+        
+        Returns:
+            tuple[locale_code, locale_config_dict]
+        """
         try:
             # Извлекаем тексты из строк
             texts = [line.get('text', '') for line in lines if line.get('text')]
@@ -189,10 +201,13 @@ class ReceiptParser(IReceiptParser):
                 detector = LocaleDetector()
                 locale_code = detector.detect(texts)
             
-            # Загружаем конфигурацию локали
-            locale_config = self.locale_config_loader.load(locale_code)
+            # Загружаем конфигурацию локали (с store config если указан)
+            locale_config = self.locale_config_loader.load(locale_code, store_name)
             
             logger.debug(f"[Parsing] Определена локаль: {locale_code} ({locale_config.name})")
+            if store_name:
+                logger.debug(f"[Parsing] Загружен store config: {store_name}")
+            
             return locale_code, locale_config.to_dict()
             
         except Exception as e:

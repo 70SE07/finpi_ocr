@@ -23,17 +23,6 @@ class TotalExtractor:
     Поддерживает LocaleConfig для локализации ключевых слов.
     """
     
-    # Ключевые слова для суммы (fallback - если нет locale_config)
-    KEYWORDS = [
-        r"summe", r"total", r"gesamt", r"итого", r"сумма", 
-        r"betrag", r"zu zahlen", r"a pagar", r"razem", 
-        r"tutar", r"tva", r"brutto", r"netto", r"suma",
-        r"cyma", r"cuma", r"cymma", r"сума", r"сумма",
-        r"оплата", r"pagar", r"fatura", r"liq"
-    ]
-    
-    # Высокоприоритетные слова (точно ИТОГ)
-    PRIORITY_KEYWORDS = [r"summe", r"total", r"итого", r"сумма", r"cyma", r"сума", r"razem"]
 
     def extract(
         self, 
@@ -45,15 +34,19 @@ class TotalExtractor:
         
         Args:
             texts: Список строк чека
-            locale_config: Конфигурация локали (опционально)
+            locale_config: Конфигурация локали (обязательно)
         """
-        # Получаем ключевые слова из locale_config или fallback
-        if locale_config and locale_config.patterns:
-            total_keywords = locale_config.patterns.total_keywords
-            logger.debug(f"[TotalExtractor] Используем ключевые слова из {locale_config.code}: {total_keywords}")
-        else:
-            total_keywords = self.KEYWORDS
-            logger.debug("[TotalExtractor] Используем fallback ключевые слова")
+        if not locale_config:
+            raise ValueError("Locale config is required for TotalExtractor")
+        
+        if not locale_config.patterns:
+            raise ValueError("Locale config patterns are required for TotalExtractor")
+        
+        total_keywords = locale_config.patterns.total_keywords
+        logger.debug(f"[TotalExtractor] Используем ключевые слова из {locale_config.code}: {total_keywords}")
+        
+        # Первое слово в списке = приоритетное
+        priority_keywords = [total_keywords[0]] if total_keywords else []
         
         # 1. Ищем строки с ключевыми словами (идем СНИЗУ ВВЕРХ)
         # Так как ИТОГ обычно в самом низу, и мы хотим избежать Netto/Brutto из середины.
@@ -85,7 +78,7 @@ class TotalExtractor:
                             val = self._parse_amount(val_str, locale_config)
                             
                             if val and TOTAL_AMOUNT_MIN < val < TOTAL_AMOUNT_MAX:
-                                is_priority = any(re.search(rf"\b{kw}\b", lower_text) for kw in self.PRIORITY_KEYWORDS)
+                                is_priority = any(re.search(rf"\b{kw}\b", lower_text) for kw in priority_keywords)
                                 # Ранг: 0 - высший (2 знака + приоритет-слово), 5 - низший
                                 rank = p_idx * 2  # 0 или 2
                                 if not is_priority: rank += 1 # 1 или 3

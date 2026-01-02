@@ -6,6 +6,8 @@ from loguru import logger
 if TYPE_CHECKING:
     from ..locales.locale_config import LocaleConfig
 
+from ..locales.locale_registry import LocaleRegistry
+
 class LineType(Enum):
     ITEM = "item"
     TOTAL = "total"
@@ -25,19 +27,33 @@ class LineClassifier:
         Args:
             locale_config: Конфигурация локали (опционально)
         """
+        if locale_config is None:
+            registry = LocaleRegistry()
+            available = registry.get_available_locales()
+            
+            if not available:
+                raise ValueError(
+                    "No locale configs available. "
+                    "Create at least one config in src/parsing/locales/"
+                )
+            
+            fallback_locale_code = available[0]
+            locale_config = registry.get_locale_config(fallback_locale_code)
+            
+            logger.warning(
+                f"[LineClassifier] No locale_config provided. "
+                f"Using fallback: {fallback_locale_code}"
+            )
+        
         self.locale_config = locale_config
         
-        # Fallback - если нет locale_config, используем немецкие ключевые слова
-        if locale_config and locale_config.patterns:
-            self.total_keywords = locale_config.patterns.total_keywords
-            self.discount_keywords = locale_config.patterns.discount_keywords
-            self.noise_keywords = locale_config.patterns.noise_keywords
-            logger.debug(f"[LineClassifier] Используем ключевые слова из {locale_config.code}")
-        else:
-            self.total_keywords = ["gesamtbetrag", "summe", "total", "zu zahlen", "belegsumme"]
-            self.discount_keywords = ["preisvorteil", "rabatt", "nachlass", "aktionsnachlass", "coupon"]
-            self.noise_keywords = ["tel.", "fax.", "obj.-nr.", "terminal", "beleg-nr.", "datum", "uhrzeit"]
-            logger.debug("[LineClassifier] Используем fallback ключевые слова")
+        if not locale_config.patterns:
+            raise ValueError("Locale config patterns are required for LineClassifier")
+        
+        self.total_keywords = locale_config.patterns.total_keywords
+        self.discount_keywords = locale_config.patterns.discount_keywords
+        self.noise_keywords = locale_config.patterns.noise_keywords
+        logger.debug(f"[LineClassifier] Используем ключевые слова из {locale_config.code}")
 
     def classify(self, text: str, has_price: bool = False, has_qty: bool = False) -> LineType:
         """

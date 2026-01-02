@@ -12,6 +12,7 @@ from loguru import logger
 
 from .locale_config_loader import LocaleConfigLoader
 from .locale_config import LocaleConfig
+from .locale_registry import LocaleRegistry
 
 from config.settings import DEFAULT_LOCALE, FALLBACK_LOCALE
 
@@ -82,24 +83,26 @@ class LocaleDetector:
         - ฿ → THB → th_TH
         - ₸ → KZT → kz_KZ
         """
-        # Карта валютного символа к коду локали
-        currency_to_locale = {
-            "€": ["de_DE", "fr_FR", "es_ES", "it_IT", "pt_PT"],
-            "zł": ["pl_PL"],
-            "z": ["pl_PL"],  # Иногда OCR распознаёт как "z"
-            "฿": ["th_TH"],
-            "₸": ["kz_KZ"],
-            "$": ["en_US"],
-            "£": ["en_GB"],
+        # Карта валютного символа к коду валюты
+        symbol_to_currency = {
+            "€": "EUR",
+            "zł": "PLN",
+            "z": "PLN",  # Иногда OCR распознаёт как "z"
+            "฿": "THB",
+            "₸": "KZT",
+            "$": "USD",
+            "£": "GBP",
         }
         
-        for symbol, locales in currency_to_locale.items():
+        for symbol, currency_code in symbol_to_currency.items():
             if symbol in text:
-                # Если несколько локалей используют одну валюту (€),
-                # используем эвристику по ключевым словам
+                # Используем LocaleRegistry для получения локалей по валюте
+                registry = LocaleRegistry()
+                locales = registry.get_locales_by_currency(currency_code)
+                
                 if len(locales) == 1:
                     return locales[0]
-                else:
+                elif len(locales) > 1:
                     # EUR: пробуем уточнить по ключевым словам
                     return self._disambiguate_euro(text, locales)
         
@@ -138,30 +141,28 @@ class LocaleDetector:
         """
         Детекция локали по ключевым словам total/sum.
         
-        Примеры:
-        - "gesamtbetrag", "summe" → de_DE
-        - "suma", "razem" → pl_PL
-        - "сумма", "итого" → ru_RU
+        Использует LocaleRegistry для поиска по ключевым словам.
         """
-        keyword_to_locale = {
-            "gesamtbetrag": "de_DE",
-            "summe": "de_DE",
-            "zu zahlen": "de_DE",
-            "belegsumme": "de_DE",
-            "endbetrag": "de_DE",
-            "rechnungsbetrag": "de_DE",
-            
-            "suma": "pl_PL",
-            "razem": "pl_PL",
-            
-            "total": "en_US",  # Может быть и в DE чеках
-            "итого": "ru_RU",
-            "сумма": "ru_RU",
-        }
+        # Используем LocaleRegistry для поиска по ключевым словам
+        registry = LocaleRegistry()
         
-        for keyword, locale in keyword_to_locale.items():
-            if keyword in text:
-                return locale
+        # Получаем все локали
+        available_locales = registry.get_available_locales()
+        
+        # Проверяем ключевые слова каждой локали
+        for locale_code in available_locales:
+            try:
+                locale_config = registry.get_locale_config(locale_code)
+                
+                # Проверяем total_keywords
+                if locale_config.patterns and locale_config.patterns.total_keywords:
+                    for keyword in locale_config.patterns.total_keywords:
+                        if keyword.lower() in text:
+                            logger.debug(f"[LocaleDetector] Найдено ключевое слово '{keyword}' для {locale_code}")
+                            return locale_code
+            except Exception as e:
+                logger.trace(f"[LocaleDetector] Ошибка при проверке {locale_code}: {e}")
+                continue
         
         return None
     

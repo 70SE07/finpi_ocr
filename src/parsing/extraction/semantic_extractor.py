@@ -37,12 +37,30 @@ class SemanticExtractor:
         self.locale_config = locale_config
         self.price_parser = PriceParser(locale_config=locale_config)
         self.tax_parser = TaxParser()
-        self.qty_parser = QuantityParser()
+        self.qty_parser = QuantityParser(locale_config=locale_config)
         self.classifier = LineClassifier(locale_config=locale_config)
         self.math_checker = MathChecker()
-        self.decimal_fixer = DecimalFixer()
-        self.cyrillic_fixer = CyrillicFixer()
-        self.ghost_fixer = GhostSuffixFixer()
+        
+        # Конфигурируемый порядок фиксов
+        self.fixers = []
+        
+        if locale_config and locale_config.extractors and locale_config.extractors.semantic_extraction:
+            fixer_names = locale_config.extractors.semantic_extraction.get("fixers", [])
+            
+            for fixer_name in fixer_names:
+                if fixer_name == "cyrillic_fixer":
+                    self.fixers.append(CyrillicFixer())
+                elif fixer_name == "ghost_suffix_fixer":
+                    self.fixers.append(GhostSuffixFixer())
+                elif fixer_name == "decimal_fixer":
+                    self.fixers.append(DecimalFixer())
+        else:
+            # Fallback: дефолтный порядок
+            self.fixers = [
+                CyrillicFixer(),
+                GhostSuffixFixer(),
+                DecimalFixer()
+            ]
 
     def process(self, lines: List[TextBlock]) -> dict:
         """
@@ -61,12 +79,11 @@ class SemanticExtractor:
             text = line_block.text
             
             # 0. Исправление признаков (Legacy Vectors)
-            # Применяем последовательно: кириллица -> суффиксы -> десятичные
-            cyr_res = self.cyrillic_fixer.fix(text)
-            ghost_res = self.ghost_fixer.fix(cyr_res.text)
-            fix_res = self.decimal_fixer.fix(ghost_res.text)
-            
-            processed_text = fix_res.text
+            # Применяем фиксы в конфигурируемом порядке
+            processed_text = text
+            for fixer in self.fixers:
+                fix_res = fixer.fix(processed_text)
+                processed_text = fix_res.text
             
             # 1. Поиск цены
             price = self.price_parser.parse(processed_text)
