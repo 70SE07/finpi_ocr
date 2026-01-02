@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина AUCHAN (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - auchan
+  aliases:
+    - AUCHAN POLSKA
+    - AUCHAN RETAIL
+  priority: 1

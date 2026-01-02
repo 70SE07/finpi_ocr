@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина BIEDRONKA (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - biedronka
+  aliases:
+    - JERONIMO MARTINS
+    - JMP
+  priority: 1

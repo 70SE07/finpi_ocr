@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина BILLA (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - billa
+  aliases:
+    - BILLA CESKA REPUBLIKA
+    - BILLA S.R.O.
+  priority: 1

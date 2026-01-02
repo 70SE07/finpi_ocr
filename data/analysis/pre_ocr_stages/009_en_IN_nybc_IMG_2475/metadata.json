@@ -1,0 +1,19 @@
+{
+  "gt_file": "docs/ground_truth/009_en_IN_nybc_IMG_2475.json",
+  "source_file": "photo/Mumbai/IMG_2475.jpeg",
+  "original_shape": [
+    4032,
+    2268,
+    3
+  ],
+  "compressed_shape": [
+    2200,
+    1237,
+    3
+  ],
+  "grayscale_shape": [
+    2200,
+    1237
+  ],
+  "grayscale_method": "blue_channel"
+}

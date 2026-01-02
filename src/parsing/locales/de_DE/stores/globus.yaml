@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина GLOBUS (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - globus
+  aliases:
+    - GLOBUS HANDELSHOF
+    - GLOBUS SB-WARENHAUS
+  priority: 1

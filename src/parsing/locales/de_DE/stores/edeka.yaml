@@ -1,0 +1,12 @@
+# ЦКП: Конфигурация магазина EDEKA (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - edeka
+  aliases:
+    - E CENTER
+    - E AKTIV MARKT
+    - E NEUKAUF
+    - EDEKA ZENTRALE
+  priority: 1

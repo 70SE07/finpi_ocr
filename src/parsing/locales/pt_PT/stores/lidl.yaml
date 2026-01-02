@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина LIDL (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - lidl
+  aliases:
+    - LIDL PORTUGAL
+  priority: 1

@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина MARKTKAUF (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - marktkauf
+  aliases:
+    - MARKTKAUF HOLDING
+    - MARKTKAUF EDEKA
+  priority: 1

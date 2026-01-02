@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина TEGUT (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - tegut
+  aliases:
+    - TEGUT GMBH
+    - TEGUT GUTE LEBENSMITTEL
+  priority: 1

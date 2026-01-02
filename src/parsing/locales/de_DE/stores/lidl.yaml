@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина LIDL (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - lidl
+    - lidl plus
+  aliases:
+    - LIDL STIFTUNG
+    - LIDL DIENSTLEISTUNG
+  priority: 1

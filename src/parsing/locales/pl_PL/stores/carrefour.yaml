@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина CARREFOUR (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - carrefour
+  aliases:
+    - CARREFOUR POLSKA
+    - CARREFOUR MARKET
+    - CARREFOUR EXPRESS
+  priority: 1

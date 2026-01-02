@@ -1,0 +1,19 @@
+{
+  "gt_file": "docs/ground_truth/003_es_ES_consum_IMG_3064.json",
+  "source_file": "photo/GOODS/Consum/IMG_3064.jpeg",
+  "original_shape": [
+    1280,
+    720,
+    3
+  ],
+  "compressed_shape": [
+    1280,
+    720,
+    3
+  ],
+  "grayscale_shape": [
+    1280,
+    720
+  ],
+  "grayscale_method": "blue_channel"
+}

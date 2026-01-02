@@ -18,6 +18,20 @@ from loguru import logger
 
 
 @dataclass
+class StoreDetectionConfig:
+    """
+    Конфигурация для детекции магазина (Stage 3).
+    
+    ЦКП: Данные для поиска магазина в тексте чека.
+    Загружается из stores/{name}.yaml → секция detection.
+    """
+    name: str                                           # Название магазина (из имени файла)
+    brands: List[str] = field(default_factory=list)     # Слова для поиска (lidl, aldi süd)
+    aliases: List[str] = field(default_factory=list)    # Дополнительные варианты (LIDL STIFTUNG)
+    priority: int = 0                                   # Приоритет при конфликтах (выше = важнее)
+
+
+@dataclass
 class MetadataConfig:
     """
     Конфигурация для Stage 4: Metadata Extraction.
@@ -64,11 +78,18 @@ class LocaleConfig:
     locale_code: str
     currency: str
     
+    # Stage 3: Store Detection
+    stores: List[StoreDetectionConfig] = field(default_factory=list)
+    address_hints: List[str] = field(default_factory=list)       # Признаки адреса для Stage 3
+    non_address_hints: List[str] = field(default_factory=list)   # Исключения (НЕ адреса) для Stage 3
+    
     # Stage 4: Metadata
-    metadata: MetadataConfig
+    metadata: MetadataConfig = field(default_factory=lambda: MetadataConfig(total_keywords=["total"]))
     
     # Stage 5: Semantic
-    semantic: SemanticConfig
+    semantic: SemanticConfig = field(default_factory=lambda: SemanticConfig(
+        skip_keywords=[], discount_keywords=[], weight_patterns=[], tax_patterns=[]
+    ))
     
     # Внутренние поля (кеш и директория)
     _config_dir: Optional[Path] = None
@@ -173,6 +194,85 @@ class LocaleConfig:
         return value
 
     @classmethod
+    def _scan_stores_for_detection(
+        cls, 
+        config_dir: Path, 
+        locale_code: str,
+        base_config: dict
+    ) -> List[StoreDetectionConfig]:
+        """
+        Сканирует stores/*.yaml и извлекает секции detection.
+        
+        ЦКП: Загрузка данных для детекции магазинов из YAML файлов.
+        
+        Args:
+            config_dir: Базовая директория конфигов
+            locale_code: Код локали (de_DE, pl_PL, etc.)
+            base_config: Базовая конфигурация для $extends
+            
+        Returns:
+            List[StoreDetectionConfig]: Список конфигураций магазинов для детекции
+        """
+        stores_dir = config_dir / locale_code / "stores"
+        
+        if not stores_dir.exists():
+            logger.debug(f"[ConfigLoader] stores/ директория не найдена для {locale_code}")
+            return []
+        
+        stores: List[StoreDetectionConfig] = []
+        
+        for store_file in sorted(stores_dir.glob("*.yaml")):
+            store_name = store_file.stem  # aldi, lidl, rewe
+            
+            try:
+                with open(store_file, 'r', encoding='utf-8') as f:
+                    data = yaml.safe_load(f) or {}
+            except Exception as e:
+                logger.warning(f"[ConfigLoader] Ошибка чтения {store_file}: {e}")
+                continue
+            
+            detection = data.get("detection", {})
+            
+            if detection:
+                # Обрабатываем $extends для brands
+                brands = cls._resolve_extends(
+                    detection.get("brands", [store_name]),
+                    base_config
+                )
+                # Если brands пустой - используем имя файла как дефолт
+                if not brands:
+                    brands = [store_name]
+                
+                aliases = cls._resolve_extends(
+                    detection.get("aliases", []),
+                    base_config
+                )
+                
+                stores.append(StoreDetectionConfig(
+                    name=store_name,
+                    brands=brands,
+                    aliases=aliases,
+                    priority=detection.get("priority", 0)
+                ))
+                logger.debug(f"[ConfigLoader] Загружен магазин: {store_name} (brands={len(brands)}, aliases={len(aliases)})")
+            else:
+                # Файл есть, но нет секции detection - создаём дефолтную
+                # Это позволяет существующим файлам работать
+                logger.debug(f"[ConfigLoader] Магазин {store_name} без секции detection, используем дефолт")
+                stores.append(StoreDetectionConfig(
+                    name=store_name,
+                    brands=[store_name],
+                    aliases=[],
+                    priority=0
+                ))
+        
+        # Сортируем по приоритету (выше приоритет - раньше проверяем)
+        stores.sort(key=lambda s: -s.priority)
+        
+        logger.info(f"[ConfigLoader] Загружено {len(stores)} магазинов для {locale_code}")
+        return stores
+
+    @classmethod
     def _load_locale_yaml(
         cls, 
         config_dir: Path, 
@@ -261,9 +361,25 @@ class LocaleConfig:
             name_buffer_size=config_data.get("name_buffer_size", 3)
         )
         
+        # Stage 3: Загружаем конфигурации магазинов для детекции
+        stores = cls._scan_stores_for_detection(config_dir, locale_code, base_config)
+        
+        # Stage 3: Address hints для извлечения адреса магазина
+        address_hints = cls._resolve_extends(
+            config_data.get("address_hints", []),
+            base_config
+        )
+        non_address_hints = cls._resolve_extends(
+            config_data.get("non_address_hints", []),
+            base_config
+        )
+        
         return LocaleConfig(
             locale_code=locale_code,
             currency=config_data["currency"],
+            stores=stores,
+            address_hints=address_hints,
+            non_address_hints=non_address_hints,
             metadata=metadata_config,
             semantic=semantic_config,
         )

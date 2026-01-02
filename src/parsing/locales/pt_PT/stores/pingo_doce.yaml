@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина PINGO DOCE (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - pingo doce
+  aliases:
+    - JERONIMO MARTINS
+    - PINGO DOCE DISTRIBUICAO
+  priority: 1

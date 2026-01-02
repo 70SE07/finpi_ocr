@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина PENNY (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - penny
+    - penny market
+  aliases:
+    - PENNY MARKET S.R.O.
+  priority: 1

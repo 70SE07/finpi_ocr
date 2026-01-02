@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина TESCO (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - tesco
+  aliases:
+    - TESCO POLSKA
+  priority: 1

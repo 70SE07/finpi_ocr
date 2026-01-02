@@ -1,0 +1,19 @@
+{
+  "gt_file": "docs/ground_truth/005_uk_UA_dniprom_UA_001.json",
+  "source_file": "data/input/UA_001.jpeg",
+  "original_shape": [
+    2081,
+    1284,
+    3
+  ],
+  "compressed_shape": [
+    2081,
+    1284,
+    3
+  ],
+  "grayscale_shape": [
+    2081,
+    1284
+  ],
+  "grayscale_method": "blue_channel"
+}

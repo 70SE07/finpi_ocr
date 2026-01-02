@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина REWE (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - rewe
+  aliases:
+    - REWE MARKT
+    - REWE CENTER
+    - REWE CITY
+  priority: 1

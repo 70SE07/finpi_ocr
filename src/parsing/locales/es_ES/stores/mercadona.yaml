@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина MERCADONA (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - mercadona
+  aliases:
+    - MERCADONA S.A.
+  priority: 1

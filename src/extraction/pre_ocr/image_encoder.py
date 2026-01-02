@@ -9,6 +9,8 @@ import cv2
 import numpy as np
 from loguru import logger
 
+from config.settings import JPEG_QUALITY
+
 
 class ImageEncoder:
     """
@@ -18,13 +20,13 @@ class ImageEncoder:
     """
     
     @staticmethod
-    def encode(image: np.ndarray, quality: int = 85) -> bytes:
+    def encode(image: np.ndarray, quality: int = None) -> bytes:
         """
         Кодирует numpy array в JPEG bytes.
         
         Args:
             image: Изображение в формате numpy.ndarray (BGR или Grayscale)
-            quality: Качество JPEG (0-100), по умолчанию 85
+            quality: Качество JPEG (0-100), по умолчанию из config.settings.JPEG_QUALITY
             
         Returns:
             JPEG байты изображения
@@ -32,6 +34,9 @@ class ImageEncoder:
         Raises:
             RuntimeError: Если не удалось закодировать изображение
         """
+        if quality is None:
+            quality = JPEG_QUALITY
+        
         success, buffer = cv2.imencode(
             ".jpg", 
             image, 

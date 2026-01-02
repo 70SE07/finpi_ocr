@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина ALBERT (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - albert
+  aliases:
+    - ALBERT CESKA REPUBLIKA
+    - AHOLD
+  priority: 1

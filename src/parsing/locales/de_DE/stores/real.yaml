@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина REAL (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - real
+  aliases:
+    - REAL GMBH
+    - REAL MARKT
+  priority: 0  # Lower priority - "real" is a common word

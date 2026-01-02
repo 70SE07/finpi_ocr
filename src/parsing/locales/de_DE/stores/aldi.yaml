@@ -1,6 +1,19 @@
 # ЦКП: Специфичные настройки для магазинов ALDI SÜD / ALDI NORD
 # Наследует всё из de_DE/parsing.yaml, переопределяет списки.
 
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - aldi
+    - aldi süd
+    - aldi sud
+    - aldi nord
+  aliases:
+    - ALDI EINKAUF
+    - ALDI SÜD GMBH
+    - ALDI NORD GMBH
+  priority: 1
+
 # 1. Ключевые слова общего итога ($replace = полная замена списка)
 total_keywords:
   - "$replace"

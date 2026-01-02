@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина DINO (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - dino
+  aliases:
+    - DINO POLSKA
+    - DINO MARKET
+  priority: 1

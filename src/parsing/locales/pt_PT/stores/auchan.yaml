@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина AUCHAN (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - auchan
+  aliases:
+    - AUCHAN RETAIL PORTUGAL
+  priority: 1

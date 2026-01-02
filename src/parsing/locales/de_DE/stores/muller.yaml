@@ -1,0 +1,12 @@
+# ЦКП: Конфигурация магазина MÜLLER (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - müller
+    - muller
+    - mueller
+  aliases:
+    - MÜLLER DROGERIE
+    - MÜLLER HOLDING
+  priority: 1

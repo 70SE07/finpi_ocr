@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина BONAREA (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - bonarea
+    - bonÀrea
+  aliases:
+    - GRUP ALIMENTARI GUISSONA
+  priority: 1

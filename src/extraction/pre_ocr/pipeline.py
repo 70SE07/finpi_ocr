@@ -95,13 +95,20 @@ class PreOCRPipeline(IImagePreprocessor):
         processed_bytes = self.encoder.encode(gray_result.image, quality=comp_result.quality)
         
         # 5. Формируем метаданные
+        # Собираем список применённых операций
+        applied_operations = ["compression"]  # Compression всегда применяется
+        if gray_result.was_converted:
+            applied_operations.append("grayscale")
+        
         metadata = {
             "original_size": comp_result.original_size,
             "processed_size": gray_result.original_size,  # Это размер ПОСЛЕ сжатия (w, h)
             "compressed_size_kb": len(processed_bytes) / 1024,
             "scale_factor": comp_result.scale_factor,
             "quality": comp_result.quality,
-            "grayscale_converted": gray_result.was_converted
+            "grayscale_converted": gray_result.was_converted,
+            # Ключ "applied" для ExtractionPipeline -> preprocessing_applied в контракте
+            "applied": applied_operations
         }
         
         return processed_bytes, metadata

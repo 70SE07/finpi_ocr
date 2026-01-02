@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина LIDL (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - lidl
+  aliases:
+    - LIDL SUPERMERCADOS
+  priority: 1

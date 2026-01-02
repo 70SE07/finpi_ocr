@@ -18,7 +18,7 @@ from google.cloud import vision
 from google.cloud.vision_v1 import types
 from loguru import logger
 
-from config.settings import GOOGLE_APPLICATION_CREDENTIALS, OCR_LANGUAGE_HINTS
+from config.settings import GOOGLE_APPLICATION_CREDENTIALS
 from contracts.d1_extraction_dto import RawOCRResult, Word, BoundingBox, OCRMetadata
 from ...domain.interfaces import IOCRProvider
 
@@ -56,7 +56,6 @@ class GoogleVisionOCR(IOCRProvider):
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = str(creds_path)
         
         self.client = vision.ImageAnnotatorClient()
-        self.language_hints = OCR_LANGUAGE_HINTS
     
         logger.info("[GoogleVisionOCR] Клиент инициализирован")
     
@@ -79,16 +78,9 @@ class GoogleVisionOCR(IOCRProvider):
         
         image = types.Image(content=image_content)
         
-        # Настройка запроса с подсказками языка
-        image_context = types.ImageContext(
-            language_hints=self.language_hints
-        )
-        
         # Выполняем DOCUMENT_TEXT_DETECTION для лучшего распознавания чеков
-        response = self.client.document_text_detection(
-            image=image,
-            image_context=image_context
-        )
+        # Google Vision сам определяет язык - D1 language-agnostic
+        response = self.client.document_text_detection(image=image)
         
         if response.error.message:
             raise Exception(f"Google Vision API error: {response.error.message}")

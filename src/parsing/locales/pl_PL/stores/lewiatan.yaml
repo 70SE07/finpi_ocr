@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина LEWIATAN (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - lewiatan
+  aliases:
+    - LEWIATAN HOLDING
+    - PSH LEWIATAN
+  priority: 1

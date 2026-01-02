@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина NORMA (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - norma
+  aliases:
+    - NORMA LEBENSMITTELFILIALBETRIEB
+    - NORMA GMBH
+  priority: 1

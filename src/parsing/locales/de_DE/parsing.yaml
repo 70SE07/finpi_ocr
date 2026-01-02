@@ -3,6 +3,18 @@
 locale_code: de_DE
 currency: EUR
 
+# === STAGE 3: ADDRESS HINTS ДЛЯ ИЗВЛЕЧЕНИЯ АДРЕСА МАГАЗИНА ===
+address_hints:
+  - $extends: address_hints
+  - straße
+  - strasse
+  - allee
+  - ring
+  - damm
+  - ufer
+  - gasse
+  - steig
+
 # === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
 detection_keywords:
   - summe

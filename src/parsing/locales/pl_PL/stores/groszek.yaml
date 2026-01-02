@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина GROSZEK (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - groszek
+  aliases:
+    - EUROCASH GROSZEK
+  priority: 1

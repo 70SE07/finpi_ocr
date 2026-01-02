@@ -27,11 +27,11 @@
     {"raw_name": "ЯЙЦА L10 АКВИЛОН", "quantity": 1, "unit_price": null, "total_price": 4.99, "tax_class": "*Б"},
     {"raw_name": "ОТСТ. СУПЕР ЦЕНА", "quantity": null, "unit_price": null, "total_price": -1.20, "tax_class": "*Б", "is_discount": true},
     {"raw_name": "ПИЛЕШКИ ДОЛЕН БУТ", "quantity": 1, "unit_price": null, "total_price": 4.79, "tax_class": "*Б"},
-    {"raw_name": "БИСКВ.МИРАЖ БОРОВ.", "quantity": 1, "unit_price": null, "total_price": 3.39, "tax_class": "*Б"},
+    {"raw_name": "БИСКВ. МИРАЖ БОРОВ.", "quantity": 1, "unit_price": null, "total_price": 3.39, "tax_class": "*Б"},
     {"raw_name": "ОТСТЪПКА АКЦИЯ", "quantity": null, "unit_price": null, "total_price": -1.10, "tax_class": "*Б", "is_discount": true},
     {"raw_name": "ПИЛЕШКИ ДОЛЕН БУТ", "quantity": 1, "unit_price": null, "total_price": 4.79, "tax_class": "*Б"},
     {"raw_name": "КРЕО ТОН ФИЛЕ", "quantity": 1, "unit_price": null, "total_price": 3.09, "tax_class": "*Б"},
-    {"raw_name": "СКУМР.КОТЛЕТИ,Д.С", "quantity": 1, "unit_price": null, "total_price": 3.79, "tax_class": "*Б"},
+    {"raw_name": "СКУМР. КОТЛЕТИ, Д. С", "quantity": 1, "unit_price": null, "total_price": 3.79, "tax_class": "*Б"},
     {"raw_name": "BARILLA ЛИНГУИНИ", "quantity": 1, "unit_price": null, "total_price": 3.59, "tax_class": "*Б"}
   ],
   "validation": {

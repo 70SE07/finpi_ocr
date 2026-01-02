@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина CONTINENTE (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - continente
+  aliases:
+    - MODELO CONTINENTE
+    - SONAE MC
+  priority: 1

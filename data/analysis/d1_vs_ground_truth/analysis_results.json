@@ -1,0 +1,287 @@
+[
+  {
+    "id": "007_bg_BG_billa_BG_001",
+    "locale": "bg_BG",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 110,
+    "gt_items_total": 9,
+    "items_found": 0,
+    "items_missing": 9,
+    "accuracy": 0.0,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "ЯЙЦА L10 АКВИЛОН",
+      "ОТСТ. СУПЕР ЦЕНА",
+      "ПИЛЕШКИ ДОЛЕН БУТ",
+      "БИСКВ.МИРАЖ БОРОВ.",
+      "ОТСТЪПКА АКЦИЯ"
+    ],
+    "found_items": [],
+    "ocr_text_length": 569,
+    "ocr_full_text": "19:15\n50\nбиллА былгАРИя ЕOOД\nсОOия бул. былгАРиЯ 55\nЕMK: 130007884\nMAгAзИH 530\nBAPHA ул. дубРОвНик 48\nHOMEP 3ДдC:BG130007884\n04, MEXMEДOBA, 9\n4.99\nOTCT. CYNEP LEHA\n-1.20\nПилЕшки долЕН BYT\n4.79\nбискB. мИРАж бOPOB.\n3.39\n-1.10\nПилЕшкИ долЕН бYT\n4.79\nKREO TOH ИлE\n3.09\nCKYMP. KOTЛЕTИ, Д. C\n3.79\nBARILLA ЛИHгуиНи\n3.59\n05шA CYMA\nлВ.\n26.13\n06шA CYMA\nEBPO\n13.36\nKypc 1 EBPO = 1.95583 ЛB.\nПЛATEHO B бРой\nЛВ.\n30.00\nPECTO\nЛВ.\n3.87\n#TИ CПECTи:\nЛВ.\n2.30#\n796 01.09.2025 17:29:57\n7 АРТИкуЛА\nBGCMCTEMEH 60H\nBMLF000530\n2F1268101D67B35380E9D94A99D0663B0B060007\nmastad\nПерезняти\nПрийняти"
+  },
+  {
+    "id": "006_cs_CZ_hornbach_cz_001",
+    "locale": "cs_CZ",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 284,
+    "gt_items_total": 13,
+    "items_found": 8,
+    "items_missing": 5,
+    "accuracy": 61.5,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "ÚPRAVA DESEK/MATERIA",
+      "Papírová taška HORNB",
+      "BUCK BÍLÉ vel. 10\"/X",
+      "STĚRKA VÍCEÚČELOVÁ P",
+      "HAK S METR ZÁVITEM z"
+    ],
+    "found_items": [
+      "Rouno zakrývací 1x 3",
+      "HYDROIZOLACE JEDNOSL",
+      "Sedlový úhelník s v",
+      "rohový úhelník pozin",
+      "Váleček malířský 12c"
+    ],
+    "ocr_text_length": 1361,
+    "ocr_full_text": "436 2398\n98 Prand\n0 225 357 000\nSídlo: Chlumecká 2398, 198 00 P\nDIC CZ47117559\nArt/Ean 7144934\n1,000 JedVýk x\nOPRAVA DESEK/MATERIA\nArt/Ean 8596140003596\n1 Kus X\nPapirová taška HORNB\nArt/Ean 4013307334026\n1 Kus\nRouno zakrývací 1x 3\nArt/Ean 8595100133175\n1 Kus ×\nHYDROIZOLACE JEDNOSL\nArt/Ean 8592390065636\n2 Pár x\nBUCK BILE vel. 10\"/X\nArt/Ean 4004338329914\n20,00\n20,00 1\n7,00\n7,00 1\n95,00\n95,00 1\n575,00\n575,00 1\n22,00\n44,00 1\n4 Kus x\nSedlový úhelník s v\n21,00\n84,00 1\nArt/Ean 4004338332853\n4 Kus\n19,00\nrohový úhelník pozin\n76,00 1\nArt/Ean 8590804039105\n2 Kus\n30,00\nSTERKA VÍCEÚČELOVA P\n60,00 1\nArt/Ean 8595026063846\n1 Kus x\nVáleček malířský 12c\n59,00\n59,00 1\nArt/Ean 4013307322672\n1 Kus x\nNůž odlamovací 18mm,\n23,00\n23,00 1\nArt/Ean 8524\n0,020 kg\nx 613,00\nHAK S METR ZAVITEM Z\n12,26 1\nArt/Ean 9867\n0,099 kg x 284,00\nVRUT UNIV. ZH 4,5x20\n28,12 1\nArt/Ean 6302\n0,246 kg x 213,00\nHŘEBÍK STAVEBNÍ ZH 1\n52,40 1\nSOUCET [21]\nCZK\n1135,78\nZaokrouhleni\nK zaplacení:\nDANO Hotovost\n0,22\n1136,00\nCZK 1200,00\nCZK\nCZK -64,00\nVráceno\nBRUTTO\n1 21 % 1135,78\nDPH\n197,12\nNETTO\n938,66\n55506602203200074376\nčas evidence tržby: 18:05:26\nčíslo pokladny: 11/660/7\nPořadové číslo účtenky: 648560\nOznačení provozovny: 11\nBKP: 2652DA52-EA8A77EC-502B5AD2-BF81F673\n-7E6E6143\nFIK: F002834c-768e-40a2-a365-a51f4782e9d\nc-01\nRežim tržby: běžný\nObsloužil Vás:\nM. Černá\nDěkujeme Vám za Vaši návštěvu."
+  },
+  {
+    "id": "001_de_DE_lidl_IMG_1292",
+    "locale": "de_DE",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 358,
+    "gt_items_total": 60,
+    "items_found": 3,
+    "items_missing": 57,
+    "accuracy": 5.0,
+    "total_amount": 0.0,
+    "total_found": false,
+    "missing_items": [
+      "Schweinekotelett",
+      "Schweinebauch",
+      "Hähnchenschenkel",
+      "Obst&Gemüse",
+      "Blaubeeren 500g"
+    ],
+    "found_items": [
+      "Schweinenackenbraten",
+      "Pfand",
+      "Pfand"
+    ],
+    "ocr_text_length": 1894,
+    "ocr_full_text": "PRESS\nrebe\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nSchweinenackenbraten\n10,85 A\n1,207 kg x 8,99 EUR/kg\nSchweinenackenbraten\n8,51 A\n0,947 kg x 8,99 EUR/kg\nSchw.Spare Ribs BBQ\n7,64 A\n0,900 kg x 8,49 EUR/kg\nSchw.Spare Ribs BBQ\n7,32 A\n0,862 kg x 8,49 EUR/kg\nSpare Ribs mar.\n8,81 A\n1,358 kg x 6,49 EUR/kg\nDill\n1,39 A\nFrühkart. 2,5kg\n2,69 A\nPreisvorteil\n-0,30\nFairtrade Rosen\n2,99 x 4\n11,96 A\nCocktailtomaten\n1,49 A\nRucola 125g\n0,85 A\nGurken\n0,95 x\n2\n1,90 A\nPreisvorteil\n-0,40\nZwiebeln rot\n1,99 A\nSalakis Scheibe Natu 3,79 x 4\n15,16 A\nZaziki\n1,79 A\nPreisvorteil\n-0,14\nBaguettes Kräuter\n1,95 A\nBaguettes Knoblauch\n1,95 A\nOlivenöle natur\nBull'sEyeFeink.Honey\nPreisvorteil\n4,99 A\n3,99 A\n-2,00\nRed Bull Energy\n1,75 x 2\n3,50 B\nPfand 0,25 M\n0,25 x\n2\n0,50 B\nWTG Orangensaft 100%\n2,99 x\n4\n11,96 B\nBitter Aperitiv 11%\n4,49 B\nProsecco rosé\n6,99 B\nGrill-Holzkohle\n3,69 B\nHähn.Keulen Diavolo 3,99 x 2\n7,98 A\nRABATT 20%\n-1,60\nQSHähn.Grill-&Ofenp. 4,49 x\n3\n13,47 A\nzu zahlen\n143,37\nKarte\n143,37\nGesamter Preisvorteil\n4,44\nMWSTX\nMWST + Netto = Brutto\nA 7 %\n7,34\n104,90\n112,24\nNAV\nB 19 %\n4,97\n26,16\n31,13\nSumme\n12,31\n131,06\n143,37\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1207294\nSeriennr. Kasse: LDL-000-6496-3\nSeriennr. TSE: F2vH5JJ0GxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: EzrFazMucAFXbB+05/aEV3YF1pU4RZgB\nm7w74vDAZgXImbSIXJdj+yGCoSTUYaIvZqSvTc5L01\n+PjtvhmE5hRolREwXS7EpPZevBxmH2p732gBLttCcF\ndBBnTD42G2Ck\nSignaturzähler: 2463948\n2025-07-31T10:41:47.00OZ\n2025-07-31T10:43:08.000Z\n6496 738145/03\n814060660\nPUSH\n31.07.25 12:41\nVOL\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n31.07.2025\n12:41\n143,37 EUR\nKartennr.\nVU-Nummer\nTA-Nr. 2176102Beleg-Nr. 8514\nKontaktlos Chip\nAutorisierungsnummer\nAutorisierungsantwortcode\nT-ID 60155116\n##########1364 00\nOnline\n9801706496\n981034\n00\nEMV-Daten:\nA0000003591010028001/00\n**\nAutorisierung erfolgt\n**"
+  },
+  {
+    "id": "013_de_DE_dm_IMG_1252",
+    "locale": "de_DE",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 270,
+    "gt_items_total": 2,
+    "items_found": 0,
+    "items_missing": 2,
+    "accuracy": 0.0,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "nip BS Cherry Latex 0-6M 2St",
+      "babylove Windeln Newb.XS 24St"
+    ],
+    "found_items": [],
+    "ocr_text_length": 1548,
+    "ocr_full_text": "SHELL STATION\nHammer TS Management GmbH\nSiegburger Str. 30\n51491 Overath\nObj.-Nr.: 0000001924 Tel. 02206-2425\nFax. 02206-608421\nBeleg-Nr. 7723/011/00001 29.07.2025 05:07\nKartenzahlung\n050999 RieslingQbATr11\n075035 Twix Xtra 75g\n12,00 EUR +A\n2,49 EUR +B\nGesamtbetrag\n14,49 EUR\nTyp\nNetto\nMwst\nBrutto\nA:19,00%\n10,08\n1,92\n12,00\nB: 7,00%\n2,33\n0,16\n2,49\nSumme\n12,41\n2,08\n14,49\n+KUNDENBELEG+\nTerminalnummer\n70010418\nDatum\n29.07.2025\nUhrzeit\n05:07:09\nBeleg-Nr.\n5400\nTransaktions-Nr.\n657601\nKartenzahlung\ngirocard\nBetrag\nKarte\nKartenfolgenummer\n14,49 EUR\n####1364\n00\nEMV-AID\nA0000003591010028001\nGenehmigungs-Nr.\n161670\nEMV-DATA:\n/0000000001//A000000359/1F0302\nContactless\nZahlung erfolgt\nLegende der Steuernummer (n)\n+ Partner\nDas o. g. Datum entspricht\nDE307724748\ndem Rechnungs- und Leistungsdatum.\nVielen Dank für Ihren Einkauf\nund eine gute Fahrt!\nSie sind unzufrieden?\nGerne verbessern wir uns.\nInformieren Sie uns gerne unter\nbeschwerde.shell@hammer-management.de\nHeute haben Sie 0,00 EUR Rabatt oder\n34 Punkte verpasst, die Sie mit Shell\nClubSmart erhalten hätten.\nNutzen Sie kostenlose Vorteile bei jedem\nTanken: Jetzt die Shell App herunterladen\nund ClubSmart Mitglied werden!\nTipp: Mit dem SmartDeal tanken Sie Shell\nV-Power zum Standardpreis.\nSprechen Sie uns an!\nISE-Serien-NOAC3E83177AC378\nYAFJ9JE460\nOREGO05.29.07.2025 05:07:21.\nqpua?ti2Ensq9i\n9 Pij R+D SRF 2 Fik\nIhre Meinung ist uns wichtig!\nDeshalb würden wir uns freuen, wenn Sie\nan einer kurzen Umfrage teilnehmen würden.\nUmfrage und Teilnahmebedingungen unter\nwww.shell.de/kundenumfrage"
+  },
+  {
+    "id": "009_en_IN_nybc_IMG_2475",
+    "locale": "en_IN",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 111,
+    "gt_items_total": 1,
+    "items_found": 0,
+    "items_missing": 1,
+    "accuracy": 0.0,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "Tex Mex Veg Bowl (M), Regular"
+    ],
+    "found_items": [],
+    "ocr_text_length": 546,
+    "ocr_full_text": "** TAX INVOICE **\nNEW YORK BURRITO COMPANY\n14A, Plot no-89, 14th Floor, Cumba\nlla H\nMumbai Ineternational Airport\nPIN:400026, Mumbai, Maharashtra,\nIndia\nGSTIN: 27AAPFN0717N1ZT\nReceipt No.:\nEmployee...:\nNYBC02P122120969\nVitesh Pawar\nDate: 30-09-2025 Time.: 07:08\nITEM NAME QTY PRICE\nTotal\nTex Mex Veg Bowl (M) .Regular\nNYB023\n0\n1.00 450.00 450.0\nTax Summary\nTaxable value Tax % Tax Amount\n428.57 2.50\n428.57\n2.50\nSubtotal\n42\n82\n58\nTotal tax\nTotal\n00\nCard\n00\n10.71\n10.71\n428.\n21.\n450.\n450.\nThanks for shopping! Please visit a\ngain.\nNYBC02P122120969"
+  },
+  {
+    "id": "003_es_ES_consum_IMG_3064",
+    "locale": "es_ES",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 252,
+    "gt_items_total": 25,
+    "items_found": 1,
+    "items_missing": 24,
+    "accuracy": 4.0,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "LIMON",
+      "PLATANO CANARIAS",
+      "MANZANA GOLDEN",
+      "NARANJA",
+      "PERA CONFERENCE"
+    ],
+    "found_items": [
+      "TOMATE RAF ASURCAD"
+    ],
+    "ocr_text_length": 1321,
+    "ocr_full_text": "as\n29.mua\natsubo\nconsum\nJuntos es cooperativa\n190 - Orihuela Los Altos\nTlf.965327229\nMUTA\nMUZ\non 12\nC:0190 07/000023 28.10.2025 18:40 715221\nUND\nKG ARTICULO moe/KG TOTAL\n1 TOMATE RAF ASURCAD\n1 COMBIN. SETAS 200\n1 BONIATO AL VAPOR\n1,06\n2,99\n31,993\n1 MAXI VAR.CONSUM 350MA 1,990\n1 LECHUGA ROMANA CON\n1,15\n1 HIERBABUENA 20 GR\n1,25\n1 PICADA DE AJO Y PERinovo\n1,49\ngam naid\n1 BAGUETTE 220 GR.\n0,58\n0.580 GAMBON GRANDE\n7,51\n1 JAMON GR CONSUM 150\n2,99\n1 PALETA CEBO BOADAS\n5.65\n2 BAT.00% PROTE.CACAO\n1.75\n3,50\n2 BAT.00% PROTE. VAINI\n1.75\n3,50\n1 HUEVO CAMPERO L 10U\n1 AC MANZ CONUM 210 G\n1 ALCAPARRAS CONSUM80\n1 PMTO PIQUI.CONSUM\n3,78\n1,65\n1,35\n1,19\n1 SALSA C/SOJA HEINZ\n2,99\n2 CCOLA ZERO CHERRY\n0,92 1,84\n1 COCA-COLA ZERO 0,50\n1,15\n1 B.ENERG. BURN 0,50L\n1,25\n2 BOLSA COMPRA RECICL 0,15 0,30\nTotal factura:\ndaniolA NA N\n103\n51,15\nerob.e\nIMPORTE A ABONAR\nomidom\n51,15\nTarj. Crédito\noldibrio\n51,15\nCarblo\nJust\nto 20,00\nCon la Tarjeta MundoConsum esta compra\nacusularia en tu Cheque Regalo 0,38 €\nAcumula más descuentos con tus ofertas\npersonalizadas.\n-------Venta Tarjeta Bancaria--\nAJENAS CAIXAB\nC:0190 Tarjeta:************5229\nIMPORTE: 51.15 €\nAutori:004700 00/A0000000041010\nRef:000000071522 Operación con pin. Firma no necesaria\nDEBIT MASTERCARD\nOperación aceptada Online\n--Copia para el cliente--\nel cliente\nmeno obnu\n10)\nbody"
+  },
+  {
+    "id": "010_pl_PL_carrefour_PL_001",
+    "locale": "pl_PL",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 359,
+    "gt_items_total": 27,
+    "items_found": 14,
+    "items_missing": 13,
+    "accuracy": 51.9,
+    "total_amount": 0.0,
+    "total_found": false,
+    "missing_items": [
+      "C_JOG.D/P SKYR MEN",
+      "C_ZIEMNIAKI SŁODKIE",
+      "C_POMELO CZERWONE L",
+      "A_OŚMIORNICA MACKI",
+      "A_OŚMIORNICA MACKI"
+    ],
+    "found_items": [
+      "A_TORBA RECYKLING",
+      "A_TORBA RECYKLING",
+      "C_JOG.D/P SKYR H.PR",
+      "C_JOG.D/P SKYR LIND",
+      "C_MC KOPEREK PĘCZEK"
+    ],
+    "ocr_text_length": 1605,
+    "ocr_full_text": "dul\ngas\nCARREFOUR CH Wileńska\n03-734 Warszawa ul. Targowa 72\nfque Tel. (22) 511-26-00\n2025-11-19\nCARREFOUR Polska Sp. z o. 0.\n03-734 Warszawa ul. Targowa 72\nNr rej. BDO: 000009699\nA TORBA RECYKLING\nA_TORBA RECYKLING\nC_JOG.D/P SKYR H.PR\nC.JOG.D/P SKYR HEN\nC_JOG.D/P SKYR LIND\nC.ZIEMNIAKI SŁODKIE\nC POMELO CZERWONE L\nA OSHIORNICA MACKI\nA OSHIORNICA MACKI\nA BIO CZEKOL.COCOA\nC_MC KOPEREK PĘCZEK\nC_MC SAŁATA RZYMSKA\nC MC BIO KRAKERSY P\nCMC KIEŁKI JARMUZU\nC_SIMPL POMIDOR DAK\nC_SEREK PHILADELPHI\nC BAKALLAND DAKTYL\nC_JZN CZOSNEK SZTUK\nNIP 937-00-08-168\nGid\nOM\nnr wydr.072002/1258\nPARAGON FISKALNY.072002/15\nPARAG\n1*0.79= 0.79 A\n1*0.79= 0.79 A\nuqu\n1*6.75= 6.75 C\n1*5.75= 5.75 C\n1*5,99= 5,99 C\n0,694*9.99 6,93 C\n0.762*9.99= 7.61 C\n1*41.99= 41.99 A\n1*41.99= 41.99 A\n1*13.99= 13,99 A\n1x5,99= 5,99 C\nBYAR\n1×5,99= 5,99 C\n1x7,99= 7,99 C\n1*4,65= 4,65 C\n1*5,99= 5,99 C\n1*7,29= 7,29 C\n1*8,49= 8,49 C\n1*1,99= 1,99 C\n1*14.99= 14.99 C\nC\n0,668*4,99 3,33 C\n0,668*4,99 3,33 C\nCHC MANDARYNKI LUZJAVA 1.398-8.99= 12.57 €\nC BANANY PLANTANY 6\nC_JZN JABŁKA CHAMPI\nC.JZN JABŁKA CHAMPI\nC_JZN JABŁKA CHANPI\n0.668*4.99 -3,33 C\n***Anulovano sprzedaż***\nC_CYTRYNY LUZ\nC_TWARÓG WIEJSKI KL\nCMC BIO AOP SER PA\nC_JAJA FARMIO H10 W\nSprzed. opod. PTU A\nKwota A 23,00%\nSprzed. opod. PTU C\nKuota C 05,00%\nsbob b2ysio\n0,29 9,99 2,90 C\n1*5,79= 5,79 C\n1*20,69= 20.69 C\n1×13,09 13,09 C\n99.55\n18.62\n154.77\n7.37\n25.99\nPodatek PTU\nSUMA PLN YAH ob 254.32\n000106 #019 038\n19647F707FD77CC40E 48F7975FEF9AE5F9C238DD\n18:10\nPCCO 1701480375\n00111019254772511193\nPłatność: KARTAPIATNI\nKasjer\n254,32\n038\nNr transakcji\n25477\nZ kartę PAYBACK zyskałbyś 84 punktów!"
+  },
+  {
+    "id": "004_pt_PT_continente_PT_002",
+    "locale": "pt_PT",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 304,
+    "gt_items_total": 12,
+    "items_found": 1,
+    "items_missing": 11,
+    "accuracy": 8.3,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "BANANA",
+      "MACA ROYAL GALA",
+      "PERA ROCHA",
+      "TOMATE",
+      "POUPANCA TOMATE"
+    ],
+    "found_items": [
+      "DIOSPIRO"
+    ],
+    "ocr_text_length": 1696,
+    "ocr_full_text": "CBD General Rocadas\nModelo Continente Hipermercados SA\n210117601\nRua Joao Mendonca, 505 4464-503 Senhora da Hora\nRegistada CRC Porto sob n° 502011475\nNIF: PT5020114751C. S: 403.827.000,00 EUR Produtor: Emb.\nPT01102979; EEE PT000251; OL PT03000282; PA\nPT06000504; Pneus PT04000330\nFatura Simplificada Original\nNro:FS LJU001/734800 09/11/2025 13:10\nIVA DESCRICAO\nNIF: Consumidor Final\nLaticinios/Beb. Veg.:\nVALOR\n(A) OVOS CLASSE M/L RUBY 1DZ\n3,29\nBens Essenciais:\n(A) AZEITE VE RESERVA GALLO 0.75\n6,99\nPOUPANCA\n4,00\nCharcutaria&Queijos:\n(A) BURRATA DE VACA CNT 2006\n2,79\nFrutas e Legumes:\n(A) DIOSPIRO\n2,200 X 3,99\n8.78\n(A) ESPINAFRE RESIDUO ZERO 125GR\n1,19\nTOTAL A PAGAR\n23,04\nCartao Credito\n23.04\nTotal de descontos e poupancas\n4,00\n(A)\nZIVA\n6,00%\nTotal Liq.\n21,74\nIVA\nTotal\n1,30\n23,04\nEEy+-Processado por programa certificado N. 1356/AT\n7691 0001 857408 372703 100121587011994\nATCUD: JF5NCNTM-734800\n17:11\neste\nações\não\nntre\não ser\nação do\nmalmente\nartigos\nlimpeza\nBOM DIA GENERAL ROCA\nDAS\n1170-010 LISBOA\nTerminal Pagamento Automático: 01133081\n25-11-09 13:10:09 Per031 Tr086 Msg489\nVISA INTERNACIONAL\nCARTAO: ****9506\nAD000000031010\nCOMPRA\nTC:363F0E7C2A460E71\nVisa DEBIT\n23,04€\nId. Estab:0000045885 AUT:EBKRPK VI DB EEA\nGetnet\nCONTACTLESS\nVisa paywave\nAutenticação realizada pelo\ndispositivo móvel\nCOPIA CLIENTE\nPROCESSADO POR SIBS\nCo: 00348999\nTr353 Msg656\nONAL\n4F0E4668090398E\nVisa DEBIT\n567W5V VI DB EEA\nIVA INCLUIDO\nCBD General Rocadas\nTLF:210117601\nMorada Loja:\nAv. General Rocadas 648\n1170-010 Lisboa\nTALAD INDISPENSAVEL PARA DEVOLUCAO\nPrazo ate 30 dias, BRINQUEDOS ate 31 Jan\nCondições/artigos não abrangidos em\ndevolver.continente.pt & Apoio Cliente\nayWave\nositivo\n25110900185740876910"
+  },
+  {
+    "id": "002_th_TH_7eleven_IMG_2461",
+    "locale": "th_TH",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 126,
+    "gt_items_total": 18,
+    "items_found": 0,
+    "items_missing": 18,
+    "accuracy": 0.0,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "ผัดมักกะโรนีไก่",
+      "ข้าวผัดปู",
+      "ข้าวกะเพราหมู",
+      "น้ำดื่ม 600ml",
+      "โค้ก 450ml"
+    ],
+    "found_items": [],
+    "ocr_text_length": 526,
+    "ocr_full_text": "/\nCP ALL, 7-Eleven wal2 (09585)\nTAX #010754200001 (VAT Included)\nVat Code 07437 POS#E06770000201326\n1 Ian 1.45 aas\n36.00\n3\n:In\n@37.00 111.00\n2\n@49.00\n98.00\n1\nHannu\n27.00\n1\nH***@ 450\n29.00\n1\nH****9 450\n28.25\n1\n10.00\n1\n22.00\n2 HE @27.00\n54.00\n1\n62.00\n1\nH\n32.00\n1\n45.00\n1\n89.00\n3 (\n@5.00\n15.00\n1\nH\nH\n15.00\nHlafla 1 (L\n110.00\n9\n12568\n0.00\n6\n32568\n0.00\n783.25\n1\n20.00\n5.00\n22\n**/\n758.25\n1 aulan. (Ind\n1,000.00 241.75\nR#0000817199P3 :0958506 03/10/68 23:33\n0-2826-7744 **\n25.00\ngrubduláiduauton ALL\nBUSSI SUBJ\n80 90.-\nNaktsiat\nMed e"
+  },
+  {
+    "id": "061_th_TH_7eleven_IMG_2224",
+    "locale": "th_TH",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 150,
+    "gt_items_total": 2,
+    "items_found": 0,
+    "items_missing": 2,
+    "accuracy": 0.0,
+    "total_amount": 0.0,
+    "total_found": true,
+    "missing_items": [
+      "TECHPRO USB-A to USB-C Cable 3A Super Fast Charge 1M. Titanlink Black TP-C07 EXP 14-09-2025",
+      "TECHPRO Wall USB Charger 1 USB-A QC3.0/ 1 USB-C PD20W White TP-WC04 New TISI EXP 07-09-2026"
+    ],
+    "found_items": [],
+    "ocr_text_length": 745,
+    "ocr_full_text": "Coll\n(B)\nahunanului: taun 549/1 nuua15w135\nPAL\n10260\nal 02 017-7770\nmizu 02-017-7778\nTAX ID:0107557000462\nPOS :E067700002A0969\nantum : 878\n2015.064-513-5278\n/tum()\nRECEIPT/TAX INVOICE (ORIGINAL)\n6809-BR878-00109\n08/09/2025\njun\nD\nTati\nTax ID\n1320501336180\n2727\nVIDE\n234/1 a.\nA5716\nS\nTECHPRO USB-A to\n1\n150.00\nUSB-C Cable 3A Super\nFast Charge 1M.\nTitanlink Black\nTP-C07 EXP\n14-09-2025\nTECHPRO Wall USB\n1\n390.00\nCharger 1 USB-A\nQC3.0/ 1 USB-C\nPD20W White\nTP-WC04 New TISI\nEXP 07-09-2026\n540.00\n35.33\n504.67\n()\nPayment\nBBI (7) 0011: ShipNa\n6-150-18\nu7umumdatuta 6809-CH678-00282\nPhy(ID) 58,190-869\nDocNo 58,187-869\nComment:\nMonday window an\n**nduan daunt\n**Auzoa tuulatan\nJoulumus un :\nhttp://www.comseven.com/conditions/\nData whi\nWan QR Code\n540.00"
+  },
+  {
+    "id": "008_tr_TR_f33enva_TR_001",
+    "locale": "tr_TR",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 151,
+    "gt_items_total": 1,
+    "items_found": 1,
+    "items_missing": 0,
+    "accuracy": 100.0,
+    "total_amount": 0.0,
+    "total_found": false,
+    "missing_items": [],
+    "found_items": [
+      "Su 0,5 ml"
+    ],
+    "ocr_text_length": 824,
+    "ocr_full_text": "F33 ENVA\nAKINCI RESTORAN GIDA.SN.TİC.A.Ş\nTAYAKADIN MH. TERMİNAL CD.\nHAVALİMANI TERMİNAL BİNASI NO:1\nARNAVUTKÖY/İSTANBUL\nKÜÇÜKKÖY V.D 0270562743\n: 13/10/2025\nTARİH\nSAAT\n13:43:08\nFİŞ NO\n: 0290\nSu 0,5 ml\n%10\n*85,00\nTOPKDV\n*7,73\nTOPLAM\nKREDİ\nZİRAATBANK\n******9474\nT.SİCİL NO:\nEKÜ NO:0003\n*85,00\n*85,00\nZ NO:1406\nİŞYERİ NO:000000002391373\nPOS NO:02049068\nİŞLEM NO:0192/KP0604\n13:43\nSATIŞ\n**** **** **** 9474\nTUTAR\n85,00 TL\nAID : A0000000041010\nDEBIT MASTERCARD\nONAY KODU : 124320\nLÜTFEN DİKKAT!\nBU İŞLEM YURT DIŞI BİR\nKART İLE YAPILMIŞTIR\nTUTAR KARŞILIGI MAL VEYA HIZMETI ALDIM\nBU BELGEYİ SAKLAYINIZ\n*** SADECE TEMASSIZ***\nAKINCI RESTORAN IŞLETMECILIĞI GIDA SANAYI\nTICARET ANONİM ŞİRKETI\nAKINCI RESTORAN İŞLETMECİLİĞİ TAYAKADIN MAH.\nTERMINAL CD. NO: 1 / 640585 34277 ARNAVUTKÖY\n34277/İSTANBUL\nZiraat Bankası\nKARI HAMIL NUSHOS DIR"
+  },
+  {
+    "id": "005_uk_UA_dniprom_UA_001",
+    "locale": "uk_UA",
+    "store": "unknown",
+    "status": "ISSUES",
+    "words_count": 236,
+    "gt_items_total": 25,
+    "items_found": 2,
+    "items_missing": 23,
+    "accuracy": 8.0,
+    "total_amount": 0.0,
+    "total_found": false,
+    "missing_items": [
+      "Шліфмашина кутова DeWALT DWE4257 1500Вт 125мм",
+      "Диск відрізний по металу 125x1.0",
+      "Диск шліфувальний 125x6.0",
+      "Окуляри захисні",
+      "Рукавички робочі"
+    ],
+    "found_items": [
+      "Знижка",
+      "Знижка"
+    ],
+    "ocr_text_length": 960,
+    "ocr_full_text": "LNIPROM\nMEPEжA CAЛонIB MAйСТEPHOCTI\nþiрмовий магазин \"Dnipro-M\"\nTOB \"дM TEX\"\nM. Baпорiжкя,\nпр-т. металургув, 12\nПH 45440344\nKaca N1\n1 шT X 234 =\niтка no металу Dnipг\no-M T125-L Tордева, г\noop. дpi\nзнижка\n1 шT X 189 =\niтка по металу Dnipr\no-M T100-L тордева, г\nоop. дpi\n1 шT X 3 300 =\nþарбопульт електрични\nй Dnipro-M SF-100\nзнижка\n1 шT X 4 248 =\nПlлiдмашина куTоBа Dni\npro-M GS-160SE (2021)\nзнижка\n1 шT X 2 400 =\nшлiдмашина кутова Dni\npro-M GL-160SE\n1 шT X 2 100 =\nдриль ударний Dnipго-\nM HD-120M\n1 шT X 4 740 =\nПepдopaтop бочковий D\nnipio-M BH-20\nзнижка\nВонусiв на :\n845\nАлександровна Надежна\nСистемний номер: 27\nномер чека\n329E00010799001B\nKapτa:\n380669397443\nНа початок:\n845\n234 Я\n-35Я\n189Я\n-28 Я\n3 300 Я\n-495 Я\n4 248 Я\n-637 A\n2 400 Я\n2 100 Я\n4 740 Я\n-711 Я\nВикористано:\n0\nНаражовано:\nАT кб \"ПРивАTBAHK\"\n$11707F8\nS11707F8\nОплата\nEП3 448 6XXXXXXXX7181\nПлATIжНА сиСТEMA VISA\nкод тРАНз. 104169864129\nкод АBT. 143258\nBESгOTIBKOBA\nкартка\nCYMA\n15 305 TPH\n15 305\n0"
+  }
+]

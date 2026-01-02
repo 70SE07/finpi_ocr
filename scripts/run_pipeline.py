@@ -34,9 +34,13 @@ def run_extraction(args):
     result = subprocess.run(cmd)
     return result.returncode == 0
 
-def run_parsing():
-    """Запускает домен Parsing."""
-    cmd = [sys.executable, "scripts/parse_receipt.py"]
+def run_parsing(args):
+    """Запускает домен Parsing (NEW: stages/pipeline.py по ADR-015)."""
+    cmd = [sys.executable, "scripts/run_d2_pipeline.py"]
+    if args.path:
+        cmd.append(args.path)
+    else:
+        cmd.append("--all")
     
     print(f"\n[PARSING] Запуск: {' '.join(cmd)}")
     result = subprocess.run(cmd)
@@ -79,7 +83,7 @@ def main():
     print("  ЭТАП 2: Parsing (обработка сырых OCR)")
     print("="*60)
     
-    if not run_parsing():
+    if not run_parsing(args):
         print("\n[ERROR] Parsing этап завершился с ошибкой")
         sys.exit(1)
     

@@ -6,6 +6,16 @@ extends: base.yaml
 locale_code: cs_CZ
 currency: CZK
 
+# === STAGE 3: ADDRESS HINTS ДЛЯ ИЗВЛЕЧЕНИЯ АДРЕСА МАГАЗИНА ===
+address_hints:
+  - $extends: address_hints
+  - ul.
+  - ulice
+  - nám.
+  - náměstí
+  - třída
+  - tř.
+
 # === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
 detection_keywords:
   - celkem

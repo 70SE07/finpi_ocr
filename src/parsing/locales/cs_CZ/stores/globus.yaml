@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина GLOBUS (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - globus
+  aliases:
+    - GLOBUS CR
+    - GLOBUS HYPERMARKET
+  priority: 1

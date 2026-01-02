@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина STOKROTKA (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - stokrotka
+  aliases:
+    - STOKROTKA SP. Z O.O.
+  priority: 1

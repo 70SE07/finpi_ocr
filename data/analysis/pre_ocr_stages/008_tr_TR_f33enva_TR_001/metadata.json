@@ -1,0 +1,19 @@
+{
+  "gt_file": "docs/ground_truth/008_tr_TR_f33enva_TR_001.json",
+  "source_file": "data/input/TR_001.jpeg",
+  "original_shape": [
+    4032,
+    2268,
+    3
+  ],
+  "compressed_shape": [
+    2200,
+    1237,
+    3
+  ],
+  "grayscale_shape": [
+    2200,
+    1237
+  ],
+  "grayscale_method": "blue_channel"
+}

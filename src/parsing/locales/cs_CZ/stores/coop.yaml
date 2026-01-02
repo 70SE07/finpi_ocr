@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина COOP (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - coop
+  aliases:
+    - COOP CENTRUM
+    - JEDNOTA
+  priority: 1

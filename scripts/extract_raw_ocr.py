@@ -26,6 +26,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.settings import validate_config, INPUT_DIR, OUTPUT_DIR
+from src.extraction.application.extraction_pipeline import ExtractionPipeline
 from src.extraction import PreOCRPipeline, GoogleVisionOCR
 from contracts.d1_extraction_dto import RawOCRResult
 
@@ -53,13 +54,16 @@ def process_image(image_path: Path, output_dir: Path, no_cache: bool = False) ->
             print(f"  [CACHE] Результаты уже существуют: {raw_ocr_file}")
             return True
         
+        # Используем ExtractionPipeline для полной обработки
+        # Pipeline сам объединяет Pre-OCR metadata с OCR результатом
         print(f"  [1/2] Pre-OCR обработка: {image_path.name}")
-        preprocessor = PreOCRPipeline()
-        processed_image, metadata = preprocessor.process(image_path)
-        
         print(f"  [2/2] OCR через Google Vision")
-        ocr = GoogleVisionOCR()
-        raw_result = ocr.recognize(processed_image, source_file=image_path.stem)
+        
+        pipeline = ExtractionPipeline(
+            ocr_provider=GoogleVisionOCR(),
+            image_preprocessor=PreOCRPipeline()
+        )
+        raw_result = pipeline.process_image(image_path)
         
         # Сохраняем сырые результаты (Pydantic -> dict)
         result_dict = raw_result.model_dump()
@@ -68,6 +72,11 @@ def process_image(image_path: Path, output_dir: Path, no_cache: bool = False) ->
         
         print(f"  [SAVED] Сырые результаты сохранены: {raw_ocr_file}")
         print(f"  [INFO]  Слов: {len(raw_result.words)}, символов: {len(raw_result.full_text)}")
+        
+        # Показываем что было применено в preprocessing
+        if raw_result.metadata and raw_result.metadata.preprocessing_applied:
+            print(f"  [INFO]  Preprocessing: {', '.join(raw_result.metadata.preprocessing_applied)}")
+        
         return True
         
     except Exception as e:

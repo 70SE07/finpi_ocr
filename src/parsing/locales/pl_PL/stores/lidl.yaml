@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина LIDL (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - lidl
+  aliases:
+    - LIDL POLSKA
+    - LIDL SP. Z O.O.
+  priority: 1

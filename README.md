@@ -146,23 +146,30 @@ raw_ocr_file = result['file_path']  # data/output/raw_ocr/receipt/raw_ocr.json
 print(f"Сохранено: {raw_ocr_file}")
 ```
 
-### Parsing домен
+### Parsing домен (D2)
 
 ```python
-from src.parsing.application.factory import ParsingComponentFactory
-from pathlib import Path
+from src.parsing import ParsingPipeline
+from contracts.d1_extraction_dto import RawOCRResult
+import json
 
-# Создание пайплайна parsing
-pipeline = ParsingComponentFactory.create_default_parsing_pipeline()
+# Создание пайплайна (6-этапный по ADR-015)
+pipeline = ParsingPipeline()
 
-# Обработка raw_ocr файла
-result = pipeline.process_ocr_file(Path("data/output/raw_ocr/receipt/raw_ocr.json"))
+# Загрузка RawOCRResult от D1
+with open("data/output/IMG_1292/raw_ocr_results.json") as f:
+    raw_ocr = RawOCRResult.model_validate(json.load(f))
 
-# Результат - структурированные данные чека
-data = result['data']
-print(f"Локаль: {data.get('locale')}")
-print(f"Магазин: {data.get('metadata', {}).get('store_name')}")
-print(f"Товаров: {len(data.get('items', []))}")
+# Обработка
+result = pipeline.process(raw_ocr)
+
+# Результат - PipelineResult с 6 этапами
+print(f"Локаль: {result.locale.locale_code}")
+print(f"Магазин: {result.store.store_name}")
+print(f"Дата: {result.metadata.receipt_date}")
+print(f"Итог: {result.metadata.receipt_total}")
+print(f"Товаров: {len(result.dto.items)}")
+print(f"Checksum: {'PASSED' if result.validation.passed else 'FAILED'}")
 ```
 
 ## Конфигурация локалей
@@ -235,9 +242,11 @@ patterns:
 - [Обзор архитектуры](docs/architecture/architecture_overview.md) — независимые домены, контракты, использование
 - [Реестр контрактов](docs/architecture/contract_registry.md) — обязательства модулей
 
-## Формат RawOCRResult (D1→D2)
+## Контракт D1: RawOCRResult (D1→D2)
 
-По ADR-006, контракт содержит `full_text` и `words[]` с координатами:
+> **ВАЖНО:** D1 выдаёт `words[]`, НЕ `blocks[]`. Это ключевое требование контракта.
+
+По ADR-006, контракт `RawOCRResult` содержит `full_text` и `words[]` с координатами:
 
 ```json
 {

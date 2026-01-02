@@ -22,6 +22,10 @@ sys.path.insert(0, str(PROJECT_ROOT / "src"))
 import cv2
 from google.cloud import vision
 
+# Настройка конфига
+sys.path.insert(0, str(PROJECT_ROOT.parent))
+from config.settings import JPEG_QUALITY
+
 # Credentials
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = str(
     PROJECT_ROOT / "config" / "google_credentials.json"
@@ -59,7 +63,7 @@ def ocr_image(image_bytes: bytes) -> dict:
 
 def image_to_bytes(image) -> bytes:
     """Конвертирует cv2 image в bytes."""
-    _, buffer = cv2.imencode(".jpg", image, [cv2.IMWRITE_JPEG_QUALITY, 85])
+    _, buffer = cv2.imencode(".jpg", image, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY])
     return buffer.tobytes()
 
 

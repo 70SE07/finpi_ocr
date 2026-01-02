@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина ALDI (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - aldi
+  aliases:
+    - ALDI SUPERMERCADOS
+  priority: 1

@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина KAUFLAND (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - kaufland
+  aliases:
+    - KAUFLAND POLSKA
+  priority: 1

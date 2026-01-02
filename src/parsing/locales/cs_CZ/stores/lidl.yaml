@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина LIDL (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - lidl
+  aliases:
+    - LIDL CESKA REPUBLIKA
+  priority: 1

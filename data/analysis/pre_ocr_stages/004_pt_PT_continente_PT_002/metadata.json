@@ -1,0 +1,19 @@
+{
+  "gt_file": "docs/ground_truth/004_pt_PT_continente_PT_002.json",
+  "source_file": "data/input/PT_002.jpeg",
+  "original_shape": [
+    1280,
+    960,
+    3
+  ],
+  "compressed_shape": [
+    1280,
+    960,
+    3
+  ],
+  "grayscale_shape": [
+    1280,
+    960
+  ],
+  "grayscale_method": "blue_channel"
+}

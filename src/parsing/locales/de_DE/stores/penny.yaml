@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина PENNY (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - penny
+    - penny markt
+  aliases:
+    - PENNY-MARKT
+  priority: 1

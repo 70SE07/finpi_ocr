@@ -1,0 +1,19 @@
+{
+  "gt_file": "docs/ground_truth/061_th_TH_7eleven_IMG_2224.json",
+  "source_file": "photo/photo_2_th/IMG_2224.jpeg",
+  "original_shape": [
+    4032,
+    2268,
+    3
+  ],
+  "compressed_shape": [
+    1800,
+    1012,
+    3
+  ],
+  "grayscale_shape": [
+    1800,
+    1012
+  ],
+  "grayscale_method": "blue_channel"
+}

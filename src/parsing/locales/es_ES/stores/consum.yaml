@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина CONSUM (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - consum
+  aliases:
+    - CONSUM S.COOP.V.
+    - CHARTER CONSUM
+  priority: 1

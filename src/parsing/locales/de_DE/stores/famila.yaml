@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина FAMILA (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - famila
+  aliases:
+    - FAMILA HANDELSMARKT
+    - FAMILA-HANDELSMARKT
+  priority: 1

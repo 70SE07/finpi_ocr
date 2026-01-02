@@ -150,9 +150,16 @@ class SemanticStage:
                         if receipt_total > 0 and item.total > receipt_total:
                             is_outlier = True
                             
-                        # Аномалия 2: Адаптивный порог (для коротких чеков 40%, для длинных 25%)
-                        if not is_outlier and receipt_total > 0:
-                            threshold = 0.4 if len(items) <= 5 else 0.25
+                        # Аномалия 2: Адаптивный порог
+                        # Для маленьких чеков (< 20 EUR/PLN) порог не применяется - 
+                        # там каждый товар естественно составляет большую долю
+                        # Для средних (< 50): порог 50%
+                        # Для больших: порог 40% (короткие) или 25% (длинные)
+                        if not is_outlier and receipt_total >= 20:
+                            if receipt_total < 50:
+                                threshold = 0.5  # 50% для средних чеков
+                            else:
+                                threshold = 0.4 if len(items) <= 5 else 0.25
                             if item.total > receipt_total * threshold:
                                 is_outlier = True
 
@@ -185,8 +192,12 @@ class SemanticStage:
                                         is_outlier = False # Снимаем флаг аномалии, так как мы её исправили!
                             
                             # Если после всех попыток чистки это всё еще аномалия - вот тогда игнорируем
-                            if is_outlier:
-                                threshold = 0.4 if len(items) <= 5 else 0.25
+                            # (но только для чеков >= 20, для маленьких не фильтруем)
+                            if is_outlier and receipt_total >= 20:
+                                if receipt_total < 50:
+                                    threshold = 0.5
+                                else:
+                                    threshold = 0.4 if len(items) <= 5 else 0.25
                                 if item.total > receipt_total * threshold:
                                     logger.warning(f"[Stage 5] Price Sanity Check: Ignore suspicious item '{item.name}' with price {item.total}")
                                     continue
@@ -269,8 +280,25 @@ class SemanticStage:
             has_explicit_multi = bool(re.search(r"(\*|[\s*x×X]\s+)", text.upper())) or \
                                any(op in text.upper() for op in [' VAT ', ' IVA ', ' PTU '])
             
+            # Системное решение: Паттерн весового товара без знака умножения
+            # Формат: "NAME qty price total TAX" (польский Carrefour)
+            # Пример: "C_CYTRYNY LUZ 0,29 9,99 2,90 C"
+            # Где qty < 10, qty * price ≈ total (с погрешностью 0.02)
+            is_weight_pattern = False
+            if len(prices) == 3 and not has_explicit_multi:
+                try:
+                    qty = float(prices[0].replace(',', '.'))
+                    unit_price = float(prices[1].replace(',', '.'))
+                    total = float(prices[2].replace(',', '.'))
+                    # Проверка: qty < 10 (типичный вес), и qty * price ≈ total
+                    if qty < 10 and abs(qty * unit_price - total) < 0.02:
+                        is_weight_pattern = True
+                        logger.debug(f"[Stage 5] Weight Pattern detected: qty={qty}, price={unit_price}, total={total}")
+                except ValueError:
+                    pass
+            
             should_split = False
-            if not has_explicit_multi and len(prices) >= 2:
+            if not has_explicit_multi and len(prices) >= 2 and not is_weight_pattern:
                 should_split = True
             elif has_explicit_multi and len(prices) >= 4: # Если 4+ цены при наличии X, это уже перебор
                 should_split = True
@@ -324,6 +352,8 @@ class SemanticStage:
         
         name = self._clean_item_name(name)
         quantity, price = None, None
+        
+        # Паттерн 1: Явный маркер умножения (1*5.99, 0.5 x 9.99)
         qty_pattern = r"(?:^|\s)(\d{1,3}(?:[.,]\d{1,3})?)\s*[xX×*]\s*(?:\d|$)"
         qty_match = re.search(qty_pattern, text)
         if qty_match:
@@ -332,6 +362,23 @@ class SemanticStage:
                 if len(prices) >= 2:
                     price = float(f"{prices[0][0]}.{prices[0][1]}")
             except: pass
+        
+        # Паттерн 2: Весовой товар без маркера (qty price total) - польский формат
+        # Пример: "C_CYTRYNY LUZ 0,29 9,99 2,90 C"
+        if quantity is None and len(prices) == 3:
+            try:
+                qty_candidate = float(f"{prices[0][0]}.{prices[0][1]}")
+                price_candidate = float(f"{prices[1][0]}.{prices[1][1]}")
+                total_candidate = float(f"{prices[2][0]}.{prices[2][1]}")
+                # Проверка: qty < 10 и qty * price ≈ total
+                if qty_candidate < 10 and abs(qty_candidate * price_candidate - total_candidate) < 0.02:
+                    quantity = qty_candidate
+                    price = price_candidate
+                    total = total_candidate
+                    logger.debug(f"[Stage 5] Weight item extracted: qty={quantity}, price={price}, total={total}")
+            except ValueError:
+                pass
+        
         return name, quantity, price, total
 
     def _clean_item_name(self, name: str) -> str:

@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина ALCAMPO (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - alcampo
+  aliases:
+    - AUCHAN RETAIL ESPANA
+  priority: 1

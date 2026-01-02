@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина ABC (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - abc
+  aliases:
+    - EUROCASH ABC
+  priority: 0  # Lower priority - "abc" is a common abbreviation

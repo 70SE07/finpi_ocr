@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина INTERMARCHE (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - intermarche
+    - intermarché
+  aliases:
+    - INTERMARCHE POLSKA
+    - SCA PR POLSKA
+  priority: 1

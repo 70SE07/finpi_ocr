@@ -4,6 +4,41 @@
 
 Finpi OCR - тренировочный стенд для экспериментов с Google Vision OCR и обработкой чеков из 100+ стран.
 
+## Три домена системы
+
+Система разделена на три независимых домена согласно принципу SRP (Single Responsibility Principle).
+
+| Домен | Название | ЦКП (Ценный Конечный Продукт) | Вход | Выход |
+|-------|----------|-------------------------------|------|-------|
+| **D1** | Extraction | Оцифрованный текст без потерь | Изображение чека | `RawOCRResult` |
+| **D2** | Parsing | Структурированные данные чека | `RawOCRResult` | `RawReceiptDTO` |
+| **D3** | Categorization | Категоризированные товары (L1-L5) | `RawReceiptDTO` | `ParseResultDTO` |
+
+### Принципы разделения
+
+1. **D1 (Extraction)** - language-agnostic
+   - Не знает о языках и локалях
+   - Google Vision сам определяет язык
+   - Задача: оцифровать текст с изображения
+
+2. **D2 (Parsing)** - locale-aware
+   - Определяет локаль чека
+   - Извлекает структуру (товары, цены, метаданные)
+   - Работает с YAML-конфигурациями локалей
+
+3. **D3 (Categorization)** - внешний домен
+   - Реализован в `finpi_parser_photo/`
+   - Использует LLM + Constitution + Directories
+   - Не наша зона ответственности
+
+### Подробная документация
+
+| Тема | Документ |
+|------|----------|
+| Почему 3 домена | [ADR-001: Разделение на домены](decisions/001_domain_separation.md) |
+| ЦКП каждого домена | [ADR-002: Ответственности доменов](decisions/002_domain_responsibilities.md) |
+| Архитектура D3 | [ADR-007: D3 Categorization](decisions/007_d3_categorization_overview.md) |
+
 ## Принципы проектирования
 
 1. **Независимые домены (Domain-Driven Design)**
@@ -185,49 +220,56 @@ pipeline = ExtractionComponentFactory.create_extraction_pipeline(
 - Семантическое извлечение товаров (название, количество, цена)
 - Сохранение структурированных результатов
 
-### Интерфейсы
-- `IReceiptParser` - интерфейс для парсеров чеков
-- `ILayoutProcessor` - интерфейс для обработки layout
-- `ILocaleDetector` - интерфейс для детектора локали
-- `IMetadataExtractor` - интерфейс для извлечения метаданных
-- `ISemanticExtractor` - интерфейс для семантического извлечения
-- `IParsingPipeline` - интерфейс для пайплайна parsing
+### Архитектура (6-этапный пайплайн по ADR-015)
+
+```
+src/parsing/stages/
+├── stage_1_layout.py      # Layout: группировка слов в строки
+├── stage_2_locale.py      # Locale: определение языка/локали
+├── stage_3_store.py       # Store: определение магазина
+├── stage_4_metadata.py    # Metadata: дата, сумма, валюта
+├── stage_5_semantic.py    # Semantic: извлечение товаров
+├── stage_6_validation.py  # Validation: checksum
+└── pipeline.py            # ParsingPipeline (оркестратор)
+```
 
 ### Использование
 
 ```python
-from src.parsing.application.factory import ParsingComponentFactory
-from pathlib import Path
+from src.parsing import ParsingPipeline
+from contracts.d1_extraction_dto import RawOCRResult
+import json
 
-# Создание пайплайна parsing
-pipeline = ParsingComponentFactory.create_default_parsing_pipeline()
+# Создание пайплайна
+pipeline = ParsingPipeline()
 
-# Обработка raw_ocr файла
-result = pipeline.process_ocr_file(Path("data/output/raw_ocr/receipt/raw_ocr.json"))
+# Загрузка RawOCRResult от D1
+with open("data/output/IMG_1292/raw_ocr_results.json") as f:
+    raw_ocr = RawOCRResult.model_validate(json.load(f))
 
-# Результат - структурированные данные чека
-data = result['data']
-print(f"Локаль: {data.get('locale')}")
-print(f"Магазин: {data.get('metadata', {}).get('store_name')}")
-print(f"Товаров: {len(data.get('items', []))}")
+# Обработка (6 этапов)
+result = pipeline.process(raw_ocr)
+
+# Результат
+print(f"Локаль: {result.locale.locale_code}")
+print(f"Магазин: {result.store.store_name}")
+print(f"Дата: {result.metadata.receipt_date}")
+print(f"Итог: {result.metadata.receipt_total}")
+print(f"Товаров: {len(result.dto.items)}")
+print(f"Checksum: {'PASSED' if result.validation.passed else 'FAILED'}")
 ```
 
-### Замена компонентов
+### Локализация
 
-```python
-from src.parsing.application.factory import ParsingComponentFactory
-
-# Кастомный семантический экстрактор (например, для AI-based parsing)
-pipeline = ParsingComponentFactory.create_parsing_pipeline(
-    semantic_extractor=CustomSemanticExtractor()
-)
-
-# Кастомный детектор локали
-pipeline = ParsingComponentFactory.create_parsing_pipeline(
-    receipt_parser=ParsingComponentFactory.create_receipt_parser(
-        locale_detector=CustomLocaleDetector()
-    )
-)
+```
+src/parsing/locales/
+├── config_loader.py       # ConfigLoader - загрузка конфигов
+├── de_DE/
+│   ├── parsing.yaml       # Паттерны для немецкого
+│   └── stores.yaml        # Магазины
+├── pl_PL/
+├── pt_PT/
+└── ...
 ```
 
 ## Точка входа (scripts/run_pipeline.py)

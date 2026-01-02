@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина KAUFLAND (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - kaufland
+  aliases:
+    - KAUFLAND STIFTUNG
+    - KAUFLAND WARENHANDEL
+  priority: 1

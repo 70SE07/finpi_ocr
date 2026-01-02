@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина METRO (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - metro
+  aliases:
+    - METRO CASH & CARRY
+    - METRO AG
+  priority: 1

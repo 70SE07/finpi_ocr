@@ -1,15 +1,22 @@
 """
-Домен Parsing: Обработка сырых результатов OCR.
+Домен Parsing (D2): Обработка сырых результатов OCR.
 
-Этот домен отвечает за:
-1. Анализ layout чека
-2. Извлечение метаданных (дата, магазин, сумма)
-3. Семантическое извлечение товаров
-4. Категоризация товаров
+Архитектура: 6-этапный пайплайн (ADR-015)
+- Stage 1: Layout (группировка слов в строки)
+- Stage 2: Locale (определение языка/локали)
+- Stage 3: Store (определение магазина)
+- Stage 4: Metadata (дата, сумма, валюта)
+- Stage 5: Semantic (извлечение товаров)
+- Stage 6: Validation (checksum)
 
-Вход: contracts.RawOCRResult
-Выход: Структурированные данные чека
+Вход: contracts.RawOCRResult (от D1)
+Выход: contracts.RawReceiptDTO (для D3)
 """
 
-# Основные классы будут экспортированы после миграции
-__all__ = []
+from src.parsing.stages.pipeline import ParsingPipeline
+from src.parsing.locales.config_loader import ConfigLoader
+
+__all__ = [
+    "ParsingPipeline",
+    "ConfigLoader",
+]

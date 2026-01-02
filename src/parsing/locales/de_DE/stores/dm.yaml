@@ -1,0 +1,12 @@
+# ЦКП: Конфигурация магазина DM Drogerie (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - dm
+    - dm-drogerie
+    - dm drogerie
+  aliases:
+    - DM-DROGERIE MARKT
+    - DM MARKT
+  priority: 1

@@ -6,6 +6,17 @@ extends: base.yaml
 locale_code: pt_PT
 currency: EUR
 
+# === STAGE 3: ADDRESS HINTS ДЛЯ ИЗВЛЕЧЕНИЯ АДРЕСА МАГАЗИНА ===
+address_hints:
+  - $extends: address_hints
+  - rua
+  - av.
+  - avenida
+  - praça
+  - travessa
+  - largo
+  - estrada
+
 # === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
 detection_keywords:
   - total

@@ -1,3 +1,14 @@
+# ЦКП: Конфигурация магазина HIT (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - hit
+  aliases:
+    - HIT HANDELSGRUPPE
+    - HIT SONDERPOSTEN
+  priority: 0  # Lower priority - "hit" is a common word
+
 # Override: HIT имеет инвертированные tax classes
 tax:
   inverted: true  # A=19%, B=7%

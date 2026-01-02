@@ -7,6 +7,18 @@ locale_code: pl_PL
 currency: PLN
 line_split_y_threshold: 10
 
+# === STAGE 3: ADDRESS HINTS ДЛЯ ИЗВЛЕЧЕНИЯ АДРЕСА МАГАЗИНА ===
+address_hints:
+  - $extends: address_hints
+  - ul.
+  - ulica
+  - al.
+  - aleja
+  - pl.
+  - plac
+  - os.
+  - osiedle
+
 # === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
 detection_keywords:
   - suma

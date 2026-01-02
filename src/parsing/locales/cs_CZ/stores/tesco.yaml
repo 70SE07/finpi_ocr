@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина TESCO (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - tesco
+  aliases:
+    - TESCO STORES CR
+  priority: 1

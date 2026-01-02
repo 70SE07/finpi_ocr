@@ -4,42 +4,62 @@
   "locale": "pt_PT",
   "store": {
     "name": "Continente",
-    "address": "Portugal"
+    "address": "Rua Joao Mendonca, 505 4464-503 Senhora da Hora",
+    "tax_id": "PT5020114751C"
   },
   "metadata": {
-    "date": "2025-10-20",
+    "date": "09/11/2025",
+    "time": "13:10",
     "currency": "EUR",
-    "payment_method": "Cartão",
+    "payment_method": "Cartao Credito",
     "receipt_total": 23.04,
     "total_discount": 4.00,
     "tax_block": {
-      "A": {"rate": "6%", "total_liq": 21.74, "iva": 1.30, "total": 23.04}
+      "A": {"rate": "6,00%", "total_liq": 21.74, "iva": 1.30, "total": 23.04}
     }
   },
   "items": [
-    {"raw_name": "DIOSPIRO", "quantity": 2.200, "unit": "kg", "unit_price": 3.99, "total_price": 8.78, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "BANANA", "quantity": 1.100, "unit": "kg", "unit_price": 1.29, "total_price": 1.42, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "MACA ROYAL GALA", "quantity": 0.950, "unit": "kg", "unit_price": 2.49, "total_price": 2.37, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "PERA ROCHA", "quantity": 0.800, "unit": "kg", "unit_price": 2.99, "total_price": 2.39, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "TOMATE", "quantity": 0.600, "unit": "kg", "unit_price": 1.99, "total_price": 1.19, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "POUPANCA TOMATE", "quantity": null, "unit": null, "unit_price": null, "total_price": 0.00, "is_discount": true, "note": "Price already discounted"},
-    {"raw_name": "ALFACE", "quantity": 1, "unit_price": null, "total_price": 0.99, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "CENOURA", "quantity": 0.500, "unit": "kg", "unit_price": 1.29, "total_price": 0.65, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "BATATA", "quantity": 1.200, "unit": "kg", "unit_price": 0.99, "total_price": 1.19, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "CEBOLA", "quantity": 0.700, "unit": "kg", "unit_price": 1.49, "total_price": 1.04, "tax_class": "A", "category": "Frutas e Legumes"},
-    {"raw_name": "LEITE UHT 1L", "quantity": 2, "unit_price": 0.79, "total_price": 1.58, "tax_class": "A"},
-    {"raw_name": "PAO FORMA", "quantity": 1, "unit_price": null, "total_price": 1.44, "tax_class": "A"}
+    {
+      "raw_name": "OVOS CLASSE M/L RUBY 1DZ",
+      "quantity": 1,
+      "unit_price": 3.29,
+      "total_price": 3.29,
+      "tax_class": "A",
+      "category": "Laticinios/Beb. Veg."
+    },
+    {
+      "raw_name": "AZEITE VE RESERVA GALLO 0.75L",
+      "quantity": 1,
+      "unit_price": 6.99,
+      "total_price": 6.99,
+      "tax_class": "A",
+      "category": "Bens Essenciais"
+    },
+    {
+      "raw_name": "BURRATA DE VACA CNT 200G",
+      "quantity": 1,
+      "unit_price": 2.79,
+      "total_price": 2.79,
+      "tax_class": "A",
+      "category": "Charcutaria&Queijos"
+    },
+    {
+      "raw_name": "DIOSPIRO",
+      "quantity": 2.200,
+      "unit": "kg",
+      "unit_price": 3.99,
+      "total_price": 8.78,
+      "tax_class": "A",
+      "category": "Frutas e Legumes"
+    },
+    {
+      "raw_name": "ESPINAFRE RESIDUO ZERO 125GR",
+      "quantity": 1,
+      "unit_price": 1.19,
+      "total_price": 1.19,
+      "tax_class": "A",
+      "category": "Frutas e Legumes"
+    }
   ],
-  "validation": {
-    "checksum_method": "SUM(items) == receipt_total",
-    "expected_total": 23.04,
-    "tax_a_total": 23.04,
-    "discrepancy": 0.00
-  },
-  "notes": [
-    "POUPANCA indicates discounted items",
-    "Categories shown on receipt (Frutas e Legumes)",
-    "All items tax class A (6%)"
-  ]
+  "notes": "POUPANCA (скидка 4,00) уже учтена в ценах товаров. Total de descontos e poupancas: 4,00"
 }
-

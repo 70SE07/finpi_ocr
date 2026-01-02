@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина CARREFOUR (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - carrefour
+  aliases:
+    - CARREFOUR ESPANA
+    - CARREFOUR MARKET
+    - CARREFOUR EXPRESS
+  priority: 1

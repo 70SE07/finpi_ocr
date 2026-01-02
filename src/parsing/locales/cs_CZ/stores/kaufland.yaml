@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина KAUFLAND (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - kaufland
+  aliases:
+    - KAUFLAND CESKA REPUBLIKA
+  priority: 1

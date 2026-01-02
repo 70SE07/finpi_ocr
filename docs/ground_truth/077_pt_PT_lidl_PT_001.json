@@ -1,0 +1,36 @@
+{
+  "id": "077",
+  "source_file": "data/input/PT_001.jpeg",
+  "locale": "pt_PT",
+  "store": {
+    "name": "LIDL & Cia",
+    "address": "LISBOA - R MARIA DA FONTE R M. Fonte - M. F. Tijolo, Lj37 - Lisboa",
+    "tax_id": "503340855"
+  },
+  "metadata": {
+    "date": "2025-11-08",
+    "time": "17:11",
+    "currency": "EUR",
+    "payment_method": "MULTIBANCO",
+    "receipt_total": 3.37,
+    "tax_block": {
+      "A": {"rate": "23%", "total_liq": 2.74, "iva": 0.63, "total": 3.37}
+    }
+  },
+  "items": [
+    {"raw_name": "TRANCA COM NOZ PECA", "quantity": 1, "unit_price": 0.89, "total_price": 0.89, "tax_class": "A"},
+    {"raw_name": "PIZZA FIAMBRE E QUEIJO", "quantity": 1, "unit_price": 1.49, "total_price": 1.49, "tax_class": "A"},
+    {"raw_name": "FOLHADO DE CARNE MISTO", "quantity": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "A"}
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == receipt_total",
+    "expected_total": 3.37,
+    "tax_a_total": 3.37,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "All items tax class A (23%)",
+    "Receipt type: FATURA SIMPLIFICADA",
+    "Receipt number: FS 018800125/205509"
+  ]
+}

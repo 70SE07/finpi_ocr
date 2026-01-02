@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина EROSKI (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - eroski
+  aliases:
+    - EROSKI S.COOP.
+    - EROSKI CENTER
+    - EROSKI CITY
+  priority: 1

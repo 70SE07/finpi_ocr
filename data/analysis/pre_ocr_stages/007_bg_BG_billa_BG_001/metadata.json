@@ -1,0 +1,19 @@
+{
+  "gt_file": "docs/ground_truth/007_bg_BG_billa_BG_001.json",
+  "source_file": "data/input/BG_001.jpeg",
+  "original_shape": [
+    1792,
+    828,
+    3
+  ],
+  "compressed_shape": [
+    1792,
+    828,
+    3
+  ],
+  "grayscale_shape": [
+    1792,
+    828
+  ],
+  "grayscale_method": "blue_channel"
+}

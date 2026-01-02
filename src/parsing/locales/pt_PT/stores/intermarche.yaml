@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина INTERMARCHE (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - intermarche
+    - intermarché
+  aliases:
+    - ITM PORTUGAL
+    - OS MOSQUETEIROS
+  priority: 1

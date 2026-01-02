@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина JUMBO (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - jumbo
+  aliases:
+    - AUCHAN RETAIL PORTUGAL
+    - AUCHAN JUMBO
+  priority: 1

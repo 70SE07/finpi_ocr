@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина ALDI (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - aldi
+  aliases:
+    - ALDI PORTUGAL
+  priority: 1

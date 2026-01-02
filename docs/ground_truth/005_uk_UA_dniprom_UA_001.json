@@ -4,54 +4,92 @@
   "locale": "uk_UA",
   "store": {
     "name": "Dnipro-M",
-    "type": "Hardware store"
+    "address": "м. Запоріжжя, пр-т. Металургів, 12",
+    "tax_id": "45440344"
   },
   "metadata": {
-    "date": "2025-10-18",
     "currency": "UAH",
-    "payment_method": "БЕЗГОТІВКОВА (Card)",
+    "payment_method": "БЕЗГОТІВКОВА (Картка)",
     "receipt_total": 15305,
-    "tax_info": "Без ПДВ Я = неоп"
+    "vat_info": "Без ПДВ Я = неоп 0"
   },
   "items": [
-    {"raw_name": "Шліфмашина кутова DeWALT DWE4257 1500Вт 125мм", "quantity": 1, "unit": "шт", "unit_price": 4248, "total_price": 4248, "tax_class": "Я"},
-    {"raw_name": "Знижка", "quantity": null, "unit": null, "unit_price": null, "total_price": -637, "is_discount": true},
-    {"raw_name": "Диск відрізний по металу 125x1.0", "quantity": 10, "unit": "шт", "unit_price": 25, "total_price": 250, "tax_class": "Я"},
-    {"raw_name": "Диск шліфувальний 125x6.0", "quantity": 5, "unit": "шт", "unit_price": 35, "total_price": 175, "tax_class": "Я"},
-    {"raw_name": "Окуляри захисні", "quantity": 1, "unit": "шт", "unit_price": 189, "total_price": 189, "tax_class": "Я"},
-    {"raw_name": "Рукавички робочі", "quantity": 3, "unit": "шт", "unit_price": 45, "total_price": 135, "tax_class": "Я"},
-    {"raw_name": "Перфоратор Bosch GBH 2-26", "quantity": 1, "unit": "шт", "unit_price": 6500, "total_price": 6500, "tax_class": "Я"},
-    {"raw_name": "Знижка", "quantity": null, "unit": null, "unit_price": null, "total_price": -975, "is_discount": true},
-    {"raw_name": "Бур SDS-plus 6x160", "quantity": 5, "unit": "шт", "unit_price": 65, "total_price": 325, "tax_class": "Я"},
-    {"raw_name": "Бур SDS-plus 8x160", "quantity": 5, "unit": "шт", "unit_price": 75, "total_price": 375, "tax_class": "Я"},
-    {"raw_name": "Бур SDS-plus 10x160", "quantity": 3, "unit": "шт", "unit_price": 95, "total_price": 285, "tax_class": "Я"},
-    {"raw_name": "Подовжувач 10м", "quantity": 1, "unit": "шт", "unit_price": 450, "total_price": 450, "tax_class": "Я"},
-    {"raw_name": "Мішки для пилу", "quantity": 2, "unit": "шт", "unit_price": 120, "total_price": 240, "tax_class": "Я"},
-    {"raw_name": "Рулетка 5м", "quantity": 1, "unit": "шт", "unit_price": 185, "total_price": 185, "tax_class": "Я"},
-    {"raw_name": "Рівень 60см", "quantity": 1, "unit": "шт", "unit_price": 320, "total_price": 320, "tax_class": "Я"},
-    {"raw_name": "Олівець будівельний", "quantity": 5, "unit": "шт", "unit_price": 15, "total_price": 75, "tax_class": "Я"},
-    {"raw_name": "Ящик для інструменту", "quantity": 1, "unit": "шт", "unit_price": 890, "total_price": 890, "tax_class": "Я"},
-    {"raw_name": "Біти PH2 50мм", "quantity": 10, "unit": "шт", "unit_price": 18, "total_price": 180, "tax_class": "Я"},
-    {"raw_name": "Свердла по металу набір", "quantity": 1, "unit": "шт", "unit_price": 450, "total_price": 450, "tax_class": "Я"},
-    {"raw_name": "Ключ розвідний 250мм", "quantity": 1, "unit": "шт", "unit_price": 285, "total_price": 285, "tax_class": "Я"},
-    {"raw_name": "Пакет", "quantity": 2, "unit": "шт", "unit_price": 5, "total_price": 10, "tax_class": "Я"},
-    {"raw_name": "Стрічка ізоляційна", "quantity": 3, "unit": "шт", "unit_price": 25, "total_price": 75, "tax_class": "Я"},
-    {"raw_name": "Клеммник 3x2.5", "quantity": 10, "unit": "шт", "unit_price": 12, "total_price": 120, "tax_class": "Я"},
-    {"raw_name": "Дюбель 8x50", "quantity": 50, "unit": "шт", "unit_price": 1.5, "total_price": 75, "tax_class": "Я"},
-    {"raw_name": "Шуруп 4.2x50", "quantity": 100, "unit": "шт", "unit_price": 0.8, "total_price": 80, "tax_class": "Я"}
-  ],
-  "validation": {
-    "checksum_method": "SUM(items including discounts) == receipt_total",
-    "expected_total": 15305,
-    "discrepancy": 0.00
-  },
-  "notes": [
-    "Ukrainian hryvnia (UAH)",
-    "Multiline item format",
-    "Whole numbers (no kopecks)",
-    "Space as thousands separator",
-    "Discounts after each major item",
-    "Tax class Я = no VAT"
+    {
+      "raw_name": "Щітка по металу Dnipro-M T125-L торцева, г офр. дрі",
+      "quantity": 1,
+      "unit_price": 234,
+      "total_price": 234
+    },
+    {
+      "raw_name": "Знижка",
+      "quantity": 1,
+      "unit_price": -35,
+      "total_price": -35,
+      "is_discount": true
+    },
+    {
+      "raw_name": "Щітка по металу Dnipro-M T100-L торцева, г офр. дрі",
+      "quantity": 1,
+      "unit_price": 189,
+      "total_price": 189
+    },
+    {
+      "raw_name": "Знижка",
+      "quantity": 1,
+      "unit_price": -28,
+      "total_price": -28,
+      "is_discount": true
+    },
+    {
+      "raw_name": "Фарбопульт електричний Dnipro-M SF-100",
+      "quantity": 1,
+      "unit_price": 3300,
+      "total_price": 3300
+    },
+    {
+      "raw_name": "Знижка",
+      "quantity": 1,
+      "unit_price": -495,
+      "total_price": -495,
+      "is_discount": true
+    },
+    {
+      "raw_name": "Шліфмашина кутова Dnipro-M GS-160SE (2021)",
+      "quantity": 1,
+      "unit_price": 4248,
+      "total_price": 4248
+    },
+    {
+      "raw_name": "Знижка",
+      "quantity": 1,
+      "unit_price": -637,
+      "total_price": -637,
+      "is_discount": true
+    },
+    {
+      "raw_name": "Шліфмашина кутова Dnipro-M GL-160SE",
+      "quantity": 1,
+      "unit_price": 2400,
+      "total_price": 2400
+    },
+    {
+      "raw_name": "Дриль ударний Dnipro-M HD-120M",
+      "quantity": 1,
+      "unit_price": 2100,
+      "total_price": 2100
+    },
+    {
+      "raw_name": "Перфоратор бочковий Dnipro-M BH-20",
+      "quantity": 1,
+      "unit_price": 4740,
+      "total_price": 4740
+    },
+    {
+      "raw_name": "Знижка",
+      "quantity": 1,
+      "unit_price": -711,
+      "total_price": -711,
+      "is_discount": true
+    }
   ]
 }
-

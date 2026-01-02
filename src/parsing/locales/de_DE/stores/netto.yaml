@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина NETTO (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - netto
+    - netto marken-discount
+  aliases:
+    - NETTO MARKEN-DISCOUNT
+    - NETTO STIFTUNG
+  priority: 1

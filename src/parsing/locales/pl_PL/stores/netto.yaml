@@ -1,0 +1,9 @@
+# ЦКП: Конфигурация магазина NETTO (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - netto
+  aliases:
+    - NETTO POLSKA
+  priority: 1

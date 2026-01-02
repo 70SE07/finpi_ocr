@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина DIA (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - dia
+  aliases:
+    - DIA S.A.
+    - MAXI DIA
+    - DIA MARKET
+  priority: 1

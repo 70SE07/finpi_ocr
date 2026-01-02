@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина MINIPRECO (Португалия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - minipreco
+    - minipreço
+  aliases:
+    - MINIPRECO SOCIEDADE
+  priority: 1

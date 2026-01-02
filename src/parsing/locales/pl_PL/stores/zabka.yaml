@@ -1,0 +1,11 @@
+# ЦКП: Конфигурация магазина ZABKA (Польша)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - żabka
+    - zabka
+  aliases:
+    - ZABKA POLSKA
+    - ŻABKA POLSKA
+  priority: 1

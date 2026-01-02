@@ -1,3 +1,14 @@
+# ЦКП: Конфигурация магазина CENTERSHOP (Германия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - centershop
+    - center shop
+  aliases:
+    - CENTERSHOP GMBH
+  priority: 1
+
 # Override: CenterShop использует точку вместо запятой в цене
 currency:
   decimal_separator: "."

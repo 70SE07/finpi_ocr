@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина MAKRO (Чехия)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - makro
+  aliases:
+    - MAKRO CASH & CARRY CR
+    - METRO GROUP
+  priority: 1

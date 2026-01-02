@@ -1,0 +1,10 @@
+# ЦКП: Конфигурация магазина HIPERCOR (Испания)
+
+# === STAGE 3: STORE DETECTION ===
+detection:
+  brands:
+    - hipercor
+  aliases:
+    - EL CORTE INGLES
+    - HIPERCOR S.A.
+  priority: 1
