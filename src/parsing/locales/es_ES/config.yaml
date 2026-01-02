@@ -1,0 +1,62 @@
+# Конфигурация локали: Испания (es_ES)
+
+locale:
+  code: es_ES
+  name: Spain
+  language: es
+  region: ES
+  rtl: false
+
+currency:
+  code: EUR
+  symbol: "€"
+  decimal_separator: ","
+  thousands_separator: "."
+  symbol_position: after
+  format: "1.234,56"
+
+date_formats:
+  - "DD/MM/YYYY"
+  - "DD-MM-YYYY"
+
+patterns:
+  total_keywords:
+    - "total"
+    - "importe total"
+    - "a pagar"
+  
+  discount_keywords:
+    - "desconto"
+    - "promo"
+    - "oferta"
+  
+  noise_keywords:
+    - "nif"
+    - "cif"
+    - "tel"
+
+extractors:
+  store_detection:
+    scan_limit: 15
+    fallback_limit: 8
+    min_name_length: 3
+    known_brands:
+      - "mercadona"
+      - "carrefour"
+      - "lidl"
+      - "aldi"
+      - "dia"
+      - "eroski"
+  
+  total_detection:
+    bottom_n_lines: 10
+    amount_range: [0.01, 100000.0]
+    min_keyword_matches: 1
+  
+  date_detection:
+    max_year_offset_past: 2
+    max_year_offset_future: 1
+  
+  semantic_extraction:
+    fixers:
+      - "decimal_fixer"

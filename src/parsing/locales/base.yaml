@@ -42,3 +42,26 @@ common_skip_keywords:
   - uid
   - bon-nr
   - kassen
+  - datum
+  - uhrzeit
+  - natal
+  - navidad
+  - poderão
+  - poderão
+  - poderá
+  - podran
+  - podran
+  - feitas
+  - adquiridos
+  - entre
+  - apresentacao
+  - apresentação
+  - presentacion
+  - presentación
+  - talão
+  - talón
+  - trocas
+  - devoluciones
+  - devoluções
+  - excecionalmente
+  - excepcionalmente

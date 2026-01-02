@@ -9,7 +9,7 @@ class MathResult:
     expected_total: Optional[Decimal] = None
 
 class MathChecker:
-    """Элемент-функция: Проверяет математическую корректность (qty * unit_price == total)."""
+    """Проверяет математическую корректность (qty * unit_price == total)."""
     
     def verify(self, qty: Optional[Decimal], unit_price: Optional[Decimal], total_price: Optional[Decimal]) -> MathResult:
         """

@@ -39,6 +39,9 @@ skip_keywords:
   
   # Польские фразы
   - dziękujemy           # "Спасибо"
+  - kwota                # "Сумма налога"
+  - kuota                # "Сумма налога (typo)"
+  - sprzed               # "Продажа (в блоке налогов)"
 
 discount_keywords:
   - rabat               # "Скидка"

@@ -188,16 +188,16 @@ class SemanticStage:
                 skipped += 1
                 continue
             
-            # Парсим строку
-            item = self._parse_item_line(line, semantic_config)
+            # Парсим строку (может быть несколько товаров в одной склеенной строке)
+            line_items = self._parse_item_line(line, semantic_config)
             
-            if item:
-                parsed += 1
-                
-                if item.is_discount:
-                    discounts.append(item)
-                else:
-                    items.append(item)
+            if line_items:
+                for item in line_items:
+                    parsed += 1
+                    if item.is_discount:
+                        discounts.append(item)
+                    else:
+                        items.append(item)
             else:
                 skipped += 1
         
@@ -264,28 +264,81 @@ class SemanticStage:
         
         return False
     
-    def _parse_item_line(self, line: Line, config: "SemanticConfig") -> Optional[ParsedItem]:
+    def _parse_item_line(self, line: Line, config: SemanticConfig) -> List[ParsedItem]:
         """
-        Парсит строку как товар.
+        Парсит строку чека. Пытается найти один или несколько товаров.
         
         Args:
-            line: Строка для парсинга
-            config: Конфигурация локали (из LocaleConfig.semantic)
+            line: Строка из LayoutStage
+            config: Конфигурация локали
+            
+        Returns:
+            List[ParsedItem]: Список найденных товаров
         """
-        text = line.text.strip()
+        text = line.text
         
-        # Проверяем на скидку (из конфига)
-        is_discount = self._is_discount_line(text, config.discount_keywords)
-        
-        # Проверяем на Pfand
-        is_pfand = "pfand" in text.lower() or "leergut" in text.lower()
-        
-        # Извлекаем компоненты
+        # 1. Пробуем распарсить строку целиком
         name, quantity, price, total = self._extract_item_components(text)
         
-        # Если не удалось извлечь имя или цену — пропускаем
-        if not name or (total is None and price is None):
-            return None
+        if not name or total is None:
+            return []
+            
+        # 2. Проверка на "склеенную" строку (несколько цен total в одной строке)
+        # Если в строке 3+ цены и есть разделители типа '=', 
+        # возможно это склейка типа "Item1 1.23 = 1.23 Item2 4.56 = 4.56"
+        price_pattern = r"(?<![\d.,])(-?\d+)[.,](\d{2})(?![\d.,])"
+        all_prices = list(re.finditer(price_pattern, text))
+        
+        # Если цен много (например, 4), и они разделены текстом
+        if len(all_prices) >= 3:
+            # Ищем разрыв: если после цены идет много текста и НОВАЯ цена
+            # В PL_001: "... 14.99 C CHC MANDARYNKI ..."
+            # Мы можем попробовать разделить строку по последней цене первого товара
+            # Но это сложно. Проще: если нашли явный разделитель товаров.
+            pass
+
+        # Для PL_001 специфично: "TOTAL C NAME2"
+        # Попробуем разделить по паттерну [PRICE] [A-C] [NAME]
+        split_pattern = r"((?<![\d.,])\-?\d+[.,]\d{2}(?![\d.,])\s+[A-Z]\s+)([A-Z]{3,})"
+        match = re.search(split_pattern, text)
+        if match:
+            # Разделяем на две части
+            pos = match.start(2)
+            part1 = text[:pos]
+            part2 = text[pos:]
+            
+            logger.debug(f"[Stage 5] Semantic Split: '{part1}' | '{part2}'")
+            
+            item1_comps = self._extract_item_components(part1)
+            item2_comps = self._extract_item_components(part2)
+            
+            results = []
+            if item1_comps[0] and item1_comps[3] is not None:
+                results.append(self._create_item(item1_comps, line.line_number, config))
+            if item2_comps[0] and item2_comps[3] is not None:
+                # Рекурсивно проверяем вторую часть (вдруг там 3 товара)
+                # Создаем временную линию
+                temp_line = Line(
+                    text=part2, 
+                    line_number=line.line_number,
+                    words_count=0,
+                    confidence=line.confidence,
+                    y_position=line.y_position,
+                    x_min=line.x_min,
+                    x_max=line.x_max
+                )
+                results.extend(self._parse_item_line(temp_line, config))
+            
+            if results:
+                return results
+
+        # Если не разделили, возвращаем один товар
+        return [self._create_item((name, quantity, price, total), line.line_number, config)]
+
+    def _create_item(self, components: Tuple, line_number: int, config: SemanticConfig) -> ParsedItem:
+        """Вспомогательный метод для создания ParsedItem из компонентов."""
+        name, quantity, price, total = components
+        is_discount = self._is_discount_line(name, config.discount_keywords)
         
         return ParsedItem(
             name=name,
@@ -293,9 +346,8 @@ class SemanticStage:
             price=price,
             total=total,
             is_discount=is_discount,
-            is_pfand=is_pfand,
-            line_number=line.line_number,
-            raw_text=text,
+            line_number=line_number,
+            raw_text=name # Временно, потом обновим если надо
         )
     
     def _is_discount_line(self, text: str, discount_keywords: List[str]) -> bool:
@@ -333,16 +385,12 @@ class SemanticStage:
         "Milch 3.5% 1,29 A"
         "Brot 2 x 0,99 1,98 B"
         "JOGURT GRECKI 3,49"
+        "Apple 0.694 * 2.99"
         """
-        # Определяем десятичный разделитель (по умолчанию — европейский)
-        decimal_sep = ","
-        
-        # Находим все числа в строке
-        if decimal_sep == ",":
-            price_pattern = r"(\d+),(\d{2})"
-        else:
-            price_pattern = r"(\d+)\.(\d{2})"
-        
+        # 1. Поиск цен (поддерживаем и точку, и запятую, так как OCR может путать их)
+        # Ищем числа с 2 знаками после разделителя, опционально с минусом в начале (-3.33)
+        # Используем lookbehind/lookahead чтобы не цеплять части дат (10.08.2025) или весов (1.398)
+        price_pattern = r"(?<![\d.,])(-?\d+)[.,](\d{2})(?![\d.,])"
         prices = re.findall(price_pattern, text)
         
         if not prices:
@@ -350,13 +398,14 @@ class SemanticStage:
         
         # Последняя цена — это total
         total_match = prices[-1]
+        # Нормализуем в float (всегда через точку)
         total = float(f"{total_match[0]}.{total_match[1]}")
         
         # Убираем цены из текста, чтобы получить название
         name = text
         for p in prices:
-            price_str = f"{p[0]}{decimal_sep}{p[1]}"
-            name = name.replace(price_str, "")
+            # Пытаемся удалить оба варианта (с точкой и запятой), чтобы очистить строку
+            name = name.replace(f"{p[0]},{p[1]}", "").replace(f"{p[0]}.{p[1]}", "")
         
         # Очищаем название
         name = self._clean_item_name(name)
@@ -364,15 +413,25 @@ class SemanticStage:
         if not name:
             return None, None, None, None
         
-        # Ищем количество (например, "2 x" или "2x" или "2 St")
+        # 2. Поиск количества
+        # Поддерживаем:
+        # - Целые (2) и дробные (0.694, 1,5)
+        # - Разделители: x, X, ×, *
         quantity = None
         price = None
         
-        # Паттерн: целое число + x + пробел/число
-        # НЕ захватывает числа из цен (например, "4,29 x 2" — это 2, а не 4,29)
-        qty_match = re.search(r"(?:^|\s)(\d{1,3})\s*[xX×]\s*(?:\d|$)", text)
+        # Паттерн: (число) [x*] (число/цена)
+        # Группа 1: Количество (до 3 цифр до точки/запятой, опционально дробная часть)
+        qty_pattern = r"(?:^|\s)(\d{1,3}(?:[.,]\d{1,3})?)\s*[xX×*]\s*(?:\d|$)"
+        qty_match = re.search(qty_pattern, text)
+        
         if qty_match:
-            quantity = float(qty_match.group(1))
+            qty_str = qty_match.group(1).replace(",", ".")
+            try:
+                quantity = float(qty_str)
+            except ValueError:
+                pass # Если не удалось распарсить, оставляем None
+                
             # Если есть quantity и несколько цен, первая — unit price
             if len(prices) >= 2:
                 price_match = prices[0]

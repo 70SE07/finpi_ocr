@@ -1,0 +1,39 @@
+# Конфигурация парсинга для испанских чеков (es_ES)
+# Наследует: src/parsing/locales/base.yaml
+
+extends: base.yaml
+
+locale_code: es_ES
+currency: EUR
+
+# === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
+
+total_keywords:
+  - total
+  - importe total
+  - a pagar
+
+# === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
+
+skip_keywords:
+  - $extends: common_skip_keywords
+  - total
+  - importe total
+  - tarjeta
+  - efectivo
+  - cambio
+  - nif
+  - iva
+  - gracias por su visita
+  - navidad
+  - devoluciones
+  - presentación
+  - talón
+  - podrán
+  - feitas
+  - poderá
+
+discount_keywords:
+  - descuento
+  - promo
+  - oferta

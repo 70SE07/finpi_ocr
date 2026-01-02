@@ -228,7 +228,24 @@ class MetadataStage:
         
         for i, line in enumerate(layout.lines):
             line_lower = line.text.lower()
+            if "suma" in line_lower:
+                print(f"DEBUG MAIN: Checking SUMA line: '{line_lower}'")
+                print(f"DEBUG MAIN: Keywords: {keywords}")
+                
+            # Пропускаем строки с "сильным" шумом, НО только если там нет Ключевых Слов Итога
+            has_total_keyword = any(tk.lower() in line_lower for tk in keywords)
             
+            is_noise = False
+            if not has_total_keyword:
+                for skw in config.semantic.skip_keywords:
+                    skw_lower = skw.lower()
+                    if skw_lower in line_lower and skw_lower not in [tk.lower() for tk in keywords]:
+                        is_noise = True
+                        break
+            
+            if is_noise:
+                continue
+
             for keyword in keywords:
                 if keyword in line_lower:
                     total, raw = self._extract_price_from_line(line.text)
@@ -259,6 +276,25 @@ class MetadataStage:
         
         for i in range(lower_third_start, total_lines):
             line = layout.lines[i]
+            line_lower = line.text.lower()
+            if "suma" in line_lower:
+                print(f"DEBUG: Checking SUMA line: '{line_lower}'")
+                print(f"DEBUG: Keywords: {keywords}")
+                
+            # Пропускаем строки с "сильным" шумом
+            has_total_keyword = any(tk.lower() in line_lower for tk in keywords)
+            
+            is_noise = False
+            if not has_total_keyword:
+                for skw in config.semantic.skip_keywords:
+                    skw_lower = skw.lower()
+                    if skw_lower in line_lower and skw_lower not in [tk.lower() for tk in keywords]:
+                        is_noise = True
+                        break
+            
+            if is_noise:
+                continue
+
             total, raw = self._extract_price_from_line(line.text)
             if total is not None and total > 1.0:
                 if max_total is None or total > max_total:
@@ -275,8 +311,8 @@ class MetadataStage:
         """Извлекает цену из строки."""
         # Паттерны цен
         patterns = [
-            r"(\d+)[,.](\d{2})\s*(?:EUR|€|PLN|zł|CZK|Kč)?",  # 12,34 EUR
-            r"(?:EUR|€|PLN|zł)\s*(\d+)[,.](\d{2})",          # EUR 12,34
+            r"(?<![\d.,])(\d+)[,.](\d{2})(?![\d.,])\s*(?:EUR|€|PLN|zł|CZK|Kč)?",  # 12,34 EUR
+            r"(?:EUR|€|PLN|zł)\s*(?<![\d.,])(\d+)[,.](\d{2})(?![\d.,])",          # EUR 12,34
         ]
         
         for pattern in patterns:

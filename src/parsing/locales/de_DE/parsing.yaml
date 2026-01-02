@@ -29,6 +29,18 @@ skip_keywords:
   - mwst
   - vielen dank
   - gesamter preisvorteil  # Сумма скидок (не нужно вычитать повторно)
+  
+  # Слова суммы (чтобы не парсились как товары если дублируются)
+  - betrag
+  - total
+  - summe
+  - gesamt
+  - gesamtbetrag
+  
+  # Специфичные для заправок (Tankstelle)
+  - säulennummer
+  - eur/liter
+  - eur / liter
 
 discount_keywords:
   - rabatt

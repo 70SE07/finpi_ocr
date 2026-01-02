@@ -1,0 +1,63 @@
+# Конфигурация локали: Португалия (pt_PT)
+
+locale:
+  code: pt_PT
+  name: Portugal
+  language: pt
+  region: PT
+  rtl: false
+
+currency:
+  code: EUR
+  symbol: "€"
+  decimal_separator: ","
+  thousands_separator: "."
+  symbol_position: after  # "1,99€"
+  format: "1.234,56"
+
+date_formats:
+  - "DD-MM-YYYY"
+  - "DD/MM/YYYY"
+  - "YYYY-MM-DD"
+
+patterns:
+  total_keywords:
+    - "a pagar"
+    - "total"
+    - "valor"
+  
+  discount_keywords:
+    - "desconto"
+    - "dto"
+    - "promoção"
+  
+  noise_keywords:
+    - "nif"
+    - "tel"
+    - "morada"
+
+extractors:
+  store_detection:
+    scan_limit: 15
+    fallback_limit: 8
+    min_name_length: 3
+    known_brands:
+      - "continente"
+      - "pingo doce"
+      - "lidl"
+      - "aldi"
+      - "minipreço"
+      - "auchan"
+  
+  total_detection:
+    bottom_n_lines: 10
+    amount_range: [0.01, 100000.0]
+    min_keyword_matches: 1
+  
+  date_detection:
+    max_year_offset_past: 2
+    max_year_offset_future: 1
+  
+  semantic_extraction:
+    fixers:
+      - "decimal_fixer"

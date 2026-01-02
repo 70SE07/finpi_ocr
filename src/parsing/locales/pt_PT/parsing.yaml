@@ -37,6 +37,13 @@ skip_keywords:
   # Португальские фразы
   - obrigado            # "Спасибо"
   - obrigada            # "Спасибо (ж.р.)"
+  - natal               # "Рождество"
+  - devoluções          # "Возвраты"
+  - trocas              # "Обмены"
+  - apresentação        # "Презентация"
+  - talão               # "Квитанция"
+  - poderão
+  - feitas
 
 discount_keywords:
   - desconto            # "Скидка"

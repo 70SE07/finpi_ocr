@@ -13,7 +13,7 @@ class QtyResult:
     raw_text: str = ""
 
 class QuantityParser:
-    """Элемент-функция: Извлекает количество и цену за единицу."""
+    """Извлекает количество и цену за единицу."""
     
     def __init__(self, locale_config: Optional['LocaleConfig'] = None):
         """

@@ -36,8 +36,7 @@ class RawReceiptItem(BaseModel):
     @field_validator("price", "total")
     @classmethod
     def validate_money_values(cls, v: float | None) -> float | None:
-        if v is not None and v < 0:
-            raise ValueError("Money values cannot be negative")
+        # Разрешаем отрицательные значения для возвратов/скидок
         return v
 
 
