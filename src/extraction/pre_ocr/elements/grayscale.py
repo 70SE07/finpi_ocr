@@ -5,13 +5,21 @@ Grayscale Converter для pre-OCR пайплайна.
 - OCR работает с яркостью, не с цветом
 - Убирает цветовой шум
 - Уменьшает размер данных (1 канал вместо 3)
+
+Методы конвертации (настраивается через config/settings.py):
+- blue_channel: Извлечение синего канала (лучше для bleed-through)
+- luminosity: Взвешенное среднее (стандартный метод)
+- average: Простое среднее каналов
 """
 
 from dataclasses import dataclass
+from typing import Literal
 
 import cv2
 import numpy as np
 from loguru import logger
+
+from config.settings import GRAYSCALE_METHOD
 
 
 @dataclass
@@ -22,15 +30,25 @@ class GrayscaleResult:
     original_channels: int  # 1, 3 или 4
     was_converted: bool
     original_size: tuple[int, int]  # (width, height)
+    method_used: str  # Какой метод был применён
 
 
 class GrayscaleConverter:
     """
     Конвертирует цветное изображение в оттенки серого (Grayscale).
+    
+    Метод конвертации определяется настройкой GRAYSCALE_METHOD в config/settings.py
     """
 
-    @staticmethod
-    def process(image: np.ndarray) -> GrayscaleResult:
+    def __init__(self, method: str | None = None):
+        """
+        Args:
+            method: Метод конвертации. Если None, берётся из конфига.
+                    Варианты: "blue_channel", "luminosity", "average"
+        """
+        self.method = method or GRAYSCALE_METHOD
+
+    def process(self, image: np.ndarray) -> GrayscaleResult:
         """
         Конвертирует изображение в grayscale.
 
@@ -57,29 +75,62 @@ class GrayscaleConverter:
                 original_channels=1,
                 was_converted=False,
                 original_size=original_size,
+                method_used="none",
             )
 
-        # Конвертируем: Извлекаем ТОЛЬКО Синий канал (Blue Channel)
-        # BGR (Blue=0, Green=1, Red=2). Blue channel лучше всего убирает просвечивание.
+        # Конвертируем согласно выбранному методу
         if original_channels >= 3:
-            # Берем 0-й канал (Blue)
-            gray = image[:, :, 0]
-            logger.info(f"[Grayscale] Blue Channel Extracted (Fixes bleed-through): ({w}x{h})")
+            gray = self._convert(image, self.method)
         else:
             # Fallback (не должно случиться, если original_channels != 1)
             gray = image
 
-        logger.info(f"[Grayscale] Конвертировано: {original_channels} каналов -> 1 ({w}x{h})")
+        logger.info(f"[Grayscale] Конвертировано: {original_channels} каналов -> 1 ({w}x{h}), метод: {self.method}")
 
         return GrayscaleResult(
             image=gray,
             original_channels=original_channels,
             was_converted=True,
             original_size=original_size,
+            method_used=self.method,
         )
 
-    @staticmethod
-    def to_bgr(gray_image: np.ndarray) -> np.ndarray:
+    def _convert(self, image: np.ndarray, method: str) -> np.ndarray:
+        """
+        Применяет выбранный метод конвертации.
+        
+        Args:
+            image: BGR изображение (3+ канала)
+            method: Метод конвертации
+            
+        Returns:
+            Grayscale изображение (1 канал)
+        """
+        if method == "blue_channel":
+            # Извлекаем ТОЛЬКО Синий канал (Blue Channel)
+            # BGR (Blue=0, Green=1, Red=2). Blue channel лучше всего убирает просвечивание.
+            gray = image[:, :, 0]
+            logger.info(f"[Grayscale] Blue Channel Extracted (Fixes bleed-through)")
+            
+        elif method == "luminosity":
+            # Стандартный метод: взвешенное среднее по восприятию человеком
+            # Y = 0.299*R + 0.587*G + 0.114*B
+            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            logger.info(f"[Grayscale] Luminosity method (cv2.COLOR_BGR2GRAY)")
+            
+        elif method == "average":
+            # Простое среднее всех каналов
+            gray = np.mean(image[:, :, :3], axis=2).astype(np.uint8)
+            logger.info(f"[Grayscale] Average method (mean of channels)")
+            
+        else:
+            # Fallback на blue_channel если неизвестный метод
+            logger.warning(f"[Grayscale] Неизвестный метод '{method}', используем blue_channel")
+            gray = image[:, :, 0]
+            
+        return gray
+
+    def to_bgr(self, gray_image: np.ndarray) -> np.ndarray:
         """
         Конвертирует grayscale обратно в BGR (для совместимости).
 
@@ -95,17 +146,18 @@ class GrayscaleConverter:
         return cv2.cvtColor(gray_image, cv2.COLOR_GRAY2BGR)
 
 
-def convert_to_grayscale(image: np.ndarray) -> GrayscaleResult:
+def convert_to_grayscale(image: np.ndarray, method: str | None = None) -> GrayscaleResult:
     """
     Удобная функция для конвертации в grayscale.
 
     Args:
         image: Входное изображение
+        method: Метод конвертации (если None, берётся из конфига)
 
     Returns:
         GrayscaleResult
     """
-    converter = GrayscaleConverter()
+    converter = GrayscaleConverter(method=method)
     return converter.process(image)
 
 
