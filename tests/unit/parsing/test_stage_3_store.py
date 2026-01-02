@@ -7,9 +7,9 @@ Unit-тесты для Stage 3: Store Detection.
 import pytest
 from unittest.mock import MagicMock
 
-from src.parsing.stages.stage_3_store import StoreStage, StoreResult
-from src.parsing.stages.stage_1_layout import LayoutResult, Line
-from src.parsing.stages.stage_2_locale import LocaleResult
+from src.parsing.s5_store_detection import StoreDetectionStage as StoreStage, StoreResult
+from src.parsing.s3_layout import LayoutResult, Line
+from src.parsing.s4_locale_detection import LocaleResult
 from src.parsing.locales.config_loader import LocaleConfig
 
 

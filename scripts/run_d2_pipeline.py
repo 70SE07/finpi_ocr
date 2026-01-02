@@ -24,7 +24,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.settings import INPUT_DIR, OUTPUT_DIR
 from src.extraction.application.factory import ExtractionComponentFactory
-from src.parsing.stages.pipeline import ParsingPipeline
+from src.parsing.pipeline import ParsingPipeline
 from src.parsing.locales.config_loader import ConfigLoader
 
 
@@ -67,7 +67,7 @@ def process_image(image_path: Path, save_output: bool = True) -> dict:
         print(f"  [OK] Время D1: {d1_time:.1f}ms")
         
         # ===== D2: Parsing =====
-        print("\n[D2] Parsing (6 этапов по ADR-015)...")
+        print("\n[D2] Parsing (8 этапов)...")
         d2_start = time.time()
         
         # Создаём ConfigLoader для локалей
@@ -82,12 +82,14 @@ def process_image(image_path: Path, save_output: bool = True) -> dict:
         dto = result.dto
         validation = result.validation
         
-        print(f"\n  [Stage 1: Layout] Строк: {len(result.layout.lines)}")
-        print(f"  [Stage 2: Locale] {result.locale.locale_code} (confidence: {result.locale.confidence:.2f})")
-        print(f"  [Stage 3: Store] {result.store.store_name or 'Не определён'}")
-        print(f"  [Stage 4: Metadata] Дата: {result.metadata.receipt_date}, Сумма: {result.metadata.receipt_total}")
-        print(f"  [Stage 5: Semantic] Товаров: {len(result.semantic.items)}, Скидок: {len(result.semantic.discounts)}")
-        print(f"  [Stage 6: Validation] {'PASSED' if validation.passed else 'FAILED'} (diff: {validation.difference:.2f})")
+        print(f"\n  [Stage 1: OCR Cleanup] Слов: {result.cleanup.cleaned_count}")
+        print(f"  [Stage 2: Script] {result.script.direction} ({result.script.script})")
+        print(f"  [Stage 3: Layout] Строк: {len(result.layout.lines)}")
+        print(f"  [Stage 4: Locale] {result.locale.locale_code} (confidence: {result.locale.confidence:.2f})")
+        print(f"  [Stage 5: Store] {result.store.store_name or 'Не определён'}")
+        print(f"  [Stage 6: Metadata] Дата: {result.metadata.receipt_date}, Сумма: {result.metadata.receipt_total}")
+        print(f"  [Stage 7: Semantic] Товаров: {len(result.semantic.items)}, Скидок: {len(result.semantic.discounts)}")
+        print(f"  [Stage 8: Validation] {'PASSED' if validation.passed else 'FAILED'} (diff: {validation.difference:.2f})")
         
         print(f"\n  [OK] Время D2: {d2_time:.1f}ms")
         

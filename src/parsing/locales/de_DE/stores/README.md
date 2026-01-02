@@ -52,7 +52,7 @@ line_split_y_threshold: 8  # Y-порог для разделения строк
 Stage 3 автоматически загружает все stores/*.yaml и ищет brands/aliases в тексте чека:
 
 ```python
-from src.parsing.stages.pipeline import ParsingPipeline
+from src.parsing.pipeline import ParsingPipeline
 
 pipeline = ParsingPipeline()
 result = pipeline.process(raw_ocr)

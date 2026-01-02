@@ -18,7 +18,7 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from contracts.d1_extraction_dto import RawOCRResult
-from src.parsing.stages.pipeline import ParsingPipeline
+from src.parsing.pipeline import ParsingPipeline
 
 
 # Директории
