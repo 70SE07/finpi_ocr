@@ -20,12 +20,14 @@ from loguru import logger
 
 from config.settings import GOOGLE_APPLICATION_CREDENTIALS, OCR_LANGUAGE_HINTS
 from contracts.d1_extraction_dto import RawOCRResult, Word, BoundingBox, OCRMetadata
+from ...domain.interfaces import IOCRProvider
 
 
-class GoogleVisionOCR:
+class GoogleVisionOCR(IOCRProvider):
     """
     Обёртка над Google Cloud Vision API.
     
+    Реализует интерфейс IOCRProvider.
     Возвращает RawOCRResult с:
     - full_text: полный текст для regex/паттернов
     - words[]: слова с координатами для layout-анализа

@@ -1,6 +1,6 @@
-from .preprocessor import ImagePreprocessor
+from .pipeline import PreOCRPipeline
 
-__all__ = ['ImagePreprocessor']
+__all__ = ['PreOCRPipeline']
 
 
 

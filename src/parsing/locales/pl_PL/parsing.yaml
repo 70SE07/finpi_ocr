@@ -5,6 +5,7 @@ extends: base.yaml
 
 locale_code: pl_PL
 currency: PLN
+line_split_y_threshold: 10
 
 # === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
 

@@ -225,13 +225,9 @@ class MetadataStage:
         
         # Собираем кандидатов с ключевыми словами
         candidates: List[Tuple[float, str, int]] = []
-        
         for i, line in enumerate(layout.lines):
             line_lower = line.text.lower()
-            if "suma" in line_lower:
-                print(f"DEBUG MAIN: Checking SUMA line: '{line_lower}'")
-                print(f"DEBUG MAIN: Keywords: {keywords}")
-                
+            
             # Пропускаем строки с "сильным" шумом, НО только если там нет Ключевых Слов Итога
             has_total_keyword = any(tk.lower() in line_lower for tk in keywords)
             
@@ -277,10 +273,7 @@ class MetadataStage:
         for i in range(lower_third_start, total_lines):
             line = layout.lines[i]
             line_lower = line.text.lower()
-            if "suma" in line_lower:
-                print(f"DEBUG: Checking SUMA line: '{line_lower}'")
-                print(f"DEBUG: Keywords: {keywords}")
-                
+            
             # Пропускаем строки с "сильным" шумом
             has_total_keyword = any(tk.lower() in line_lower for tk in keywords)
             

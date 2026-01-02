@@ -42,8 +42,20 @@ skip_keywords:
   - trocas              # "Обмены"
   - apresentação        # "Презентация"
   - talão               # "Квитанция"
-  - poderão
-  - feitas
+  - poderá
+  - podran
+  - adquisiciones
+  - adquiridos
+  - entre
+  - presentacion
+  - presentación
+  - talón
+  - trocas
+  - devoluciones
+  - devoluções
+  - excecionalmente
+  - excepcionalmente
+  - navidad
 
 discount_keywords:
   - desconto            # "Скидка"

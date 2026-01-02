@@ -178,28 +178,34 @@ class SemanticStage:
         logger.debug(f"[Stage 5: Semantic] Область товаров: строки {start_line}-{end_line}")
         
         for i, line in enumerate(layout.lines):
-            # Пропускаем заголовок и футер
-            if i < start_line or i > end_line:
-                skipped += 1
-                continue
+            # 1. Сначала разделяем строку геометрически, если в ней "несколько этажей" слов
+            # Это системно решает проблему склейки Carrefour (Вариант 3)
+            # Используем порог из конфига локали (line_split_y_threshold)
+            sub_lines = self._split_line_by_geometry(line, semantic_config.line_split_y_threshold)
             
-            # Пропускаем служебные строки (из конфига)
-            if self._should_skip_line(line.text, semantic_config):
-                skipped += 1
-                continue
-            
-            # Парсим строку (может быть несколько товаров в одной склеенной строке)
-            line_items = self._parse_item_line(line, semantic_config)
-            
-            if line_items:
-                for item in line_items:
-                    parsed += 1
-                    if item.is_discount:
-                        discounts.append(item)
-                    else:
-                        items.append(item)
-            else:
-                skipped += 1
+            for sub_line in sub_lines:
+                # 2. Пропускаем заголовок и футер
+                if i < start_line or i > end_line:
+                    skipped += 1
+                    continue
+                
+                # 3. Пропускаем служебные строки (из конфига)
+                if self._should_skip_line(sub_line.text, semantic_config):
+                    skipped += 1
+                    continue
+                
+                # 4. Парсим строку (может вернуть список, если там семантически склеено)
+                line_items = self._parse_item_line(sub_line, semantic_config)
+                
+                if line_items:
+                    for item in line_items:
+                        parsed += 1
+                        if item.is_discount:
+                            discounts.append(item)
+                        else:
+                            items.append(item)
+                else:
+                    skipped += 1
         
         result = SemanticResult(
             items=items,
@@ -264,6 +270,63 @@ class SemanticStage:
         
         return False
     
+    def _split_line_by_geometry(self, line: Line, threshold: int) -> List[Line]:
+        """
+        Разделяет одну строку на несколько, если слова в ней находятся на разных уровнях Y.
+        Это системный Вариант 3: BBox-Aware Parsing.
+        """
+        if not line.words or len(line.words) < 2:
+            return [line]
+            
+        # Группируем слова по Y
+        # Используем y для оценки "строчности"
+        sorted_words = sorted(line.words, key=lambda w: w.bounding_box.y)
+        
+        clusters = []
+        current_cluster = [sorted_words[0]]
+        
+        for i in range(1, len(sorted_words)):
+            w = sorted_words[i]
+            prev_w = current_cluster[-1]
+            
+            # Если разрыв по Y между словами больше порога — это новая строка
+            if abs(w.bounding_box.y - prev_w.bounding_box.y) > threshold:
+                clusters.append(current_cluster)
+                current_cluster = [w]
+            else:
+                current_cluster.append(w)
+        
+        clusters.append(current_cluster)
+        
+        if len(clusters) == 1:
+            return [line]
+            
+        logger.debug(f"[Stage 5] Geometric Split: Line {line.line_number} divided into {len(clusters)} clusters")
+        
+        # Создаем новые объекты Line для каждого кластера
+        new_lines = []
+        for cluster in clusters:
+            # Сортируем слова внутри кластера по X
+            sorted_cluster = sorted(cluster, key=lambda w: w.bounding_box.x)
+            text = " ".join([w.text for w in sorted_cluster])
+            
+            x_min = min(w.bounding_box.x for w in cluster)
+            x_max = max(w.bounding_box.x + w.bounding_box.width for w in cluster)
+            y_pos = min(w.bounding_box.y for w in cluster)
+            conf = sum(w.confidence for w in cluster) / len(cluster)
+            
+            new_lines.append(Line(
+                text=text,
+                words=sorted_cluster,
+                y_position=y_pos,
+                x_min=x_min,
+                x_max=x_max,
+                confidence=conf,
+                line_number=line.line_number
+            ))
+            
+        return new_lines
+
     def _parse_item_line(self, line: Line, config: SemanticConfig) -> List[ParsedItem]:
         """
         Парсит строку чека. Пытается найти один или несколько товаров.
@@ -284,22 +347,13 @@ class SemanticStage:
             return []
             
         # 2. Проверка на "склеенную" строку (несколько цен total в одной строке)
-        # Если в строке 3+ цены и есть разделители типа '=', 
-        # возможно это склейка типа "Item1 1.23 = 1.23 Item2 4.56 = 4.56"
-        price_pattern = r"(?<![\d.,])(-?\d+)[.,](\d{2})(?![\d.,])"
-        all_prices = list(re.finditer(price_pattern, text))
+        # Ищем паттерны типа "PRICE CURRENCY NAME" или "PRICE NAME"
+        # Для Carrefour: "... 14.99 = = 12.57 14.99 € C"
         
-        # Если цен много (например, 4), и они разделены текстом
-        if len(all_prices) >= 3:
-            # Ищем разрыв: если после цены идет много текста и НОВАЯ цена
-            # В PL_001: "... 14.99 C CHC MANDARYNKI ..."
-            # Мы можем попробовать разделить строку по последней цене первого товара
-            # Но это сложно. Проще: если нашли явный разделитель товаров.
-            pass
-
-        # Для PL_001 специфично: "TOTAL C NAME2"
-        # Попробуем разделить по паттерну [PRICE] [A-C] [NAME]
+        # Регулярка для поиска разделителей товаров (Цена + Налог/Валюта + Начало нового имени)
+        # Паттерн: [Цена] [Пробел] [VAT/Буква] [Пробел] [СЛОВО ОТ 3 БУКВ]
         split_pattern = r"((?<![\d.,])\-?\d+[.,]\d{2}(?![\d.,])\s+[A-Z]\s+)([A-Z]{3,})"
+        
         match = re.search(split_pattern, text)
         if match:
             # Разделяем на две части
@@ -307,33 +361,20 @@ class SemanticStage:
             part1 = text[:pos]
             part2 = text[pos:]
             
-            logger.debug(f"[Stage 5] Semantic Split: '{part1}' | '{part2}'")
+            logger.debug(f"[Stage 5] Semantic Split discovered: '{part1}' | '{part2}'")
             
-            item1_comps = self._extract_item_components(part1)
-            item2_comps = self._extract_item_components(part2)
+            # Пробуем распарсить обе части
+            res1 = self._parse_item_line(Line(text=part1, line_number=line.line_number, y_position=line.y_position, x_min=line.x_min, x_max=line.x_max, confidence=line.confidence, words_count=0), config)
+            res2 = self._parse_item_line(Line(text=part2, line_number=line.line_number, y_position=line.y_position, x_min=line.x_min, x_max=line.x_max, confidence=line.confidence, words_count=0), config)
             
-            results = []
-            if item1_comps[0] and item1_comps[3] is not None:
-                results.append(self._create_item(item1_comps, line.line_number, config))
-            if item2_comps[0] and item2_comps[3] is not None:
-                # Рекурсивно проверяем вторую часть (вдруг там 3 товара)
-                # Создаем временную линию
-                temp_line = Line(
-                    text=part2, 
-                    line_number=line.line_number,
-                    words_count=0,
-                    confidence=line.confidence,
-                    y_position=line.y_position,
-                    x_min=line.x_min,
-                    x_max=line.x_max
-                )
-                results.extend(self._parse_item_line(temp_line, config))
-            
-            if results:
-                return results
+            if res1 or res2:
+                return res1 + res2
 
-        # Если не разделили, возвращаем один товар
-        return [self._create_item((name, quantity, price, total), line.line_number, config)]
+        # 3. Если не разделили паттерном, возвращаем базовый результат
+        if name and total is not None:
+            return [self._create_item((name, quantity, price, total), line.line_number, config)]
+            
+        return []
 
     def _create_item(self, components: Tuple, line_number: int, config: SemanticConfig) -> ParsedItem:
         """Вспомогательный метод для создания ParsedItem из компонентов."""

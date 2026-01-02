@@ -26,7 +26,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.settings import validate_config, INPUT_DIR, OUTPUT_DIR
-from src.extraction import ImagePreprocessor, GoogleVisionOCR
+from src.extraction import PreOCRPipeline, GoogleVisionOCR
 from contracts.d1_extraction_dto import RawOCRResult
 
 
@@ -54,7 +54,7 @@ def process_image(image_path: Path, output_dir: Path, no_cache: bool = False) ->
             return True
         
         print(f"  [1/2] Pre-OCR обработка: {image_path.name}")
-        preprocessor = ImagePreprocessor()
+        preprocessor = PreOCRPipeline()
         processed_image, metadata = preprocessor.process(image_path)
         
         print(f"  [2/2] OCR через Google Vision")

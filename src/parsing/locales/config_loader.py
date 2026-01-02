@@ -42,6 +42,7 @@ class SemanticConfig:
     discount_keywords: List[str]
     weight_patterns: List[str]
     tax_patterns: List[str]
+    line_split_y_threshold: int = 15      # Пороговая плотность для Stage 5 (BBox split)
 
 
 @dataclass
@@ -87,6 +88,10 @@ class LocaleConfig:
     @property
     def tax_patterns(self) -> List[str]:
         return self.semantic.tax_patterns
+        
+    @property
+    def line_split_y_threshold(self) -> int:
+        return self.semantic.line_split_y_threshold
 
     @classmethod
     def load(cls, locale_code: str) -> "LocaleConfig":
@@ -236,6 +241,7 @@ class LocaleConfig:
             discount_keywords=discount_keywords,
             weight_patterns=weight_patterns,
             tax_patterns=tax_patterns,
+            line_split_y_threshold=config_data.get("line_split_y_threshold", 15)
         )
         
         return LocaleConfig(

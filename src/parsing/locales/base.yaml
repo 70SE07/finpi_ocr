@@ -44,24 +44,8 @@ common_skip_keywords:
   - kassen
   - datum
   - uhrzeit
-  - natal
-  - navidad
-  - poderão
-  - poderão
-  - poderá
-  - podran
-  - podran
-  - feitas
-  - adquiridos
-  - entre
-  - apresentacao
-  - apresentação
-  - presentacion
-  - presentación
-  - talão
-  - talón
-  - trocas
-  - devoluciones
-  - devoluções
-  - excecionalmente
-  - excepcionalmente
+
+# === GEOMETRY: Параметры физики чека ===
+# Порог вертикального разделения слов внутри одной строки (в пикселях)
+# Используется в Stage 5 для исправления склеенных OCR-строк.
+line_split_y_threshold: 15

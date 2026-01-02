@@ -1,17 +1,15 @@
 """
 Инфраструктурный слой домена Extraction.
 
-Содержит адаптеры для существующих компонентов.
+Содержит реализации инфраструктурных компонентов.
 """
 
-from .adapters.google_vision_adapter import GoogleVisionOCRAdapter
-from .adapters.image_preprocessor_adapter import ImagePreprocessorAdapter
+from .ocr.google_vision_ocr import GoogleVisionOCR
 from .file_manager import ExtractionFileManager
 
 __all__ = [
-    # Адаптеры
-    "GoogleVisionOCRAdapter",
-    "ImagePreprocessorAdapter",
+    # OCR
+    "GoogleVisionOCR",
     
     # Менеджеры
     "ExtractionFileManager",
