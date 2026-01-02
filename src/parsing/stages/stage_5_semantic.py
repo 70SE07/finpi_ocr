@@ -1,19 +1,7 @@
 """
-Stage 5: Semantic Extraction
+Stage 5: Semantic Extraction (Hardened Version)
 
-ЦКП: Извлечение товаров из чека.
-
-Входные данные: LayoutResult, LocaleResult, StoreResult, MetadataResult
-Выходные данные: SemanticResult (список ParsedItem)
-
-Алгоритм:
-1. Классификация строк (ITEM, HEADER, FOOTER, TOTAL, DISCOUNT)
-2. Парсинг строк-товаров (name, quantity, price, total)
-3. Обработка скидок и многострочных товаров
-
-Архитектурный принцип:
-- Конфигурация (ключевые слова, паттерны) загружается из YAML
-- Логика (обработка, фильтрация) в коде
+ЦКП: Извлечение товаров с учетом вертикального контекста (многострочность).
 """
 
 import re
@@ -30,19 +18,14 @@ from ..locales.config_loader import ConfigLoader, SemanticConfig, LocaleConfig
 
 @dataclass
 class ParsedItem:
-    """
-    Товар извлечённый из чека.
-    
-    Минимальный набор полей для D2->D3.
-    """
-    name: str                                   # Название товара
-    quantity: Optional[float] = None            # Количество
-    price: Optional[float] = None               # Цена за единицу
-    total: Optional[float] = None               # Итого за позицию
-    is_discount: bool = False                   # Это скидка?
-    is_pfand: bool = False                      # Это Pfand (залог)?
-    line_number: int = 0                        # Номер строки
-    raw_text: str = ""                          # Исходный текст строки
+    name: str
+    quantity: Optional[float] = None
+    price: Optional[float] = None
+    total: Optional[float] = None
+    is_discount: bool = False
+    is_pfand: bool = False
+    line_number: int = 0
+    raw_text: str = ""
     
     def to_dict(self) -> dict:
         return {
@@ -59,11 +42,6 @@ class ParsedItem:
 
 @dataclass
 class SemanticResult:
-    """
-    Результат Stage 5: Semantic Extraction.
-    
-    ЦКП: Список извлечённых товаров.
-    """
     items: List[ParsedItem] = field(default_factory=list)
     discounts: List[ParsedItem] = field(default_factory=list)
     skipped_lines: int = 0
@@ -71,12 +49,10 @@ class SemanticResult:
     
     @property
     def items_total(self) -> float:
-        """Сумма всех товаров."""
         return sum(item.total or 0 for item in self.items if not item.is_discount)
     
     @property
     def discounts_total(self) -> float:
-        """Сумма всех скидок."""
         return sum(abs(item.total or 0) for item in self.discounts)
     
     def to_dict(self) -> dict:
@@ -93,402 +69,276 @@ class SemanticResult:
 
 
 class SemanticStage:
-    """
-    Stage 5: Semantic Extraction.
-    
-    ЦКП: Извлечение товаров из строк чека.
-    
-    Загружает конфигурацию локали (ключевые слова, паттерны для фильтрации).
-    """
-    
-    def __init__(
-        self,
-        config_loader: Optional[ConfigLoader] = None,
-        config: Optional[LocaleConfig] = None,
-    ):
-        """
-        Args:
-            config_loader: DI для загрузки конфигов (для мульти-локальной поддержки)
-            config: Статическая конфигурация (legacy/testing)
-        """
+    def __init__(self, config_loader: Optional[ConfigLoader] = None, config: Optional[LocaleConfig] = None):
         self.config_loader = config_loader or ConfigLoader()
-        # Если передан статический конфиг, используем его как кэш/дефолт
         self.config = config
-    
-    @staticmethod
-    def _empty_metadata_config() -> "MetadataConfig":
-        """Создаёт пустую конфигурацию метаданных."""
-        from ..locales.locale_config import MetadataConfig
-        return MetadataConfig(total_keywords=[])
-    
-    @staticmethod
-    def _empty_semantic_config() -> "SemanticConfig":
-        """Создаёт пустую конфигурацию семантического этапа."""
-        from ..locales.locale_config import SemanticConfig
-        return SemanticConfig(
-            skip_keywords=[],
-            discount_keywords=[],
-            weight_patterns=[],
-            tax_patterns=[],
-        )
-    
-    def process(
-        self,
-        layout: LayoutResult,
-        locale: LocaleResult,
-        store: StoreResult,
-        metadata: MetadataResult,
-    ) -> SemanticResult:
-        """
-        Извлекает товары из чека.
-        
-        Args:
-            layout: Результат Stage 1
-            locale: Результат Stage 2
-            store: Результат Stage 3
-            metadata: Результат Stage 4
-            
-        Returns:
-            SemanticResult: Извлечённые товары
-        """
-        logger.debug(f"[Stage 5: Semantic] Обработка {len(layout.lines)} строк")
-        
-        # Получаем конфигурацию семантики из LocaleConfig
-        if self.config:
-             # Legacy/Testing: используем статическую
-             semantic_config = self.config.semantic
-        else:
-             # Production: загружаем динамически по локали
-             try:
-                 full_config = self.config_loader.load(locale.locale_code)
-                 semantic_config = full_config.semantic
-             except Exception as e:
-                 logger.warning(f"[SemanticStage] Ошибка загрузки конфига для {locale.locale_code}: {e}")
-                 semantic_config = self._empty_semantic_config()
+
+    def _empty_semantic_config(self) -> "SemanticConfig":
+        from ..locales.config_loader import SemanticConfig
+        return SemanticConfig(skip_keywords=[], discount_keywords=[], weight_patterns=[], tax_patterns=[])
+
+    def process(self, layout: LayoutResult, locale: LocaleResult, store: StoreResult, metadata: MetadataResult) -> SemanticResult:
+        try:
+            # Загружаем конфиг для локали (с учетом магазина)
+            full_config = self.config_loader.load(locale.locale_code, store.store_name)
+            semantic_config = full_config.semantic
+        except Exception as e:
+            logger.warning(f"[SemanticStage] Ошибка загрузки конфига: {e}")
+            semantic_config = self._empty_semantic_config()
         
         items: List[ParsedItem] = []
         discounts: List[ParsedItem] = []
         skipped = 0
         parsed = 0
         
-        # Определяем границы области товаров
         start_line = self._find_items_start(layout, store)
         end_line = self._find_items_end(layout, metadata)
         
-        logger.debug(f"[Stage 5: Semantic] Область товаров: строки {start_line}-{end_line}")
+        # Контекстный буфер для многострочных названий
+        name_buffer = []
         
         for i, line in enumerate(layout.lines):
-            # 1. Сначала разделяем строку геометрически, если в ней "несколько этажей" слов
-            # Это системно решает проблему склейки Carrefour (Вариант 3)
-            # Используем порог из конфига локали (line_split_y_threshold)
+            # 1. Пропуски за границами
+            if i < start_line or i > end_line:
+                skipped += 1
+                continue
+            
+            # 1.1 Footer Protector: Останавливаем поиск товаров после итоговой суммы
+            # (если строка с итогом была надежно определена в Stage 4)
+            if metadata.total_line_number != -1 and i > metadata.total_line_number:
+                # В Германии иногда Pfand/Скидка может быть сразу под итогом (редко, но бывает)
+                # Поэтому даем запас в 1 строку или проверяем ключевые слова
+                is_footer_meta = any(kw in line.text.lower() for kw in ['steuer', 'mwst', 'vat', 'ptu', 'netto', 'brutto'])
+                if is_footer_meta or i > metadata.total_line_number + 1:
+                    logger.debug(f"[Stage 5] Footer Protector: Stop parsing at line {i} (Total was at {metadata.total_line_number})")
+                    break
+            
+            # 2. Header Protector: Блокировка технических заголовков в верхней части чека
+            if line.y_position < layout.image_height / 3:
+                is_header = False
+                for identifier in semantic_config.legal_header_identifiers:
+                    if identifier.lower() in line.text.lower():
+                        logger.debug(f"[Stage 5] Header Protector: Skip line '{line.text}' due to identifier '{identifier}'")
+                        is_header = True
+                        break
+                if is_header:
+                    name_buffer = [] # Сброс контекста
+                    skipped += 1
+                    continue
+
+            # 3. Служебные строки (skip_keywords)
+            if self._should_skip_line(line.text, semantic_config):
+                name_buffer = [] 
+                skipped += 1
+                continue
+
+            # 4. Геометрический сплиттинг
             sub_lines = self._split_line_by_geometry(line, semantic_config.line_split_y_threshold)
             
             for sub_line in sub_lines:
-                # 2. Пропускаем заголовок и футер
-                if i < start_line or i > end_line:
-                    skipped += 1
-                    continue
-                
-                # 3. Пропускаем служебные строки (из конфига)
-                if self._should_skip_line(sub_line.text, semantic_config):
-                    skipped += 1
-                    continue
-                
-                # 4. Парсим строку (может вернуть список, если там семантически склеено)
+                # 5. Парсинг компонентов (цена, кол-во)
                 line_items = self._parse_item_line(sub_line, semantic_config)
                 
                 if line_items:
                     for item in line_items:
+                        # 6. Price Sanity Check & Smart Cleaning
+                        # Если цена товара аномальна, пробуем её очистить от префиксного шума
+                        receipt_total = metadata.receipt_total or 0
+                        is_outlier = False
+                        
+                        # Аномалия 1: Цена тупо больше итога
+                        if receipt_total > 0 and item.total > receipt_total:
+                            is_outlier = True
+                            
+                        # Аномалия 2: Адаптивный порог (для коротких чеков 40%, для длинных 25%)
+                        if not is_outlier and receipt_total > 0:
+                            threshold = 0.4 if len(items) <= 5 else 0.25
+                            if item.total > receipt_total * threshold:
+                                is_outlier = True
+
+                        if is_outlier:
+                            original_total = item.total
+                            # Ищем паттерн цены в конце исходной строки
+                            price_match = re.search(r"(\d+[\.,]\d{2})", sub_line.text)
+                            if price_match:
+                                price_str = price_match.group(1).replace(',', '.')
+                                # Глубокая очистка: пробуем отсекать цифры слева, пока цена не станет <= итога
+                                # (Например: 923.39 -> 23.39 -> 3.39)
+                                # Применяем ТОЛЬКО если включена стратегия deep_prefix
+                                if semantic_config and semantic_config.clean_outliers_strategy == "deep_prefix":
+                                    current_price_str = price_str
+                                    while len(current_price_str) > 3: # Минимум X.XX
+                                        try:
+                                            candidate_price = float(current_price_str)
+                                            # Если цена стала <= итога и вменяемая - берем!
+                                            threshold_multiplier = 0.5
+                                            if 0 < candidate_price <= receipt_total * threshold_multiplier:
+                                                logger.info(f"[Stage 5] Smart Cleaner: Corrected Outlier {original_total} -> {candidate_price}")
+                                                item.total = candidate_price
+                                                item.price = candidate_price
+                                                break
+                                        except ValueError: pass
+                                        current_price_str = current_price_str[1:] # Отсекаем одну цифру слева
+                                
+                                    if item.total != original_total:
+                                        logger.info(f"[Stage 5] Smart Cleaner: Salvation successful! New price: {item.total}")
+                                        is_outlier = False # Снимаем флаг аномалии, так как мы её исправили!
+                            
+                            # Если после всех попыток чистки это всё еще аномалия - вот тогда игнорируем
+                            if is_outlier:
+                                threshold = 0.4 if len(items) <= 5 else 0.25
+                                if item.total > receipt_total * threshold:
+                                    logger.warning(f"[Stage 5] Price Sanity Check: Ignore suspicious item '{item.name}' with price {item.total}")
+                                    continue
+
+                        # Если у товара нет имени или имя - просто число/мусор, берем из буфера
+                        cleaned_name = self._clean_item_name(item.name)
+                        if (not cleaned_name or cleaned_name.replace('.', '').replace(',', '').isdigit()) and name_buffer:
+                            item.name = " ".join(name_buffer) + " " + item.name
+                            name_buffer = [] # Использовали буфер
+                        
                         parsed += 1
                         if item.is_discount:
                             discounts.append(item)
                         else:
                             items.append(item)
                 else:
-                    skipped += 1
+                    # Если ничего не распарсилось, возможно это часть названия
+                    potential_name = self._clean_item_name(sub_line.text)
+                    if potential_name and len(potential_name) > 3:
+                        name_buffer.append(potential_name)
+                        # Ограничиваем буфер, используя конфиг (по умолчанию 3)
+                        max_buffer = semantic_config.name_buffer_size if semantic_config else 3
+                        if len(name_buffer) > max_buffer:
+                            name_buffer.pop(0)
         
-        result = SemanticResult(
-            items=items,
-            discounts=discounts,
-            skipped_lines=skipped,
-            parsed_lines=parsed,
-        )
-        
-        logger.info(
-            f"[Stage 5: Semantic] Результат: {len(items)} товаров, "
-            f"{len(discounts)} скидок, {skipped} пропущено"
-        )
-        
-        return result
-    
+        return SemanticResult(items=items, discounts=discounts, skipped_lines=skipped, parsed_lines=parsed)
+
     def _find_items_start(self, layout: LayoutResult, store: StoreResult) -> int:
-        """Находит начало области товаров."""
-        # После названия магазина + несколько строк
         if store.matched_in_line >= 0:
-            return min(store.matched_in_line + 3, len(layout.lines) - 1)
-        return 3  # По умолчанию с 4-й строки
-    
+            return min(store.matched_in_line + 2, len(layout.lines) - 1)
+        return 2
+
     def _find_items_end(self, layout: LayoutResult, metadata: MetadataResult) -> int:
-        """Находит конец области товаров."""
-        # До строки с итогом
         if metadata.total_line_number >= 0:
             return max(0, metadata.total_line_number - 1)
-        # По умолчанию до последних 5 строк
         return max(0, len(layout.lines) - 5)
-    
+
     def _should_skip_line(self, text: str, config: "SemanticConfig") -> bool:
-        """
-        Проверяет, нужно ли пропустить строку.
-        
-        Args:
-            text: Текст строки
-            config: Конфигурация локали (из LocaleConfig.semantic)
-        """
         text_lower = text.lower()
-        
-        # Слишком короткая
-        if len(text.strip()) < 3:
-            return True
-        
-        # Проверяем skip-слова из конфига
+        if len(text.strip()) < 2: return True
         for keyword in config.skip_keywords:
-            if keyword in text_lower:
-                logger.debug(f"[Stage 5] Skip по ключевому слову: '{text}' ({keyword})")
-                return True
-        
-        # Проверяем паттерны веса из конфига
+            if keyword in text_lower: return True
         for pattern in config.weight_patterns:
-            if re.match(pattern, text, re.IGNORECASE):
-                logger.debug(f"[Stage 5] Skip по паттерну веса: '{text}'")
-                return True
-        
-        # Проверяем паттерны налогов из конфига
+            if re.search(pattern, text, re.IGNORECASE): return True
         for pattern in config.tax_patterns:
-            if re.match(pattern, text.strip(), re.IGNORECASE):
-                logger.debug(f"[Stage 5] Skip по паттерну налога: '{text}'")
-                return True
-        
+            if re.search(pattern, text.strip(), re.IGNORECASE): return True
         return False
-    
+
     def _split_line_by_geometry(self, line: Line, threshold: int) -> List[Line]:
-        """
-        Разделяет одну строку на несколько, если слова в ней находятся на разных уровнях Y.
-        Это системный Вариант 3: BBox-Aware Parsing.
-        """
-        if not line.words or len(line.words) < 2:
-            return [line]
-            
-        # Группируем слова по Y
-        # Используем y для оценки "строчности"
+        if not line.words or len(line.words) < 2: return [line]
         sorted_words = sorted(line.words, key=lambda w: w.bounding_box.y)
-        
         clusters = []
         current_cluster = [sorted_words[0]]
-        
         for i in range(1, len(sorted_words)):
             w = sorted_words[i]
             prev_w = current_cluster[-1]
-            
-            # Если разрыв по Y между словами больше порога — это новая строка
             if abs(w.bounding_box.y - prev_w.bounding_box.y) > threshold:
                 clusters.append(current_cluster)
                 current_cluster = [w]
             else:
                 current_cluster.append(w)
-        
         clusters.append(current_cluster)
-        
-        if len(clusters) == 1:
-            return [line]
-            
-        logger.debug(f"[Stage 5] Geometric Split: Line {line.line_number} divided into {len(clusters)} clusters")
-        
-        # Создаем новые объекты Line для каждого кластера
+        if len(clusters) == 1: return [line]
         new_lines = []
         for cluster in clusters:
-            # Сортируем слова внутри кластера по X
             sorted_cluster = sorted(cluster, key=lambda w: w.bounding_box.x)
             text = " ".join([w.text for w in sorted_cluster])
-            
-            x_min = min(w.bounding_box.x for w in cluster)
-            x_max = max(w.bounding_box.x + w.bounding_box.width for w in cluster)
-            y_pos = min(w.bounding_box.y for w in cluster)
-            conf = sum(w.confidence for w in cluster) / len(cluster)
-            
-            new_lines.append(Line(
-                text=text,
-                words=sorted_cluster,
-                y_position=y_pos,
-                x_min=x_min,
-                x_max=x_max,
-                confidence=conf,
-                line_number=line.line_number
-            ))
-            
+            new_lines.append(Line(text=text, words=sorted_cluster, y_position=min(w.bounding_box.y for w in cluster),
+                                 x_min=min(w.bounding_box.x for w in cluster), 
+                                 x_max=max(w.bounding_box.x + w.bounding_box.width for w in cluster),
+                                 confidence=sum(w.confidence for w in cluster)/len(cluster), line_number=line.line_number))
         return new_lines
 
-    def _parse_item_line(self, line: Line, config: SemanticConfig) -> List[ParsedItem]:
-        """
-        Парсит строку чека. Пытается найти один или несколько товаров.
-        
-        Args:
-            line: Строка из LayoutStage
-            config: Конфигурация локали
-            
-        Returns:
-            List[ParsedItem]: Список найденных товаров
-        """
+    def _parse_item_line(self, line: Line, config: LocaleConfig) -> List[ParsedItem]:
         text = line.text
-        
-        # 1. Пробуем распарсить строку целиком
-        name, quantity, price, total = self._extract_item_components(text)
-        
-        if not name or total is None:
-            return []
+        # Сначала пробуем разделить по нескольким ценам
+        prices = re.findall(r"(?<![\d.,])\-?\d+[.,]\d{2}(?![\d.,])", text)
+        if len(prices) >= 2:
+            # Ищем маркеры умножения более гибко (включая начало строки)
+            has_explicit_multi = bool(re.search(r"(\*|[\s*x×X]\s+)", text.upper())) or \
+                               any(op in text.upper() for op in [' VAT ', ' IVA ', ' PTU '])
             
-        # 2. Проверка на "склеенную" строку (несколько цен total в одной строке)
-        # Ищем паттерны типа "PRICE CURRENCY NAME" или "PRICE NAME"
-        # Для Carrefour: "... 14.99 = = 12.57 14.99 € C"
-        
-        # Регулярка для поиска разделителей товаров (Цена + Налог/Валюта + Начало нового имени)
-        # Паттерн: [Цена] [Пробел] [VAT/Буква] [Пробел] [СЛОВО ОТ 3 БУКВ]
-        split_pattern = r"((?<![\d.,])\-?\d+[.,]\d{2}(?![\d.,])\s+[A-Z]\s+)([A-Z]{3,})"
-        
-        match = re.search(split_pattern, text)
-        if match:
-            # Разделяем на две части
-            pos = match.start(2)
-            part1 = text[:pos]
-            part2 = text[pos:]
+            should_split = False
+            if not has_explicit_multi and len(prices) >= 2:
+                should_split = True
+            elif has_explicit_multi and len(prices) >= 4: # Если 4+ цены при наличии X, это уже перебор
+                should_split = True
             
-            logger.debug(f"[Stage 5] Semantic Split discovered: '{part1}' | '{part2}'")
-            
-            # Пробуем распарсить обе части
-            res1 = self._parse_item_line(Line(text=part1, line_number=line.line_number, y_position=line.y_position, x_min=line.x_min, x_max=line.x_max, confidence=line.confidence, words_count=0), config)
-            res2 = self._parse_item_line(Line(text=part2, line_number=line.line_number, y_position=line.y_position, x_min=line.x_min, x_max=line.x_max, confidence=line.confidence, words_count=0), config)
-            
-            if res1 or res2:
-                return res1 + res2
+            if should_split:
+                # Ищем последнюю цену и пробуем откусить её
+                last_price_match = list(re.finditer(r"(?<![\d.,])\-?\d+[.,]\d{2}(?![\d.,])", text))[-1]
+                pos = last_price_match.start()
+                
+                part1, part2 = text[:pos].strip(), text[pos:].strip()
+                logger.debug(f"[Stage 5] Multi-Price Split discovered: '{part1}' | '{part2}'")
+                
+                res1 = self._parse_item_line(Line(text=part1, words=[], y_position=line.y_position, line_number=line.line_number), config)
+                res2 = self._parse_item_line(Line(text=part2, words=[], y_position=line.y_position, line_number=line.line_number), config)
+                if res1 and res2: return res1 + res2
 
-        # 3. Если не разделили паттерном, возвращаем базовый результат
-        if name and total is not None:
-            return [self._create_item((name, quantity, price, total), line.line_number, config)]
-            
+        name, quantity, price, total = self._extract_item_components(text, config)
+        if total is not None:
+            is_discount = self._is_discount_line(name or text, config.discount_keywords)
+            return [ParsedItem(name=name or "", quantity=quantity, price=price, total=total, is_discount=is_discount, line_number=line.line_number, raw_text=text)]
         return []
 
-    def _create_item(self, components: Tuple, line_number: int, config: SemanticConfig) -> ParsedItem:
-        """Вспомогательный метод для создания ParsedItem из компонентов."""
-        name, quantity, price, total = components
-        is_discount = self._is_discount_line(name, config.discount_keywords)
-        
-        return ParsedItem(
-            name=name,
-            quantity=quantity,
-            price=price,
-            total=total,
-            is_discount=is_discount,
-            line_number=line_number,
-            raw_text=name # Временно, потом обновим если надо
-        )
-    
     def _is_discount_line(self, text: str, discount_keywords: List[str]) -> bool:
-        """
-        Проверяет, является ли строка скидкой.
-        
-        Args:
-            text: Текст строки
-            discount_keywords: Ключевые слова скидок из конфига
-        """
         text_lower = text.lower()
+        # Если есть "Pfand" (залог), это НЕ скидка, но это спец-позиция.
+        # В нашей системе мы считаем скидкой всё, что уменьшает чек, 
+        # но залог (возврат) может быть и отрицательным и положительным.
+        if "pfand" in text_lower or "leergut" in text_lower:
+             return False
+
+        if any(kw in text_lower for kw in discount_keywords): return True
+        return bool(re.search(r"-\s*\d+[,\.]\d{2}\s*$", text))
+
+    def _extract_item_components(self, text: str, config: "SemanticConfig" = None) -> Tuple[Optional[str], Optional[float], Optional[float], Optional[float]]:
+        # Стандартный паттерн (требует разделителя слева)
+        standard_pattern = r"(?<![\d.,])(-?\d+)[.,](\d{2})(?=\s*($|[A-Z%€£$]|zł|Kč))"
+        # Relaxed паттерн для склеенных цен (Aldi), включается через конфиг
+        relaxed_pattern = r"(-?\d+)[.,](\d{2})(?=\s*($|[A-Z%€£$]|zł|Kč))"
         
-        # Проверяем ключевые слова скидок
-        for keyword in discount_keywords:
-            if keyword in text_lower:
-                return True
-        
-        # Отрицательная цена (минус в конце строки)
-        if re.search(r"-\s*\d+[,\.]\d{2}\s*$", text):
-            return True
-        
-        return False
-    
-    def _extract_item_components(
-        self, text: str
-    ) -> Tuple[Optional[str], Optional[float], Optional[float], Optional[float]]:
-        """
-        Извлекает компоненты товара из строки.
-        
-        Returns:
-            (name, quantity, price, total)
-        
-        Паттерн: НАЗВАНИЕ [QTY x PRICE] TOTAL
-        Примеры:
-        "Milch 3.5% 1,29 A"
-        "Brot 2 x 0,99 1,98 B"
-        "JOGURT GRECKI 3,49"
-        "Apple 0.694 * 2.99"
-        """
-        # 1. Поиск цен (поддерживаем и точку, и запятую, так как OCR может путать их)
-        # Ищем числа с 2 знаками после разделителя, опционально с минусом в начале (-3.33)
-        # Используем lookbehind/lookahead чтобы не цеплять части дат (10.08.2025) или весов (1.398)
-        price_pattern = r"(?<![\d.,])(-?\d+)[.,](\d{2})(?![\d.,])"
+        price_pattern = standard_pattern
+        if config and config.allow_joined_prices:
+            price_pattern = relaxed_pattern
+            
         prices = re.findall(price_pattern, text)
+        if not prices: return None, None, None, None
         
-        if not prices:
-            return None, None, None, None
-        
-        # Последняя цена — это total
-        total_match = prices[-1]
-        # Нормализуем в float (всегда через точку)
-        total = float(f"{total_match[0]}.{total_match[1]}")
-        
-        # Убираем цены из текста, чтобы получить название
+        total = float(f"{prices[-1][0]}.{prices[-1][1]}")
         name = text
         for p in prices:
-            # Пытаемся удалить оба варианта (с точкой и запятой), чтобы очистить строку
             name = name.replace(f"{p[0]},{p[1]}", "").replace(f"{p[0]}.{p[1]}", "")
         
-        # Очищаем название
         name = self._clean_item_name(name)
-        
-        if not name:
-            return None, None, None, None
-        
-        # 2. Поиск количества
-        # Поддерживаем:
-        # - Целые (2) и дробные (0.694, 1,5)
-        # - Разделители: x, X, ×, *
-        quantity = None
-        price = None
-        
-        # Паттерн: (число) [x*] (число/цена)
-        # Группа 1: Количество (до 3 цифр до точки/запятой, опционально дробная часть)
+        quantity, price = None, None
         qty_pattern = r"(?:^|\s)(\d{1,3}(?:[.,]\d{1,3})?)\s*[xX×*]\s*(?:\d|$)"
         qty_match = re.search(qty_pattern, text)
-        
         if qty_match:
-            qty_str = qty_match.group(1).replace(",", ".")
             try:
-                quantity = float(qty_str)
-            except ValueError:
-                pass # Если не удалось распарсить, оставляем None
-                
-            # Если есть quantity и несколько цен, первая — unit price
-            if len(prices) >= 2:
-                price_match = prices[0]
-                price = float(f"{price_match[0]}.{price_match[1]}")
-        
+                quantity = float(qty_match.group(1).replace(",", "."))
+                if len(prices) >= 2:
+                    price = float(f"{prices[0][0]}.{prices[0][1]}")
+            except: pass
         return name, quantity, price, total
-    
+
     def _clean_item_name(self, name: str) -> str:
-        """Очищает название товара."""
-        # Убираем лишние символы
-        name = re.sub(r"[xX×]\s*$", "", name)  # "2 x" в конце
-        name = re.sub(r"\s+", " ", name)       # Множественные пробелы
-        name = re.sub(r"^[\s\-\*]+", "", name)  # Ведущие символы
-        name = re.sub(r"[\s\-\*]+$", "", name)  # Концевые символы
-        
-        # Убираем tax class (A, B, C в конце)
-        name = re.sub(r"\s+[A-C]\s*$", "", name)
-        
-        return name.strip()
+        name = re.sub(r"[xX×]\s*$", "", name)
+        name = re.sub(r"\s+", " ", name)
+        name = re.sub(r"^[\s\-\*]+", "", name)
+        name = re.sub(r"[\s\-\*]+$", "", name).strip()
+        # Убираем одиночные буквы налогов в конце
+        name = re.sub(r"\s+[A-Z]\s*$", "", name)
+        return name

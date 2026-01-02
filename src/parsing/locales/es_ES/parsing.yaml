@@ -6,6 +6,28 @@ extends: base.yaml
 locale_code: es_ES
 currency: EUR
 
+# === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
+detection_keywords:
+  - total
+  - importe
+  - efectivo
+  - cambio
+  - entregado
+  - iva
+  - base
+  - cuota
+  - mercadona
+  - carrefour
+  - lidl
+  - aldi
+  - dia
+  - eroski
+  - eur
+  - euro
+  - gracias
+  - ticket
+  - factura
+
 # === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
 
 total_keywords:

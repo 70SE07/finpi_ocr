@@ -1,0 +1,53 @@
+{
+  "id": "075",
+  "source_file": "photo/photo_2_th/IMG_2504.jpeg",
+  "locale": "tr_TR",
+  "store": {
+    "name": "BTA HAVALİMANLARI YİYECEK VE İÇECEK HİZMETLERİ AŞ",
+    "branch": null,
+    "address": "Ayazağa Mahallesi, Sarıyer - İstanbul",
+    "tax_id": "1870145623",
+    "mersis_no": "187014562300018",
+    "phone": null
+  },
+  "metadata": {
+    "date": "13/10/2025",
+    "time": "12:06",
+    "currency": "TL",
+    "payment_method": "Credit Card 5303XXXXXX9474",
+    "receipt_total": 337.31,
+    "subtotal": 306.65,
+    "vat": 30.66,
+    "vat_rate": 10,
+    "vat_included": false,
+    "receipt_number": "4NW2025000032783",
+    "ettn": "c3472158-acf3-45c0-b669-7f95e8cb3d31",
+    "transaction_number": "363",
+    "merchant_number": "000000001056594",
+    "batch_number": "2247",
+    "terminal_number": "01812480",
+    "rrn": "528636496378"
+  },
+  "items": [
+    {
+      "raw_name": "RED BULL",
+      "quantity": 1,
+      "unit": "Adet",
+      "unit_price": 306.65,
+      "total_price": 306.65
+    }
+  ],
+  "validation": {
+    "checksum_method": "subtotal + vat == receipt_total",
+    "subtotal": 306.65,
+    "vat": 30.66,
+    "expected_total": 337.31,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "Turkish receipt (airport)",
+    "VAT 10% added (not included)",
+    "Currency: Turkish Lira (TL), not THB",
+    "Single item purchase"
+  ]
+}

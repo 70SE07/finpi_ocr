@@ -25,6 +25,7 @@ class MetadataConfig:
     Содержит ключевые слова для поиска итоговой суммы.
     """
     total_keywords: List[str]
+    detection_keywords: List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -42,7 +43,13 @@ class SemanticConfig:
     discount_keywords: List[str]
     weight_patterns: List[str]
     tax_patterns: List[str]
+    legal_header_identifiers: List[str] = field(default_factory=list)
     line_split_y_threshold: int = 15      # Пороговая плотность для Stage 5 (BBox split)
+    
+    # Systemic Configuration Parameters (Configurable Logic)
+    clean_outliers_strategy: str = "standard"  # 'none' | 'standard' | 'deep_prefix'
+    allow_joined_prices: bool = False          # Разрешить цены без разделителя слева (Text9,99)
+    name_buffer_size: int = 3                  # Размер буфера для сохранения имен без цен
 
 
 @dataclass
@@ -74,6 +81,10 @@ class LocaleConfig:
         return self.metadata.total_keywords
         
     @property
+    def detection_keywords(self) -> List[str]:
+        return self.metadata.detection_keywords
+        
+    @property
     def skip_keywords(self) -> List[str]:
         return self.semantic.skip_keywords
         
@@ -94,34 +105,28 @@ class LocaleConfig:
         return self.semantic.line_split_y_threshold
 
     @classmethod
-    def load(cls, locale_code: str) -> "LocaleConfig":
+    def load(cls, locale_code: str, store_name: Optional[str] = None) -> "LocaleConfig":
         """
-        Загружает конфигурацию локали из YAML файлов.
+        Загружает конфигурацию локали и (опционально) магазина.
         """
+        cache_key = f"{locale_code}:{store_name.lower() if store_name else ''}"
+        
         # Проверяем кеш
-        if locale_code in cls._cache:
-            return cls._cache[locale_code]
+        if cache_key in cls._cache:
+            return cls._cache[cache_key]
         
         # 1. Определяем директорию
         if cls._config_dir is None:
-            # Default: относительно файла locale_config.py
             current_file = Path(__file__)
             cls._config_dir = current_file.parent
-            cls._source_file = current_file.name
         
         config_dir = Path(cls._config_dir)
         
-        # 2. Загружаем конфиг локали
-        locale_config = cls._load_locale_yaml(config_dir, locale_code)
+        # 2. Загружаем основной конфиг локали
+        locale_config = cls._load_locale_yaml(config_dir, locale_code, store_name)
         
         # 3. Сохраняем в кеш
-        cls._cache[locale_code] = locale_config
-        
-        logger.debug(
-            f"[ConfigLoader] Загружен LocaleConfig для {locale_code}: "
-            f"{len(locale_config.metadata.total_keywords)} total_keywords, "
-            f"{len(locale_config.semantic.skip_keywords)} skip_keywords"
-        )
+        cls._cache[cache_key] = locale_config
         
         return locale_config
 
@@ -141,39 +146,22 @@ class LocaleConfig:
     def _resolve_extends(cls, value: Any, base_config: dict) -> Any:
         """
         Обрабатывает ТОЛЬКО выборочное наследование через $extends для списков.
-        Поддерживает форматы:
-        - Строка: "$extends: keys"
-        - Словарь: {"$extends": "keys"} (автоматически из YAML без кавычек)
         """
         if isinstance(value, list):
             result = []
             for item in value:
                 extended_key = None
                 
-                # Case 1: String "$extends: key"
                 if isinstance(item, str) and item.startswith("$extends:"):
                     extended_key = item.split(":", 1)[1].strip()
-                
-                # Case 2: Dict {"$extends": "key"}
                 elif isinstance(item, dict) and "$extends" in item:
                     extended_key = item["$extends"]
-                
-                # Case 3: Dict with "pattern" (base.yaml format)
                 elif isinstance(item, dict) and "pattern" in item:
-                    # Это объект паттерна из base.yaml, нам нужен только regex
                     result.append(item["pattern"])
                     continue
                 
                 if extended_key:
                     extended = base_config.get(extended_key, [])
-                    if not extended:
-                        logger.warning(f"[ConfigLoader] Ключ '{extended_key}' для $extends не найден в base.yaml")
-                    else:
-                        logger.debug(f"[ConfigLoader] Inheriting {len(extended)} items for '{extended_key}'")
-                    
-                    # Рекурсивно обрабатываем extended (там тоже могут быть dicts)
-                    # Но пока просто добавляем, потому что рекурсия для списков тут не реализована
-                    # Улучшение: проходимся по extended и извлекаем pattern если есть
                     for ext_item in extended:
                         if isinstance(ext_item, dict) and "pattern" in ext_item:
                             result.append(ext_item["pattern"])
@@ -182,28 +170,44 @@ class LocaleConfig:
                 else:
                     result.append(item)
             return result
-        
         return value
 
     @classmethod
     def _load_locale_yaml(
         cls, 
         config_dir: Path, 
-        locale_code: str
+        locale_code: str,
+        store_name: Optional[str] = None
     ) -> "LocaleConfig":
-        """Загружает конфиг локали из YAML файла."""
+        """Загружает конфиг локали с возможным переопределением магазина."""
         # 1. Загружаем base.yaml
         base_config = cls._load_base_config(config_dir)
 
+        # 2. Загружаем локальный конфиг
         config_file = config_dir / locale_code / "parsing.yaml"
-        
         if not config_file.exists():
-            raise FileNotFoundError(
-                f"[ConfigLoader] Конфиг для {locale_code} не найден: {config_file}"
-            )
+            raise FileNotFoundError(f"[ConfigLoader] Конфиг для {locale_code} не найден")
         
         with open(config_file, 'r', encoding='utf-8') as f:
-            config_data = yaml.safe_load(f)
+            config_data = yaml.safe_load(f) or {}
+
+        # 3. Если есть магазин - пробуем загрузить его переопределения
+        if store_name:
+            store_file = config_dir / locale_code / "stores" / f"{store_name.lower()}.yaml"
+            if store_file.exists():
+                with open(store_file, 'r', encoding='utf-8') as f:
+                    store_data = yaml.safe_load(f) or {}
+                    # Мержим: данные магазина имеют приоритет
+                    for key, value in store_data.items():
+                        if isinstance(value, list) and key in config_data:
+                            # Если это список - расширяем или заменяем (по умолчанию расширяем если нет $replace)
+                            if value and isinstance(value[0], str) and value[0] == "$replace":
+                                config_data[key] = value[1:]
+                            else:
+                                config_data[key] = config_data[key] + value
+                        else:
+                            config_data[key] = value
+                logger.debug(f"[ConfigLoader] Применены переопределения для магазина: {store_name}")
         
         # Валидация обязательных полей
         if "locale_code" not in config_data:
@@ -217,7 +221,11 @@ class LocaleConfig:
              config_data.get("total_keywords", ["total"]),
              base_config
         )
-        metadata_config = MetadataConfig(total_keywords=total_keywords)
+        
+        metadata_config = MetadataConfig(
+            total_keywords=total_keywords,
+            detection_keywords=config_data.get("detection_keywords", [])
+        )
         
         skip_keywords = cls._resolve_extends(
             config_data.get("skip_keywords", []), 
@@ -235,13 +243,22 @@ class LocaleConfig:
             config_data.get("tax_patterns", []), 
             base_config
         )
+        legal_header_identifiers = cls._resolve_extends(
+            config_data.get("legal_header_identifiers", []),
+            base_config
+        )
         
         semantic_config = SemanticConfig(
             skip_keywords=skip_keywords,
             discount_keywords=discount_keywords,
             weight_patterns=weight_patterns,
             tax_patterns=tax_patterns,
-            line_split_y_threshold=config_data.get("line_split_y_threshold", 15)
+            legal_header_identifiers=legal_header_identifiers,
+            line_split_y_threshold=config_data.get("line_split_y_threshold", 15),
+            # New Systemic Params
+            clean_outliers_strategy=config_data.get("clean_outliers_strategy", "standard"),
+            allow_joined_prices=config_data.get("allow_joined_prices", False),
+            name_buffer_size=config_data.get("name_buffer_size", 3)
         )
         
         return LocaleConfig(
@@ -254,12 +271,8 @@ class LocaleConfig:
 
 # Aliases and wrapper
 class ConfigLoader:
-    """
-    Загрузчик конфигураций.
-    Обертка над LocaleConfig.load для совместимости с DI.
-    """
-    def load(self, locale_code: str) -> "LocaleConfig":
-        return LocaleConfig.load(locale_code)
+    def load(self, locale_code: str, store_name: Optional[str] = None) -> "LocaleConfig":
+        return LocaleConfig.load(locale_code, store_name)
 
 
 ParsingConfig = LocaleConfig

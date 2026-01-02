@@ -62,17 +62,15 @@ Finpi_OCR/
 │   │   │   ├── factory.py            # ExtractionComponentFactory
 │   │   │   └── extraction_pipeline.py # ExtractionPipeline
 │   │   │
-│   │   ├── infrastructure/    # Реализации и адаптеры
-│   │   │   ├── adapters/
-│   │   │   │   ├── google_vision_adapter.py       # GoogleVisionOCRAdapter
-│   │   │   │   └── image_preprocessor_adapter.py  # ImagePreprocessorAdapter
+│   │   ├── infrastructure/    # Реализации
+│   │   │   ├── ocr/
+│   │   │   │   └── google_vision_ocr.py  # GoogleVisionOCR (Google Vision API)
 │   │   │   └── file_manager.py       # ExtractionFileManager
 │   │   │
-│   │   ├── ocr/              # OCR компоненты
-│   │   │   └── google_vision_ocr.py  # Google Vision API интеграция
-│   │   │
 │   │   └── pre_ocr/         # Preprocessing
-│   │       ├── preprocessor.py         # ImagePreprocessor
+│   │       ├── pipeline.py         # PreOCRPipeline (оркестратор)
+│   │       ├── image_file_reader.py # ImageFileReader
+│   │       ├── image_encoder.py     # ImageEncoder
 │   │       └── elements/
 │   │           ├── image_compressor.py # Сжатие изображений
 │   │           └── grayscale.py        # Конвертация в ч/б
@@ -174,7 +172,7 @@ pipeline = ExtractionComponentFactory.create_extraction_pipeline(
 
 # Кастомный препроцессор
 pipeline = ExtractionComponentFactory.create_extraction_pipeline(
-    image_preprocessor=CustomImagePreprocessor()
+    image_preprocessor=CustomPreOCRPipeline()
 )
 ```
 

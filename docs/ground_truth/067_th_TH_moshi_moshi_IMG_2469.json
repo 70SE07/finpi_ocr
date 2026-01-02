@@ -1,0 +1,77 @@
+{
+  "id": "067",
+  "source_file": "photo/photo_2_th/IMG_2469.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "Moshi Moshi",
+    "branch": "Market Village (00009)",
+    "address": "234/1 B HONRUMS B36, 77110",
+    "tax_id": "0107565000387",
+    "phone": "0638053253"
+  },
+  "metadata": {
+    "date": "08/10/2025",
+    "time": "18:19:24",
+    "currency": "THB",
+    "payment_method": "Credit Card 530356XXXXXX9474",
+    "receipt_total": 309.00,
+    "subtotal": 311.00,
+    "total_discount": 2.00,
+    "amount_ex_vat": 288.79,
+    "vat": 20.21,
+    "vat_rate": 7,
+    "vat_included": true,
+    "receipt_number": "000B009003000010515",
+    "terminal_number": "B009003",
+    "pos": "E067700002A1510"
+  },
+  "items": [
+    {
+      "raw_name": "1400000563588",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_price": 35.00,
+      "total_price": 35.00
+    },
+    {
+      "raw_name": "3000000003251 size 1",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_price": 2.00,
+      "total_price": 2.00
+    },
+    {
+      "raw_name": "1400000400357 003",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_price": 219.00,
+      "total_price": 219.00
+    },
+    {
+      "raw_name": "8888235008488 man Tui",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_price": 55.00,
+      "total_price": 55.00
+    }
+  ],
+  "discounts": [
+    {
+      "raw_name": "Plastic bag (Free)",
+      "total_price": -2.00,
+      "is_discount": true
+    }
+  ],
+  "validation": {
+    "checksum_method": "subtotal - discounts == receipt_total",
+    "subtotal": 311.00,
+    "discounts": 2.00,
+    "expected_total": 309.00,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "VAT 7% included",
+    "Plastic bag discount applied: -2.00 THB",
+    "Product names are barcodes/IDs, some with additional text"
+  ]
+}

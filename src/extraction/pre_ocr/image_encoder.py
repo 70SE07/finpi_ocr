@@ -5,8 +5,6 @@ Image Encoder для pre-OCR пайплайна.
 Операция отвечает только за кодирование изображения в байты.
 """
 
-from typing import Optional
-
 import cv2
 import numpy as np
 from loguru import logger

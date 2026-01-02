@@ -1,0 +1,54 @@
+{
+  "id": "068",
+  "source_file": "photo/photo_2_th/IMG_2470.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "7-Eleven",
+    "branch": "Lotus (04017)",
+    "address": "HURHIN HURHIN, PRACHUAPKHIRIKHAN",
+    "tax_id": "0107542000011",
+    "vat_code": "03928",
+    "phone": "0-2826-7744"
+  },
+  "metadata": {
+    "date": "09/10/2025",
+    "time": "16:40",
+    "currency": "THB",
+    "payment_method": "VISA 439479XXXXXX1061",
+    "receipt_total": 317.00,
+    "subtotal": 317.00,
+    "vat_included": true,
+    "receipt_number": "0000303680P2",
+    "reference_number": "7863569",
+    "pos": "E06770000202602",
+    "tid": "18212169",
+    "trace": "006172",
+    "rrn": "4000528216356391",
+    "approval_code": "551101"
+  },
+  "items": [
+    {
+      "raw_name": "H",
+      "quantity": 1,
+      "unit_price": 17.00,
+      "total_price": 17.00
+    },
+    {
+      "raw_name": "Marlboro",
+      "quantity": 2,
+      "unit_price": 150.00,
+      "total_price": 300.00
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 317.00,
+    "expected_total": 317.00,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "VAT included",
+    "First item name not fully readable (only 'H' visible in OCR)",
+    "Second item: Marlboro cigarettes (2 x 150.00 = 300.00)"
+  ]
+}

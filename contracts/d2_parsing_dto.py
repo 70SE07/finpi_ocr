@@ -23,6 +23,7 @@ class RawReceiptItem(BaseModel):
     price: float | None = Field(None, description="Цена за единицу")
     total: float | None = Field(None, description="Итоговая цена за позицию")
     date: datetime | None = Field(None, description="Дата товара (если присутствует)")
+    raw_text: str = Field("", description="Сырая строка чека для отладки")
 
     model_config = ConfigDict(frozen=True, from_attributes=True)
 

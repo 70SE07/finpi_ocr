@@ -7,6 +7,28 @@ locale_code: pl_PL
 currency: PLN
 line_split_y_threshold: 10
 
+# === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
+detection_keywords:
+  - suma
+  - razem
+  - do zaplaty
+  - zaplacono
+  - gotowka
+  - reszta
+  - ptu
+  - vat
+  - biedronka
+  - lidl
+  - zabka
+  - żabka
+  - auchan
+  - pln
+  - zl
+  - zł
+  - dziekujemy
+  - paragon
+  - fiskalny
+
 # === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
 
 # Ключевые слова для поиска итоговой суммы в чеке

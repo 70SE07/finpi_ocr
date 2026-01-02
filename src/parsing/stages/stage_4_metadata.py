@@ -63,6 +63,7 @@ class MetadataStage:
         "de_DE": [
             r"(\d{2})\.(\d{2})\.(\d{4})",    # 31.12.2024
             r"(\d{2})\.(\d{2})\.(\d{2})",    # 31.12.24
+            r"(\d{4})-(\d{2})-(\d{2})",      # 2024-12-31 (иногда в Lidl)
         ],
         "pl_PL": [
             r"(\d{4})-(\d{2})-(\d{2})",      # 2024-12-31 (ISO)
@@ -118,11 +119,11 @@ class MetadataStage:
         """
         logger.debug(f"[Stage 4: Metadata] Извлечение для локали {locale.locale_code}")
         
-        # Загружаем конфиг для локали
-        config = self.config_loader.load(locale.locale_code)
+        # Загружаем конфиг для локали (с учетом магазина)
+        config = self.config_loader.load(locale.locale_code, store.store_name)
         
         # Извлекаем дату
-        receipt_date, date_raw = self._extract_date(layout)
+        receipt_date, date_raw = self._extract_date(layout, locale.locale_code)
         
         # Извлекаем итоговую сумму (из конфига)
         receipt_total, total_raw, total_line = self._extract_total(layout, config)
@@ -146,7 +147,7 @@ class MetadataStage:
         return result
     
     def _extract_date(
-        self, layout: LayoutResult
+        self, layout: LayoutResult, locale_code: Optional[str] = None
     ) -> Tuple[Optional[date], Optional[str]]:
         """
         Извлекает дату из чека.
@@ -154,12 +155,14 @@ class MetadataStage:
         Использует хардкоженные паттерны (логика).
         Паттерны зависят от региона, а не от языка.
         """
-        # Хардкоженные паттерны дат — это логика, не данные
-        # Остаються в коде (ADR-013: логика в коде, данные в конфигах)
-        patterns = self.DATE_PATTERNS.get("default", [])
-        
+        # 1. Сначала пробуем локальные паттерны
+        locale_patterns = self.DATE_PATTERNS.get(locale_code or "default", [])
+        # 2. Потом дефолтные
+        default_patterns = self.DATE_PATTERNS.get("default", [])
+        all_patterns = list(dict.fromkeys(locale_patterns + default_patterns))
+
         for line in layout.lines:
-            for pattern in patterns:
+            for pattern in all_patterns:
                 match = re.search(pattern, line.text)
                 if match:
                     try:
@@ -251,54 +254,67 @@ class MetadataStage:
                         logger.debug(f"[Stage 4] Кандидат: '{line.text}' -> {total} (keyword: {keyword})")
                     break  # Одно ключевое слово достаточно
         
-        if candidates:
-            # Сортируем: сначала по позиции (ниже = лучше), потом по сумме (больше = лучше)
-            # Выбираем строку с наибольшей суммой из нижней половины
-            lower_half = [c for c in candidates if c[2] >= total_lines // 2]
-            if lower_half:
-                best = max(lower_half, key=lambda x: x[0])
-            else:
-                best = max(candidates, key=lambda x: x[0])
+        # Системное решение: Весовая логика (Confidence Scoring)
+        # STRONG_KEYWORDS (+100): Однозначные маркеры итога к оплате
+        # WEAK_KEYWORDS (+20): Контекстные маркеры (валюты, общие слова)
+        # Components / Noise: Слова, которые часто путают с итогом (налоги, нетто)
+        STRONG_KEYWORDS = {'summe', 'total', 'zahlbetrag', 'gesamtbetrag', 'zu zahlen', 'brutto', 'amount due'}
+        WEAK_KEYWORDS = {'betrag', 'gesamt', 'eur', 'euro', '€', 'pay'}
+        COMPONENT_KEYWORDS = {'netto', 'mwst', 'vat', 'iva', 'tax', 'steuer', 'net', 'ptu'}
+
+        import math
+
+        scored_candidates: List[Tuple[float, str, int, float]] = [] # (total, raw, line_idx, score)
+
+        for total, raw, i in candidates:
+            score = 0.0
+            line_text_lower = layout.lines[i].text.lower()
             
-            logger.debug(f"[Stage 4] Выбрана сумма: {best[0]} из строки {best[2]}")
+            # 1. Вес по ключевым словам
+            if any(kw in line_text_lower for kw in STRONG_KEYWORDS):
+                score += 100.0
+            elif any(kw in line_text_lower for kw in WEAK_KEYWORDS):
+                score += 20.0
+            elif any(kw in line_text_lower for kw in COMPONENT_KEYWORDS):
+                score -= 50.0 # Понижаем вес для налоговых строк
+            
+            # 2. Вес по позиции (ниже = лучше)
+            position_score = (i / total_lines) * 50.0
+            score += position_score
+
+            # 3. Вес по размеру (Magnitude)
+            # Итоговая сумма почти всегда — самое большое число в подвале
+            magnitude_score = math.log10(max(1.0, total)) * 10.0
+            score += magnitude_score
+
+            scored_candidates.append((total, raw, i, score))
+            logger.debug(f"[Stage 4] Candidate Score: {score:.1f} for '{layout.lines[i].text}' (total={total}, kW={score-position_score-magnitude_score:.0f}, pos={position_score:.1f}, mag={magnitude_score:.1f})")
+
+        if scored_candidates:
+            # Выбираем кандидата с максимальным Score
+            best = max(scored_candidates, key=lambda x: x[3])
+            logger.debug(f"[Stage 4] Systemic Choice: {best[0]} (Score: {best[3]:.1f}) from line {best[2]}")
             return best[0], best[1], best[2]
         
-        # Fallback: наибольшая сумма в нижней трети чека
-        logger.debug("[Stage 4] Fallback: поиск наибольшей суммы в нижней трети")
+        # Fallback: наибольшая сумма в нижней трети (Score-based)
+        logger.debug("[Stage 4] Fallback: Score-based search in lower third")
         lower_third_start = total_lines * 2 // 3
-        max_total = None
-        max_raw = None
-        max_line = -1
+        best_fallback: Optional[Tuple[float, str, int, float]] = None
         
         for i in range(lower_third_start, total_lines):
-            line = layout.lines[i]
-            line_lower = line.text.lower()
-            
-            # Пропускаем строки с "сильным" шумом
-            has_total_keyword = any(tk.lower() in line_lower for tk in keywords)
-            
-            is_noise = False
-            if not has_total_keyword:
-                for skw in config.semantic.skip_keywords:
-                    skw_lower = skw.lower()
-                    if skw_lower in line_lower and skw_lower not in [tk.lower() for tk in keywords]:
-                        is_noise = True
-                        break
-            
-            if is_noise:
-                continue
-
-            total, raw = self._extract_price_from_line(line.text)
+            total, raw = self._extract_price_from_line(layout.lines[i].text)
             if total is not None and total > 1.0:
-                if max_total is None or total > max_total:
-                    max_total = total
-                    max_raw = raw
-                    max_line = i
+                pos_score = (i / total_lines) * 50.0
+                mag_score = math.log10(total) * 10.0
+                score = pos_score + mag_score
+                if best_fallback is None or score > best_fallback[3]:
+                    best_fallback = (total, raw, i, score)
         
-        if max_total is not None:
-            logger.debug(f"[Stage 4] Fallback: выбрана сумма {max_total} из строки {max_line}")
+        if best_fallback:
+            logger.debug(f"[Stage 4] Fallback Systemic Choice: {best_fallback[0]} from line {best_fallback[2]}")
+            return best_fallback[0], best_fallback[1], best_fallback[2]
         
-        return max_total, max_raw, max_line
+        return None, None, -1
     
     def _extract_price_from_line(self, text: str) -> Tuple[Optional[float], Optional[str]]:
         """Извлекает цену из строки."""

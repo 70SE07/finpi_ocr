@@ -7,7 +7,6 @@
 import json
 from pathlib import Path
 from typing import Dict, Any
-import shutil
 from loguru import logger
 
 from ..domain.exceptions import ExtractionFileNotFoundError, ExtractionFileWriteError

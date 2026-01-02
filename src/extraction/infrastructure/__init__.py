@@ -5,12 +5,8 @@
 """
 
 from .ocr.google_vision_ocr import GoogleVisionOCR
-from .file_manager import ExtractionFileManager
 
 __all__ = [
     # OCR
     "GoogleVisionOCR",
-    
-    # Менеджеры
-    "ExtractionFileManager",
 ]

@@ -1,0 +1,79 @@
+# Конфигурация локали: Чехия (cs_CZ)
+
+# Базовая информация о локали
+locale:
+  code: cs_CZ
+  name: Czech Republic
+  language: cs
+  region: CZ
+  rtl: false
+
+# Конфигурация валюты
+currency:
+  code: CZK
+  symbol: "Kč"
+  decimal_separator: ","
+  thousands_separator: " "
+  symbol_position: after  # "10,00 Kč"
+  format: "1 234,56"
+
+# Форматы даты
+date_formats:
+  - "DD.MM.YYYY"
+  - "DD.MM.YY"
+  - "D.M.YYYY"
+
+# Ключевые слова и паттерны
+patterns:
+  # Ключевые слова для определения итоговой суммы
+  total_keywords:
+    - "celkem"
+    - "suma"
+    - "k úhradě"
+    - "zaplaceno"
+  
+  # Ключевые слова для скидок
+  discount_keywords:
+    - "sleva"
+    - "akce"
+    - "bonus"
+  
+  # Шумовые слова
+  noise_keywords:
+    - "tel."
+    - "dic"
+    - "ico"
+    - "datum"
+    - "účtenka"
+  
+  # Единицы измерения
+  quantity_units:
+    - "kg"
+    - "ks"
+    - "g"
+    - "ml"
+    - "l"
+
+# Настройки экстракторов
+extractors:
+  store_detection:
+    scan_limit: 15
+    fallback_limit: 8
+    min_name_length: 3
+    known_brands:
+      - "albert"
+      - "billa"
+      - "lidl"
+      - "penny"
+      - "tesco"
+      - "globus"
+      - "kaufland"
+  
+  total_detection:
+    bottom_n_lines: 10
+    amount_range: [0.01, 1000000.0]
+    min_keyword_matches: 1
+  
+  date_detection:
+    max_year_offset_past: 2
+    max_year_offset_future: 1

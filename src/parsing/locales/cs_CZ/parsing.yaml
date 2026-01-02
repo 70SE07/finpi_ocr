@@ -1,0 +1,60 @@
+# Конфигурация парсинга для чешских чеков (cs_CZ)
+# Наследует: src/parsing/locales/base.yaml
+
+extends: base.yaml
+
+locale_code: cs_CZ
+currency: CZK
+
+# === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
+detection_keywords:
+  - celkem
+  - k uhrade
+  - k zaplacení
+  - hotove
+  - platba
+  - dph
+  - albert
+  - billa
+  - lidl
+  - kaufland
+  - tesco
+  - penny
+  - kc
+  - czk
+  - korun
+  - dekujeme
+  - uctenka
+
+# === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
+
+total_keywords:
+  - celkem              # "Итого"
+  - suma                # "Сумма"
+  - k úhradě            # "К оплате"
+  - zaplaceno           # "Оплачено"
+
+# === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
+
+skip_keywords:
+  # Наследуемые из base.yaml
+  - $extends: common_skip_keywords
+  
+  # Чешские итоговые слова
+  - celkem
+  - suma
+  - k úhradě
+  
+  # Способы оплаты (чешские)
+  - karta               # "Карта"
+  - hotovost            # "Наличные"
+  
+  # Чешские налоги и тех. инфо
+  - dic                 # "Налоговый номер"
+  - ico                 # "ID компании"
+  - účtenka             # "Чек"
+  - fiskální            # "Фискальный"
+
+discount_keywords:
+  - sleva               # "Скидка"
+  - akce                # "Акция"

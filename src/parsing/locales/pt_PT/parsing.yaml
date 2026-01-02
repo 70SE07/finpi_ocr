@@ -6,58 +6,60 @@ extends: base.yaml
 locale_code: pt_PT
 currency: EUR
 
-# === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
+# === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
+detection_keywords:
+  - total
+  - valor
+  - troco
+  - pago
+  - iva
+  - taxa
+  - continente
+  - pingo doce
+  - lidl
+  - aldi
+  - minipreco
+  - eur
+  - euro
+  - obrigado
+  - talao
+  - recibo
+  - nif
+  - pt
 
-# Ключевые слова для поиска итоговой суммы в чеке
+# === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
 total_keywords:
-  - a pagar             # "К оплате"
-  - total              # "Итого"
-  - valor              # "Сумма"
+  - a pagar
+  - total
+  - valor
 
 # === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
-
 skip_keywords:
-  # Наследуемые из base.yaml
   - $extends: common_skip_keywords
-  
-  # Португальские итоговые слова
-  - a pagar             # "К оплате"
-  - total              # "Итого"
-  
-  # Способы оплаты (португальские)
-  - cartão             # "Карта"
-  - pagamento           # "Оплата"
-  - dinheiro            # "Наличные"
-  - multibanco          # "Платёжная система"
-  
-  # Португальские налоги
-  - nif                 # "Налоговый номер"
-  - iva                 # "Налог"
-  
-  # Португальские фразы
-  - obrigado            # "Спасибо"
-  - obrigada            # "Спасибо (ж.р.)"
-  - natal               # "Рождество"
-  - devoluções          # "Возвраты"
-  - trocas              # "Обмены"
-  - apresentação        # "Презентация"
-  - talão               # "Квитанция"
-  - poderá
-  - podran
-  - adquisiciones
-  - adquiridos
-  - entre
-  - presentacion
-  - presentación
-  - talón
-  - trocas
-  - devoluciones
+  - a pagar
+  - total
+  - cartão
+  - pagamento
+  - dinheiro
+  - multibanco
+  - nif
+  - iva
+  - obrigado
+  - obrigada
+  - natal
   - devoluções
-  - excecionalmente
-  - excepcionalmente
-  - navidad
+  - trocas
+  - apresentação
+  - talão
+  - poupanca
+  - valor
+  - Total de descontos
+  - Total Liq.
 
 discount_keywords:
-  - desconto            # "Скидка"
-  - dto                 # "Скидка" (аббревиатура)
-  - promoção            # "Акция"
+  - desconto
+  - dto
+  - promoção
+
+# === GEOMETRY: Параметры физики чека ===
+line_split_y_threshold: 10

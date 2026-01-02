@@ -1,0 +1,38 @@
+{
+  "id": "065",
+  "source_file": "photo/photo_2_th/IMG_2467.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "7-Eleven",
+    "branch": "(09585)",
+    "address": null,
+    "tax_id": "0107542000011",
+    "vat_code": "07437",
+    "phone": "0-2826-7744"
+  },
+  "metadata": {
+    "date": "09/10/2025",
+    "time": "02:10",
+    "currency": "THB",
+    "payment_method": null,
+    "receipt_total": null,
+    "subtotal": null,
+    "vat_included": true,
+    "receipt_number": "0000819406P3",
+    "pos": "E06770000201326"
+  },
+  "items": [],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 0.00,
+    "expected_total": null,
+    "discrepancy": null
+  },
+  "notes": [
+    "ТРЕБУЕТСЯ ВИЗУАЛЬНАЯ ПРОВЕРКА",
+    "OCR текст очень плохого качества - товары практически нечитаемы",
+    "Видимые цены в OCR: 30.00, 60.00, 15.00, 75.00, 80.00, 5.00",
+    "Итоговая сумма не найдена в OCR тексте",
+    "Необходимо визуально восстановить полный список товаров и итоговую сумму"
+  ]
+}

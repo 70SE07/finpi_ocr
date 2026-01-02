@@ -1,0 +1,75 @@
+{
+  "id": "076",
+  "source_file": "photo/photo_2_th/IMG_3069.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "MCTHAI CO., LTD.",
+    "branch": "50234 Bukis Phuket",
+    "address": null,
+    "tax_id": "0105526048623",
+    "phone": "06-2602-9401"
+  },
+  "metadata": {
+    "date": "13/10/2025",
+    "time": "12:34:51",
+    "currency": "THB",
+    "payment_method": "Cash",
+    "receipt_total": 328.00,
+    "subtotal": 328.00,
+    "net_total": 306.54,
+    "tax_included": 21.46,
+    "vat_included": true,
+    "amount_paid": 330.00,
+    "change": 2.00,
+    "receipt_number": "502341900056393",
+    "order_number": "44",
+    "register_number": "18",
+    "pos": "E118300002A5508",
+    "crew_id": "141719",
+    "customer_code": "JVNSHMGWNMGLFPTMQF"
+  },
+  "items": [
+    {
+      "raw_name": "Samu Delux Pork (L)",
+      "quantity": 1,
+      "unit_price": 184.00,
+      "total_price": 184.00
+    },
+    {
+      "raw_name": "French Fries - 3WK",
+      "quantity": 1,
+      "unit_price": 0.00,
+      "total_price": 0.00
+    },
+    {
+      "raw_name": "Coke 22 oz.",
+      "quantity": 1,
+      "unit_price": 0.00,
+      "total_price": 0.00
+    },
+    {
+      "raw_name": "Spicy Chicken Burger",
+      "quantity": 1,
+      "unit_price": 119.00,
+      "total_price": 119.00
+    },
+    {
+      "raw_name": "Corn Pie",
+      "quantity": 1,
+      "unit_price": 25.00,
+      "total_price": 25.00
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 328.00,
+    "expected_total": 328.00,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "VAT included (21.46 THB)",
+    "Net Total: 306.54 THB",
+    "French Fries and Coke prices not visible separately in OCR - may be included in combo or free",
+    "Subtotal matches: 184 + 119 + 25 = 328.00"
+  ]
+}

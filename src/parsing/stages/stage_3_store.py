@@ -124,7 +124,7 @@ class StoreStage:
             for store in all_stores:
                 if store in line_lower:
                     # Нормализуем название (первая буква заглавная)
-                    store_name = store.title()
+                    store_name = store.replace(' ', '').lower()
                     matched_line = i
                     confidence = 1.0 if store in locale_stores else 0.8
                     

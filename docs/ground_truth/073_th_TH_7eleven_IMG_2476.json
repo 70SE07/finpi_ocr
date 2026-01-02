@@ -1,0 +1,75 @@
+{
+  "id": "073",
+  "source_file": "photo/photo_2_th/IMG_2476.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "7-Eleven",
+    "branch": "(09585)",
+    "address": "HINLEKFAI HUA HIN, PRACHUAPKHIRIKHAN",
+    "tax_id": "0107542000011",
+    "vat_code": "07437",
+    "phone": "0-2826-7744"
+  },
+  "metadata": {
+    "date": "08/10/2025",
+    "time": "20:04",
+    "currency": "THB",
+    "payment_method": "VISA 444111XXXXXX0014",
+    "receipt_total": 227.00,
+    "subtotal": 231.00,
+    "total_discount": 4.00,
+    "vat_included": true,
+    "receipt_number": "0000819312P3",
+    "reference_number": "0958502",
+    "pos": "E06770000201326",
+    "tid": "21011450",
+    "trace": "002970",
+    "rrn": "4000528120157739",
+    "approval_code": "537095"
+  },
+  "items": [
+    {
+      "raw_name": "Lainala",
+      "quantity": 2,
+      "unit_price": 45.00,
+      "total_price": 90.00
+    },
+    {
+      "raw_name": "Lainala",
+      "quantity": 1,
+      "unit_price": 39.00,
+      "total_price": 39.00
+    },
+    {
+      "raw_name": "Ian 1.6",
+      "quantity": 1,
+      "unit_price": 38.00,
+      "total_price": 38.00
+    },
+    {
+      "raw_name": null,
+      "quantity": 1,
+      "unit_price": 64.00,
+      "total_price": 64.00
+    }
+  ],
+  "discounts": [
+    {
+      "raw_name": "Discount",
+      "total_price": -4.00,
+      "is_discount": true
+    }
+  ],
+  "validation": {
+    "checksum_method": "subtotal - discounts == receipt_total",
+    "subtotal": 231.00,
+    "discounts": 4.00,
+    "expected_total": 227.00,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "VAT included",
+    "Subtotal: 231.00, Discount: 4.00, Total: 227.00",
+    "Some product names partially readable (Thai text)"
+  ]
+}

@@ -7,11 +7,10 @@
 ВАЖНО: ExtractionPipeline возвращает RawOCRResult (контракт D1->D2).
 """
 
-from pathlib import Path
 from typing import Optional, Dict, Any
 from loguru import logger
 
-from ..domain.interfaces import IOCRProvider, IImagePreprocessor, IExtractionPipeline
+from ..domain.interfaces import IOCRProvider, IImagePreprocessor
 from ..infrastructure.ocr.google_vision_ocr import GoogleVisionOCR
 from ..pre_ocr.pipeline import PreOCRPipeline
 from .extraction_pipeline import ExtractionPipeline

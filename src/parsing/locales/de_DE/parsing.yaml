@@ -3,6 +3,40 @@
 locale_code: de_DE
 currency: EUR
 
+# === STAGE 2: KEYWORDS ДЛЯ ОПРЕДЕЛЕНИЯ ЛОКАЛИ ===
+detection_keywords:
+  - summe
+  - gesamt
+  - gesamtbetrag
+  - zu zahlen
+  - bar
+  - gegeven
+  - ruckgeld
+  - mwst
+  - ust
+  - steuer
+  - netto
+  - brutto
+  - lidl
+  - aldi
+  - rewe
+  - edeka
+  - kaufland
+  - penny
+  - dm
+  - rossmann
+  - eur
+  - euro
+  - danke
+  - vielen dank
+  - beleg
+  - kassenbon
+  - quittung
+  - pfand
+  - leergut
+  - einweg
+  - mehrweg
+
 # === STAGE 4: KEYWORDS ДЛЯ ПОИСКА ИТОГОВОЙ СУММЫ ===
 total_keywords:
   - gesamtbetrag
@@ -11,6 +45,8 @@ total_keywords:
   - gesamt
   - betrag
   - total
+  - brutto
+  - netto
 
 # === STAGE 5: KEYWORDS ДЛЯ ФИЛЬТРАЦИИ СТРОК ===
 skip_keywords:

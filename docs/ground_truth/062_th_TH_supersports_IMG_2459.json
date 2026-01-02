@@ -1,0 +1,57 @@
+{
+  "id": "062",
+  "source_file": "photo/photo_2_th/IMG_2459.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "Supersports",
+    "branch": "Market Village Hua Hin",
+    "address": null,
+    "phone": "032-526205-6",
+    "tax_id": "0105539138812"
+  },
+  "metadata": {
+    "date": "06/10/2025",
+    "time": "15:52",
+    "currency": "THB",
+    "payment_method": "Mastercard 537428 XXXX2695",
+    "receipt_total": 4085.00,
+    "subtotal": 4085.00,
+    "vat_included": true,
+    "receipt_number": "475 - 035937",
+    "tpno": "475 - 038965",
+    "t1c": "7000000000000162",
+    "sales": "14004275"
+  },
+  "items": [
+    {
+      "raw_name": "TITLEIST ACUSHNET 8002908438123 SEA K FULL FACE MAGI",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 2590.00,
+      "barcode": "8002908438123",
+      "color": "1821",
+      "size": "485"
+    },
+    {
+      "raw_name": "8002908518283 SEA U SWIM FINS SPEE",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 1495.00,
+      "barcode": "8002908518283",
+      "size": "E015",
+      "color": "1101"
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 4085.00,
+    "expected_total": 4085.00,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "VAT included in prices",
+    "English product names (sports equipment)",
+    "Barcodes and product codes present",
+    "Special offer mentioned"
+  ]
+}

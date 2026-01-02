@@ -1,0 +1,37 @@
+{
+  "id": "064",
+  "source_file": "photo/photo_2_th/IMG_2466.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "CP AXTRA",
+    "branch": "(5055)",
+    "address": null,
+    "tax_id": "0107567000414",
+    "phone": "03-252-6071"
+  },
+  "metadata": {
+    "date": "09/10/2025",
+    "time": "18:06",
+    "currency": "THB",
+    "payment_method": "VISA 439479XXXXXX1061",
+    "receipt_total": 4893.75,
+    "subtotal": 4893.75,
+    "vat_included": true,
+    "receipt_number": "05055 009 4001 6838",
+    "pos": "E067700002A2154"
+  },
+  "items": [],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 0.00,
+    "expected_total": 4893.75,
+    "discrepancy": 4893.75
+  },
+  "notes": [
+    "ТРЕБУЕТСЯ ВИЗУАЛЬНАЯ ПРОВЕРКА",
+    "OCR текст частично нечитаем (тайские названия товаров)",
+    "Полный список товаров не может быть восстановлен из OCR",
+    "Итого из OCR: 4893.75 THB",
+    "Необходимо визуально восстановить список товаров для checksum = 0.00"
+  ]
+}

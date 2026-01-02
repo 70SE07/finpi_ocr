@@ -72,10 +72,9 @@ class RawOCRResult(BaseModel):
 **Файлы:**
 - [x] `contracts/raw_ocr_schema.py` — УДАЛЁН (устаревший dataclass) ✅
 - [x] `contracts/__init__.py` — обновлён, экспорт всех DTO ✅
-- [x] `src/extraction/ocr/google_vision_ocr.py` — возвращает `RawOCRResult` из `contracts/` ✅
+- [x] `src/extraction/infrastructure/ocr/google_vision_ocr.py` — возвращает `RawOCRResult` из `contracts/` ✅
 - [x] `src/extraction/domain/interfaces.py` — типы из `contracts/` ✅
 - [x] `src/extraction/application/extraction_pipeline.py` — использует `RawOCRResult` ✅
-- [x] `src/extraction/infrastructure/adapters/google_vision_adapter.py` — обновлён ✅
 - [x] `scripts/extract_raw_ocr.py` — использует `contracts.d1_extraction_dto` ✅
 - [x] `scripts/parse_receipt.py` — использует `contracts.d1_extraction_dto` ✅
 

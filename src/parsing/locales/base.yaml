@@ -44,8 +44,24 @@ common_skip_keywords:
   - kassen
   - datum
   - uhrzeit
+  - fiskalny
+  - art / ean
+  - art/ean
+
+# === HEADER PROTECTOR: Идентификаторы технических заголовков ===
+legal_header_identifiers:
+  - paragon
+  - fiskalny
+  - nip
+  - nip:
+  - regalo
+  - fatura
+  - factura
+  - recibo
+  - talão
+  - talón
 
 # === GEOMETRY: Параметры физики чека ===
 # Порог вертикального разделения слов внутри одной строки (в пикселях)
 # Используется в Stage 5 для исправления склеенных OCR-строк.
-line_split_y_threshold: 15
+line_split_y_threshold: 12

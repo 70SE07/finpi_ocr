@@ -11,14 +11,12 @@ Image Compressor для pre-OCR пайплайна.
 - Вариант B: Сжатие ПОСЛЕ поворота и кропа
 """
 
-import io
 from dataclasses import dataclass
 from typing import Literal
 
 import cv2
 import numpy as np
 from loguru import logger
-from PIL import Image
 from pathlib import Path
 
 from config.settings import (
@@ -151,8 +149,6 @@ class ImageCompressor:
 
     def _get_adaptive_size(self, w: int, h: int, density: float) -> tuple[int, int]:
         """Возвращает адаптивный размер на основе геометрии и плотности."""
-        max_allowed = MAX_IMAGE_SIZE
-
         # Проверяем адаптивные правила
         long_receipt = h / w > ADAPTIVE_HEIGHT_RATIO
         high_density = density > ADAPTIVE_DENSITY_THRESHOLD
@@ -191,8 +187,6 @@ class ImageCompressor:
 
 # === Test ===
 if __name__ == "__main__":
-    from pathlib import Path
-
     _SCRIPT_DIR = Path(__file__).parent.parent.parent.parent
     _PROJECT_ROOT = _SCRIPT_DIR.parent.parent
 

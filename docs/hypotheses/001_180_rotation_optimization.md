@@ -120,7 +120,7 @@ def invert_annotations_180(annotations: list, image_height: int, image_width: in
 
 - `src/pre_ocr/deskew_cv.py` - CV-based deskew (handles 90°, not 180°)
 - `src/pre_ocr/deskew.py` - OCR-based deskew (uses annotations)
-- `src/ocr/google_vision_ocr.py` - OCR client
+- `src/extraction/infrastructure/ocr/google_vision_ocr.py` - OCR client
 
 ---
 

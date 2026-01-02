@@ -1,0 +1,43 @@
+{
+  "id": "069",
+  "source_file": "photo/photo_2_th/IMG_2471.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "7-Eleven",
+    "branch": "maja (16923)",
+    "address": null,
+    "tax_id": "0107542000011",
+    "vat_code": "14427",
+    "phone": "0-2826-7744"
+  },
+  "metadata": {
+    "date": "07/10/2025",
+    "time": "18:50",
+    "currency": "THB",
+    "payment_method": "Mastercard 537428XXXXXX2695",
+    "receipt_total": 268.00,
+    "subtotal": 268.00,
+    "vat_included": true,
+    "receipt_number": "0000370396P2",
+    "reference_number": "7697204",
+    "pos": "E067700002A1432",
+    "tid": "21013876",
+    "trace": "001995",
+    "rrn": "5000528018930689"
+  },
+  "items": [],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 0.00,
+    "expected_total": 268.00,
+    "discrepancy": 268.00
+  },
+  "notes": [
+    "ТРЕБУЕТСЯ ВИЗУАЛЬНАЯ ПРОВЕРКА",
+    "OCR текст частично нечитаем (тайские названия товаров)",
+    "Итого из OCR: 268.00 THB (подтверждено)",
+    "Много товаров, но названия плохо распознаны",
+    "Видимые цены в OCR: 38.00, 32.00, 32.00, 20.00, 20.00, 22.00, 16.00, 100.00 (4 x 25.00), 1.00, 5.00, 22.00",
+    "Необходимо визуально восстановить полный список товаров для checksum = 0.00"
+  ]
+}

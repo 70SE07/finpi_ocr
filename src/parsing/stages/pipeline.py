@@ -202,6 +202,7 @@ class ParsingPipeline:
                 total=item.total,
                 date=datetime.combine(metadata.receipt_date, datetime.min.time()) 
                      if metadata.receipt_date else None,
+                raw_text=item.raw_text,
             ))
         
         return RawReceiptDTO(

@@ -1,0 +1,45 @@
+{
+  "id": "066",
+  "source_file": "photo/photo_2_th/IMG_2468.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "CP AXTRA",
+    "branch": "(5055)",
+    "address": null,
+    "tax_id": "0107567000414",
+    "phone": "03-252-6071"
+  },
+  "metadata": {
+    "date": "06/10/2025",
+    "time": "16:20",
+    "currency": "THB",
+    "payment_method": "VISA 444111XXXXXX0014",
+    "receipt_total": 1088.25,
+    "subtotal": 1088.25,
+    "vat_included": true,
+    "receipt_number": "05055 001 2001 8603",
+    "pos": "E067700002A2162"
+  },
+  "items": [
+    {
+      "raw_name": "LT DISNEY",
+      "quantity": 2,
+      "unit_price": 9.00,
+      "total_price": 18.00
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 18.00,
+    "expected_total": 1088.25,
+    "discrepancy": 1070.25
+  },
+  "notes": [
+    "ТРЕБУЕТСЯ ВИЗУАЛЬНАЯ ПРОВЕРКА",
+    "OCR текст частично нечитаем (тайские названия товаров)",
+    "Итого из OCR: 1088.25 THB (подтверждено)",
+    "Видимые товары: LT DISNEY (2 x 9.00 = 18.00)",
+    "Много других товаров с тайскими названиями, которые плохо распознаны",
+    "Необходимо визуально восстановить полный список товаров для checksum = 0.00"
+  ]
+}

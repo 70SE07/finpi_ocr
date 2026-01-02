@@ -1,0 +1,30 @@
+# ЦКП: Специфичные настройки для магазинов ALDI SÜD / ALDI NORD
+# Наследует всё из de_DE/parsing.yaml, переопределяет списки.
+
+# 1. Ключевые слова общего итога ($replace = полная замена списка)
+total_keywords:
+  - "$replace"
+  - summe
+  - zahlbetrag
+  - betrag
+
+# 2. Мусорные слова (расширение списка)
+skip_keywords:
+  - "pfandrecht"
+  - "telefon"
+  - "fax"
+  - "e-mail"
+  - "ohne gewähr"
+  - "es gelten"
+  - "nährwerte"
+  - "je 100 g"
+  - "k-u-n"
+
+# 3. Y-Threshold для разделения строк (важно для плотных чеков)
+line_split_y_threshold: 8
+
+# 4. Systemic Configuration (Advanced Parsing Features)
+# NOTE: ConfigLoader expects flat structure, mapping these to SemanticConfig internally
+allow_joined_prices: true            # Разрешить цены без разделителя (Olivenol6,95)
+clean_outliers_strategy: "deep_prefix" # Включить глубокую очистку (923.39 -> 3.39)
+name_buffer_size: 5                  # Увеличенный буфер для колоночной верстки

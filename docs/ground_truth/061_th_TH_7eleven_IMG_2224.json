@@ -1,0 +1,50 @@
+{
+  "id": "061",
+  "source_file": "photo/photo_2_th/IMG_2224.jpeg",
+  "locale": "th_TH",
+  "store": {
+    "name": "7-Eleven",
+    "branch": "2727",
+    "address": "234/1 a."
+  },
+  "metadata": {
+    "date": "08/09/2025",
+    "time": null,
+    "currency": "THB",
+    "payment_method": null,
+    "receipt_total": 540.00,
+    "subtotal": 540.00,
+    "vat": 35.33,
+    "net": 504.67,
+    "receipt_number": "6809-BR878-00109",
+    "tax_id": "0107557000462",
+    "tax_id_2": "1320501336180",
+    "pos": "E067700002A0969"
+  },
+  "items": [
+    {
+      "raw_name": "TECHPRO USB-A to USB-C Cable 3A Super Fast Charge 1M. Titanlink Black TP-C07 EXP 14-09-2025",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 150.00
+    },
+    {
+      "raw_name": "TECHPRO Wall USB Charger 1 USB-A QC3.0/ 1 USB-C PD20W White TP-WC04 New TISI EXP 07-09-2026",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 390.00
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 540.00,
+    "expected_total": 540.00,
+    "discrepancy": 0.00
+  },
+  "notes": [
+    "English product names (electronics)",
+    "VAT shown separately: 35.33 THB",
+    "Net amount: 504.67 THB",
+    "Total: 540.00 THB"
+  ]
+}
