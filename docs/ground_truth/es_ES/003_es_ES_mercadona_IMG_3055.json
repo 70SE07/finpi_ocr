@@ -1,5 +1,5 @@
 {
-  "id": "059",
+  "id": "003",
   "source_file": "photo/GOODS/Mercadona/IMG_3055.jpeg",
   "locale": "es_ES",
   "store": {
@@ -16,28 +16,70 @@
     "receipt_number": "OP:1726681",
     "factura": "3064-010-013371",
     "receipt_total": 13.28,
-    "cash_given": 50.00,
+    "cash_given": 50.0,
     "change": 36.72,
     "tax_block": {
-      "4%": {"base": 9.93, "cuota": 0.40},
-      "10%": {"base": 0.95, "cuota": 0.10},
-      "21%": {"base": 1.57, "cuota": 0.33}
+      "4%": {
+        "base": 9.93,
+        "cuota": 0.4
+      },
+      "10%": {
+        "base": 0.95,
+        "cuota": 0.1
+      },
+      "21%": {
+        "base": 1.57,
+        "cuota": 0.33
+      }
     }
   },
   "items": [
-    {"raw_name": "ANTIOX FRUTAS ROJAS", "quantity": 1, "total_price": 1.75},
-    {"raw_name": "ZUMO TOMATE", "quantity": 1, "total_price": 1.05},
-    {"raw_name": "BOLSA PLASTICO", "quantity": 1, "total_price": 0.15},
-    {"raw_name": "TOMATE NEGRO BANDEJA", "quantity": 1, "total_price": 2.67},
-    {"raw_name": "PIMIENTO ROJO", "quantity": 0.674, "unit": "kg", "unit_price": 2.70, "total_price": 1.82},
-    {"raw_name": "PAPAYA", "quantity": 1.180, "unit": "kg", "unit_price": 4.95, "total_price": 5.84}
+    {
+      "raw_name": "ANTIOX FRUTAS ROJAS",
+      "quantity": 1,
+      "total_price": 1.75
+    },
+    {
+      "raw_name": "ZUMO TOMATE",
+      "quantity": 1,
+      "total_price": 1.05
+    },
+    {
+      "raw_name": "BOLSA PLASTICO",
+      "quantity": 1,
+      "total_price": 0.15
+    },
+    {
+      "raw_name": "TOMATE NEGRO BANDEJA",
+      "quantity": 1,
+      "total_price": 2.67
+    },
+    {
+      "raw_name": "PIMIENTO ROJO",
+      "quantity": 0.674,
+      "unit": "kg",
+      "unit_price": 2.7,
+      "total_price": 1.82
+    },
+    {
+      "raw_name": "PAPAYA",
+      "quantity": 1.18,
+      "unit": "kg",
+      "unit_price": 4.95,
+      "total_price": 5.84
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == TOTAL",
     "items_sum": 13.28,
     "expected_total": 13.28,
-    "change_check": {"cash": 50.00, "total": 13.28, "change": 36.72, "match": true},
-    "discrepancy": 0.00
+    "change_check": {
+      "cash": 50.0,
+      "total": 13.28,
+      "change": 36.72,
+      "match": true
+    },
+    "discrepancy": 0.0
   },
   "notes": [
     "НОВЫЙ МАГАЗИН - Mercadona (крупнейшая сеть Испании)",

@@ -1,5 +1,5 @@
 {
-  "id": "026",
+  "id": "011",
   "source_file": "photo/GOODS/DM/IMG_2727.jpeg",
   "locale": "de_DE",
   "store": {
@@ -15,21 +15,42 @@
     "payment_method": "KARTENZAHLUNG EUR",
     "receipt_number": "328755/12",
     "register": "D55F/1",
-    "receipt_total": 2.80,
+    "receipt_total": 2.8,
     "tax_block": {
-      "1": {"rate": "19%", "brutto": 2.80, "netto": 2.35, "mwst": 0.45}
+      "1": {
+        "rate": "19%",
+        "brutto": 2.8,
+        "netto": 2.35,
+        "mwst": 0.45
+      }
     }
   },
   "items": [
-    {"raw_name": "Copyservice", "quantity": 1, "total_price": 1.00, "tax_class": "1"},
-    {"raw_name": "Lemonaid Limette 330ml+0,25Pf", "quantity": 1, "total_price": 1.55, "tax_class": "1"},
-    {"raw_name": "Einwegpfand", "quantity": 1, "total_price": 0.25, "tax_class": "§1", "is_pfand": true}
+    {
+      "raw_name": "Copyservice",
+      "quantity": 1,
+      "total_price": 1.0,
+      "tax_class": "1"
+    },
+    {
+      "raw_name": "Lemonaid Limette 330ml+0,25Pf",
+      "quantity": 1,
+      "total_price": 1.55,
+      "tax_class": "1"
+    },
+    {
+      "raw_name": "Einwegpfand",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "§1",
+      "is_pfand": true
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME EUR",
-    "items_sum": 2.80,
-    "expected_total": 2.80,
-    "discrepancy": 0.00
+    "items_sum": 2.8,
+    "expected_total": 2.8,
+    "discrepancy": 0.0
   },
   "notes": [
     "Copyservice - service item",
@@ -38,4 +59,3 @@
     "§: Für diese Artikel werden keine Rabatte vergeben"
   ]
 }
-

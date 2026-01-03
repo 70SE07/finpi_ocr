@@ -1,5 +1,5 @@
 {
-  "id": "060",
+  "id": "009",
   "source_file": "photo/GOODS/Zabka/IMG_3034.jpeg",
   "locale": "pl_PL",
   "store": {
@@ -16,19 +16,44 @@
     "receipt_number": "23784",
     "receipt_total": 29.97,
     "tax_block": {
-      "A": {"rate": "23%", "base": 29.97, "tax": 5.60}
+      "A": {
+        "rate": "23%",
+        "base": 29.97,
+        "tax": 5.6
+      }
     }
   },
   "items": [
-    {"raw_name": "ESPRESSO 40ml GX-A", "quantity": 1, "unit": "szt", "unit_price": 4.99, "total_price": 4.99, "tax_class": "A"},
-    {"raw_name": "KAWA Z MLEKIEM 200ml GX-A", "quantity": 1, "unit": "szt", "unit_price": 4.99, "total_price": 4.99, "tax_class": "A"},
-    {"raw_name": "WKL TYT SIENNA-A", "quantity": 1, "unit": "szt", "unit_price": 19.99, "total_price": 19.99, "tax_class": "A"}
+    {
+      "raw_name": "ESPRESSO 40ml GX-A",
+      "quantity": 1,
+      "unit": "szt",
+      "unit_price": 4.99,
+      "total_price": 4.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "KAWA Z MLEKIEM 200ml GX-A",
+      "quantity": 1,
+      "unit": "szt",
+      "unit_price": 4.99,
+      "total_price": 4.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "WKL TYT SIENNA-A",
+      "quantity": 1,
+      "unit": "szt",
+      "unit_price": 19.99,
+      "total_price": 19.99,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMA PLN",
     "items_sum": 29.97,
     "expected_total": 29.97,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "НОВЫЙ МАГАЗИН - Żabka (крупнейшая сеть convenience в Польше)",

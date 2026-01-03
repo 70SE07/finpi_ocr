@@ -1,5 +1,5 @@
 {
-  "id": "050",
+  "id": "034",
   "source_file": "photo/GOODS/Lidl/IMG_3062.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,18 +14,40 @@
     "currency": "EUR",
     "payment_method": "Kreditkarte (MasterCard)",
     "tax_block": {
-      "A_7%": {"netto": 10.66, "mwst": 0.75, "brutto": 11.41},
-      "total": {"netto": 10.66, "mwst": 0.75, "brutto": 11.41}
+      "A_7%": {
+        "netto": 10.66,
+        "mwst": 0.75,
+        "brutto": 11.41
+      },
+      "total": {
+        "netto": 10.66,
+        "mwst": 0.75,
+        "brutto": 11.41
+      }
     }
   },
   "items": [
-    {"raw_name": "Schweinenackenbraten", "qty": 1, "unit_price": 11.03, "total_price": 11.03, "tax_class": "A", "weight_kg": 1.227, "price_per_kg": 8.99},
-    {"raw_name": "Brötchen Weizen", "qty": 2, "unit_price": 0.19, "total_price": 0.38, "tax_class": "A"}
+    {
+      "raw_name": "Schweinenackenbraten",
+      "qty": 1,
+      "unit_price": 11.03,
+      "total_price": 11.03,
+      "tax_class": "A",
+      "weight_kg": 1.227,
+      "price_per_kg": 8.99
+    },
+    {
+      "raw_name": "Brötchen Weizen",
+      "qty": 2,
+      "unit_price": 0.19,
+      "total_price": 0.38,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "items_sum": 11.41,
     "expected_total": 11.41,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Другой филиал - Heiden",
@@ -33,4 +55,3 @@
     "Минимальный чек - 2 позиции"
   ]
 }
-

@@ -1,5 +1,5 @@
 {
-  "id": "006",
+  "id": "001",
   "source_file": "data/input/cz_001.jpeg",
   "locale": "cs_CZ",
   "store": {
@@ -13,24 +13,106 @@
     "payment_method": "Cash",
     "receipt_total": 1135.78,
     "rounding": 0.22,
-    "amount_paid": 1136.00,
-    "cash_given": 1200.00,
-    "change": 64.00
+    "amount_paid": 1136.0,
+    "cash_given": 1200.0,
+    "change": 64.0
   },
   "items": [
-    {"raw_name": "ÚPRAVA DESEK/MATERIA", "quantity": 1, "unit_price": 20.00, "total_price": 20.00, "ean": "7144934"},
-    {"raw_name": "Papírová taška HORNB", "quantity": 1, "unit_price": 7.00, "total_price": 7.00, "ean": "8596140003596"},
-    {"raw_name": "Rouno zakrývací 1x 3", "quantity": 1, "unit_price": 95.00, "total_price": 95.00, "ean": "4013307334026"},
-    {"raw_name": "HYDROIZOLACE JEDNOSL", "quantity": 1, "unit_price": 575.00, "total_price": 575.00, "ean": "8595100133175"},
-    {"raw_name": "BUCK BÍLÉ vel. 10\"/X", "quantity": 2, "unit": "Pár", "unit_price": 22.00, "total_price": 44.00, "ean": "8592390065636"},
-    {"raw_name": "Sedlový úhelník s v", "quantity": 4, "unit_price": 21.00, "total_price": 84.00, "ean": "4004338329914"},
-    {"raw_name": "rohový úhelník pozin", "quantity": 4, "unit_price": 19.00, "total_price": 76.00, "ean": "4004338332853"},
-    {"raw_name": "STĚRKA VÍCEÚČELOVÁ P", "quantity": 2, "unit_price": 30.00, "total_price": 60.00, "ean": "8590804039105"},
-    {"raw_name": "Váleček malířský 12c", "quantity": 1, "unit_price": 59.00, "total_price": 59.00, "ean": "8595026063846"},
-    {"raw_name": "Nůž odlamovací 18mm", "quantity": 1, "unit_price": 23.00, "total_price": 23.00, "ean": "4013307322672"},
-    {"raw_name": "HÁK S METR ZÁVITEM z", "quantity": 0.020, "unit": "kg", "unit_price": 613.00, "total_price": 12.26, "ean": "8524"},
-    {"raw_name": "VRUT UNIV. ZH 4,5x20", "quantity": 0.099, "unit": "kg", "unit_price": 284.00, "total_price": 28.12, "ean": "9867"},
-    {"raw_name": "HŘEBÍK STAVEBNÍ ZH 1", "quantity": 0.246, "unit": "kg", "unit_price": 213.00, "total_price": 52.40, "ean": "6302"}
+    {
+      "raw_name": "ÚPRAVA DESEK/MATERIA",
+      "quantity": 1,
+      "unit_price": 20.0,
+      "total_price": 20.0,
+      "ean": "7144934"
+    },
+    {
+      "raw_name": "Papírová taška HORNB",
+      "quantity": 1,
+      "unit_price": 7.0,
+      "total_price": 7.0,
+      "ean": "8596140003596"
+    },
+    {
+      "raw_name": "Rouno zakrývací 1x 3",
+      "quantity": 1,
+      "unit_price": 95.0,
+      "total_price": 95.0,
+      "ean": "4013307334026"
+    },
+    {
+      "raw_name": "HYDROIZOLACE JEDNOSL",
+      "quantity": 1,
+      "unit_price": 575.0,
+      "total_price": 575.0,
+      "ean": "8595100133175"
+    },
+    {
+      "raw_name": "BUCK BÍLÉ vel. 10\"/X",
+      "quantity": 2,
+      "unit": "Pár",
+      "unit_price": 22.0,
+      "total_price": 44.0,
+      "ean": "8592390065636"
+    },
+    {
+      "raw_name": "Sedlový úhelník s v",
+      "quantity": 4,
+      "unit_price": 21.0,
+      "total_price": 84.0,
+      "ean": "4004338329914"
+    },
+    {
+      "raw_name": "rohový úhelník pozin",
+      "quantity": 4,
+      "unit_price": 19.0,
+      "total_price": 76.0,
+      "ean": "4004338332853"
+    },
+    {
+      "raw_name": "STĚRKA VÍCEÚČELOVÁ P",
+      "quantity": 2,
+      "unit_price": 30.0,
+      "total_price": 60.0,
+      "ean": "8590804039105"
+    },
+    {
+      "raw_name": "Váleček malířský 12c",
+      "quantity": 1,
+      "unit_price": 59.0,
+      "total_price": 59.0,
+      "ean": "8595026063846"
+    },
+    {
+      "raw_name": "Nůž odlamovací 18mm",
+      "quantity": 1,
+      "unit_price": 23.0,
+      "total_price": 23.0,
+      "ean": "4013307322672"
+    },
+    {
+      "raw_name": "HÁK S METR ZÁVITEM z",
+      "quantity": 0.02,
+      "unit": "kg",
+      "unit_price": 613.0,
+      "total_price": 12.26,
+      "ean": "8524"
+    },
+    {
+      "raw_name": "VRUT UNIV. ZH 4,5x20",
+      "quantity": 0.099,
+      "unit": "kg",
+      "unit_price": 284.0,
+      "total_price": 28.12,
+      "ean": "9867"
+    },
+    {
+      "raw_name": "HŘEBÍK STAVEBNÍ ZH 1",
+      "quantity": 0.246,
+      "unit": "kg",
+      "unit_price": 213.0,
+      "total_price": 52.4,
+      "ean": "6302"
+    }
   ],
   "notes": "Zaokrouhlení 0.22 CZK добавлено к сумме. К оплате 1136.00 CZK"
 }

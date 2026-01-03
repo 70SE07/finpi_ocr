@@ -1,5 +1,5 @@
 {
-  "id": "027",
+  "id": "012",
   "source_file": "photo/GOODS/Edeka/IMG_1331.jpeg",
   "locale": "de_DE",
   "store": {
@@ -17,18 +17,32 @@
     "posten": 2,
     "receipt_total": 16.12,
     "tax_block": {
-      "A": {"rate": "7%", "netto": 15.07, "mwst": 1.05, "umsatz": 16.12}
+      "A": {
+        "rate": "7%",
+        "netto": 15.07,
+        "mwst": 1.05,
+        "umsatz": 16.12
+      }
     }
   },
   "items": [
-    {"raw_name": "Beleg Frischfleisch + Geflüg", "quantity": 1, "total_price": 13.23},
-    {"raw_name": "Leerdamm.Delacreme", "quantity": 1, "total_price": 2.89, "tax_class": "A"}
+    {
+      "raw_name": "Beleg Frischfleisch + Geflüg",
+      "quantity": 1,
+      "total_price": 13.23
+    },
+    {
+      "raw_name": "Leerdamm.Delacreme",
+      "quantity": 1,
+      "total_price": 2.89,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME",
     "items_sum": 16.12,
     "expected_total": 16.12,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Posten: 2 - number of items",
@@ -36,4 +50,3 @@
     "All items tax A = 7%"
   ]
 }
-

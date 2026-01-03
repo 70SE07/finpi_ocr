@@ -1,5 +1,5 @@
 {
-  "id": "029",
+  "id": "014",
   "source_file": "photo/GOODS/Edeka/IMG_1896.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,26 +14,61 @@
     "posten": 5,
     "receipt_total": 8.81,
     "tax_block": {
-      "A": {"rate": "7%", "netto": 7.07, "mwst": 0.50, "umsatz": 7.57},
-      "B": {"rate": "19%", "netto": 1.04, "mwst": 0.20, "umsatz": 1.24}
+      "A": {
+        "rate": "7%",
+        "netto": 7.07,
+        "mwst": 0.5,
+        "umsatz": 7.57
+      },
+      "B": {
+        "rate": "19%",
+        "netto": 1.04,
+        "mwst": 0.2,
+        "umsatz": 1.24
+      }
     }
   },
   "items": [
-    {"raw_name": "Herz.M.Pfl.Tomaten", "quantity": 1, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Kikkom.Soja Sauce", "quantity": 1, "total_price": 2.59, "tax_class": "A"},
-    {"raw_name": "Red Bull 0,25l", "quantity": 1, "total_price": 0.99, "tax_class": "BW"},
-    {"raw_name": "Pfand", "quantity": 1, "total_price": 0.25, "tax_class": "+B", "is_pfand": true},
-    {"raw_name": "Sem.Sonnenbl.Kern.", "quantity": 1, "total_price": 1.99, "tax_class": "A"}
+    {
+      "raw_name": "Herz.M.Pfl.Tomaten",
+      "quantity": 1,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Kikkom.Soja Sauce",
+      "quantity": 1,
+      "total_price": 2.59,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Red Bull 0,25l",
+      "quantity": 1,
+      "total_price": 0.99,
+      "tax_class": "BW"
+    },
+    {
+      "raw_name": "Pfand",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "+B",
+      "is_pfand": true
+    },
+    {
+      "raw_name": "Sem.Sonnenbl.Kern.",
+      "quantity": 1,
+      "total_price": 1.99,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME",
     "items_sum": 8.81,
     "expected_total": 8.81,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Tax codes: A, BW, +B",
     "A = 7%, B = 19%"
   ]
 }
-

@@ -1,5 +1,5 @@
 {
-  "id": "078",
+  "id": "041",
   "source_file": "data/input/IMG_1252.jpeg",
   "locale": "de_DE",
   "store": {
@@ -20,19 +20,41 @@
     "receipt_number": "7723/011/00001",
     "receipt_total": 14.49,
     "tax_block": {
-      "A": {"rate": "19,00%", "netto": 10.08, "mwst": 1.92, "brutto": 12.00},
-      "B": {"rate": "7,00%", "netto": 2.33, "mwst": 0.16, "brutto": 2.49}
+      "A": {
+        "rate": "19,00%",
+        "netto": 10.08,
+        "mwst": 1.92,
+        "brutto": 12.0
+      },
+      "B": {
+        "rate": "7,00%",
+        "netto": 2.33,
+        "mwst": 0.16,
+        "brutto": 2.49
+      }
     }
   },
   "items": [
-    {"raw_name": "050999 RieslingQbATr11", "quantity": 1, "unit_price": null, "total_price": 12.00, "tax_class": "A"},
-    {"raw_name": "075035 Twix Xtra 75g", "quantity": 1, "unit_price": null, "total_price": 2.49, "tax_class": "B"}
+    {
+      "raw_name": "050999 RieslingQbATr11",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 12.0,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "075035 Twix Xtra 75g",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 2.49,
+      "tax_class": "B"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == Summe Brutto",
     "items_sum": 14.49,
     "expected_total": 14.49,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "SKU included in raw_name as written on receipt",

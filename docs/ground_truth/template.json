@@ -1,33 +1,40 @@
 {
-  "id": "XXX",
-  "source_file": "photo/GOODS/{Store}/{filename}",
+  "id": "001",
+  "source_file": "data/input/{image_name}.jpeg",
   "locale": "xx_XX",
   
   "store": {
-    "name": "",
-    "address": ""
+    "name": "Название магазина",
+    "address": "Адрес магазина",
+    "tax_id": "ИНН/Tax ID (опционально)"
   },
   
   "metadata": {
-    "date": "",
-    "time": "",
-    "currency": "",
-    "payment_method": "",
-    "receipt_total": 0.00,
-    "tax_block": {
-      "A": {"rate": "", "netto": 0.00, "mwst": 0.00, "brutto": 0.00},
-      "B": {"rate": "", "netto": 0.00, "mwst": 0.00, "brutto": 0.00}
-    }
+    "date": "DD.MM.YYYY",
+    "time": "HH:MM:SS",
+    "currency": "EUR",
+    "payment_method": "Cash/Card/etc",
+    "receipt_total": 0.00
   },
   
   "items": [
     {
-      "raw_name": "",
-      "quantity": null,
-      "unit": null,
-      "unit_price": null,
-      "total_price": 0.00,
-      "tax_class": ""
+      "raw_name": "Название товара КАК НА ЧЕКЕ",
+      "quantity": 1,
+      "unit_price": 10.00,
+      "total_price": 10.00
+    },
+    {
+      "raw_name": "Весовой товар",
+      "quantity": 0.500,
+      "unit": "kg",
+      "unit_price": 5.00,
+      "total_price": 2.50
+    },
+    {
+      "raw_name": "Скидка",
+      "total_price": -1.00,
+      "is_discount": true
     }
   ],
   
@@ -37,30 +44,7 @@
     "discrepancy": 0.00
   },
   
-  "observations": {
-    "critical": {
-      "decimal_separator": "",
-      "tax_class": {
-        "format": "",
-        "values": [],
-        "inverted": false
-      },
-      "date_format": ""
-    },
-    "important": {
-      "sku_present": false,
-      "sku_format": null,
-      "multiline_items": false,
-      "weighted_items": false,
-      "pfand_present": false,
-      "discounts_present": false,
-      "quantity_position": ""
-    },
-    "store_specific": {
-      "currency_symbol": "",
-      "has_categories": false,
-      "receipt_language": ""
-    },
-    "free_notes": []
-  }
+  "notes": [
+    "Любые заметки об особенностях чека"
+  ]
 }

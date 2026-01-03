@@ -1,5 +1,5 @@
 {
-  "id": "030",
+  "id": "015",
   "source_file": "photo/GOODS/Edeka/IMG_1931.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,29 +14,102 @@
     "posten": 14,
     "receipt_total": 34.02,
     "tax_block": {
-      "A": {"rate": "7%", "netto": 27.37, "mwst": 1.92, "umsatz": 29.29},
-      "B": {"rate": "19%", "netto": 3.97, "mwst": 0.76, "umsatz": 4.73}
+      "A": {
+        "rate": "7%",
+        "netto": 27.37,
+        "mwst": 1.92,
+        "umsatz": 29.29
+      },
+      "B": {
+        "rate": "19%",
+        "netto": 3.97,
+        "mwst": 0.76,
+        "umsatz": 4.73
+      }
     }
   },
   "items": [
-    {"raw_name": "Magnum Mandel", "quantity": 1, "total_price": 2.99, "tax_class": "AW"},
-    {"raw_name": "Mars Eisriegel", "quantity": 1, "total_price": 3.49, "tax_class": "A"},
-    {"raw_name": "Tena Lights Einl.", "quantity": 1, "total_price": 2.99, "tax_class": "B"},
-    {"raw_name": "Dov.Kondensm1", "quantity": 2, "unit_price": 2.09, "total_price": 4.18, "tax_class": "A"},
-    {"raw_name": "Dovg.Kondensm", "quantity": 2, "unit_price": 1.79, "total_price": 3.58, "tax_class": "A"},
-    {"raw_name": "Gille Haferfl.Geb.", "quantity": 1, "total_price": 1.69, "tax_class": "A"},
-    {"raw_name": "Raffaello", "quantity": 1, "total_price": 4.39, "tax_class": "A"},
-    {"raw_name": "Ald.Karam.Waffeln", "quantity": 1, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "MrB.Peanut Butter", "quantity": 1, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "G&G Gouda", "quantity": 1, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Xoxo Waterm.0,33l-", "quantity": 1, "total_price": 1.49, "tax_class": "B"},
-    {"raw_name": "Pfand", "quantity": 1, "total_price": 0.25, "tax_class": "+B", "is_pfand": true}
+    {
+      "raw_name": "Magnum Mandel",
+      "quantity": 1,
+      "total_price": 2.99,
+      "tax_class": "AW"
+    },
+    {
+      "raw_name": "Mars Eisriegel",
+      "quantity": 1,
+      "total_price": 3.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Tena Lights Einl.",
+      "quantity": 1,
+      "total_price": 2.99,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Dov.Kondensm1",
+      "quantity": 2,
+      "unit_price": 2.09,
+      "total_price": 4.18,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Dovg.Kondensm",
+      "quantity": 2,
+      "unit_price": 1.79,
+      "total_price": 3.58,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Gille Haferfl.Geb.",
+      "quantity": 1,
+      "total_price": 1.69,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Raffaello",
+      "quantity": 1,
+      "total_price": 4.39,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Ald.Karam.Waffeln",
+      "quantity": 1,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "MrB.Peanut Butter",
+      "quantity": 1,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "G&G Gouda",
+      "quantity": 1,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Xoxo Waterm.0,33l-",
+      "quantity": 1,
+      "total_price": 1.49,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "+B",
+      "is_pfand": true
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME",
     "items_sum": 34.02,
     "expected_total": 34.02,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Qty format: 2,09 € x 2 (price before qty!)",
@@ -44,4 +117,3 @@
     "Posten: 14"
   ]
 }
-

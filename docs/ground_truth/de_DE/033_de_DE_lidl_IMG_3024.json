@@ -1,5 +1,5 @@
 {
-  "id": "049",
+  "id": "033",
   "source_file": "photo/GOODS/Lidl/IMG_3024.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,18 +14,38 @@
     "currency": "EUR",
     "payment_method": "Kreditkarte (VISA)",
     "tax_block": {
-      "B_19%": {"netto": 21.84, "mwst": 4.15, "brutto": 25.99},
-      "total": {"netto": 21.84, "mwst": 4.15, "brutto": 25.99}
+      "B_19%": {
+        "netto": 21.84,
+        "mwst": 4.15,
+        "brutto": 25.99
+      },
+      "total": {
+        "netto": 21.84,
+        "mwst": 4.15,
+        "brutto": 25.99
+      }
     }
   },
   "items": [
-    {"raw_name": "Red Bull Energy", "qty": 1, "unit_price": 19.99, "total_price": 19.99, "tax_class": "B"},
-    {"raw_name": "Pfand 6,00 M", "qty": 1, "unit_price": 6.00, "total_price": 6.00, "tax_class": "B"}
+    {
+      "raw_name": "Red Bull Energy",
+      "qty": 1,
+      "unit_price": 19.99,
+      "total_price": 19.99,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 6,00 M",
+      "qty": 1,
+      "unit_price": 6.0,
+      "total_price": 6.0,
+      "tax_class": "B"
+    }
   ],
   "validation": {
     "items_sum": 25.99,
     "expected_total": 25.99,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Только Red Bull - большая упаковка",
@@ -33,4 +53,3 @@
     "Только категория B (19%)"
   ]
 }
-

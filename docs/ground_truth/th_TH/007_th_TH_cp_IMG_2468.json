@@ -1,5 +1,5 @@
 {
-  "id": "066",
+  "id": "007",
   "source_file": "photo/photo_2_th/IMG_2468.jpeg",
   "locale": "th_TH",
   "store": {
@@ -24,13 +24,13 @@
     {
       "raw_name": "LT DISNEY",
       "quantity": 2,
-      "unit_price": 9.00,
-      "total_price": 18.00
+      "unit_price": 9.0,
+      "total_price": 18.0
     }
   ],
   "validation": {
     "checksum_method": "SUM(items.total_price) == receipt_total",
-    "items_sum": 18.00,
+    "items_sum": 18.0,
     "expected_total": 1088.25,
     "discrepancy": 1070.25
   },

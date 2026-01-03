@@ -1,5 +1,5 @@
 {
-  "id": "067",
+  "id": "008",
   "source_file": "photo/photo_2_th/IMG_2469.jpeg",
   "locale": "th_TH",
   "store": {
@@ -14,9 +14,9 @@
     "time": "18:19:24",
     "currency": "THB",
     "payment_method": "Credit Card 530356XXXXXX9474",
-    "receipt_total": 309.00,
-    "subtotal": 311.00,
-    "total_discount": 2.00,
+    "receipt_total": 309.0,
+    "subtotal": 311.0,
+    "total_discount": 2.0,
     "amount_ex_vat": 288.79,
     "vat": 20.21,
     "vat_rate": 7,
@@ -30,44 +30,44 @@
       "raw_name": "1400000563588",
       "quantity": 1,
       "unit": "EA",
-      "unit_price": 35.00,
-      "total_price": 35.00
+      "unit_price": 35.0,
+      "total_price": 35.0
     },
     {
       "raw_name": "3000000003251 size 1",
       "quantity": 1,
       "unit": "EA",
-      "unit_price": 2.00,
-      "total_price": 2.00
+      "unit_price": 2.0,
+      "total_price": 2.0
     },
     {
       "raw_name": "1400000400357 003",
       "quantity": 1,
       "unit": "EA",
-      "unit_price": 219.00,
-      "total_price": 219.00
+      "unit_price": 219.0,
+      "total_price": 219.0
     },
     {
       "raw_name": "8888235008488 man Tui",
       "quantity": 1,
       "unit": "EA",
-      "unit_price": 55.00,
-      "total_price": 55.00
+      "unit_price": 55.0,
+      "total_price": 55.0
     }
   ],
   "discounts": [
     {
       "raw_name": "Plastic bag (Free)",
-      "total_price": -2.00,
+      "total_price": -2.0,
       "is_discount": true
     }
   ],
   "validation": {
     "checksum_method": "subtotal - discounts == receipt_total",
-    "subtotal": 311.00,
-    "discounts": 2.00,
-    "expected_total": 309.00,
-    "discrepancy": 0.00
+    "subtotal": 311.0,
+    "discounts": 2.0,
+    "expected_total": 309.0,
+    "discrepancy": 0.0
   },
   "notes": [
     "VAT 7% included",

@@ -1,5 +1,5 @@
 {
-  "id": "017",
+  "id": "006",
   "source_file": "photo/Еда вне дома/IMG_2034.jpeg",
   "locale": "de_DE",
   "store": {
@@ -21,18 +21,37 @@
     "employee": "Jennifer Selbach-Wirtz",
     "receipt_total": 5.85,
     "tax_block": {
-      "C": {"rate": "19%", "netto": 4.92, "mwst": 0.93, "brutto": 5.85}
+      "C": {
+        "rate": "19%",
+        "netto": 4.92,
+        "mwst": 0.93,
+        "brutto": 5.85
+      }
     }
   },
   "items": [
-    {"raw_name": "Cappuccino", "quantity": 1.00, "unit": "Stück", "unit_price": 3.20, "total_price": 3.20, "tax_class": "C"},
-    {"raw_name": "Kaffee Pott", "quantity": 1.00, "unit": "Stück", "unit_price": 2.65, "total_price": 2.65, "tax_class": "C"}
+    {
+      "raw_name": "Cappuccino",
+      "quantity": 1.0,
+      "unit": "Stück",
+      "unit_price": 3.2,
+      "total_price": 3.2,
+      "tax_class": "C"
+    },
+    {
+      "raw_name": "Kaffee Pott",
+      "quantity": 1.0,
+      "unit": "Stück",
+      "unit_price": 2.65,
+      "total_price": 2.65,
+      "tax_class": "C"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == Gesamtsumme",
     "items_sum": 5.85,
     "expected_total": 5.85,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Tax class C (not A/B) = 19%!",
@@ -42,4 +61,3 @@
     "Bakery/café - different format than retail"
   ]
 }
-

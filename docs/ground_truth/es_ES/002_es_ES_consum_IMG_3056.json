@@ -1,5 +1,5 @@
 {
-  "id": "025",
+  "id": "002",
   "source_file": "photo/GOODS/Consum/IMG_3056.jpeg",
   "locale": "es_ES",
   "store": {
@@ -17,37 +17,114 @@
     "receipt_number": "C:0650 07/000025",
     "employee": "PILAR",
     "receipt_total": 25.09,
-    "cash_given": 40.00,
+    "cash_given": 40.0,
     "change": 14.91,
     "tax_block": {
-      "10%": {"base": 5.35, "cuota": 0.54, "importe": 5.89},
-      "21%": {"base": 2.88, "cuota": 0.59, "importe": 3.47},
-      "4%": {"base": 15.14, "cuota": 0.59, "importe": 15.73}
+      "10%": {
+        "base": 5.35,
+        "cuota": 0.54,
+        "importe": 5.89
+      },
+      "21%": {
+        "base": 2.88,
+        "cuota": 0.59,
+        "importe": 3.47
+      },
+      "4%": {
+        "base": 15.14,
+        "cuota": 0.59,
+        "importe": 15.73
+      }
     }
   },
   "items": [
-    {"raw_name": "ZUMO R.EX. 500", "quantity": 1, "total_price": 3.69},
-    {"raw_name": "MANDARINA GRANEL", "quantity": null, "total_price": 0.68},
-    {"raw_name": "MANZANA ROYAL GALA", "quantity": 1, "total_price": 1.09},
-    {"raw_name": "MANGO", "quantity": 1, "total_price": 1.55},
-    {"raw_name": "LECHUGA ROMANA CON", "quantity": 1, "total_price": 1.15},
-    {"raw_name": "PAN ALTO CONTE.PROT", "quantity": null, "total_price": 1.89},
-    {"raw_name": "QU.GOUDA LON. 200GR", "quantity": 1, "total_price": 2.09},
-    {"raw_name": "CREMA Q.BRIE TRUFA", "quantity": null, "total_price": 1.75},
-    {"raw_name": "TIRAMISU 2X80 CONSU", "quantity": null, "total_price": 1.25},
-    {"raw_name": "G.CHOCO PAUSE MILKA", "quantity": 1, "total_price": 3.25},
-    {"raw_name": "MINI BURGER NEGRO", "quantity": 1, "total_price": 1.39},
-    {"raw_name": "SNATTS CON QUESO", "quantity": null, "total_price": 1.13},
-    {"raw_name": "PALITOS QUESO", "quantity": 1, "total_price": 0.71},
-    {"raw_name": "BURN PACK-4", "quantity": 1, "total_price": 3.32},
-    {"raw_name": "BOLSA COMPRA RECICL", "quantity": 1, "total_price": 0.15}
+    {
+      "raw_name": "ZUMO R.EX. 500",
+      "quantity": 1,
+      "total_price": 3.69
+    },
+    {
+      "raw_name": "MANDARINA GRANEL",
+      "quantity": null,
+      "total_price": 0.68
+    },
+    {
+      "raw_name": "MANZANA ROYAL GALA",
+      "quantity": 1,
+      "total_price": 1.09
+    },
+    {
+      "raw_name": "MANGO",
+      "quantity": 1,
+      "total_price": 1.55
+    },
+    {
+      "raw_name": "LECHUGA ROMANA CON",
+      "quantity": 1,
+      "total_price": 1.15
+    },
+    {
+      "raw_name": "PAN ALTO CONTE.PROT",
+      "quantity": null,
+      "total_price": 1.89
+    },
+    {
+      "raw_name": "QU.GOUDA LON. 200GR",
+      "quantity": 1,
+      "total_price": 2.09
+    },
+    {
+      "raw_name": "CREMA Q.BRIE TRUFA",
+      "quantity": null,
+      "total_price": 1.75
+    },
+    {
+      "raw_name": "TIRAMISU 2X80 CONSU",
+      "quantity": null,
+      "total_price": 1.25
+    },
+    {
+      "raw_name": "G.CHOCO PAUSE MILKA",
+      "quantity": 1,
+      "total_price": 3.25
+    },
+    {
+      "raw_name": "MINI BURGER NEGRO",
+      "quantity": 1,
+      "total_price": 1.39
+    },
+    {
+      "raw_name": "SNATTS CON QUESO",
+      "quantity": null,
+      "total_price": 1.13
+    },
+    {
+      "raw_name": "PALITOS QUESO",
+      "quantity": 1,
+      "total_price": 0.71
+    },
+    {
+      "raw_name": "BURN PACK-4",
+      "quantity": 1,
+      "total_price": 3.32
+    },
+    {
+      "raw_name": "BOLSA COMPRA RECICL",
+      "quantity": 1,
+      "total_price": 0.15
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == Total factura",
     "items_sum": 25.09,
     "expected_total": 25.09,
-    "change_check": {"cash": 40.00, "total": 25.09, "change": 14.91, "match": true},
-    "discrepancy": 0.00
+    "change_check": {
+      "cash": 40.0,
+      "total": 25.09,
+      "change": 14.91,
+      "match": true
+    },
+    "discrepancy": 0.0
   },
   "notes": [
     "FACTURA SIMPLIFICADA tax block",
@@ -57,4 +134,3 @@
     "Some items without qty (implicit 1)"
   ]
 }
-

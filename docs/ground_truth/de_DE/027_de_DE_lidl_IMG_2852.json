@@ -1,5 +1,5 @@
 {
-  "id": "043",
+  "id": "027",
   "source_file": "photo/GOODS/Lidl/IMG_2852.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,56 +14,302 @@
     "currency": "EUR",
     "payment_method": "Karte (girocard)",
     "tax_block": {
-      "A_7%": {"netto": 79.85, "mwst": 5.59, "brutto": 85.44},
-      "B_19%": {"netto": 17.10, "mwst": 3.25, "brutto": 20.35},
-      "total": {"netto": 96.95, "mwst": 8.84, "brutto": 105.79}
+      "A_7%": {
+        "netto": 79.85,
+        "mwst": 5.59,
+        "brutto": 85.44
+      },
+      "B_19%": {
+        "netto": 17.1,
+        "mwst": 3.25,
+        "brutto": 20.35
+      },
+      "total": {
+        "netto": 96.95,
+        "mwst": 8.84,
+        "brutto": 105.79
+      }
     },
     "savings": 1.84
   },
   "items": [
-    {"raw_name": "Banane lose", "qty": 1, "unit_price": 1.80, "total_price": 1.80, "tax_class": "A", "weight_kg": 1.398, "price_per_kg": 1.29},
-    {"raw_name": "Kartof.mehr.koch 2kg", "qty": 1, "unit_price": 1.59, "total_price": 1.59, "tax_class": "A"},
-    {"raw_name": "Paprika rot", "qty": 1, "unit_price": 1.59, "total_price": 1.59, "tax_class": "A"},
-    {"raw_name": "Bauerngurken", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Avocado", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Dattelcherrytomaten", "qty": 3, "unit_price": 1.89, "total_price": 5.67, "tax_class": "A"},
-    {"raw_name": "Gurken", "qty": 2, "unit_price": 0.89, "total_price": 1.78, "tax_class": "A"},
-    {"raw_name": "K.champignons", "qty": 1, "unit_price": 2.19, "total_price": 2.19, "tax_class": "A"},
-    {"raw_name": "Petersilie kraus", "qty": 1, "unit_price": 0.89, "total_price": 0.89, "tax_class": "A"},
-    {"raw_name": "Dill", "qty": 1, "unit_price": 1.59, "total_price": 1.59, "tax_class": "A"},
-    {"raw_name": "Fresh.BioGem.Franz.", "qty": 1, "unit_price": 2.49, "total_price": 2.49, "tax_class": "A"},
-    {"raw_name": "Bio Brechbohnen", "qty": 1, "unit_price": 2.69, "total_price": 2.69, "tax_class": "A"},
-    {"raw_name": "Butterkäse [OGT]", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.50, "total_price": -0.50, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Edamer Scheiben", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.50, "total_price": -0.50, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Gouda Scheiben", "qty": 1, "unit_price": 2.49, "total_price": 2.49, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.40, "total_price": -0.40, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Frischkäse Sahnige", "qty": 2, "unit_price": 1.69, "total_price": 3.38, "tax_class": "A"},
-    {"raw_name": "Speisequark 40%(OGT)", "qty": 2, "unit_price": 1.78, "total_price": 3.56, "tax_class": "A"},
-    {"raw_name": "Latte Macchiato", "qty": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "A"},
-    {"raw_name": "Pfand 0,25 7%EM", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "A"},
-    {"raw_name": "KaffeegetLatteMacch.", "qty": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "A"},
-    {"raw_name": "Pfand 0,25 7%EM", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "A"},
-    {"raw_name": "Ayran Joghurtgetränk", "qty": 1, "unit_price": 0.49, "total_price": 0.49, "tax_class": "A"},
-    {"raw_name": "Eier Freiland. XXL", "qty": 1, "unit_price": 3.99, "total_price": 3.99, "tax_class": "A"},
-    {"raw_name": "Eier Bodenhalt. 10er", "qty": 5, "unit_price": 3.39, "total_price": 16.95, "tax_class": "A"},
-    {"raw_name": "Sonnenmais", "qty": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "A"},
-    {"raw_name": "Wasser medium", "qty": 30, "unit_price": 0.29, "total_price": 8.70, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 EM", "qty": 30, "unit_price": 0.25, "total_price": 7.50, "tax_class": "B"},
-    {"raw_name": "Multivitaminsaft", "qty": 1, "unit_price": 2.15, "total_price": 2.15, "tax_class": "B"},
-    {"raw_name": "Red Bull Energy", "qty": 1, "unit_price": 1.75, "total_price": 1.75, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "B"},
-    {"raw_name": "Weizen Sandwi. Toast", "qty": 2, "unit_price": 1.09, "total_price": 2.18, "tax_class": "A"},
-    {"raw_name": "RABATT 20%", "qty": 1, "unit_price": -0.44, "total_price": -0.44, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Tortilla Wraps Weiz.", "qty": 2, "unit_price": 1.29, "total_price": 2.58, "tax_class": "A"},
-    {"raw_name": "Croissant Wien.", "qty": 4, "unit_price": 0.99, "total_price": 3.96, "tax_class": "A"},
-    {"raw_name": "Hähnchenbrustfilet", "qty": 1, "unit_price": 9.99, "total_price": 9.99, "tax_class": "A"}
+    {
+      "raw_name": "Banane lose",
+      "qty": 1,
+      "unit_price": 1.8,
+      "total_price": 1.8,
+      "tax_class": "A",
+      "weight_kg": 1.398,
+      "price_per_kg": 1.29
+    },
+    {
+      "raw_name": "Kartof.mehr.koch 2kg",
+      "qty": 1,
+      "unit_price": 1.59,
+      "total_price": 1.59,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Paprika rot",
+      "qty": 1,
+      "unit_price": 1.59,
+      "total_price": 1.59,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Bauerngurken",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Avocado",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Dattelcherrytomaten",
+      "qty": 3,
+      "unit_price": 1.89,
+      "total_price": 5.67,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Gurken",
+      "qty": 2,
+      "unit_price": 0.89,
+      "total_price": 1.78,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "K.champignons",
+      "qty": 1,
+      "unit_price": 2.19,
+      "total_price": 2.19,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Petersilie kraus",
+      "qty": 1,
+      "unit_price": 0.89,
+      "total_price": 0.89,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Dill",
+      "qty": 1,
+      "unit_price": 1.59,
+      "total_price": 1.59,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Fresh.BioGem.Franz.",
+      "qty": 1,
+      "unit_price": 2.49,
+      "total_price": 2.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Bio Brechbohnen",
+      "qty": 1,
+      "unit_price": 2.69,
+      "total_price": 2.69,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Butterkäse [OGT]",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.5,
+      "total_price": -0.5,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Edamer Scheiben",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.5,
+      "total_price": -0.5,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Gouda Scheiben",
+      "qty": 1,
+      "unit_price": 2.49,
+      "total_price": 2.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.4,
+      "total_price": -0.4,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Frischkäse Sahnige",
+      "qty": 2,
+      "unit_price": 1.69,
+      "total_price": 3.38,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Speisequark 40%(OGT)",
+      "qty": 2,
+      "unit_price": 1.78,
+      "total_price": 3.56,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Latte Macchiato",
+      "qty": 1,
+      "unit_price": 0.99,
+      "total_price": 0.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Pfand 0,25 7%EM",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "KaffeegetLatteMacch.",
+      "qty": 1,
+      "unit_price": 0.99,
+      "total_price": 0.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Pfand 0,25 7%EM",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Ayran Joghurtgetränk",
+      "qty": 1,
+      "unit_price": 0.49,
+      "total_price": 0.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Eier Freiland. XXL",
+      "qty": 1,
+      "unit_price": 3.99,
+      "total_price": 3.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Eier Bodenhalt. 10er",
+      "qty": 5,
+      "unit_price": 3.39,
+      "total_price": 16.95,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Sonnenmais",
+      "qty": 1,
+      "unit_price": 0.99,
+      "total_price": 0.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Wasser medium",
+      "qty": 30,
+      "unit_price": 0.29,
+      "total_price": 8.7,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 EM",
+      "qty": 30,
+      "unit_price": 0.25,
+      "total_price": 7.5,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Multivitaminsaft",
+      "qty": 1,
+      "unit_price": 2.15,
+      "total_price": 2.15,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Red Bull Energy",
+      "qty": 1,
+      "unit_price": 1.75,
+      "total_price": 1.75,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 M",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Weizen Sandwi. Toast",
+      "qty": 2,
+      "unit_price": 1.09,
+      "total_price": 2.18,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "RABATT 20%",
+      "qty": 1,
+      "unit_price": -0.44,
+      "total_price": -0.44,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Tortilla Wraps Weiz.",
+      "qty": 2,
+      "unit_price": 1.29,
+      "total_price": 2.58,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Croissant Wien.",
+      "qty": 4,
+      "unit_price": 0.99,
+      "total_price": 3.96,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Hähnchenbrustfilet",
+      "qty": 1,
+      "unit_price": 9.99,
+      "total_price": 9.99,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "items_sum": 105.79,
     "expected_total": 105.79,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Крупный продуктовый чек - 38 позиций",
@@ -72,4 +318,3 @@
     "Яйца: 5x10er Bodenhalt + 1x XXL Freiland"
   ]
 }
-

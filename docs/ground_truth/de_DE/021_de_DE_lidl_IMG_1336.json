@@ -1,5 +1,5 @@
 {
-  "id": "037",
+  "id": "021",
   "source_file": "photo/GOODS/Lidl/IMG_1336.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,42 +14,202 @@
     "currency": "EUR",
     "payment_method": "Karte (girocard)",
     "tax_block": {
-      "A_7%": {"netto": 86.46, "mwst": 6.05, "brutto": 92.51},
-      "B_19%": {"netto": 45.22, "mwst": 8.59, "brutto": 53.81},
-      "total": {"netto": 131.68, "mwst": 14.64, "brutto": 146.32}
+      "A_7%": {
+        "netto": 86.46,
+        "mwst": 6.05,
+        "brutto": 92.51
+      },
+      "B_19%": {
+        "netto": 45.22,
+        "mwst": 8.59,
+        "brutto": 53.81
+      },
+      "total": {
+        "netto": 131.68,
+        "mwst": 14.64,
+        "brutto": 146.32
+      }
     },
     "savings": 5.54
   },
   "items": [
-    {"raw_name": "Taschki Pelm.Schwein", "qty": 1, "unit_price": 6.99, "total_price": 6.99, "tax_class": "A"},
-    {"raw_name": "Langnese Magnum Mand", "qty": 1, "unit_price": 4.49, "total_price": 4.49, "tax_class": "A"},
-    {"raw_name": "Plombir Tutti Frutti", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Edamer Scheiben", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.50, "total_price": -0.50, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Butterkäse [OGT]", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Gouda in ScheibenXXL", "qty": 2, "unit_price": 4.29, "total_price": 8.58, "tax_class": "A"},
-    {"raw_name": "Frischkäse Sahnige", "qty": 4, "unit_price": 1.69, "total_price": 6.76, "tax_class": "A"},
-    {"raw_name": "Ayran Joghurtgetränk", "qty": 2, "unit_price": 0.49, "total_price": 0.98, "tax_class": "A"},
-    {"raw_name": "Wasser still", "qty": 24, "unit_price": 0.29, "total_price": 6.96, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 EM", "qty": 24, "unit_price": 0.25, "total_price": 6.00, "tax_class": "B"},
-    {"raw_name": "Jack Daniel's & Cola", "qty": 2, "unit_price": 2.99, "total_price": 5.98, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 M", "qty": 2, "unit_price": 0.25, "total_price": 0.50, "tax_class": "B"},
-    {"raw_name": "Croissant Wien.", "qty": 2, "unit_price": 0.99, "total_price": 1.98, "tax_class": "A"},
-    {"raw_name": "Lenor Unstoppa.Fresh", "qty": 1, "unit_price": 11.99, "total_price": 11.99, "tax_class": "B"},
-    {"raw_name": "Toilettenpapier XXL", "qty": 1, "unit_price": 6.39, "total_price": 6.39, "tax_class": "B"},
-    {"raw_name": "Persil Univer.Pulver", "qty": 1, "unit_price": 15.99, "total_price": 15.99, "tax_class": "B"},
-    {"raw_name": "Putenbrustfilet", "qty": 1, "unit_price": 9.29, "total_price": 9.29, "tax_class": "A"},
-    {"raw_name": "RABATT 20%", "qty": 1, "unit_price": -1.86, "total_price": -1.86, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Schinkengulasch QS", "qty": 4, "unit_price": 4.19, "total_price": 16.76, "tax_class": "A"},
-    {"raw_name": "Rabatt Gulasch", "qty": 1, "unit_price": -1.68, "total_price": -1.68, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Hackfleisch gem. XXL", "qty": 4, "unit_price": 6.99, "total_price": 27.96, "tax_class": "A"},
-    {"raw_name": "Putenbrustschnitzel", "qty": 1, "unit_price": 5.29, "total_price": 5.29, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -1.50, "total_price": -1.50, "tax_class": "A", "is_discount": true}
+    {
+      "raw_name": "Taschki Pelm.Schwein",
+      "qty": 1,
+      "unit_price": 6.99,
+      "total_price": 6.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Langnese Magnum Mand",
+      "qty": 1,
+      "unit_price": 4.49,
+      "total_price": 4.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Plombir Tutti Frutti",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Edamer Scheiben",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.5,
+      "total_price": -0.5,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Butterkäse [OGT]",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Gouda in ScheibenXXL",
+      "qty": 2,
+      "unit_price": 4.29,
+      "total_price": 8.58,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Frischkäse Sahnige",
+      "qty": 4,
+      "unit_price": 1.69,
+      "total_price": 6.76,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Ayran Joghurtgetränk",
+      "qty": 2,
+      "unit_price": 0.49,
+      "total_price": 0.98,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Wasser still",
+      "qty": 24,
+      "unit_price": 0.29,
+      "total_price": 6.96,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 EM",
+      "qty": 24,
+      "unit_price": 0.25,
+      "total_price": 6.0,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Jack Daniel's & Cola",
+      "qty": 2,
+      "unit_price": 2.99,
+      "total_price": 5.98,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 M",
+      "qty": 2,
+      "unit_price": 0.25,
+      "total_price": 0.5,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Croissant Wien.",
+      "qty": 2,
+      "unit_price": 0.99,
+      "total_price": 1.98,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Lenor Unstoppa.Fresh",
+      "qty": 1,
+      "unit_price": 11.99,
+      "total_price": 11.99,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Toilettenpapier XXL",
+      "qty": 1,
+      "unit_price": 6.39,
+      "total_price": 6.39,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Persil Univer.Pulver",
+      "qty": 1,
+      "unit_price": 15.99,
+      "total_price": 15.99,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Putenbrustfilet",
+      "qty": 1,
+      "unit_price": 9.29,
+      "total_price": 9.29,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "RABATT 20%",
+      "qty": 1,
+      "unit_price": -1.86,
+      "total_price": -1.86,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Schinkengulasch QS",
+      "qty": 4,
+      "unit_price": 4.19,
+      "total_price": 16.76,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Rabatt Gulasch",
+      "qty": 1,
+      "unit_price": -1.68,
+      "total_price": -1.68,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Hackfleisch gem. XXL",
+      "qty": 4,
+      "unit_price": 6.99,
+      "total_price": 27.96,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Putenbrustschnitzel",
+      "qty": 1,
+      "unit_price": 5.29,
+      "total_price": 5.29,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -1.5,
+      "total_price": -1.5,
+      "tax_class": "A",
+      "is_discount": true
+    }
   ],
   "validation": {
     "items_sum": 146.32,
     "expected_total": 146.32,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Крупный чек с 24 позициями",
@@ -58,4 +218,3 @@
     "Мясо: Putenbrustfilet, Schinkengulasch, Hackfleisch, Putenbrustschnitzel"
   ]
 }
-

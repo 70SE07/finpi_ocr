@@ -1,5 +1,5 @@
 {
-  "id": "011",
+  "id": "002",
   "source_file": "data/input/PL_002.jpeg",
   "locale": "pl_PL",
   "store": {
@@ -18,20 +18,52 @@
     "receipt_number": "270400/0851",
     "receipt_total": 200.97,
     "tax_block": {
-      "A": {"rate": "23%", "base": 200.97, "tax": 37.58}
+      "A": {
+        "rate": "23%",
+        "base": 200.97,
+        "tax": 37.58
+      }
     }
   },
   "items": [
-    {"raw_name": "TORBA PAPIEROWA", "sku": "H7177-XXX-ONE", "quantity": 1, "unit_price": 1.00, "total_price": 1.00, "tax_class": "A"},
-    {"raw_name": "KOSZULKA MĘSKA", "sku": "686AT-08X-XXL", "quantity": 1, "unit_price": 69.99, "total_price": 69.99, "tax_class": "A"},
-    {"raw_name": "KOSZULKA MĘSKA", "sku": "686AT-08X-XXL", "quantity": 1, "unit_price": 69.99, "total_price": 69.99, "tax_class": "A"},
-    {"raw_name": "KOSZULKA MĘSKA", "sku": "571FN-78X-XXL", "quantity": 1, "unit_price": 59.99, "total_price": 59.99, "tax_class": "A"}
+    {
+      "raw_name": "TORBA PAPIEROWA",
+      "sku": "H7177-XXX-ONE",
+      "quantity": 1,
+      "unit_price": 1.0,
+      "total_price": 1.0,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "KOSZULKA MĘSKA",
+      "sku": "686AT-08X-XXL",
+      "quantity": 1,
+      "unit_price": 69.99,
+      "total_price": 69.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "KOSZULKA MĘSKA",
+      "sku": "686AT-08X-XXL",
+      "quantity": 1,
+      "unit_price": 69.99,
+      "total_price": 69.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "KOSZULKA MĘSKA",
+      "sku": "571FN-78X-XXL",
+      "quantity": 1,
+      "unit_price": 59.99,
+      "total_price": 59.99,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMA PLN",
     "items_sum": 200.97,
     "expected_total": 200.97,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Clothing store receipt",
@@ -41,4 +73,3 @@
     "Format: sku name qty * price total tax"
   ]
 }
-

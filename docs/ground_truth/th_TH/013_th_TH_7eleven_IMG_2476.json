@@ -1,5 +1,5 @@
 {
-  "id": "073",
+  "id": "013",
   "source_file": "photo/photo_2_th/IMG_2476.jpeg",
   "locale": "th_TH",
   "store": {
@@ -15,9 +15,9 @@
     "time": "20:04",
     "currency": "THB",
     "payment_method": "VISA 444111XXXXXX0014",
-    "receipt_total": 227.00,
-    "subtotal": 231.00,
-    "total_discount": 4.00,
+    "receipt_total": 227.0,
+    "subtotal": 231.0,
+    "total_discount": 4.0,
     "vat_included": true,
     "receipt_number": "0000819312P3",
     "reference_number": "0958502",
@@ -31,41 +31,41 @@
     {
       "raw_name": "Lainala",
       "quantity": 2,
-      "unit_price": 45.00,
-      "total_price": 90.00
+      "unit_price": 45.0,
+      "total_price": 90.0
     },
     {
       "raw_name": "Lainala",
       "quantity": 1,
-      "unit_price": 39.00,
-      "total_price": 39.00
+      "unit_price": 39.0,
+      "total_price": 39.0
     },
     {
       "raw_name": "Ian 1.6",
       "quantity": 1,
-      "unit_price": 38.00,
-      "total_price": 38.00
+      "unit_price": 38.0,
+      "total_price": 38.0
     },
     {
       "raw_name": null,
       "quantity": 1,
-      "unit_price": 64.00,
-      "total_price": 64.00
+      "unit_price": 64.0,
+      "total_price": 64.0
     }
   ],
   "discounts": [
     {
       "raw_name": "Discount",
-      "total_price": -4.00,
+      "total_price": -4.0,
       "is_discount": true
     }
   ],
   "validation": {
     "checksum_method": "subtotal - discounts == receipt_total",
-    "subtotal": 231.00,
-    "discounts": 4.00,
-    "expected_total": 227.00,
-    "discrepancy": 0.00
+    "subtotal": 231.0,
+    "discounts": 4.0,
+    "expected_total": 227.0,
+    "discrepancy": 0.0
   },
   "notes": [
     "VAT included",

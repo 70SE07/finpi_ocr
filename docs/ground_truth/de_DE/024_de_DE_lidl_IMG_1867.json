@@ -1,5 +1,5 @@
 {
-  "id": "040",
+  "id": "024",
   "source_file": "photo/GOODS/Lidl/IMG_1867.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,25 +14,80 @@
     "currency": "EUR",
     "payment_method": "Karte (girocard)",
     "tax_block": {
-      "A_7%": {"netto": 21.87, "mwst": 1.53, "brutto": 23.40},
-      "B_19%": {"netto": 1.13, "mwst": 0.21, "brutto": 1.34},
-      "total": {"netto": 23.00, "mwst": 1.74, "brutto": 24.74}
+      "A_7%": {
+        "netto": 21.87,
+        "mwst": 1.53,
+        "brutto": 23.4
+      },
+      "B_19%": {
+        "netto": 1.13,
+        "mwst": 0.21,
+        "brutto": 1.34
+      },
+      "total": {
+        "netto": 23.0,
+        "mwst": 1.74,
+        "brutto": 24.74
+      }
     },
     "savings": 4.44
   },
   "items": [
-    {"raw_name": "Franzisk. Weißbier", "qty": 1, "unit_price": 1.09, "total_price": 1.09, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "B"},
-    {"raw_name": "Butter Croissants", "qty": 1, "unit_price": 1.39, "total_price": 1.39, "tax_class": "A"},
-    {"raw_name": "Farmer Cookie Triple", "qty": 1, "unit_price": 1.79, "total_price": 1.79, "tax_class": "A"},
-    {"raw_name": "Mandelhörnchen", "qty": 1, "unit_price": 2.49, "total_price": 2.49, "tax_class": "A"},
-    {"raw_name": "Bio Rindergulasch", "qty": 3, "unit_price": 7.39, "total_price": 22.17, "tax_class": "A"},
-    {"raw_name": "RABATT 20%", "qty": 1, "unit_price": -4.44, "total_price": -4.44, "tax_class": "A", "is_discount": true}
+    {
+      "raw_name": "Franzisk. Weißbier",
+      "qty": 1,
+      "unit_price": 1.09,
+      "total_price": 1.09,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 M",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Butter Croissants",
+      "qty": 1,
+      "unit_price": 1.39,
+      "total_price": 1.39,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Farmer Cookie Triple",
+      "qty": 1,
+      "unit_price": 1.79,
+      "total_price": 1.79,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Mandelhörnchen",
+      "qty": 1,
+      "unit_price": 2.49,
+      "total_price": 2.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Bio Rindergulasch",
+      "qty": 3,
+      "unit_price": 7.39,
+      "total_price": 22.17,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "RABATT 20%",
+      "qty": 1,
+      "unit_price": -4.44,
+      "total_price": -4.44,
+      "tax_class": "A",
+      "is_discount": true
+    }
   ],
   "validation": {
     "items_sum": 24.74,
     "expected_total": 24.74,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Bio Rindergulasch с 20% скидкой",
@@ -40,4 +95,3 @@
     "Выпечка: Croissants, Cookie, Mandelhörnchen"
   ]
 }
-

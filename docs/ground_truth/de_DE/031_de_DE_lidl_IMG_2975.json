@@ -1,5 +1,5 @@
 {
-  "id": "047",
+  "id": "031",
   "source_file": "photo/GOODS/Lidl/IMG_2975.jpeg",
   "locale": "de_DE",
   "store": {
@@ -13,22 +13,48 @@
     "receipt_total": 4.09,
     "currency": "EUR",
     "payment_method": "Bar (наличные)",
-    "given": 4.10,
+    "given": 4.1,
     "change": -0.01,
     "tax_block": {
-      "A_7%": {"netto": 3.82, "mwst": 0.27, "brutto": 4.09},
-      "total": {"netto": 3.82, "mwst": 0.27, "brutto": 4.09}
+      "A_7%": {
+        "netto": 3.82,
+        "mwst": 0.27,
+        "brutto": 4.09
+      },
+      "total": {
+        "netto": 3.82,
+        "mwst": 0.27,
+        "brutto": 4.09
+      }
     }
   },
   "items": [
-    {"raw_name": "Biol. Apfel rot 700g", "qty": 1, "unit_price": 2.59, "total_price": 2.59, "tax_class": "A"},
-    {"raw_name": "Proteinr.veg.Almond", "qty": 1, "unit_price": 0.75, "total_price": 0.75, "tax_class": "A"},
-    {"raw_name": "Proteinr.veg.Lemon", "qty": 1, "unit_price": 0.75, "total_price": 0.75, "tax_class": "A"}
+    {
+      "raw_name": "Biol. Apfel rot 700g",
+      "qty": 1,
+      "unit_price": 2.59,
+      "total_price": 2.59,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Proteinr.veg.Almond",
+      "qty": 1,
+      "unit_price": 0.75,
+      "total_price": 0.75,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Proteinr.veg.Lemon",
+      "qty": 1,
+      "unit_price": 0.75,
+      "total_price": 0.75,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "items_sum": 4.09,
     "expected_total": 4.09,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Минимальный чек - 3 позиции",
@@ -36,4 +62,3 @@
     "Bio Äpfel + протеиновые батончики"
   ]
 }
-

@@ -1,5 +1,5 @@
 {
-  "id": "075",
+  "id": "002",
   "source_file": "photo/photo_2_th/IMG_2504.jpeg",
   "locale": "tr_TR",
   "store": {
@@ -42,7 +42,7 @@
     "subtotal": 306.65,
     "vat": 30.66,
     "expected_total": 337.31,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Turkish receipt (airport)",

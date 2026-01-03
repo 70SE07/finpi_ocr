@@ -1,5 +1,5 @@
 {
-  "id": "042",
+  "id": "026",
   "source_file": "photo/GOODS/Lidl/IMG_2643.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,36 +14,161 @@
     "currency": "EUR",
     "payment_method": "Karte (girocard)",
     "tax_block": {
-      "A_7%": {"netto": 30.19, "mwst": 2.11, "brutto": 32.30},
-      "B_19%": {"netto": 10.51, "mwst": 2.00, "brutto": 12.51},
-      "total": {"netto": 40.70, "mwst": 4.11, "brutto": 44.81}
+      "A_7%": {
+        "netto": 30.19,
+        "mwst": 2.11,
+        "brutto": 32.3
+      },
+      "B_19%": {
+        "netto": 10.51,
+        "mwst": 2.0,
+        "brutto": 12.51
+      },
+      "total": {
+        "netto": 40.7,
+        "mwst": 4.11,
+        "brutto": 44.81
+      }
     },
-    "savings": 3.40
+    "savings": 3.4
   },
   "items": [
-    {"raw_name": "WassereisWass.melone", "qty": 1, "unit_price": 1.99, "total_price": 1.99, "tax_class": "A"},
-    {"raw_name": "Magnum DoubleCherry", "qty": 1, "unit_price": 3.99, "total_price": 3.99, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -1.20, "total_price": -1.20, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Butterkäse [OGT]", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.50, "total_price": -0.50, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Gouda in ScheibenXXL", "qty": 1, "unit_price": 4.29, "total_price": 4.29, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.70, "total_price": -0.70, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Tilsiter Scheiben", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.50, "total_price": -0.50, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Edamer Scheiben", "qty": 1, "unit_price": 2.99, "total_price": 2.99, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.50, "total_price": -0.50, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Frischkäse Sahnige", "qty": 2, "unit_price": 1.69, "total_price": 3.38, "tax_class": "A"},
-    {"raw_name": "H-Milch3,5% HF3", "qty": 12, "unit_price": 1.09, "total_price": 13.08, "tax_class": "A"},
-    {"raw_name": "Mineralwasser still", "qty": 18, "unit_price": 0.29, "total_price": 5.22, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 EM", "qty": 18, "unit_price": 0.25, "total_price": 4.50, "tax_class": "B"},
-    {"raw_name": "Schwammtuch 5er", "qty": 1, "unit_price": 0.85, "total_price": 0.85, "tax_class": "B"},
-    {"raw_name": "Edelstahltopfreinig.", "qty": 1, "unit_price": 0.99, "total_price": 0.99, "tax_class": "B"},
-    {"raw_name": "GSM Konzentrat gelb", "qty": 1, "unit_price": 0.95, "total_price": 0.95, "tax_class": "B"}
+    {
+      "raw_name": "WassereisWass.melone",
+      "qty": 1,
+      "unit_price": 1.99,
+      "total_price": 1.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Magnum DoubleCherry",
+      "qty": 1,
+      "unit_price": 3.99,
+      "total_price": 3.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -1.2,
+      "total_price": -1.2,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Butterkäse [OGT]",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.5,
+      "total_price": -0.5,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Gouda in ScheibenXXL",
+      "qty": 1,
+      "unit_price": 4.29,
+      "total_price": 4.29,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.7,
+      "total_price": -0.7,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Tilsiter Scheiben",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.5,
+      "total_price": -0.5,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Edamer Scheiben",
+      "qty": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.5,
+      "total_price": -0.5,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Frischkäse Sahnige",
+      "qty": 2,
+      "unit_price": 1.69,
+      "total_price": 3.38,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "H-Milch3,5% HF3",
+      "qty": 12,
+      "unit_price": 1.09,
+      "total_price": 13.08,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Mineralwasser still",
+      "qty": 18,
+      "unit_price": 0.29,
+      "total_price": 5.22,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 EM",
+      "qty": 18,
+      "unit_price": 0.25,
+      "total_price": 4.5,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Schwammtuch 5er",
+      "qty": 1,
+      "unit_price": 0.85,
+      "total_price": 0.85,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Edelstahltopfreinig.",
+      "qty": 1,
+      "unit_price": 0.99,
+      "total_price": 0.99,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "GSM Konzentrat gelb",
+      "qty": 1,
+      "unit_price": 0.95,
+      "total_price": 0.95,
+      "tax_class": "B"
+    }
   ],
   "validation": {
     "items_sum": 44.81,
     "expected_total": 44.81,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Много молочки со скидками",
@@ -51,4 +176,3 @@
     "5 скидок Preisvorteil на сыры"
   ]
 }
-

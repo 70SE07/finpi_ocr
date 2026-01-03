@@ -1,5 +1,5 @@
 {
-  "id": "057",
+  "id": "039",
   "source_file": "photo/GOODS/Hit/IMG_3088.jpeg",
   "locale": "de_DE",
   "store": {
@@ -17,20 +17,61 @@
     "items_count": 4,
     "receipt_total": 21.46,
     "tax_block": {
-      "B": {"rate": "7%", "netto": 20.05, "mwst": 1.40, "brutto": 21.46}
+      "B": {
+        "rate": "7%",
+        "netto": 20.05,
+        "mwst": 1.4,
+        "brutto": 21.46
+      }
     }
   },
   "items": [
-    {"raw_name": "Petersilie kraus", "sku": "(033)", "quantity": null, "unit_price": null, "total_price": 0.99, "tax_class": "B", "category": "OBST & GEMÜSE"},
-    {"raw_name": "Happy Mix", "sku": "(035)", "quantity": null, "unit_price": null, "total_price": 16.99, "tax_class": "B", "category": "LEBENSMITTEL", "note": "* EH (EatHappy - nicht rabattfähig)"},
-    {"raw_name": "Coraya Surimi", "sku": "(762)", "quantity": null, "unit_price": null, "total_price": 1.49, "tax_class": "B", "category": "GEKÜHLTE LEBENSMITTEL", "is_fresh": true, "is_discount": true, "discount_label": "*** Discount Preis ***"},
-    {"raw_name": "Eier M Bodenhalt", "sku": "(602)", "quantity": null, "unit_price": null, "total_price": 1.99, "tax_class": "B", "category": "GEKÜHLTE LEBENSMITTEL"}
+    {
+      "raw_name": "Petersilie kraus",
+      "sku": "(033)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 0.99,
+      "tax_class": "B",
+      "category": "OBST & GEMÜSE"
+    },
+    {
+      "raw_name": "Happy Mix",
+      "sku": "(035)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 16.99,
+      "tax_class": "B",
+      "category": "LEBENSMITTEL",
+      "note": "* EH (EatHappy - nicht rabattfähig)"
+    },
+    {
+      "raw_name": "Coraya Surimi",
+      "sku": "(762)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 1.49,
+      "tax_class": "B",
+      "category": "GEKÜHLTE LEBENSMITTEL",
+      "is_fresh": true,
+      "is_discount": true,
+      "discount_label": "*** Discount Preis ***"
+    },
+    {
+      "raw_name": "Eier M Bodenhalt",
+      "sku": "(602)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 1.99,
+      "tax_class": "B",
+      "category": "GEKÜHLTE LEBENSMITTEL"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME[4]",
     "items_sum": 21.46,
     "expected_total": 21.46,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Categories: OBST & GEMÜSE, LEBENSMITTEL, GEKÜHLTE LEBENSMITTEL",

@@ -71,18 +71,42 @@ sum(item.total_price for item in items) == receipt_total
 
 ### Шаг 4: Создать JSON файл
 
+**Структура папок:**
+
+```
+docs/ground_truth/
+├── de_DE/
+│   ├── 001_de_DE_lidl_IMG_1292.json
+│   ├── 002_de_DE_dm_IMG_1252.json
+│   └── ...
+├── cs_CZ/
+│   ├── 001_cs_CZ_hornbach_IMG_001.json
+│   └── ...
+├── th_TH/
+│   ├── 001_th_TH_7eleven_IMG_2461.json
+│   └── ...
+└── ...
+```
+
 **Формат имени файла:**
 ```
 {ID}_{locale}_{store}_{image_name}.json
 ```
 
-Пример: `006_cs_CZ_hornbach_cz_001.json`
+**Правила нумерации ID:**
+- ID — это порядковый номер ВНУТРИ папки локали (001, 002, 003...)
+- Каждая локаль начинается с 001
+- Перед созданием нового файла — посмотри какой последний ID в папке локали
+
+**Пример:** Для чешского чека смотрим папку `cs_CZ/`:
+- Если там уже есть `001_cs_CZ_hornbach_IMG_001.json`
+- Следующий файл будет `002_cs_CZ_...`
 
 **Структура JSON:**
 
 ```json
 {
-  "id": "006",
+  "id": "001",
   "source_file": "data/input/cz_001.jpeg",
   "locale": "cs_CZ",
   "store": {
@@ -104,6 +128,10 @@ sum(item.total_price for item in items) == receipt_total
   ]
 }
 ```
+
+**ВАЖНО:** Поле `"id"` должно совпадать с номером в имени файла!
+- Файл: `001_cs_CZ_hornbach_IMG_001.json` → `"id": "001"`
+- Файл: `042_de_DE_sbtankstelle_IMG_1352.json` → `"id": "042"`
 
 ### Шаг 5: Верификация
 
@@ -288,8 +316,19 @@ raw_name = ТОЧНАЯ КОПИЯ текста с чека
 ## Путь сохранения
 
 ```
-docs/ground_truth/{ID}_{locale}_{store}_{image_name}.json
+docs/ground_truth/{locale}/{ID}_{locale}_{store}_{image_name}.json
 ```
+
+**Примеры:**
+- `docs/ground_truth/de_DE/008_de_DE_aldi_IMG_1724.json`
+- `docs/ground_truth/cs_CZ/001_cs_CZ_hornbach_IMG_001.json`
+- `docs/ground_truth/th_TH/001_th_TH_7eleven_IMG_2461.json`
+
+**Алгоритм определения ID для нового файла:**
+1. Определи локаль чека (de_DE, cs_CZ, th_TH, etc.)
+2. Загляни в папку `docs/ground_truth/{locale}/`
+3. Найди файл с максимальным ID
+4. Новый ID = max + 1 (с ведущими нулями: 001, 002, 042...)
 
 ---
 

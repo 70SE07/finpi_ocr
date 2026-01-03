@@ -1,5 +1,5 @@
 {
-  "id": "022",
+  "id": "005",
   "source_file": "photo/GOODS/Carrefour/IMG_3047.jpeg",
   "locale": "pl_PL",
   "store": {
@@ -16,18 +16,36 @@
     "receipt_number": "1566118/2090",
     "receipt_total": 18.98,
     "tax_block": {
-      "A": {"rate": "23%", "base": 18.98, "tax": 3.55}
+      "A": {
+        "rate": "23%",
+        "base": 18.98,
+        "tax": 3.55
+      }
     }
   },
   "items": [
-    {"raw_name": "A_KOMBUCHA CUDO 500", "quantity": 1, "unit": "szt", "unit_price": 14.99, "total_price": 14.99, "tax_class": "A"},
-    {"raw_name": "A_MC PAP TOAL NAWIL", "quantity": 1, "unit": "szt", "unit_price": 3.99, "total_price": 3.99, "tax_class": "A"}
+    {
+      "raw_name": "A_KOMBUCHA CUDO 500",
+      "quantity": 1,
+      "unit": "szt",
+      "unit_price": 14.99,
+      "total_price": 14.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "A_MC PAP TOAL NAWIL",
+      "quantity": 1,
+      "unit": "szt",
+      "unit_price": 3.99,
+      "total_price": 3.99,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMA PLN",
     "items_sum": 18.98,
     "expected_total": 18.98,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "2 items receipt",
@@ -35,4 +53,3 @@
     "Format: 1szt*14,99= 14,99 A"
   ]
 }
-

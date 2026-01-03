@@ -1,5 +1,5 @@
 {
-  "id": "038",
+  "id": "022",
   "source_file": "photo/GOODS/Lidl/IMG_1442.jpeg",
   "locale": "de_DE",
   "store": {
@@ -10,45 +10,198 @@
   "metadata": {
     "date": "2025-08-18",
     "time": "16:32",
-    "receipt_total": 65.40,
+    "receipt_total": 65.4,
     "currency": "EUR",
     "payment_method": "Kreditkarte (VISA)",
     "tax_block": {
-      "A_7%": {"netto": 37.05, "mwst": 2.59, "brutto": 39.64},
-      "B_19%": {"netto": 21.65, "mwst": 4.11, "brutto": 25.76},
-      "total": {"netto": 58.70, "mwst": 6.70, "brutto": 65.40}
+      "A_7%": {
+        "netto": 37.05,
+        "mwst": 2.59,
+        "brutto": 39.64
+      },
+      "B_19%": {
+        "netto": 21.65,
+        "mwst": 4.11,
+        "brutto": 25.76
+      },
+      "total": {
+        "netto": 58.7,
+        "mwst": 6.7,
+        "brutto": 65.4
+      }
     },
     "savings": 4.94
   },
   "items": [
-    {"raw_name": "Bioland Zwiebeln", "qty": 1, "unit_price": 2.15, "total_price": 2.15, "tax_class": "A"},
-    {"raw_name": "Knoblauch", "qty": 1, "unit_price": 1.11, "total_price": 1.11, "tax_class": "A"},
-    {"raw_name": "Preisvorteil", "qty": 1, "unit_price": -0.12, "total_price": -0.12, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Ayran Joghurtgetränk", "qty": 1, "unit_price": 1.49, "total_price": 1.49, "tax_class": "A"},
-    {"raw_name": "Kefir 1,5%", "qty": 12, "unit_price": 0.89, "total_price": 10.68, "tax_class": "A"},
-    {"raw_name": "Gouda in ScheibenXXL", "qty": 1, "unit_price": 4.29, "total_price": 4.29, "tax_class": "A"},
-    {"raw_name": "Wasser still", "qty": 12, "unit_price": 0.29, "total_price": 3.48, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 EM", "qty": 12, "unit_price": 0.25, "total_price": 3.00, "tax_class": "B"},
-    {"raw_name": "Fanta Exotic", "qty": 1, "unit_price": 0.80, "total_price": 0.80, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "B"},
-    {"raw_name": "Coca Cola Zero", "qty": 1, "unit_price": 0.80, "total_price": 0.80, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "B"},
-    {"raw_name": "Mezzo Mix", "qty": 1, "unit_price": 0.80, "total_price": 0.80, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "B"},
-    {"raw_name": "Coca Cola 1,25l", "qty": 1, "unit_price": 1.59, "total_price": 1.59, "tax_class": "B"},
-    {"raw_name": "Pfand 0,25 M", "qty": 1, "unit_price": 0.25, "total_price": 0.25, "tax_class": "B"},
-    {"raw_name": "Capri-Sun Multi", "qty": 1, "unit_price": 4.29, "total_price": 4.29, "tax_class": "B"},
-    {"raw_name": "Buttertoast", "qty": 1, "unit_price": 0.79, "total_price": 0.79, "tax_class": "A"},
-    {"raw_name": "Marlboro Gold 0", "qty": 1, "unit_price": 10.00, "total_price": 10.00, "tax_class": "B"},
-    {"raw_name": "Rindergulasch", "qty": 2, "unit_price": 7.39, "total_price": 14.78, "tax_class": "A"},
-    {"raw_name": "RABATT 20%", "qty": 1, "unit_price": -2.96, "total_price": -2.96, "tax_class": "A", "is_discount": true},
-    {"raw_name": "Hähnchen-Mini-Steaks", "qty": 1, "unit_price": 9.29, "total_price": 9.29, "tax_class": "A"},
-    {"raw_name": "RABATT 20%", "qty": 1, "unit_price": -1.86, "total_price": -1.86, "tax_class": "A", "is_discount": true}
+    {
+      "raw_name": "Bioland Zwiebeln",
+      "qty": 1,
+      "unit_price": 2.15,
+      "total_price": 2.15,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Knoblauch",
+      "qty": 1,
+      "unit_price": 1.11,
+      "total_price": 1.11,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Preisvorteil",
+      "qty": 1,
+      "unit_price": -0.12,
+      "total_price": -0.12,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Ayran Joghurtgetränk",
+      "qty": 1,
+      "unit_price": 1.49,
+      "total_price": 1.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Kefir 1,5%",
+      "qty": 12,
+      "unit_price": 0.89,
+      "total_price": 10.68,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Gouda in ScheibenXXL",
+      "qty": 1,
+      "unit_price": 4.29,
+      "total_price": 4.29,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Wasser still",
+      "qty": 12,
+      "unit_price": 0.29,
+      "total_price": 3.48,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 EM",
+      "qty": 12,
+      "unit_price": 0.25,
+      "total_price": 3.0,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Fanta Exotic",
+      "qty": 1,
+      "unit_price": 0.8,
+      "total_price": 0.8,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 M",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Coca Cola Zero",
+      "qty": 1,
+      "unit_price": 0.8,
+      "total_price": 0.8,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 M",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Mezzo Mix",
+      "qty": 1,
+      "unit_price": 0.8,
+      "total_price": 0.8,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 M",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Coca Cola 1,25l",
+      "qty": 1,
+      "unit_price": 1.59,
+      "total_price": 1.59,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand 0,25 M",
+      "qty": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Capri-Sun Multi",
+      "qty": 1,
+      "unit_price": 4.29,
+      "total_price": 4.29,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Buttertoast",
+      "qty": 1,
+      "unit_price": 0.79,
+      "total_price": 0.79,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Marlboro Gold 0",
+      "qty": 1,
+      "unit_price": 10.0,
+      "total_price": 10.0,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Rindergulasch",
+      "qty": 2,
+      "unit_price": 7.39,
+      "total_price": 14.78,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "RABATT 20%",
+      "qty": 1,
+      "unit_price": -2.96,
+      "total_price": -2.96,
+      "tax_class": "A",
+      "is_discount": true
+    },
+    {
+      "raw_name": "Hähnchen-Mini-Steaks",
+      "qty": 1,
+      "unit_price": 9.29,
+      "total_price": 9.29,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "RABATT 20%",
+      "qty": 1,
+      "unit_price": -1.86,
+      "total_price": -1.86,
+      "tax_class": "A",
+      "is_discount": true
+    }
   ],
   "validation": {
-    "items_sum": 65.40,
-    "expected_total": 65.40,
-    "discrepancy": 0.00
+    "items_sum": 65.4,
+    "expected_total": 65.4,
+    "discrepancy": 0.0
   },
   "notes": [
     "Сигареты Marlboro Gold",
@@ -57,4 +210,3 @@
     "Kefir 1,5% - 12 штук"
   ]
 }
-

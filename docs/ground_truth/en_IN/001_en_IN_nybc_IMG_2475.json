@@ -1,5 +1,5 @@
 {
-  "id": "009",
+  "id": "001",
   "source_file": "photo/Mumbai/IMG_2475.jpeg",
   "locale": "en_IN",
   "store": {
@@ -16,17 +16,29 @@
     "payment_method": "Card",
     "receipt_number": "NYBC02P122120969",
     "employee": "Vitesh Pawar",
-    "receipt_total": 450.00,
+    "receipt_total": 450.0,
     "subtotal": 428.57,
     "total_tax": 21.42
   },
   "items": [
-    {"raw_name": "Tex Mex Veg Bowl (M), Regular", "sku": "NYB023", "quantity": 1.00, "unit_price": 450.00, "total_price": 450.00}
+    {
+      "raw_name": "Tex Mex Veg Bowl (M), Regular",
+      "sku": "NYB023",
+      "quantity": 1.0,
+      "unit_price": 450.0,
+      "total_price": 450.0
+    }
   ],
   "tax_summary": {
     "taxable_value": 428.57,
-    "cgst": {"rate": 2.50, "amount": 10.71},
-    "sgst": {"rate": 2.50, "amount": 10.71},
+    "cgst": {
+      "rate": 2.5,
+      "amount": 10.71
+    },
+    "sgst": {
+      "rate": 2.5,
+      "amount": 10.71
+    },
     "total_gst": 21.42
   },
   "validation": {
@@ -34,7 +46,7 @@
     "subtotal": 428.57,
     "gst": 21.42,
     "calculated_total": 449.99,
-    "expected_total": 450.00,
+    "expected_total": 450.0,
     "discrepancy": 0.01,
     "note": "GST rounding - allowed 0.01 tolerance"
   },
@@ -47,4 +59,3 @@
     "SKU code: NYB023"
   ]
 }
-

@@ -1,5 +1,5 @@
 {
-  "id": "008",
+  "id": "001",
   "source_file": "data/input/TR_001.jpeg",
   "locale": "tr_TR",
   "store": {
@@ -18,23 +18,29 @@
     "payment_bank": "ZIRAATBANK",
     "card_last4": "9474",
     "receipt_number": "0290",
-    "receipt_total": 85.00,
+    "receipt_total": 85.0,
     "kdv_total": 7.73
   },
   "items": [
-    {"raw_name": "Su 0,5 ml", "quantity": 1, "unit_price": null, "total_price": 85.00, "tax_rate": 10}
+    {
+      "raw_name": "Su 0,5 ml",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 85.0,
+      "tax_rate": 10
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == TOPLAM",
-    "items_sum": 85.00,
-    "expected_total": 85.00,
+    "items_sum": 85.0,
+    "expected_total": 85.0,
     "kdv_check": {
       "base": 77.27,
       "kdv_10_percent": 7.73,
-      "total": 85.00,
+      "total": 85.0,
       "match": true
     },
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Simple receipt - only 1 item",
@@ -47,4 +53,3 @@
     "Double receipt (store + terminal)"
   ]
 }
-

@@ -1,5 +1,5 @@
 {
-  "id": "031",
+  "id": "016",
   "source_file": "photo/GOODS/Hit/IMG_1373.jpeg",
   "locale": "de_DE",
   "store": {
@@ -17,23 +17,77 @@
     "items_count": 3,
     "receipt_total": 107.12,
     "tax_block": {
-      "A": {"rate": "19%", "netto": 22.66, "mwst": 4.31, "brutto": 26.97},
-      "B": {"rate": "7%", "netto": 74.91, "mwst": 5.24, "brutto": 80.15}
+      "A": {
+        "rate": "19%",
+        "netto": 22.66,
+        "mwst": 4.31,
+        "brutto": 26.97
+      },
+      "B": {
+        "rate": "7%",
+        "netto": 74.91,
+        "mwst": 5.24,
+        "brutto": 80.15
+      }
     }
   },
   "items": [
-    {"raw_name": "Lammkarree fr.", "sku": "(399)", "total_price": 6.01, "tax_class": "B", "category": "Bedientheke", "is_fresh": true},
-    {"raw_name": "Spieße Kreta", "sku": "(945)", "total_price": 6.05, "tax_class": "B", "category": "Bedientheke", "is_fresh": true},
-    {"raw_name": "Schw.Nacken", "sku": "(527)", "total_price": 21.83, "tax_class": "B", "category": "Bedientheke", "is_fresh": true},
-    {"raw_name": "Filetspiess Jalap", "sku": "(189)", "total_price": 46.26, "tax_class": "B", "category": "Bedientheke", "is_fresh": true},
-    {"raw_name": "TawnyPortAlVarez", "sku": "(341)", "quantity": 2, "unit_price": 6.49, "total_price": 12.98, "tax_class": "A", "category": "WEIN/SPIRITUOSEN", "is_discount": true, "discount_label": "*** Discount Preis ***"},
-    {"raw_name": "Taylors Ruby Sel", "sku": "(536)", "total_price": 13.99, "tax_class": "A", "category": "WEIN/SPIRITUOSEN"}
+    {
+      "raw_name": "Lammkarree fr.",
+      "sku": "(399)",
+      "total_price": 6.01,
+      "tax_class": "B",
+      "category": "Bedientheke",
+      "is_fresh": true
+    },
+    {
+      "raw_name": "Spieße Kreta",
+      "sku": "(945)",
+      "total_price": 6.05,
+      "tax_class": "B",
+      "category": "Bedientheke",
+      "is_fresh": true
+    },
+    {
+      "raw_name": "Schw.Nacken",
+      "sku": "(527)",
+      "total_price": 21.83,
+      "tax_class": "B",
+      "category": "Bedientheke",
+      "is_fresh": true
+    },
+    {
+      "raw_name": "Filetspiess Jalap",
+      "sku": "(189)",
+      "total_price": 46.26,
+      "tax_class": "B",
+      "category": "Bedientheke",
+      "is_fresh": true
+    },
+    {
+      "raw_name": "TawnyPortAlVarez",
+      "sku": "(341)",
+      "quantity": 2,
+      "unit_price": 6.49,
+      "total_price": 12.98,
+      "tax_class": "A",
+      "category": "WEIN/SPIRITUOSEN",
+      "is_discount": true,
+      "discount_label": "*** Discount Preis ***"
+    },
+    {
+      "raw_name": "Taylors Ruby Sel",
+      "sku": "(536)",
+      "total_price": 13.99,
+      "tax_class": "A",
+      "category": "WEIN/SPIRITUOSEN"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME[3]",
     "items_sum": 107.12,
     "expected_total": 107.12,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "CATEGORIES on receipt: THEKE/SBHF, Bedientheke, WEIN/SPIRITUOSEN",
@@ -44,4 +98,3 @@
     "Tax INVERTED: A=19%, B=7%!"
   ]
 }
-

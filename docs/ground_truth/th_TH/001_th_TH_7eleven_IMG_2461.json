@@ -1,5 +1,5 @@
 {
-  "id": "002",
+  "id": "001",
   "source_file": "data/input/IMG_2461.jpeg",
   "locale": "th_TH",
   "store": {
@@ -14,30 +14,122 @@
     "payment_method": "Cash",
     "receipt_total": 758.25,
     "subtotal": 783.25,
-    "total_savings": 25.00,
-    "cash_given": 1000.00,
+    "total_savings": 25.0,
+    "cash_given": 1000.0,
     "change": 241.75,
     "vat_included": true
   },
   "items": [
-    {"raw_name": "โจ๊ก 1.45 ลิตร", "quantity": 1, "unit_price": 36.00, "total_price": 36.00},
-    {"raw_name": "ผัดมักกะโรนีไก่", "quantity": 3, "unit_price": 37.00, "total_price": 111.00},
-    {"raw_name": "ข้าวคลุกน้ำพริกลองเร", "quantity": 2, "unit_price": 49.00, "total_price": 98.00},
-    {"raw_name": "Hช็อกโกแอตลาวาเค้", "quantity": 1, "unit_price": 27.00, "total_price": 27.00},
-    {"raw_name": "Hแมพาสจเมจิ 450", "quantity": 1, "unit_price": 29.00, "total_price": 29.00},
-    {"raw_name": "Hแมพาสจเมจิ 450", "quantity": 1, "unit_price": 28.25, "total_price": 28.25},
-    {"raw_name": "แมเปร็ชวUHTต้นมืลล", "quantity": 1, "unit_price": 10.00, "total_price": 10.00},
-    {"raw_name": "เบอร์ดื้บาริสต้า เลท", "quantity": 1, "unit_price": 22.00, "total_price": 22.00},
-    {"raw_name": "Hแซนวิชปูล้ดไข่กุ้ง E", "quantity": 2, "unit_price": 27.00, "total_price": 54.00},
-    {"raw_name": "แถมรสสครอเบอร์รี่", "quantity": 1, "unit_price": 62.00, "total_price": 62.00},
-    {"raw_name": "Hเอส์คลาสสิครสชาว", "quantity": 1, "unit_price": 32.00, "total_price": 32.00},
-    {"raw_name": "ทริปเปิ้ลมาการองดับ", "quantity": 1, "unit_price": 45.00, "total_price": 45.00},
-    {"raw_name": "สเปร็ท์กันกุงเวปวันทุ", "quantity": 1, "unit_price": 89.00, "total_price": 89.00},
-    {"raw_name": "อมอิ้มลูปาจุ๊ปส์", "quantity": 3, "unit_price": 5.00, "total_price": 15.00},
-    {"raw_name": "Hเรคบูเล็กซ์ตร้าแค", "quantity": 1, "unit_price": 15.00, "total_price": 15.00},
-    {"raw_name": "Hโอรีโอ้ ไทท์ (เทค", "quantity": 1, "unit_price": 110.00, "total_price": 110.00},
-    {"raw_name": "ส่วนลดสเปร็ท์กันกุงเวปวันทุช", "quantity": 1, "unit_price": -20.00, "total_price": -20.00, "is_discount": true},
-    {"raw_name": "ส่วนลดโจ๊ก ค.", "quantity": 1, "unit_price": -5.00, "total_price": -5.00, "is_discount": true}
+    {
+      "raw_name": "โจ๊ก 1.45 ลิตร",
+      "quantity": 1,
+      "unit_price": 36.0,
+      "total_price": 36.0
+    },
+    {
+      "raw_name": "ผัดมักกะโรนีไก่",
+      "quantity": 3,
+      "unit_price": 37.0,
+      "total_price": 111.0
+    },
+    {
+      "raw_name": "ข้าวคลุกน้ำพริกลองเร",
+      "quantity": 2,
+      "unit_price": 49.0,
+      "total_price": 98.0
+    },
+    {
+      "raw_name": "Hช็อกโกแอตลาวาเค้",
+      "quantity": 1,
+      "unit_price": 27.0,
+      "total_price": 27.0
+    },
+    {
+      "raw_name": "Hแมพาสจเมจิ 450",
+      "quantity": 1,
+      "unit_price": 29.0,
+      "total_price": 29.0
+    },
+    {
+      "raw_name": "Hแมพาสจเมจิ 450",
+      "quantity": 1,
+      "unit_price": 28.25,
+      "total_price": 28.25
+    },
+    {
+      "raw_name": "แมเปร็ชวUHTต้นมืลล",
+      "quantity": 1,
+      "unit_price": 10.0,
+      "total_price": 10.0
+    },
+    {
+      "raw_name": "เบอร์ดื้บาริสต้า เลท",
+      "quantity": 1,
+      "unit_price": 22.0,
+      "total_price": 22.0
+    },
+    {
+      "raw_name": "Hแซนวิชปูล้ดไข่กุ้ง E",
+      "quantity": 2,
+      "unit_price": 27.0,
+      "total_price": 54.0
+    },
+    {
+      "raw_name": "แถมรสสครอเบอร์รี่",
+      "quantity": 1,
+      "unit_price": 62.0,
+      "total_price": 62.0
+    },
+    {
+      "raw_name": "Hเอส์คลาสสิครสชาว",
+      "quantity": 1,
+      "unit_price": 32.0,
+      "total_price": 32.0
+    },
+    {
+      "raw_name": "ทริปเปิ้ลมาการองดับ",
+      "quantity": 1,
+      "unit_price": 45.0,
+      "total_price": 45.0
+    },
+    {
+      "raw_name": "สเปร็ท์กันกุงเวปวันทุ",
+      "quantity": 1,
+      "unit_price": 89.0,
+      "total_price": 89.0
+    },
+    {
+      "raw_name": "อมอิ้มลูปาจุ๊ปส์",
+      "quantity": 3,
+      "unit_price": 5.0,
+      "total_price": 15.0
+    },
+    {
+      "raw_name": "Hเรคบูเล็กซ์ตร้าแค",
+      "quantity": 1,
+      "unit_price": 15.0,
+      "total_price": 15.0
+    },
+    {
+      "raw_name": "Hโอรีโอ้ ไทท์ (เทค",
+      "quantity": 1,
+      "unit_price": 110.0,
+      "total_price": 110.0
+    },
+    {
+      "raw_name": "ส่วนลดสเปร็ท์กันกุงเวปวันทุช",
+      "quantity": 1,
+      "unit_price": -20.0,
+      "total_price": -20.0,
+      "is_discount": true
+    },
+    {
+      "raw_name": "ส่วนลดโจ๊ก ค.",
+      "quantity": 1,
+      "unit_price": -5.0,
+      "total_price": -5.0,
+      "is_discount": true
+    }
   ],
   "notes": "แสตมป์ 1 บาท 2568 x9 и แสตมป์ 3 บาท 2568 x6 - марки по 0.00, не включены в items"
 }

@@ -1,5 +1,5 @@
 {
-  "id": "020",
+  "id": "009",
   "source_file": "data/input/Aldi/IMG_2529.jpeg",
   "locale": "de_DE",
   "store": {
@@ -13,19 +13,41 @@
     "payment_method": "Kartenzahlung girocard",
     "receipt_total": 10.17,
     "tax_block": {
-      "A": {"rate": "7%", "netto": 9.50, "mwst": 0.67}
+      "A": {
+        "rate": "7%",
+        "netto": 9.5,
+        "mwst": 0.67
+      }
     }
   },
   "items": [
-    {"raw_name": "Eier Bodenh. 18er", "sku": "715057", "quantity": 1, "total_price": 3.39, "tax_class": "A"},
-    {"raw_name": "Eier Bodenh. 18er", "sku": "715057", "quantity": 1, "total_price": 3.39, "tax_class": "A"},
-    {"raw_name": "Eier Bodenh. 18er", "sku": "715057", "quantity": 1, "total_price": 3.39, "tax_class": "A"}
+    {
+      "raw_name": "Eier Bodenh. 18er",
+      "sku": "715057",
+      "quantity": 1,
+      "total_price": 3.39,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Eier Bodenh. 18er",
+      "sku": "715057",
+      "quantity": 1,
+      "total_price": 3.39,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Eier Bodenh. 18er",
+      "sku": "715057",
+      "quantity": 1,
+      "total_price": 3.39,
+      "tax_class": "A"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == Summe",
     "items_sum": 10.17,
     "expected_total": 10.17,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Simple receipt - 3 identical items",
@@ -33,4 +55,3 @@
     "SKU 715057 repeated"
   ]
 }
-

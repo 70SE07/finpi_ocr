@@ -1,5 +1,5 @@
 {
-  "id": "079",
+  "id": "042",
   "source_file": "data/input/IMG_1352.jpeg",
   "locale": "de_DE",
   "store": {
@@ -15,21 +15,56 @@
     "payment_method": "girocard (contactless)",
     "receipt_total": 23.74,
     "tax_block": {
-      "A": {"rate": "19%", "netto": 14.85, "mwst": 2.82, "brutto": 17.67},
-      "B": {"rate": "7%", "netto": 5.67, "mwst": 0.40, "brutto": 6.07}
+      "A": {
+        "rate": "19%",
+        "netto": 14.85,
+        "mwst": 2.82,
+        "brutto": 17.67
+      },
+      "B": {
+        "rate": "7%",
+        "netto": 5.67,
+        "mwst": 0.4,
+        "brutto": 6.07
+      }
     }
   },
   "items": [
-    {"raw_name": "DIESEL", "quantity": 11.79, "unit": "Liter", "unit_price": 1.499, "total_price": 17.67, "tax_class": "A"},
-    {"raw_name": "Ja Buttertoast 500g", "quantity": 1, "unit_price": 1.79, "total_price": 1.79, "tax_class": "B"},
-    {"raw_name": "Blumberg Schinkenwurst", "quantity": 1, "unit_price": 2.09, "total_price": 2.09, "tax_class": "B"},
-    {"raw_name": "Frischpack Gouda", "quantity": 1, "unit_price": 2.19, "total_price": 2.19, "tax_class": "B"}
+    {
+      "raw_name": "DIESEL",
+      "quantity": 11.79,
+      "unit": "Liter",
+      "unit_price": 1.499,
+      "total_price": 17.67,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Ja Buttertoast 500g",
+      "quantity": 1,
+      "unit_price": 1.79,
+      "total_price": 1.79,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Blumberg Schinkenwurst",
+      "quantity": 1,
+      "unit_price": 2.09,
+      "total_price": 2.09,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Frischpack Gouda",
+      "quantity": 1,
+      "unit_price": 2.19,
+      "total_price": 2.19,
+      "tax_class": "B"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items.total_price) == receipt_total",
     "items_sum": 23.74,
     "expected_total": 23.74,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Gas station receipt (SB-TANKSTELLE)",

@@ -1,5 +1,5 @@
 {
-  "id": "036",
+  "id": "007",
   "source_file": "photo/GOODS/Carrefour/IMG_3033.jpeg",
   "locale": "pl_PL",
   "store": {
@@ -19,7 +19,6 @@
   "note": "DUPLICATE of 010_pl_PL_carrefour_PL_001.json - same receipt",
   "duplicate_of": "010",
   "validation": {
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   }
 }
-

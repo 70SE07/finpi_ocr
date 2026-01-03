@@ -1,5 +1,5 @@
 {
-  "id": "055",
+  "id": "037",
   "source_file": "photo/GOODS/Hit/IMG_3007.jpeg",
   "locale": "de_DE",
   "store": {
@@ -17,21 +17,69 @@
     "items_count": 4,
     "receipt_total": 3.12,
     "tax_block": {
-      "A": {"rate": "19%", "netto": 0.96, "mwst": 0.18, "brutto": 1.14},
-      "B": {"rate": "7%", "netto": 1.85, "mwst": 0.13, "brutto": 1.98}
+      "A": {
+        "rate": "19%",
+        "netto": 0.96,
+        "mwst": 0.18,
+        "brutto": 1.14
+      },
+      "B": {
+        "rate": "7%",
+        "netto": 1.85,
+        "mwst": 0.13,
+        "brutto": 1.98
+      }
     }
   },
   "items": [
-    {"raw_name": "Mars Einzelriegel,T", "sku": "(592)", "quantity": null, "unit_price": null, "total_price": 0.99, "tax_class": "B", "category": "LEBENSMITTEL", "is_discount": true, "discount_label": "*** Discount Preis ***"},
-    {"raw_name": "Mars Einzelriege,Sn", "sku": "(505)", "quantity": null, "unit_price": null, "total_price": 0.99, "tax_class": "B", "category": "LEBENSMITTEL", "is_discount": true, "discount_label": "*** Discount Preis ***"},
-    {"raw_name": "Pepsi sleek Dose", "sku": "(091)", "quantity": null, "unit_price": null, "total_price": 0.89, "tax_class": "A", "category": "GETRÄNKE"},
-    {"raw_name": "Pfand 0,25", "sku": "(005)", "quantity": null, "unit_price": null, "total_price": 0.25, "tax_class": "A", "category": "PFAND/LEERGUT", "is_pfand": true, "note": "* nicht rabattfähig"}
+    {
+      "raw_name": "Mars Einzelriegel,T",
+      "sku": "(592)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 0.99,
+      "tax_class": "B",
+      "category": "LEBENSMITTEL",
+      "is_discount": true,
+      "discount_label": "*** Discount Preis ***"
+    },
+    {
+      "raw_name": "Mars Einzelriege,Sn",
+      "sku": "(505)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 0.99,
+      "tax_class": "B",
+      "category": "LEBENSMITTEL",
+      "is_discount": true,
+      "discount_label": "*** Discount Preis ***"
+    },
+    {
+      "raw_name": "Pepsi sleek Dose",
+      "sku": "(091)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 0.89,
+      "tax_class": "A",
+      "category": "GETRÄNKE"
+    },
+    {
+      "raw_name": "Pfand 0,25",
+      "sku": "(005)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 0.25,
+      "tax_class": "A",
+      "category": "PFAND/LEERGUT",
+      "is_pfand": true,
+      "note": "* nicht rabattfähig"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME[4]",
     "items_sum": 3.12,
     "expected_total": 3.12,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Categories: LEBENSMITTEL, GETRÄNKE, PFAND/LEERGUT",

@@ -1,5 +1,5 @@
 {
-  "id": "056",
+  "id": "038",
   "source_file": "photo/GOODS/Hit/IMG_3025.jpeg",
   "locale": "de_DE",
   "store": {
@@ -16,17 +16,30 @@
     "items_count": 1,
     "receipt_total": 13.99,
     "tax_block": {
-      "A": {"rate": "19%", "netto": 11.76, "mwst": 2.23, "brutto": 13.99}
+      "A": {
+        "rate": "19%",
+        "netto": 11.76,
+        "mwst": 2.23,
+        "brutto": 13.99
+      }
     }
   },
   "items": [
-    {"raw_name": "Taylors Ruby Sel", "sku": "(536)", "quantity": null, "unit_price": null, "total_price": 13.99, "tax_class": "A", "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"}
+    {
+      "raw_name": "Taylors Ruby Sel",
+      "sku": "(536)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 13.99,
+      "tax_class": "A",
+      "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME[1]",
     "items_sum": 13.99,
     "expected_total": 13.99,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Single item receipt",

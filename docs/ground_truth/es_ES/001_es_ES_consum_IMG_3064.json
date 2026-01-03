@@ -1,5 +1,5 @@
 {
-  "id": "003",
+  "id": "001",
   "source_file": "data/input/IMG_3064.jpeg",
   "locale": "es_ES",
   "store": {
@@ -15,27 +15,137 @@
     "receipt_total": 51.15
   },
   "items": [
-    {"raw_name": "TOMATE RAF ASURCAD", "quantity": 1, "unit_price": 1.06, "total_price": 1.06},
-    {"raw_name": "COMBIN. SETAS 200", "quantity": 1, "unit_price": 2.99, "total_price": 2.99},
-    {"raw_name": "BONIATO AL VAPOR", "quantity": 1, "unit_price": 1.99, "total_price": 1.99},
-    {"raw_name": "MAXI VAR.CONSUM 350", "quantity": 1, "unit_price": 1.99, "total_price": 1.99},
-    {"raw_name": "LECHUGA ROMANA CON", "quantity": 1, "unit_price": 1.15, "total_price": 1.15},
-    {"raw_name": "HIERBABUENA 20 GR", "quantity": 1, "unit_price": 1.25, "total_price": 1.25},
-    {"raw_name": "PICADA DE AJO Y PER", "quantity": 1, "unit_price": 1.49, "total_price": 1.49},
-    {"raw_name": "BAGUETTE 220 GR.", "quantity": 1, "unit_price": 0.58, "total_price": 0.58},
-    {"raw_name": "GAMBÓN GRANDE", "quantity": 0.580, "unit": "kg", "total_price": 7.51},
-    {"raw_name": "JAMON GR CONSUM 150", "quantity": 1, "unit_price": 2.99, "total_price": 2.99},
-    {"raw_name": "PALETA CEBO BOADAS", "quantity": 1, "unit_price": 5.65, "total_price": 5.65},
-    {"raw_name": "BAT.00% PROTE.CACAO", "quantity": 2, "unit_price": 1.75, "total_price": 3.50},
-    {"raw_name": "BAT.00% PROTE.VAINI", "quantity": 2, "unit_price": 1.75, "total_price": 3.50},
-    {"raw_name": "HUEVO CAMPERO L 10U", "quantity": 1, "unit_price": 3.78, "total_price": 3.78},
-    {"raw_name": "AC MANZ CONUM 210 G", "quantity": 1, "unit_price": 1.65, "total_price": 1.65},
-    {"raw_name": "ALCAPARRAS CONSUM80", "quantity": 1, "unit_price": 1.35, "total_price": 1.35},
-    {"raw_name": "PMTO PIQUI.CONSUM", "quantity": 1, "unit_price": 1.19, "total_price": 1.19},
-    {"raw_name": "SALSA C/SOJA HEINZ", "quantity": 1, "unit_price": 2.99, "total_price": 2.99},
-    {"raw_name": "CCOLA ZERO CHERRY", "quantity": 2, "unit_price": 0.92, "total_price": 1.84},
-    {"raw_name": "COCA-COLA ZERO 0,50", "quantity": 1, "unit_price": 1.15, "total_price": 1.15},
-    {"raw_name": "B.ENERG.BURN 0,50L", "quantity": 1, "unit_price": 1.25, "total_price": 1.25},
-    {"raw_name": "BOLSA COMPRA RECICL", "quantity": 2, "unit_price": 0.15, "total_price": 0.30}
+    {
+      "raw_name": "TOMATE RAF ASURCAD",
+      "quantity": 1,
+      "unit_price": 1.06,
+      "total_price": 1.06
+    },
+    {
+      "raw_name": "COMBIN. SETAS 200",
+      "quantity": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99
+    },
+    {
+      "raw_name": "BONIATO AL VAPOR",
+      "quantity": 1,
+      "unit_price": 1.99,
+      "total_price": 1.99
+    },
+    {
+      "raw_name": "MAXI VAR.CONSUM 350",
+      "quantity": 1,
+      "unit_price": 1.99,
+      "total_price": 1.99
+    },
+    {
+      "raw_name": "LECHUGA ROMANA CON",
+      "quantity": 1,
+      "unit_price": 1.15,
+      "total_price": 1.15
+    },
+    {
+      "raw_name": "HIERBABUENA 20 GR",
+      "quantity": 1,
+      "unit_price": 1.25,
+      "total_price": 1.25
+    },
+    {
+      "raw_name": "PICADA DE AJO Y PER",
+      "quantity": 1,
+      "unit_price": 1.49,
+      "total_price": 1.49
+    },
+    {
+      "raw_name": "BAGUETTE 220 GR.",
+      "quantity": 1,
+      "unit_price": 0.58,
+      "total_price": 0.58
+    },
+    {
+      "raw_name": "GAMBÓN GRANDE",
+      "quantity": 0.58,
+      "unit": "kg",
+      "total_price": 7.51
+    },
+    {
+      "raw_name": "JAMON GR CONSUM 150",
+      "quantity": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99
+    },
+    {
+      "raw_name": "PALETA CEBO BOADAS",
+      "quantity": 1,
+      "unit_price": 5.65,
+      "total_price": 5.65
+    },
+    {
+      "raw_name": "BAT.00% PROTE.CACAO",
+      "quantity": 2,
+      "unit_price": 1.75,
+      "total_price": 3.5
+    },
+    {
+      "raw_name": "BAT.00% PROTE.VAINI",
+      "quantity": 2,
+      "unit_price": 1.75,
+      "total_price": 3.5
+    },
+    {
+      "raw_name": "HUEVO CAMPERO L 10U",
+      "quantity": 1,
+      "unit_price": 3.78,
+      "total_price": 3.78
+    },
+    {
+      "raw_name": "AC MANZ CONUM 210 G",
+      "quantity": 1,
+      "unit_price": 1.65,
+      "total_price": 1.65
+    },
+    {
+      "raw_name": "ALCAPARRAS CONSUM80",
+      "quantity": 1,
+      "unit_price": 1.35,
+      "total_price": 1.35
+    },
+    {
+      "raw_name": "PMTO PIQUI.CONSUM",
+      "quantity": 1,
+      "unit_price": 1.19,
+      "total_price": 1.19
+    },
+    {
+      "raw_name": "SALSA C/SOJA HEINZ",
+      "quantity": 1,
+      "unit_price": 2.99,
+      "total_price": 2.99
+    },
+    {
+      "raw_name": "CCOLA ZERO CHERRY",
+      "quantity": 2,
+      "unit_price": 0.92,
+      "total_price": 1.84
+    },
+    {
+      "raw_name": "COCA-COLA ZERO 0,50",
+      "quantity": 1,
+      "unit_price": 1.15,
+      "total_price": 1.15
+    },
+    {
+      "raw_name": "B.ENERG.BURN 0,50L",
+      "quantity": 1,
+      "unit_price": 1.25,
+      "total_price": 1.25
+    },
+    {
+      "raw_name": "BOLSA COMPRA RECICL",
+      "quantity": 2,
+      "unit_price": 0.15,
+      "total_price": 0.3
+    }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "id": "034",
+  "id": "019",
   "source_file": "photo/GOODS/Hit/IMG_1982.jpeg",
   "locale": "de_DE",
   "store": {
@@ -12,29 +12,108 @@
     "currency": "EUR",
     "payment_method": "EC-Lastschrift",
     "items_count": 10,
-    "receipt_total": 52.10,
+    "receipt_total": 52.1,
     "tax_block": {
-      "A": {"rate": "19%", "netto": 2.97, "mwst": 0.56, "brutto": 3.53},
-      "B": {"rate": "7%", "netto": 45.39, "mwst": 3.18, "brutto": 48.57}
+      "A": {
+        "rate": "19%",
+        "netto": 2.97,
+        "mwst": 0.56,
+        "brutto": 3.53
+      },
+      "B": {
+        "rate": "7%",
+        "netto": 45.39,
+        "mwst": 3.18,
+        "brutto": 48.57
+      }
     }
   },
   "items": [
-    {"raw_name": "REWE Feinkostsau", "sku": "(226)", "total_price": 1.39, "tax_class": "B", "category": "LEBENSMITTEL"},
-    {"raw_name": "Cornichons", "sku": "(434)", "total_price": 2.49, "tax_class": "B", "category": "LEBENSMITTEL"},
-    {"raw_name": "Ültje Erdnüsse", "sku": "(504)", "total_price": 4.69, "tax_class": "B", "category": "LEBENSMITTEL", "is_discount": true, "discount_label": "*** Discount Preis ***"},
-    {"raw_name": "Beinscheibe mix", "sku": "(510)", "total_price": 21.73, "tax_class": "B", "category": "Bedientheke", "is_fresh": true},
-    {"raw_name": "Oliven o. Stein", "sku": "(202)", "total_price": 4.29, "tax_class": "B", "category": "GEKÜHLTE LEBENSMITTEL"},
-    {"raw_name": "Häagen-Dazs Belgian", "sku": "(716)", "total_price": 6.99, "tax_class": "B", "category": "TIEFKÜHLKOST"},
-    {"raw_name": "Häagen-Dazs Pint", "sku": "(713)", "total_price": 6.99, "tax_class": "B", "category": "TIEFKÜHLKOST"},
-    {"raw_name": "Coca-Cola", "sku": "(977)", "quantity": 2, "unit_price": 1.39, "total_price": 2.78, "tax_class": "A", "category": "GETRÄNKE"},
-    {"raw_name": "HIT Papiertraget", "sku": "(257)", "total_price": 0.25, "tax_class": "A", "category": "NON FOOD"},
-    {"raw_name": "Pfand 0,25", "sku": "(005)", "quantity": 2, "unit_price": 0.25, "total_price": 0.50, "tax_class": "A", "category": "PFAND/LEERGUT", "is_pfand": true, "note": "* nicht rabattfähig"}
+    {
+      "raw_name": "REWE Feinkostsau",
+      "sku": "(226)",
+      "total_price": 1.39,
+      "tax_class": "B",
+      "category": "LEBENSMITTEL"
+    },
+    {
+      "raw_name": "Cornichons",
+      "sku": "(434)",
+      "total_price": 2.49,
+      "tax_class": "B",
+      "category": "LEBENSMITTEL"
+    },
+    {
+      "raw_name": "Ültje Erdnüsse",
+      "sku": "(504)",
+      "total_price": 4.69,
+      "tax_class": "B",
+      "category": "LEBENSMITTEL",
+      "is_discount": true,
+      "discount_label": "*** Discount Preis ***"
+    },
+    {
+      "raw_name": "Beinscheibe mix",
+      "sku": "(510)",
+      "total_price": 21.73,
+      "tax_class": "B",
+      "category": "Bedientheke",
+      "is_fresh": true
+    },
+    {
+      "raw_name": "Oliven o. Stein",
+      "sku": "(202)",
+      "total_price": 4.29,
+      "tax_class": "B",
+      "category": "GEKÜHLTE LEBENSMITTEL"
+    },
+    {
+      "raw_name": "Häagen-Dazs Belgian",
+      "sku": "(716)",
+      "total_price": 6.99,
+      "tax_class": "B",
+      "category": "TIEFKÜHLKOST"
+    },
+    {
+      "raw_name": "Häagen-Dazs Pint",
+      "sku": "(713)",
+      "total_price": 6.99,
+      "tax_class": "B",
+      "category": "TIEFKÜHLKOST"
+    },
+    {
+      "raw_name": "Coca-Cola",
+      "sku": "(977)",
+      "quantity": 2,
+      "unit_price": 1.39,
+      "total_price": 2.78,
+      "tax_class": "A",
+      "category": "GETRÄNKE"
+    },
+    {
+      "raw_name": "HIT Papiertraget",
+      "sku": "(257)",
+      "total_price": 0.25,
+      "tax_class": "A",
+      "category": "NON FOOD"
+    },
+    {
+      "raw_name": "Pfand 0,25",
+      "sku": "(005)",
+      "quantity": 2,
+      "unit_price": 0.25,
+      "total_price": 0.5,
+      "tax_class": "A",
+      "category": "PFAND/LEERGUT",
+      "is_pfand": true,
+      "note": "* nicht rabattfähig"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME[10]",
-    "items_sum": 52.10,
-    "expected_total": 52.10,
-    "discrepancy": 0.00
+    "items_sum": 52.1,
+    "expected_total": 52.1,
+    "discrepancy": 0.0
   },
   "notes": [
     "ALL categories present: LEBENSMITTEL, Bedientheke, GEKÜHLTE LEBENSMITTEL, TIEFKÜHLKOST, GETRÄNKE, NON FOOD, PFAND/LEERGUT",
@@ -44,4 +123,3 @@
     "Tax A=19%, B=7% (inverted)"
   ]
 }
-

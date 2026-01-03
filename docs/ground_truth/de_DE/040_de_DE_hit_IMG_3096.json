@@ -1,5 +1,5 @@
 {
-  "id": "058",
+  "id": "040",
   "source_file": "photo/GOODS/Hit/IMG_3096.jpeg",
   "locale": "de_DE",
   "store": {
@@ -17,18 +17,41 @@
     "items_count": 1,
     "receipt_total": 19.49,
     "tax_block": {
-      "A": {"rate": "19%", "netto": 16.38, "mwst": 3.11, "brutto": 19.49}
+      "A": {
+        "rate": "19%",
+        "netto": 16.38,
+        "mwst": 3.11,
+        "brutto": 19.49
+      }
     }
   },
   "items": [
-    {"raw_name": "Ronco di Sassi Pr", "sku": "(621)", "quantity": null, "unit_price": null, "total_price": 19.99, "tax_class": "A", "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"},
-    {"raw_name": "Leergut 0,25", "sku": "(108)", "quantity": 2, "unit_price": -0.25, "total_price": -0.50, "tax_class": "A", "category": "PFAND/LEERGUT", "is_pfand": true, "note": "* nicht rabattfähig - Rückgabe"}
+    {
+      "raw_name": "Ronco di Sassi Pr",
+      "sku": "(621)",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": 19.99,
+      "tax_class": "A",
+      "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"
+    },
+    {
+      "raw_name": "Leergut 0,25",
+      "sku": "(108)",
+      "quantity": 2,
+      "unit_price": -0.25,
+      "total_price": -0.5,
+      "tax_class": "A",
+      "category": "PFAND/LEERGUT",
+      "is_pfand": true,
+      "note": "* nicht rabattfähig - Rückgabe"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME[1]",
     "items_sum": 19.49,
     "expected_total": 19.49,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Image rotated 90 degrees",

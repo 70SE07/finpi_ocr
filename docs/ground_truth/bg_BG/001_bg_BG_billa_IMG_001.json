@@ -1,5 +1,5 @@
 {
-  "id": "007",
+  "id": "001",
   "source_file": "data/input/BG_001.jpeg",
   "locale": "bg_BG",
   "store": {
@@ -18,30 +18,86 @@
     "receipt_total": 26.13,
     "receipt_total_eur": 13.36,
     "eur_rate": 1.95583,
-    "cash_given": 30.00,
+    "cash_given": 30.0,
     "change": 3.87,
-    "total_savings": 2.30,
+    "total_savings": 2.3,
     "items_count": 7
   },
   "items": [
-    {"raw_name": "ЯЙЦА L10 АКВИЛОН", "quantity": 1, "unit_price": null, "total_price": 4.99, "tax_class": "*Б"},
-    {"raw_name": "ОТСТ. СУПЕР ЦЕНА", "quantity": null, "unit_price": null, "total_price": -1.20, "tax_class": "*Б", "is_discount": true},
-    {"raw_name": "ПИЛЕШКИ ДОЛЕН БУТ", "quantity": 1, "unit_price": null, "total_price": 4.79, "tax_class": "*Б"},
-    {"raw_name": "БИСКВ. МИРАЖ БОРОВ.", "quantity": 1, "unit_price": null, "total_price": 3.39, "tax_class": "*Б"},
-    {"raw_name": "ОТСТЪПКА АКЦИЯ", "quantity": null, "unit_price": null, "total_price": -1.10, "tax_class": "*Б", "is_discount": true},
-    {"raw_name": "ПИЛЕШКИ ДОЛЕН БУТ", "quantity": 1, "unit_price": null, "total_price": 4.79, "tax_class": "*Б"},
-    {"raw_name": "КРЕО ТОН ФИЛЕ", "quantity": 1, "unit_price": null, "total_price": 3.09, "tax_class": "*Б"},
-    {"raw_name": "СКУМР. КОТЛЕТИ, Д. С", "quantity": 1, "unit_price": null, "total_price": 3.79, "tax_class": "*Б"},
-    {"raw_name": "BARILLA ЛИНГУИНИ", "quantity": 1, "unit_price": null, "total_price": 3.59, "tax_class": "*Б"}
+    {
+      "raw_name": "ЯЙЦА L10 АКВИЛОН",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 4.99,
+      "tax_class": "*Б"
+    },
+    {
+      "raw_name": "ОТСТ. СУПЕР ЦЕНА",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": -1.2,
+      "tax_class": "*Б",
+      "is_discount": true
+    },
+    {
+      "raw_name": "ПИЛЕШКИ ДОЛЕН БУТ",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 4.79,
+      "tax_class": "*Б"
+    },
+    {
+      "raw_name": "БИСКВ. МИРАЖ БОРОВ.",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 3.39,
+      "tax_class": "*Б"
+    },
+    {
+      "raw_name": "ОТСТЪПКА АКЦИЯ",
+      "quantity": null,
+      "unit_price": null,
+      "total_price": -1.1,
+      "tax_class": "*Б",
+      "is_discount": true
+    },
+    {
+      "raw_name": "ПИЛЕШКИ ДОЛЕН БУТ",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 4.79,
+      "tax_class": "*Б"
+    },
+    {
+      "raw_name": "КРЕО ТОН ФИЛЕ",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 3.09,
+      "tax_class": "*Б"
+    },
+    {
+      "raw_name": "СКУМР. КОТЛЕТИ, Д. С",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 3.79,
+      "tax_class": "*Б"
+    },
+    {
+      "raw_name": "BARILLA ЛИНГУИНИ",
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 3.59,
+      "tax_class": "*Б"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == ОБЩА СУМА",
     "items_sum": 26.13,
     "expected_total": 26.13,
-    "discrepancy": 0.00,
+    "discrepancy": 0.0,
     "savings_check": {
-      "discounts_sum": 2.30,
-      "ti_spesti": 2.30,
+      "discounts_sum": 2.3,
+      "ti_spesti": 2.3,
       "match": true
     }
   },
@@ -54,4 +110,3 @@
     "No qty/unit_price - only total_price"
   ]
 }
-

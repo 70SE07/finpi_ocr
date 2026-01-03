@@ -1,5 +1,5 @@
 {
-  "id": "033",
+  "id": "018",
   "source_file": "photo/GOODS/Hit/IMG_1453.jpeg",
   "locale": "de_DE",
   "store": {
@@ -14,17 +14,28 @@
     "items_count": 1,
     "receipt_total": 14.99,
     "tax_block": {
-      "A": {"rate": "19%", "netto": 12.60, "mwst": 2.39, "brutto": 14.99}
+      "A": {
+        "rate": "19%",
+        "netto": 12.6,
+        "mwst": 2.39,
+        "brutto": 14.99
+      }
     }
   },
   "items": [
-    {"raw_name": "J.Walker Red Lab", "sku": "(203)", "total_price": 14.99, "tax_class": "A", "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"}
+    {
+      "raw_name": "J.Walker Red Lab",
+      "sku": "(203)",
+      "total_price": 14.99,
+      "tax_class": "A",
+      "category": "WEIN/SPIRITUOSEN/SEKT/CHAMPA"
+    }
   ],
   "validation": {
     "checksum_method": "SUM(items) == SUMME[1]",
     "items_sum": 14.99,
     "expected_total": 14.99,
-    "discrepancy": 0.00
+    "discrepancy": 0.0
   },
   "notes": [
     "Single item: whiskey",
@@ -32,4 +43,3 @@
     "Tax A = 19% (alcohol)"
   ]
 }
-
