@@ -4,54 +4,34 @@
   "locale": "de_DE",
   "store": {
     "name": "ALDI SÜD",
-    "address": "Wiesenauel 1, 51491 Overath"
+    "address": "Wiesenauel 1, 51491 Overath",
+    "tax_id": "DE 813192189"
   },
   "metadata": {
     "date": "15.10.2025",
     "time": "13:01",
     "currency": "EUR",
     "payment_method": "Kartenzahlung girocard",
-    "receipt_total": 10.17,
-    "tax_block": {
-      "A": {
-        "rate": "7%",
-        "netto": 9.5,
-        "mwst": 0.67
-      }
-    }
+    "receipt_total": 10.17
   },
   "items": [
     {
       "raw_name": "Eier Bodenh. 18er",
-      "sku": "715057",
       "quantity": 1,
-      "total_price": 3.39,
-      "tax_class": "A"
+      "unit_price": 3.39,
+      "total_price": 3.39
     },
     {
       "raw_name": "Eier Bodenh. 18er",
-      "sku": "715057",
       "quantity": 1,
-      "total_price": 3.39,
-      "tax_class": "A"
+      "unit_price": 3.39,
+      "total_price": 3.39
     },
     {
       "raw_name": "Eier Bodenh. 18er",
-      "sku": "715057",
       "quantity": 1,
-      "total_price": 3.39,
-      "tax_class": "A"
+      "unit_price": 3.39,
+      "total_price": 3.39
     }
-  ],
-  "validation": {
-    "checksum_method": "SUM(items) == Summe",
-    "items_sum": 10.17,
-    "expected_total": 10.17,
-    "discrepancy": 0.0
-  },
-  "notes": [
-    "Simple receipt - 3 identical items",
-    "All items tax A = 7%",
-    "SKU 715057 repeated"
   ]
 }

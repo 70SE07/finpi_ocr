@@ -1,0 +1,25 @@
+{
+  "id": "044",
+  "source_file": "data/input/DM/IMG_2633.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "dm-drogerie markt",
+    "address": "Steinhofplatz 1, 51491 Overath",
+    "tax_id": "34092/30007"
+  },
+  "metadata": {
+    "date": "22.10.2025",
+    "time": "10:48",
+    "currency": "EUR",
+    "payment_method": "Kartenzahlung girocard",
+    "receipt_total": 1.00
+  },
+  "items": [
+    {
+      "raw_name": "Copyservice",
+      "quantity": 1,
+      "unit_price": 1.00,
+      "total_price": 1.00
+    }
+  ]
+}

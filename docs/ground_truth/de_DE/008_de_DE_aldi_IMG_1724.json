@@ -5,310 +5,245 @@
   "store": {
     "name": "ALDI SÜD",
     "address": "Wiesenauel 1, 51491 Overath",
-    "ust_id_nr": "DE 813192189",
-    "hours": "Mo - Sa: 8:00 Uhr - 20:00 Uhr",
-    "slogan": "ALDI SÜD - Gutes für alle."
+    "tax_id": "DE 813192189"
   },
   "metadata": {
     "date": "06.09.2025",
     "time": "16:39",
     "currency": "EUR",
     "payment_method": "Kartenzahlung girocard",
-    "receipt_total": 72.19,
-    "tax_block": {
-      "A": {
-        "rate": "7%",
-        "netto": 63.34,
-        "mwst": 4.43
-      },
-      "B": {
-        "rate": "19%",
-        "netto": 3.71,
-        "mwst": 0.71
-      }
-    }
+    "receipt_total": 72.19
   },
   "items": [
     {
       "raw_name": "Allzwecktragetasch",
-      "sku": "826945",
       "quantity": 1,
-      "total_price": 0.99,
-      "tax_class": "B"
+      "unit_price": 0.99,
+      "total_price": 0.99
     },
     {
       "raw_name": "Allzwecktragetasch",
-      "sku": "826945",
       "quantity": 1,
-      "total_price": 0.99,
-      "tax_class": "B"
+      "unit_price": 0.99,
+      "total_price": 0.99
     },
     {
       "raw_name": "Zucker - Raffinade",
-      "sku": "2938",
       "quantity": 1,
-      "total_price": 0.89,
-      "tax_class": "A"
+      "unit_price": 0.89,
+      "total_price": 0.89
     },
     {
       "raw_name": "Gouda 400g",
-      "sku": "728573",
       "quantity": 1,
-      "total_price": 2.99,
-      "tax_class": "A"
+      "unit_price": 2.99,
+      "total_price": 2.99
     },
     {
       "raw_name": "Gouda 400g",
-      "sku": "728573",
       "quantity": 1,
-      "total_price": 2.99,
-      "tax_class": "A"
+      "unit_price": 2.99,
+      "total_price": 2.99
     },
     {
       "raw_name": "Gewürzmühle",
-      "sku": "834128",
       "quantity": 1,
-      "total_price": 0.99,
-      "tax_class": "A"
+      "unit_price": 0.99,
+      "total_price": 0.99
     },
     {
       "raw_name": "Pfannengemüse 750g",
-      "sku": "839397",
       "quantity": 1,
-      "total_price": 1.99,
-      "tax_class": "A"
+      "unit_price": 1.99,
+      "total_price": 1.99
     },
     {
       "raw_name": "Bio FT Lose Banane",
-      "sku": "807611",
       "quantity": 0.834,
       "unit": "kg",
       "unit_price": 1.99,
-      "total_price": 1.66,
-      "tax_class": "A"
+      "total_price": 1.66
     },
     {
       "raw_name": "Eier Bodenh. 18er",
-      "sku": "715057",
       "quantity": 1,
-      "total_price": 3.39,
-      "tax_class": "A"
+      "unit_price": 3.39,
+      "total_price": 3.39
     },
     {
       "raw_name": "Pfannengemüse 750g",
-      "sku": "839397",
       "quantity": 1,
-      "total_price": 1.99,
-      "tax_class": "A"
+      "unit_price": 1.99,
+      "total_price": 1.99
     },
     {
       "raw_name": "Dill Bund",
-      "sku": "61863",
       "quantity": 1,
-      "total_price": 1.49,
-      "tax_class": "A"
+      "unit_price": 1.49,
+      "total_price": 1.49
     },
     {
       "raw_name": "Meggle Butter 250g",
-      "sku": "701946",
       "quantity": 1,
-      "total_price": 2.19,
-      "tax_class": "A"
+      "unit_price": 2.19,
+      "total_price": 2.19
     },
     {
       "raw_name": "Datteltomaten 500g",
-      "sku": "838294",
       "quantity": 1,
-      "total_price": 1.89,
-      "tax_class": "A"
+      "unit_price": 1.89,
+      "total_price": 1.89
     },
     {
       "raw_name": "Wattestäbchen Bio",
-      "sku": "835467",
       "quantity": 1,
-      "total_price": 0.7,
-      "tax_class": "B"
+      "unit_price": 0.70,
+      "total_price": 0.70
     },
     {
       "raw_name": "Avocado 500g Netz",
-      "sku": "807430",
       "quantity": 1,
-      "total_price": 1.89,
-      "tax_class": "A"
+      "unit_price": 1.89,
+      "total_price": 1.89
     },
     {
       "raw_name": "Bio Olivenöl",
-      "sku": "841978",
       "quantity": 1,
-      "total_price": 6.95,
-      "tax_class": "A"
+      "unit_price": 6.95,
+      "total_price": 6.95
     },
     {
       "raw_name": "Ketchup Mix 500ml",
-      "sku": "848344",
       "quantity": 1,
-      "total_price": 1.29,
-      "tax_class": "A"
+      "unit_price": 1.29,
+      "total_price": 1.29
     },
     {
       "raw_name": "Kern. Roggenvollk.",
-      "sku": "6254",
       "quantity": 1,
-      "total_price": 0.79,
-      "tax_class": "A"
+      "unit_price": 0.79,
+      "total_price": 0.79
     },
     {
       "raw_name": "Basmati Reis",
-      "sku": "814922",
       "quantity": 1,
-      "total_price": 2.99,
-      "tax_class": "A"
+      "unit_price": 2.99,
+      "total_price": 2.99
     },
     {
       "raw_name": "Deo Roll-on",
-      "sku": "823033",
       "quantity": 1,
-      "total_price": 0.6,
-      "tax_class": "B"
+      "unit_price": 0.60,
+      "total_price": 0.60
     },
     {
       "raw_name": "Basmati Reis",
-      "sku": "814922",
       "quantity": 1,
-      "total_price": 2.99,
-      "tax_class": "A"
+      "unit_price": 2.99,
+      "total_price": 2.99
     },
     {
       "raw_name": "F&G Häh Min.schn",
-      "sku": "733244",
       "quantity": 1,
-      "total_price": 5.49,
-      "tax_class": "A"
+      "unit_price": 5.49,
+      "total_price": 5.49
     },
     {
       "raw_name": "Rabatt 30,0%",
-      "quantity": null,
+      "quantity": 1,
+      "unit_price": -1.65,
       "total_price": -1.65,
-      "is_discount": true,
-      "discount_percent": 30.0
+      "is_discount": true
     },
     {
       "raw_name": "Mayonnaise 500ml",
-      "sku": "812921",
       "quantity": 1,
-      "total_price": 1.59,
-      "tax_class": "A"
+      "unit_price": 1.59,
+      "total_price": 1.59
     },
     {
       "raw_name": "Mini Romarispent.",
-      "sku": "823532",
       "quantity": 1,
-      "total_price": 1.49,
-      "tax_class": "A"
+      "unit_price": 1.49,
+      "total_price": 1.49
     },
     {
       "raw_name": "F&G Häh Brustfil",
-      "sku": "733246",
       "quantity": 1,
-      "total_price": 9.49,
-      "tax_class": "A"
+      "unit_price": 9.49,
+      "total_price": 9.49
     },
     {
       "raw_name": "Frischwurst-Sortim",
-      "sku": "46478",
       "quantity": 1,
-      "total_price": 1.29,
-      "tax_class": "A"
+      "unit_price": 1.29,
+      "total_price": 1.29
     },
     {
       "raw_name": "Geflügel-Frischwur",
-      "sku": "4528",
       "quantity": 1,
-      "total_price": 1.29,
-      "tax_class": "A"
+      "unit_price": 1.29,
+      "total_price": 1.29
     },
     {
       "raw_name": "Rahmspinat 450g",
-      "sku": "837483",
       "quantity": 1,
-      "total_price": 0.89,
-      "tax_class": "A"
+      "unit_price": 0.89,
+      "total_price": 0.89
     },
     {
       "raw_name": "Red Bull regular",
-      "sku": "808696",
       "quantity": 1,
-      "total_price": 0.89,
-      "tax_class": "B"
+      "unit_price": 0.89,
+      "total_price": 0.89
     },
     {
       "raw_name": "Pfand",
-      "sku": "6205",
       "quantity": 1,
-      "total_price": 0.25,
-      "tax_class": "B",
-      "is_pfand": true
+      "unit_price": 0.25,
+      "total_price": 0.25
     },
     {
-      "raw_name": "Kern. Roggenvollk",
-      "sku": "6254",
+      "raw_name": "Kern. Roggenvollk.",
       "quantity": 1,
-      "total_price": 0.79,
-      "tax_class": "A"
+      "unit_price": 0.79,
+      "total_price": 0.79
     },
     {
       "raw_name": "Creme Fraiche 200g",
-      "sku": "45979",
       "quantity": 1,
-      "total_price": 1.09,
-      "tax_class": "A"
+      "unit_price": 1.09,
+      "total_price": 1.09
     },
     {
       "raw_name": "Gurke Stück",
-      "sku": "810319",
       "quantity": 1,
-      "total_price": 0.89,
-      "tax_class": "A"
+      "unit_price": 0.89,
+      "total_price": 0.89
     },
     {
       "raw_name": "BioZwiebeln750g ge",
-      "sku": "61896",
       "quantity": 1,
-      "total_price": 1.49,
-      "tax_class": "A"
+      "unit_price": 1.49,
+      "total_price": 1.49
     },
     {
       "raw_name": "Geflügel-Frischwur",
-      "sku": "4528",
       "quantity": 1,
-      "total_price": 1.29,
-      "tax_class": "A"
+      "unit_price": 1.29,
+      "total_price": 1.29
     },
     {
       "raw_name": "Kart. Vwfk 2.5kg",
-      "sku": "786346",
       "quantity": 1,
-      "total_price": 1.89,
-      "tax_class": "A"
+      "unit_price": 1.89,
+      "total_price": 1.89
     },
     {
       "raw_name": "Creme Fraiche 200g",
-      "sku": "45979",
       "quantity": 1,
-      "total_price": 1.09,
-      "tax_class": "A"
+      "unit_price": 1.09,
+      "total_price": 1.09
     }
-  ],
-  "validation": {
-    "checksum_method": "SUM(items) == Summe",
-    "expected_total": 72.19,
-    "discrepancy": 0.0
-  },
-  "notes": [
-    "SKU before name: 4-6 digits",
-    "Rabatt 30,0% - discount in percent!",
-    "Weighted item: 0,834 kg x 1,99 EUR/kg",
-    "Pfand separate line",
-    "Tax A=7%, B=19%"
   ]
 }
