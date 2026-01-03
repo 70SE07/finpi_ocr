@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "name": "Pfand",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "B",
+      "quantity": null,
+      "price": null,
+      "total": 1.09,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "Butter M qqA 2gb",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "Croissants",
+      "quantity": null,
+      "price": null,
+      "total": 1.39,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "Mandelhörnchen Triple",
+      "quantity": null,
+      "price": null,
+      "total": 1.79,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "Bio Rindergulasch",
+      "quantity": null,
+      "price": null,
+      "total": 2.49,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "20 %",
+      "quantity": null,
+      "price": null,
+      "total": -4.44,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "",
+      "quantity": null,
+      "price": null,
+      "total": 24.74,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "",
+      "quantity": null,
+      "price": null,
+      "total": 4.44,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "",
+      "quantity": null,
+      "price": null,
+      "total": 23.4,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "MO",
+      "quantity": null,
+      "price": null,
+      "total": 1.74,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "",
+      "quantity": null,
+      "price": null,
+      "total": 23.0,
+      "date": "2025-09-17 00:00:00"
+    },
+    {
+      "name": "",
+      "quantity": null,
+      "price": null,
+      "total": 24.74,
+      "date": "2025-09-17 00:00:00"
+    }
+  ],
+  "total_amount": 24.74,
+  "merchant": null,
+  "store_address": null,
+  "date": "2025-09-17 00:00:00",
+  "receipt_id": "IMG_1867",
+  "ocr_text": "Steinhauser Auel 10\n514910verath-Vilkerath\nEUR\nPfand 0,25 M\nFranzisk. Weißbier\n1,09 B\nMandelhörnchen\nFarmer Cookie Triple\nButter Croissants Insbalstu 1.39 A\nqqA 2gb\n0,25 B\n1,79 A\n2,49 A\nBio Rindergulasch\n7,39 x 3 22,17 A\nRABATT 20%\n-4,44\nzu zahlen\n24,74\nKarte\n24,74\nGesamter Preisvorteil\n4,44\nMWSTX\nMWST +\nNetto = Brutto\nA 7 %\n1,53\n21,87\n23,40\nB 19 %\n0,21\n1,13\n1,34\nSumme\nMO1,74\n23,00\n24,74\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1268802\nSeriennr. Kasse: LDL-000-6496-1\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00==\nPrüfwert: Uo/UjXS2YD9e07E6dlyr80byC0b1CXmA\n5DUK7Bs/EyBdP/4w3Ea7rv5K171XqIkPFsT80/sTg7\nvWWSK1N/P64rDtQaJ5WuWxoCY3BfkmYHC7qJ/ktfyo\nbDwPpbgFChkG\nSignaturzähler: 2590080\n2025-09-17T16:29:37.000Z\n2025-09-17T16:29:55.00OZ\n6496 655603/01\nMEMA 814060660\n17.09.25 18:29\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n24,74 EUR\n17.09.2025 18:28 UT-ID 60155114\nTA-Nr. 172313\nBeleg-Nr. 8262\nKartennr.\n######1364 00\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nAutorisierungsnummer\n785792\nAutorisierungsantwortcode\nEMV-Daten: A0000003591010028001/00\n00\n**\nAutorisierung erfolgt\n**",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 13.0,
+    "validation_passed": 0.0,
+    "validation_difference": 57.97
+  }
+}

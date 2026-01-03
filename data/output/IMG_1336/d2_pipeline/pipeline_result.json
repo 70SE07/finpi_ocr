@@ -1,0 +1,1053 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Taschki Pelm.Schwein",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Langnese Magnum Mand",
+        "quantity": null,
+        "price": null,
+        "total": 4.49,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Plombir Tutti Frutti",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Edamer Scheiben",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Butterkäse [ OGT ]",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Gouda in ScheibenXXL 4,29 x 2",
+        "quantity": 4.29,
+        "price": null,
+        "total": 8.58,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Frischkäse Sahnige 1,69 x 4",
+        "quantity": 1.69,
+        "price": null,
+        "total": 6.76,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Ayran Joghurtgetränk 0,49 x 2",
+        "quantity": 0.49,
+        "price": null,
+        "total": 0.98,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Wasser still 0,29 x 24",
+        "quantity": 0.29,
+        "price": null,
+        "total": 6.96,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Pfand EM x 24",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 6.0,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Jack Daniel's & Cola 2,99 x 2",
+        "quantity": 2.99,
+        "price": null,
+        "total": 5.98,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Pfand M 2 x 2",
+        "quantity": 20.25,
+        "price": 0.25,
+        "total": 0.5,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Croissant Wien . 0,99 x 2",
+        "quantity": 0.99,
+        "price": null,
+        "total": 1.98,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Lenor Unstoppa.Fresh",
+        "quantity": null,
+        "price": null,
+        "total": 11.99,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Toilettenpapier XXL",
+        "quantity": null,
+        "price": null,
+        "total": 6.39,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Persil Univer.Pulver Я",
+        "quantity": null,
+        "price": null,
+        "total": 15.99,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Putenbrustfilet HD",
+        "quantity": null,
+        "price": null,
+        "total": 9.29,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Schinkengulasch QS 4,19 x 4",
+        "quantity": 4.19,
+        "price": null,
+        "total": 16.76,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Hackfleisch gem . XXL 6,99 x 4",
+        "quantity": 6.99,
+        "price": null,
+        "total": 27.96,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "Putenbrustschnitzel",
+        "quantity": null,
+        "price": null,
+        "total": 5.29,
+        "date": "2025-08-07 00:00:00"
+      },
+      {
+        "name": "2025-08-07T10 : 53 : OZ",
+        "quantity": null,
+        "price": null,
+        "total": 44.0,
+        "date": "2025-08-07 00:00:00"
+      }
+    ],
+    "total_amount": 146.32,
+    "merchant": null,
+    "store_address": null,
+    "date": "2025-08-07 00:00:00",
+    "receipt_id": "IMG_1336",
+    "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nMU\nEUR\nTaschki Pelm.Schwein\n6,99 A\nLangnese Magnum Mand\n4,49 A\nPlombir Tutti Frutti\n2,99 A\nEdamer Scheiben\n2,99 A\nPreisvorteil\n-0,50\nButterkäse [OGT]\n2,99 A\nGouda in ScheibenXXL\n4,29 x\n2\n8,58 A\nFrischkäse Sahnige\n1,69 x\n4\n6,76 A\nAyran Joghurtgetränk\n0,49 x\n2\n0,98 A\nWasser still\n0,29 x\n24\n6,96 B\nPfand 0,25 EM\n0,25 x 24\n6,00 B\nJack Daniel's & Cola 2,99 x\n2\n5,98 B\nPfand 0,25 M 20,25 x\n2\n0,50 B\nCroissant Wien.\n0,99 x\n2\n1,98 A\nLenor Unstoppa.Fresh\n11,99 B\nToilettenpapier XXL\nPersil Univer.Pulver\nPutenbrustfilet\n6,39 B\nЯ 15,99 B\nRABATT 20%\nHD 9,29 A\n-1,86\nSchinkengulasch QS\n4,19 x\n4 16,76 A\nRabatt Gulasch\n-1,68\nHackfleisch gem. XXL 6,99 x 4 27,96 A\nPutenbrustschnitzel\nPreisvorteil\nzu zahlen\nKarte\n5,29 A\n-1,50\n146,32\n146,32\nGesamter Preisvorteil\n5,54\nMWSTX\nMWST +\nNetto = Brutto\nA 7 %\n6,05\n86,46\n92,51\nB 19 %\n8,59\n45,22\n53,81\nSumme\n14,64\n131,68\n146,32\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf\nTSE Transaktionsnummer: 1216214\nSeriennr. Kasse: LDL-000-6496-1\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: LT0ee/928pUZSMxLa7IYNziNAbac9r8E\n9EgQAoZ2/VxeFMOQcmwmUV2wcz/ReQXeurHzhruxMz\n33mNWPIrpe0bx5PAy03s15pgEg7XNH1e3tw/M874ip\ncp9KFzYJqWu4\nSignaturzähler: 2482255\n2025-08-07T10:53:44.00OZ\n2025-08-07T10:55:03.000Z\n6496 625579/01\n814060660\n07.08.25 12:53\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag MоИ322A\n146,32 EUR\n07.08.2025\n12:53\nT-ID 60155114\nTA-Nr. 159961\nBeleg-Nr. 6424\nKartennr.\n####\n########1324 12\nKontaktlos Chip\nOnline\nBestätigt durch mobiles Kundengerät\nVU-Nummer\n9801706496\nAutorisierungsnummer 620355\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000003591010028001/00\nAutoct.",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 21.0,
+      "validation_passed": 0.0,
+      "validation_difference": 44.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "MU",
+        "y_position": 27,
+        "x_min": 764,
+        "x_max": 809,
+        "confidence": 0.7665958404541016,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 79,
+        "x_min": 504,
+        "x_max": 709,
+        "confidence": 0.9865849415461222,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 109,
+        "x_min": 481,
+        "x_max": 733,
+        "confidence": 0.9821985363960266,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 133,
+        "x_min": 778,
+        "x_max": 814,
+        "confidence": 0.9896835088729858,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "Taschki Pelm.Schwein 6,99 A",
+        "y_position": 159,
+        "x_min": 364,
+        "x_max": 839,
+        "confidence": 0.9812557399272919,
+        "line_number": 4,
+        "words_count": 4
+      },
+      {
+        "text": "Langnese Magnum Mand 4,49 A",
+        "y_position": 189,
+        "x_min": 364,
+        "x_max": 838,
+        "confidence": 0.9849945187568665,
+        "line_number": 5,
+        "words_count": 5
+      },
+      {
+        "text": "Plombir Tutti Frutti 2,99 A",
+        "y_position": 216,
+        "x_min": 364,
+        "x_max": 836,
+        "confidence": 0.9863815546035767,
+        "line_number": 6,
+        "words_count": 5
+      },
+      {
+        "text": "Edamer Scheiben 2,99 A",
+        "y_position": 245,
+        "x_min": 365,
+        "x_max": 838,
+        "confidence": 0.985901489853859,
+        "line_number": 7,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,50",
+        "y_position": 277,
+        "x_min": 423,
+        "x_max": 814,
+        "confidence": 0.9818609654903412,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "Butterkäse [ OGT ] 2,99 A",
+        "y_position": 304,
+        "x_min": 365,
+        "x_max": 836,
+        "confidence": 0.952179491519928,
+        "line_number": 9,
+        "words_count": 6
+      },
+      {
+        "text": "Gouda in ScheibenXXL 4,29 x 2 8,58 A",
+        "y_position": 331,
+        "x_min": 365,
+        "x_max": 849,
+        "confidence": 0.9668681025505066,
+        "line_number": 10,
+        "words_count": 8
+      },
+      {
+        "text": "Frischkäse Sahnige 1,69 x 4 6,76 A",
+        "y_position": 361,
+        "x_min": 366,
+        "x_max": 848,
+        "confidence": 0.970844064440046,
+        "line_number": 11,
+        "words_count": 7
+      },
+      {
+        "text": "Ayran Joghurtgetränk 0,49 x 2 0,98 A",
+        "y_position": 390,
+        "x_min": 364,
+        "x_max": 846,
+        "confidence": 0.965667154107775,
+        "line_number": 12,
+        "words_count": 7
+      },
+      {
+        "text": "Wasser still 0,29 x 24 6,96 B",
+        "y_position": 417,
+        "x_min": 365,
+        "x_max": 847,
+        "confidence": 0.9580585105078561,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "Pfand 0,25 EM 0,25 x 24 6,00 B",
+        "y_position": 444,
+        "x_min": 365,
+        "x_max": 848,
+        "confidence": 0.9671733677387238,
+        "line_number": 14,
+        "words_count": 8
+      },
+      {
+        "text": "Jack Daniel's & Cola 2,99 x 2 5,98 B",
+        "y_position": 473,
+        "x_min": 365,
+        "x_max": 847,
+        "confidence": 0.9509772989484999,
+        "line_number": 15,
+        "words_count": 9
+      },
+      {
+        "text": "Pfand 0,25 M 20,25 x 2 0,50 B",
+        "y_position": 499,
+        "x_min": 365,
+        "x_max": 847,
+        "confidence": 0.9309142976999283,
+        "line_number": 16,
+        "words_count": 8
+      },
+      {
+        "text": "Croissant Wien . 0,99 x 2 1,98 A",
+        "y_position": 530,
+        "x_min": 364,
+        "x_max": 848,
+        "confidence": 0.9599436819553375,
+        "line_number": 17,
+        "words_count": 8
+      },
+      {
+        "text": "Lenor Unstoppa.Fresh 11,99 B",
+        "y_position": 558,
+        "x_min": 366,
+        "x_max": 835,
+        "confidence": 0.9762429893016815,
+        "line_number": 18,
+        "words_count": 4
+      },
+      {
+        "text": "Toilettenpapier XXL 6,39 B",
+        "y_position": 587,
+        "x_min": 364,
+        "x_max": 837,
+        "confidence": 0.983389139175415,
+        "line_number": 19,
+        "words_count": 4
+      },
+      {
+        "text": "Persil Univer.Pulver Я 15,99 B",
+        "y_position": 611,
+        "x_min": 365,
+        "x_max": 837,
+        "confidence": 0.8119813621044158,
+        "line_number": 20,
+        "words_count": 5
+      },
+      {
+        "text": "Putenbrustfilet HD 9,29 A",
+        "y_position": 641,
+        "x_min": 365,
+        "x_max": 835,
+        "confidence": 0.7669176012277603,
+        "line_number": 21,
+        "words_count": 4
+      },
+      {
+        "text": "RABATT 20 % -1,86",
+        "y_position": 673,
+        "x_min": 423,
+        "x_max": 812,
+        "confidence": 0.9870537519454956,
+        "line_number": 22,
+        "words_count": 4
+      },
+      {
+        "text": "Schinkengulasch QS 4,19 x 4 16,76 A",
+        "y_position": 701,
+        "x_min": 364,
+        "x_max": 847,
+        "confidence": 0.9538278835160392,
+        "line_number": 23,
+        "words_count": 7
+      },
+      {
+        "text": "Rabatt Gulasch -1,68",
+        "y_position": 729,
+        "x_min": 422,
+        "x_max": 812,
+        "confidence": 0.9816611210505167,
+        "line_number": 24,
+        "words_count": 3
+      },
+      {
+        "text": "Hackfleisch gem . XXL 6,99 x 4 27,96 A",
+        "y_position": 758,
+        "x_min": 365,
+        "x_max": 846,
+        "confidence": 0.9694765673743354,
+        "line_number": 25,
+        "words_count": 9
+      },
+      {
+        "text": "Putenbrustschnitzel 5,29 A",
+        "y_position": 785,
+        "x_min": 366,
+        "x_max": 835,
+        "confidence": 0.9896900256474813,
+        "line_number": 26,
+        "words_count": 3
+      },
+      {
+        "text": "Preisvorteil -1,50",
+        "y_position": 811,
+        "x_min": 423,
+        "x_max": 813,
+        "confidence": 0.9750930666923523,
+        "line_number": 27,
+        "words_count": 2
+      },
+      {
+        "text": "zu zahlen 146,32",
+        "y_position": 868,
+        "x_min": 365,
+        "x_max": 812,
+        "confidence": 0.9886530041694641,
+        "line_number": 28,
+        "words_count": 3
+      },
+      {
+        "text": "Karte 146,32",
+        "y_position": 897,
+        "x_min": 365,
+        "x_max": 812,
+        "confidence": 0.9768560528755188,
+        "line_number": 29,
+        "words_count": 2
+      },
+      {
+        "text": "Gesamter Preisvorteil 5,54",
+        "y_position": 953,
+        "x_min": 364,
+        "x_max": 847,
+        "confidence": 0.9877328475316366,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "MWSTX MWST + Netto = Brutto",
+        "y_position": 1009,
+        "x_min": 375,
+        "x_max": 813,
+        "confidence": 0.9463719427585602,
+        "line_number": 31,
+        "words_count": 6
+      },
+      {
+        "text": "A 7 % 6,05 86,46 92,51",
+        "y_position": 1035,
+        "x_min": 363,
+        "x_max": 809,
+        "confidence": 0.972717305024465,
+        "line_number": 32,
+        "words_count": 6
+      },
+      {
+        "text": "B 19 % 8,59 45,22 53,81",
+        "y_position": 1062,
+        "x_min": 363,
+        "x_max": 810,
+        "confidence": 0.9755953351656595,
+        "line_number": 33,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 14,64 131,68 146,32",
+        "y_position": 1092,
+        "x_min": 364,
+        "x_max": 812,
+        "confidence": 0.982438400387764,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "¦ und Lade spare dir die Lidl Plus App herunter",
+        "y_position": 1176,
+        "x_min": 365,
+        "x_max": 800,
+        "confidence": 0.8961301758885384,
+        "line_number": 35,
+        "words_count": 10
+      },
+      {
+        "text": "bei deinem nächsten Einkauf",
+        "y_position": 1193,
+        "x_min": 488,
+        "x_max": 797,
+        "confidence": 0.9564726948738098,
+        "line_number": 36,
+        "words_count": 4
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1216214",
+        "y_position": 1350,
+        "x_min": 362,
+        "x_max": 722,
+        "confidence": 0.9514595419168472,
+        "line_number": 37,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-1",
+        "y_position": 1378,
+        "x_min": 363,
+        "x_max": 717,
+        "confidence": 0.969922159399305,
+        "line_number": 38,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga + dvZbaId8",
+        "y_position": 1404,
+        "x_min": 362,
+        "x_max": 845,
+        "confidence": 0.9316403780664716,
+        "line_number": 39,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1432,
+        "x_min": 362,
+        "x_max": 558,
+        "confidence": 0.9719267785549164,
+        "line_number": 40,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : LT0ee / 928pUZSMxLa7IYNziNAbac9r8E",
+        "y_position": 1460,
+        "x_min": 362,
+        "x_max": 845,
+        "confidence": 0.9263926982879639,
+        "line_number": 41,
+        "words_count": 5
+      },
+      {
+        "text": "9EgQAoZ2 / VxeFMOQcmwmUV2wcz / ReQXeurHzhruxMz",
+        "y_position": 1491,
+        "x_min": 362,
+        "x_max": 844,
+        "confidence": 0.9522626280784607,
+        "line_number": 42,
+        "words_count": 5
+      },
+      {
+        "text": "33mNWPIrpe0bx5PAy03s15pgEg7XNH1e3tw / M874ip",
+        "y_position": 1518,
+        "x_min": 362,
+        "x_max": 846,
+        "confidence": 0.9623775680859884,
+        "line_number": 43,
+        "words_count": 3
+      },
+      {
+        "text": "cp9KFzYJqWu4",
+        "y_position": 1549,
+        "x_min": 359,
+        "x_max": 500,
+        "confidence": 0.9542543888092041,
+        "line_number": 44,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2482255",
+        "y_position": 1576,
+        "x_min": 357,
+        "x_max": 625,
+        "confidence": 0.9787059426307678,
+        "line_number": 45,
+        "words_count": 3
+      },
+      {
+        "text": "2025-08-07T10 : 53 : 44.00OZ",
+        "y_position": 1606,
+        "x_min": 357,
+        "x_max": 636,
+        "confidence": 0.9735364317893982,
+        "line_number": 46,
+        "words_count": 5
+      },
+      {
+        "text": "2025-08-07T10 : 55 : 03.000Z",
+        "y_position": 1638,
+        "x_min": 354,
+        "x_max": 636,
+        "confidence": 0.9673406839370727,
+        "line_number": 47,
+        "words_count": 5
+      },
+      {
+        "text": "6496 625579/01 07.08.25 12:53",
+        "y_position": 1667,
+        "x_min": 353,
+        "x_max": 850,
+        "confidence": 0.9917202740907669,
+        "line_number": 48,
+        "words_count": 4
+      },
+      {
+        "text": "814060660",
+        "y_position": 1698,
+        "x_min": 529,
+        "x_max": 637,
+        "confidence": 0.9895398616790771,
+        "line_number": 49,
+        "words_count": 1
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1761,
+        "x_min": 454,
+        "x_max": 710,
+        "confidence": 0.9648121283167884,
+        "line_number": 50,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 1791,
+        "x_min": 452,
+        "x_max": 724,
+        "confidence": 0.9878119826316833,
+        "line_number": 51,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag MоИ322A 146,32 EUR",
+        "y_position": 1855,
+        "x_min": 335,
+        "x_max": 835,
+        "confidence": 0.8734495788812637,
+        "line_number": 52,
+        "words_count": 4
+      },
+      {
+        "text": "07.08.2025 12:53 T - ID 60155114",
+        "y_position": 1921,
+        "x_min": 334,
+        "x_max": 836,
+        "confidence": 0.9828070203463236,
+        "line_number": 53,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 159961 Beleg - Nr . 6424",
+        "y_position": 1955,
+        "x_min": 333,
+        "x_max": 838,
+        "confidence": 0.9677555203437805,
+        "line_number": 54,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . #### ######## 1324 12",
+        "y_position": 1989,
+        "x_min": 333,
+        "x_max": 835,
+        "confidence": 0.9263276755809784,
+        "line_number": 55,
+        "words_count": 6
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 2018,
+        "x_min": 332,
+        "x_max": 836,
+        "confidence": 0.9717768033345541,
+        "line_number": 56,
+        "words_count": 3
+      },
+      {
+        "text": "Bestätigt durch mobiles Kundengerät",
+        "y_position": 2049,
+        "x_min": 357,
+        "x_max": 798,
+        "confidence": 0.9778288751840591,
+        "line_number": 57,
+        "words_count": 4
+      },
+      {
+        "text": "VU - Nummer 9801706496",
+        "y_position": 2080,
+        "x_min": 332,
+        "x_max": 773,
+        "confidence": 0.9717471748590469,
+        "line_number": 58,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 620355",
+        "y_position": 2106,
+        "x_min": 332,
+        "x_max": 835,
+        "confidence": 0.9648853242397308,
+        "line_number": 59,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 2131,
+        "x_min": 334,
+        "x_max": 835,
+        "confidence": 0.9822711646556854,
+        "line_number": 60,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - Daten : A0000003591010028001 / 00",
+        "y_position": 2154,
+        "x_min": 337,
+        "x_max": 831,
+        "confidence": 0.9846163221767971,
+        "line_number": 61,
+        "words_count": 7
+      },
+      {
+        "text": "Autoct .",
+        "y_position": 2193,
+        "x_min": 449,
+        "x_max": 527,
+        "confidence": 0.6362879276275635,
+        "line_number": 62,
+        "words_count": 2
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 310,
+    "total_lines": 63
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3548387096774194,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "zu zahlen",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 11
+    }
+  },
+  "store": {
+    "store_name": null,
+    "store_address": null,
+    "confidence": 0.0,
+    "matched_in_line": -1
+  },
+  "metadata": {
+    "receipt_date": "2025-08-07",
+    "receipt_total": 146.32,
+    "currency": "EUR",
+    "date_raw": "2025-08-07",
+    "total_raw": "146,32 EUR",
+    "total_line_number": 52
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Taschki Pelm.Schwein",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "Taschki Pelm.Schwein 6,99 A"
+      },
+      {
+        "name": "Langnese Magnum Mand",
+        "quantity": null,
+        "price": null,
+        "total": 4.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "Langnese Magnum Mand 4,49 A"
+      },
+      {
+        "name": "Plombir Tutti Frutti",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "Plombir Tutti Frutti 2,99 A"
+      },
+      {
+        "name": "Edamer Scheiben",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 7,
+        "raw_text": "Edamer Scheiben 2,99 A"
+      },
+      {
+        "name": "Butterkäse [ OGT ]",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Butterkäse [ OGT ] 2,99 A"
+      },
+      {
+        "name": "Gouda in ScheibenXXL 4,29 x 2",
+        "quantity": 4.29,
+        "price": null,
+        "total": 8.58,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "Gouda in ScheibenXXL 4,29 x 2 8,58 A"
+      },
+      {
+        "name": "Frischkäse Sahnige 1,69 x 4",
+        "quantity": 1.69,
+        "price": null,
+        "total": 6.76,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Frischkäse Sahnige 1,69 x 4 6,76 A"
+      },
+      {
+        "name": "Ayran Joghurtgetränk 0,49 x 2",
+        "quantity": 0.49,
+        "price": null,
+        "total": 0.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Ayran Joghurtgetränk 0,49 x 2 0,98 A"
+      },
+      {
+        "name": "Wasser still 0,29 x 24",
+        "quantity": 0.29,
+        "price": null,
+        "total": 6.96,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "Wasser still 0,29 x 24 6,96 B"
+      },
+      {
+        "name": "Pfand EM x 24",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 6.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "Pfand 0,25 EM 0,25 x 24 6,00 B"
+      },
+      {
+        "name": "Jack Daniel's & Cola 2,99 x 2",
+        "quantity": 2.99,
+        "price": null,
+        "total": 5.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "Jack Daniel's & Cola 2,99 x 2 5,98 B"
+      },
+      {
+        "name": "Pfand M 2 x 2",
+        "quantity": 20.25,
+        "price": 0.25,
+        "total": 0.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "Pfand 0,25 M 20,25 x 2 0,50 B"
+      },
+      {
+        "name": "Croissant Wien . 0,99 x 2",
+        "quantity": 0.99,
+        "price": null,
+        "total": 1.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "Croissant Wien . 0,99 x 2 1,98 A"
+      },
+      {
+        "name": "Lenor Unstoppa.Fresh",
+        "quantity": null,
+        "price": null,
+        "total": 11.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "Lenor Unstoppa.Fresh 11,99 B"
+      },
+      {
+        "name": "Toilettenpapier XXL",
+        "quantity": null,
+        "price": null,
+        "total": 6.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "Toilettenpapier XXL 6,39 B"
+      },
+      {
+        "name": "Persil Univer.Pulver Я",
+        "quantity": null,
+        "price": null,
+        "total": 15.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "Persil Univer.Pulver Я 15,99 B"
+      },
+      {
+        "name": "Putenbrustfilet HD",
+        "quantity": null,
+        "price": null,
+        "total": 9.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Putenbrustfilet HD 9,29 A"
+      },
+      {
+        "name": "Schinkengulasch QS 4,19 x 4",
+        "quantity": 4.19,
+        "price": null,
+        "total": 16.76,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 23,
+        "raw_text": "Schinkengulasch QS 4,19 x 4 16,76 A"
+      },
+      {
+        "name": "Hackfleisch gem . XXL 6,99 x 4",
+        "quantity": 6.99,
+        "price": null,
+        "total": 27.96,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "Hackfleisch gem . XXL 6,99 x 4 27,96 A"
+      },
+      {
+        "name": "Putenbrustschnitzel",
+        "quantity": null,
+        "price": null,
+        "total": 5.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 26,
+        "raw_text": "Putenbrustschnitzel 5,29 A"
+      },
+      {
+        "name": "2025-08-07T10 : 53 : OZ",
+        "quantity": null,
+        "price": null,
+        "total": 44.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 46,
+        "raw_text": "2025-08-07T10 : 53 : 44.00OZ"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "Preisvorteil -0,50"
+      },
+      {
+        "name": "RABATT 20 %",
+        "quantity": null,
+        "price": null,
+        "total": -1.86,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "RABATT 20 % -1,86"
+      },
+      {
+        "name": "Rabatt Gulasch",
+        "quantity": null,
+        "price": null,
+        "total": -1.68,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "Rabatt Gulasch -1,68"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -1.5,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "Preisvorteil -1,50"
+      }
+    ],
+    "items_count": 21,
+    "discounts_count": 4,
+    "items_total": 195.85999999999999,
+    "discounts_total": 5.54,
+    "skipped_lines": 21,
+    "parsed_lines": 25
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 195.85999999999999,
+    "discounts_sum": 5.54,
+    "calculated_total": 190.32,
+    "receipt_total": 146.32,
+    "difference": 44.0,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=190.32, receipt=146.32, diff=44.00 (tolerance=0.05)"
+  },
+  "processing_time_ms": 21.548986434936523,
+  "stages_completed": 6
+}

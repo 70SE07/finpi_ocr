@@ -1,0 +1,67 @@
+{
+  "id": "052",
+  "source_file": "data/input/Edeka/IMG_2017.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "EDEKA Felbecker",
+    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden",
+    "phone": "02206 / 912784",
+    "website": "www.edeka.de",
+    "steuernummer": "204/5085/2941"
+  },
+  "metadata": {
+    "date": "22.09.2025",
+    "time": "18:41:04",
+    "currency": "EUR",
+    "payment_method": "EC-Cash",
+    "posten": 3,
+    "receipt_total": 3.43,
+    "tax_block": {
+      "A": {
+        "rate": "7%",
+        "netto": 1.86,
+        "mwst": 0.13,
+        "umsatz": 1.99
+      },
+      "B": {
+        "rate": "19%",
+        "netto": 1.21,
+        "mwst": 0.23,
+        "umsatz": 1.44
+      }
+    }
+  },
+  "items": [
+    {
+      "raw_name": "Pepsi Cola 0,5l",
+      "quantity": 1,
+      "total_price": 1.19,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "*B",
+      "is_pfand": true
+    },
+    {
+      "raw_name": "Herz.M.Pfl.Tomaten",
+      "quantity": 1,
+      "total_price": 1.99,
+      "tax_class": "A"
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "items_sum": 3.43,
+    "expected_total": 3.43,
+    "discrepancy": 0.0
+  },
+  "notes": [
+    "Posten: 3 - number of items",
+    "SUMME € format",
+    "Tax codes: A, B",
+    "*Position nicht rabattberechtigt"
+  ]
+}

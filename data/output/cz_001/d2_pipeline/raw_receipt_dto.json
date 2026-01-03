@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "name": "SOUCET [ 21 ] CZK",
+      "quantity": null,
+      "price": null,
+      "total": 1135.78,
+      "date": null
+    },
+    {
+      "name": "Zaokrouhleni",
+      "quantity": null,
+      "price": null,
+      "total": 1136.0,
+      "date": null
+    },
+    {
+      "name": "HŘEBÍK STAVEBNÍ ZH 1 52,40 1 ",
+      "quantity": null,
+      "price": null,
+      "total": 0.22,
+      "date": null
+    },
+    {
+      "name": "Vráceno CZK",
+      "quantity": null,
+      "price": null,
+      "total": -64.0,
+      "date": null
+    }
+  ],
+  "total_amount": 1135.78,
+  "merchant": null,
+  "store_address": null,
+  "date": null,
+  "receipt_id": "cz_001",
+  "ocr_text": "436 2398\n98 Prand\n0 225 357 000\nSídlo: Chlumecká 2398, 198 00 P\nDIC CZ47117559\nArt/Ean 7144934\n1,000 JedVýk x\nOPRAVA DESEK/MATERIA\nArt/Ean 8596140003596\n1 Kus X\nPapirová taška HORNB\nArt/Ean 4013307334026\n1 Kus\nRouno zakrývací 1x 3\nArt/Ean 8595100133175\n1 Kus ×\nHYDROIZOLACE JEDNOSL\nArt/Ean 8592390065636\n2 Pár x\nBUCK BILE vel. 10\"/X\nArt/Ean 4004338329914\n20,00\n20,00 1\n7,00\n7,00 1\n95,00\n95,00 1\n575,00\n575,00 1\n22,00\n44,00 1\n4 Kus x\nSedlový úhelník s v\n21,00\n84,00 1\nArt/Ean 4004338332853\n4 Kus\n19,00\nrohový úhelník pozin\n76,00 1\nArt/Ean 8590804039105\n2 Kus\n30,00\nSTERKA VÍCEÚČELOVA P\n60,00 1\nArt/Ean 8595026063846\n1 Kus x\nVáleček malířský 12c\n59,00\n59,00 1\nArt/Ean 4013307322672\n1 Kus x\nNůž odlamovací 18mm,\n23,00\n23,00 1\nArt/Ean 8524\n0,020 kg\nx 613,00\nHAK S METR ZAVITEM Z\n12,26 1\nArt/Ean 9867\n0,099 kg x 284,00\nVRUT UNIV. ZH 4,5x20\n28,12 1\nArt/Ean 6302\n0,246 kg x 213,00\nHŘEBÍK STAVEBNÍ ZH 1\n52,40 1\nSOUCET [21]\nCZK\n1135,78\nZaokrouhleni\nK zaplacení:\nDANO Hotovost\n0,22\n1136,00\nCZK 1200,00\nCZK\nCZK -64,00\nVráceno\nBRUTTO\n1 21 % 1135,78\nDPH\n197,12\nNETTO\n938,66\n55506602203200074376\nčas evidence tržby: 18:05:26\nčíslo pokladny: 11/660/7\nPořadové číslo účtenky: 648560\nOznačení provozovny: 11\nBKP: 2652DA52-EA8A77EC-502B5AD2-BF81F673\n-7E6E6143\nFIK: F002834c-768e-40a2-a365-a51f4782e9d\nc-01\nRežim tržby: běžný\nObsloužil Vás:\nM. Černá\nDěkujeme Vám za Vaši návštěvu.",
+  "detected_locale": "cs_CZ",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 4.0,
+    "validation_passed": 0.0,
+    "validation_difference": 1072.22
+  }
+}

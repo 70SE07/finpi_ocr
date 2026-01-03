@@ -1,0 +1,456 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Müller Kalinka Ayran",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "date": "2025-11-24 00:00:00"
+      },
+      {
+        "name": "Pfand 7 % M",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-11-24 00:00:00"
+      }
+    ],
+    "total_amount": 1.51,
+    "merchant": "Hit",
+    "store_address": "Frischmilch 3,5 % 1,09 A, Preisvorteil 2019 -0,14, Müller Kalinka Ayran 1,29 A",
+    "date": "2025-11-24 00:00:00",
+    "receipt_id": "IMG_2964",
+    "ocr_text": "qqA ang Ibij mis\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nBanane Fair Bio\n1,63 A\n0,820 kg x 1,99\nEUR/kg\nZitronen Bio\n0,79 x 2\n1,58 A\nEhrm.H.Protein Schok\n1,49 x\n6\n8,94 A\nEhrm.H.Protein Vanil\n1,49 x\n2\n2,98 A\nEhrmann HP White Ch.\n1,49 A\nFrischmilch 3,5%\n1,09 A\nMüller Kalinka Ayran\nPreisvorteil 2019\n-0,14\n1,29 A\nPfand 0,25 7% M\n0,25 A\nEier Freiland. XXL\n3,99 A\nzu zahlen\n23,10\nBar\nMAZ 3TTAS\n23,10\nGesamter Preisvorteil\n0,14\nMWST%\nMWST + Netto = Brutto\nA 7 %\n1,51\n21,59\n23,10\nSumme\n1,51\n21,59\n23,10\n¦ Lade dir die Lidl Plus App herunter ¦\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1355533\nSeriennr. Kasse: LDL-000-6496-3\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 8IvNIwHineddh+hqGgWCVAymovJN1q2Z\nKDay/q2cQ8wE7P0CTGESгL7CD/6nBXuvkQEhYUgDIG\nrбNy0Xp16zDPubPtWd2t EhUk594jHQ27IFUvbYooXH\nzJYBbaDyY+ao\nSignaturzähler: 2767609\n2025-11-24T17:18:54.000Z\n2025-11-24T17:19:49.000Z\n6496 752388/03\n24.11.25 18:18\n814060660 siguist",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 2.0,
+      "validation_passed": 0.0,
+      "validation_difference": 0.1100000000000001
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "qqA ang Ibij mis",
+        "y_position": 34,
+        "x_min": 850,
+        "x_max": 1180,
+        "confidence": 0.5288733169436455,
+        "line_number": 0,
+        "words_count": 4
+      },
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 107,
+        "x_min": 699,
+        "x_max": 1027,
+        "confidence": 0.9701277017593384,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 154,
+        "x_min": 661,
+        "x_max": 1059,
+        "confidence": 0.9712830980618795,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 198,
+        "x_min": 1133,
+        "x_max": 1189,
+        "confidence": 0.9872577786445618,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "Banane Fair Bio 1,63 A",
+        "y_position": 239,
+        "x_min": 481,
+        "x_max": 1224,
+        "confidence": 0.9804505467414856,
+        "line_number": 4,
+        "words_count": 5
+      },
+      {
+        "text": "0,820 kg x 1,99 EUR / kg",
+        "y_position": 286,
+        "x_min": 517,
+        "x_max": 952,
+        "confidence": 0.962632383619036,
+        "line_number": 5,
+        "words_count": 7
+      },
+      {
+        "text": "Zitronen Bio 0,79 x 2 1,58 A",
+        "y_position": 329,
+        "x_min": 479,
+        "x_max": 1241,
+        "confidence": 0.9492263453347343,
+        "line_number": 6,
+        "words_count": 7
+      },
+      {
+        "text": "Ehrm.H.Protein Schok 1,49 x 6 8,94 A",
+        "y_position": 375,
+        "x_min": 483,
+        "x_max": 1242,
+        "confidence": 0.9358879838671003,
+        "line_number": 7,
+        "words_count": 7
+      },
+      {
+        "text": "Ehrm.H.Protein Vanil 1,49 x 2 2,98 A",
+        "y_position": 416,
+        "x_min": 481,
+        "x_max": 1239,
+        "confidence": 0.9733255846159798,
+        "line_number": 8,
+        "words_count": 7
+      },
+      {
+        "text": "Ehrmann HP White Ch . 1,49 A",
+        "y_position": 463,
+        "x_min": 482,
+        "x_max": 1222,
+        "confidence": 0.9721940585545131,
+        "line_number": 9,
+        "words_count": 7
+      },
+      {
+        "text": "Frischmilch 3,5 % 1,09 A",
+        "y_position": 505,
+        "x_min": 482,
+        "x_max": 1222,
+        "confidence": 0.9814969420433044,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "Preisvorteil 2019 -0,14",
+        "y_position": 548,
+        "x_min": 481,
+        "x_max": 1203,
+        "confidence": 0.9421385327974955,
+        "line_number": 11,
+        "words_count": 3
+      },
+      {
+        "text": "Müller Kalinka Ayran 1,29 A",
+        "y_position": 596,
+        "x_min": 482,
+        "x_max": 1219,
+        "confidence": 0.984846007823944,
+        "line_number": 12,
+        "words_count": 5
+      },
+      {
+        "text": "Pfand 0,25 7 % M 0,25 A",
+        "y_position": 639,
+        "x_min": 480,
+        "x_max": 1221,
+        "confidence": 0.9854115673473903,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "Eier Freiland . XXL 3,99 A",
+        "y_position": 676,
+        "x_min": 482,
+        "x_max": 1223,
+        "confidence": 0.7866232494513193,
+        "line_number": 14,
+        "words_count": 6
+      },
+      {
+        "text": "zu zahlen 23,10",
+        "y_position": 769,
+        "x_min": 480,
+        "x_max": 1185,
+        "confidence": 0.8853961626688639,
+        "line_number": 15,
+        "words_count": 3
+      },
+      {
+        "text": "Bar MAZ 3TTAS 23,10",
+        "y_position": 815,
+        "x_min": 481,
+        "x_max": 1184,
+        "confidence": 0.825388640165329,
+        "line_number": 16,
+        "words_count": 4
+      },
+      {
+        "text": "Gesamter Preisvorteil 0,14",
+        "y_position": 905,
+        "x_min": 480,
+        "x_max": 1237,
+        "confidence": 0.9907845258712769,
+        "line_number": 17,
+        "words_count": 3
+      },
+      {
+        "text": "MWST % MWST + Netto = Brutto",
+        "y_position": 992,
+        "x_min": 499,
+        "x_max": 1180,
+        "confidence": 0.8964880364281791,
+        "line_number": 18,
+        "words_count": 7
+      },
+      {
+        "text": "A 7 % 1,51 21,59 23,10",
+        "y_position": 1036,
+        "x_min": 480,
+        "x_max": 1182,
+        "confidence": 0.9810376862684885,
+        "line_number": 19,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 1,51 21,59 23,10",
+        "y_position": 1078,
+        "x_min": 482,
+        "x_max": 1180,
+        "confidence": 0.9844695776700974,
+        "line_number": 20,
+        "words_count": 4
+      },
+      {
+        "text": "¦ Lade dir die Lidl Plus App herunter ¦",
+        "y_position": 1211,
+        "x_min": 484,
+        "x_max": 1214,
+        "confidence": 0.8230147941244973,
+        "line_number": 21,
+        "words_count": 9
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 1251,
+        "x_min": 497,
+        "x_max": 1176,
+        "confidence": 0.974843714918409,
+        "line_number": 22,
+        "words_count": 7
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1355533",
+        "y_position": 1481,
+        "x_min": 478,
+        "x_max": 1035,
+        "confidence": 0.9658294916152954,
+        "line_number": 23,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-3",
+        "y_position": 1528,
+        "x_min": 478,
+        "x_max": 1036,
+        "confidence": 0.9536877870559692,
+        "line_number": 24,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga + dvZbaId8",
+        "y_position": 1570,
+        "x_min": 477,
+        "x_max": 1235,
+        "confidence": 0.9163226059504918,
+        "line_number": 25,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1617,
+        "x_min": 476,
+        "x_max": 786,
+        "confidence": 0.9638102650642395,
+        "line_number": 26,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : 8IvNIwHineddh + hqGgWCVAymovJN1q2Z",
+        "y_position": 1655,
+        "x_min": 477,
+        "x_max": 1234,
+        "confidence": 0.9297426581382752,
+        "line_number": 27,
+        "words_count": 5
+      },
+      {
+        "text": "KDay / q2cQ8wE7P0CTGESгL7CD / 6nBXuvkQEhYUgDIG",
+        "y_position": 1703,
+        "x_min": 475,
+        "x_max": 1235,
+        "confidence": 0.8918081164360047,
+        "line_number": 28,
+        "words_count": 5
+      },
+      {
+        "text": "rбNy0Xp16zDPubPtWd2t EhUk594jHQ27IFUvbYooXH",
+        "y_position": 1747,
+        "x_min": 478,
+        "x_max": 1237,
+        "confidence": 0.9019238650798798,
+        "line_number": 29,
+        "words_count": 2
+      },
+      {
+        "text": "zJYBbaDyY + ao",
+        "y_position": 1795,
+        "x_min": 474,
+        "x_max": 693,
+        "confidence": 0.9263065059979757,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "Signaturzähler : 2767609",
+        "y_position": 1834,
+        "x_min": 473,
+        "x_max": 892,
+        "confidence": 0.984582761923472,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "2025-11-24T17 : 18 : 54.000Z",
+        "y_position": 1882,
+        "x_min": 473,
+        "x_max": 908,
+        "confidence": 0.9763240575790405,
+        "line_number": 32,
+        "words_count": 5
+      },
+      {
+        "text": "2025-11-24T17 : 19 : 49.000Z",
+        "y_position": 1925,
+        "x_min": 473,
+        "x_max": 906,
+        "confidence": 0.9749944686889649,
+        "line_number": 33,
+        "words_count": 5
+      },
+      {
+        "text": "6496 752388/03 24.11.25 18:18",
+        "y_position": 1973,
+        "x_min": 472,
+        "x_max": 1241,
+        "confidence": 0.9887764155864716,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "814060660 siguist",
+        "y_position": 2017,
+        "x_min": 746,
+        "x_max": 1194,
+        "confidence": 0.6616536378860474,
+        "line_number": 35,
+        "words_count": 2
+      }
+    ],
+    "image_width": 1650,
+    "image_height": 2200,
+    "total_words": 174,
+    "total_lines": 36
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "zu zahlen",
+      "bar",
+      "mwst",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 3,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": "Frischmilch 3,5 % 1,09 A, Preisvorteil 2019 -0,14, Müller Kalinka Ayran 1,29 A",
+    "confidence": 1.0,
+    "matched_in_line": 9
+  },
+  "metadata": {
+    "receipt_date": "2025-11-24",
+    "receipt_total": 1.51,
+    "currency": "EUR",
+    "date_raw": "2025-11-24",
+    "total_raw": "1,51 ",
+    "total_line_number": 20
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Müller Kalinka Ayran",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Müller Kalinka Ayran 1,29 A"
+      },
+      {
+        "name": "Pfand 7 % M",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "Pfand 0,25 7 % M 0,25 A"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil 2019",
+        "quantity": null,
+        "price": null,
+        "total": -0.14,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Preisvorteil 2019 -0,14"
+      }
+    ],
+    "items_count": 2,
+    "discounts_count": 1,
+    "items_total": 1.54,
+    "discounts_total": 0.14,
+    "skipped_lines": 31,
+    "parsed_lines": 3
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 1.54,
+    "discounts_sum": 0.14,
+    "calculated_total": 1.4,
+    "receipt_total": 1.51,
+    "difference": 0.1100000000000001,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=1.4, receipt=1.51, diff=0.11 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.836902618408203,
+  "stages_completed": 6
+}

@@ -1,0 +1,434 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "138773 573111/01 Sandwi",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-05-21 00:00:00"
+      },
+      {
+        "name": "Plombir Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-05-21 00:00:00"
+      },
+      {
+        "name": "12 11 : & . [",
+        "quantity": null,
+        "price": null,
+        "total": 5.38,
+        "date": "2025-05-21 00:00:00"
+      },
+      {
+        "name": "E 08.000Z OZ LDL Lidl",
+        "quantity": null,
+        "price": null,
+        "total": 32.0,
+        "date": "2025-05-21 00:00:00"
+      },
+      {
+        "name": "Chip 08:11 D - NR - : : 2275776 = F2vH5JJOGxOzRGtqga : deinem Toast . Kefir Overath ",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-05-21 00:00:00"
+      }
+    ],
+    "total_amount": 43.55,
+    "merchant": "Dm",
+    "store_address": null,
+    "date": "2025-05-21 00:00:00",
+    "receipt_id": "IMG_3094",
+    "ocr_text": "Dovgan Plombir Kefir\nqgA\nSteinhauser Auel 1\n1491 Overath-Vilkerath\nErdbeeren kg\n0,554 kg x 5,38 EUR/kg\nAktionsrabatt\nAyran Joghurtgetränk 0,49 x\nEUR\n2,98 A\n-0,22\n2 0,98 A\n2,29 A\nPfand 0,25 7% M\n0,25 A\nRed Bull Energy\n1,39 x 24\n33,36 B\nPfand 0,25 M\n0,25 x 24\n6,00 B\nWienerleCroiss.\n0,99 x 2\n1,98 A\nFranzbrötchen [\n0,79 x\n2\n1,58 A\nVollk. Sandwi. Toast\n1,29 A\nMEWAktionsrabatt\n-0,20\nKnotenbeutel O&\n0,01 B\nPfandrückgabe\n-6,75 B\n-27 x\n0,25\nzu zahlen\n43,55\nKreditkarte\n43,55\nGesamter Preisvorteil\n0,42\nMWST%\nMWST +\nNetto = Brutto\nA 7%\n0,72\n10,21\n10,93\nB 19 %\n5,21\n27,41\n32,62\nSumme\n5,93\n37,62\n43,55\n¡ Lade dir die Lidl Plus App herunter\nlund spare bei deinem nächsten Einkauf\nTSE Transaktionsnummer: 1115449\nSeriennr. Kasse: LDL-000-6496-1 HOAM\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: R4jhsqhtFinGcd8giwvYRjuS+h0gUSXZ\nbkKjs0EhVUrzkFVP5dC5rxJUFQiwXfXuody0D8B06h\nbq+KKtRbZPH8DsCfP1MMC6CWn4LHPbTNUmlqdMURvw\nfpdi1j6a48pR\nSignaturzähler: 2275776\n2025-05-21T06:11:32.00OZ\n2025-05-21T06:12:08.000Z\n6496 573111/01\n21.05.25 08:11\nUST-ID-NR: DE814060660\nK-U-N-D-E-N-B-E-L-E-G\nBezahlung VISA\nBetrag\n43,55 EUR\n21.05.2025\n08:11\nTA-Nr. 138773\nT-ID 60155114\nBeleg-Nr. 6081\nKartennr.\n***********#4474.00\nVisa kontaktlos Chip\nVU-Nummer\nOnline\nBestätigt durch mobiles Kundengerät\nAutorisierungsnummer\nAutorisierungsantwortcode\nEMV-Daten:\n135103\nA0000000031010,00\n455600535769\n**\nAutorisierung erfolgt\n**",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 5.0,
+      "validation_passed": 0.0,
+      "validation_difference": 5.419999999999995
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "** EMV Autorisierungsantwortcode Autorisierungsnummer VU Visa Kartennr TA 21.05.2025 Betrag 6496 2025-05-21T06 2025-05-21T06 Signaturzähler fpdi1j6a48pR bq bkKjs0EhVUrzkFVP5dC5rxJUFQiwXfXuody0D8B06h Prüfwert 27h4dRPMFvygLn00 Seriennr Seriennr TSE lund ¡ Summe B A MWST Gesamter Kreditkarte zu Pfandrückgabe Knotenbeutel MEWAktionsrabatt Vollk Franzbrötchen WienerleCroiss Pfand Red Pfand Dovgan Ayran Erdbeeren",
+        "y_position": 335,
+        "x_min": 24,
+        "x_max": 1937,
+        "confidence": 0.9382863710092944,
+        "line_number": 0,
+        "words_count": 43
+      },
+      {
+        "text": "- Bestätigt - KKtRbZPH8DsCfP1MMC6CWn4LHPbTNUmlqdMURvw + Lade 19 7 zahlen -27 0,554",
+        "y_position": 362,
+        "x_min": 172,
+        "x_max": 1902,
+        "confidence": 0.942266507582231,
+        "line_number": 1,
+        "words_count": 11
+      },
+      {
+        "text": "- Daten Nummer Nr Transaktionsnummer Bull",
+        "y_position": 380,
+        "x_min": 82,
+        "x_max": 1740,
+        "confidence": 0.9746073087056478,
+        "line_number": 2,
+        "words_count": 6
+      },
+      {
+        "text": "kontaktlos . spare % % % x . Aktionsrabatt",
+        "y_position": 398,
+        "x_min": 217,
+        "x_max": 1867,
+        "confidence": 0.8847259945339627,
+        "line_number": 3,
+        "words_count": 9
+      },
+      {
+        "text": "138773 573111/01 Sandwi 0,25 0,25 Plombir Joghurtgetränk",
+        "y_position": 414,
+        "x_min": 280,
+        "x_max": 1837,
+        "confidence": 0.9810604197638375,
+        "line_number": 4,
+        "words_count": 7
+      },
+      {
+        "text": "Autorisierung . K UST : . . dir Preisvorteil kg",
+        "y_position": 438,
+        "x_min": 27,
+        "x_max": 1897,
+        "confidence": 0.929923278093338,
+        "line_number": 5,
+        "words_count": 10
+      },
+      {
+        "text": ": - R4jhsqhtFinGcd8giwvYRjuS TSE Kasse Energy kg 1491",
+        "y_position": 455,
+        "x_min": 84,
+        "x_max": 1991,
+        "confidence": 0.9491539821028709,
+        "line_number": 6,
+        "words_count": 8
+      },
+      {
+        "text": "durch U - - bei M 7 x",
+        "y_position": 472,
+        "x_min": 187,
+        "x_max": 1895,
+        "confidence": 0.9339282140135765,
+        "line_number": 7,
+        "words_count": 8
+      },
+      {
+        "text": "Bezahlung N ID : : : die 5,93 5,21 0,72 MWST O % Steinhauser",
+        "y_position": 489,
+        "x_min": 420,
+        "x_max": 2026,
+        "confidence": 0.9527151499475751,
+        "line_number": 8,
+        "words_count": 14
+      },
+      {
+        "text": "- 12 11 : & . [ M 5,38",
+        "y_position": 505,
+        "x_min": 451,
+        "x_max": 1894,
+        "confidence": 0.9420809745788574,
+        "line_number": 9,
+        "words_count": 9
+      },
+      {
+        "text": "Chip 08:11 D - NR - : : 2275776 = F2vH5JJOGxOzRGtqga : deinem Toast . Kefir Overath",
+        "y_position": 521,
+        "x_min": 214,
+        "x_max": 1988,
+        "confidence": 0.9499482652720284,
+        "line_number": 10,
+        "words_count": 17
+      },
+      {
+        "text": "E 08.000Z 32.00OZ LDL Lidl 0,25",
+        "y_position": 539,
+        "x_min": 451,
+        "x_max": 1479,
+        "confidence": 0.930294543504715,
+        "line_number": 11,
+        "words_count": 6
+      },
+      {
+        "text": "mobiles - N :",
+        "y_position": 559,
+        "x_min": 184,
+        "x_max": 529,
+        "confidence": 0.9385571628808975,
+        "line_number": 12,
+        "words_count": 4
+      },
+      {
+        "text": "- DE814060660 - +",
+        "y_position": 578,
+        "x_min": 450,
+        "x_max": 1259,
+        "confidence": 0.9443026483058929,
+        "line_number": 13,
+        "words_count": 4
+      },
+      {
+        "text": "*********** B 000-6496-1 Plus EUR qgA",
+        "y_position": 594,
+        "x_min": 238,
+        "x_max": 2040,
+        "confidence": 0.8132685621579488,
+        "line_number": 14,
+        "words_count": 6
+      },
+      {
+        "text": "erfolgt A0000000031010,00 VISA - E : nächsten 0,79 0,99 0,25 1,39 0,49 -",
+        "y_position": 610,
+        "x_min": 28,
+        "x_max": 1983,
+        "confidence": 0.9645854876591609,
+        "line_number": 15,
+        "words_count": 13
+      },
+      {
+        "text": "- 1115449 37,62 27,41 10,21 Netto / Vilkerath",
+        "y_position": 628,
+        "x_min": 449,
+        "x_max": 1983,
+        "confidence": 0.9689590632915497,
+        "line_number": 16,
+        "words_count": 8
+      },
+      {
+        "text": "Kundengerät Beleg - L kg Auel",
+        "y_position": 645,
+        "x_min": 180,
+        "x_max": 2016,
+        "confidence": 0.9526114364465078,
+        "line_number": 17,
+        "words_count": 6
+      },
+      {
+        "text": "455600535769 - T E 21.05.25 App",
+        "y_position": 664,
+        "x_min": 144,
+        "x_max": 1075,
+        "confidence": 0.9775587419668833,
+        "line_number": 18,
+        "words_count": 6
+      },
+      {
+        "text": "ID - G x x x x x",
+        "y_position": 681,
+        "x_min": 299,
+        "x_max": 1828,
+        "confidence": 0.8501740917563438,
+        "line_number": 19,
+        "words_count": 8
+      },
+      {
+        "text": "# Nr - 60155114 43,55 Einkauf herunter = 24 24 1",
+        "y_position": 713,
+        "x_min": 237,
+        "x_max": 2012,
+        "confidence": 0.9412737217816439,
+        "line_number": 20,
+        "words_count": 11
+      },
+      {
+        "text": "4474.00 HOAM 2 2 2",
+        "y_position": 731,
+        "x_min": 228,
+        "x_max": 1826,
+        "confidence": 0.8716253876686096,
+        "line_number": 21,
+        "words_count": 5
+      },
+      {
+        "text": "135103 Online . + dvZbaId8 + Brutto",
+        "y_position": 747,
+        "x_min": 119,
+        "x_max": 1258,
+        "confidence": 0.9382127608571734,
+        "line_number": 22,
+        "words_count": 7
+      },
+      {
+        "text": "6081 h0gUSXZ 43,55 32,62 10,93 43,55 43,55 -6,75 -0,20 -0,22",
+        "y_position": 764,
+        "x_min": 257,
+        "x_max": 1851,
+        "confidence": 0.9639598786830902,
+        "line_number": 23,
+        "words_count": 10
+      },
+      {
+        "text": "EUR 08:11 0,01 1,29 1,58 6,00 33,36 0,25 2,29 0,98 2,98",
+        "y_position": 784,
+        "x_min": 346,
+        "x_max": 1913,
+        "confidence": 0.9738967256112532,
+        "line_number": 24,
+        "words_count": 11
+      },
+      {
+        "text": "** 1,98 EUR",
+        "y_position": 800,
+        "x_min": 34,
+        "x_max": 1943,
+        "confidence": 0.9410310784975687,
+        "line_number": 25,
+        "words_count": 3
+      },
+      {
+        "text": "0,42",
+        "y_position": 818,
+        "x_min": 1296,
+        "x_max": 1319,
+        "confidence": 0.9802836179733276,
+        "line_number": 26,
+        "words_count": 1
+      },
+      {
+        "text": "B B A A A A A",
+        "y_position": 846,
+        "x_min": 1486,
+        "x_max": 1914,
+        "confidence": 0.9836716737065997,
+        "line_number": 27,
+        "words_count": 7
+      },
+      {
+        "text": "A B B A",
+        "y_position": 862,
+        "x_min": 1647,
+        "x_max": 1823,
+        "confidence": 0.980641096830368,
+        "line_number": 28,
+        "words_count": 4
+      }
+    ],
+    "image_width": 2200,
+    "image_height": 1237,
+    "total_words": 262,
+    "total_lines": 29
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3548387096774194,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "dm",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 11
+    }
+  },
+  "store": {
+    "store_name": "Dm",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 1
+  },
+  "metadata": {
+    "receipt_date": "2025-05-21",
+    "receipt_total": 43.55,
+    "currency": "EUR",
+    "date_raw": "21.05.2025",
+    "total_raw": "43,55 ",
+    "total_line_number": 20
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "138773 573111/01 Sandwi",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "138773 573111/01 Sandwi 0,25"
+      },
+      {
+        "name": "Plombir Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "0,25 Plombir Joghurtgetränk"
+      },
+      {
+        "name": "12 11 : & . [",
+        "quantity": null,
+        "price": null,
+        "total": 5.38,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "- 12 11 : & . [ M 5,38"
+      },
+      {
+        "name": "E 08.000Z OZ LDL Lidl",
+        "quantity": null,
+        "price": null,
+        "total": 32.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "E 08.000Z 32.00OZ LDL Lidl"
+      },
+      {
+        "name": "Chip 08:11 D - NR - : : 2275776 = F2vH5JJOGxOzRGtqga : deinem Toast . Kefir Overath ",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "0,25"
+      }
+    ],
+    "discounts": [],
+    "items_count": 5,
+    "discounts_count": 0,
+    "items_total": 38.13,
+    "discounts_total": 0,
+    "skipped_lines": 14,
+    "parsed_lines": 5
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 38.13,
+    "discounts_sum": 0,
+    "calculated_total": 38.13,
+    "receipt_total": 43.55,
+    "difference": 5.419999999999995,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=38.13, receipt=43.55, diff=5.42 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.27781105041504,
+  "stages_completed": 6
+}

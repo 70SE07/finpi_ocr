@@ -1,0 +1,1222 @@
+{
+  "full_text": "5\nSUPERSPORTS\nSupersports Market Village Hua Hin\nTEL.032-526205-6\nTAX INVOICE(ABB) TAX ID#0105539138812\nPOS ID: E067700002A0865\n06.10.2025 15:52 Rcpt 475 035937\nTPNO 475 - 038965\nT1C: 7000000000000162\nSpecial Offer\nBal Points:\n0\nSales 14004275\nTITLEIST ACUSHNET\n8002908438123 SEA K FULL FACE MAGI\n1 * 2,590.00 2,590.00 BV\nColor 1821\nSize 485\n8002908518283 SEA U SWIM FINS SPEE\n1* 1.495.00 1,495.00 B V\nSize E015\nColor 1101\nTotal\n4,085.00\n4.085.00\nMAST 537428 XXXX2695\n***** VAT INCLUDED *****\n06.10.2025 15:53:29\nCashier : www.\nThank You For Shopping\nwww.supersports.co.th\nThe 20\nhttps://www.voice2cg.com/SSP/80336\n662025100680336475038965\nSupersports Market Village Hua Hin\n06.10.2025 15:52 Rcpt 475 - 035937\nTPNO 475 038965\nTotal\n4,085.00\nTotal\nMAST 537428 XXXX2695\n4,085.00\n4.085.00",
+  "words": [
+    {
+      "text": "5",
+      "bounding_box": {
+        "x": 519,
+        "y": 207,
+        "width": 115,
+        "height": 96
+      },
+      "confidence": 0.7325948476791382
+    },
+    {
+      "text": "SUPERSPORTS",
+      "bounding_box": {
+        "x": 491,
+        "y": 325,
+        "width": 176,
+        "height": 23
+      },
+      "confidence": 0.9522408246994019
+    },
+    {
+      "text": "Supersports",
+      "bounding_box": {
+        "x": 315,
+        "y": 350,
+        "width": 144,
+        "height": 37
+      },
+      "confidence": 0.9417200088500977
+    },
+    {
+      "text": "Market",
+      "bounding_box": {
+        "x": 482,
+        "y": 348,
+        "width": 79,
+        "height": 35
+      },
+      "confidence": 0.9838204979896545
+    },
+    {
+      "text": "Village",
+      "bounding_box": {
+        "x": 572,
+        "y": 346,
+        "width": 97,
+        "height": 34
+      },
+      "confidence": 0.9481586813926697
+    },
+    {
+      "text": "Hua",
+      "bounding_box": {
+        "x": 678,
+        "y": 344,
+        "width": 43,
+        "height": 34
+      },
+      "confidence": 0.948601484298706
+    },
+    {
+      "text": "Hin",
+      "bounding_box": {
+        "x": 730,
+        "y": 343,
+        "width": 43,
+        "height": 33
+      },
+      "confidence": 0.9787480235099792
+    },
+    {
+      "text": "TEL.032-526205-6",
+      "bounding_box": {
+        "x": 459,
+        "y": 377,
+        "width": 210,
+        "height": 32
+      },
+      "confidence": 0.9819113612174988
+    },
+    {
+      "text": "TAX",
+      "bounding_box": {
+        "x": 305,
+        "y": 411,
+        "width": 39,
+        "height": 34
+      },
+      "confidence": 0.9786797165870667
+    },
+    {
+      "text": "INVOICE",
+      "bounding_box": {
+        "x": 357,
+        "y": 409,
+        "width": 88,
+        "height": 35
+      },
+      "confidence": 0.9833927750587463
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 447,
+        "y": 410,
+        "width": 10,
+        "height": 32
+      },
+      "confidence": 0.9773125648498535
+    },
+    {
+      "text": "ABB",
+      "bounding_box": {
+        "x": 458,
+        "y": 408,
+        "width": 38,
+        "height": 33
+      },
+      "confidence": 0.9893964529037476
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 497,
+        "y": 409,
+        "width": 10,
+        "height": 32
+      },
+      "confidence": 0.9794637560844421
+    },
+    {
+      "text": "TAX",
+      "bounding_box": {
+        "x": 524,
+        "y": 407,
+        "width": 39,
+        "height": 33
+      },
+      "confidence": 0.9869551658630371
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 577,
+        "y": 407,
+        "width": 24,
+        "height": 32
+      },
+      "confidence": 0.9921808242797852
+    },
+    {
+      "text": "#",
+      "bounding_box": {
+        "x": 602,
+        "y": 407,
+        "width": 11,
+        "height": 32
+      },
+      "confidence": 0.9897845387458801
+    },
+    {
+      "text": "0105539138812",
+      "bounding_box": {
+        "x": 615,
+        "y": 403,
+        "width": 172,
+        "height": 36
+      },
+      "confidence": 0.9928975105285645
+    },
+    {
+      "text": "POS",
+      "bounding_box": {
+        "x": 302,
+        "y": 443,
+        "width": 41,
+        "height": 30
+      },
+      "confidence": 0.9669737815856934
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 357,
+        "y": 443,
+        "width": 25,
+        "height": 28
+      },
+      "confidence": 0.9650092720985413
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 395,
+        "y": 443,
+        "width": 13,
+        "height": 28
+      },
+      "confidence": 0.35840848088264465
+    },
+    {
+      "text": "E067700002A0865",
+      "bounding_box": {
+        "x": 445,
+        "y": 437,
+        "width": 197,
+        "height": 33
+      },
+      "confidence": 0.9779611825942993
+    },
+    {
+      "text": "06.10.2025",
+      "bounding_box": {
+        "x": 304,
+        "y": 469,
+        "width": 131,
+        "height": 35
+      },
+      "confidence": 0.9899969100952148
+    },
+    {
+      "text": "15:52",
+      "bounding_box": {
+        "x": 447,
+        "y": 469,
+        "width": 66,
+        "height": 32
+      },
+      "confidence": 0.9892811179161072
+    },
+    {
+      "text": "Rcpt",
+      "bounding_box": {
+        "x": 549,
+        "y": 466,
+        "width": 52,
+        "height": 33
+      },
+      "confidence": 0.920421838760376
+    },
+    {
+      "text": "475",
+      "bounding_box": {
+        "x": 613,
+        "y": 465,
+        "width": 43,
+        "height": 33
+      },
+      "confidence": 0.9810134172439575
+    },
+    {
+      "text": "035937",
+      "bounding_box": {
+        "x": 692,
+        "y": 463,
+        "width": 82,
+        "height": 33
+      },
+      "confidence": 0.9904798269271851
+    },
+    {
+      "text": "TPNO",
+      "bounding_box": {
+        "x": 551,
+        "y": 498,
+        "width": 51,
+        "height": 27
+      },
+      "confidence": 0.8410028219223022
+    },
+    {
+      "text": "475",
+      "bounding_box": {
+        "x": 614,
+        "y": 496,
+        "width": 42,
+        "height": 27
+      },
+      "confidence": 0.9851760864257812
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 667,
+        "y": 496,
+        "width": 12,
+        "height": 25
+      },
+      "confidence": 0.848376989364624
+    },
+    {
+      "text": "038965",
+      "bounding_box": {
+        "x": 694,
+        "y": 493,
+        "width": 80,
+        "height": 28
+      },
+      "confidence": 0.9912191033363342
+    },
+    {
+      "text": "T1C",
+      "bounding_box": {
+        "x": 302,
+        "y": 553,
+        "width": 39,
+        "height": 28
+      },
+      "confidence": 0.7500706315040588
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 342,
+        "y": 553,
+        "width": 8,
+        "height": 27
+      },
+      "confidence": 0.9631996750831604
+    },
+    {
+      "text": "7000000000000162",
+      "bounding_box": {
+        "x": 366,
+        "y": 551,
+        "width": 209,
+        "height": 29
+      },
+      "confidence": 0.9914934635162354
+    },
+    {
+      "text": "Special",
+      "bounding_box": {
+        "x": 298,
+        "y": 580,
+        "width": 93,
+        "height": 28
+      },
+      "confidence": 0.9814213514328003
+    },
+    {
+      "text": "Offer",
+      "bounding_box": {
+        "x": 402,
+        "y": 578,
+        "width": 69,
+        "height": 27
+      },
+      "confidence": 0.982046902179718
+    },
+    {
+      "text": "Bal",
+      "bounding_box": {
+        "x": 301,
+        "y": 609,
+        "width": 39,
+        "height": 28
+      },
+      "confidence": 0.8633497357368469
+    },
+    {
+      "text": "Points",
+      "bounding_box": {
+        "x": 352,
+        "y": 606,
+        "width": 79,
+        "height": 29
+      },
+      "confidence": 0.9775463342666626
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 431,
+        "y": 606,
+        "width": 9,
+        "height": 26
+      },
+      "confidence": 0.956339955329895
+    },
+    {
+      "text": "0",
+      "bounding_box": {
+        "x": 746,
+        "y": 606,
+        "width": 16,
+        "height": 24
+      },
+      "confidence": 0.881986141204834
+    },
+    {
+      "text": "Sales",
+      "bounding_box": {
+        "x": 301,
+        "y": 690,
+        "width": 67,
+        "height": 34
+      },
+      "confidence": 0.9643317461013794
+    },
+    {
+      "text": "14004275",
+      "bounding_box": {
+        "x": 406,
+        "y": 687,
+        "width": 103,
+        "height": 35
+      },
+      "confidence": 0.9914605617523193
+    },
+    {
+      "text": "TITLEIST",
+      "bounding_box": {
+        "x": 576,
+        "y": 684,
+        "width": 106,
+        "height": 35
+      },
+      "confidence": 0.9713187217712402
+    },
+    {
+      "text": "ACUSHNET",
+      "bounding_box": {
+        "x": 694,
+        "y": 682,
+        "width": 108,
+        "height": 35
+      },
+      "confidence": 0.9530957341194153
+    },
+    {
+      "text": "8002908438123",
+      "bounding_box": {
+        "x": 317,
+        "y": 743,
+        "width": 167,
+        "height": 36
+      },
+      "confidence": 0.9930378794670105
+    },
+    {
+      "text": "SEA",
+      "bounding_box": {
+        "x": 508,
+        "y": 742,
+        "width": 41,
+        "height": 33
+      },
+      "confidence": 0.990719735622406
+    },
+    {
+      "text": "K",
+      "bounding_box": {
+        "x": 561,
+        "y": 742,
+        "width": 15,
+        "height": 32
+      },
+      "confidence": 0.9782910346984863
+    },
+    {
+      "text": "FULL",
+      "bounding_box": {
+        "x": 585,
+        "y": 740,
+        "width": 57,
+        "height": 34
+      },
+      "confidence": 0.992367684841156
+    },
+    {
+      "text": "FACE",
+      "bounding_box": {
+        "x": 653,
+        "y": 739,
+        "width": 57,
+        "height": 34
+      },
+      "confidence": 0.9846991300582886
+    },
+    {
+      "text": "MAGI",
+      "bounding_box": {
+        "x": 719,
+        "y": 738,
+        "width": 57,
+        "height": 34
+      },
+      "confidence": 0.9922535419464111
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 355,
+        "y": 779,
+        "width": 12,
+        "height": 29
+      },
+      "confidence": 0.8296815156936646
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 378,
+        "y": 778,
+        "width": 17,
+        "height": 29
+      },
+      "confidence": 0.7466267943382263
+    },
+    {
+      "text": "2,590.00",
+      "bounding_box": {
+        "x": 468,
+        "y": 774,
+        "width": 108,
+        "height": 31
+      },
+      "confidence": 0.9912421703338623
+    },
+    {
+      "text": "2,590.00",
+      "bounding_box": {
+        "x": 652,
+        "y": 770,
+        "width": 109,
+        "height": 32
+      },
+      "confidence": 0.9892405867576599
+    },
+    {
+      "text": "BV",
+      "bounding_box": {
+        "x": 774,
+        "y": 768,
+        "width": 45,
+        "height": 31
+      },
+      "confidence": 0.8526092767715454
+    },
+    {
+      "text": "Color",
+      "bounding_box": {
+        "x": 572,
+        "y": 801,
+        "width": 70,
+        "height": 30
+      },
+      "confidence": 0.963573157787323
+    },
+    {
+      "text": "1821",
+      "bounding_box": {
+        "x": 655,
+        "y": 800,
+        "width": 52,
+        "height": 30
+      },
+      "confidence": 0.991272509098053
+    },
+    {
+      "text": "Size",
+      "bounding_box": {
+        "x": 342,
+        "y": 807,
+        "width": 52,
+        "height": 32
+      },
+      "confidence": 0.9836506247520447
+    },
+    {
+      "text": "485",
+      "bounding_box": {
+        "x": 404,
+        "y": 805,
+        "width": 42,
+        "height": 31
+      },
+      "confidence": 0.9924174547195435
+    },
+    {
+      "text": "8002908518283",
+      "bounding_box": {
+        "x": 319,
+        "y": 834,
+        "width": 165,
+        "height": 35
+      },
+      "confidence": 0.9895414710044861
+    },
+    {
+      "text": "SEA",
+      "bounding_box": {
+        "x": 508,
+        "y": 833,
+        "width": 39,
+        "height": 32
+      },
+      "confidence": 0.9904159903526306
+    },
+    {
+      "text": "U",
+      "bounding_box": {
+        "x": 562,
+        "y": 833,
+        "width": 15,
+        "height": 30
+      },
+      "confidence": 0.9917306900024414
+    },
+    {
+      "text": "SWIM",
+      "bounding_box": {
+        "x": 588,
+        "y": 831,
+        "width": 53,
+        "height": 32
+      },
+      "confidence": 0.9878520965576172
+    },
+    {
+      "text": "FINS",
+      "bounding_box": {
+        "x": 655,
+        "y": 830,
+        "width": 52,
+        "height": 32
+      },
+      "confidence": 0.9852659106254578
+    },
+    {
+      "text": "SPEE",
+      "bounding_box": {
+        "x": 720,
+        "y": 829,
+        "width": 58,
+        "height": 31
+      },
+      "confidence": 0.9683493375778198
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 358,
+        "y": 870,
+        "width": 11,
+        "height": 29
+      },
+      "confidence": 0.957529604434967
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 379,
+        "y": 869,
+        "width": 16,
+        "height": 29
+      },
+      "confidence": 0.8753124475479126
+    },
+    {
+      "text": "1.495.00",
+      "bounding_box": {
+        "x": 470,
+        "y": 865,
+        "width": 107,
+        "height": 31
+      },
+      "confidence": 0.9884670972824097
+    },
+    {
+      "text": "1,495.00",
+      "bounding_box": {
+        "x": 655,
+        "y": 860,
+        "width": 109,
+        "height": 32
+      },
+      "confidence": 0.9703235030174255
+    },
+    {
+      "text": "B",
+      "bounding_box": {
+        "x": 774,
+        "y": 860,
+        "width": 15,
+        "height": 29
+      },
+      "confidence": 0.9834775924682617
+    },
+    {
+      "text": "V",
+      "bounding_box": {
+        "x": 799,
+        "y": 859,
+        "width": 21,
+        "height": 29
+      },
+      "confidence": 0.8601083755493164
+    },
+    {
+      "text": "Size",
+      "bounding_box": {
+        "x": 343,
+        "y": 896,
+        "width": 53,
+        "height": 29
+      },
+      "confidence": 0.9647929668426514
+    },
+    {
+      "text": "E015",
+      "bounding_box": {
+        "x": 406,
+        "y": 895,
+        "width": 54,
+        "height": 29
+      },
+      "confidence": 0.9887531995773315
+    },
+    {
+      "text": "Color",
+      "bounding_box": {
+        "x": 574,
+        "y": 892,
+        "width": 67,
+        "height": 28
+      },
+      "confidence": 0.9562750458717346
+    },
+    {
+      "text": "1101",
+      "bounding_box": {
+        "x": 655,
+        "y": 892,
+        "width": 50,
+        "height": 27
+      },
+      "confidence": 0.9909403920173645
+    },
+    {
+      "text": "Total",
+      "bounding_box": {
+        "x": 295,
+        "y": 959,
+        "width": 61,
+        "height": 26
+      },
+      "confidence": 0.9733867645263672
+    },
+    {
+      "text": "4,085.00",
+      "bounding_box": {
+        "x": 653,
+        "y": 948,
+        "width": 111,
+        "height": 31
+      },
+      "confidence": 0.9847227931022644
+    },
+    {
+      "text": "4.085.00",
+      "bounding_box": {
+        "x": 655,
+        "y": 1040,
+        "width": 109,
+        "height": 26
+      },
+      "confidence": 0.9901522397994995
+    },
+    {
+      "text": "MAST",
+      "bounding_box": {
+        "x": 297,
+        "y": 1043,
+        "width": 48,
+        "height": 29
+      },
+      "confidence": 0.945838451385498
+    },
+    {
+      "text": "537428",
+      "bounding_box": {
+        "x": 382,
+        "y": 1041,
+        "width": 76,
+        "height": 30
+      },
+      "confidence": 0.9932929873466492
+    },
+    {
+      "text": "XXXX2695",
+      "bounding_box": {
+        "x": 471,
+        "y": 1040,
+        "width": 106,
+        "height": 30
+      },
+      "confidence": 0.9893540740013123
+    },
+    {
+      "text": "*****",
+      "bounding_box": {
+        "x": 398,
+        "y": 1100,
+        "width": 62,
+        "height": 29
+      },
+      "confidence": 0.9333263039588928
+    },
+    {
+      "text": "VAT",
+      "bounding_box": {
+        "x": 485,
+        "y": 1100,
+        "width": 39,
+        "height": 28
+      },
+      "confidence": 0.9959818124771118
+    },
+    {
+      "text": "INCLUDED",
+      "bounding_box": {
+        "x": 539,
+        "y": 1099,
+        "width": 106,
+        "height": 28
+      },
+      "confidence": 0.9658706188201904
+    },
+    {
+      "text": "*****",
+      "bounding_box": {
+        "x": 669,
+        "y": 1097,
+        "width": 66,
+        "height": 29
+      },
+      "confidence": 0.9472835063934326
+    },
+    {
+      "text": "06.10.2025",
+      "bounding_box": {
+        "x": 323,
+        "y": 1157,
+        "width": 126,
+        "height": 29
+      },
+      "confidence": 0.9897890090942383
+    },
+    {
+      "text": "15:53:29",
+      "bounding_box": {
+        "x": 463,
+        "y": 1156,
+        "width": 103,
+        "height": 29
+      },
+      "confidence": 0.993485152721405
+    },
+    {
+      "text": "Cashier",
+      "bounding_box": {
+        "x": 321,
+        "y": 1213,
+        "width": 93,
+        "height": 33
+      },
+      "confidence": 0.9467896819114685
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 457,
+        "y": 1213,
+        "width": 18,
+        "height": 30
+      },
+      "confidence": 0.6879571080207825
+    },
+    {
+      "text": "www",
+      "bounding_box": {
+        "x": 487,
+        "y": 1209,
+        "width": 100,
+        "height": 33
+      },
+      "confidence": 0.5688920021057129
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 592,
+        "y": 1210,
+        "width": 24,
+        "height": 30
+      },
+      "confidence": 0.6834794878959656
+    },
+    {
+      "text": "Thank",
+      "bounding_box": {
+        "x": 415,
+        "y": 1304,
+        "width": 63,
+        "height": 28
+      },
+      "confidence": 0.971935510635376
+    },
+    {
+      "text": "You",
+      "bounding_box": {
+        "x": 489,
+        "y": 1304,
+        "width": 39,
+        "height": 28
+      },
+      "confidence": 0.9839847683906555
+    },
+    {
+      "text": "For",
+      "bounding_box": {
+        "x": 542,
+        "y": 1304,
+        "width": 39,
+        "height": 28
+      },
+      "confidence": 0.9691547751426697
+    },
+    {
+      "text": "Shopping",
+      "bounding_box": {
+        "x": 594,
+        "y": 1304,
+        "width": 108,
+        "height": 28
+      },
+      "confidence": 0.925487756729126
+    },
+    {
+      "text": "www.supersports.co.th",
+      "bounding_box": {
+        "x": 425,
+        "y": 1329,
+        "width": 278,
+        "height": 31
+      },
+      "confidence": 0.9512721300125122
+    },
+    {
+      "text": "The",
+      "bounding_box": {
+        "x": 621,
+        "y": 1388,
+        "width": 43,
+        "height": 29
+      },
+      "confidence": 0.5982433557510376
+    },
+    {
+      "text": "20",
+      "bounding_box": {
+        "x": 685,
+        "y": 1390,
+        "width": 32,
+        "height": 28
+      },
+      "confidence": 0.9022042751312256
+    },
+    {
+      "text": "https://www.voice2cg.com/SSP/80336",
+      "bounding_box": {
+        "x": 301,
+        "y": 1439,
+        "width": 443,
+        "height": 37
+      },
+      "confidence": 0.9520145654678345
+    },
+    {
+      "text": "662025100680336475038965",
+      "bounding_box": {
+        "x": 363,
+        "y": 1813,
+        "width": 451,
+        "height": 57
+      },
+      "confidence": 0.9908849000930786
+    },
+    {
+      "text": "Supersports",
+      "bounding_box": {
+        "x": 335,
+        "y": 1875,
+        "width": 144,
+        "height": 41
+      },
+      "confidence": 0.954497218132019
+    },
+    {
+      "text": "Market",
+      "bounding_box": {
+        "x": 498,
+        "y": 1882,
+        "width": 81,
+        "height": 37
+      },
+      "confidence": 0.9851183295249939
+    },
+    {
+      "text": "Village",
+      "bounding_box": {
+        "x": 589,
+        "y": 1885,
+        "width": 95,
+        "height": 39
+      },
+      "confidence": 0.9793474078178406
+    },
+    {
+      "text": "Hua",
+      "bounding_box": {
+        "x": 695,
+        "y": 1890,
+        "width": 41,
+        "height": 36
+      },
+      "confidence": 0.9446790814399719
+    },
+    {
+      "text": "Hin",
+      "bounding_box": {
+        "x": 747,
+        "y": 1892,
+        "width": 42,
+        "height": 36
+      },
+      "confidence": 0.9648791551589966
+    },
+    {
+      "text": "06.10.2025",
+      "bounding_box": {
+        "x": 324,
+        "y": 1902,
+        "width": 131,
+        "height": 38
+      },
+      "confidence": 0.9819896817207336
+    },
+    {
+      "text": "15:52",
+      "bounding_box": {
+        "x": 466,
+        "y": 1908,
+        "width": 62,
+        "height": 34
+      },
+      "confidence": 0.9875633716583252
+    },
+    {
+      "text": "Rcpt",
+      "bounding_box": {
+        "x": 562,
+        "y": 1911,
+        "width": 56,
+        "height": 35
+      },
+      "confidence": 0.963548481464386
+    },
+    {
+      "text": "475",
+      "bounding_box": {
+        "x": 626,
+        "y": 1913,
+        "width": 48,
+        "height": 35
+      },
+      "confidence": 0.9779091477394104
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 681,
+        "y": 1916,
+        "width": 23,
+        "height": 33
+      },
+      "confidence": 0.7737621665000916
+    },
+    {
+      "text": "035937",
+      "bounding_box": {
+        "x": 707,
+        "y": 1916,
+        "width": 83,
+        "height": 36
+      },
+      "confidence": 0.9808616638183594
+    },
+    {
+      "text": "TPNO",
+      "bounding_box": {
+        "x": 566,
+        "y": 1947,
+        "width": 52,
+        "height": 25
+      },
+      "confidence": 0.9177725315093994
+    },
+    {
+      "text": "475",
+      "bounding_box": {
+        "x": 630,
+        "y": 1947,
+        "width": 41,
+        "height": 25
+      },
+      "confidence": 0.9853294491767883
+    },
+    {
+      "text": "038965",
+      "bounding_box": {
+        "x": 709,
+        "y": 1948,
+        "width": 81,
+        "height": 26
+      },
+      "confidence": 0.9874525666236877
+    },
+    {
+      "text": "Total",
+      "bounding_box": {
+        "x": 315,
+        "y": 1983,
+        "width": 64,
+        "height": 29
+      },
+      "confidence": 0.9632620811462402
+    },
+    {
+      "text": "4,085.00",
+      "bounding_box": {
+        "x": 669,
+        "y": 1999,
+        "width": 107,
+        "height": 26
+      },
+      "confidence": 0.9761603474617004
+    },
+    {
+      "text": "Total",
+      "bounding_box": {
+        "x": 317,
+        "y": 2039,
+        "width": 64,
+        "height": 27
+      },
+      "confidence": 0.9614840149879456
+    },
+    {
+      "text": "MAST",
+      "bounding_box": {
+        "x": 316,
+        "y": 2063,
+        "width": 55,
+        "height": 36
+      },
+      "confidence": 0.8874236345291138
+    },
+    {
+      "text": "537428",
+      "bounding_box": {
+        "x": 403,
+        "y": 2069,
+        "width": 77,
+        "height": 37
+      },
+      "confidence": 0.9925404191017151
+    },
+    {
+      "text": "XXXX2695",
+      "bounding_box": {
+        "x": 489,
+        "y": 2074,
+        "width": 107,
+        "height": 39
+      },
+      "confidence": 0.9887362718582153
+    },
+    {
+      "text": "4,085.00",
+      "bounding_box": {
+        "x": 671,
+        "y": 2055,
+        "width": 106,
+        "height": 25
+      },
+      "confidence": 0.970341145992279
+    },
+    {
+      "text": "4.085.00",
+      "bounding_box": {
+        "x": 671,
+        "y": 2083,
+        "width": 107,
+        "height": 25
+      },
+      "confidence": 0.9901247620582581
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_2459",
+    "image_width": 1237,
+    "image_height": 2200,
+    "processed_at": "2026-01-02T06:00:15.709022",
+    "preprocessing_applied": []
+  }
+}

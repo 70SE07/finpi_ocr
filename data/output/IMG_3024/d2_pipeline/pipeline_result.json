@@ -1,0 +1,580 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "B.19 %",
+        "quantity": null,
+        "price": null,
+        "total": 4.15,
+        "date": "2025-05-31 00:00:00"
+      }
+    ],
+    "total_amount": 4.15,
+    "merchant": "Netto",
+    "store_address": null,
+    "date": "2025-05-31 00:00:00",
+    "receipt_id": "IMG_3024",
+    "ocr_text": "LODL\nSteinhauser Auel 1\n51491 Overath-Vilkerath\nEUR\nRed Bull Energy\n19,99 B\nPfand 6,00 M\nSAЯ 6,00 B\nzu zahlen\n25,99\nKreditkarte\n25,99\nMWSTX\nMWST +\nNetto = Brutto\nB.19 %\n4,15\n21,84\n25,99\nSumme\n4,15\n21,84\n25,99\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nISE Transaktionsnummer: 1130081\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJ0GX0ZRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPON40VCBSFZ4P-6FxmobHtkp2MrPu\nRIZ133. SZYNYJBz4bc3d32gHdinsg5mUOTCgkZT\nq2oPGX1/68plliu9E+YCUP1RWijhSpDpP+yEyryh\nSXQyeJ/\nSignaturzahler: 2305750\n2075-05-31116.29:26.00OZ\n2025 05-31 18:29:47.000Z\n6496\n01193\n81\n502\n31.05.25 20:29\nUST D-NR: DE814060660\nK-D-E-N-B-E-L-E-G\nluna VICA\nrag\n31.05.2025\n20:28\nJD 60155177\n1A Nr. 206943\ng-Nr. 7868\nKartenn\nVisa kontaktlos Chip\n*******8130 00\nVU-Nummer\nAutorisierungsnum\nBestatiul durch mobiles ku ngeral\nAutorisierungsantwortcode\nEMV-Daten:\nAutorisierung erfoll\nOnline\n455500535769\n542071\n00\n30 TH 1010/00",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 1.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LODL",
+        "y_position": 302,
+        "x_min": 562,
+        "x_max": 721,
+        "confidence": 0.7921704053878784,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser",
+        "y_position": 365,
+        "x_min": 479,
+        "x_max": 678,
+        "confidence": 0.9864606261253357,
+        "line_number": 1,
+        "words_count": 1
+      },
+      {
+        "text": "Auel 1",
+        "y_position": 381,
+        "x_min": 693,
+        "x_max": 797,
+        "confidence": 0.9673686921596527,
+        "line_number": 2,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath - Vilkerath",
+        "y_position": 405,
+        "x_min": 424,
+        "x_max": 839,
+        "confidence": 0.9840541183948517,
+        "line_number": 3,
+        "words_count": 4
+      },
+      {
+        "text": "Red Bull Energy EUR",
+        "y_position": 466,
+        "x_min": 265,
+        "x_max": 960,
+        "confidence": 0.9832962304353714,
+        "line_number": 4,
+        "words_count": 4
+      },
+      {
+        "text": "19,99 B",
+        "y_position": 497,
+        "x_min": 870,
+        "x_max": 992,
+        "confidence": 0.9779757857322693,
+        "line_number": 5,
+        "words_count": 2
+      },
+      {
+        "text": "Pfand 6,00 M",
+        "y_position": 516,
+        "x_min": 263,
+        "x_max": 479,
+        "confidence": 0.9796226620674133,
+        "line_number": 6,
+        "words_count": 3
+      },
+      {
+        "text": "SAЯ 6,00 B",
+        "y_position": 533,
+        "x_min": 732,
+        "x_max": 991,
+        "confidence": 0.7444074749946594,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "zu zahlen",
+        "y_position": 562,
+        "x_min": 259,
+        "x_max": 421,
+        "confidence": 0.9869881570339203,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "Kreditkarte 25,99",
+        "y_position": 586,
+        "x_min": 258,
+        "x_max": 954,
+        "confidence": 0.9766712784767151,
+        "line_number": 9,
+        "words_count": 2
+      },
+      {
+        "text": "25,99",
+        "y_position": 621,
+        "x_min": 866,
+        "x_max": 954,
+        "confidence": 0.9703327417373657,
+        "line_number": 10,
+        "words_count": 1
+      },
+      {
+        "text": "MWSTX MWST + Netto =",
+        "y_position": 649,
+        "x_min": 275,
+        "x_max": 818,
+        "confidence": 0.9346923589706421,
+        "line_number": 11,
+        "words_count": 5
+      },
+      {
+        "text": "Brutto",
+        "y_position": 666,
+        "x_min": 847,
+        "x_max": 955,
+        "confidence": 0.9653313159942627,
+        "line_number": 12,
+        "words_count": 1
+      },
+      {
+        "text": "B.19 % 4,15 21,84",
+        "y_position": 682,
+        "x_min": 254,
+        "x_max": 761,
+        "confidence": 0.9040426462888718,
+        "line_number": 13,
+        "words_count": 4
+      },
+      {
+        "text": "25,99",
+        "y_position": 704,
+        "x_min": 866,
+        "x_max": 953,
+        "confidence": 0.9792476296424866,
+        "line_number": 14,
+        "words_count": 1
+      },
+      {
+        "text": "Summe 4,15 21,84",
+        "y_position": 722,
+        "x_min": 254,
+        "x_max": 759,
+        "confidence": 0.976905902226766,
+        "line_number": 15,
+        "words_count": 3
+      },
+      {
+        "text": "25,99",
+        "y_position": 740,
+        "x_min": 863,
+        "x_max": 954,
+        "confidence": 0.9674655795097351,
+        "line_number": 16,
+        "words_count": 1
+      },
+      {
+        "text": "Lade dir die Lidl Plus",
+        "y_position": 776,
+        "x_min": 303,
+        "x_max": 700,
+        "confidence": 0.9679163098335266,
+        "line_number": 17,
+        "words_count": 5
+      },
+      {
+        "text": "App herunter",
+        "y_position": 793,
+        "x_min": 717,
+        "x_max": 932,
+        "confidence": 0.981811910867691,
+        "line_number": 18,
+        "words_count": 2
+      },
+      {
+        "text": "und spare bei deinem nächsten",
+        "y_position": 819,
+        "x_min": 265,
+        "x_max": 789,
+        "confidence": 0.9776043891906738,
+        "line_number": 19,
+        "words_count": 5
+      },
+      {
+        "text": "Einkauf .",
+        "y_position": 836,
+        "x_min": 807,
+        "x_max": 943,
+        "confidence": 0.9605222642421722,
+        "line_number": 20,
+        "words_count": 2
+      },
+      {
+        "text": "ISE Transaktionsnummer : 1130081",
+        "y_position": 973,
+        "x_min": 253,
+        "x_max": 798,
+        "confidence": 0.938650593161583,
+        "line_number": 21,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-81",
+        "y_position": 1010,
+        "x_min": 248,
+        "x_max": 814,
+        "confidence": 0.9432751962116787,
+        "line_number": 22,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJ0GX0ZRGtqga",
+        "y_position": 1043,
+        "x_min": 248,
+        "x_max": 833,
+        "confidence": 0.9045907378196716,
+        "line_number": 23,
+        "words_count": 5
+      },
+      {
+        "text": "+ dvZbaId8",
+        "y_position": 1060,
+        "x_min": 833,
+        "x_max": 994,
+        "confidence": 0.8829019963741302,
+        "line_number": 24,
+        "words_count": 2
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1084,
+        "x_min": 247,
+        "x_max": 554,
+        "confidence": 0.9670978486537933,
+        "line_number": 25,
+        "words_count": 2
+      },
+      {
+        "text": "PON40VCBSFZ4P - 6FxmobHtkp2MrPu",
+        "y_position": 1124,
+        "x_min": 428,
+        "x_max": 996,
+        "confidence": 0.5722365081310272,
+        "line_number": 26,
+        "words_count": 3
+      },
+      {
+        "text": "RIZ133 . SZYNYJBz4bc3d32gHdinsg5mUOTCgkZT",
+        "y_position": 1158,
+        "x_min": 247,
+        "x_max": 994,
+        "confidence": 0.5915970106919607,
+        "line_number": 27,
+        "words_count": 3
+      },
+      {
+        "text": "q2oPGX1 / 68plliu9E + YCUP1RWijhSpDpP + yEyryh",
+        "y_position": 1193,
+        "x_min": 247,
+        "x_max": 991,
+        "confidence": 0.7644319534301758,
+        "line_number": 28,
+        "words_count": 7
+      },
+      {
+        "text": "SXQyeJ /",
+        "y_position": 1237,
+        "x_min": 247,
+        "x_max": 448,
+        "confidence": 0.5235059559345245,
+        "line_number": 29,
+        "words_count": 2
+      },
+      {
+        "text": "Signaturzahler : 2305750",
+        "y_position": 1270,
+        "x_min": 245,
+        "x_max": 654,
+        "confidence": 0.895432690779368,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "2075-05-31116.29 : 26.00OZ",
+        "y_position": 1312,
+        "x_min": 247,
+        "x_max": 671,
+        "confidence": 0.864473025004069,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "2025 05-31 18 : 29 : 47.000Z 502",
+        "y_position": 1343,
+        "x_min": 247,
+        "x_max": 860,
+        "confidence": 0.8257532194256783,
+        "line_number": 32,
+        "words_count": 8
+      },
+      {
+        "text": "6496 01193 81 31.05.25 20:29",
+        "y_position": 1382,
+        "x_min": 246,
+        "x_max": 985,
+        "confidence": 0.985701608657837,
+        "line_number": 33,
+        "words_count": 5
+      },
+      {
+        "text": "UST D - NR : DE814060660",
+        "y_position": 1415,
+        "x_min": 410,
+        "x_max": 790,
+        "confidence": 0.9555415411790212,
+        "line_number": 34,
+        "words_count": 6
+      },
+      {
+        "text": "K - D - E - N - B - E - L - E - G",
+        "y_position": 1461,
+        "x_min": 408,
+        "x_max": 773,
+        "confidence": 0.877421135411543,
+        "line_number": 35,
+        "words_count": 17
+      },
+      {
+        "text": "luna VICA",
+        "y_position": 1497,
+        "x_min": 562,
+        "x_max": 718,
+        "confidence": 0.6015744507312775,
+        "line_number": 36,
+        "words_count": 2
+      },
+      {
+        "text": "rag",
+        "y_position": 1561,
+        "x_min": 297,
+        "x_max": 354,
+        "confidence": 0.818570077419281,
+        "line_number": 37,
+        "words_count": 1
+      },
+      {
+        "text": "31.05.2025 20:28 JD 60155177",
+        "y_position": 1593,
+        "x_min": 251,
+        "x_max": 940,
+        "confidence": 0.7750043570995331,
+        "line_number": 38,
+        "words_count": 4
+      },
+      {
+        "text": "1A Nr . 206943 Nr . 7868",
+        "y_position": 1626,
+        "x_min": 250,
+        "x_max": 940,
+        "confidence": 0.7374998075621468,
+        "line_number": 39,
+        "words_count": 7
+      },
+      {
+        "text": "g -",
+        "y_position": 1642,
+        "x_min": 766,
+        "x_max": 810,
+        "confidence": 0.3594789654016495,
+        "line_number": 40,
+        "words_count": 2
+      },
+      {
+        "text": "Kartenn ******* 8130 00",
+        "y_position": 1661,
+        "x_min": 246,
+        "x_max": 936,
+        "confidence": 0.8146592006087303,
+        "line_number": 41,
+        "words_count": 4
+      },
+      {
+        "text": "Visa kontaktlos Chip Online",
+        "y_position": 1691,
+        "x_min": 243,
+        "x_max": 936,
+        "confidence": 0.8907050639390945,
+        "line_number": 42,
+        "words_count": 4
+      },
+      {
+        "text": "Bestatiul durch mobiles ku",
+        "y_position": 1724,
+        "x_min": 276,
+        "x_max": 732,
+        "confidence": 0.6968782544136047,
+        "line_number": 43,
+        "words_count": 4
+      },
+      {
+        "text": "ngeral",
+        "y_position": 1742,
+        "x_min": 774,
+        "x_max": 884,
+        "confidence": 0.7300323843955994,
+        "line_number": 44,
+        "words_count": 1
+      },
+      {
+        "text": "VU - Nummer 455500535769",
+        "y_position": 1765,
+        "x_min": 244,
+        "x_max": 938,
+        "confidence": 0.8653573989868164,
+        "line_number": 45,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnum 542071",
+        "y_position": 1792,
+        "x_min": 245,
+        "x_max": 935,
+        "confidence": 0.9108469486236572,
+        "line_number": 46,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode",
+        "y_position": 1823,
+        "x_min": 245,
+        "x_max": 680,
+        "confidence": 0.8757948279380798,
+        "line_number": 47,
+        "words_count": 1
+      },
+      {
+        "text": "EMV 00",
+        "y_position": 1846,
+        "x_min": 244,
+        "x_max": 939,
+        "confidence": 0.9818228781223297,
+        "line_number": 48,
+        "words_count": 2
+      },
+      {
+        "text": "- Daten : 1010/00",
+        "y_position": 1866,
+        "x_min": 296,
+        "x_max": 936,
+        "confidence": 0.8702715784311295,
+        "line_number": 49,
+        "words_count": 4
+      },
+      {
+        "text": "30 TH",
+        "y_position": 1882,
+        "x_min": 639,
+        "x_max": 782,
+        "confidence": 0.15472211688756943,
+        "line_number": 50,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierung",
+        "y_position": 1914,
+        "x_min": 397,
+        "x_max": 626,
+        "confidence": 0.7920244932174683,
+        "line_number": 51,
+        "words_count": 1
+      },
+      {
+        "text": "erfoll",
+        "y_position": 1936,
+        "x_min": 638,
+        "x_max": 754,
+        "confidence": 0.6942801475524902,
+        "line_number": 52,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 177,
+    "total_lines": 53
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.2903225806451613,
+    "matched_keywords": [
+      "summe",
+      "zu zahlen",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 9
+    }
+  },
+  "store": {
+    "store_name": "Netto",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 11
+  },
+  "metadata": {
+    "receipt_date": "2025-05-31",
+    "receipt_total": 4.15,
+    "currency": "EUR",
+    "date_raw": "31.05.25",
+    "total_raw": "4,15 ",
+    "total_line_number": 15
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "B.19 %",
+        "quantity": null,
+        "price": null,
+        "total": 4.15,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "B.19 % 4,15"
+      }
+    ],
+    "discounts": [],
+    "items_count": 1,
+    "discounts_count": 0,
+    "items_total": 4.15,
+    "discounts_total": 0,
+    "skipped_lines": 51,
+    "parsed_lines": 1
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 4.15,
+    "discounts_sum": 0,
+    "calculated_total": 4.15,
+    "receipt_total": 4.15,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 19.828081130981445,
+  "stages_completed": 6
+}

@@ -1,0 +1,1512 @@
+{
+  "full_text": "Coll\n(B)\nahunanului: taun 549/1 nuua15w135\nPAL\n10260\nal 02 017-7770\nmizu 02-017-7778\nTAX ID:0107557000462\nPOS :E067700002A0969\nantum : 878\n2015.064-513-5278\n/tum()\nRECEIPT/TAX INVOICE (ORIGINAL)\n6809-BR878-00109\n08/09/2025\njun\nD\nTati\nTax ID\n1320501336180\n2727\nVIDE\n234/1 a.\nA5716\nS\nTECHPRO USB-A to\n1\n150.00\nUSB-C Cable 3A Super\nFast Charge 1M.\nTitanlink Black\nTP-C07 EXP\n14-09-2025\nTECHPRO Wall USB\n1\n390.00\nCharger 1 USB-A\nQC3.0/ 1 USB-C\nPD20W White\nTP-WC04 New TISI\nEXP 07-09-2026\n540.00\n35.33\n504.67\n()\nPayment\nBBI (7) 0011: ShipNa\n6-150-18\nu7umumdatuta 6809-CH678-00282\nPhy(ID) 58,190-869\nDocNo 58,187-869\nComment:\nMonday window an\n**nduan daunt\n**Auzoa tuulatan\nJoulumus un :\nhttp://www.comseven.com/conditions/\nData whi\nWan QR Code\n540.00",
+  "words": [
+    {
+      "text": "Coll",
+      "bounding_box": {
+        "x": 414,
+        "y": 184,
+        "width": 86,
+        "height": 38
+      },
+      "confidence": 0.5607312917709351
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 536,
+        "y": 232,
+        "width": 16,
+        "height": 21
+      },
+      "confidence": 0.37537357211112976
+    },
+    {
+      "text": "B",
+      "bounding_box": {
+        "x": 545,
+        "y": 232,
+        "width": 20,
+        "height": 21
+      },
+      "confidence": 0.4339374601840973
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 610,
+        "y": 232,
+        "width": 13,
+        "height": 21
+      },
+      "confidence": 0.5914843082427979
+    },
+    {
+      "text": "ahunanului",
+      "bounding_box": {
+        "x": 325,
+        "y": 255,
+        "width": 84,
+        "height": 14
+      },
+      "confidence": 0.40566426515579224
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 413,
+        "y": 262,
+        "width": 5,
+        "height": 7
+      },
+      "confidence": 0.6643408536911011
+    },
+    {
+      "text": "taun",
+      "bounding_box": {
+        "x": 420,
+        "y": 260,
+        "width": 33,
+        "height": 11
+      },
+      "confidence": 0.5134825110435486
+    },
+    {
+      "text": "549/1",
+      "bounding_box": {
+        "x": 458,
+        "y": 261,
+        "width": 37,
+        "height": 13
+      },
+      "confidence": 0.9588484764099121
+    },
+    {
+      "text": "nuua15w135",
+      "bounding_box": {
+        "x": 498,
+        "y": 262,
+        "width": 76,
+        "height": 13
+      },
+      "confidence": 0.4056897461414337
+    },
+    {
+      "text": "PAL",
+      "bounding_box": {
+        "x": 325,
+        "y": 270,
+        "width": 38,
+        "height": 13
+      },
+      "confidence": 0.2790204882621765
+    },
+    {
+      "text": "10260",
+      "bounding_box": {
+        "x": 490,
+        "y": 277,
+        "width": 36,
+        "height": 13
+      },
+      "confidence": 0.982978880405426
+    },
+    {
+      "text": "al",
+      "bounding_box": {
+        "x": 452,
+        "y": 295,
+        "width": 50,
+        "height": 19
+      },
+      "confidence": 0.29588282108306885
+    },
+    {
+      "text": "02",
+      "bounding_box": {
+        "x": 504,
+        "y": 296,
+        "width": 19,
+        "height": 19
+      },
+      "confidence": 0.8874699473381042
+    },
+    {
+      "text": "017-7770",
+      "bounding_box": {
+        "x": 526,
+        "y": 297,
+        "width": 65,
+        "height": 20
+      },
+      "confidence": 0.976708710193634
+    },
+    {
+      "text": "mizu",
+      "bounding_box": {
+        "x": 452,
+        "y": 319,
+        "width": 50,
+        "height": 19
+      },
+      "confidence": 0.45279625058174133
+    },
+    {
+      "text": "02-017-7778",
+      "bounding_box": {
+        "x": 507,
+        "y": 321,
+        "width": 87,
+        "height": 21
+      },
+      "confidence": 0.9593460559844971
+    },
+    {
+      "text": "TAX",
+      "bounding_box": {
+        "x": 325,
+        "y": 339,
+        "width": 29,
+        "height": 16
+      },
+      "confidence": 0.9867522716522217
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 360,
+        "y": 342,
+        "width": 17,
+        "height": 14
+      },
+      "confidence": 0.9906837940216064
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 377,
+        "y": 343,
+        "width": 5,
+        "height": 13
+      },
+      "confidence": 0.9865891933441162
+    },
+    {
+      "text": "0107557000462",
+      "bounding_box": {
+        "x": 381,
+        "y": 343,
+        "width": 110,
+        "height": 21
+      },
+      "confidence": 0.9922908544540405
+    },
+    {
+      "text": "POS",
+      "bounding_box": {
+        "x": 326,
+        "y": 366,
+        "width": 29,
+        "height": 15
+      },
+      "confidence": 0.9732986092567444
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 360,
+        "y": 368,
+        "width": 5,
+        "height": 13
+      },
+      "confidence": 0.7423955798149109
+    },
+    {
+      "text": "E067700002A0969",
+      "bounding_box": {
+        "x": 366,
+        "y": 367,
+        "width": 128,
+        "height": 22
+      },
+      "confidence": 0.965863823890686
+    },
+    {
+      "text": "antum",
+      "bounding_box": {
+        "x": 324,
+        "y": 388,
+        "width": 105,
+        "height": 22
+      },
+      "confidence": 0.3274371922016144
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 489,
+        "y": 397,
+        "width": 8,
+        "height": 16
+      },
+      "confidence": 0.6639620661735535
+    },
+    {
+      "text": "878",
+      "bounding_box": {
+        "x": 550,
+        "y": 400,
+        "width": 29,
+        "height": 17
+      },
+      "confidence": 0.8524665832519531
+    },
+    {
+      "text": "2015.064-513-5278",
+      "bounding_box": {
+        "x": 340,
+        "y": 415,
+        "width": 148,
+        "height": 22
+      },
+      "confidence": 0.8199123740196228
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 426,
+        "y": 440,
+        "width": 14,
+        "height": 19
+      },
+      "confidence": 0.47677740454673767
+    },
+    {
+      "text": "tum",
+      "bounding_box": {
+        "x": 439,
+        "y": 440,
+        "width": 76,
+        "height": 21
+      },
+      "confidence": 0.3303137421607971
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 531,
+        "y": 444,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.6537849307060242
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 592,
+        "y": 446,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.794907808303833
+    },
+    {
+      "text": "RECEIPT",
+      "bounding_box": {
+        "x": 324,
+        "y": 457,
+        "width": 72,
+        "height": 24
+      },
+      "confidence": 0.9839427471160889
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 395,
+        "y": 460,
+        "width": 10,
+        "height": 20
+      },
+      "confidence": 0.973985493183136
+    },
+    {
+      "text": "TAX",
+      "bounding_box": {
+        "x": 403,
+        "y": 460,
+        "width": 34,
+        "height": 22
+      },
+      "confidence": 0.9859806299209595
+    },
+    {
+      "text": "INVOICE",
+      "bounding_box": {
+        "x": 441,
+        "y": 461,
+        "width": 70,
+        "height": 24
+      },
+      "confidence": 0.9897018671035767
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 514,
+        "y": 465,
+        "width": 8,
+        "height": 20
+      },
+      "confidence": 0.9460139870643616
+    },
+    {
+      "text": "ORIGINAL",
+      "bounding_box": {
+        "x": 522,
+        "y": 464,
+        "width": 83,
+        "height": 24
+      },
+      "confidence": 0.9876709580421448
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 601,
+        "y": 468,
+        "width": 9,
+        "height": 20
+      },
+      "confidence": 0.9738079905509949
+    },
+    {
+      "text": "6809",
+      "bounding_box": {
+        "x": 415,
+        "y": 491,
+        "width": 40,
+        "height": 17
+      },
+      "confidence": 0.6331150531768799
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 453,
+        "y": 493,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9375901222229004
+    },
+    {
+      "text": "BR878-00109",
+      "bounding_box": {
+        "x": 459,
+        "y": 493,
+        "width": 93,
+        "height": 19
+      },
+      "confidence": 0.9807486534118652
+    },
+    {
+      "text": "08/09/2025",
+      "bounding_box": {
+        "x": 417,
+        "y": 523,
+        "width": 79,
+        "height": 17
+      },
+      "confidence": 0.991470992565155
+    },
+    {
+      "text": "jun",
+      "bounding_box": {
+        "x": 324,
+        "y": 517,
+        "width": 30,
+        "height": 15
+      },
+      "confidence": 0.45915520191192627
+    },
+    {
+      "text": "D",
+      "bounding_box": {
+        "x": 336,
+        "y": 548,
+        "width": 9,
+        "height": 9
+      },
+      "confidence": 0.5237517356872559
+    },
+    {
+      "text": "Tati",
+      "bounding_box": {
+        "x": 477,
+        "y": 551,
+        "width": 30,
+        "height": 14
+      },
+      "confidence": 0.3699952960014343
+    },
+    {
+      "text": "Tax",
+      "bounding_box": {
+        "x": 323,
+        "y": 568,
+        "width": 30,
+        "height": 14
+      },
+      "confidence": 0.9808307886123657
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 358,
+        "y": 570,
+        "width": 21,
+        "height": 12
+      },
+      "confidence": 0.9914898872375488
+    },
+    {
+      "text": "1320501336180",
+      "bounding_box": {
+        "x": 420,
+        "y": 573,
+        "width": 107,
+        "height": 16
+      },
+      "confidence": 0.9915285706520081
+    },
+    {
+      "text": "2727",
+      "bounding_box": {
+        "x": 323,
+        "y": 599,
+        "width": 39,
+        "height": 12
+      },
+      "confidence": 0.8287605047225952
+    },
+    {
+      "text": "VIDE",
+      "bounding_box": {
+        "x": 323,
+        "y": 625,
+        "width": 33,
+        "height": 16
+      },
+      "confidence": 0.5409281849861145
+    },
+    {
+      "text": "234/1",
+      "bounding_box": {
+        "x": 416,
+        "y": 629,
+        "width": 39,
+        "height": 16
+      },
+      "confidence": 0.9676364064216614
+    },
+    {
+      "text": "a",
+      "bounding_box": {
+        "x": 466,
+        "y": 630,
+        "width": 9,
+        "height": 14
+      },
+      "confidence": 0.44953495264053345
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 475,
+        "y": 630,
+        "width": 5,
+        "height": 14
+      },
+      "confidence": 0.8519724607467651
+    },
+    {
+      "text": "A5716",
+      "bounding_box": {
+        "x": 417,
+        "y": 651,
+        "width": 45,
+        "height": 11
+      },
+      "confidence": 0.4391074776649475
+    },
+    {
+      "text": "S",
+      "bounding_box": {
+        "x": 310,
+        "y": 696,
+        "width": 10,
+        "height": 10
+      },
+      "confidence": 0.4587840139865875
+    },
+    {
+      "text": "TECHPRO",
+      "bounding_box": {
+        "x": 310,
+        "y": 726,
+        "width": 77,
+        "height": 17
+      },
+      "confidence": 0.9882993698120117
+    },
+    {
+      "text": "USB",
+      "bounding_box": {
+        "x": 393,
+        "y": 728,
+        "width": 32,
+        "height": 16
+      },
+      "confidence": 0.9895721077919006
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 426,
+        "y": 730,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9744828939437866
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 431,
+        "y": 730,
+        "width": 11,
+        "height": 14
+      },
+      "confidence": 0.9930298328399658
+    },
+    {
+      "text": "to",
+      "bounding_box": {
+        "x": 447,
+        "y": 730,
+        "width": 16,
+        "height": 14
+      },
+      "confidence": 0.9774584174156189
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 534,
+        "y": 733,
+        "width": 7,
+        "height": 11
+      },
+      "confidence": 0.9054086804389954
+    },
+    {
+      "text": "150.00",
+      "bounding_box": {
+        "x": 610,
+        "y": 728,
+        "width": 53,
+        "height": 15
+      },
+      "confidence": 0.9909650087356567
+    },
+    {
+      "text": "USB",
+      "bounding_box": {
+        "x": 310,
+        "y": 746,
+        "width": 33,
+        "height": 17
+      },
+      "confidence": 0.990546703338623
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 343,
+        "y": 748,
+        "width": 6,
+        "height": 15
+      },
+      "confidence": 0.9877510070800781
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 348,
+        "y": 748,
+        "width": 11,
+        "height": 15
+      },
+      "confidence": 0.9871801137924194
+    },
+    {
+      "text": "Cable",
+      "bounding_box": {
+        "x": 364,
+        "y": 748,
+        "width": 44,
+        "height": 18
+      },
+      "confidence": 0.9910035729408264
+    },
+    {
+      "text": "3A",
+      "bounding_box": {
+        "x": 414,
+        "y": 750,
+        "width": 21,
+        "height": 17
+      },
+      "confidence": 0.9869896173477173
+    },
+    {
+      "text": "Super",
+      "bounding_box": {
+        "x": 437,
+        "y": 751,
+        "width": 48,
+        "height": 18
+      },
+      "confidence": 0.9913218021392822
+    },
+    {
+      "text": "Fast",
+      "bounding_box": {
+        "x": 311,
+        "y": 769,
+        "width": 32,
+        "height": 16
+      },
+      "confidence": 0.9767031669616699
+    },
+    {
+      "text": "Charge",
+      "bounding_box": {
+        "x": 348,
+        "y": 770,
+        "width": 55,
+        "height": 16
+      },
+      "confidence": 0.9891746640205383
+    },
+    {
+      "text": "1M",
+      "bounding_box": {
+        "x": 410,
+        "y": 772,
+        "width": 20,
+        "height": 14
+      },
+      "confidence": 0.9628143310546875
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 431,
+        "y": 772,
+        "width": 4,
+        "height": 14
+      },
+      "confidence": 0.9281697869300842
+    },
+    {
+      "text": "Titanlink",
+      "bounding_box": {
+        "x": 310,
+        "y": 791,
+        "width": 67,
+        "height": 16
+      },
+      "confidence": 0.9732799530029297
+    },
+    {
+      "text": "Black",
+      "bounding_box": {
+        "x": 383,
+        "y": 793,
+        "width": 41,
+        "height": 15
+      },
+      "confidence": 0.9934487342834473
+    },
+    {
+      "text": "TP",
+      "bounding_box": {
+        "x": 309,
+        "y": 814,
+        "width": 21,
+        "height": 12
+      },
+      "confidence": 0.984992504119873
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 331,
+        "y": 814,
+        "width": 5,
+        "height": 12
+      },
+      "confidence": 0.9828727841377258
+    },
+    {
+      "text": "C07",
+      "bounding_box": {
+        "x": 337,
+        "y": 814,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9797415137290955
+    },
+    {
+      "text": "EXP",
+      "bounding_box": {
+        "x": 372,
+        "y": 815,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.9837096929550171
+    },
+    {
+      "text": "14-09-2025",
+      "bounding_box": {
+        "x": 311,
+        "y": 834,
+        "width": 89,
+        "height": 15
+      },
+      "confidence": 0.989729106426239
+    },
+    {
+      "text": "TECHPRO",
+      "bounding_box": {
+        "x": 309,
+        "y": 861,
+        "width": 75,
+        "height": 14
+      },
+      "confidence": 0.9784841537475586
+    },
+    {
+      "text": "Wall",
+      "bounding_box": {
+        "x": 390,
+        "y": 861,
+        "width": 35,
+        "height": 14
+      },
+      "confidence": 0.9882015585899353
+    },
+    {
+      "text": "USB",
+      "bounding_box": {
+        "x": 431,
+        "y": 861,
+        "width": 31,
+        "height": 14
+      },
+      "confidence": 0.9865559935569763
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 533,
+        "y": 863,
+        "width": 7,
+        "height": 11
+      },
+      "confidence": 0.955959677696228
+    },
+    {
+      "text": "390.00",
+      "bounding_box": {
+        "x": 607,
+        "y": 864,
+        "width": 55,
+        "height": 12
+      },
+      "confidence": 0.9906375408172607
+    },
+    {
+      "text": "Charger",
+      "bounding_box": {
+        "x": 309,
+        "y": 882,
+        "width": 61,
+        "height": 16
+      },
+      "confidence": 0.9912331104278564
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 377,
+        "y": 882,
+        "width": 6,
+        "height": 16
+      },
+      "confidence": 0.9860495924949646
+    },
+    {
+      "text": "USB",
+      "bounding_box": {
+        "x": 391,
+        "y": 882,
+        "width": 31,
+        "height": 16
+      },
+      "confidence": 0.9694665670394897
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 424,
+        "y": 882,
+        "width": 5,
+        "height": 16
+      },
+      "confidence": 0.9278014898300171
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 428,
+        "y": 882,
+        "width": 13,
+        "height": 16
+      },
+      "confidence": 0.9876939058303833
+    },
+    {
+      "text": "QC3.0",
+      "bounding_box": {
+        "x": 308,
+        "y": 903,
+        "width": 47,
+        "height": 17
+      },
+      "confidence": 0.8926122784614563
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 360,
+        "y": 903,
+        "width": 8,
+        "height": 16
+      },
+      "confidence": 0.8284102082252502
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 375,
+        "y": 903,
+        "width": 7,
+        "height": 16
+      },
+      "confidence": 0.9733685255050659
+    },
+    {
+      "text": "USB",
+      "bounding_box": {
+        "x": 388,
+        "y": 903,
+        "width": 32,
+        "height": 16
+      },
+      "confidence": 0.9906185865402222
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 421,
+        "y": 903,
+        "width": 5,
+        "height": 16
+      },
+      "confidence": 0.9760267734527588
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 427,
+        "y": 903,
+        "width": 11,
+        "height": 16
+      },
+      "confidence": 0.9809055924415588
+    },
+    {
+      "text": "PD20W",
+      "bounding_box": {
+        "x": 309,
+        "y": 925,
+        "width": 54,
+        "height": 13
+      },
+      "confidence": 0.9764596819877625
+    },
+    {
+      "text": "White",
+      "bounding_box": {
+        "x": 369,
+        "y": 925,
+        "width": 46,
+        "height": 12
+      },
+      "confidence": 0.9861588478088379
+    },
+    {
+      "text": "TP",
+      "bounding_box": {
+        "x": 307,
+        "y": 945,
+        "width": 21,
+        "height": 14
+      },
+      "confidence": 0.9890748262405396
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 330,
+        "y": 945,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9853319525718689
+    },
+    {
+      "text": "WC04",
+      "bounding_box": {
+        "x": 334,
+        "y": 945,
+        "width": 45,
+        "height": 15
+      },
+      "confidence": 0.9897433519363403
+    },
+    {
+      "text": "New",
+      "bounding_box": {
+        "x": 387,
+        "y": 946,
+        "width": 34,
+        "height": 15
+      },
+      "confidence": 0.9839258790016174
+    },
+    {
+      "text": "TISI",
+      "bounding_box": {
+        "x": 425,
+        "y": 946,
+        "width": 34,
+        "height": 16
+      },
+      "confidence": 0.8439807295799255
+    },
+    {
+      "text": "EXP",
+      "bounding_box": {
+        "x": 308,
+        "y": 968,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9924758076667786
+    },
+    {
+      "text": "07-09-2026",
+      "bounding_box": {
+        "x": 343,
+        "y": 967,
+        "width": 90,
+        "height": 15
+      },
+      "confidence": 0.9926096796989441
+    },
+    {
+      "text": "540.00",
+      "bounding_box": {
+        "x": 600,
+        "y": 1022,
+        "width": 52,
+        "height": 13
+      },
+      "confidence": 0.9911106824874878
+    },
+    {
+      "text": "35.33",
+      "bounding_box": {
+        "x": 615,
+        "y": 1046,
+        "width": 39,
+        "height": 13
+      },
+      "confidence": 0.9894316792488098
+    },
+    {
+      "text": "504.67",
+      "bounding_box": {
+        "x": 606,
+        "y": 1070,
+        "width": 47,
+        "height": 15
+      },
+      "confidence": 0.9910609722137451
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 316,
+        "y": 1097,
+        "width": 10,
+        "height": 16
+      },
+      "confidence": 0.6976430416107178
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 479,
+        "y": 1097,
+        "width": 12,
+        "height": 16
+      },
+      "confidence": 0.861768901348114
+    },
+    {
+      "text": "Payment",
+      "bounding_box": {
+        "x": 317,
+        "y": 1120,
+        "width": 68,
+        "height": 18
+      },
+      "confidence": 0.9917569160461426
+    },
+    {
+      "text": "BBI",
+      "bounding_box": {
+        "x": 315,
+        "y": 1151,
+        "width": 24,
+        "height": 13
+      },
+      "confidence": 0.6155515909194946
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 342,
+        "y": 1151,
+        "width": 10,
+        "height": 13
+      },
+      "confidence": 0.4546964466571808
+    },
+    {
+      "text": "7",
+      "bounding_box": {
+        "x": 346,
+        "y": 1151,
+        "width": 11,
+        "height": 13
+      },
+      "confidence": 0.4541681110858917
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 418,
+        "y": 1151,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.5959649085998535
+    },
+    {
+      "text": "0011",
+      "bounding_box": {
+        "x": 435,
+        "y": 1151,
+        "width": 26,
+        "height": 13
+      },
+      "confidence": 0.7665345668792725
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 462,
+        "y": 1151,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.4205407500267029
+    },
+    {
+      "text": "ShipNa",
+      "bounding_box": {
+        "x": 469,
+        "y": 1151,
+        "width": 37,
+        "height": 13
+      },
+      "confidence": 0.5935847759246826
+    },
+    {
+      "text": "6-150-18",
+      "bounding_box": {
+        "x": 316,
+        "y": 1176,
+        "width": 37,
+        "height": 9
+      },
+      "confidence": 0.764336109161377
+    },
+    {
+      "text": "u7umumdatuta",
+      "bounding_box": {
+        "x": 333,
+        "y": 1200,
+        "width": 142,
+        "height": 17
+      },
+      "confidence": 0.4773593246936798
+    },
+    {
+      "text": "6809",
+      "bounding_box": {
+        "x": 492,
+        "y": 1203,
+        "width": 31,
+        "height": 14
+      },
+      "confidence": 0.9258195161819458
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 523,
+        "y": 1203,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.8794301748275757
+    },
+    {
+      "text": "CH678-00282",
+      "bounding_box": {
+        "x": 527,
+        "y": 1203,
+        "width": 83,
+        "height": 16
+      },
+      "confidence": 0.9671005606651306
+    },
+    {
+      "text": "Phy",
+      "bounding_box": {
+        "x": 315,
+        "y": 1232,
+        "width": 22,
+        "height": 15
+      },
+      "confidence": 0.9728372097015381
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 336,
+        "y": 1232,
+        "width": 5,
+        "height": 14
+      },
+      "confidence": 0.9445516467094421
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 342,
+        "y": 1232,
+        "width": 14,
+        "height": 14
+      },
+      "confidence": 0.9407515525817871
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 356,
+        "y": 1232,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9671773910522461
+    },
+    {
+      "text": "58,190-869",
+      "bounding_box": {
+        "x": 366,
+        "y": 1231,
+        "width": 70,
+        "height": 15
+      },
+      "confidence": 0.984272837638855
+    },
+    {
+      "text": "DocNo",
+      "bounding_box": {
+        "x": 473,
+        "y": 1232,
+        "width": 41,
+        "height": 15
+      },
+      "confidence": 0.9081475138664246
+    },
+    {
+      "text": "58,187-869",
+      "bounding_box": {
+        "x": 518,
+        "y": 1234,
+        "width": 72,
+        "height": 16
+      },
+      "confidence": 0.9581235647201538
+    },
+    {
+      "text": "Comment",
+      "bounding_box": {
+        "x": 314,
+        "y": 1261,
+        "width": 70,
+        "height": 13
+      },
+      "confidence": 0.989016056060791
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 387,
+        "y": 1262,
+        "width": 6,
+        "height": 11
+      },
+      "confidence": 0.8829053640365601
+    },
+    {
+      "text": "Monday",
+      "bounding_box": {
+        "x": 310,
+        "y": 1331,
+        "width": 166,
+        "height": 23
+      },
+      "confidence": 0.3539198040962219
+    },
+    {
+      "text": "window",
+      "bounding_box": {
+        "x": 477,
+        "y": 1337,
+        "width": 52,
+        "height": 19
+      },
+      "confidence": 0.4161726236343384
+    },
+    {
+      "text": "an",
+      "bounding_box": {
+        "x": 543,
+        "y": 1340,
+        "width": 20,
+        "height": 18
+      },
+      "confidence": 0.3905600905418396
+    },
+    {
+      "text": "**",
+      "bounding_box": {
+        "x": 312,
+        "y": 1367,
+        "width": 17,
+        "height": 12
+      },
+      "confidence": 0.3592003285884857
+    },
+    {
+      "text": "nduan",
+      "bounding_box": {
+        "x": 418,
+        "y": 1369,
+        "width": 61,
+        "height": 15
+      },
+      "confidence": 0.35308992862701416
+    },
+    {
+      "text": "daunt",
+      "bounding_box": {
+        "x": 479,
+        "y": 1371,
+        "width": 49,
+        "height": 14
+      },
+      "confidence": 0.3975681960582733
+    },
+    {
+      "text": "**",
+      "bounding_box": {
+        "x": 312,
+        "y": 1384,
+        "width": 16,
+        "height": 12
+      },
+      "confidence": 0.4059715270996094
+    },
+    {
+      "text": "Auzoa",
+      "bounding_box": {
+        "x": 326,
+        "y": 1383,
+        "width": 69,
+        "height": 14
+      },
+      "confidence": 0.33135727047920227
+    },
+    {
+      "text": "tuulatan",
+      "bounding_box": {
+        "x": 421,
+        "y": 1385,
+        "width": 87,
+        "height": 15
+      },
+      "confidence": 0.37231093645095825
+    },
+    {
+      "text": "Joulumus",
+      "bounding_box": {
+        "x": 315,
+        "y": 1404,
+        "width": 102,
+        "height": 16
+      },
+      "confidence": 0.4081486165523529
+    },
+    {
+      "text": "un",
+      "bounding_box": {
+        "x": 450,
+        "y": 1407,
+        "width": 22,
+        "height": 13
+      },
+      "confidence": 0.4130074977874756
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 486,
+        "y": 1408,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.5560885667800903
+    },
+    {
+      "text": "http://www.comseven.com/conditions/",
+      "bounding_box": {
+        "x": 310,
+        "y": 1423,
+        "width": 242,
+        "height": 22
+      },
+      "confidence": 0.9727063179016113
+    },
+    {
+      "text": "Data",
+      "bounding_box": {
+        "x": 304,
+        "y": 1597,
+        "width": 159,
+        "height": 20
+      },
+      "confidence": 0.2808423936367035
+    },
+    {
+      "text": "whi",
+      "bounding_box": {
+        "x": 465,
+        "y": 1596,
+        "width": 26,
+        "height": 17
+      },
+      "confidence": 0.6009900569915771
+    },
+    {
+      "text": "Wan",
+      "bounding_box": {
+        "x": 309,
+        "y": 1618,
+        "width": 70,
+        "height": 19
+      },
+      "confidence": 0.3970441520214081
+    },
+    {
+      "text": "QR",
+      "bounding_box": {
+        "x": 390,
+        "y": 1619,
+        "width": 26,
+        "height": 17
+      },
+      "confidence": 0.866724967956543
+    },
+    {
+      "text": "Code",
+      "bounding_box": {
+        "x": 419,
+        "y": 1618,
+        "width": 42,
+        "height": 18
+      },
+      "confidence": 0.8314945697784424
+    },
+    {
+      "text": "540.00",
+      "bounding_box": {
+        "x": 608,
+        "y": 1157,
+        "width": 36,
+        "height": 13
+      },
+      "confidence": 0.9814369678497314
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_2224",
+    "image_width": 1012,
+    "image_height": 1800,
+    "processed_at": "2026-01-02T06:15:43.505958",
+    "preprocessing_applied": []
+  }
+}

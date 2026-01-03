@@ -1,54 +1,58 @@
 {
   "metadata": {
     "version": "1.0",
-    "last_updated": "2025-01-03",
-    "total_receipts": 2,
-    "total_artifacts": 25
+    "last_updated": "2026-01-03",
+    "total_receipts": 14,
+    "total_artifacts": 33
   },
   "global_summary": {
     "by_type": {
-      "CHAR_SUB": {"count": 9, "percentage": 36.0},
-      "GARBAGE": {"count": 7, "percentage": 28.0},
-      "CHAR_MISS": {"count": 3, "percentage": 12.0},
-      "DIAC_LOSS": {"count": 3, "percentage": 12.0},
-      "WORD_SPLIT": {"count": 1, "percentage": 4.0},
-      "WORD_MERGE": {"count": 1, "percentage": 4.0},
+      "GARBAGE": {"count": 13, "percentage": 39.4},
+      "CHAR_SUB": {"count": 9, "percentage": 27.3},
+      "WORD_SPLIT": {"count": 6, "percentage": 18.2},
+      "DIAC_LOSS": {"count": 3, "percentage": 9.1},
+      "CHAR_MISS": {"count": 1, "percentage": 3.0},
+      "WORD_MERGE": {"count": 1, "percentage": 3.0},
       "CHAR_EXTRA": {"count": 0, "percentage": 0.0},
       "CASE_ERR": {"count": 0, "percentage": 0.0},
       "SCRIPT_MIX": {"count": 0, "percentage": 0.0},
       "NUM_FMT": {"count": 0, "percentage": 0.0}
     },
     "top_patterns": [
-      {"type": "CHAR_SUB", "count": 9, "percentage": 36.0, "description": "Character substitution"},
-      {"type": "GARBAGE", "count": 7, "percentage": 28.0, "description": "Garbage symbols"},
-      {"type": "CHAR_MISS", "count": 3, "percentage": 12.0, "description": "Missing characters"},
-      {"type": "DIAC_LOSS", "count": 3, "percentage": 12.0, "description": "Diacritics loss"}
+      {"type": "GARBAGE", "count": 13, "percentage": 39.4, "description": "Garbage symbols"},
+      {"type": "CHAR_SUB", "count": 9, "percentage": 27.3, "description": "Character substitution"},
+      {"type": "WORD_SPLIT", "count": 6, "percentage": 18.2, "description": "Words not found in OCR"},
+      {"type": "DIAC_LOSS", "count": 3, "percentage": 9.1, "description": "Diacritics loss"},
+      {"type": "CHAR_MISS", "count": 1, "percentage": 3.0, "description": "Missing characters"},
+      {"type": "WORD_MERGE", "count": 1, "percentage": 3.0, "description": "Word merge"}
     ]
   },
   "locales": {
     "de_DE": {
-      "receipts_analyzed": 1,
-      "stores_covered": ["lidl"],
-      "total_artifacts": 9,
-      "artifact_rate": 0.025,
+      "receipts_analyzed": 13,
+      "stores_covered": ["lidl", "netto", "baeckerei", "kleins", "aldi", "centershop", "dm", "edeka"],
+      "total_artifacts": 17,
+      "artifact_rate": 0.006,
       "by_type": {
-        "CHAR_SUB": {"count": 2, "percentage": 22.2},
-        "CHAR_MISS": {"count": 3, "percentage": 33.3},
-        "DIAC_LOSS": {"count": 1, "percentage": 11.1},
-        "WORD_SPLIT": {"count": 1, "percentage": 11.1},
-        "GARBAGE": {"count": 1, "percentage": 11.1}
+        "GARBAGE": {"count": 7, "percentage": 41.2},
+        "WORD_SPLIT": {"count": 6, "percentage": 35.3},
+        "CHAR_SUB": {"count": 2, "percentage": 11.8},
+        "CHAR_MISS": {"count": 1, "percentage": 5.9},
+        "DIAC_LOSS": {"count": 1, "percentage": 5.9}
       },
       "top_patterns": [
-        {"type": "CHAR_MISS", "count": 3, "examples": ["Hähn.Keulen → Hähnchenkeulen"]},
-        {"type": "CHAR_SUB", "count": 2, "examples": ["Olivenöle → Olivenöl", "rebe → PRESS"]},
-        {"type": "DIAC_LOSS", "count": 1, "examples": ["rose → rosé"]}
+        {"type": "GARBAGE", "count": 7, "examples": ["*******", "***", "***************"]},
+        {"type": "WORD_SPLIT", "count": 6, "examples": ["Bio Olivenöl", "F&G Häh Min.schri", "Lemonaid Limette 330ml+0,25Pf", "Red Bull 0,25l", "Xoxo Waterm.0,33l-"]},
+        {"type": "CHAR_SUB", "count": 2, "examples": ["rebe → PRESS", "Olivenöle → Olivenöl"]},
+        {"type": "CHAR_MISS", "count": 1, "examples": ["Hähn.Keulen → Hähnchenkeulen"]},
+        {"type": "DIAC_LOSS", "count": 1, "examples": ["Prosecco rose → Prosecco rosé"]}
       ],
       "cleanup_rules": [
-        {"id": "de_DE_001", "type": "CHAR_SUB", "pattern": "^rebe$", "replacement": "PRESS", "confidence": 0.90},
+        {"id": "de_DE_001", "type": "GARBAGE", "pattern": "\\*{3,}", "replacement": "", "confidence": 1.00},
         {"id": "de_DE_002", "type": "CHAR_MISS", "pattern": "Hähn\\.Keulen", "replacement": "Hähnchenkeulen", "confidence": 0.80},
         {"id": "de_DE_003", "type": "DIAC_LOSS", "pattern": "rose$", "replacement": "rosé", "confidence": 0.90},
         {"id": "de_DE_004", "type": "CHAR_SUB", "pattern": "Olivenöle", "replacement": "Olivenöl", "confidence": 0.95},
-        {"id": "de_DE_005", "type": "GARBAGE", "pattern": "\\.Honey", "replacement": " Honey", "confidence": 0.95}
+        {"id": "de_DE_005", "type": "CHAR_SUB", "pattern": "^rebe$", "replacement": "PRESS", "confidence": 0.90}
       ]
     },
     "pl_PL": {
@@ -63,9 +67,10 @@
         "WORD_MERGE": {"count": 1, "percentage": 6.2}
       },
       "top_patterns": [
-        {"type": "CHAR_SUB", "count": 7, "examples": ["C.JOG → C_JOG", "CMC → C_MC", "HEN → MEN"]},
-        {"type": "GARBAGE", "count": 6, "examples": ["dul", "gas", "fque", "uqu", "BYAR"]},
-        {"type": "DIAC_LOSS", "count": 2, "examples": ["OŚMIORNICA → OSHIORNICA", "JARMUŻU → JARMUZU"]}
+        {"type": "CHAR_SUB", "count": 7, "examples": ["C.JOG → C_JOG", "CMC → C_MC", "HEN → MEN", "CHANPI → CHAMPI", "Kuota → Kwota"]},
+        {"type": "GARBAGE", "count": 6, "examples": ["dul", "gas", "fque", "uqu", "BYAR", "sbob b2ysio"]},
+        {"type": "DIAC_LOSS", "count": 2, "examples": ["OŚMIORNICA → OSHIORNICA", "JARMUŻU → JARMUZU"]},
+        {"type": "WORD_MERGE", "count": 1, "examples": ["LUZJAVA → LUZ"]}
       ],
       "cleanup_rules": [
         {"id": "pl_PL_001", "type": "DIAC_LOSS", "pattern": "OSHIORNICA", "replacement": "OŚMIORNICA", "confidence": 0.95},
@@ -117,6 +122,42 @@
       "by_type": {},
       "top_patterns": [],
       "cleanup_rules": []
+    },
+    "cs_CZ": {
+      "receipts_analyzed": 0,
+      "stores_covered": [],
+      "total_artifacts": 0,
+      "artifact_rate": 0.0,
+      "by_type": {},
+      "top_patterns": [],
+      "cleanup_rules": []
+    },
+    "es_ES": {
+      "receipts_analyzed": 0,
+      "stores_covered": [],
+      "total_artifacts": 0,
+      "artifact_rate": 0.0,
+      "by_type": {},
+      "top_patterns": [],
+      "cleanup_rules": []
+    },
+    "pt_PT": {
+      "receipts_analyzed": 0,
+      "stores_covered": [],
+      "total_artifacts": 0,
+      "artifact_rate": 0.0,
+      "by_type": {},
+      "top_patterns": [],
+      "cleanup_rules": []
+    },
+    "tr_TR": {
+      "receipts_analyzed": 0,
+      "stores_covered": [],
+      "total_artifacts": 0,
+      "artifact_rate": 0.0,
+      "by_type": {},
+      "top_patterns": [],
+      "cleanup_rules": []
     }
   },
   "universal_rules": [
@@ -143,13 +184,22 @@
       "replacement": "$1 $2",
       "confidence": 0.90,
       "description": "Split words on period before uppercase"
+    },
+    {
+      "id": "UNIV_004",
+      "type": "GARBAGE",
+      "pattern": "\\*{3,}",
+      "replacement": "",
+      "confidence": 1.00,
+      "description": "Remove multiple asterisks (3+)"
     }
   ],
   "locale_specific_rules": {
     "de_DE": [
       "Use German dictionary for common words",
       "Restore diacritics: ö, ä, ü, ß",
-      "Fix common character substitutions: 0→O, 1→l"
+      "Fix common character substitutions: 0→O, 1→l",
+      "Handle words not found in OCR - check manually"
     ],
     "pl_PL": [
       "Normalize tax prefix: . or space → underscore",
@@ -159,6 +209,10 @@
     ],
     "th_TH": [],
     "uk_UA": [],
-    "bg_BG": []
+    "bg_BG": [],
+    "cs_CZ": [],
+    "es_ES": [],
+    "pt_PT": [],
+    "tr_TR": []
   }
 }

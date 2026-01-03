@@ -1,0 +1,31 @@
+{
+  "id": "050",
+  "source_file": "data/input/DM/IMG_2842.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "dm-drogerie markt",
+    "address": "Steinhofplatz 1, 51491 Overath",
+    "tax_id": "34092/30007"
+  },
+  "metadata": {
+    "date": "10.11.2025",
+    "time": "15:17",
+    "currency": "EUR",
+    "payment_method": "Kartenzahlung girocard",
+    "receipt_total": 14.75
+  },
+  "items": [
+    {
+      "raw_name": "2x 5,65 babylove Windeln Gr.3",
+      "quantity": 2,
+      "unit_price": 5.65,
+      "total_price": 11.30
+    },
+    {
+      "raw_name": "dmBio Schoko Karamell Mandeln",
+      "quantity": 1,
+      "unit_price": 3.45,
+      "total_price": 3.45
+    }
+  ]
+}

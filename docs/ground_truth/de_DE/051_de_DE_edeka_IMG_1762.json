@@ -1,0 +1,74 @@
+{
+  "id": "051",
+  "source_file": "data/input/Edeka/IMG_1762.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "EDEKA Felbecker",
+    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden",
+    "phone": "02206 / 912784",
+    "website": "www.edeka.de",
+    "steuernummer": "204/5085/2941"
+  },
+  "metadata": {
+    "date": "11.09.2025",
+    "time": "18:09:30",
+    "currency": "EUR",
+    "payment_method": "EC-Cash",
+    "posten": 4,
+    "receipt_total": 5.32,
+    "tax_block": {
+      "A": {
+        "rate": "7%",
+        "netto": 0.83,
+        "mwst": 0.06,
+        "umsatz": 0.89
+      },
+      "B": {
+        "rate": "19%",
+        "netto": 3.72,
+        "mwst": 0.71,
+        "umsatz": 4.43
+      }
+    }
+  },
+  "items": [
+    {
+      "raw_name": "Corny Big Schoko",
+      "quantity": 1,
+      "total_price": 0.89,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "G&G Grillbriketts",
+      "quantity": 1,
+      "total_price": 2.69,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Coca-Cola 2l",
+      "quantity": 1,
+      "total_price": 1.49,
+      "tax_class": "BW"
+    },
+    {
+      "raw_name": "Pfand",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "*B",
+      "is_pfand": true
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "items_sum": 5.32,
+    "expected_total": 5.32,
+    "discrepancy": 0.0
+  },
+  "notes": [
+    "Posten: 4 - number of items",
+    "SUMME € format",
+    "Extended tax codes: A, B, BW, *B",
+    "Pfand with *B tax class",
+    "*Position nicht rabattberechtigt"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "name": "A ) OVOS CLASSE M / L RUBY 1DZ",
+      "quantity": null,
+      "price": null,
+      "total": 3.29,
+      "date": "2025-11-09 00:00:00"
+    },
+    {
+      "name": "( A ) AZEITE VE RESERVA GALLO",
+      "quantity": null,
+      "price": null,
+      "total": 0.75,
+      "date": "2025-11-09 00:00:00"
+    },
+    {
+      "name": "Laticinios / Beb . Veg .: Bens Essenciais : ",
+      "quantity": null,
+      "price": null,
+      "total": 4.0,
+      "date": "2025-11-09 00:00:00"
+    },
+    {
+      "name": "",
+      "quantity": null,
+      "price": null,
+      "total": 6.99,
+      "date": "2025-11-09 00:00:00"
+    },
+    {
+      "name": "Charcutaria ( A ) BURRATA & Queijos DE VACA : CNT 2006",
+      "quantity": null,
+      "price": null,
+      "total": 2.79,
+      "date": "2025-11-09 00:00:00"
+    },
+    {
+      "name": "2,200 X 3,99 8.78",
+      "quantity": 2.2,
+      "price": null,
+      "total": 1.19,
+      "date": "2025-11-09 00:00:00"
+    }
+  ],
+  "total_amount": 23.04,
+  "merchant": "Continente",
+  "store_address": "Modelo 210117601 Senhora da Hora, Rua Joao Mendonca CRC , 505 Porto 4464-503 sob n ° 502011475",
+  "date": "2025-11-09 00:00:00",
+  "receipt_id": "PT_002",
+  "ocr_text": "CBD General Rocadas\nModelo Continente Hipermercados SA\n210117601\nRua Joao Mendonca, 505 4464-503 Senhora da Hora\nRegistada CRC Porto sob n° 502011475\nNIF: PT5020114751C. S: 403.827.000,00 EUR Produtor: Emb.\nPT01102979; EEE PT000251; OL PT03000282; PA\nPT06000504; Pneus PT04000330\nFatura Simplificada Original\nNro:FS LJU001/734800 09/11/2025 13:10\nIVA DESCRICAO\nNIF: Consumidor Final\nLaticinios/Beb. Veg.:\nVALOR\n(A) OVOS CLASSE M/L RUBY 1DZ\n3,29\nBens Essenciais:\n(A) AZEITE VE RESERVA GALLO 0.75\n6,99\nPOUPANCA\n4,00\nCharcutaria&Queijos:\n(A) BURRATA DE VACA CNT 2006\n2,79\nFrutas e Legumes:\n(A) DIOSPIRO\n2,200 X 3,99\n8.78\n(A) ESPINAFRE RESIDUO ZERO 125GR\n1,19\nTOTAL A PAGAR\n23,04\nCartao Credito\n23.04\nTotal de descontos e poupancas\n4,00\n(A)\nZIVA\n6,00%\nTotal Liq.\n21,74\nIVA\nTotal\n1,30\n23,04\nEEy+-Processado por programa certificado N. 1356/AT\n7691 0001 857408 372703 100121587011994\nATCUD: JF5NCNTM-734800\n17:11\neste\nações\não\nntre\não ser\nação do\nmalmente\nartigos\nlimpeza\nBOM DIA GENERAL ROCA\nDAS\n1170-010 LISBOA\nTerminal Pagamento Automático: 01133081\n25-11-09 13:10:09 Per031 Tr086 Msg489\nVISA INTERNACIONAL\nCARTAO: ****9506\nAD000000031010\nCOMPRA\nTC:363F0E7C2A460E71\nVisa DEBIT\n23,04€\nId. Estab:0000045885 AUT:EBKRPK VI DB EEA\nGetnet\nCONTACTLESS\nVisa paywave\nAutenticação realizada pelo\ndispositivo móvel\nCOPIA CLIENTE\nPROCESSADO POR SIBS\nCo: 00348999\nTr353 Msg656\nONAL\n4F0E4668090398E\nVisa DEBIT\n567W5V VI DB EEA\nIVA INCLUIDO\nCBD General Rocadas\nTLF:210117601\nMorada Loja:\nAv. General Rocadas 648\n1170-010 Lisboa\nTALAD INDISPENSAVEL PARA DEVOLUCAO\nPrazo ate 30 dias, BRINQUEDOS ate 31 Jan\nCondições/artigos não abrangidos em\ndevolver.continente.pt & Apoio Cliente\nayWave\nositivo\n25110900185740876910",
+  "detected_locale": "pt_PT",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 6.0,
+    "validation_passed": 0.0,
+    "validation_difference": 4.029999999999998
+  }
+}

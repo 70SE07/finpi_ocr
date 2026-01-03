@@ -1,0 +1,45 @@
+{
+  "id": "de_DE_008_de_DE_aldi_IMG_1724",
+  "receipt_id": "008_de_DE_aldi_IMG_1724",
+  "locale": "de_DE",
+  "store": "unknown",
+  "source_file": "IMG_1724",
+  "artifacts": [
+    {
+      "type": "WORD_SPLIT",
+      "ocr_text": "NOT FOUND",
+      "expected_text": "Bio Olivenöl",
+      "context": "Bio Olivenöl",
+      "suggestion": "Проверить разрыв слова или потерю символов"
+    },
+    {
+      "type": "WORD_SPLIT",
+      "ocr_text": "NOT FOUND",
+      "expected_text": "F&G Häh Min.schri",
+      "context": "F&G Häh Min.schri",
+      "suggestion": "Проверить разрыв слова или потерю символов"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "*******",
+      "expected_text": "",
+      "context": " FÜR DEINEN EINKAUF\n*******\nALDI SÜD - G",
+      "suggestion": "Удалить: Множественные звёздочки"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "*******",
+      "expected_text": "",
+      "context": " FÜR DEINEN EINKAUF\n*******\nALDI SÜD - G",
+      "suggestion": "Удалить: Множественные звёздочки"
+    }
+  ],
+  "statistics": {
+    "total_words": 445,
+    "artifacts_found": 4,
+    "by_type": {
+      "WORD_SPLIT": 2,
+      "GARBAGE": 2
+    }
+  }
+}

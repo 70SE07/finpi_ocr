@@ -1,0 +1,23 @@
+{
+  "id": "de_DE_015_de_DE_edeka_IMG_1931",
+  "receipt_id": "015_de_DE_edeka_IMG_1931",
+  "locale": "de_DE",
+  "store": "unknown",
+  "source_file": "IMG_1931",
+  "artifacts": [
+    {
+      "type": "WORD_SPLIT",
+      "ocr_text": "NOT FOUND",
+      "expected_text": "Xoxo Waterm.0,33l-",
+      "context": "Xoxo Waterm.0,33l-",
+      "suggestion": "Проверить разрыв слова или потерю символов"
+    }
+  ],
+  "statistics": {
+    "total_words": 204,
+    "artifacts_found": 1,
+    "by_type": {
+      "WORD_SPLIT": 1
+    }
+  }
+}

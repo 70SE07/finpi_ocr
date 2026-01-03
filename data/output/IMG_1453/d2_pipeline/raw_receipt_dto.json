@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "J. Walker Red Lab ( 203 )",
+      "quantity": null,
+      "price": null,
+      "total": 14.99,
+      "date": "2025-08-19 00:00:00"
+    }
+  ],
+  "total_amount": 14.99,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": "2025-08-19 00:00:00",
+  "receipt_id": "IMG_1453",
+  "ocr_text": "All\nHIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nWEIN/SPIRITUOSEN/SEKT/CHAMPAPreis €\nJ. Walker Red Lab (203) 14,99 A\nSUMME [1]\nVisa\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n14,99\n14,99\n51491 Overath\nTerminal-ID:\nTA-Nr 378220\nKartenzahlung\nVisa kontaktlos\nVISA CREDIT\nEUR 14,99\n61724233\nBNr 1401\n############1051\nPAN\nKarte 0\ngültig bis ##/##\nEMV-AID\nVU-Nr\nA0000000031010\n4556475983\n099095\nDatum 19.08.25\n20:53 Uhr\nGenehmigungs-Nr\nEMV-Daten\n0000000000/0000////3030\n00 GENEHMIGUNG KARTE\nGEPRUEFT\nAS-Proc-Code: 00 075 00\nAPPROVED\nBITTE BELEG AUFBEWAHREN\n===\nSteuer NETTO [€] MWST [€] BRUTTO [€]\n12,60 2,39 14,99\nA=19,00%\n******\n*****\nSie erhalten mit diesem Kauf\n2 Treuepunkt(e)!\n0014033190825005000482\n*****\n*******\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025\nDatum Zeit Fil. Pos Bon Lade\n19.08.25 20:54 4033 05 0482 34\nVielen Dank für Ihren Einkauf!",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 1.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

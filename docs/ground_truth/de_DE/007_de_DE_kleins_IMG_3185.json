@@ -1,48 +1,47 @@
 {
   "id": "007",
-  "source_file": "photo/Еда вне дома/IMG_3185.jpeg",
+  "source_file": "data/input/IMG_3185.jpeg",
   "locale": "de_DE",
   "store": {
     "name": "Kleins Backstube",
     "address": "Propsteistrasse 20, 51491 Overath",
     "phone": "02206 8641049",
-    "ust_id": "123502060",
-    "type": "Bakery"
+    "tax_id": "123502060"
   },
   "metadata": {
     "date": "22.5.2025",
     "time": "19:50-19:51",
     "currency": "EUR",
     "payment_method": "Kreditkarte/EC-Cash",
-    "receipt_total": 4.7,
-    "tax_info": {
-      "excl_7_mwst": 4.39,
-      "mwst_7": 0.31
+    "receipt_total": 4.70,
+    "tax_block": {
+      "7": {
+        "rate": "7%",
+        "netto": 4.39,
+        "mwst": 0.31,
+        "brutto": 4.70
+      }
     }
   },
   "items": [
     {
       "raw_name": "Marzipanschnecke mit Kirschen",
-      "sku": "#414",
       "quantity": 1.0,
       "unit_price": 2.35,
-      "total_price": 2.35,
-      "timestamp": "19:50"
+      "total_price": 2.35
     },
     {
       "raw_name": "Marzipanhörnchen",
-      "sku": "#421",
       "quantity": 1.0,
       "unit_price": 2.35,
-      "total_price": 2.35,
-      "timestamp": "19:50"
+      "total_price": 2.35
     }
   ],
   "validation": {
     "checksum_method": "SUM(items) == Total",
-    "items_sum": 4.7,
-    "expected_total": 4.7,
-    "discrepancy": 0.0
+    "items_sum": 4.70,
+    "expected_total": 4.70,
+    "discrepancy": 0.00
   },
   "notes": [
     "4 lines per item format",

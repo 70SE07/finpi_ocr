@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "Apfelschorle 0,43 x 2",
+      "quantity": 0.43,
+      "price": null,
+      "total": 0.86,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Pfand EM x 2",
+      "quantity": 0.25,
+      "price": 0.25,
+      "total": 0.5,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "B",
+      "quantity": null,
+      "price": null,
+      "total": 1.75,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Pfand M8",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "B",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-12-23 00:00:00"
+    }
+  ],
+  "total_amount": 3.36,
+  "merchant": "Lidl",
+  "store_address": "Steinhauser Auel 1, 514910verath Vilkerath",
+  "date": "2025-12-23 00:00:00",
+  "receipt_id": "IMG_3324",
+  "ocr_text": "LIDL\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nApfelschorle\n0,43 x 2\n0,86 B\nPfand 0,25 EM\n0,25 x 2\n0,50 B\nRed Bull Energy\n1,75 B\nPfand 0,25 M8\n0,25 B\nzu zahlen\nM33,36\nKarte\n3,36\nMWST%\nMWST +\n=\nNetto = Brutto\nB 19 %\n0,54\n2,82\n3,36\nSumme\n0,54\n2,82\n3,36\nLade die\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1394659\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJ0GxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 1vJ20D8MEzab3FuCxiqgagrDfPrBsHmB\nS2e9vhtSShzz3xPcnpz2zZchZKNYq/Ntx+rRdGcTsV\nBS7KByloPdLRdбswvt71QaFfz800AZAZGje3EV1DFD\nu+QAMeb4bnw7\nSignaturzähler: 2847214\n2025-12-23T07:33:13.000Z\n2025-12-23T07:33:55.000Z\n6496 033462/81\n814060660\n23.12.25 08:33\nMEM K-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n3,36 EUR\n23.12.2025\n08:33\nT-ID 60155117\nTA-Nr. 227036\nBeleg-Nr. 7174\nKartennr.\n###\n#####0118 00\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nEMV-Daten:\nAutorisierungsnummer\nAutorisierungsantwortcode behind 00\nA0000003591010028001/00\n729358\nZahlung erfolgt\n**",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 5.0,
+    "validation_passed": 0.0,
+    "validation_difference": 0.25
+  }
+}

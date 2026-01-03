@@ -1,0 +1,85 @@
+{
+  "code": "de_de",
+  "name": "Germany",
+  "language": "de",
+  "region": "DE",
+  "rtl": false,
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "decimal_separator": ",",
+    "thousands_separator": ".",
+    "symbol_position": "after",
+    "format": "1.234,56"
+  },
+  "date": {
+    "formats": [
+      "DD.MM.YYYY",
+      "DD.MM.YY",
+      "DD.MM."
+    ]
+  },
+  "patterns": {
+    "total_keywords": [
+      "gesamtbetrag",
+      "summe",
+      "zu zahlen",
+      "belegsumme",
+      "endbetrag",
+      "rechnungsbetrag",
+      "betrag"
+    ],
+    "discount_keywords": [
+      "preisvorteil",
+      "rabatt",
+      "nachlass",
+      "aktionsnachlass",
+      "coupon",
+      "gutschein",
+      "ermäßigung"
+    ],
+    "noise_keywords": [
+      "tel.",
+      "fax.",
+      "obj.-nr.",
+      "terminal",
+      "beleg-nr.",
+      "datum",
+      "uhrzeit",
+      "mwst",
+      "eu"
+    ]
+  },
+  "extractors": {
+    "store_detection": {
+      "scan_limit": 15,
+      "fallback_limit": 8,
+      "min_name_length": 3,
+      "known_brands": [
+        "rewe",
+        "aldi",
+        "lidl",
+        "edeka",
+        "penny",
+        "kaufland",
+        "netto",
+        "globus",
+        "norma",
+        "hit",
+        "rossmann",
+        "dm",
+        "müller",
+        "billa",
+        "spar"
+      ]
+    },
+    "total_detection": {
+      "bottom_n_lines": 10,
+      "amount_range": [
+        0.01,
+        100000.0
+      ],
+      "min_keyword_matches": 1
+    }
+  }
+}

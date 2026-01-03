@@ -1,0 +1,955 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Möhren",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Bio Gurken 1,49 x 2",
+        "quantity": 1.49,
+        "price": null,
+        "total": 2.98,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Datteicherrytomaten 1,99 x 2",
+        "quantity": 1.99,
+        "price": null,
+        "total": 3.98,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Butterschmalz 7,49 x 2",
+        "quantity": 7.49,
+        "price": null,
+        "total": 14.98,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Diamant Puderzucker",
+        "quantity": null,
+        "price": null,
+        "total": 0.49,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Dr.Oetker Backin",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Eier Freiland . XXL 3,99 x 2",
+        "quantity": 3.99,
+        "price": null,
+        "total": 7.98,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Gewürzgurken Auslese",
+        "quantity": null,
+        "price": null,
+        "total": 1.19,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Christkindl Glühwein",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Traubensaft rot",
+        "quantity": null,
+        "price": null,
+        "total": 1.39,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Mineralwasser still 0,29 x 12",
+        "quantity": 0.29,
+        "price": null,
+        "total": 3.48,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Pfand EM x 12",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 3.0,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Baguette Bauern",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Walnusskerne 2,49 x 2",
+        "quantity": 2.49,
+        "price": null,
+        "total": 4.98,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Mandeln Honig / Salz",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Hähnchenbrustfilet",
+        "quantity": null,
+        "price": null,
+        "total": 9.99,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "zu zählen",
+        "quantity": null,
+        "price": null,
+        "total": 57.29,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "EUR gespart",
+        "quantity": null,
+        "price": null,
+        "total": 0.3,
+        "date": "2025-12-23 00:00:00"
+      }
+    ],
+    "total_amount": 57.29,
+    "merchant": "Lidl",
+    "store_address": "Steinhauser Auel 1 02, 514910verath - Vilkerath",
+    "date": "2025-12-23 00:00:00",
+    "receipt_id": "IMG_3325",
+    "ocr_text": "LIDL\nSteinhauser Auel 1\n514910verath-Vilkerath\n02\nEUR\nMöhren\n1,49 A\nBio Gurken\n1,49 x 2\n2,98 A\nDatteicherrytomaten 1,99 x 2\n3,98 A\nPreisvorteil\n-0,80\nButterschmalz\n7,49 x 2\n14,98 A\nPreisvorteil\nqqA 2014 Ibi-3,000\nDiamant Puderzucker\n0,49 A\nDr.Oetker Backin\n1,29 A\nEier Freiland. XXL 3,99 x 2 7,98 A\nGewürzgurken Auslese\n1,19 A\nChristkindl Glühwein\n1,99 B\nPreisvorteil\n-0,60\nTraubensaft rot\n1,39 B\nMineralwasser still\n0,29 x\n12\n3,48 B\nPfand 0,25 EM\n0,25 x\n12\n3,00 B\nBaguette Bauern\n0,79 A\nLidl Plus Rabatt\n-0,30\nWalnusskerne\n2,49 x 2 4,98 A\nMandeln Honig/Salz\n1,99 A\nHähnchenbrustfilet\n9,99 A\nzu zählen\n57,29\nKarte\n57,29\nGesamter Preisvorteil\nMUA XV4,70\nMWST%\nMEMWST +\nNetto = Brutto\nA 7 %\n3,14\n44,89\n48,03\nB 19 %\n1,48\n7,78\n9,26\nSumme\n4,62\n52,67\n57,29\nMit Lidl Plus\n0,30 EUR gespart\nTSE Transaktionsnummer: 1395832\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: lavbRk8Iej8I/uCQu3WqqTN3SXXZihng\ndYR4+tj19KXmKRyOtcDePKrL3EGFH1aAEgJg6iKfбv\n2Px0DwBah8U4jP333U6dt+wC60CxB/FUAC2XnB39Rw\n9VJ4ydTKBLFT\nSignaturzähler: 2849588\n2025-12-23T15:15:50.000Z\n2025-12-23T15:18:17.000Z\n6496 033554/81\n814060660\n23.12.25 16:15\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard ATIDIG\nBetrag BUS M3 57,29 EUR\nBUAXИ\n16:17 T-ID 60155117\n23.12.2025\nTA-Nr. 227126\nKartennr.\nKontaktlos Chip\nBeleg-Nr. 7261\n####1364 11\nOnline\nBestätigt durch mobiles Kundengerät\nVU-Nummer\n9801706496\nAutorisierungsnummer\n961781\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000003591010028001/00\n**\nZahlung erfolgt\n**",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 18.0,
+      "validation_passed": 0.0,
+      "validation_difference": 60.589999999999996
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LIDL",
+        "y_position": 43,
+        "x_min": 542,
+        "x_max": 682,
+        "confidence": 0.7571998834609985,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser Auel 1 02",
+        "y_position": 104,
+        "x_min": 472,
+        "x_max": 928,
+        "confidence": 0.9664386510848999,
+        "line_number": 1,
+        "words_count": 4
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 140,
+        "x_min": 441,
+        "x_max": 784,
+        "confidence": 0.9812168677647909,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 170,
+        "x_min": 843,
+        "x_max": 896,
+        "confidence": 0.8388270139694214,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "Möhren 1,49 A",
+        "y_position": 197,
+        "x_min": 284,
+        "x_max": 925,
+        "confidence": 0.9809509515762329,
+        "line_number": 4,
+        "words_count": 3
+      },
+      {
+        "text": "Bio Gurken 1,49 x 2 2,98 A",
+        "y_position": 231,
+        "x_min": 284,
+        "x_max": 939,
+        "confidence": 0.9482305816241673,
+        "line_number": 5,
+        "words_count": 7
+      },
+      {
+        "text": "Datteicherrytomaten 1,99 x 2 3,98 A",
+        "y_position": 263,
+        "x_min": 285,
+        "x_max": 939,
+        "confidence": 0.9574255049228668,
+        "line_number": 6,
+        "words_count": 6
+      },
+      {
+        "text": "Preisvorteil -0,80",
+        "y_position": 294,
+        "x_min": 283,
+        "x_max": 906,
+        "confidence": 0.9712046384811401,
+        "line_number": 7,
+        "words_count": 2
+      },
+      {
+        "text": "Butterschmalz 7,49 x 2 14,98 A",
+        "y_position": 331,
+        "x_min": 286,
+        "x_max": 938,
+        "confidence": 0.9286679923534393,
+        "line_number": 8,
+        "words_count": 6
+      },
+      {
+        "text": "Preisvorteil qqA 2014 Ibi - 3,000",
+        "y_position": 364,
+        "x_min": 284,
+        "x_max": 926,
+        "confidence": 0.7158486594756445,
+        "line_number": 9,
+        "words_count": 6
+      },
+      {
+        "text": "Diamant Puderzucker 0,49 A",
+        "y_position": 399,
+        "x_min": 286,
+        "x_max": 922,
+        "confidence": 0.9888307601213455,
+        "line_number": 10,
+        "words_count": 4
+      },
+      {
+        "text": "Dr.Oetker Backin 1,29 A",
+        "y_position": 432,
+        "x_min": 287,
+        "x_max": 921,
+        "confidence": 0.9794158339500427,
+        "line_number": 11,
+        "words_count": 4
+      },
+      {
+        "text": "Eier Freiland . XXL 3,99 x 2 7,98 A",
+        "y_position": 465,
+        "x_min": 288,
+        "x_max": 936,
+        "confidence": 0.9366741379102071,
+        "line_number": 12,
+        "words_count": 9
+      },
+      {
+        "text": "Gewürzgurken Auslese 1,19 A",
+        "y_position": 501,
+        "x_min": 288,
+        "x_max": 919,
+        "confidence": 0.9777955561876297,
+        "line_number": 13,
+        "words_count": 4
+      },
+      {
+        "text": "Christkindl Glühwein 1,99 B",
+        "y_position": 530,
+        "x_min": 288,
+        "x_max": 919,
+        "confidence": 0.9768610894680023,
+        "line_number": 14,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,60",
+        "y_position": 566,
+        "x_min": 288,
+        "x_max": 903,
+        "confidence": 0.9759571850299835,
+        "line_number": 15,
+        "words_count": 2
+      },
+      {
+        "text": "Traubensaft rot 1,39 B",
+        "y_position": 597,
+        "x_min": 288,
+        "x_max": 917,
+        "confidence": 0.977589800953865,
+        "line_number": 16,
+        "words_count": 4
+      },
+      {
+        "text": "Mineralwasser still 0,29 x 12 3,48 B",
+        "y_position": 631,
+        "x_min": 289,
+        "x_max": 934,
+        "confidence": 0.9600544912474496,
+        "line_number": 17,
+        "words_count": 7
+      },
+      {
+        "text": "Pfand 0,25 EM 0,25 x 12 3,00 B",
+        "y_position": 664,
+        "x_min": 289,
+        "x_max": 934,
+        "confidence": 0.9687553644180298,
+        "line_number": 18,
+        "words_count": 8
+      },
+      {
+        "text": "Baguette Bauern 0,79 A",
+        "y_position": 698,
+        "x_min": 289,
+        "x_max": 918,
+        "confidence": 0.9899021983146667,
+        "line_number": 19,
+        "words_count": 4
+      },
+      {
+        "text": "Lidl Plus Rabatt -0,30",
+        "y_position": 731,
+        "x_min": 366,
+        "x_max": 885,
+        "confidence": 0.9442997425794601,
+        "line_number": 20,
+        "words_count": 4
+      },
+      {
+        "text": "Walnusskerne 2,49 x 2 4,98 A",
+        "y_position": 761,
+        "x_min": 290,
+        "x_max": 933,
+        "confidence": 0.9300906558831533,
+        "line_number": 21,
+        "words_count": 6
+      },
+      {
+        "text": "Mandeln Honig / Salz 1,99 A",
+        "y_position": 795,
+        "x_min": 291,
+        "x_max": 914,
+        "confidence": 0.9787772496541342,
+        "line_number": 22,
+        "words_count": 6
+      },
+      {
+        "text": "Hähnchenbrustfilet 9,99 A",
+        "y_position": 827,
+        "x_min": 292,
+        "x_max": 914,
+        "confidence": 0.9819295406341553,
+        "line_number": 23,
+        "words_count": 3
+      },
+      {
+        "text": "zu zählen 57,29",
+        "y_position": 871,
+        "x_min": 290,
+        "x_max": 882,
+        "confidence": 0.9656831622123718,
+        "line_number": 24,
+        "words_count": 3
+      },
+      {
+        "text": "Karte 57,29",
+        "y_position": 904,
+        "x_min": 291,
+        "x_max": 882,
+        "confidence": 0.9832955300807953,
+        "line_number": 25,
+        "words_count": 2
+      },
+      {
+        "text": "Gesamter Preisvorteil MUA XV4,70",
+        "y_position": 937,
+        "x_min": 291,
+        "x_max": 929,
+        "confidence": 0.7536847591400146,
+        "line_number": 26,
+        "words_count": 4
+      },
+      {
+        "text": "MWST % MEMWST + Netto = Brutto",
+        "y_position": 986,
+        "x_min": 307,
+        "x_max": 882,
+        "confidence": 0.8442940201078143,
+        "line_number": 27,
+        "words_count": 7
+      },
+      {
+        "text": "A 7 % 3,14 44,89 48,03",
+        "y_position": 1015,
+        "x_min": 290,
+        "x_max": 881,
+        "confidence": 0.9809645414352417,
+        "line_number": 28,
+        "words_count": 6
+      },
+      {
+        "text": "B 19 % 1,48 7,78 9,26",
+        "y_position": 1047,
+        "x_min": 290,
+        "x_max": 881,
+        "confidence": 0.977059135834376,
+        "line_number": 29,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 4,62 52,67 57,29",
+        "y_position": 1080,
+        "x_min": 291,
+        "x_max": 882,
+        "confidence": 0.9763954877853394,
+        "line_number": 30,
+        "words_count": 4
+      },
+      {
+        "text": "Mit Lidl Plus",
+        "y_position": 1131,
+        "x_min": 485,
+        "x_max": 683,
+        "confidence": 0.9499653975168864,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "0,30 EUR gespart",
+        "y_position": 1163,
+        "x_min": 471,
+        "x_max": 714,
+        "confidence": 0.9676372607549032,
+        "line_number": 32,
+        "words_count": 3
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1395832",
+        "y_position": 1290,
+        "x_min": 290,
+        "x_max": 761,
+        "confidence": 0.9678049385547638,
+        "line_number": 33,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-81",
+        "y_position": 1321,
+        "x_min": 289,
+        "x_max": 773,
+        "confidence": 0.961397681917463,
+        "line_number": 34,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga + dvZbaId8",
+        "y_position": 1351,
+        "x_min": 289,
+        "x_max": 926,
+        "confidence": 0.9216713905334473,
+        "line_number": 35,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1384,
+        "x_min": 289,
+        "x_max": 549,
+        "confidence": 0.964913010597229,
+        "line_number": 36,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : lavbRk8Iej8I / uCQu3WqqTN3SXXZihng",
+        "y_position": 1416,
+        "x_min": 290,
+        "x_max": 925,
+        "confidence": 0.937337064743042,
+        "line_number": 37,
+        "words_count": 5
+      },
+      {
+        "text": "dYR4 + tj19KXmKRyOtcDePKrL3EGFH1aAEgJg6iKfбv",
+        "y_position": 1449,
+        "x_min": 289,
+        "x_max": 928,
+        "confidence": 0.9086397687594095,
+        "line_number": 38,
+        "words_count": 3
+      },
+      {
+        "text": "2Px0DwBah8U4jP333U6dt + wC60CxB / FUAC2XnB39Rw",
+        "y_position": 1480,
+        "x_min": 289,
+        "x_max": 926,
+        "confidence": 0.9235618829727172,
+        "line_number": 39,
+        "words_count": 5
+      },
+      {
+        "text": "9VJ4ydTKBLFT",
+        "y_position": 1515,
+        "x_min": 287,
+        "x_max": 472,
+        "confidence": 0.9672789573669434,
+        "line_number": 40,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2849588",
+        "y_position": 1549,
+        "x_min": 286,
+        "x_max": 638,
+        "confidence": 0.9815691709518433,
+        "line_number": 41,
+        "words_count": 3
+      },
+      {
+        "text": "2025-12-23T15 : 15 : 50.000Z",
+        "y_position": 1579,
+        "x_min": 286,
+        "x_max": 651,
+        "confidence": 0.9792448163032532,
+        "line_number": 42,
+        "words_count": 5
+      },
+      {
+        "text": "2025-12-23T15 : 18 : 17.000Z",
+        "y_position": 1610,
+        "x_min": 286,
+        "x_max": 651,
+        "confidence": 0.9776922941207886,
+        "line_number": 43,
+        "words_count": 5
+      },
+      {
+        "text": "6496 033554/81 23.12.25 16:15",
+        "y_position": 1641,
+        "x_min": 286,
+        "x_max": 931,
+        "confidence": 0.9872050136327744,
+        "line_number": 44,
+        "words_count": 4
+      },
+      {
+        "text": "814060660",
+        "y_position": 1676,
+        "x_min": 515,
+        "x_max": 654,
+        "confidence": 0.9918529987335205,
+        "line_number": 45,
+        "words_count": 1
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1718,
+        "x_min": 421,
+        "x_max": 747,
+        "confidence": 0.9547206248555865,
+        "line_number": 46,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard ATIDIG",
+        "y_position": 1750,
+        "x_min": 420,
+        "x_max": 915,
+        "confidence": 0.8826642632484436,
+        "line_number": 47,
+        "words_count": 3
+      },
+      {
+        "text": "Betrag BUS BUAXИ M3 57,29 EUR",
+        "y_position": 1789,
+        "x_min": 282,
+        "x_max": 901,
+        "confidence": 0.6348858028650284,
+        "line_number": 48,
+        "words_count": 6
+      },
+      {
+        "text": "23.12.2025 16:17 T - ID 60155117",
+        "y_position": 1832,
+        "x_min": 281,
+        "x_max": 900,
+        "confidence": 0.9869762559731802,
+        "line_number": 49,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 227126 Beleg - Nr . 7261",
+        "y_position": 1864,
+        "x_min": 281,
+        "x_max": 898,
+        "confidence": 0.9685179054737091,
+        "line_number": 50,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . #### 1364 11",
+        "y_position": 1896,
+        "x_min": 281,
+        "x_max": 897,
+        "confidence": 0.9577530860900879,
+        "line_number": 51,
+        "words_count": 5
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 1925,
+        "x_min": 281,
+        "x_max": 900,
+        "confidence": 0.9821457068125407,
+        "line_number": 52,
+        "words_count": 3
+      },
+      {
+        "text": "Bestätigt durch mobiles Kundengerät",
+        "y_position": 1957,
+        "x_min": 311,
+        "x_max": 852,
+        "confidence": 0.9848887175321579,
+        "line_number": 53,
+        "words_count": 4
+      },
+      {
+        "text": "VU - Nummer 9801706496",
+        "y_position": 1992,
+        "x_min": 281,
+        "x_max": 898,
+        "confidence": 0.9843976348638535,
+        "line_number": 54,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 961781",
+        "y_position": 2018,
+        "x_min": 282,
+        "x_max": 897,
+        "confidence": 0.9794521331787109,
+        "line_number": 55,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 2051,
+        "x_min": 282,
+        "x_max": 898,
+        "confidence": 0.9723771512508392,
+        "line_number": 56,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - Daten : A0000003591010028001 / 00",
+        "y_position": 2081,
+        "x_min": 285,
+        "x_max": 897,
+        "confidence": 0.9828408786228725,
+        "line_number": 57,
+        "words_count": 7
+      },
+      {
+        "text": "** Zahlung erfolgt **",
+        "y_position": 2115,
+        "x_min": 285,
+        "x_max": 895,
+        "confidence": 0.9524298310279846,
+        "line_number": 58,
+        "words_count": 4
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 275,
+    "total_lines": 59
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 3,
+      "pl_PL": 1,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": "Lidl",
+    "store_address": "Steinhauser Auel 1 02, 514910verath - Vilkerath",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-12-23",
+    "receipt_total": 57.29,
+    "currency": "EUR",
+    "date_raw": "2025-12-23",
+    "total_raw": "57,29 EUR",
+    "total_line_number": 48
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Möhren",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "Möhren 1,49 A"
+      },
+      {
+        "name": "Bio Gurken 1,49 x 2",
+        "quantity": 1.49,
+        "price": null,
+        "total": 2.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "Bio Gurken 1,49 x 2 2,98 A"
+      },
+      {
+        "name": "Datteicherrytomaten 1,99 x 2",
+        "quantity": 1.99,
+        "price": null,
+        "total": 3.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "Datteicherrytomaten 1,99 x 2 3,98 A"
+      },
+      {
+        "name": "Butterschmalz 7,49 x 2",
+        "quantity": 7.49,
+        "price": null,
+        "total": 14.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "Butterschmalz 7,49 x 2 14,98 A"
+      },
+      {
+        "name": "Diamant Puderzucker",
+        "quantity": null,
+        "price": null,
+        "total": 0.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "Diamant Puderzucker 0,49 A"
+      },
+      {
+        "name": "Dr.Oetker Backin",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Dr.Oetker Backin 1,29 A"
+      },
+      {
+        "name": "Eier Freiland . XXL 3,99 x 2",
+        "quantity": 3.99,
+        "price": null,
+        "total": 7.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Eier Freiland . XXL 3,99 x 2 7,98 A"
+      },
+      {
+        "name": "Gewürzgurken Auslese",
+        "quantity": null,
+        "price": null,
+        "total": 1.19,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "Gewürzgurken Auslese 1,19 A"
+      },
+      {
+        "name": "Christkindl Glühwein",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "Christkindl Glühwein 1,99 B"
+      },
+      {
+        "name": "Traubensaft rot",
+        "quantity": null,
+        "price": null,
+        "total": 1.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "Traubensaft rot 1,39 B"
+      },
+      {
+        "name": "Mineralwasser still 0,29 x 12",
+        "quantity": 0.29,
+        "price": null,
+        "total": 3.48,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "Mineralwasser still 0,29 x 12 3,48 B"
+      },
+      {
+        "name": "Pfand EM x 12",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 3.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "Pfand 0,25 EM 0,25 x 12 3,00 B"
+      },
+      {
+        "name": "Baguette Bauern",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "Baguette Bauern 0,79 A"
+      },
+      {
+        "name": "Walnusskerne 2,49 x 2",
+        "quantity": 2.49,
+        "price": null,
+        "total": 4.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Walnusskerne 2,49 x 2 4,98 A"
+      },
+      {
+        "name": "Mandeln Honig / Salz",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "Mandeln Honig / Salz 1,99 A"
+      },
+      {
+        "name": "Hähnchenbrustfilet",
+        "quantity": null,
+        "price": null,
+        "total": 9.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 23,
+        "raw_text": "Hähnchenbrustfilet 9,99 A"
+      },
+      {
+        "name": "zu zählen",
+        "quantity": null,
+        "price": null,
+        "total": 57.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "zu zählen 57,29"
+      },
+      {
+        "name": "EUR gespart",
+        "quantity": null,
+        "price": null,
+        "total": 0.3,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 32,
+        "raw_text": "0,30 EUR gespart"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.8,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 7,
+        "raw_text": "Preisvorteil -0,80"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.6,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "Preisvorteil -0,60"
+      },
+      {
+        "name": "Lidl Plus Rabatt",
+        "quantity": null,
+        "price": null,
+        "total": -0.3,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "Lidl Plus Rabatt -0,30"
+      }
+    ],
+    "items_count": 18,
+    "discounts_count": 3,
+    "items_total": 119.58,
+    "discounts_total": 1.7,
+    "skipped_lines": 20,
+    "parsed_lines": 21
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 119.58,
+    "discounts_sum": 1.7,
+    "calculated_total": 117.88,
+    "receipt_total": 57.29,
+    "difference": 60.589999999999996,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=117.88, receipt=57.29, diff=60.59 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.874095916748047,
+  "stages_completed": 6
+}

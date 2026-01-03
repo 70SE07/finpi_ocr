@@ -1,0 +1,670 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "DIESEL A EUR",
+        "quantity": null,
+        "price": null,
+        "total": 17.67,
+        "date": "2025-08-10 00:00:00"
+      },
+      {
+        "name": "Ja Buttertoast 500g EUR",
+        "quantity": null,
+        "price": null,
+        "total": 1.79,
+        "date": "2025-08-10 00:00:00"
+      },
+      {
+        "name": "Blumberg Schinkenwurst B EUR",
+        "quantity": null,
+        "price": null,
+        "total": 2.09,
+        "date": "2025-08-10 00:00:00"
+      },
+      {
+        "name": "Frischpack Gouda B EUR",
+        "quantity": null,
+        "price": null,
+        "total": 2.19,
+        "date": "2025-08-10 00:00:00"
+      }
+    ],
+    "total_amount": 23.74,
+    "merchant": null,
+    "store_address": null,
+    "date": "2025-08-10 00:00:00",
+    "receipt_id": "IMG_1352",
+    "ocr_text": "5\nSB - TANKSTELLE\nAugust Jaeger Nachfolger GmbH & Co KG\nGut Burghof 2\n51491 Overath\nUSt-ID: DE122 528 616\n11,79 Liter SÄULENNUMMER 6 *\n*\n*DIESEL\nA\n17,67 EUR*\n1,499 EUR/Liter\nJa Buttertoast 500g\n1,79 EUR\nBlumberg Schinkenwurst B\n2,09 EUR\nFrischpack Gouda\nB\n2,19 EUR\n+ KUNDEN BELEG +\nTankstelle Overath\nGut Burghof 2\n51491 Overath\nTerminalnummer\nDatum\n74078926\n10.08.2025\nUhrzeit\nBeleg-Nr.\nTransaktions-Nr.\n10:02:00\n8977\n476970\nKartenzahlung\ngirocard\nBetrag\nKarte\nKartenfolgenummer\nEMV-AID\nGenehmigungs-Nr.\n23,74 EUR\n########1324\n12\nA000000359101002800101\n940520\nEMV-DATA:\n/0000008001//A000000359/3F0002\nContactless\nZahlung erfolgt\ngirocard\n23,74 EUR\nTOTAL\n23,74 EUR\nQuittung\nMWST 19,00% A\n2,82 EUR\nNETTO 14,85 EUR BRUTTO\n17,67 EUR\nMWST 7,00% B\n0,40 EUR\nNETTO\n5,67 EUR BRUTTO\n6,07 EUR\nVolumen kompensiert auf 15 Grad\nausgenommen LPG und Erdgas.\nDaten aus geeichten Anlagenteilen\nsind zur besonderen Kennzeichnung\ndurch Sterne (*) eingeschlossen.\nTechnische Sicherheitseinrichtung\nStart: 2025-08-10108:01:53,000Z\nStop: 2025-08-10108:02:11.0002\nler:\nTransaktion: 2851508-718696000780837906C56B9\nSeriennunger SE:\n2067DCB066C33C9A53778066EE\nSeriennunner Kasse: OCF54813993\n299c01P4t50xdxPvNpr+0xb1HQXYYDh7vIYudgBtb90vpa\n15uFRYZJCLG0mz+dLIchp1XKK8njPFU/+Zpcs3X2GHz06jXXYLOVgB\nParkHJŕNOWOTRCL890iB0n/NGO\n#49324 10.08.25 10:02 Herr Azizi\nTel: 02206/868521 Fax:868522\nVielen Dank & Gute Fahrt\nK.0001",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 4.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "SB - TANKSTELLE",
+        "y_position": 163,
+        "x_min": 351,
+        "x_max": 726,
+        "confidence": 0.8504124085108439,
+        "line_number": 0,
+        "words_count": 3
+      },
+      {
+        "text": "August Jaeger Nachfolger GmbH & Co KG",
+        "y_position": 209,
+        "x_min": 350,
+        "x_max": 815,
+        "confidence": 0.9786357964788165,
+        "line_number": 1,
+        "words_count": 7
+      },
+      {
+        "text": "Gut Burghof 2",
+        "y_position": 236,
+        "x_min": 350,
+        "x_max": 515,
+        "confidence": 0.984460691610972,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 266,
+        "x_min": 350,
+        "x_max": 514,
+        "confidence": 0.989205926656723,
+        "line_number": 3,
+        "words_count": 2
+      },
+      {
+        "text": "USt - ID : DE122 528 616",
+        "y_position": 296,
+        "x_min": 350,
+        "x_max": 617,
+        "confidence": 0.96061281647001,
+        "line_number": 4,
+        "words_count": 7
+      },
+      {
+        "text": "* 11,79 Liter SÄULENNUMMER 6 *",
+        "y_position": 359,
+        "x_min": 351,
+        "x_max": 877,
+        "confidence": 0.9465501010417938,
+        "line_number": 5,
+        "words_count": 6
+      },
+      {
+        "text": "* DIESEL A 17,67 EUR *",
+        "y_position": 388,
+        "x_min": 351,
+        "x_max": 876,
+        "confidence": 0.9752711951732635,
+        "line_number": 6,
+        "words_count": 6
+      },
+      {
+        "text": "1,499 EUR / Liter",
+        "y_position": 418,
+        "x_min": 366,
+        "x_max": 555,
+        "confidence": 0.9831578135490417,
+        "line_number": 7,
+        "words_count": 4
+      },
+      {
+        "text": "Ja Buttertoast 500g 1,79 EUR",
+        "y_position": 450,
+        "x_min": 363,
+        "x_max": 865,
+        "confidence": 0.9734335660934448,
+        "line_number": 8,
+        "words_count": 5
+      },
+      {
+        "text": "Blumberg Schinkenwurst B 2,09 EUR",
+        "y_position": 480,
+        "x_min": 363,
+        "x_max": 865,
+        "confidence": 0.9873211860656739,
+        "line_number": 9,
+        "words_count": 5
+      },
+      {
+        "text": "Frischpack Gouda B 2,19 EUR",
+        "y_position": 510,
+        "x_min": 364,
+        "x_max": 864,
+        "confidence": 0.97741219997406,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "+ KUNDEN BELEG +",
+        "y_position": 579,
+        "x_min": 453,
+        "x_max": 767,
+        "confidence": 0.8879594504833221,
+        "line_number": 11,
+        "words_count": 4
+      },
+      {
+        "text": "Tankstelle Overath",
+        "y_position": 602,
+        "x_min": 504,
+        "x_max": 731,
+        "confidence": 0.9822447597980499,
+        "line_number": 12,
+        "words_count": 2
+      },
+      {
+        "text": "Gut Burghof 2",
+        "y_position": 627,
+        "x_min": 528,
+        "x_max": 695,
+        "confidence": 0.9785264531771342,
+        "line_number": 13,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 651,
+        "x_min": 528,
+        "x_max": 694,
+        "confidence": 0.9919657707214355,
+        "line_number": 14,
+        "words_count": 2
+      },
+      {
+        "text": "Terminalnummer 74078926",
+        "y_position": 678,
+        "x_min": 354,
+        "x_max": 878,
+        "confidence": 0.9617412090301514,
+        "line_number": 15,
+        "words_count": 2
+      },
+      {
+        "text": "Datum 10.08.2025",
+        "y_position": 701,
+        "x_min": 354,
+        "x_max": 877,
+        "confidence": 0.989838182926178,
+        "line_number": 16,
+        "words_count": 2
+      },
+      {
+        "text": "Uhrzeit 10:02:00",
+        "y_position": 725,
+        "x_min": 354,
+        "x_max": 878,
+        "confidence": 0.988920271396637,
+        "line_number": 17,
+        "words_count": 2
+      },
+      {
+        "text": "Beleg - Nr . 8977",
+        "y_position": 751,
+        "x_min": 354,
+        "x_max": 877,
+        "confidence": 0.9668915271759033,
+        "line_number": 18,
+        "words_count": 5
+      },
+      {
+        "text": "5 Transaktions - Nr . 476970",
+        "y_position": 773,
+        "x_min": 149,
+        "x_max": 877,
+        "confidence": 0.8970729013284048,
+        "line_number": 19,
+        "words_count": 6
+      },
+      {
+        "text": "Kartenzahlung",
+        "y_position": 799,
+        "x_min": 530,
+        "x_max": 692,
+        "confidence": 0.9890100359916687,
+        "line_number": 20,
+        "words_count": 1
+      },
+      {
+        "text": "girocard",
+        "y_position": 824,
+        "x_min": 568,
+        "x_max": 668,
+        "confidence": 0.9826344847679138,
+        "line_number": 21,
+        "words_count": 1
+      },
+      {
+        "text": "Betrag 23,74 EUR",
+        "y_position": 846,
+        "x_min": 356,
+        "x_max": 876,
+        "confidence": 0.9885451396306356,
+        "line_number": 22,
+        "words_count": 3
+      },
+      {
+        "text": "Karte ######## 1324",
+        "y_position": 870,
+        "x_min": 356,
+        "x_max": 878,
+        "confidence": 0.9619778792063395,
+        "line_number": 23,
+        "words_count": 3
+      },
+      {
+        "text": "Kartenfolgenummer 12",
+        "y_position": 897,
+        "x_min": 356,
+        "x_max": 877,
+        "confidence": 0.9899422228336334,
+        "line_number": 24,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - AID A000000359101002800101",
+        "y_position": 918,
+        "x_min": 358,
+        "x_max": 876,
+        "confidence": 0.9863573461771011,
+        "line_number": 25,
+        "words_count": 4
+      },
+      {
+        "text": "Genehmigungs - Nr . 940520",
+        "y_position": 943,
+        "x_min": 358,
+        "x_max": 877,
+        "confidence": 0.9695878863334656,
+        "line_number": 26,
+        "words_count": 5
+      },
+      {
+        "text": "EMV - DATA :",
+        "y_position": 974,
+        "x_min": 360,
+        "x_max": 469,
+        "confidence": 0.9797027409076691,
+        "line_number": 27,
+        "words_count": 4
+      },
+      {
+        "text": "/ 0000008001 // A000000359 / 3F0002",
+        "y_position": 994,
+        "x_min": 360,
+        "x_max": 729,
+        "confidence": 0.9744287232557932,
+        "line_number": 28,
+        "words_count": 6
+      },
+      {
+        "text": "Contactless",
+        "y_position": 1019,
+        "x_min": 545,
+        "x_max": 680,
+        "confidence": 0.9774007201194763,
+        "line_number": 29,
+        "words_count": 1
+      },
+      {
+        "text": "Zahlung erfolgt",
+        "y_position": 1043,
+        "x_min": 521,
+        "x_max": 707,
+        "confidence": 0.9903759062290192,
+        "line_number": 30,
+        "words_count": 2
+      },
+      {
+        "text": "girocard 23,74 EUR",
+        "y_position": 1148,
+        "x_min": 558,
+        "x_max": 865,
+        "confidence": 0.9872713287671407,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "TOTAL 23,74 EUR",
+        "y_position": 1207,
+        "x_min": 386,
+        "x_max": 877,
+        "confidence": 0.9864473938941956,
+        "line_number": 32,
+        "words_count": 3
+      },
+      {
+        "text": "Quittung",
+        "y_position": 1287,
+        "x_min": 571,
+        "x_max": 670,
+        "confidence": 0.9675830006599426,
+        "line_number": 33,
+        "words_count": 1
+      },
+      {
+        "text": "MWST 19,00 % A 2,82 EUR",
+        "y_position": 1314,
+        "x_min": 372,
+        "x_max": 866,
+        "confidence": 0.983578642209371,
+        "line_number": 34,
+        "words_count": 6
+      },
+      {
+        "text": "NETTO 14,85 EUR BRUTTO 17,67 EUR",
+        "y_position": 1344,
+        "x_min": 374,
+        "x_max": 867,
+        "confidence": 0.974864681561788,
+        "line_number": 35,
+        "words_count": 6
+      },
+      {
+        "text": "MWST 7,00 % B 0,40 EUR",
+        "y_position": 1377,
+        "x_min": 373,
+        "x_max": 867,
+        "confidence": 0.9713556071122488,
+        "line_number": 36,
+        "words_count": 6
+      },
+      {
+        "text": "NETTO 5,67 EUR BRUTTO 6,07 EUR",
+        "y_position": 1405,
+        "x_min": 375,
+        "x_max": 868,
+        "confidence": 0.9675272305806478,
+        "line_number": 37,
+        "words_count": 6
+      },
+      {
+        "text": "Volumen kompensiert auf 15 Grad",
+        "y_position": 1464,
+        "x_min": 422,
+        "x_max": 805,
+        "confidence": 0.9855481386184692,
+        "line_number": 38,
+        "words_count": 5
+      },
+      {
+        "text": "ausgenommen LPG und Erdgas .",
+        "y_position": 1494,
+        "x_min": 448,
+        "x_max": 781,
+        "confidence": 0.9545426368713379,
+        "line_number": 39,
+        "words_count": 5
+      },
+      {
+        "text": "Daten aus geeichten Anlagenteilen",
+        "y_position": 1525,
+        "x_min": 410,
+        "x_max": 819,
+        "confidence": 0.9764545410871506,
+        "line_number": 40,
+        "words_count": 4
+      },
+      {
+        "text": "sind zur besonderen Kennzeichnung",
+        "y_position": 1555,
+        "x_min": 410,
+        "x_max": 819,
+        "confidence": 0.9842569679021835,
+        "line_number": 41,
+        "words_count": 4
+      },
+      {
+        "text": "durch Sterne ( * ) eingeschlossen .",
+        "y_position": 1585,
+        "x_min": 422,
+        "x_max": 816,
+        "confidence": 0.9727968062673297,
+        "line_number": 42,
+        "words_count": 7
+      },
+      {
+        "text": "Technische Sicherheitseinrichtung",
+        "y_position": 1618,
+        "x_min": 462,
+        "x_max": 770,
+        "confidence": 0.9835719466209412,
+        "line_number": 43,
+        "words_count": 2
+      },
+      {
+        "text": "Start : 2025-08-10108 : 01 11.0002 : 53,000Z",
+        "y_position": 1647,
+        "x_min": 360,
+        "x_max": 648,
+        "confidence": 0.8925126791000366,
+        "line_number": 44,
+        "words_count": 8
+      },
+      {
+        "text": "Stop Transaktion : 2025-08-10108 : 2851508-718696000780837906C56B9 : 02 :",
+        "y_position": 1663,
+        "x_min": 361,
+        "x_max": 882,
+        "confidence": 0.8158026470078362,
+        "line_number": 45,
+        "words_count": 9
+      },
+      {
+        "text": "ler :",
+        "y_position": 1683,
+        "x_min": 677,
+        "x_max": 710,
+        "confidence": 0.8026435077190399,
+        "line_number": 46,
+        "words_count": 2
+      },
+      {
+        "text": "Seriennunger 2067DCB066C33C9A53778066EE SE :",
+        "y_position": 1700,
+        "x_min": 359,
+        "x_max": 603,
+        "confidence": 0.7852159142494202,
+        "line_number": 47,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennunner Kasse : OCF54813993 0xb1HQXYYDh7vIYudgBtb90vpa",
+        "y_position": 1732,
+        "x_min": 360,
+        "x_max": 882,
+        "confidence": 0.664636617898941,
+        "line_number": 48,
+        "words_count": 5
+      },
+      {
+        "text": "299c01P4t50xdxPvNpr + Zpcs3X2GHz06jXXYLOVgB",
+        "y_position": 1751,
+        "x_min": 454,
+        "x_max": 882,
+        "confidence": 0.5255719671646754,
+        "line_number": 49,
+        "words_count": 3
+      },
+      {
+        "text": "15uFRYZJCLG0mz + dLIchp1XKK8njPFU / +",
+        "y_position": 1770,
+        "x_min": 361,
+        "x_max": 685,
+        "confidence": 0.563678115606308,
+        "line_number": 50,
+        "words_count": 5
+      },
+      {
+        "text": "ParkHJŕNOWOTRCL890iB0n / NGO",
+        "y_position": 1787,
+        "x_min": 361,
+        "x_max": 601,
+        "confidence": 0.6514308849970499,
+        "line_number": 51,
+        "words_count": 3
+      },
+      {
+        "text": "# 49324 10.08.25",
+        "y_position": 2067,
+        "x_min": 389,
+        "x_max": 561,
+        "confidence": 0.9565496643384298,
+        "line_number": 52,
+        "words_count": 3
+      },
+      {
+        "text": "Tel Vielen : 02206/868521",
+        "y_position": 2084,
+        "x_min": 393,
+        "x_max": 582,
+        "confidence": 0.8019765168428421,
+        "line_number": 53,
+        "words_count": 4
+      },
+      {
+        "text": "Dank 10:02 Herr",
+        "y_position": 2102,
+        "x_min": 472,
+        "x_max": 687,
+        "confidence": 0.9868373473485311,
+        "line_number": 54,
+        "words_count": 3
+      },
+      {
+        "text": "& Gute Fax : 868522 Azizi K.0001",
+        "y_position": 2128,
+        "x_min": 528,
+        "x_max": 869,
+        "confidence": 0.9800192373139518,
+        "line_number": 55,
+        "words_count": 7
+      },
+      {
+        "text": "Fahrt",
+        "y_position": 2153,
+        "x_min": 606,
+        "x_max": 667,
+        "confidence": 0.9922729730606079,
+        "line_number": 56,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 228,
+    "total_lines": 57
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.22580645161290322,
+    "matched_keywords": [
+      "beleg",
+      "netto",
+      "quittung",
+      "mwst",
+      "eur",
+      "brutto",
+      "ust"
+    ],
+    "scores": {
+      "de_DE": 7,
+      "pl_PL": 2,
+      "es_ES": 2,
+      "pt_PT": 2,
+      "cs_CZ": 0,
+      "bg_BG": 0,
+      "uk_UA": 0,
+      "tr_TR": 1,
+      "th_TH": 0,
+      "en_IN": 3
+    }
+  },
+  "store": {
+    "store_name": null,
+    "store_address": null,
+    "confidence": 0.0,
+    "matched_in_line": -1
+  },
+  "metadata": {
+    "receipt_date": "2025-08-10",
+    "receipt_total": 23.74,
+    "currency": "EUR",
+    "date_raw": "10.08.2025",
+    "total_raw": "23,74 EUR",
+    "total_line_number": 32
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "DIESEL A EUR",
+        "quantity": null,
+        "price": null,
+        "total": 17.67,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "DIESEL A EUR"
+      },
+      {
+        "name": "Ja Buttertoast 500g EUR",
+        "quantity": null,
+        "price": null,
+        "total": 1.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "Ja Buttertoast 500g EUR"
+      },
+      {
+        "name": "Blumberg Schinkenwurst B EUR",
+        "quantity": null,
+        "price": null,
+        "total": 2.09,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Blumberg Schinkenwurst B EUR"
+      },
+      {
+        "name": "Frischpack Gouda B EUR",
+        "quantity": null,
+        "price": null,
+        "total": 2.19,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "Frischpack Gouda B EUR"
+      }
+    ],
+    "discounts": [],
+    "items_count": 4,
+    "discounts_count": 0,
+    "items_total": 23.740000000000002,
+    "discounts_total": 0,
+    "skipped_lines": 53,
+    "parsed_lines": 4
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 23.740000000000002,
+    "discounts_sum": 0,
+    "calculated_total": 23.74,
+    "receipt_total": 23.74,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 7.66301155090332,
+  "stages_completed": 6
+}

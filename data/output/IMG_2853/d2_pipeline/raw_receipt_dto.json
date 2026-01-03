@@ -1,0 +1,255 @@
+{
+  "items": [
+    {
+      "name": "Banane lose",
+      "quantity": null,
+      "price": null,
+      "total": 1.8,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Kartof.mehr.koch 2kg",
+      "quantity": null,
+      "price": null,
+      "total": 1.59,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Paprika rot",
+      "quantity": null,
+      "price": null,
+      "total": 1.59,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Bauerngurken",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Avocado",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Gurken 0,89 x 2",
+      "quantity": 0.89,
+      "price": null,
+      "total": 1.78,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "K.champignons Petersilie kraus AZ TABA",
+      "quantity": null,
+      "price": null,
+      "total": 0.89,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "A",
+      "quantity": null,
+      "price": null,
+      "total": 2.19,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Dill",
+      "quantity": null,
+      "price": null,
+      "total": 1.59,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Fresh.BioGem . Franz .",
+      "quantity": null,
+      "price": null,
+      "total": 2.49,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Bio Brechbohnen",
+      "quantity": null,
+      "price": null,
+      "total": 2.69,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Butterkäse [ OGT ]",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Edamer Scheiben",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Gouda Scheiben",
+      "quantity": null,
+      "price": null,
+      "total": 2.49,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Frischkäse Sahnige 1,69 x 2",
+      "quantity": 1.69,
+      "price": null,
+      "total": 3.38,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Speisequark 40 % ( OGT ) 1,78 x 2",
+      "quantity": 1.78,
+      "price": null,
+      "total": 3.56,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Latte Macchiato",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Pfand 7 % EM",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "KaffeegetLatteMacch .",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Pfand 7 % EM",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Ayran Joghurtgetränk",
+      "quantity": null,
+      "price": null,
+      "total": 0.49,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Eier Freiland . XXL A",
+      "quantity": null,
+      "price": null,
+      "total": 3.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Eier Bodenhalt . 1er 18er 3,39 x x 5",
+      "quantity": null,
+      "price": null,
+      "total": 16.95,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Sonnenma is",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Wasser medium AXMI 0,29 x 30",
+      "quantity": 0.29,
+      "price": null,
+      "total": 8.7,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Pfand EM x 30",
+      "quantity": 0.25,
+      "price": 0.25,
+      "total": 7.5,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Multivitaminsaft",
+      "quantity": null,
+      "price": null,
+      "total": 2.15,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Red Bull Energy",
+      "quantity": null,
+      "price": null,
+      "total": 1.75,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Pfand",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "B",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Weizen Sandwi . Toast 1,09 x 2",
+      "quantity": 1.09,
+      "price": null,
+      "total": 2.18,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Tortilla Wraps Weiz . 1,29 x 2",
+      "quantity": 1.29,
+      "price": null,
+      "total": 2.58,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Croissant Wien . 0,99 x 4",
+      "quantity": 0.99,
+      "price": null,
+      "total": 3.96,
+      "date": "2025-11-11 00:00:00"
+    },
+    {
+      "name": "Hähnchenbrustfilet",
+      "quantity": null,
+      "price": null,
+      "total": 9.99,
+      "date": "2025-11-11 00:00:00"
+    }
+  ],
+  "total_amount": 105.79,
+  "merchant": null,
+  "store_address": null,
+  "date": "2025-11-11 00:00:00",
+  "receipt_id": "IMG_2853",
+  "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nEUR\nBanane lose\n1,80 A\n1,398 kg x 1,29\nEUR/kg\nKartof.mehr.koch 2kg\n1,59 A\nPaprika rot\n1,59 A\nBauerngurken\n2,99 A\nAvocado\n2,99 A\nDattelcherrytomaten\n1,89 x 3\n5,67 A\nGurken\n0,89 x 2\n1,78 A\nK.champignons\n2,19 A\nPetersilie kraus AZ TABA\n0,89 A\nDill\n1,59 A\nFresh.BioGem. Franz.\n2,49 A\nBio Brechbohnen\n2,69 A\nButterkäse [OGT]\n2,99 A\nPreisvorteil\nInsbshot-0,50\nEdamer Scheiben\n2,99 A\nPreisvorteil\n-0,50\nGouda Scheiben\n2,49 A\nPreisvorteil\n-0,40\nFrischkäse Sahnige\n1,69 x\n2\n3,38 A\nSpeisequark 40%(OGT) 1,78 x\n2\n3,56 A\nLatte Macchiato\n0,99 A\nPfand 0,25 7%EM\n0,25 A\nKaffeegetLatteMacch.\n0,99 A\nPfand 0,25 7%EM\n0,25 A\nAyran Joghurtgetränk\n0,49 A\nEier Freiland. XXL\n3,99 A\nEier Bodenhalt. 18er 3,39 x\nSonnenma is 1er x 5 16,95 A\n0,99 A\nWasser medium AXMI 0,29 x 30\n8,70 B\nPfand 0,25 EM\n0,25 x\n30\n7,50 B\nMultivitaminsaft\n2,15 B\nRed Bull Energy\n1,75 B\nPfand 0,25 M\n0,25 B\nWeizen Sandwi. Toast 1,09 x\n2\n2,18 A\nRABATT 20%\n-0,44\nTortilla Wraps Weiz.\n1,29 x\n2\n2,58 A\nCroissant Wien.\n0,99 x\n4\n3,96 A\nHähnchenbrustfilet\n9,99 A\nzu zahlen\n105,79\nKarte\n105,79\nGesamter Preisvorteil\n1,84\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n5,59\n79,85\n85,44\nB 19 %\n3,25\n17,10\n20,35\nSumme\n8,84\n96,95\n105,79\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\n90\nTSE Transaktionsnummer: 1337360\nSeriennr. Kasse: LDL-000-6496-1\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: SN50tud/e4tpi0ilMq17yHFvmRNRETWG\nHLGLffomje10J3y+2bpV+GLQn8ou7M0/iRDfzmZJb5\nPw61m5KyxMCBvOZZ1dbT9XUJppCVuoY8raXFQ92+c4\nrR93sVqf1Ssq\nSignaturzähler: 2730337\n2025-11-11T07:57:33.000Z\n2025-11-11T07:58:55.000Z\n6496 692366/01\nBetrag\n814060660\n11.11.25 08:57\nK-U-N-D-E-N-B-E-L-E-GORO\nKartenzahlung girocard\n105,79 EUR\n11.11.2025\n08:58\nT-ID 60155114\nTA-Nr. 187654\nKartennr.\nKontaktlos Chip\nVU-Nummer\nBeleg-Nr. 2931\n###############1364 00\nabsheim Online\n9801706496\nAutorisierungsnummer\n105585\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000003591010028001/00\n**\nZahlung erfolgt\n**",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 34.0,
+    "validation_passed": 0.0,
+    "validation_difference": 5.420000000000002
+  }
+}

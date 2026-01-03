@@ -1,11 +1,11 @@
 {
   "id": "012",
-  "source_file": "photo/GOODS/Edeka/IMG_1331.jpeg",
+  "source_file": "data/input/Edeka/IMG_1331.jpeg",
   "locale": "de_DE",
   "store": {
     "name": "EDEKA Felbecker",
     "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden",
-    "phone": "02206 / 912784",
+    "phone": "02206 / 912764",
     "website": "www.edeka.de",
     "steuernummer": "204/5085/2941"
   },

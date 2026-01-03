@@ -1,0 +1,630 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 1.19,
+        "date": "2025-08-14 00:00:00"
+      },
+      {
+        "name": "Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-08-14 00:00:00"
+      },
+      {
+        "name": "0,89 x 5",
+        "quantity": 0.89,
+        "price": null,
+        "total": 4.45,
+        "date": "2025-08-14 00:00:00"
+      },
+      {
+        "name": "Dovgan Fam.33 % Fett 2,29 x 5",
+        "quantity": 2.29,
+        "price": null,
+        "total": 11.45,
+        "date": "2025-08-14 00:00:00"
+      },
+      {
+        "name": "zahlen",
+        "quantity": null,
+        "price": null,
+        "total": 18.57,
+        "date": "2025-08-14 00:00:00"
+      },
+      {
+        "name": "Bio Gurken Ayran Kefir ",
+        "quantity": null,
+        "price": null,
+        "total": 18.57,
+        "date": "2025-08-14 00:00:00"
+      }
+    ],
+    "total_amount": 18.57,
+    "merchant": "Lidl",
+    "store_address": "Steinhauser Auel 1, 514910verath - Vilkerath",
+    "date": "2025-08-14 00:00:00",
+    "receipt_id": "IMG_1390",
+    "ocr_text": "LIDL\nSteinhauser Auel 1\n514910verath-Vilkerath\n99A 2014\nEUR\nDattelcherrytomaten\n1,99 A\nBio Gurken\n1,19 A\nAyran Joghurtgetränk\n1,49 A\nKefir\n0,89 x\n5\n4,45 A\nDovgan Fam.33% Fett\n2,29 x\n5\n11,45 A\nPreisvorteil\n-2,00\nzu zahlen\n18,57\nKarte\n18,57\nGesamter Preisvorteil\n2,00\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n1,21\n17,36\n18,57\nSumme\n1,21\n17,36\n18,57\nTSE Transaktionsnummer: 1225379\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 2bqEmwamB1h8spkdL2yrs93rNBCTdq04\nyWTCdnoSjNfKenzGUwljkyX21jqM8Yci/zsCb0y2Tk\nKY+7d7mtT2mhqsgqJ/ISQ5rhs5q5GCPwXo4Q1JWR4G\nNJZtTbz58M3u\nSignaturzähler: 2501059\n2025-08-14T13:14:41.000Z\n2025-08-14T13:16:24.000Z\n6496 019653/81\n814060660\n190\n14.08.25 15:14\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n18,57 EUR\n14.08.2025\n15:15 T-ID 60155117\nTA-Nr. 214073\nBeleg-Nr. 4716\nKartennr.\n###############1324 01\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nAutorisierungsnummer\nEMV-Daten:\n482361\nAutorisierungsantwortcode\n00\nA0000003591010028001/00\n**\nAutorisierung erfolgt",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 6.0,
+      "validation_passed": 0.0,
+      "validation_difference": 35.15
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LIDL",
+        "y_position": 270,
+        "x_min": 494,
+        "x_max": 652,
+        "confidence": 0.7520830035209656,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 333,
+        "x_min": 417,
+        "x_max": 733,
+        "confidence": 0.9744259913762411,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 377,
+        "x_min": 384,
+        "x_max": 773,
+        "confidence": 0.9851511319478353,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "99A 2014 EUR",
+        "y_position": 407,
+        "x_min": 573,
+        "x_max": 901,
+        "confidence": 0.6679350833098093,
+        "line_number": 3,
+        "words_count": 3
+      },
+      {
+        "text": "Dattelcherrytomaten 1,99 A",
+        "y_position": 441,
+        "x_min": 212,
+        "x_max": 933,
+        "confidence": 0.9803495009740194,
+        "line_number": 4,
+        "words_count": 3
+      },
+      {
+        "text": "1,19 A",
+        "y_position": 478,
+        "x_min": 827,
+        "x_max": 935,
+        "confidence": 0.9816728830337524,
+        "line_number": 5,
+        "words_count": 2
+      },
+      {
+        "text": "Bio Gurken",
+        "y_position": 494,
+        "x_min": 211,
+        "x_max": 390,
+        "confidence": 0.9635257720947266,
+        "line_number": 6,
+        "words_count": 2
+      },
+      {
+        "text": "Joghurtgetränk 1,49 A",
+        "y_position": 517,
+        "x_min": 319,
+        "x_max": 932,
+        "confidence": 0.9823238054911295,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "Ayran",
+        "y_position": 534,
+        "x_min": 213,
+        "x_max": 301,
+        "confidence": 0.9888135194778442,
+        "line_number": 8,
+        "words_count": 1
+      },
+      {
+        "text": "0,89 x 5 4,45 A",
+        "y_position": 553,
+        "x_min": 597,
+        "x_max": 952,
+        "confidence": 0.9386452317237854,
+        "line_number": 9,
+        "words_count": 5
+      },
+      {
+        "text": "Kefir",
+        "y_position": 572,
+        "x_min": 214,
+        "x_max": 304,
+        "confidence": 0.9904693365097046,
+        "line_number": 10,
+        "words_count": 1
+      },
+      {
+        "text": "Dovgan Fam.33 % Fett 2,29 x 5 11,45 A",
+        "y_position": 593,
+        "x_min": 217,
+        "x_max": 953,
+        "confidence": 0.9748184548483955,
+        "line_number": 11,
+        "words_count": 9
+      },
+      {
+        "text": "Preisvorteil -2,00",
+        "y_position": 632,
+        "x_min": 304,
+        "x_max": 902,
+        "confidence": 0.9776773452758789,
+        "line_number": 12,
+        "words_count": 2
+      },
+      {
+        "text": "zahlen 18,57",
+        "y_position": 682,
+        "x_min": 271,
+        "x_max": 899,
+        "confidence": 0.9796633124351501,
+        "line_number": 13,
+        "words_count": 2
+      },
+      {
+        "text": "zu",
+        "y_position": 699,
+        "x_min": 219,
+        "x_max": 256,
+        "confidence": 0.9714056253433228,
+        "line_number": 14,
+        "words_count": 1
+      },
+      {
+        "text": "18,57",
+        "y_position": 721,
+        "x_min": 816,
+        "x_max": 901,
+        "confidence": 0.9841747283935547,
+        "line_number": 15,
+        "words_count": 1
+      },
+      {
+        "text": "Karte",
+        "y_position": 737,
+        "x_min": 222,
+        "x_max": 312,
+        "confidence": 0.9889726638793945,
+        "line_number": 16,
+        "words_count": 1
+      },
+      {
+        "text": "Gesamter Preisvorteil 2,00",
+        "y_position": 768,
+        "x_min": 223,
+        "x_max": 954,
+        "confidence": 0.9767065048217773,
+        "line_number": 17,
+        "words_count": 3
+      },
+      {
+        "text": "MWST % MWST + Netto = Brutto",
+        "y_position": 816,
+        "x_min": 243,
+        "x_max": 903,
+        "confidence": 0.905259336744036,
+        "line_number": 18,
+        "words_count": 7
+      },
+      {
+        "text": "A 7 % 1,21 17,36 18,57",
+        "y_position": 850,
+        "x_min": 224,
+        "x_max": 902,
+        "confidence": 0.9851270318031311,
+        "line_number": 19,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 1,21 17,36 18,57",
+        "y_position": 887,
+        "x_min": 227,
+        "x_max": 902,
+        "confidence": 0.9762599021196365,
+        "line_number": 20,
+        "words_count": 4
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1225379",
+        "y_position": 1028,
+        "x_min": 227,
+        "x_max": 767,
+        "confidence": 0.9730611890554428,
+        "line_number": 21,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-81",
+        "y_position": 1060,
+        "x_min": 227,
+        "x_max": 784,
+        "confidence": 0.9583355869565692,
+        "line_number": 22,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga + dvZbaId8",
+        "y_position": 1090,
+        "x_min": 225,
+        "x_max": 963,
+        "confidence": 0.9261061208588737,
+        "line_number": 23,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1138,
+        "x_min": 227,
+        "x_max": 528,
+        "confidence": 0.9709886312484741,
+        "line_number": 24,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : 2bqEmwamB1h8spkdL2yrs93rNBCTdq04",
+        "y_position": 1165,
+        "x_min": 225,
+        "x_max": 967,
+        "confidence": 0.9404991269111633,
+        "line_number": 25,
+        "words_count": 3
+      },
+      {
+        "text": "yWTCdnoSjNfKenzGUwljkyX21jqM8Yci / zsCb0y2Tk",
+        "y_position": 1203,
+        "x_min": 225,
+        "x_max": 969,
+        "confidence": 0.872577965259552,
+        "line_number": 26,
+        "words_count": 3
+      },
+      {
+        "text": "KY + 7d7mtT2mhqsgqJ / ISQ5rhs5q5GCPwXo4Q1JWR4G",
+        "y_position": 1237,
+        "x_min": 224,
+        "x_max": 973,
+        "confidence": 0.9470220685005188,
+        "line_number": 27,
+        "words_count": 5
+      },
+      {
+        "text": "NJZtTbz58M3u",
+        "y_position": 1288,
+        "x_min": 225,
+        "x_max": 440,
+        "confidence": 0.906387984752655,
+        "line_number": 28,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2501059",
+        "y_position": 1315,
+        "x_min": 221,
+        "x_max": 637,
+        "confidence": 0.9767990509668986,
+        "line_number": 29,
+        "words_count": 3
+      },
+      {
+        "text": "190",
+        "y_position": 1340,
+        "x_min": 892,
+        "x_max": 951,
+        "confidence": 0.6655412912368774,
+        "line_number": 30,
+        "words_count": 1
+      },
+      {
+        "text": "2025-08-14T13 : 14 : 41.000Z",
+        "y_position": 1357,
+        "x_min": 220,
+        "x_max": 654,
+        "confidence": 0.9766137599945068,
+        "line_number": 31,
+        "words_count": 5
+      },
+      {
+        "text": "2025-08-14T13 : 16 : 24.000Z",
+        "y_position": 1394,
+        "x_min": 220,
+        "x_max": 656,
+        "confidence": 0.9710413575172424,
+        "line_number": 32,
+        "words_count": 5
+      },
+      {
+        "text": "6496 019653/81 14.08.25 15:14",
+        "y_position": 1427,
+        "x_min": 219,
+        "x_max": 989,
+        "confidence": 0.9895829111337662,
+        "line_number": 33,
+        "words_count": 4
+      },
+      {
+        "text": "814060660",
+        "y_position": 1471,
+        "x_min": 494,
+        "x_max": 661,
+        "confidence": 0.9921534657478333,
+        "line_number": 34,
+        "words_count": 1
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1519,
+        "x_min": 384,
+        "x_max": 774,
+        "confidence": 0.9684071398916698,
+        "line_number": 35,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 1557,
+        "x_min": 384,
+        "x_max": 793,
+        "confidence": 0.9862946569919586,
+        "line_number": 36,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag 18,57 EUR",
+        "y_position": 1605,
+        "x_min": 219,
+        "x_max": 963,
+        "confidence": 0.9646382133165995,
+        "line_number": 37,
+        "words_count": 3
+      },
+      {
+        "text": "14.08.2025 15:15 T - ID 60155117",
+        "y_position": 1655,
+        "x_min": 221,
+        "x_max": 965,
+        "confidence": 0.9872277279694875,
+        "line_number": 38,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 214073 Beleg - Nr . 4716",
+        "y_position": 1692,
+        "x_min": 220,
+        "x_max": 967,
+        "confidence": 0.9629474937915802,
+        "line_number": 39,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . ############### 1324 01",
+        "y_position": 1732,
+        "x_min": 222,
+        "x_max": 964,
+        "confidence": 0.8718809187412262,
+        "line_number": 40,
+        "words_count": 5
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 1765,
+        "x_min": 224,
+        "x_max": 966,
+        "confidence": 0.9767831563949585,
+        "line_number": 41,
+        "words_count": 3
+      },
+      {
+        "text": "VU - Nummer 9801706496",
+        "y_position": 1806,
+        "x_min": 227,
+        "x_max": 875,
+        "confidence": 0.98492631316185,
+        "line_number": 42,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 482361",
+        "y_position": 1837,
+        "x_min": 231,
+        "x_max": 962,
+        "confidence": 0.9801294803619385,
+        "line_number": 43,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 1866,
+        "x_min": 234,
+        "x_max": 963,
+        "confidence": 0.9778599143028259,
+        "line_number": 44,
+        "words_count": 2
+      },
+      {
+        "text": "Daten A0000003591010028001 / 00",
+        "y_position": 1893,
+        "x_min": 311,
+        "x_max": 960,
+        "confidence": 0.9896687418222427,
+        "line_number": 45,
+        "words_count": 4
+      },
+      {
+        "text": "EMV - :",
+        "y_position": 1909,
+        "x_min": 241,
+        "x_max": 417,
+        "confidence": 0.9843739072481791,
+        "line_number": 46,
+        "words_count": 3
+      },
+      {
+        "text": "** Autorisierung erfolgt",
+        "y_position": 1930,
+        "x_min": 245,
+        "x_max": 777,
+        "confidence": 0.8652046124140421,
+        "line_number": 47,
+        "words_count": 3
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 182,
+    "total_lines": 48
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.25806451612903225,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "mwst",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 8
+    }
+  },
+  "store": {
+    "store_name": "Lidl",
+    "store_address": "Steinhauser Auel 1, 514910verath - Vilkerath",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-08-14",
+    "receipt_total": 18.57,
+    "currency": "EUR",
+    "date_raw": "2025-08-14",
+    "total_raw": "18,57 EUR",
+    "total_line_number": 37
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 1.19,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "1,19 A"
+      },
+      {
+        "name": "Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 7,
+        "raw_text": "Joghurtgetränk 1,49 A"
+      },
+      {
+        "name": "0,89 x 5",
+        "quantity": 0.89,
+        "price": null,
+        "total": 4.45,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "0,89 x 5 4,45 A"
+      },
+      {
+        "name": "Dovgan Fam.33 % Fett 2,29 x 5",
+        "quantity": 2.29,
+        "price": null,
+        "total": 11.45,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Dovgan Fam.33 % Fett 2,29 x 5 11,45 A"
+      },
+      {
+        "name": "zahlen",
+        "quantity": null,
+        "price": null,
+        "total": 18.57,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "zahlen 18,57"
+      },
+      {
+        "name": "Bio Gurken Ayran Kefir ",
+        "quantity": null,
+        "price": null,
+        "total": 18.57,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "18,57"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -2.0,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Preisvorteil -2,00"
+      }
+    ],
+    "items_count": 6,
+    "discounts_count": 1,
+    "items_total": 55.72,
+    "discounts_total": 2.0,
+    "skipped_lines": 20,
+    "parsed_lines": 7
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 55.72,
+    "discounts_sum": 2.0,
+    "calculated_total": 53.72,
+    "receipt_total": 18.57,
+    "difference": 35.15,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=53.72, receipt=18.57, diff=35.15 (tolerance=0.05)"
+  },
+  "processing_time_ms": 18.67508888244629,
+  "stages_completed": 6
+}

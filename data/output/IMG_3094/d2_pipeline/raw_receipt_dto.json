@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "138773 573111/01 Sandwi",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-05-21 00:00:00"
+    },
+    {
+      "name": "Plombir Joghurtgetränk",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-05-21 00:00:00"
+    },
+    {
+      "name": "12 11 : & . [",
+      "quantity": null,
+      "price": null,
+      "total": 5.38,
+      "date": "2025-05-21 00:00:00"
+    },
+    {
+      "name": "E 08.000Z OZ LDL Lidl",
+      "quantity": null,
+      "price": null,
+      "total": 32.0,
+      "date": "2025-05-21 00:00:00"
+    },
+    {
+      "name": "Chip 08:11 D - NR - : : 2275776 = F2vH5JJOGxOzRGtqga : deinem Toast . Kefir Overath ",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-05-21 00:00:00"
+    }
+  ],
+  "total_amount": 43.55,
+  "merchant": "Dm",
+  "store_address": null,
+  "date": "2025-05-21 00:00:00",
+  "receipt_id": "IMG_3094",
+  "ocr_text": "Dovgan Plombir Kefir\nqgA\nSteinhauser Auel 1\n1491 Overath-Vilkerath\nErdbeeren kg\n0,554 kg x 5,38 EUR/kg\nAktionsrabatt\nAyran Joghurtgetränk 0,49 x\nEUR\n2,98 A\n-0,22\n2 0,98 A\n2,29 A\nPfand 0,25 7% M\n0,25 A\nRed Bull Energy\n1,39 x 24\n33,36 B\nPfand 0,25 M\n0,25 x 24\n6,00 B\nWienerleCroiss.\n0,99 x 2\n1,98 A\nFranzbrötchen [\n0,79 x\n2\n1,58 A\nVollk. Sandwi. Toast\n1,29 A\nMEWAktionsrabatt\n-0,20\nKnotenbeutel O&\n0,01 B\nPfandrückgabe\n-6,75 B\n-27 x\n0,25\nzu zahlen\n43,55\nKreditkarte\n43,55\nGesamter Preisvorteil\n0,42\nMWST%\nMWST +\nNetto = Brutto\nA 7%\n0,72\n10,21\n10,93\nB 19 %\n5,21\n27,41\n32,62\nSumme\n5,93\n37,62\n43,55\n¡ Lade dir die Lidl Plus App herunter\nlund spare bei deinem nächsten Einkauf\nTSE Transaktionsnummer: 1115449\nSeriennr. Kasse: LDL-000-6496-1 HOAM\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: R4jhsqhtFinGcd8giwvYRjuS+h0gUSXZ\nbkKjs0EhVUrzkFVP5dC5rxJUFQiwXfXuody0D8B06h\nbq+KKtRbZPH8DsCfP1MMC6CWn4LHPbTNUmlqdMURvw\nfpdi1j6a48pR\nSignaturzähler: 2275776\n2025-05-21T06:11:32.00OZ\n2025-05-21T06:12:08.000Z\n6496 573111/01\n21.05.25 08:11\nUST-ID-NR: DE814060660\nK-U-N-D-E-N-B-E-L-E-G\nBezahlung VISA\nBetrag\n43,55 EUR\n21.05.2025\n08:11\nTA-Nr. 138773\nT-ID 60155114\nBeleg-Nr. 6081\nKartennr.\n***********#4474.00\nVisa kontaktlos Chip\nVU-Nummer\nOnline\nBestätigt durch mobiles Kundengerät\nAutorisierungsnummer\nAutorisierungsantwortcode\nEMV-Daten:\n135103\nA0000000031010,00\n455600535769\n**\nAutorisierung erfolgt\n**",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 5.0,
+    "validation_passed": 0.0,
+    "validation_difference": 5.419999999999995
+  }
+}

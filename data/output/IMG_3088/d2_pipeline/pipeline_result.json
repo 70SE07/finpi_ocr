@@ -1,0 +1,639 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Petersilie kraus ( 033 )",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": "2025-09-18 00:00:00"
+      },
+      {
+        "name": "Happy Mix ( 035 ) B * EH",
+        "quantity": null,
+        "price": null,
+        "total": 16.99,
+        "date": "2025-09-18 00:00:00"
+      },
+      {
+        "name": "Coraya Surimi ( 762 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-09-18 00:00:00"
+      },
+      {
+        "name": "Eier M Bodenhalt ( 602 )",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-09-18 00:00:00"
+      }
+    ],
+    "total_amount": 21.46,
+    "merchant": "Hit",
+    "store_address": null,
+    "date": "2025-09-18 00:00:00",
+    "receipt_id": "IMG_3088",
+    "ocr_text": "HIT\nECHTE\nVIELFALT\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nOBST & GEMÜSE\nPreis €\nPetersilie kraus\n(033) 0,99 B\nLEBENSMITTEL\nHappy Mix\n(035) 16,99 B* EH\nGEKÜHLTE LEBENSMITTEL\nCoraya Surimi\n(762)\n1,49 B F\n*** Discount Preis ***\nEier M Bodenhalt\n(602)\n1,99 B\nSUMME [4]\n21,46\nGirocard\n21,46\nHIT 4033 Overath\n-K-U-N-D-E-N-B-E-L-E-G-\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID:\n61724233\nTA-Nr 390954\nBNr 9268\nKartenzahlung\nkontaktlos\ngirocard\nEUR 21,46\nPAN\n###############1364\nKarte 0\ngültig bis ##/##\nEMV-AID\nA0000003591010028001\nVU-Nr\n290777\nDatum 18.09.25\nGenehmigungs-Nr\nEMV-Daten\n690920\n20:01 Uhr\nE800///3030\n00 Zahlung erfolgt\nBITTE BELEG AUFBEWAHREN\nSteuer NETTO [e] MWST [€] BRUTTO [€]\nB= 7,00%\n20,06 1,40 21,46\nKennzeichenlegende\nDie mit * gekennzeichneten Artikel sind\nnicht rabattfähig. Die wie folgt\ngekennzeichneten Artikel sowie die\ndarauf entfallene MWST werden verkauft\nim Namen und Rechnung von:\nEH-EatHappy Tolio GmoH. Hohenzollernring\n31-35 50672 Köln,\nUSt-ID-Nr.: DE293743681.\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n0014033180925005000510\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 4.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "HIT",
+        "y_position": 126,
+        "x_min": 510,
+        "x_max": 654,
+        "confidence": 0.7508665323257446,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "VIELFALT ECHTE",
+        "y_position": 194,
+        "x_min": 530,
+        "x_max": 637,
+        "confidence": 0.9753766655921936,
+        "line_number": 1,
+        "words_count": 2
+      },
+      {
+        "text": "HIT 033 Overath",
+        "y_position": 299,
+        "x_min": 469,
+        "x_max": 678,
+        "confidence": 0.9835298260052999,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 329,
+        "x_min": 440,
+        "x_max": 718,
+        "confidence": 0.970374345779419,
+        "line_number": 3,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 364,
+        "x_min": 483,
+        "x_max": 663,
+        "confidence": 0.9894953370094299,
+        "line_number": 4,
+        "words_count": 2
+      },
+      {
+        "text": "Öffnungszeiten",
+        "y_position": 400,
+        "x_min": 470,
+        "x_max": 662,
+        "confidence": 0.9167087078094482,
+        "line_number": 5,
+        "words_count": 1
+      },
+      {
+        "text": "MO - SA 08 : 00-22 : 00 Uhr",
+        "y_position": 429,
+        "x_min": 428,
+        "x_max": 716,
+        "confidence": 0.9631470971637301,
+        "line_number": 6,
+        "words_count": 9
+      },
+      {
+        "text": "OBST & GEMÜSE Preis €",
+        "y_position": 495,
+        "x_min": 306,
+        "x_max": 786,
+        "confidence": 0.8799898147583007,
+        "line_number": 7,
+        "words_count": 5
+      },
+      {
+        "text": "Petersilie kraus ( 033 ) 0,99 B",
+        "y_position": 527,
+        "x_min": 306,
+        "x_max": 798,
+        "confidence": 0.9555502874510629,
+        "line_number": 8,
+        "words_count": 7
+      },
+      {
+        "text": "LEBENSMITTEL",
+        "y_position": 558,
+        "x_min": 308,
+        "x_max": 472,
+        "confidence": 0.9906179904937744,
+        "line_number": 9,
+        "words_count": 1
+      },
+      {
+        "text": "Happy Mix ( 035 ) 16,99 B * EH",
+        "y_position": 588,
+        "x_min": 307,
+        "x_max": 851,
+        "confidence": 0.960865338643392,
+        "line_number": 10,
+        "words_count": 9
+      },
+      {
+        "text": "GEKÜHLTE LEBENSMITTEL",
+        "y_position": 619,
+        "x_min": 308,
+        "x_max": 594,
+        "confidence": 0.9835100769996643,
+        "line_number": 11,
+        "words_count": 2
+      },
+      {
+        "text": "Coraya Surimi ( 762 ) 1,49 B F",
+        "y_position": 651,
+        "x_min": 307,
+        "x_max": 837,
+        "confidence": 0.9833057001233101,
+        "line_number": 12,
+        "words_count": 8
+      },
+      {
+        "text": "*** Discount Preis ***",
+        "y_position": 685,
+        "x_min": 390,
+        "x_max": 686,
+        "confidence": 0.935669019818306,
+        "line_number": 13,
+        "words_count": 4
+      },
+      {
+        "text": "Eier M Bodenhalt ( 602 ) 1,99 B",
+        "y_position": 715,
+        "x_min": 309,
+        "x_max": 794,
+        "confidence": 0.9834054037928581,
+        "line_number": 14,
+        "words_count": 8
+      },
+      {
+        "text": "SUMME [ 4 ] 21,46",
+        "y_position": 774,
+        "x_min": 308,
+        "x_max": 832,
+        "confidence": 0.9361999750137329,
+        "line_number": 15,
+        "words_count": 5
+      },
+      {
+        "text": "Girocard 21,46",
+        "y_position": 805,
+        "x_min": 307,
+        "x_max": 831,
+        "confidence": 0.9714999198913574,
+        "line_number": 16,
+        "words_count": 2
+      },
+      {
+        "text": "-K - U - N - D - E - N - B - E - L - E - G-",
+        "y_position": 866,
+        "x_min": 406,
+        "x_max": 708,
+        "confidence": 0.9184886415799459,
+        "line_number": 17,
+        "words_count": 21
+      },
+      {
+        "text": "HIT 4033 Overath",
+        "y_position": 895,
+        "x_min": 338,
+        "x_max": 552,
+        "confidence": 0.9849838018417358,
+        "line_number": 18,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistr . 18-22",
+        "y_position": 923,
+        "x_min": 337,
+        "x_max": 579,
+        "confidence": 0.9585346579551697,
+        "line_number": 19,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 955,
+        "x_min": 339,
+        "x_max": 510,
+        "confidence": 0.9879201054573059,
+        "line_number": 20,
+        "words_count": 2
+      },
+      {
+        "text": "Terminal - ID : 61724233",
+        "y_position": 985,
+        "x_min": 340,
+        "x_max": 786,
+        "confidence": 0.9625929355621338,
+        "line_number": 21,
+        "words_count": 5
+      },
+      {
+        "text": "TA - Nr 390954 BNr 9268",
+        "y_position": 1017,
+        "x_min": 341,
+        "x_max": 786,
+        "confidence": 0.9607815543810526,
+        "line_number": 22,
+        "words_count": 6
+      },
+      {
+        "text": "Kartenzahlung",
+        "y_position": 1044,
+        "x_min": 470,
+        "x_max": 642,
+        "confidence": 0.9891614317893982,
+        "line_number": 23,
+        "words_count": 1
+      },
+      {
+        "text": "kontaktlos",
+        "y_position": 1075,
+        "x_min": 497,
+        "x_max": 627,
+        "confidence": 0.9032673239707947,
+        "line_number": 24,
+        "words_count": 1
+      },
+      {
+        "text": "girocard",
+        "y_position": 1104,
+        "x_min": 509,
+        "x_max": 616,
+        "confidence": 0.9104759693145752,
+        "line_number": 25,
+        "words_count": 1
+      },
+      {
+        "text": "EUR 21,46",
+        "y_position": 1132,
+        "x_min": 447,
+        "x_max": 676,
+        "confidence": 0.9503602683544159,
+        "line_number": 26,
+        "words_count": 2
+      },
+      {
+        "text": "PAN ############### 1364",
+        "y_position": 1190,
+        "x_min": 341,
+        "x_max": 782,
+        "confidence": 0.9048322041829427,
+        "line_number": 27,
+        "words_count": 3
+      },
+      {
+        "text": "Karte 0 gültig bis ## / ##",
+        "y_position": 1219,
+        "x_min": 342,
+        "x_max": 780,
+        "confidence": 0.9277565649577549,
+        "line_number": 28,
+        "words_count": 7
+      },
+      {
+        "text": "EMV - AID A0000003591010028001",
+        "y_position": 1247,
+        "x_min": 342,
+        "x_max": 779,
+        "confidence": 0.9843165874481201,
+        "line_number": 29,
+        "words_count": 4
+      },
+      {
+        "text": "VU - Nr 290777",
+        "y_position": 1277,
+        "x_min": 342,
+        "x_max": 778,
+        "confidence": 0.969704806804657,
+        "line_number": 30,
+        "words_count": 4
+      },
+      {
+        "text": "Genehmigungs - Nr 690920",
+        "y_position": 1302,
+        "x_min": 342,
+        "x_max": 779,
+        "confidence": 0.8889426738023758,
+        "line_number": 31,
+        "words_count": 4
+      },
+      {
+        "text": "Datum 18.09.25 20:01 Uhr",
+        "y_position": 1332,
+        "x_min": 341,
+        "x_max": 778,
+        "confidence": 0.9567884653806686,
+        "line_number": 32,
+        "words_count": 4
+      },
+      {
+        "text": "EMV - Daten",
+        "y_position": 1362,
+        "x_min": 342,
+        "x_max": 455,
+        "confidence": 0.9904093543688456,
+        "line_number": 33,
+        "words_count": 3
+      },
+      {
+        "text": "E800 /// 3030",
+        "y_position": 1392,
+        "x_min": 341,
+        "x_max": 482,
+        "confidence": 0.9697064161300659,
+        "line_number": 34,
+        "words_count": 3
+      },
+      {
+        "text": "00 Zahlung erfolgt",
+        "y_position": 1420,
+        "x_min": 339,
+        "x_max": 574,
+        "confidence": 0.9660919706026713,
+        "line_number": 35,
+        "words_count": 3
+      },
+      {
+        "text": "BITTE BELEG AUFBEWAHREN",
+        "y_position": 1450,
+        "x_min": 403,
+        "x_max": 703,
+        "confidence": 0.9819605151812235,
+        "line_number": 36,
+        "words_count": 3
+      },
+      {
+        "text": "Steuer NETTO [ e ] MWST [ € ] BRUTTO [ € ]",
+        "y_position": 1525,
+        "x_min": 320,
+        "x_max": 831,
+        "confidence": 0.7662346202593583,
+        "line_number": 37,
+        "words_count": 13
+      },
+      {
+        "text": "B = 7,00 % 20,06 1,40 21,46",
+        "y_position": 1553,
+        "x_min": 321,
+        "x_max": 833,
+        "confidence": 0.9527781350272042,
+        "line_number": 38,
+        "words_count": 7
+      },
+      {
+        "text": "Kennzeichenlegende",
+        "y_position": 1578,
+        "x_min": 460,
+        "x_max": 693,
+        "confidence": 0.9626547694206238,
+        "line_number": 39,
+        "words_count": 1
+      },
+      {
+        "text": "Die mit * gekennzeichneten Artikel sind",
+        "y_position": 1601,
+        "x_min": 324,
+        "x_max": 820,
+        "confidence": 0.9437583784262339,
+        "line_number": 40,
+        "words_count": 6
+      },
+      {
+        "text": "nicht rabattfähig . Die wie folgt",
+        "y_position": 1627,
+        "x_min": 325,
+        "x_max": 729,
+        "confidence": 0.9350509345531464,
+        "line_number": 41,
+        "words_count": 6
+      },
+      {
+        "text": "gekennzeichneten Artikel sowie die",
+        "y_position": 1657,
+        "x_min": 324,
+        "x_max": 757,
+        "confidence": 0.9555128812789917,
+        "line_number": 42,
+        "words_count": 4
+      },
+      {
+        "text": "darauf entfallene MWST werden verkauft",
+        "y_position": 1684,
+        "x_min": 324,
+        "x_max": 807,
+        "confidence": 0.9518342614173889,
+        "line_number": 43,
+        "words_count": 5
+      },
+      {
+        "text": "im Namen und Rechnung von :",
+        "y_position": 1714,
+        "x_min": 325,
+        "x_max": 652,
+        "confidence": 0.9752578735351562,
+        "line_number": 44,
+        "words_count": 6
+      },
+      {
+        "text": "EH - EatHappy Tolio GmoH . Hohenzollernring",
+        "y_position": 1736,
+        "x_min": 326,
+        "x_max": 833,
+        "confidence": 0.7054598799773625,
+        "line_number": 45,
+        "words_count": 7
+      },
+      {
+        "text": "31-35 50672 Köln ,",
+        "y_position": 1766,
+        "x_min": 326,
+        "x_max": 538,
+        "confidence": 0.902544304728508,
+        "line_number": 46,
+        "words_count": 4
+      },
+      {
+        "text": "USt - ID - Nr .: DE293743681 .",
+        "y_position": 1793,
+        "x_min": 327,
+        "x_max": 639,
+        "confidence": 0.8942445293068886,
+        "line_number": 47,
+        "words_count": 8
+      },
+      {
+        "text": "F = HIT Frische GmbH & Co. KG ,",
+        "y_position": 1820,
+        "x_min": 326,
+        "x_max": 675,
+        "confidence": 0.8718637029329935,
+        "line_number": 48,
+        "words_count": 9
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 1846,
+        "x_min": 328,
+        "x_max": 579,
+        "confidence": 0.9738845229148865,
+        "line_number": 49,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath , USt - ID - Nr .: DE122274982",
+        "y_position": 1877,
+        "x_min": 329,
+        "x_max": 806,
+        "confidence": 0.9447239160537719,
+        "line_number": 50,
+        "words_count": 10
+      },
+      {
+        "text": "0014033180925005000510",
+        "y_position": 1902,
+        "x_min": 455,
+        "x_max": 730,
+        "confidence": 0.9592859148979187,
+        "line_number": 51,
+        "words_count": 1
+      },
+      {
+        "text": "HIT Verbrauchermarkt Overath GmbH &",
+        "y_position": 2010,
+        "x_min": 356,
+        "x_max": 794,
+        "confidence": 0.9442972302436828,
+        "line_number": 52,
+        "words_count": 5
+      },
+      {
+        "text": "USt - ID : DE276299025",
+        "y_position": 2033,
+        "x_min": 456,
+        "x_max": 691,
+        "confidence": 0.8283933877944947,
+        "line_number": 53,
+        "words_count": 5
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 253,
+    "total_lines": 54
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.25806451612903225,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "ust",
+      "steuer",
+      "netto",
+      "brutto",
+      "eur",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 1,
+      "cs_CZ": 0,
+      "es_ES": 1,
+      "pl_PL": 0,
+      "de_DE": 8
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-09-18",
+    "receipt_total": 21.46,
+    "currency": "EUR",
+    "date_raw": "18.09.25",
+    "total_raw": "21,46",
+    "total_line_number": 15
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Petersilie kraus ( 033 )",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "Petersilie kraus ( 033 ) 0,99 B"
+      },
+      {
+        "name": "Happy Mix ( 035 ) B * EH",
+        "quantity": null,
+        "price": null,
+        "total": 16.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "Happy Mix ( 035 ) 16,99 B * EH"
+      },
+      {
+        "name": "Coraya Surimi ( 762 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Coraya Surimi ( 762 ) 1,49 B F"
+      },
+      {
+        "name": "Eier M Bodenhalt ( 602 )",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "Eier M Bodenhalt ( 602 ) 1,99 B"
+      }
+    ],
+    "discounts": [],
+    "items_count": 4,
+    "discounts_count": 0,
+    "items_total": 21.459999999999994,
+    "discounts_total": 0,
+    "skipped_lines": 43,
+    "parsed_lines": 4
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 21.459999999999994,
+    "discounts_sum": 0,
+    "calculated_total": 21.46,
+    "receipt_total": 21.46,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 17.36903190612793,
+  "stages_completed": 6
+}

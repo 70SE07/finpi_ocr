@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "name": "Müller Kalinka Ayran",
+      "quantity": null,
+      "price": null,
+      "total": 1.29,
+      "date": "2025-11-24 00:00:00"
+    },
+    {
+      "name": "Pfand 7 % M",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-11-24 00:00:00"
+    }
+  ],
+  "total_amount": 1.51,
+  "merchant": "Hit",
+  "store_address": "Frischmilch 3,5 % 1,09 A, Preisvorteil 2019 -0,14, Müller Kalinka Ayran 1,29 A",
+  "date": "2025-11-24 00:00:00",
+  "receipt_id": "IMG_2964",
+  "ocr_text": "qqA ang Ibij mis\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nBanane Fair Bio\n1,63 A\n0,820 kg x 1,99\nEUR/kg\nZitronen Bio\n0,79 x 2\n1,58 A\nEhrm.H.Protein Schok\n1,49 x\n6\n8,94 A\nEhrm.H.Protein Vanil\n1,49 x\n2\n2,98 A\nEhrmann HP White Ch.\n1,49 A\nFrischmilch 3,5%\n1,09 A\nMüller Kalinka Ayran\nPreisvorteil 2019\n-0,14\n1,29 A\nPfand 0,25 7% M\n0,25 A\nEier Freiland. XXL\n3,99 A\nzu zahlen\n23,10\nBar\nMAZ 3TTAS\n23,10\nGesamter Preisvorteil\n0,14\nMWST%\nMWST + Netto = Brutto\nA 7 %\n1,51\n21,59\n23,10\nSumme\n1,51\n21,59\n23,10\n¦ Lade dir die Lidl Plus App herunter ¦\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1355533\nSeriennr. Kasse: LDL-000-6496-3\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 8IvNIwHineddh+hqGgWCVAymovJN1q2Z\nKDay/q2cQ8wE7P0CTGESгL7CD/6nBXuvkQEhYUgDIG\nrбNy0Xp16zDPubPtWd2t EhUk594jHQ27IFUvbYooXH\nzJYBbaDyY+ao\nSignaturzähler: 2767609\n2025-11-24T17:18:54.000Z\n2025-11-24T17:19:49.000Z\n6496 752388/03\n24.11.25 18:18\n814060660 siguist",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 2.0,
+    "validation_passed": 0.0,
+    "validation_difference": 0.1100000000000001
+  }
+}

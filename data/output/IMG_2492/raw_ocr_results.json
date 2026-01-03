@@ -1,0 +1,902 @@
+{
+  "full_text": "Nu 00012 ( Gloria Jean's Coffees)\nTAU 999 ATAU\nUnit T1GW4-10 4 nj1 .\n8.\n9.\nTAX INVOICE [ABB]\n10540\nTAX ID: 0115549003006\nREG ID :E051120002A7737\n12/10/2025 22:28 Cashier:9999-1 Mac:001\nCoke 325 ml. (can)\nN-0153\n1\n80.00\nSub-TOTAL (Item 1)\n80.00\nNet TOT\n80.00\n5.23\nVat...\nMAT MASTER CARD\nXXXXXXXXXXX0000 00\nCredit Payment\nTABLE : 00102 Receipt No: 0227271\nRcCode: 0289757338728728\nCustomer 1\nVAT INCLUDED\n80.00",
+  "words": [
+    {
+      "text": "Nu",
+      "bounding_box": {
+        "x": 133,
+        "y": 444,
+        "width": 65,
+        "height": 52
+      },
+      "confidence": 0.3466947674751282
+    },
+    {
+      "text": "00012",
+      "bounding_box": {
+        "x": 251,
+        "y": 438,
+        "width": 102,
+        "height": 53
+      },
+      "confidence": 0.9704355001449585
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 369,
+        "y": 436,
+        "width": 22,
+        "height": 50
+      },
+      "confidence": 0.864741861820221
+    },
+    {
+      "text": "Gloria",
+      "bounding_box": {
+        "x": 462,
+        "y": 428,
+        "width": 125,
+        "height": 54
+      },
+      "confidence": 0.9461803436279297
+    },
+    {
+      "text": "Jean's",
+      "bounding_box": {
+        "x": 603,
+        "y": 422,
+        "width": 127,
+        "height": 55
+      },
+      "confidence": 0.9742475748062134
+    },
+    {
+      "text": "Coffees",
+      "bounding_box": {
+        "x": 740,
+        "y": 416,
+        "width": 154,
+        "height": 55
+      },
+      "confidence": 0.9816362261772156
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 890,
+        "y": 415,
+        "width": 21,
+        "height": 50
+      },
+      "confidence": 0.9308343529701233
+    },
+    {
+      "text": "TAU",
+      "bounding_box": {
+        "x": 116,
+        "y": 519,
+        "width": 63,
+        "height": 51
+      },
+      "confidence": 0.3120107054710388
+    },
+    {
+      "text": "999",
+      "bounding_box": {
+        "x": 212,
+        "y": 516,
+        "width": 64,
+        "height": 50
+      },
+      "confidence": 0.7666935324668884
+    },
+    {
+      "text": "ATAU",
+      "bounding_box": {
+        "x": 329,
+        "y": 509,
+        "width": 143,
+        "height": 53
+      },
+      "confidence": 0.44627922773361206
+    },
+    {
+      "text": "Unit",
+      "bounding_box": {
+        "x": 114,
+        "y": 601,
+        "width": 83,
+        "height": 55
+      },
+      "confidence": 0.9230506420135498
+    },
+    {
+      "text": "T1GW4-10",
+      "bounding_box": {
+        "x": 213,
+        "y": 591,
+        "width": 164,
+        "height": 60
+      },
+      "confidence": 0.9183636903762817
+    },
+    {
+      "text": "4",
+      "bounding_box": {
+        "x": 427,
+        "y": 587,
+        "width": 28,
+        "height": 51
+      },
+      "confidence": 0.9582517147064209
+    },
+    {
+      "text": "nj1",
+      "bounding_box": {
+        "x": 467,
+        "y": 583,
+        "width": 61,
+        "height": 53
+      },
+      "confidence": 0.529841959476471
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 569,
+        "y": 580,
+        "width": 21,
+        "height": 51
+      },
+      "confidence": 0.8280612826347351
+    },
+    {
+      "text": "8",
+      "bounding_box": {
+        "x": 149,
+        "y": 670,
+        "width": 27,
+        "height": 43
+      },
+      "confidence": 0.24787858128547668
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 170,
+        "y": 670,
+        "width": 24,
+        "height": 42
+      },
+      "confidence": 0.30665984749794006
+    },
+    {
+      "text": "9",
+      "bounding_box": {
+        "x": 330,
+        "y": 666,
+        "width": 30,
+        "height": 43
+      },
+      "confidence": 0.3038666844367981
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 347,
+        "y": 666,
+        "width": 29,
+        "height": 43
+      },
+      "confidence": 0.456255704164505
+    },
+    {
+      "text": "TAX",
+      "bounding_box": {
+        "x": 116,
+        "y": 724,
+        "width": 61,
+        "height": 41
+      },
+      "confidence": 0.9918081164360046
+    },
+    {
+      "text": "INVOICE",
+      "bounding_box": {
+        "x": 197,
+        "y": 722,
+        "width": 138,
+        "height": 42
+      },
+      "confidence": 0.9889223575592041
+    },
+    {
+      "text": "[",
+      "bounding_box": {
+        "x": 360,
+        "y": 722,
+        "width": 13,
+        "height": 39
+      },
+      "confidence": 0.7091248035430908
+    },
+    {
+      "text": "ABB",
+      "bounding_box": {
+        "x": 373,
+        "y": 721,
+        "width": 59,
+        "height": 40
+      },
+      "confidence": 0.9888917207717896
+    },
+    {
+      "text": "]",
+      "bounding_box": {
+        "x": 434,
+        "y": 721,
+        "width": 15,
+        "height": 39
+      },
+      "confidence": 0.8994626998901367
+    },
+    {
+      "text": "10540",
+      "bounding_box": {
+        "x": 591,
+        "y": 659,
+        "width": 101,
+        "height": 45
+      },
+      "confidence": 0.8647682666778564
+    },
+    {
+      "text": "TAX",
+      "bounding_box": {
+        "x": 118,
+        "y": 776,
+        "width": 60,
+        "height": 38
+      },
+      "confidence": 0.9890567660331726
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 198,
+        "y": 775,
+        "width": 39,
+        "height": 36
+      },
+      "confidence": 0.9837377667427063
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 260,
+        "y": 775,
+        "width": 13,
+        "height": 35
+      },
+      "confidence": 0.6790772676467896
+    },
+    {
+      "text": "0115549003006",
+      "bounding_box": {
+        "x": 295,
+        "y": 766,
+        "width": 256,
+        "height": 43
+      },
+      "confidence": 0.9881167411804199
+    },
+    {
+      "text": "REG",
+      "bounding_box": {
+        "x": 120,
+        "y": 824,
+        "width": 60,
+        "height": 40
+      },
+      "confidence": 0.9719163775444031
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 200,
+        "y": 823,
+        "width": 38,
+        "height": 38
+      },
+      "confidence": 0.9805974960327148
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 263,
+        "y": 823,
+        "width": 10,
+        "height": 37
+      },
+      "confidence": 0.800492525100708
+    },
+    {
+      "text": "E051120002A7737",
+      "bounding_box": {
+        "x": 280,
+        "y": 815,
+        "width": 292,
+        "height": 45
+      },
+      "confidence": 0.98619544506073
+    },
+    {
+      "text": "12/10/2025",
+      "bounding_box": {
+        "x": 126,
+        "y": 877,
+        "width": 191,
+        "height": 44
+      },
+      "confidence": 0.9876037240028381
+    },
+    {
+      "text": "22:28",
+      "bounding_box": {
+        "x": 335,
+        "y": 874,
+        "width": 99,
+        "height": 41
+      },
+      "confidence": 0.9879040718078613
+    },
+    {
+      "text": "Cashier",
+      "bounding_box": {
+        "x": 454,
+        "y": 869,
+        "width": 140,
+        "height": 42
+      },
+      "confidence": 0.9860957264900208
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 600,
+        "y": 869,
+        "width": 10,
+        "height": 37
+      },
+      "confidence": 0.9372036457061768
+    },
+    {
+      "text": "9999-1",
+      "bounding_box": {
+        "x": 613,
+        "y": 865,
+        "width": 117,
+        "height": 41
+      },
+      "confidence": 0.9890620112419128
+    },
+    {
+      "text": "Mac",
+      "bounding_box": {
+        "x": 751,
+        "y": 863,
+        "width": 63,
+        "height": 39
+      },
+      "confidence": 0.9423616528511047
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 817,
+        "y": 863,
+        "width": 12,
+        "height": 37
+      },
+      "confidence": 0.9807968139648438
+    },
+    {
+      "text": "001",
+      "bounding_box": {
+        "x": 832,
+        "y": 860,
+        "width": 56,
+        "height": 40
+      },
+      "confidence": 0.9902610778808594
+    },
+    {
+      "text": "Coke",
+      "bounding_box": {
+        "x": 124,
+        "y": 978,
+        "width": 78,
+        "height": 37
+      },
+      "confidence": 0.9617852568626404
+    },
+    {
+      "text": "325",
+      "bounding_box": {
+        "x": 221,
+        "y": 977,
+        "width": 58,
+        "height": 35
+      },
+      "confidence": 0.9911020994186401
+    },
+    {
+      "text": "ml",
+      "bounding_box": {
+        "x": 299,
+        "y": 976,
+        "width": 39,
+        "height": 35
+      },
+      "confidence": 0.8199203014373779
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 345,
+        "y": 976,
+        "width": 11,
+        "height": 34
+      },
+      "confidence": 0.8444467186927795
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 382,
+        "y": 975,
+        "width": 15,
+        "height": 34
+      },
+      "confidence": 0.9252148270606995
+    },
+    {
+      "text": "can",
+      "bounding_box": {
+        "x": 396,
+        "y": 973,
+        "width": 62,
+        "height": 36
+      },
+      "confidence": 0.9638799428939819
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 458,
+        "y": 973,
+        "width": 16,
+        "height": 34
+      },
+      "confidence": 0.9595720767974854
+    },
+    {
+      "text": "N",
+      "bounding_box": {
+        "x": 127,
+        "y": 1029,
+        "width": 22,
+        "height": 32
+      },
+      "confidence": 0.9709192514419556
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 148,
+        "y": 1029,
+        "width": 15,
+        "height": 31
+      },
+      "confidence": 0.9721912741661072
+    },
+    {
+      "text": "0153",
+      "bounding_box": {
+        "x": 165,
+        "y": 1026,
+        "width": 79,
+        "height": 34
+      },
+      "confidence": 0.9889042377471924
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 735,
+        "y": 1014,
+        "width": 16,
+        "height": 27
+      },
+      "confidence": 0.9814967513084412
+    },
+    {
+      "text": "80.00",
+      "bounding_box": {
+        "x": 908,
+        "y": 1004,
+        "width": 97,
+        "height": 32
+      },
+      "confidence": 0.9877049922943115
+    },
+    {
+      "text": "Sub",
+      "bounding_box": {
+        "x": 135,
+        "y": 1116,
+        "width": 63,
+        "height": 39
+      },
+      "confidence": 0.9357317686080933
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 197,
+        "y": 1117,
+        "width": 17,
+        "height": 36
+      },
+      "confidence": 0.97417151927948
+    },
+    {
+      "text": "TOTAL",
+      "bounding_box": {
+        "x": 213,
+        "y": 1113,
+        "width": 99,
+        "height": 40
+      },
+      "confidence": 0.9190811514854431
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 370,
+        "y": 1111,
+        "width": 16,
+        "height": 36
+      },
+      "confidence": 0.9591279029846191
+    },
+    {
+      "text": "Item",
+      "bounding_box": {
+        "x": 389,
+        "y": 1109,
+        "width": 75,
+        "height": 38
+      },
+      "confidence": 0.9838513731956482
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 560,
+        "y": 1105,
+        "width": 20,
+        "height": 37
+      },
+      "confidence": 0.9875644445419312
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 599,
+        "y": 1104,
+        "width": 19,
+        "height": 37
+      },
+      "confidence": 0.9826521277427673
+    },
+    {
+      "text": "80.00",
+      "bounding_box": {
+        "x": 810,
+        "y": 1097,
+        "width": 97,
+        "height": 31
+      },
+      "confidence": 0.9907374382019043
+    },
+    {
+      "text": "Net",
+      "bounding_box": {
+        "x": 140,
+        "y": 1160,
+        "width": 107,
+        "height": 36
+      },
+      "confidence": 0.9781521558761597
+    },
+    {
+      "text": "TOT",
+      "bounding_box": {
+        "x": 295,
+        "y": 1156,
+        "width": 109,
+        "height": 35
+      },
+      "confidence": 0.9101847410202026
+    },
+    {
+      "text": "80.00",
+      "bounding_box": {
+        "x": 716,
+        "y": 1139,
+        "width": 193,
+        "height": 37
+      },
+      "confidence": 0.9879898428916931
+    },
+    {
+      "text": "5.23",
+      "bounding_box": {
+        "x": 817,
+        "y": 1184,
+        "width": 80,
+        "height": 32
+      },
+      "confidence": 0.9914852380752563
+    },
+    {
+      "text": "Vat",
+      "bounding_box": {
+        "x": 231,
+        "y": 1206,
+        "width": 58,
+        "height": 31
+      },
+      "confidence": 0.9754696488380432
+    },
+    {
+      "text": "...",
+      "bounding_box": {
+        "x": 293,
+        "y": 1205,
+        "width": 51,
+        "height": 31
+      },
+      "confidence": 0.955808162689209
+    },
+    {
+      "text": "MAT",
+      "bounding_box": {
+        "x": 131,
+        "y": 1254,
+        "width": 60,
+        "height": 36
+      },
+      "confidence": 0.9874265193939209
+    },
+    {
+      "text": "MASTER",
+      "bounding_box": {
+        "x": 226,
+        "y": 1249,
+        "width": 119,
+        "height": 38
+      },
+      "confidence": 0.9776307940483093
+    },
+    {
+      "text": "CARD",
+      "bounding_box": {
+        "x": 364,
+        "y": 1246,
+        "width": 81,
+        "height": 36
+      },
+      "confidence": 0.9638663530349731
+    },
+    {
+      "text": "XXXXXXXXXXX0000",
+      "bounding_box": {
+        "x": 126,
+        "y": 1294,
+        "width": 299,
+        "height": 46
+      },
+      "confidence": 0.9570449590682983
+    },
+    {
+      "text": "00",
+      "bounding_box": {
+        "x": 462,
+        "y": 1291,
+        "width": 44,
+        "height": 37
+      },
+      "confidence": 0.9836000204086304
+    },
+    {
+      "text": "Credit",
+      "bounding_box": {
+        "x": 127,
+        "y": 1348,
+        "width": 116,
+        "height": 39
+      },
+      "confidence": 0.9911752343177795
+    },
+    {
+      "text": "Payment",
+      "bounding_box": {
+        "x": 266,
+        "y": 1346,
+        "width": 139,
+        "height": 39
+      },
+      "confidence": 0.9911966919898987
+    },
+    {
+      "text": "TABLE",
+      "bounding_box": {
+        "x": 131,
+        "y": 1449,
+        "width": 103,
+        "height": 73
+      },
+      "confidence": 0.9877609014511108
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 257,
+        "y": 1448,
+        "width": 11,
+        "height": 69
+      },
+      "confidence": 0.9199552536010742
+    },
+    {
+      "text": "00102",
+      "bounding_box": {
+        "x": 286,
+        "y": 1444,
+        "width": 106,
+        "height": 73
+      },
+      "confidence": 0.9917057156562805
+    },
+    {
+      "text": "Receipt",
+      "bounding_box": {
+        "x": 406,
+        "y": 1438,
+        "width": 141,
+        "height": 75
+      },
+      "confidence": 0.9828402400016785
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 569,
+        "y": 1437,
+        "width": 40,
+        "height": 70
+      },
+      "confidence": 0.977705717086792
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 611,
+        "y": 1437,
+        "width": 17,
+        "height": 69
+      },
+      "confidence": 0.9606783986091614
+    },
+    {
+      "text": "0227271",
+      "bounding_box": {
+        "x": 646,
+        "y": 1430,
+        "width": 139,
+        "height": 75
+      },
+      "confidence": 0.9924460053443909
+    },
+    {
+      "text": "RcCode",
+      "bounding_box": {
+        "x": 138,
+        "y": 1522,
+        "width": 119,
+        "height": 37
+      },
+      "confidence": 0.9852638840675354
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 278,
+        "y": 1522,
+        "width": 13,
+        "height": 32
+      },
+      "confidence": 0.9233744144439697
+    },
+    {
+      "text": "0289757338728728",
+      "bounding_box": {
+        "x": 333,
+        "y": 1508,
+        "width": 318,
+        "height": 44
+      },
+      "confidence": 0.9917091131210327
+    },
+    {
+      "text": "Customer",
+      "bounding_box": {
+        "x": 124,
+        "y": 1753,
+        "width": 170,
+        "height": 38
+      },
+      "confidence": 0.9806984663009644
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 337,
+        "y": 1753,
+        "width": 18,
+        "height": 34
+      },
+      "confidence": 0.9862117171287537
+    },
+    {
+      "text": "VAT",
+      "bounding_box": {
+        "x": 478,
+        "y": 1849,
+        "width": 62,
+        "height": 42
+      },
+      "confidence": 0.9844791889190674
+    },
+    {
+      "text": "INCLUDED",
+      "bounding_box": {
+        "x": 563,
+        "y": 1844,
+        "width": 167,
+        "height": 44
+      },
+      "confidence": 0.9762956500053406
+    },
+    {
+      "text": "80.00",
+      "bounding_box": {
+        "x": 867,
+        "y": 1327,
+        "width": 102,
+        "height": 37
+      },
+      "confidence": 0.9905309081077576
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_2492",
+    "image_width": 1237,
+    "image_height": 2200,
+    "processed_at": "2026-01-02T06:28:15.560480",
+    "preprocessing_applied": []
+  }
+}

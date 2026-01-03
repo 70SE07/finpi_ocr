@@ -1,0 +1,16 @@
+{
+  "items": [],
+  "total_amount": 0.27,
+  "merchant": "Netto",
+  "store_address": "A 7 % 0,27 3,82 4,09",
+  "date": "2025-11-25 00:00:00",
+  "receipt_id": "IMG_2975",
+  "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nEUR\nBiol. Apfel rot 700g\n2,59 A\nProteinr.veg.Almond\n0,75 A\nProteinr.veg.Lemon\n0,75 A\nzu zahlen 2019\n4,09\nBar\n4,10\nRückgeld\n-0,01\nMWSTX\nSMWST + Netto = Brutto\nA 7 %\n0,27\nSumme\n0,27\n3,82\n3,82\n4,09\n4,09\nOXHO\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf. ¦\nTSE Transaktionsnummer: 1357346\nSeriennr. Kasse: LDL-000-6496-1\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 70XmfMgN9EJ/4rst1GEXmGB7K/gFiulf\n/bEYWBX9V0jLRZfSp/c4QV6jpzDj1tvRGPfpy2zRCK\ncan2PLpD6SRpnJviOrROoPTmWvg1x0+rvGKGcQDtty\nv6Qnp3iHWwE1\nSignaturzähler: 2771107\n2025-11-25T19:38:48.00OZ\n2025-11-25T19:39:08.00025 0:3\n102\n6496 703368/01\n25.11.25 20:38\n814060660",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 0.0,
+    "validation_passed": 0.0,
+    "validation_difference": 0.27
+  }
+}

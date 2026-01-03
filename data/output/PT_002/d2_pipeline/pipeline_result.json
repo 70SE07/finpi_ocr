@@ -1,0 +1,591 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "A ) OVOS CLASSE M / L RUBY 1DZ",
+        "quantity": null,
+        "price": null,
+        "total": 3.29,
+        "date": "2025-11-09 00:00:00"
+      },
+      {
+        "name": "( A ) AZEITE VE RESERVA GALLO",
+        "quantity": null,
+        "price": null,
+        "total": 0.75,
+        "date": "2025-11-09 00:00:00"
+      },
+      {
+        "name": "Laticinios / Beb . Veg .: Bens Essenciais : ",
+        "quantity": null,
+        "price": null,
+        "total": 4.0,
+        "date": "2025-11-09 00:00:00"
+      },
+      {
+        "name": "",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "date": "2025-11-09 00:00:00"
+      },
+      {
+        "name": "Charcutaria ( A ) BURRATA & Queijos DE VACA : CNT 2006",
+        "quantity": null,
+        "price": null,
+        "total": 2.79,
+        "date": "2025-11-09 00:00:00"
+      },
+      {
+        "name": "2,200 X 3,99 8.78",
+        "quantity": 2.2,
+        "price": null,
+        "total": 1.19,
+        "date": "2025-11-09 00:00:00"
+      }
+    ],
+    "total_amount": 23.04,
+    "merchant": "Continente",
+    "store_address": "Modelo 210117601 Senhora da Hora, Rua Joao Mendonca CRC , 505 Porto 4464-503 sob n ° 502011475",
+    "date": "2025-11-09 00:00:00",
+    "receipt_id": "PT_002",
+    "ocr_text": "CBD General Rocadas\nModelo Continente Hipermercados SA\n210117601\nRua Joao Mendonca, 505 4464-503 Senhora da Hora\nRegistada CRC Porto sob n° 502011475\nNIF: PT5020114751C. S: 403.827.000,00 EUR Produtor: Emb.\nPT01102979; EEE PT000251; OL PT03000282; PA\nPT06000504; Pneus PT04000330\nFatura Simplificada Original\nNro:FS LJU001/734800 09/11/2025 13:10\nIVA DESCRICAO\nNIF: Consumidor Final\nLaticinios/Beb. Veg.:\nVALOR\n(A) OVOS CLASSE M/L RUBY 1DZ\n3,29\nBens Essenciais:\n(A) AZEITE VE RESERVA GALLO 0.75\n6,99\nPOUPANCA\n4,00\nCharcutaria&Queijos:\n(A) BURRATA DE VACA CNT 2006\n2,79\nFrutas e Legumes:\n(A) DIOSPIRO\n2,200 X 3,99\n8.78\n(A) ESPINAFRE RESIDUO ZERO 125GR\n1,19\nTOTAL A PAGAR\n23,04\nCartao Credito\n23.04\nTotal de descontos e poupancas\n4,00\n(A)\nZIVA\n6,00%\nTotal Liq.\n21,74\nIVA\nTotal\n1,30\n23,04\nEEy+-Processado por programa certificado N. 1356/AT\n7691 0001 857408 372703 100121587011994\nATCUD: JF5NCNTM-734800\n17:11\neste\nações\não\nntre\não ser\nação do\nmalmente\nartigos\nlimpeza\nBOM DIA GENERAL ROCA\nDAS\n1170-010 LISBOA\nTerminal Pagamento Automático: 01133081\n25-11-09 13:10:09 Per031 Tr086 Msg489\nVISA INTERNACIONAL\nCARTAO: ****9506\nAD000000031010\nCOMPRA\nTC:363F0E7C2A460E71\nVisa DEBIT\n23,04€\nId. Estab:0000045885 AUT:EBKRPK VI DB EEA\nGetnet\nCONTACTLESS\nVisa paywave\nAutenticação realizada pelo\ndispositivo móvel\nCOPIA CLIENTE\nPROCESSADO POR SIBS\nCo: 00348999\nTr353 Msg656\nONAL\n4F0E4668090398E\nVisa DEBIT\n567W5V VI DB EEA\nIVA INCLUIDO\nCBD General Rocadas\nTLF:210117601\nMorada Loja:\nAv. General Rocadas 648\n1170-010 Lisboa\nTALAD INDISPENSAVEL PARA DEVOLUCAO\nPrazo ate 30 dias, BRINQUEDOS ate 31 Jan\nCondições/artigos não abrangidos em\ndevolver.continente.pt & Apoio Cliente\nayWave\nositivo\n25110900185740876910",
+    "detected_locale": "pt_PT",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 6.0,
+      "validation_passed": 0.0,
+      "validation_difference": 4.029999999999998
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "Continente CBD General Hipermercados Rocadas SA",
+        "y_position": 162,
+        "x_min": 434,
+        "x_max": 562,
+        "confidence": 0.8939696252346039,
+        "line_number": 0,
+        "words_count": 6
+      },
+      {
+        "text": "Modelo 210117601 Senhora da Hora",
+        "y_position": 182,
+        "x_min": 403,
+        "x_max": 593,
+        "confidence": 0.9290786385536194,
+        "line_number": 1,
+        "words_count": 5
+      },
+      {
+        "text": "Rua Joao Mendonca CRC , 505 Porto 4464-503 sob n ° 502011475",
+        "y_position": 199,
+        "x_min": 372,
+        "x_max": 567,
+        "confidence": 0.8835145533084869,
+        "line_number": 2,
+        "words_count": 12
+      },
+      {
+        "text": "NIF : PT5020114751C Registada . S : 403.827.000,00 EUR Produtor : Emb .",
+        "y_position": 215,
+        "x_min": 351,
+        "x_max": 600,
+        "confidence": 0.8743839355615469,
+        "line_number": 3,
+        "words_count": 13
+      },
+      {
+        "text": "PT01102979 PT06000504 ; EEE PT000251 ; Pneus ; OL PT04000330 PT03000282 ; PA",
+        "y_position": 234,
+        "x_min": 390,
+        "x_max": 591,
+        "confidence": 0.8467000997983493,
+        "line_number": 4,
+        "words_count": 13
+      },
+      {
+        "text": "Nro : FS Fatura LJU001 Simplificada / 734800 09/11/2025 Original 13:10",
+        "y_position": 261,
+        "x_min": 394,
+        "x_max": 568,
+        "confidence": 0.9467423504049127,
+        "line_number": 5,
+        "words_count": 11
+      },
+      {
+        "text": "NIF : Consumidor Final",
+        "y_position": 283,
+        "x_min": 434,
+        "x_max": 532,
+        "confidence": 0.9247778356075287,
+        "line_number": 6,
+        "words_count": 4
+      },
+      {
+        "text": "IVA DESCRICAO VALOR",
+        "y_position": 308,
+        "x_min": 351,
+        "x_max": 618,
+        "confidence": 0.9696543216705322,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "Laticinios A ) OVOS CLASSE / Beb . Veg M / L .: RUBY 1DZ 3,29",
+        "y_position": 335,
+        "x_min": 351,
+        "x_max": 618,
+        "confidence": 0.9496407881379128,
+        "line_number": 8,
+        "words_count": 16
+      },
+      {
+        "text": "Bens ( Essenciais :",
+        "y_position": 351,
+        "x_min": 351,
+        "x_max": 426,
+        "confidence": 0.9386727809906006,
+        "line_number": 9,
+        "words_count": 4
+      },
+      {
+        "text": "( A ) AZEITE VE RESERVA GALLO 0.75 4,00 6,99",
+        "y_position": 373,
+        "x_min": 352,
+        "x_max": 620,
+        "confidence": 0.9309327721595764,
+        "line_number": 10,
+        "words_count": 10
+      },
+      {
+        "text": "POUPANCA",
+        "y_position": 391,
+        "x_min": 376,
+        "x_max": 413,
+        "confidence": 0.9918402433395386,
+        "line_number": 11,
+        "words_count": 1
+      },
+      {
+        "text": "Charcutaria ( A ) BURRATA & Queijos DE VACA : CNT 2006 2,79",
+        "y_position": 407,
+        "x_min": 351,
+        "x_max": 620,
+        "confidence": 0.9265677470427293,
+        "line_number": 12,
+        "words_count": 13
+      },
+      {
+        "text": "Frutas ( A ) DIOSPIRO e Legumes :",
+        "y_position": 435,
+        "x_min": 352,
+        "x_max": 433,
+        "confidence": 0.9055277183651924,
+        "line_number": 13,
+        "words_count": 8
+      },
+      {
+        "text": "2,200 X 3,99 8.78 1,19",
+        "y_position": 456,
+        "x_min": 385,
+        "x_max": 619,
+        "confidence": 0.9214283347129821,
+        "line_number": 14,
+        "words_count": 5
+      },
+      {
+        "text": "( A ) ESPINAFRE RESIDUO ZERO 125GR",
+        "y_position": 472,
+        "x_min": 354,
+        "x_max": 508,
+        "confidence": 0.9685004353523254,
+        "line_number": 15,
+        "words_count": 7
+      },
+      {
+        "text": "TOTAL A PAGAR 23,04",
+        "y_position": 493,
+        "x_min": 354,
+        "x_max": 620,
+        "confidence": 0.9695699214935303,
+        "line_number": 16,
+        "words_count": 4
+      },
+      {
+        "text": "Cartao Credito 23.04",
+        "y_position": 513,
+        "x_min": 354,
+        "x_max": 621,
+        "confidence": 0.8941190044085184,
+        "line_number": 17,
+        "words_count": 3
+      },
+      {
+        "text": "Total de descontos e poupancas 4,00",
+        "y_position": 542,
+        "x_min": 355,
+        "x_max": 619,
+        "confidence": 0.967210570971171,
+        "line_number": 18,
+        "words_count": 6
+      },
+      {
+        "text": "ZIVA Total Liq . IVA Total 23,04",
+        "y_position": 569,
+        "x_min": 399,
+        "x_max": 619,
+        "confidence": 0.9186996562140328,
+        "line_number": 19,
+        "words_count": 7
+      },
+      {
+        "text": "( A ) 6,00 % 21,74 1,30",
+        "y_position": 585,
+        "x_min": 357,
+        "x_max": 560,
+        "confidence": 0.9177867685045514,
+        "line_number": 20,
+        "words_count": 7
+      },
+      {
+        "text": "EEy + -Processado 857408 por programa 372703 certificado 100121587011994 N. 1356 / AT",
+        "y_position": 611,
+        "x_min": 369,
+        "x_max": 606,
+        "confidence": 0.9171383587213663,
+        "line_number": 21,
+        "words_count": 13
+      },
+      {
+        "text": "7691 0001 ATCUD : JF5NCNTM - 734800",
+        "y_position": 627,
+        "x_min": 392,
+        "x_max": 536,
+        "confidence": 0.9581682682037354,
+        "line_number": 22,
+        "words_count": 7
+      },
+      {
+        "text": "BOM DIA GENERAL ROCA",
+        "y_position": 784,
+        "x_min": 472,
+        "x_max": 570,
+        "confidence": 0.9578142464160919,
+        "line_number": 23,
+        "words_count": 4
+      },
+      {
+        "text": "1170-010 DAS LISBOA",
+        "y_position": 802,
+        "x_min": 474,
+        "x_max": 547,
+        "confidence": 0.9735460082689921,
+        "line_number": 24,
+        "words_count": 3
+      },
+      {
+        "text": "Terminal Pagamento 13:10:09 Automático Per031 Tr086 : 01133081 Msg489",
+        "y_position": 821,
+        "x_min": 405,
+        "x_max": 599,
+        "confidence": 0.9491685496436225,
+        "line_number": 25,
+        "words_count": 9
+      },
+      {
+        "text": "25-11-09 VISA INTERNACIONAL",
+        "y_position": 837,
+        "x_min": 405,
+        "x_max": 563,
+        "confidence": 0.9830997188886007,
+        "line_number": 26,
+        "words_count": 3
+      },
+      {
+        "text": "CARTAO : **** 9506 TC : 363F0E7C2A460E71 Visa DEBIT",
+        "y_position": 857,
+        "x_min": 408,
+        "x_max": 600,
+        "confidence": 0.8917412194940779,
+        "line_number": 27,
+        "words_count": 9
+      },
+      {
+        "text": "17:11 AD000000031010 23,04 €",
+        "y_position": 874,
+        "x_min": 5,
+        "x_max": 545,
+        "confidence": 0.862981840968132,
+        "line_number": 28,
+        "words_count": 4
+      },
+      {
+        "text": "Id . Estab : 0000045885 COMPRA AUT : EBKRPK VI DB EEA",
+        "y_position": 890,
+        "x_min": 410,
+        "x_max": 603,
+        "confidence": 0.9658054957787195,
+        "line_number": 29,
+        "words_count": 12
+      },
+      {
+        "text": "Getnet CONTACTLESS",
+        "y_position": 929,
+        "x_min": 457,
+        "x_max": 531,
+        "confidence": 0.9672611057758331,
+        "line_number": 30,
+        "words_count": 2
+      },
+      {
+        "text": "este Autenticação realizada Visa paywave pelo",
+        "y_position": 949,
+        "x_min": 0,
+        "x_max": 572,
+        "confidence": 0.9595599075158437,
+        "line_number": 31,
+        "words_count": 6
+      },
+      {
+        "text": "ações dispositivo móvel",
+        "y_position": 965,
+        "x_min": 0,
+        "x_max": 547,
+        "confidence": 0.8198577761650085,
+        "line_number": 32,
+        "words_count": 3
+      },
+      {
+        "text": "ão ntre COPIA CLIENTE",
+        "y_position": 981,
+        "x_min": 0,
+        "x_max": 576,
+        "confidence": 0.8024544715881348,
+        "line_number": 33,
+        "words_count": 4
+      },
+      {
+        "text": "ão ser PROCESSADO POR SIBS",
+        "y_position": 1000,
+        "x_min": 0,
+        "x_max": 585,
+        "confidence": 0.9004517197608948,
+        "line_number": 34,
+        "words_count": 5
+      },
+      {
+        "text": "ação malmente do",
+        "y_position": 1017,
+        "x_min": 0,
+        "x_max": 37,
+        "confidence": 0.8475886782010397,
+        "line_number": 35,
+        "words_count": 3
+      },
+      {
+        "text": "artigos limpeza",
+        "y_position": 1045,
+        "x_min": 4,
+        "x_max": 40,
+        "confidence": 0.8538943529129028,
+        "line_number": 36,
+        "words_count": 2
+      },
+      {
+        "text": "CBD IVA General INCLUIDO Rocadas",
+        "y_position": 1064,
+        "x_min": 468,
+        "x_max": 563,
+        "confidence": 0.9635031938552856,
+        "line_number": 37,
+        "words_count": 5
+      },
+      {
+        "text": "TLF Morada : 210117601 Loja :",
+        "y_position": 1088,
+        "x_min": 484,
+        "x_max": 549,
+        "confidence": 0.9701939721902212,
+        "line_number": 38,
+        "words_count": 6
+      },
+      {
+        "text": "Co : 00348999 Msg656 Av . General Rocadas 648",
+        "y_position": 1107,
+        "x_min": 0,
+        "x_max": 575,
+        "confidence": 0.862795352935791,
+        "line_number": 39,
+        "words_count": 9
+      },
+      {
+        "text": "Tr353 1170-010 Lisboa",
+        "y_position": 1123,
+        "x_min": 6,
+        "x_max": 556,
+        "confidence": 0.9768106937408447,
+        "line_number": 40,
+        "words_count": 3
+      },
+      {
+        "text": "ONAL 4F0E4668090398E Prazo TALAD ate INDISPENSAVEL 30 dias , BRINQUEDOS PARA DEVOLUCAO ate 31 Jan",
+        "y_position": 1145,
+        "x_min": 0,
+        "x_max": 620,
+        "confidence": 0.9410765528678894,
+        "line_number": 41,
+        "words_count": 15
+      },
+      {
+        "text": "Visa DEBIT devolver.continente.pt Condições / artigos não & abrangidos Apoio Cliente em",
+        "y_position": 1168,
+        "x_min": 30,
+        "x_max": 618,
+        "confidence": 0.8564396724104881,
+        "line_number": 42,
+        "words_count": 12
+      },
+      {
+        "text": "567W5V VI DB EEA",
+        "y_position": 1195,
+        "x_min": 4,
+        "x_max": 93,
+        "confidence": 0.9101023226976395,
+        "line_number": 43,
+        "words_count": 4
+      },
+      {
+        "text": "ayWave ositivo 25110900185740876910",
+        "y_position": 1259,
+        "x_min": 0,
+        "x_max": 578,
+        "confidence": 0.8114120364189148,
+        "line_number": 44,
+        "words_count": 3
+      }
+    ],
+    "image_width": 960,
+    "image_height": 1280,
+    "total_words": 304,
+    "total_lines": 45
+  },
+  "locale": {
+    "locale_code": "pt_PT",
+    "confidence": 0.3888888888888889,
+    "matched_keywords": [
+      "total",
+      "valor",
+      "iva",
+      "continente",
+      "eur",
+      "nif",
+      "pt"
+    ],
+    "scores": {
+      "pt_PT": 7,
+      "cs_CZ": 0,
+      "es_ES": 4,
+      "pl_PL": 0,
+      "de_DE": 1
+    }
+  },
+  "store": {
+    "store_name": "Continente",
+    "store_address": "Modelo 210117601 Senhora da Hora, Rua Joao Mendonca CRC , 505 Porto 4464-503 sob n ° 502011475",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-11-09",
+    "receipt_total": 23.04,
+    "currency": "EUR",
+    "date_raw": "09/11/2025",
+    "total_raw": "23,04",
+    "total_line_number": 16
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "A ) OVOS CLASSE M / L RUBY 1DZ",
+        "quantity": null,
+        "price": null,
+        "total": 3.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "A ) OVOS CLASSE M / L RUBY 1DZ 3,29"
+      },
+      {
+        "name": "( A ) AZEITE VE RESERVA GALLO",
+        "quantity": null,
+        "price": null,
+        "total": 0.75,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "( A ) AZEITE VE RESERVA GALLO 0.75"
+      },
+      {
+        "name": "Laticinios / Beb . Veg .: Bens Essenciais : ",
+        "quantity": null,
+        "price": null,
+        "total": 4.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "4,00"
+      },
+      {
+        "name": "",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "6,99"
+      },
+      {
+        "name": "Charcutaria ( A ) BURRATA & Queijos DE VACA : CNT 2006",
+        "quantity": null,
+        "price": null,
+        "total": 2.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Charcutaria ( A ) BURRATA & Queijos DE VACA : CNT 2006 2,79"
+      },
+      {
+        "name": "2,200 X 3,99 8.78",
+        "quantity": 2.2,
+        "price": null,
+        "total": 1.19,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "2,200 X 3,99 8.78 1,19"
+      }
+    ],
+    "discounts": [],
+    "items_count": 6,
+    "discounts_count": 0,
+    "items_total": 19.01,
+    "discounts_total": 0,
+    "skipped_lines": 35,
+    "parsed_lines": 6
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 19.01,
+    "discounts_sum": 0,
+    "calculated_total": 19.01,
+    "receipt_total": 23.04,
+    "difference": 4.029999999999998,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=19.01, receipt=23.04, diff=4.03 (tolerance=0.05)"
+  },
+  "processing_time_ms": 16.98899269104004,
+  "stages_completed": 6
+}

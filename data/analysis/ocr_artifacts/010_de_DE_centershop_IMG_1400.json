@@ -1,0 +1,23 @@
+{
+  "id": "de_DE_010_de_DE_centershop_IMG_1400",
+  "receipt_id": "010_de_DE_centershop_IMG_1400",
+  "locale": "de_DE",
+  "store": "unknown",
+  "source_file": "IMG_1400",
+  "artifacts": [
+    {
+      "type": "GARBAGE",
+      "ocr_text": "*******",
+      "expected_text": "",
+      "context": "stschrift\nKartenNr:\n*******132\nMWST%\nMwS",
+      "suggestion": "Удалить: Множественные звёздочки"
+    }
+  ],
+  "statistics": {
+    "total_words": 147,
+    "artifacts_found": 1,
+    "by_type": {
+      "GARBAGE": 1
+    }
+  }
+}

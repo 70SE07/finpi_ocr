@@ -1,0 +1,1512 @@
+{
+  "full_text": "IST Tickerdaze_Dep_Air_IT\nBTA HAVALİMANLARI YİYECEK VE İÇECEK\nHİZMETLERİ AŞ\nAyazağa Mahallesi\nSarıyer - İstanbul\nMarmara Kurumlar\nVergi Kimlik No: 1870145623\nMersis No: 187014562300018\nTarihi: 13.10.2025 - 12:06\nC.Hazine\nve\nMaliye\nve Bakani\nBakani\nGi\nGaile Id\nBaşkanlı\ne-BELGE BİLGİ FİŞİ\nTür: Earşiv\nBelge No: 4NW2025000032783\nMüşteri VKN/TCKN: 11111111111\nMüşteri İsmi: NİHAİ TÜKETİCİ\nETTN: c3472158-acf3-45c0-b669-\n7f95e8cb3d31\nİşlem No: 363\nRED BULL\n306,65TL\n306,65 x 1 Adet\n(%10 KDV Toplamı)\n30,66TL\nMAL/HİZMET TUTARI\n306,65TL\nToplam KDV\n30,66TL\nToplam Tutar\n337,31TL\nKREDİ KARTI\nİRSALİYE YERİNE GEÇER\nİmza\n337,31TL\nMALİ BELGENİZE aşağıdaki karekodu\nokutarak ulaşabilirsiniz.\nÖDEMELER\nİşyeri No: 000000001056594\nBatchNo: 2247\nİşlem No: 17\nTermNo: 01812480\nSATIŞ\n5303********9474\nKredi Kartı\nTUTAR\n337,31TL\nRRN: 528636496378\nAID: A0000000041010\nBankNo: 3010\nbas Seri No\n344fff207104h",
+  "words": [
+    {
+      "text": "IST",
+      "bounding_box": {
+        "x": 470,
+        "y": 83,
+        "width": 33,
+        "height": 21
+      },
+      "confidence": 0.9710668325424194
+    },
+    {
+      "text": "Tickerdaze_Dep_Air_IT",
+      "bounding_box": {
+        "x": 512,
+        "y": 88,
+        "width": 224,
+        "height": 31
+      },
+      "confidence": 0.9327908158302307
+    },
+    {
+      "text": "BTA",
+      "bounding_box": {
+        "x": 415,
+        "y": 135,
+        "width": 35,
+        "height": 18
+      },
+      "confidence": 0.9724534749984741
+    },
+    {
+      "text": "HAVALİMANLARI",
+      "bounding_box": {
+        "x": 458,
+        "y": 136,
+        "width": 140,
+        "height": 34
+      },
+      "confidence": 0.9603961110115051
+    },
+    {
+      "text": "YİYECEK",
+      "bounding_box": {
+        "x": 606,
+        "y": 150,
+        "width": 72,
+        "height": 25
+      },
+      "confidence": 0.9043110609054565
+    },
+    {
+      "text": "VE",
+      "bounding_box": {
+        "x": 689,
+        "y": 146,
+        "width": 24,
+        "height": 17
+      },
+      "confidence": 0.9776703119277954
+    },
+    {
+      "text": "İÇECEK",
+      "bounding_box": {
+        "x": 720,
+        "y": 137,
+        "width": 70,
+        "height": 27
+      },
+      "confidence": 0.919008731842041
+    },
+    {
+      "text": "HİZMETLERİ",
+      "bounding_box": {
+        "x": 530,
+        "y": 171,
+        "width": 106,
+        "height": 31
+      },
+      "confidence": 0.942412793636322
+    },
+    {
+      "text": "AŞ",
+      "bounding_box": {
+        "x": 643,
+        "y": 177,
+        "width": 21,
+        "height": 26
+      },
+      "confidence": 0.9326866269111633
+    },
+    {
+      "text": "Ayazağa",
+      "bounding_box": {
+        "x": 513,
+        "y": 205,
+        "width": 75,
+        "height": 24
+      },
+      "confidence": 0.9520717263221741
+    },
+    {
+      "text": "Mahallesi",
+      "bounding_box": {
+        "x": 597,
+        "y": 205,
+        "width": 95,
+        "height": 24
+      },
+      "confidence": 0.9886372685432434
+    },
+    {
+      "text": "Sarıyer",
+      "bounding_box": {
+        "x": 506,
+        "y": 233,
+        "width": 77,
+        "height": 24
+      },
+      "confidence": 0.9356920719146729
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 593,
+        "y": 233,
+        "width": 8,
+        "height": 24
+      },
+      "confidence": 0.5476040244102478
+    },
+    {
+      "text": "İstanbul",
+      "bounding_box": {
+        "x": 613,
+        "y": 233,
+        "width": 84,
+        "height": 24
+      },
+      "confidence": 0.9276941418647766
+    },
+    {
+      "text": "Marmara",
+      "bounding_box": {
+        "x": 518,
+        "y": 261,
+        "width": 75,
+        "height": 21
+      },
+      "confidence": 0.9923218488693237
+    },
+    {
+      "text": "Kurumlar",
+      "bounding_box": {
+        "x": 602,
+        "y": 261,
+        "width": 83,
+        "height": 21
+      },
+      "confidence": 0.979972779750824
+    },
+    {
+      "text": "Vergi",
+      "bounding_box": {
+        "x": 458,
+        "y": 284,
+        "width": 53,
+        "height": 21
+      },
+      "confidence": 0.9874712228775024
+    },
+    {
+      "text": "Kimlik",
+      "bounding_box": {
+        "x": 522,
+        "y": 289,
+        "width": 63,
+        "height": 20
+      },
+      "confidence": 0.9902592897415161
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 595,
+        "y": 298,
+        "width": 22,
+        "height": 15
+      },
+      "confidence": 0.9530874490737915
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 619,
+        "y": 301,
+        "width": 7,
+        "height": 11
+      },
+      "confidence": 0.9268285036087036
+    },
+    {
+      "text": "1870145623",
+      "bounding_box": {
+        "x": 636,
+        "y": 283,
+        "width": 105,
+        "height": 26
+      },
+      "confidence": 0.9815583825111389
+    },
+    {
+      "text": "Mersis",
+      "bounding_box": {
+        "x": 464,
+        "y": 309,
+        "width": 66,
+        "height": 23
+      },
+      "confidence": 0.9866883158683777
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 538,
+        "y": 320,
+        "width": 23,
+        "height": 15
+      },
+      "confidence": 0.9544335007667542
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 563,
+        "y": 324,
+        "width": 5,
+        "height": 11
+      },
+      "confidence": 0.8847787976264954
+    },
+    {
+      "text": "187014562300018",
+      "bounding_box": {
+        "x": 580,
+        "y": 312,
+        "width": 158,
+        "height": 27
+      },
+      "confidence": 0.9833777546882629
+    },
+    {
+      "text": "Tarihi",
+      "bounding_box": {
+        "x": 403,
+        "y": 361,
+        "width": 66,
+        "height": 28
+      },
+      "confidence": 0.9834949970245361
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 470,
+        "y": 366,
+        "width": 7,
+        "height": 23
+      },
+      "confidence": 0.8598691821098328
+    },
+    {
+      "text": "13.10.2025",
+      "bounding_box": {
+        "x": 487,
+        "y": 366,
+        "width": 107,
+        "height": 31
+      },
+      "confidence": 0.9734141826629639
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 604,
+        "y": 374,
+        "width": 12,
+        "height": 24
+      },
+      "confidence": 0.7673817873001099
+    },
+    {
+      "text": "12:06",
+      "bounding_box": {
+        "x": 622,
+        "y": 375,
+        "width": 55,
+        "height": 27
+      },
+      "confidence": 0.9772610068321228
+    },
+    {
+      "text": "C.Hazine",
+      "bounding_box": {
+        "x": 519,
+        "y": 440,
+        "width": 56,
+        "height": 58
+      },
+      "confidence": 0.842790424823761
+    },
+    {
+      "text": "ve",
+      "bounding_box": {
+        "x": 577,
+        "y": 443,
+        "width": 15,
+        "height": 11
+      },
+      "confidence": 0.6328707337379456
+    },
+    {
+      "text": "Maliye",
+      "bounding_box": {
+        "x": 594,
+        "y": 438,
+        "width": 42,
+        "height": 22
+      },
+      "confidence": 0.8703311085700989
+    },
+    {
+      "text": "ve",
+      "bounding_box": {
+        "x": 621,
+        "y": 440,
+        "width": 21,
+        "height": 20
+      },
+      "confidence": 0.34322962164878845
+    },
+    {
+      "text": "Bakani",
+      "bounding_box": {
+        "x": 634,
+        "y": 449,
+        "width": 43,
+        "height": 39
+      },
+      "confidence": 0.8467601537704468
+    },
+    {
+      "text": "Bakani",
+      "bounding_box": {
+        "x": 636,
+        "y": 451,
+        "width": 41,
+        "height": 39
+      },
+      "confidence": 0.8832841515541077
+    },
+    {
+      "text": "Gi",
+      "bounding_box": {
+        "x": 555,
+        "y": 472,
+        "width": 92,
+        "height": 104
+      },
+      "confidence": 0.5123305916786194
+    },
+    {
+      "text": "Gaile",
+      "bounding_box": {
+        "x": 532,
+        "y": 559,
+        "width": 34,
+        "height": 32
+      },
+      "confidence": 0.6554579734802246
+    },
+    {
+      "text": "Id",
+      "bounding_box": {
+        "x": 559,
+        "y": 582,
+        "width": 18,
+        "height": 18
+      },
+      "confidence": 0.6100494861602783
+    },
+    {
+      "text": "Başkanlı",
+      "bounding_box": {
+        "x": 605,
+        "y": 565,
+        "width": 60,
+        "height": 51
+      },
+      "confidence": 0.7523437738418579
+    },
+    {
+      "text": "e",
+      "bounding_box": {
+        "x": 508,
+        "y": 641,
+        "width": 11,
+        "height": 23
+      },
+      "confidence": 0.9307185411453247
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 520,
+        "y": 641,
+        "width": 9,
+        "height": 23
+      },
+      "confidence": 0.8507811427116394
+    },
+    {
+      "text": "BELGE",
+      "bounding_box": {
+        "x": 529,
+        "y": 641,
+        "width": 52,
+        "height": 24
+      },
+      "confidence": 0.9875255823135376
+    },
+    {
+      "text": "BİLGİ",
+      "bounding_box": {
+        "x": 590,
+        "y": 642,
+        "width": 52,
+        "height": 25
+      },
+      "confidence": 0.8998796343803406
+    },
+    {
+      "text": "FİŞİ",
+      "bounding_box": {
+        "x": 652,
+        "y": 643,
+        "width": 43,
+        "height": 25
+      },
+      "confidence": 0.7171850204467773
+    },
+    {
+      "text": "Tür",
+      "bounding_box": {
+        "x": 400,
+        "y": 693,
+        "width": 35,
+        "height": 22
+      },
+      "confidence": 0.8299452662467957
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 437,
+        "y": 696,
+        "width": 7,
+        "height": 19
+      },
+      "confidence": 0.9290751814842224
+    },
+    {
+      "text": "Earşiv",
+      "bounding_box": {
+        "x": 454,
+        "y": 697,
+        "width": 64,
+        "height": 25
+      },
+      "confidence": 0.9286203384399414
+    },
+    {
+      "text": "Belge",
+      "bounding_box": {
+        "x": 401,
+        "y": 731,
+        "width": 54,
+        "height": 22
+      },
+      "confidence": 0.9896388053894043
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 465,
+        "y": 734,
+        "width": 22,
+        "height": 20
+      },
+      "confidence": 0.957069993019104
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 488,
+        "y": 734,
+        "width": 7,
+        "height": 19
+      },
+      "confidence": 0.9349623918533325
+    },
+    {
+      "text": "4NW2025000032783",
+      "bounding_box": {
+        "x": 506,
+        "y": 735,
+        "width": 169,
+        "height": 24
+      },
+      "confidence": 0.9770399332046509
+    },
+    {
+      "text": "Müşteri",
+      "bounding_box": {
+        "x": 400,
+        "y": 768,
+        "width": 74,
+        "height": 22
+      },
+      "confidence": 0.9382724761962891
+    },
+    {
+      "text": "VKN",
+      "bounding_box": {
+        "x": 486,
+        "y": 770,
+        "width": 30,
+        "height": 21
+      },
+      "confidence": 0.9852107763290405
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 519,
+        "y": 771,
+        "width": 8,
+        "height": 19
+      },
+      "confidence": 0.9604282379150391
+    },
+    {
+      "text": "TCKN",
+      "bounding_box": {
+        "x": 527,
+        "y": 771,
+        "width": 41,
+        "height": 21
+      },
+      "confidence": 0.9885572195053101
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 572,
+        "y": 772,
+        "width": 5,
+        "height": 19
+      },
+      "confidence": 0.9148120284080505
+    },
+    {
+      "text": "11111111111",
+      "bounding_box": {
+        "x": 591,
+        "y": 772,
+        "width": 113,
+        "height": 22
+      },
+      "confidence": 0.9925587177276611
+    },
+    {
+      "text": "Müşteri",
+      "bounding_box": {
+        "x": 399,
+        "y": 802,
+        "width": 74,
+        "height": 21
+      },
+      "confidence": 0.902809739112854
+    },
+    {
+      "text": "İsmi",
+      "bounding_box": {
+        "x": 486,
+        "y": 804,
+        "width": 39,
+        "height": 19
+      },
+      "confidence": 0.9138777256011963
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 529,
+        "y": 804,
+        "width": 6,
+        "height": 19
+      },
+      "confidence": 0.8088188171386719
+    },
+    {
+      "text": "NİHAİ",
+      "bounding_box": {
+        "x": 547,
+        "y": 804,
+        "width": 53,
+        "height": 21
+      },
+      "confidence": 0.7861079573631287
+    },
+    {
+      "text": "TÜKETİCİ",
+      "bounding_box": {
+        "x": 609,
+        "y": 805,
+        "width": 84,
+        "height": 21
+      },
+      "confidence": 0.8718815445899963
+    },
+    {
+      "text": "ETTN",
+      "bounding_box": {
+        "x": 440,
+        "y": 837,
+        "width": 42,
+        "height": 17
+      },
+      "confidence": 0.9803007245063782
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 485,
+        "y": 837,
+        "width": 5,
+        "height": 16
+      },
+      "confidence": 0.8577418923377991
+    },
+    {
+      "text": "c3472158",
+      "bounding_box": {
+        "x": 503,
+        "y": 837,
+        "width": 83,
+        "height": 18
+      },
+      "confidence": 0.9548960328102112
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 588,
+        "y": 839,
+        "width": 7,
+        "height": 16
+      },
+      "confidence": 0.92707759141922
+    },
+    {
+      "text": "acf3-45c0",
+      "bounding_box": {
+        "x": 598,
+        "y": 839,
+        "width": 92,
+        "height": 17
+      },
+      "confidence": 0.9629818201065063
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 692,
+        "y": 840,
+        "width": 7,
+        "height": 16
+      },
+      "confidence": 0.9202901124954224
+    },
+    {
+      "text": "b669-",
+      "bounding_box": {
+        "x": 701,
+        "y": 840,
+        "width": 50,
+        "height": 18
+      },
+      "confidence": 0.913317084312439
+    },
+    {
+      "text": "7f95e8cb3d31",
+      "bounding_box": {
+        "x": 534,
+        "y": 864,
+        "width": 125,
+        "height": 18
+      },
+      "confidence": 0.9646228551864624
+    },
+    {
+      "text": "İşlem",
+      "bounding_box": {
+        "x": 528,
+        "y": 889,
+        "width": 53,
+        "height": 20
+      },
+      "confidence": 0.8440644145011902
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 590,
+        "y": 891,
+        "width": 22,
+        "height": 18
+      },
+      "confidence": 0.9551106691360474
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 614,
+        "y": 891,
+        "width": 6,
+        "height": 18
+      },
+      "confidence": 0.9114773869514465
+    },
+    {
+      "text": "363",
+      "bounding_box": {
+        "x": 633,
+        "y": 891,
+        "width": 30,
+        "height": 20
+      },
+      "confidence": 0.976295530796051
+    },
+    {
+      "text": "RED",
+      "bounding_box": {
+        "x": 398,
+        "y": 971,
+        "width": 29,
+        "height": 14
+      },
+      "confidence": 0.9909375309944153
+    },
+    {
+      "text": "BULL",
+      "bounding_box": {
+        "x": 441,
+        "y": 971,
+        "width": 40,
+        "height": 15
+      },
+      "confidence": 0.9940232038497925
+    },
+    {
+      "text": "306,65TL",
+      "bounding_box": {
+        "x": 706,
+        "y": 975,
+        "width": 83,
+        "height": 18
+      },
+      "confidence": 0.9686697721481323
+    },
+    {
+      "text": "306,65",
+      "bounding_box": {
+        "x": 397,
+        "y": 1004,
+        "width": 61,
+        "height": 17
+      },
+      "confidence": 0.9801232814788818
+    },
+    {
+      "text": "x",
+      "bounding_box": {
+        "x": 470,
+        "y": 1006,
+        "width": 10,
+        "height": 15
+      },
+      "confidence": 0.9228493571281433
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 491,
+        "y": 1007,
+        "width": 9,
+        "height": 15
+      },
+      "confidence": 0.9773739576339722
+    },
+    {
+      "text": "Adet",
+      "bounding_box": {
+        "x": 512,
+        "y": 1007,
+        "width": 41,
+        "height": 16
+      },
+      "confidence": 0.9881867170333862
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 398,
+        "y": 1039,
+        "width": 6,
+        "height": 18
+      },
+      "confidence": 0.867974042892456
+    },
+    {
+      "text": "%",
+      "bounding_box": {
+        "x": 407,
+        "y": 1039,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.7610459327697754
+    },
+    {
+      "text": "10",
+      "bounding_box": {
+        "x": 417,
+        "y": 1039,
+        "width": 20,
+        "height": 18
+      },
+      "confidence": 0.8870688676834106
+    },
+    {
+      "text": "KDV",
+      "bounding_box": {
+        "x": 448,
+        "y": 1039,
+        "width": 32,
+        "height": 20
+      },
+      "confidence": 0.9856806397438049
+    },
+    {
+      "text": "Toplamı",
+      "bounding_box": {
+        "x": 491,
+        "y": 1040,
+        "width": 73,
+        "height": 21
+      },
+      "confidence": 0.865910530090332
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 564,
+        "y": 1042,
+        "width": 8,
+        "height": 18
+      },
+      "confidence": 0.9018025398254395
+    },
+    {
+      "text": "30,66TL",
+      "bounding_box": {
+        "x": 717,
+        "y": 1045,
+        "width": 71,
+        "height": 16
+      },
+      "confidence": 0.9761862754821777
+    },
+    {
+      "text": "MAL",
+      "bounding_box": {
+        "x": 392,
+        "y": 1148,
+        "width": 32,
+        "height": 20
+      },
+      "confidence": 0.9839316010475159
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 425,
+        "y": 1149,
+        "width": 9,
+        "height": 18
+      },
+      "confidence": 0.8894325494766235
+    },
+    {
+      "text": "HİZMET",
+      "bounding_box": {
+        "x": 435,
+        "y": 1149,
+        "width": 62,
+        "height": 20
+      },
+      "confidence": 0.919611930847168
+    },
+    {
+      "text": "TUTARI",
+      "bounding_box": {
+        "x": 509,
+        "y": 1151,
+        "width": 60,
+        "height": 20
+      },
+      "confidence": 0.9840227961540222
+    },
+    {
+      "text": "306,65TL",
+      "bounding_box": {
+        "x": 704,
+        "y": 1157,
+        "width": 82,
+        "height": 17
+      },
+      "confidence": 0.9549013376235962
+    },
+    {
+      "text": "Toplam",
+      "bounding_box": {
+        "x": 390,
+        "y": 1185,
+        "width": 65,
+        "height": 20
+      },
+      "confidence": 0.9880293607711792
+    },
+    {
+      "text": "KDV",
+      "bounding_box": {
+        "x": 464,
+        "y": 1185,
+        "width": 32,
+        "height": 19
+      },
+      "confidence": 0.9853256344795227
+    },
+    {
+      "text": "30,66TL",
+      "bounding_box": {
+        "x": 714,
+        "y": 1193,
+        "width": 72,
+        "height": 16
+      },
+      "confidence": 0.9240617752075195
+    },
+    {
+      "text": "Toplam",
+      "bounding_box": {
+        "x": 389,
+        "y": 1220,
+        "width": 64,
+        "height": 19
+      },
+      "confidence": 0.9583711624145508
+    },
+    {
+      "text": "Tutar",
+      "bounding_box": {
+        "x": 463,
+        "y": 1220,
+        "width": 54,
+        "height": 19
+      },
+      "confidence": 0.9921642541885376
+    },
+    {
+      "text": "337,31TL",
+      "bounding_box": {
+        "x": 703,
+        "y": 1225,
+        "width": 84,
+        "height": 18
+      },
+      "confidence": 0.9718112349510193
+    },
+    {
+      "text": "KREDİ",
+      "bounding_box": {
+        "x": 387,
+        "y": 1307,
+        "width": 52,
+        "height": 17
+      },
+      "confidence": 0.9511906504631042
+    },
+    {
+      "text": "KARTI",
+      "bounding_box": {
+        "x": 451,
+        "y": 1308,
+        "width": 51,
+        "height": 17
+      },
+      "confidence": 0.9897892475128174
+    },
+    {
+      "text": "İRSALİYE",
+      "bounding_box": {
+        "x": 473,
+        "y": 1361,
+        "width": 85,
+        "height": 23
+      },
+      "confidence": 0.859898567199707
+    },
+    {
+      "text": "YERİNE",
+      "bounding_box": {
+        "x": 568,
+        "y": 1364,
+        "width": 65,
+        "height": 22
+      },
+      "confidence": 0.947186291217804
+    },
+    {
+      "text": "GEÇER",
+      "bounding_box": {
+        "x": 642,
+        "y": 1367,
+        "width": 54,
+        "height": 22
+      },
+      "confidence": 0.9364048838615417
+    },
+    {
+      "text": "İmza",
+      "bounding_box": {
+        "x": 563,
+        "y": 1418,
+        "width": 40,
+        "height": 18
+      },
+      "confidence": 0.8309451341629028
+    },
+    {
+      "text": "337,31TL",
+      "bounding_box": {
+        "x": 701,
+        "y": 1314,
+        "width": 84,
+        "height": 18
+      },
+      "confidence": 0.9684177041053772
+    },
+    {
+      "text": "MALİ",
+      "bounding_box": {
+        "x": 396,
+        "y": 1603,
+        "width": 48,
+        "height": 27
+      },
+      "confidence": 0.9135457277297974
+    },
+    {
+      "text": "BELGENİZE",
+      "bounding_box": {
+        "x": 452,
+        "y": 1606,
+        "width": 98,
+        "height": 29
+      },
+      "confidence": 0.9567292928695679
+    },
+    {
+      "text": "aşağıdaki",
+      "bounding_box": {
+        "x": 558,
+        "y": 1610,
+        "width": 101,
+        "height": 30
+      },
+      "confidence": 0.9051033854484558
+    },
+    {
+      "text": "karekodu",
+      "bounding_box": {
+        "x": 666,
+        "y": 1615,
+        "width": 89,
+        "height": 29
+      },
+      "confidence": 0.9904457926750183
+    },
+    {
+      "text": "okutarak",
+      "bounding_box": {
+        "x": 440,
+        "y": 1637,
+        "width": 88,
+        "height": 24
+      },
+      "confidence": 0.9845542907714844
+    },
+    {
+      "text": "ulaşabilirsiniz",
+      "bounding_box": {
+        "x": 536,
+        "y": 1641,
+        "width": 166,
+        "height": 27
+      },
+      "confidence": 0.9825076460838318
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 701,
+        "y": 1648,
+        "width": 7,
+        "height": 20
+      },
+      "confidence": 0.8035480380058289
+    },
+    {
+      "text": "ÖDEMELER",
+      "bounding_box": {
+        "x": 537,
+        "y": 1868,
+        "width": 83,
+        "height": 18
+      },
+      "confidence": 0.9421396851539612
+    },
+    {
+      "text": "İşyeri",
+      "bounding_box": {
+        "x": 382,
+        "y": 1896,
+        "width": 63,
+        "height": 24
+      },
+      "confidence": 0.8564531803131104
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 455,
+        "y": 1896,
+        "width": 22,
+        "height": 23
+      },
+      "confidence": 0.9127092957496643
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 478,
+        "y": 1896,
+        "width": 6,
+        "height": 23
+      },
+      "confidence": 0.9216538071632385
+    },
+    {
+      "text": "000000001056594",
+      "bounding_box": {
+        "x": 496,
+        "y": 1895,
+        "width": 156,
+        "height": 24
+      },
+      "confidence": 0.945094645023346
+    },
+    {
+      "text": "BatchNo",
+      "bounding_box": {
+        "x": 637,
+        "y": 1929,
+        "width": 75,
+        "height": 28
+      },
+      "confidence": 0.9737291932106018
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 713,
+        "y": 1942,
+        "width": 6,
+        "height": 15
+      },
+      "confidence": 0.8518767356872559
+    },
+    {
+      "text": "2247",
+      "bounding_box": {
+        "x": 731,
+        "y": 1945,
+        "width": 43,
+        "height": 22
+      },
+      "confidence": 0.9900439381599426
+    },
+    {
+      "text": "İşlem",
+      "bounding_box": {
+        "x": 382,
+        "y": 1928,
+        "width": 55,
+        "height": 27
+      },
+      "confidence": 0.8067158460617065
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 435,
+        "y": 1925,
+        "width": 23,
+        "height": 23
+      },
+      "confidence": 0.9491492509841919
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 457,
+        "y": 1925,
+        "width": 8,
+        "height": 20
+      },
+      "confidence": 0.9333880543708801
+    },
+    {
+      "text": "17",
+      "bounding_box": {
+        "x": 475,
+        "y": 1920,
+        "width": 24,
+        "height": 22
+      },
+      "confidence": 0.9866119623184204
+    },
+    {
+      "text": "TermNo",
+      "bounding_box": {
+        "x": 383,
+        "y": 1962,
+        "width": 64,
+        "height": 20
+      },
+      "confidence": 0.9069574475288391
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 448,
+        "y": 1960,
+        "width": 7,
+        "height": 16
+      },
+      "confidence": 0.869297206401825
+    },
+    {
+      "text": "01812480",
+      "bounding_box": {
+        "x": 467,
+        "y": 1952,
+        "width": 82,
+        "height": 23
+      },
+      "confidence": 0.9671250581741333
+    },
+    {
+      "text": "SATIŞ",
+      "bounding_box": {
+        "x": 554,
+        "y": 1984,
+        "width": 50,
+        "height": 14
+      },
+      "confidence": 0.9506768584251404
+    },
+    {
+      "text": "5303",
+      "bounding_box": {
+        "x": 496,
+        "y": 2002,
+        "width": 43,
+        "height": 18
+      },
+      "confidence": 0.9486037492752075
+    },
+    {
+      "text": "********",
+      "bounding_box": {
+        "x": 539,
+        "y": 2004,
+        "width": 83,
+        "height": 20
+      },
+      "confidence": 0.28307828307151794
+    },
+    {
+      "text": "9474",
+      "bounding_box": {
+        "x": 620,
+        "y": 2008,
+        "width": 42,
+        "height": 18
+      },
+      "confidence": 0.9710049629211426
+    },
+    {
+      "text": "Kredi",
+      "bounding_box": {
+        "x": 522,
+        "y": 2025,
+        "width": 53,
+        "height": 18
+      },
+      "confidence": 0.9796404838562012
+    },
+    {
+      "text": "Kartı",
+      "bounding_box": {
+        "x": 583,
+        "y": 2027,
+        "width": 53,
+        "height": 18
+      },
+      "confidence": 0.9387972950935364
+    },
+    {
+      "text": "TUTAR",
+      "bounding_box": {
+        "x": 554,
+        "y": 2049,
+        "width": 50,
+        "height": 14
+      },
+      "confidence": 0.9894679188728333
+    },
+    {
+      "text": "337,31TL",
+      "bounding_box": {
+        "x": 540,
+        "y": 2072,
+        "width": 79,
+        "height": 16
+      },
+      "confidence": 0.9629838466644287
+    },
+    {
+      "text": "RRN",
+      "bounding_box": {
+        "x": 388,
+        "y": 2107,
+        "width": 29,
+        "height": 18
+      },
+      "confidence": 0.9853397011756897
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 419,
+        "y": 2108,
+        "width": 6,
+        "height": 15
+      },
+      "confidence": 0.9191643595695496
+    },
+    {
+      "text": "528636496378",
+      "bounding_box": {
+        "x": 438,
+        "y": 2099,
+        "width": 123,
+        "height": 23
+      },
+      "confidence": 0.9912558197975159
+    },
+    {
+      "text": "AID",
+      "bounding_box": {
+        "x": 387,
+        "y": 2140,
+        "width": 33,
+        "height": 17
+      },
+      "confidence": 0.9566438794136047
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 419,
+        "y": 2141,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.9037067294120789
+    },
+    {
+      "text": "A0000000041010",
+      "bounding_box": {
+        "x": 437,
+        "y": 2131,
+        "width": 146,
+        "height": 23
+      },
+      "confidence": 0.9586050510406494
+    },
+    {
+      "text": "BankNo",
+      "bounding_box": {
+        "x": 647,
+        "y": 2107,
+        "width": 64,
+        "height": 25
+      },
+      "confidence": 0.9748368859291077
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 711,
+        "y": 2119,
+        "width": 8,
+        "height": 15
+      },
+      "confidence": 0.9001916646957397
+    },
+    {
+      "text": "3010",
+      "bounding_box": {
+        "x": 730,
+        "y": 2122,
+        "width": 41,
+        "height": 21
+      },
+      "confidence": 0.8692305088043213
+    },
+    {
+      "text": "bas",
+      "bounding_box": {
+        "x": 412,
+        "y": 2190,
+        "width": 25,
+        "height": 9
+      },
+      "confidence": 0.2818957567214966
+    },
+    {
+      "text": "Seri",
+      "bounding_box": {
+        "x": 449,
+        "y": 2189,
+        "width": 39,
+        "height": 10
+      },
+      "confidence": 0.8058075904846191
+    },
+    {
+      "text": "No",
+      "bounding_box": {
+        "x": 500,
+        "y": 2188,
+        "width": 20,
+        "height": 11
+      },
+      "confidence": 0.9400871992111206
+    },
+    {
+      "text": "344fff207104h",
+      "bounding_box": {
+        "x": 543,
+        "y": 2181,
+        "width": 130,
+        "height": 18
+      },
+      "confidence": 0.9012072682380676
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_2504",
+    "image_width": 1237,
+    "image_height": 2200,
+    "processed_at": "2026-01-02T06:28:28.828495",
+    "preprocessing_applied": []
+  }
+}

@@ -1,0 +1,1321 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Schweinenackenbraten",
+        "quantity": null,
+        "price": null,
+        "total": 10.85,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Schweinenackenbraten 10,85 A"
+      },
+      {
+        "name": "Schweinenackenbraten",
+        "quantity": null,
+        "price": null,
+        "total": 8.51,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Schweinenackenbraten 8,51 A"
+      },
+      {
+        "name": "Schw.Spare Ribs BBQ",
+        "quantity": null,
+        "price": null,
+        "total": 7.64,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Schw.Spare Ribs BBQ 7,64 A"
+      },
+      {
+        "name": "Schw.Spare Ribs BBQ",
+        "quantity": null,
+        "price": null,
+        "total": 7.32,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Schw.Spare Ribs BBQ 7,32 A"
+      },
+      {
+        "name": "Spare Ribs mar .",
+        "quantity": null,
+        "price": null,
+        "total": 8.81,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Spare Ribs mar . 8,81 A"
+      },
+      {
+        "name": "Dill",
+        "quantity": null,
+        "price": null,
+        "total": 1.39,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Dill 1,39 A"
+      },
+      {
+        "name": "Frühkart . 2,5kg",
+        "quantity": null,
+        "price": null,
+        "total": 2.69,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Frühkart . 2,5kg 2,69 A"
+      },
+      {
+        "name": "Fairtrade Rosen x 4",
+        "quantity": 2.99,
+        "price": null,
+        "total": 11.96,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Fairtrade Rosen 2,99 x 4 11,96 A"
+      },
+      {
+        "name": "Cocktailtomaten",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Cocktailtomaten 1,49 A"
+      },
+      {
+        "name": "Rucola 125g",
+        "quantity": null,
+        "price": null,
+        "total": 0.85,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Rucola 125g 0,85 A"
+      },
+      {
+        "name": "Gurken x 2",
+        "quantity": 0.95,
+        "price": null,
+        "total": 1.9,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Gurken 0,95 x 2 1,90 A"
+      },
+      {
+        "name": "Zwiebeln rot",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Zwiebeln rot 1,99 A"
+      },
+      {
+        "name": "Salakis Scheibe Natu x 4",
+        "quantity": 3.79,
+        "price": null,
+        "total": 15.16,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Salakis Scheibe Natu 3,79 x 4 15,16 A"
+      },
+      {
+        "name": "Zaziki",
+        "quantity": null,
+        "price": null,
+        "total": 1.79,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Zaziki 1,79 A"
+      },
+      {
+        "name": "Baguettes Kräuter",
+        "quantity": null,
+        "price": null,
+        "total": 1.95,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Baguettes Kräuter 1,95 A"
+      },
+      {
+        "name": "Baguettes Knoblauch",
+        "quantity": null,
+        "price": null,
+        "total": 1.95,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Baguettes Knoblauch 1,95 A"
+      },
+      {
+        "name": "Olivenöle natur",
+        "quantity": null,
+        "price": null,
+        "total": 4.99,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Olivenöle natur 4,99 A"
+      },
+      {
+        "name": "Bull'sEyeFeink.Honey",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Bull'sEyeFeink.Honey 3,99 A"
+      },
+      {
+        "name": "Red Bull Energy x 2",
+        "quantity": 1.75,
+        "price": null,
+        "total": 3.5,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Red Bull Energy 1,75 x 2 3,50 B"
+      },
+      {
+        "name": "Pfand M x 2",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 0.5,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Pfand 0,25 M 0,25 x 2 0,50 B"
+      },
+      {
+        "name": "WTG Orangensaft 100 % x 4",
+        "quantity": 2.99,
+        "price": null,
+        "total": 11.96,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "WTG Orangensaft 100 % 2,99 x 4 11,96 B"
+      },
+      {
+        "name": "Bitter Aperitiv 11 %",
+        "quantity": null,
+        "price": null,
+        "total": 4.49,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Bitter Aperitiv 11 % 4,49 B"
+      },
+      {
+        "name": "Prosecco rosé",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Prosecco rosé 6,99 B"
+      },
+      {
+        "name": "Grill - Holzkohle",
+        "quantity": null,
+        "price": null,
+        "total": 3.69,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Grill - Holzkohle 3,69 B"
+      },
+      {
+        "name": "Hähn.Keulen Diavolo x 2",
+        "quantity": 3.99,
+        "price": null,
+        "total": 7.98,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "Hähn.Keulen Diavolo 3,99 x 2 7,98 A"
+      },
+      {
+        "name": "QSHähn.Grill- & Ofenp . x 3",
+        "quantity": 4.49,
+        "price": null,
+        "total": 13.47,
+        "date": "2025-07-31 00:00:00",
+        "raw_text": "QSHähn.Grill- & Ofenp . 4,49 x 3 13,47 A"
+      }
+    ],
+    "total_amount": 143.37,
+    "merchant": null,
+    "store_address": null,
+    "date": "2025-07-31 00:00:00",
+    "receipt_id": "IMG_1292",
+    "ocr_text": "rebe\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nSchweinenackenbraten\n10,85 A\n1,207 kg x 8,99 EUR/kg\nSchweinenackenbraten\n8,51 A\n0,947 kg x 8,99 EUR/kg\nSchw.Spare Ribs BBQ\n7,64 A\n0,900 kg x 8,49 EUR/kg\nSchw.Spare Ribs BBQ\n7,32 A\n0,862 kg x 8,49 EUR/kg\nSpare Ribs mar.\n8,81 A\n1,358 kg x 6,49 EUR/kg\nDill\n1,39 A\nFrühkart. 2,5kg\n2,69 A\nPreisvorteil\n-0,30\nFairtrade Rosen\n2,99 x 4\n11,96 A\nCocktailtomaten\n1,49 A\nRucola 125g\n0,85 A\nGurken\n0,95 x\n2\n1,90 A\nPreisvorteil\n-0,40\nZwiebeln rot\n1,99 A\nSalakis Scheibe Natu 3,79 x 4\n15,16 A\nZaziki\n1,79 A\nPreisvorteil\n-0,14\nBaguettes Kräuter\n1,95 A\nBaguettes Knoblauch\n1,95 A\nOlivenöle natur\nBull'sEyeFeink.Honey\nPreisvorteil\n4,99 A\n3,99 A\n-2,00\nRed Bull Energy\n1,75 x 2\n3,50 B\nPfand 0,25 M\n0,25 x\n2\n0,50 B\nWTG Orangensaft 100%\n2,99 x\n4\n11,96 B\nBitter Aperitiv 11%\n4,49 B\nProsecco rosé\n6,99 B\nGrill-Holzkohle\n3,69 B\nHähn.Keulen Diavolo 3,99 x 2\n7,98 A\nRABATT 20%\n-1,60\nQSHähn.Grill-&Ofenp. 4,49 x\n3\n13,47 A\nzu zahlen\n143,37\nKarte\n143,37\nGesamter Preisvorteil\n4,44\nMWSTX\nMWST + Netto = Brutto\nA 7 %\n7,34\n104,90\n112,24\nB 19 %\n4,97\n26,16\n31,13\nSumme\n12,31\n131,06\n143,37\nPRESS\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nԸ\nNAV\nTSE Transaktionsnummer: 1207294\nSeriennr. Kasse: LDL-000-6496-3\nSeriennr. TSE: F2vH5JJ0GxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: EzrFazMucAFXbB+05/aEV3YF1pU4RZgB\nm7w74vDAZgXImbSIXJdj+yGCoSTUYaIvZqSvTc5L01\n+PjtvhmE5hRolREwXS7EpPZevBxmH2p732gBLttCcF\ndBBnTD42G2Ck\nSignaturzähler: 2463948\n2025-07-31T10:41:47.00OZ\n2025-07-31T10:43:08.000Z\n6496 738145/03\n814060660\nPUSH\n31.07.25 12:41\nVOL\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n31.07.2025\n12:41\n143,37 EUR\nKartennr.\nVU-Nummer\nTA-Nr. 2176102Beleg-Nr. 8514\nKontaktlos Chip\nAutorisierungsnummer\nAutorisierungsantwortcode\nT-ID 60155116\n##########1364 00\nOnline\n9801706496\n981034\n00\nEMV-Daten:\nA0000003591010028001/00\n**\nAutorisierung erfolgt\n**",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 26.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "cleanup": {
+    "words_count": 359,
+    "original_count": 359,
+    "cleaned_count": 359,
+    "removed_count": 0
+  },
+  "script": {
+    "direction": "ltr",
+    "script": "Latin",
+    "confidence": 1.0,
+    "words_count": 359
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "rebe",
+        "y_position": 105,
+        "x_min": 641,
+        "x_max": 685,
+        "confidence": 0.5563633441925049,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 141,
+        "x_min": 564,
+        "x_max": 734,
+        "confidence": 0.9843557874361674,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 163,
+        "x_min": 545,
+        "x_max": 752,
+        "confidence": 0.985575536886851,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 191,
+        "x_min": 790,
+        "x_max": 818,
+        "confidence": 0.9918338656425476,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "Schweinenackenbraten 10,85 A",
+        "y_position": 208,
+        "x_min": 450,
+        "x_max": 836,
+        "confidence": 0.9882619579633077,
+        "line_number": 4,
+        "words_count": 3
+      },
+      {
+        "text": "1,207 kg x 8,99 EUR / kg",
+        "y_position": 233,
+        "x_min": 469,
+        "x_max": 694,
+        "confidence": 0.9491187674658639,
+        "line_number": 5,
+        "words_count": 7
+      },
+      {
+        "text": "Schweinenackenbraten 8,51 A",
+        "y_position": 256,
+        "x_min": 448,
+        "x_max": 834,
+        "confidence": 0.9874711831410726,
+        "line_number": 6,
+        "words_count": 3
+      },
+      {
+        "text": "0,947 kg x 8,99 EUR / kg",
+        "y_position": 281,
+        "x_min": 467,
+        "x_max": 693,
+        "confidence": 0.9731067844799587,
+        "line_number": 7,
+        "words_count": 7
+      },
+      {
+        "text": "Schw.Spare Ribs BBQ 7,64 A",
+        "y_position": 304,
+        "x_min": 448,
+        "x_max": 831,
+        "confidence": 0.9859403967857361,
+        "line_number": 8,
+        "words_count": 5
+      },
+      {
+        "text": "0,900 kg x 8,49 EUR / kg",
+        "y_position": 329,
+        "x_min": 466,
+        "x_max": 691,
+        "confidence": 0.9548784834997994,
+        "line_number": 9,
+        "words_count": 7
+      },
+      {
+        "text": "Schw.Spare Ribs BBQ 7,32 A",
+        "y_position": 352,
+        "x_min": 447,
+        "x_max": 830,
+        "confidence": 0.9869705557823181,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "0,862 kg x 8,49 EUR / kg",
+        "y_position": 377,
+        "x_min": 465,
+        "x_max": 689,
+        "confidence": 0.9759130818503243,
+        "line_number": 11,
+        "words_count": 7
+      },
+      {
+        "text": "Spare Ribs mar . 8,81 A",
+        "y_position": 401,
+        "x_min": 446,
+        "x_max": 826,
+        "confidence": 0.9677890737851461,
+        "line_number": 12,
+        "words_count": 6
+      },
+      {
+        "text": "1,358 kg x 6,49 EUR / kg",
+        "y_position": 426,
+        "x_min": 467,
+        "x_max": 688,
+        "confidence": 0.9567645617893764,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "Dill 1,39 A",
+        "y_position": 448,
+        "x_min": 446,
+        "x_max": 824,
+        "confidence": 0.9506251811981201,
+        "line_number": 14,
+        "words_count": 3
+      },
+      {
+        "text": "Frühkart . 2,5kg 2,69 A",
+        "y_position": 470,
+        "x_min": 446,
+        "x_max": 822,
+        "confidence": 0.9521334528923034,
+        "line_number": 15,
+        "words_count": 5
+      },
+      {
+        "text": "Preisvorteil -0,30",
+        "y_position": 497,
+        "x_min": 491,
+        "x_max": 804,
+        "confidence": 0.9806696474552155,
+        "line_number": 16,
+        "words_count": 2
+      },
+      {
+        "text": "Fairtrade Rosen 2,99 x 4 11,96 A",
+        "y_position": 519,
+        "x_min": 446,
+        "x_max": 831,
+        "confidence": 0.9621299505233765,
+        "line_number": 17,
+        "words_count": 7
+      },
+      {
+        "text": "Cocktailtomaten 1,49 A",
+        "y_position": 542,
+        "x_min": 445,
+        "x_max": 821,
+        "confidence": 0.9776075879732767,
+        "line_number": 18,
+        "words_count": 3
+      },
+      {
+        "text": "Rucola 125g 0,85 A",
+        "y_position": 565,
+        "x_min": 445,
+        "x_max": 819,
+        "confidence": 0.9880203008651733,
+        "line_number": 19,
+        "words_count": 4
+      },
+      {
+        "text": "Gurken 0,95 x 2 1,90 A",
+        "y_position": 589,
+        "x_min": 445,
+        "x_max": 828,
+        "confidence": 0.9214483400185903,
+        "line_number": 20,
+        "words_count": 6
+      },
+      {
+        "text": "Preisvorteil -0,40",
+        "y_position": 614,
+        "x_min": 489,
+        "x_max": 800,
+        "confidence": 0.9853326380252838,
+        "line_number": 21,
+        "words_count": 2
+      },
+      {
+        "text": "Zwiebeln rot 1,99 A",
+        "y_position": 635,
+        "x_min": 444,
+        "x_max": 815,
+        "confidence": 0.9875022917985916,
+        "line_number": 22,
+        "words_count": 4
+      },
+      {
+        "text": "Salakis Scheibe Natu 3,79 x 4 15,16 A",
+        "y_position": 657,
+        "x_min": 443,
+        "x_max": 826,
+        "confidence": 0.9616692364215851,
+        "line_number": 23,
+        "words_count": 8
+      },
+      {
+        "text": "Zaziki 1,79 A",
+        "y_position": 681,
+        "x_min": 444,
+        "x_max": 814,
+        "confidence": 0.9791963895161947,
+        "line_number": 24,
+        "words_count": 3
+      },
+      {
+        "text": "Preisvorteil -0,14",
+        "y_position": 705,
+        "x_min": 488,
+        "x_max": 796,
+        "confidence": 0.9836052358150482,
+        "line_number": 25,
+        "words_count": 2
+      },
+      {
+        "text": "Baguettes Kräuter 1,95 A",
+        "y_position": 727,
+        "x_min": 445,
+        "x_max": 812,
+        "confidence": 0.9848642647266388,
+        "line_number": 26,
+        "words_count": 4
+      },
+      {
+        "text": "Baguettes Knoblauch 1,95 A",
+        "y_position": 749,
+        "x_min": 444,
+        "x_max": 810,
+        "confidence": 0.9894227385520935,
+        "line_number": 27,
+        "words_count": 4
+      },
+      {
+        "text": "Olivenöle natur 4,99 A",
+        "y_position": 771,
+        "x_min": 442,
+        "x_max": 808,
+        "confidence": 0.9785691946744919,
+        "line_number": 28,
+        "words_count": 4
+      },
+      {
+        "text": "Bull'sEyeFeink.Honey 3,99 A",
+        "y_position": 794,
+        "x_min": 443,
+        "x_max": 808,
+        "confidence": 0.9731120665868124,
+        "line_number": 29,
+        "words_count": 3
+      },
+      {
+        "text": "Preisvorteil -2,00",
+        "y_position": 818,
+        "x_min": 487,
+        "x_max": 790,
+        "confidence": 0.987723708152771,
+        "line_number": 30,
+        "words_count": 2
+      },
+      {
+        "text": "Red Bull Energy 1,75 x 2 3,50 B",
+        "y_position": 837,
+        "x_min": 442,
+        "x_max": 814,
+        "confidence": 0.9506845921278,
+        "line_number": 31,
+        "words_count": 8
+      },
+      {
+        "text": "Pfand 0,25 M 0,25 x 2 0,50 B",
+        "y_position": 861,
+        "x_min": 442,
+        "x_max": 810,
+        "confidence": 0.9496010690927505,
+        "line_number": 32,
+        "words_count": 8
+      },
+      {
+        "text": "WTG Orangensaft 100 % 2,99 x 4 11,96 B",
+        "y_position": 884,
+        "x_min": 443,
+        "x_max": 810,
+        "confidence": 0.9731527103318108,
+        "line_number": 33,
+        "words_count": 9
+      },
+      {
+        "text": "Bitter Aperitiv 11 % 4,49 B",
+        "y_position": 905,
+        "x_min": 442,
+        "x_max": 803,
+        "confidence": 0.9648083746433258,
+        "line_number": 34,
+        "words_count": 6
+      },
+      {
+        "text": "Prosecco rosé 6,99 B",
+        "y_position": 925,
+        "x_min": 441,
+        "x_max": 802,
+        "confidence": 0.9717527627944946,
+        "line_number": 35,
+        "words_count": 4
+      },
+      {
+        "text": "Grill - Holzkohle 3,69 B",
+        "y_position": 948,
+        "x_min": 442,
+        "x_max": 801,
+        "confidence": 0.9783045291900635,
+        "line_number": 36,
+        "words_count": 5
+      },
+      {
+        "text": "Hähn.Keulen Diavolo 3,99 x 2 7,98 A",
+        "y_position": 969,
+        "x_min": 442,
+        "x_max": 808,
+        "confidence": 0.9521951419966561,
+        "line_number": 37,
+        "words_count": 7
+      },
+      {
+        "text": "RABATT 20 % -1,60",
+        "y_position": 993,
+        "x_min": 486,
+        "x_max": 781,
+        "confidence": 0.9852766394615173,
+        "line_number": 38,
+        "words_count": 4
+      },
+      {
+        "text": "QSHähn.Grill- & Ofenp . 4,49 x 3 13,47 A",
+        "y_position": 1013,
+        "x_min": 441,
+        "x_max": 807,
+        "confidence": 0.9280420078171624,
+        "line_number": 39,
+        "words_count": 9
+      },
+      {
+        "text": "zu zahlen 143,37",
+        "y_position": 1057,
+        "x_min": 442,
+        "x_max": 777,
+        "confidence": 0.9845511714617411,
+        "line_number": 40,
+        "words_count": 3
+      },
+      {
+        "text": "Karte 143,37",
+        "y_position": 1077,
+        "x_min": 441,
+        "x_max": 779,
+        "confidence": 0.9890764057636261,
+        "line_number": 41,
+        "words_count": 2
+      },
+      {
+        "text": "Gesamter Preisvorteil 4,44",
+        "y_position": 1118,
+        "x_min": 441,
+        "x_max": 805,
+        "confidence": 0.9709638953208923,
+        "line_number": 42,
+        "words_count": 3
+      },
+      {
+        "text": "MWSTX MWST + Netto = Brutto",
+        "y_position": 1162,
+        "x_min": 449,
+        "x_max": 777,
+        "confidence": 0.8921456833680471,
+        "line_number": 43,
+        "words_count": 6
+      },
+      {
+        "text": "A 7 % 7,34 104,90 112,24 Ը",
+        "y_position": 1179,
+        "x_min": 440,
+        "x_max": 872,
+        "confidence": 0.9288490414619446,
+        "line_number": 44,
+        "words_count": 7
+      },
+      {
+        "text": "B 19 % 4,97 26,16 31,13 NAV",
+        "y_position": 1195,
+        "x_min": 440,
+        "x_max": 1059,
+        "confidence": 0.961415307862418,
+        "line_number": 45,
+        "words_count": 7
+      },
+      {
+        "text": "Summe 12,31 131,06 143,37",
+        "y_position": 1225,
+        "x_min": 439,
+        "x_max": 774,
+        "confidence": 0.9865878820419312,
+        "line_number": 46,
+        "words_count": 4
+      },
+      {
+        "text": "Lade dir die Lidl Plus App herunter",
+        "y_position": 1291,
+        "x_min": 464,
+        "x_max": 764,
+        "confidence": 0.9703625525747027,
+        "line_number": 47,
+        "words_count": 7
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 1311,
+        "x_min": 446,
+        "x_max": 770,
+        "confidence": 0.9618667023522514,
+        "line_number": 48,
+        "words_count": 7
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1207294",
+        "y_position": 1420,
+        "x_min": 434,
+        "x_max": 698,
+        "confidence": 0.9650633633136749,
+        "line_number": 49,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-3",
+        "y_position": 1440,
+        "x_min": 432,
+        "x_max": 699,
+        "confidence": 0.9730258669172015,
+        "line_number": 50,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJ0GxOzRGtqga + dvZbaId8",
+        "y_position": 1459,
+        "x_min": 432,
+        "x_max": 793,
+        "confidence": 0.8864219103540693,
+        "line_number": 51,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1487,
+        "x_min": 431,
+        "x_max": 577,
+        "confidence": 0.9205091893672943,
+        "line_number": 52,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : EzrFazMucAFXbB + 05 / aEV3YF1pU4RZgB",
+        "y_position": 1503,
+        "x_min": 430,
+        "x_max": 791,
+        "confidence": 0.9586878248623439,
+        "line_number": 53,
+        "words_count": 7
+      },
+      {
+        "text": "m7w74vDAZgXImbSIXJdj + yGCoSTUYaIvZqSvTc5L01",
+        "y_position": 1524,
+        "x_min": 430,
+        "x_max": 790,
+        "confidence": 0.8436392545700073,
+        "line_number": 54,
+        "words_count": 3
+      },
+      {
+        "text": "PRESS + PjtvhmE5hRolREwXS7EpPZevBxmH2p732gBLttCcF PUSH",
+        "y_position": 1544,
+        "x_min": 114,
+        "x_max": 931,
+        "confidence": 0.91081702709198,
+        "line_number": 55,
+        "words_count": 4
+      },
+      {
+        "text": "dBBnTD42G2Ck",
+        "y_position": 1574,
+        "x_min": 428,
+        "x_max": 533,
+        "confidence": 0.8768215775489807,
+        "line_number": 56,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2463948",
+        "y_position": 1590,
+        "x_min": 427,
+        "x_max": 626,
+        "confidence": 0.9736261169115702,
+        "line_number": 57,
+        "words_count": 3
+      },
+      {
+        "text": "2025-07-31T10 : 41 : 47.00OZ",
+        "y_position": 1613,
+        "x_min": 426,
+        "x_max": 633,
+        "confidence": 0.9752030730247497,
+        "line_number": 58,
+        "words_count": 5
+      },
+      {
+        "text": "2025-07-31T10 : 43 : 08.000Z",
+        "y_position": 1634,
+        "x_min": 426,
+        "x_max": 634,
+        "confidence": 0.9723217129707337,
+        "line_number": 59,
+        "words_count": 5
+      },
+      {
+        "text": "6496 738145/03 31.07.25 12:41",
+        "y_position": 1654,
+        "x_min": 425,
+        "x_max": 785,
+        "confidence": 0.99138043820858,
+        "line_number": 60,
+        "words_count": 4
+      },
+      {
+        "text": "814060660",
+        "y_position": 1679,
+        "x_min": 555,
+        "x_max": 634,
+        "confidence": 0.9922229647636414,
+        "line_number": 61,
+        "words_count": 1
+      },
+      {
+        "text": "VOL",
+        "y_position": 1700,
+        "x_min": 893,
+        "x_max": 932,
+        "confidence": 0.9877892732620239,
+        "line_number": 62,
+        "words_count": 1
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1721,
+        "x_min": 501,
+        "x_max": 684,
+        "confidence": 0.9615395154271807,
+        "line_number": 63,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 1740,
+        "x_min": 501,
+        "x_max": 693,
+        "confidence": 0.989490807056427,
+        "line_number": 64,
+        "words_count": 2
+      },
+      {
+        "text": "143,37 EUR",
+        "y_position": 1779,
+        "x_min": 683,
+        "x_max": 766,
+        "confidence": 0.9875099360942841,
+        "line_number": 65,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag",
+        "y_position": 1800,
+        "x_min": 422,
+        "x_max": 475,
+        "confidence": 0.9894837141036987,
+        "line_number": 66,
+        "words_count": 1
+      },
+      {
+        "text": "12:41 T - ID 60155116",
+        "y_position": 1819,
+        "x_min": 562,
+        "x_max": 765,
+        "confidence": 0.9795501470565796,
+        "line_number": 67,
+        "words_count": 5
+      },
+      {
+        "text": "31.07.2025 2176102Beleg - Nr . 8514",
+        "y_position": 1836,
+        "x_min": 421,
+        "x_max": 765,
+        "confidence": 0.953410675128301,
+        "line_number": 68,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . ########## 1364 00",
+        "y_position": 1859,
+        "x_min": 421,
+        "x_max": 763,
+        "confidence": 0.9542265449251447,
+        "line_number": 69,
+        "words_count": 7
+      },
+      {
+        "text": "Kartennr . Online",
+        "y_position": 1881,
+        "x_min": 420,
+        "x_max": 762,
+        "confidence": 0.9347378412882487,
+        "line_number": 70,
+        "words_count": 3
+      },
+      {
+        "text": "Kontaktlos Chip 9801706496",
+        "y_position": 1898,
+        "x_min": 420,
+        "x_max": 720,
+        "confidence": 0.9885255098342896,
+        "line_number": 71,
+        "words_count": 3
+      },
+      {
+        "text": "VU Autorisierungsnummer - Nummer 981034",
+        "y_position": 1921,
+        "x_min": 420,
+        "x_max": 761,
+        "confidence": 0.96442152261734,
+        "line_number": 72,
+        "words_count": 5
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 1944,
+        "x_min": 418,
+        "x_max": 762,
+        "confidence": 0.9780932366847992,
+        "line_number": 73,
+        "words_count": 2
+      },
+      {
+        "text": "A0000003591010028001 / 00",
+        "y_position": 1962,
+        "x_min": 565,
+        "x_max": 760,
+        "confidence": 0.9913646976153055,
+        "line_number": 74,
+        "words_count": 3
+      },
+      {
+        "text": "EMV - Daten : **",
+        "y_position": 1993,
+        "x_min": 418,
+        "x_max": 758,
+        "confidence": 0.9534613728523255,
+        "line_number": 75,
+        "words_count": 5
+      },
+      {
+        "text": "Autorisierung erfolgt",
+        "y_position": 2014,
+        "x_min": 494,
+        "x_max": 677,
+        "confidence": 0.9587495028972626,
+        "line_number": 76,
+        "words_count": 2
+      },
+      {
+        "text": "**",
+        "y_position": 2041,
+        "x_min": 417,
+        "x_max": 435,
+        "confidence": 0.9339544773101807,
+        "line_number": 77,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 359,
+    "total_lines": 78,
+    "script_direction": "ltr"
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "zu zahlen",
+      "mwst",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 3,
+      "pl_PL": 1,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": null,
+    "store_address": null,
+    "confidence": 0.0,
+    "matched_in_line": -1
+  },
+  "metadata": {
+    "receipt_date": "2025-07-31",
+    "receipt_total": 143.37,
+    "currency": "EUR",
+    "date_raw": "2025-07-31",
+    "total_raw": "143,37",
+    "total_line_number": 40
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Schweinenackenbraten",
+        "quantity": null,
+        "price": null,
+        "total": 10.85,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "Schweinenackenbraten 10,85 A"
+      },
+      {
+        "name": "Schweinenackenbraten",
+        "quantity": null,
+        "price": null,
+        "total": 8.51,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "Schweinenackenbraten 8,51 A"
+      },
+      {
+        "name": "Schw.Spare Ribs BBQ",
+        "quantity": null,
+        "price": null,
+        "total": 7.64,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "Schw.Spare Ribs BBQ 7,64 A"
+      },
+      {
+        "name": "Schw.Spare Ribs BBQ",
+        "quantity": null,
+        "price": null,
+        "total": 7.32,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "Schw.Spare Ribs BBQ 7,32 A"
+      },
+      {
+        "name": "Spare Ribs mar .",
+        "quantity": null,
+        "price": null,
+        "total": 8.81,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Spare Ribs mar . 8,81 A"
+      },
+      {
+        "name": "Dill",
+        "quantity": null,
+        "price": null,
+        "total": 1.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "Dill 1,39 A"
+      },
+      {
+        "name": "Frühkart . 2,5kg",
+        "quantity": null,
+        "price": null,
+        "total": 2.69,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "Frühkart . 2,5kg 2,69 A"
+      },
+      {
+        "name": "Fairtrade Rosen x 4",
+        "quantity": 2.99,
+        "price": null,
+        "total": 11.96,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "Fairtrade Rosen 2,99 x 4 11,96 A"
+      },
+      {
+        "name": "Cocktailtomaten",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "Cocktailtomaten 1,49 A"
+      },
+      {
+        "name": "Rucola 125g",
+        "quantity": null,
+        "price": null,
+        "total": 0.85,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "Rucola 125g 0,85 A"
+      },
+      {
+        "name": "Gurken x 2",
+        "quantity": 0.95,
+        "price": null,
+        "total": 1.9,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "Gurken 0,95 x 2 1,90 A"
+      },
+      {
+        "name": "Zwiebeln rot",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "Zwiebeln rot 1,99 A"
+      },
+      {
+        "name": "Salakis Scheibe Natu x 4",
+        "quantity": 3.79,
+        "price": null,
+        "total": 15.16,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 23,
+        "raw_text": "Salakis Scheibe Natu 3,79 x 4 15,16 A"
+      },
+      {
+        "name": "Zaziki",
+        "quantity": null,
+        "price": null,
+        "total": 1.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "Zaziki 1,79 A"
+      },
+      {
+        "name": "Baguettes Kräuter",
+        "quantity": null,
+        "price": null,
+        "total": 1.95,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 26,
+        "raw_text": "Baguettes Kräuter 1,95 A"
+      },
+      {
+        "name": "Baguettes Knoblauch",
+        "quantity": null,
+        "price": null,
+        "total": 1.95,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "Baguettes Knoblauch 1,95 A"
+      },
+      {
+        "name": "Olivenöle natur",
+        "quantity": null,
+        "price": null,
+        "total": 4.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 28,
+        "raw_text": "Olivenöle natur 4,99 A"
+      },
+      {
+        "name": "Bull'sEyeFeink.Honey",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 29,
+        "raw_text": "Bull'sEyeFeink.Honey 3,99 A"
+      },
+      {
+        "name": "Red Bull Energy x 2",
+        "quantity": 1.75,
+        "price": null,
+        "total": 3.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 31,
+        "raw_text": "Red Bull Energy 1,75 x 2 3,50 B"
+      },
+      {
+        "name": "Pfand M x 2",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 0.5,
+        "is_discount": false,
+        "is_pfand": true,
+        "line_number": 32,
+        "raw_text": "Pfand 0,25 M 0,25 x 2 0,50 B"
+      },
+      {
+        "name": "WTG Orangensaft 100 % x 4",
+        "quantity": 2.99,
+        "price": null,
+        "total": 11.96,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 33,
+        "raw_text": "WTG Orangensaft 100 % 2,99 x 4 11,96 B"
+      },
+      {
+        "name": "Bitter Aperitiv 11 %",
+        "quantity": null,
+        "price": null,
+        "total": 4.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 34,
+        "raw_text": "Bitter Aperitiv 11 % 4,49 B"
+      },
+      {
+        "name": "Prosecco rosé",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 35,
+        "raw_text": "Prosecco rosé 6,99 B"
+      },
+      {
+        "name": "Grill - Holzkohle",
+        "quantity": null,
+        "price": null,
+        "total": 3.69,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 36,
+        "raw_text": "Grill - Holzkohle 3,69 B"
+      },
+      {
+        "name": "Hähn.Keulen Diavolo x 2",
+        "quantity": 3.99,
+        "price": null,
+        "total": 7.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 37,
+        "raw_text": "Hähn.Keulen Diavolo 3,99 x 2 7,98 A"
+      },
+      {
+        "name": "QSHähn.Grill- & Ofenp . x 3",
+        "quantity": 4.49,
+        "price": null,
+        "total": 13.47,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 39,
+        "raw_text": "QSHähn.Grill- & Ofenp . 4,49 x 3 13,47 A"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.3,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "Preisvorteil -0,30"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.4,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Preisvorteil -0,40"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.14,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "Preisvorteil -0,14"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -2.0,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 30,
+        "raw_text": "Preisvorteil -2,00"
+      },
+      {
+        "name": "RABATT 20 %",
+        "quantity": null,
+        "price": null,
+        "total": -1.6,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 38,
+        "raw_text": "RABATT 20 % -1,60"
+      }
+    ],
+    "items_count": 26,
+    "discounts_count": 5,
+    "items_total": 147.80999999999997,
+    "discounts_total": 4.4399999999999995,
+    "skipped_lines": 45,
+    "parsed_lines": 31
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 147.80999999999997,
+    "discounts_sum": 4.4399999999999995,
+    "calculated_total": 143.37,
+    "receipt_total": 143.37,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 46.87094688415527,
+  "stages_completed": 8
+}

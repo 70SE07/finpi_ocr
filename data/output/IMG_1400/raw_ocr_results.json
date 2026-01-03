@@ -1,0 +1,1485 @@
+{
+  "full_text": "CENTERSHOP Korn Vertriebs GmbH & Co.KG\nOlper Str. 107-117 51491 Overath\nKasse 2\n90162565 Energy Drink 250ml\n4047834300063 Pfand 25 Cent *0.2\n4016100252016 20Stk Poliboy Stau\n1.99\n*0.25\n3.49\n4250040934728 3-fach Schuko-Tisc\n5.99\n8694064015906 Lebensmittelkorb K\n8694064015906 Lebensmittelkorb K\n2.49\n2.49\nKaufsumme:\n16.70\nEC\n16.70\nSEPA Lastschrift\nKartenNr:\n*******132\nMWST%\nMwSt 19 %\n2.67\nMWST + Netto = Brutto\n14.03\n16.70\n02002452521906976226\n-K-U-N-D-E-N-B-E-L-E-G-\nTerminal-ID:\nTA-Nr 179557\nCDGM\nKartenzahlung\nkontaktlos\nSEPA Lastschrift\nTSD Online\nEUR 16,70\nKurz-BLZ\nKto.\nKarte 2\nIBAN\nG-ID\nM-ID\nAID\nDatum 07.08.25\nzahlung erfolgt\n54304763\nBNr 5156\n#####\n######8132\nDE3537############8132\nDE91SCL00000000756\n5430476351562508071147\n000000\n11:47 Uhr\nBITTE BELEG AUFBEWAHREN",
+  "words": [
+    {
+      "text": "CENTERSHOP",
+      "bounding_box": {
+        "x": 369,
+        "y": 135,
+        "width": 140,
+        "height": 39
+      },
+      "confidence": 0.9817865490913391
+    },
+    {
+      "text": "Korn",
+      "bounding_box": {
+        "x": 516,
+        "y": 153,
+        "width": 51,
+        "height": 27
+      },
+      "confidence": 0.9575239419937134
+    },
+    {
+      "text": "Vertriebs",
+      "bounding_box": {
+        "x": 575,
+        "y": 144,
+        "width": 118,
+        "height": 38
+      },
+      "confidence": 0.9837289452552795
+    },
+    {
+      "text": "GmbH",
+      "bounding_box": {
+        "x": 702,
+        "y": 133,
+        "width": 55,
+        "height": 30
+      },
+      "confidence": 0.9853188991546631
+    },
+    {
+      "text": "&",
+      "bounding_box": {
+        "x": 766,
+        "y": 131,
+        "width": 18,
+        "height": 24
+      },
+      "confidence": 0.9540125727653503
+    },
+    {
+      "text": "Co.KG",
+      "bounding_box": {
+        "x": 793,
+        "y": 126,
+        "width": 74,
+        "height": 29
+      },
+      "confidence": 0.939494788646698
+    },
+    {
+      "text": "Olper",
+      "bounding_box": {
+        "x": 410,
+        "y": 176,
+        "width": 72,
+        "height": 31
+      },
+      "confidence": 0.8421431183815002
+    },
+    {
+      "text": "Str",
+      "bounding_box": {
+        "x": 491,
+        "y": 181,
+        "width": 42,
+        "height": 26
+      },
+      "confidence": 0.95481276512146
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 534,
+        "y": 195,
+        "width": 11,
+        "height": 12
+      },
+      "confidence": 0.9171546101570129
+    },
+    {
+      "text": "107-117",
+      "bounding_box": {
+        "x": 558,
+        "y": 187,
+        "width": 86,
+        "height": 27
+      },
+      "confidence": 0.9885138273239136
+    },
+    {
+      "text": "51491",
+      "bounding_box": {
+        "x": 654,
+        "y": 175,
+        "width": 66,
+        "height": 32
+      },
+      "confidence": 0.9905097484588623
+    },
+    {
+      "text": "Overath",
+      "bounding_box": {
+        "x": 728,
+        "y": 159,
+        "width": 101,
+        "height": 39
+      },
+      "confidence": 0.9753841161727905
+    },
+    {
+      "text": "Kasse",
+      "bounding_box": {
+        "x": 773,
+        "y": 334,
+        "width": 71,
+        "height": 29
+      },
+      "confidence": 0.980512261390686
+    },
+    {
+      "text": "2",
+      "bounding_box": {
+        "x": 865,
+        "y": 331,
+        "width": 21,
+        "height": 24
+      },
+      "confidence": 0.9861546158790588
+    },
+    {
+      "text": "90162565",
+      "bounding_box": {
+        "x": 365,
+        "y": 408,
+        "width": 106,
+        "height": 38
+      },
+      "confidence": 0.9771047830581665
+    },
+    {
+      "text": "Energy",
+      "bounding_box": {
+        "x": 545,
+        "y": 406,
+        "width": 83,
+        "height": 37
+      },
+      "confidence": 0.9781177639961243
+    },
+    {
+      "text": "Drink",
+      "bounding_box": {
+        "x": 635,
+        "y": 404,
+        "width": 69,
+        "height": 37
+      },
+      "confidence": 0.9636252522468567
+    },
+    {
+      "text": "250ml",
+      "bounding_box": {
+        "x": 710,
+        "y": 403,
+        "width": 64,
+        "height": 37
+      },
+      "confidence": 0.8903720378875732
+    },
+    {
+      "text": "4047834300063",
+      "bounding_box": {
+        "x": 365,
+        "y": 442,
+        "width": 170,
+        "height": 36
+      },
+      "confidence": 0.9918035268783569
+    },
+    {
+      "text": "Pfand",
+      "bounding_box": {
+        "x": 545,
+        "y": 440,
+        "width": 66,
+        "height": 34
+      },
+      "confidence": 0.9895299077033997
+    },
+    {
+      "text": "25",
+      "bounding_box": {
+        "x": 623,
+        "y": 439,
+        "width": 27,
+        "height": 32
+      },
+      "confidence": 0.9831042289733887
+    },
+    {
+      "text": "Cent",
+      "bounding_box": {
+        "x": 661,
+        "y": 438,
+        "width": 52,
+        "height": 33
+      },
+      "confidence": 0.9812902808189392
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 725,
+        "y": 438,
+        "width": 12,
+        "height": 31
+      },
+      "confidence": 0.9381623268127441
+    },
+    {
+      "text": "0.2",
+      "bounding_box": {
+        "x": 739,
+        "y": 436,
+        "width": 38,
+        "height": 33
+      },
+      "confidence": 0.9686718583106995
+    },
+    {
+      "text": "4016100252016",
+      "bounding_box": {
+        "x": 365,
+        "y": 474,
+        "width": 171,
+        "height": 35
+      },
+      "confidence": 0.9929749965667725
+    },
+    {
+      "text": "20Stk",
+      "bounding_box": {
+        "x": 547,
+        "y": 473,
+        "width": 63,
+        "height": 33
+      },
+      "confidence": 0.9485703110694885
+    },
+    {
+      "text": "Poliboy",
+      "bounding_box": {
+        "x": 624,
+        "y": 472,
+        "width": 90,
+        "height": 33
+      },
+      "confidence": 0.9841376543045044
+    },
+    {
+      "text": "Stau",
+      "bounding_box": {
+        "x": 724,
+        "y": 471,
+        "width": 52,
+        "height": 33
+      },
+      "confidence": 0.9648500680923462
+    },
+    {
+      "text": "1.99",
+      "bounding_box": {
+        "x": 827,
+        "y": 401,
+        "width": 60,
+        "height": 37
+      },
+      "confidence": 0.8380822539329529
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 816,
+        "y": 436,
+        "width": 12,
+        "height": 31
+      },
+      "confidence": 0.9407199025154114
+    },
+    {
+      "text": "0.25",
+      "bounding_box": {
+        "x": 829,
+        "y": 434,
+        "width": 59,
+        "height": 33
+      },
+      "confidence": 0.9919509887695312
+    },
+    {
+      "text": "3.49",
+      "bounding_box": {
+        "x": 828,
+        "y": 469,
+        "width": 56,
+        "height": 33
+      },
+      "confidence": 0.9858140349388123
+    },
+    {
+      "text": "4250040934728",
+      "bounding_box": {
+        "x": 368,
+        "y": 513,
+        "width": 167,
+        "height": 24
+      },
+      "confidence": 0.9919793009757996
+    },
+    {
+      "text": "3",
+      "bounding_box": {
+        "x": 549,
+        "y": 513,
+        "width": 14,
+        "height": 24
+      },
+      "confidence": 0.9865636825561523
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 562,
+        "y": 513,
+        "width": 13,
+        "height": 24
+      },
+      "confidence": 0.9809837341308594
+    },
+    {
+      "text": "fach",
+      "bounding_box": {
+        "x": 576,
+        "y": 513,
+        "width": 51,
+        "height": 24
+      },
+      "confidence": 0.9937481880187988
+    },
+    {
+      "text": "Schuko",
+      "bounding_box": {
+        "x": 638,
+        "y": 513,
+        "width": 78,
+        "height": 24
+      },
+      "confidence": 0.978502631187439
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 716,
+        "y": 513,
+        "width": 13,
+        "height": 24
+      },
+      "confidence": 0.9529879689216614
+    },
+    {
+      "text": "Tisc",
+      "bounding_box": {
+        "x": 728,
+        "y": 513,
+        "width": 52,
+        "height": 24
+      },
+      "confidence": 0.9103226661682129
+    },
+    {
+      "text": "5.99",
+      "bounding_box": {
+        "x": 829,
+        "y": 501,
+        "width": 54,
+        "height": 25
+      },
+      "confidence": 0.9889634847640991
+    },
+    {
+      "text": "8694064015906",
+      "bounding_box": {
+        "x": 369,
+        "y": 544,
+        "width": 166,
+        "height": 26
+      },
+      "confidence": 0.9924721717834473
+    },
+    {
+      "text": "Lebensmittelkorb",
+      "bounding_box": {
+        "x": 550,
+        "y": 543,
+        "width": 205,
+        "height": 26
+      },
+      "confidence": 0.9875209927558899
+    },
+    {
+      "text": "K",
+      "bounding_box": {
+        "x": 764,
+        "y": 543,
+        "width": 16,
+        "height": 24
+      },
+      "confidence": 0.9274289608001709
+    },
+    {
+      "text": "8694064015906",
+      "bounding_box": {
+        "x": 369,
+        "y": 575,
+        "width": 168,
+        "height": 26
+      },
+      "confidence": 0.991857647895813
+    },
+    {
+      "text": "Lebensmittelkorb",
+      "bounding_box": {
+        "x": 550,
+        "y": 574,
+        "width": 205,
+        "height": 26
+      },
+      "confidence": 0.9819415807723999
+    },
+    {
+      "text": "K",
+      "bounding_box": {
+        "x": 766,
+        "y": 574,
+        "width": 15,
+        "height": 24
+      },
+      "confidence": 0.8957552909851074
+    },
+    {
+      "text": "2.49",
+      "bounding_box": {
+        "x": 830,
+        "y": 534,
+        "width": 53,
+        "height": 24
+      },
+      "confidence": 0.9903626441955566
+    },
+    {
+      "text": "2.49",
+      "bounding_box": {
+        "x": 830,
+        "y": 568,
+        "width": 53,
+        "height": 23
+      },
+      "confidence": 0.9899076223373413
+    },
+    {
+      "text": "Kaufsumme",
+      "bounding_box": {
+        "x": 370,
+        "y": 642,
+        "width": 118,
+        "height": 22
+      },
+      "confidence": 0.9854223132133484
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 490,
+        "y": 644,
+        "width": 9,
+        "height": 20
+      },
+      "confidence": 0.8764578700065613
+    },
+    {
+      "text": "16.70",
+      "bounding_box": {
+        "x": 822,
+        "y": 633,
+        "width": 64,
+        "height": 24
+      },
+      "confidence": 0.9923856258392334
+    },
+    {
+      "text": "EC",
+      "bounding_box": {
+        "x": 374,
+        "y": 707,
+        "width": 27,
+        "height": 19
+      },
+      "confidence": 0.9766737818717957
+    },
+    {
+      "text": "16.70",
+      "bounding_box": {
+        "x": 822,
+        "y": 698,
+        "width": 62,
+        "height": 23
+      },
+      "confidence": 0.9923813939094543
+    },
+    {
+      "text": "SEPA",
+      "bounding_box": {
+        "x": 539,
+        "y": 736,
+        "width": 53,
+        "height": 25
+      },
+      "confidence": 0.9702885746955872
+    },
+    {
+      "text": "Lastschrift",
+      "bounding_box": {
+        "x": 602,
+        "y": 731,
+        "width": 141,
+        "height": 28
+      },
+      "confidence": 0.9721823930740356
+    },
+    {
+      "text": "KartenNr",
+      "bounding_box": {
+        "x": 388,
+        "y": 770,
+        "width": 103,
+        "height": 21
+      },
+      "confidence": 0.9837816953659058
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 493,
+        "y": 771,
+        "width": 9,
+        "height": 19
+      },
+      "confidence": 0.9490894675254822
+    },
+    {
+      "text": "*******",
+      "bounding_box": {
+        "x": 756,
+        "y": 763,
+        "width": 90,
+        "height": 23
+      },
+      "confidence": 0.9448294639587402
+    },
+    {
+      "text": "132",
+      "bounding_box": {
+        "x": 848,
+        "y": 762,
+        "width": 39,
+        "height": 22
+      },
+      "confidence": 0.9896921515464783
+    },
+    {
+      "text": "MWST",
+      "bounding_box": {
+        "x": 376,
+        "y": 834,
+        "width": 53,
+        "height": 20
+      },
+      "confidence": 0.9767880439758301
+    },
+    {
+      "text": "%",
+      "bounding_box": {
+        "x": 427,
+        "y": 834,
+        "width": 16,
+        "height": 20
+      },
+      "confidence": 0.9690358638763428
+    },
+    {
+      "text": "MwSt",
+      "bounding_box": {
+        "x": 377,
+        "y": 864,
+        "width": 52,
+        "height": 22
+      },
+      "confidence": 0.9662337899208069
+    },
+    {
+      "text": "19",
+      "bounding_box": {
+        "x": 443,
+        "y": 864,
+        "width": 25,
+        "height": 21
+      },
+      "confidence": 0.9836037755012512
+    },
+    {
+      "text": "%",
+      "bounding_box": {
+        "x": 477,
+        "y": 864,
+        "width": 15,
+        "height": 21
+      },
+      "confidence": 0.9859557151794434
+    },
+    {
+      "text": "2.67",
+      "bounding_box": {
+        "x": 590,
+        "y": 860,
+        "width": 52,
+        "height": 25
+      },
+      "confidence": 0.9896214604377747
+    },
+    {
+      "text": "MWST",
+      "bounding_box": {
+        "x": 591,
+        "y": 830,
+        "width": 50,
+        "height": 24
+      },
+      "confidence": 0.9820618033409119
+    },
+    {
+      "text": "+",
+      "bounding_box": {
+        "x": 655,
+        "y": 830,
+        "width": 9,
+        "height": 22
+      },
+      "confidence": 0.575218141078949
+    },
+    {
+      "text": "Netto",
+      "bounding_box": {
+        "x": 679,
+        "y": 828,
+        "width": 64,
+        "height": 24
+      },
+      "confidence": 0.9732686877250671
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 755,
+        "y": 828,
+        "width": 13,
+        "height": 22
+      },
+      "confidence": 0.9020007848739624
+    },
+    {
+      "text": "Brutto",
+      "bounding_box": {
+        "x": 806,
+        "y": 825,
+        "width": 79,
+        "height": 24
+      },
+      "confidence": 0.9559203386306763
+    },
+    {
+      "text": "14.03",
+      "bounding_box": {
+        "x": 682,
+        "y": 859,
+        "width": 60,
+        "height": 24
+      },
+      "confidence": 0.991157591342926
+    },
+    {
+      "text": "16.70",
+      "bounding_box": {
+        "x": 822,
+        "y": 856,
+        "width": 64,
+        "height": 25
+      },
+      "confidence": 0.9907535314559937
+    },
+    {
+      "text": "02002452521906976226",
+      "bounding_box": {
+        "x": 461,
+        "y": 1026,
+        "width": 330,
+        "height": 27
+      },
+      "confidence": 0.982631504535675
+    },
+    {
+      "text": "-K",
+      "bounding_box": {
+        "x": 490,
+        "y": 1373,
+        "width": 23,
+        "height": 21
+      },
+      "confidence": 0.8655294179916382
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 514,
+        "y": 1373,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9687221646308899
+    },
+    {
+      "text": "U",
+      "bounding_box": {
+        "x": 525,
+        "y": 1373,
+        "width": 13,
+        "height": 21
+      },
+      "confidence": 0.9833030700683594
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 539,
+        "y": 1373,
+        "width": 10,
+        "height": 21
+      },
+      "confidence": 0.9735054969787598
+    },
+    {
+      "text": "N",
+      "bounding_box": {
+        "x": 551,
+        "y": 1373,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9911026358604431
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 563,
+        "y": 1372,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9558733701705933
+    },
+    {
+      "text": "D",
+      "bounding_box": {
+        "x": 574,
+        "y": 1372,
+        "width": 13,
+        "height": 21
+      },
+      "confidence": 0.9591358304023743
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 589,
+        "y": 1372,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9646315574645996
+    },
+    {
+      "text": "E",
+      "bounding_box": {
+        "x": 600,
+        "y": 1372,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9879189133644104
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 613,
+        "y": 1372,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9689057469367981
+    },
+    {
+      "text": "N",
+      "bounding_box": {
+        "x": 625,
+        "y": 1372,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9818985462188721
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 638,
+        "y": 1371,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9618465900421143
+    },
+    {
+      "text": "B",
+      "bounding_box": {
+        "x": 650,
+        "y": 1371,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9588391780853271
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 663,
+        "y": 1371,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9646344184875488
+    },
+    {
+      "text": "E",
+      "bounding_box": {
+        "x": 675,
+        "y": 1371,
+        "width": 13,
+        "height": 21
+      },
+      "confidence": 0.9802616238594055
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 687,
+        "y": 1371,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9654664993286133
+    },
+    {
+      "text": "L",
+      "bounding_box": {
+        "x": 700,
+        "y": 1371,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9656304717063904
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 713,
+        "y": 1370,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9523771405220032
+    },
+    {
+      "text": "E",
+      "bounding_box": {
+        "x": 726,
+        "y": 1370,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9751501679420471
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 738,
+        "y": 1370,
+        "width": 12,
+        "height": 21
+      },
+      "confidence": 0.9640524387359619
+    },
+    {
+      "text": "G-",
+      "bounding_box": {
+        "x": 749,
+        "y": 1370,
+        "width": 25,
+        "height": 21
+      },
+      "confidence": 0.9483419060707092
+    },
+    {
+      "text": "Terminal",
+      "bounding_box": {
+        "x": 393,
+        "y": 1495,
+        "width": 96,
+        "height": 23
+      },
+      "confidence": 0.9859125018119812
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 491,
+        "y": 1497,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9732626080513
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 504,
+        "y": 1497,
+        "width": 25,
+        "height": 21
+      },
+      "confidence": 0.9883724451065063
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 541,
+        "y": 1497,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9244142174720764
+    },
+    {
+      "text": "TA",
+      "bounding_box": {
+        "x": 392,
+        "y": 1525,
+        "width": 28,
+        "height": 22
+      },
+      "confidence": 0.9833953380584717
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 417,
+        "y": 1525,
+        "width": 11,
+        "height": 21
+      },
+      "confidence": 0.9610017538070679
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 429,
+        "y": 1526,
+        "width": 24,
+        "height": 22
+      },
+      "confidence": 0.946709156036377
+    },
+    {
+      "text": "179557",
+      "bounding_box": {
+        "x": 468,
+        "y": 1527,
+        "width": 71,
+        "height": 23
+      },
+      "confidence": 0.9926366806030273
+    },
+    {
+      "text": "CDGM",
+      "bounding_box": {
+        "x": 382,
+        "y": 1809,
+        "width": 53,
+        "height": 26
+      },
+      "confidence": 0.9878086447715759
+    },
+    {
+      "text": "Kartenzahlung",
+      "bounding_box": {
+        "x": 552,
+        "y": 1587,
+        "width": 165,
+        "height": 23
+      },
+      "confidence": 0.982205331325531
+    },
+    {
+      "text": "kontaktlos",
+      "bounding_box": {
+        "x": 578,
+        "y": 1618,
+        "width": 124,
+        "height": 21
+      },
+      "confidence": 0.9467306137084961
+    },
+    {
+      "text": "SEPA",
+      "bounding_box": {
+        "x": 540,
+        "y": 1650,
+        "width": 51,
+        "height": 22
+      },
+      "confidence": 0.9774739742279053
+    },
+    {
+      "text": "Lastschrift",
+      "bounding_box": {
+        "x": 604,
+        "y": 1650,
+        "width": 138,
+        "height": 22
+      },
+      "confidence": 0.9824828505516052
+    },
+    {
+      "text": "TSD",
+      "bounding_box": {
+        "x": 579,
+        "y": 1682,
+        "width": 38,
+        "height": 22
+      },
+      "confidence": 0.9862365126609802
+    },
+    {
+      "text": "Online",
+      "bounding_box": {
+        "x": 627,
+        "y": 1682,
+        "width": 79,
+        "height": 23
+      },
+      "confidence": 0.9887125492095947
+    },
+    {
+      "text": "EUR",
+      "bounding_box": {
+        "x": 464,
+        "y": 1748,
+        "width": 38,
+        "height": 23
+      },
+      "confidence": 0.9900484681129456
+    },
+    {
+      "text": "16,70",
+      "bounding_box": {
+        "x": 517,
+        "y": 1748,
+        "width": 62,
+        "height": 23
+      },
+      "confidence": 0.9904550313949585
+    },
+    {
+      "text": "Kurz",
+      "bounding_box": {
+        "x": 378,
+        "y": 1845,
+        "width": 56,
+        "height": 23
+      },
+      "confidence": 0.9762150049209595
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 434,
+        "y": 1845,
+        "width": 11,
+        "height": 23
+      },
+      "confidence": 0.9670711159706116
+    },
+    {
+      "text": "BLZ",
+      "bounding_box": {
+        "x": 446,
+        "y": 1845,
+        "width": 40,
+        "height": 23
+      },
+      "confidence": 0.9711633920669556
+    },
+    {
+      "text": "Kto",
+      "bounding_box": {
+        "x": 377,
+        "y": 1879,
+        "width": 42,
+        "height": 21
+      },
+      "confidence": 0.9668787717819214
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 421,
+        "y": 1881,
+        "width": 8,
+        "height": 18
+      },
+      "confidence": 0.9308001399040222
+    },
+    {
+      "text": "Karte",
+      "bounding_box": {
+        "x": 378,
+        "y": 1910,
+        "width": 67,
+        "height": 19
+      },
+      "confidence": 0.9821397066116333
+    },
+    {
+      "text": "2",
+      "bounding_box": {
+        "x": 457,
+        "y": 1910,
+        "width": 15,
+        "height": 19
+      },
+      "confidence": 0.713837206363678
+    },
+    {
+      "text": "IBAN",
+      "bounding_box": {
+        "x": 380,
+        "y": 1939,
+        "width": 51,
+        "height": 22
+      },
+      "confidence": 0.8414954543113708
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 379,
+        "y": 1963,
+        "width": 15,
+        "height": 20
+      },
+      "confidence": 0.9172183275222778
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 391,
+        "y": 1964,
+        "width": 18,
+        "height": 21
+      },
+      "confidence": 0.3189692199230194
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 406,
+        "y": 1965,
+        "width": 24,
+        "height": 21
+      },
+      "confidence": 0.9705191850662231
+    },
+    {
+      "text": "M",
+      "bounding_box": {
+        "x": 378,
+        "y": 1994,
+        "width": 16,
+        "height": 19
+      },
+      "confidence": 0.9320892095565796
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 390,
+        "y": 1993,
+        "width": 16,
+        "height": 19
+      },
+      "confidence": 0.3292858600616455
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 405,
+        "y": 1991,
+        "width": 25,
+        "height": 21
+      },
+      "confidence": 0.9202709197998047
+    },
+    {
+      "text": "AID",
+      "bounding_box": {
+        "x": 378,
+        "y": 2020,
+        "width": 39,
+        "height": 19
+      },
+      "confidence": 0.9904714226722717
+    },
+    {
+      "text": "Datum",
+      "bounding_box": {
+        "x": 376,
+        "y": 2043,
+        "width": 67,
+        "height": 23
+      },
+      "confidence": 0.9648866057395935
+    },
+    {
+      "text": "07.08.25",
+      "bounding_box": {
+        "x": 454,
+        "y": 2039,
+        "width": 105,
+        "height": 24
+      },
+      "confidence": 0.9882702231407166
+    },
+    {
+      "text": "zahlung",
+      "bounding_box": {
+        "x": 376,
+        "y": 2094,
+        "width": 93,
+        "height": 23
+      },
+      "confidence": 0.945834219455719
+    },
+    {
+      "text": "erfolgt",
+      "bounding_box": {
+        "x": 478,
+        "y": 2094,
+        "width": 89,
+        "height": 23
+      },
+      "confidence": 0.9873412251472473
+    },
+    {
+      "text": "54304763",
+      "bounding_box": {
+        "x": 789,
+        "y": 1493,
+        "width": 100,
+        "height": 21
+      },
+      "confidence": 0.991212010383606
+    },
+    {
+      "text": "BNr",
+      "bounding_box": {
+        "x": 790,
+        "y": 1524,
+        "width": 39,
+        "height": 21
+      },
+      "confidence": 0.9596996903419495
+    },
+    {
+      "text": "5156",
+      "bounding_box": {
+        "x": 841,
+        "y": 1524,
+        "width": 50,
+        "height": 23
+      },
+      "confidence": 0.990849494934082
+    },
+    {
+      "text": "#####",
+      "bounding_box": {
+        "x": 841,
+        "y": 1847,
+        "width": 63,
+        "height": 24
+      },
+      "confidence": 0.9516562819480896
+    },
+    {
+      "text": "######",
+      "bounding_box": {
+        "x": 775,
+        "y": 1881,
+        "width": 76,
+        "height": 20
+      },
+      "confidence": 0.9394365549087524
+    },
+    {
+      "text": "8132",
+      "bounding_box": {
+        "x": 852,
+        "y": 1881,
+        "width": 51,
+        "height": 20
+      },
+      "confidence": 0.9926742315292358
+    },
+    {
+      "text": "DE3537",
+      "bounding_box": {
+        "x": 614,
+        "y": 1930,
+        "width": 78,
+        "height": 23
+      },
+      "confidence": 0.9825780987739563
+    },
+    {
+      "text": "############",
+      "bounding_box": {
+        "x": 693,
+        "y": 1933,
+        "width": 154,
+        "height": 25
+      },
+      "confidence": 0.9515235424041748
+    },
+    {
+      "text": "8132",
+      "bounding_box": {
+        "x": 848,
+        "y": 1938,
+        "width": 52,
+        "height": 22
+      },
+      "confidence": 0.9884555339813232
+    },
+    {
+      "text": "DE91SCL00000000756",
+      "bounding_box": {
+        "x": 664,
+        "y": 1959,
+        "width": 234,
+        "height": 27
+      },
+      "confidence": 0.9652617573738098
+    },
+    {
+      "text": "5430476351562508071147",
+      "bounding_box": {
+        "x": 611,
+        "y": 1984,
+        "width": 283,
+        "height": 29
+      },
+      "confidence": 0.9911291003227234
+    },
+    {
+      "text": "000000",
+      "bounding_box": {
+        "x": 814,
+        "y": 2017,
+        "width": 78,
+        "height": 21
+      },
+      "confidence": 0.9823127388954163
+    },
+    {
+      "text": "11:47",
+      "bounding_box": {
+        "x": 776,
+        "y": 2042,
+        "width": 60,
+        "height": 19
+      },
+      "confidence": 0.989334762096405
+    },
+    {
+      "text": "Uhr",
+      "bounding_box": {
+        "x": 850,
+        "y": 2045,
+        "width": 38,
+        "height": 18
+      },
+      "confidence": 0.9616986513137817
+    },
+    {
+      "text": "BITTE",
+      "bounding_box": {
+        "x": 477,
+        "y": 2175,
+        "width": 63,
+        "height": 21
+      },
+      "confidence": 0.9904683232307434
+    },
+    {
+      "text": "BELEG",
+      "bounding_box": {
+        "x": 552,
+        "y": 2175,
+        "width": 63,
+        "height": 21
+      },
+      "confidence": 0.992403507232666
+    },
+    {
+      "text": "AUFBEWAHREN",
+      "bounding_box": {
+        "x": 627,
+        "y": 2175,
+        "width": 140,
+        "height": 21
+      },
+      "confidence": 0.9903295040130615
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_1400",
+    "image_width": 1237,
+    "image_height": 2200,
+    "processed_at": "2026-01-03T03:14:59.389272",
+    "preprocessing_applied": [
+      "compression",
+      "grayscale"
+    ]
+  }
+}

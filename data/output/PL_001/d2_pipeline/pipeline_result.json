@@ -1,0 +1,1009 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "A TORBA RECYKLING 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 0.79,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "A TORBA RECYKLING 1 * 0.79 = 0.79 A"
+      },
+      {
+        "name": "A_TORBA RECYKLING uqu 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 0.79,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "A_TORBA RECYKLING uqu 1 * 0.79 = 0.79 A"
+      },
+      {
+        "name": "C_JOG.D / P SKYR H.PR 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 6.75,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_JOG.D / P SKYR H.PR 1 * 6.75 = 6.75 C"
+      },
+      {
+        "name": "C.JOG.D / P SKYR HEN 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.75,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C.JOG.D / P SKYR HEN 1 * 5.75 = 5.75 C"
+      },
+      {
+        "name": "C_JOG.D / P SKYR LIND 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_JOG.D / P SKYR LIND 1 * 5,99 = 5,99 C"
+      },
+      {
+        "name": "C.ZIEMNIAKI SŁODKIE 0,694 * 9.99",
+        "quantity": 0.694,
+        "price": null,
+        "total": 6.93,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C.ZIEMNIAKI SŁODKIE 0,694 * 9.99 6,93 C"
+      },
+      {
+        "name": "C POMELO CZERWONE L 0.762 * 9.99 =",
+        "quantity": 0.762,
+        "price": null,
+        "total": 7.61,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C POMELO CZERWONE L 0.762 * 9.99 = 7.61 C"
+      },
+      {
+        "name": "A OSHIORNICA MACKI 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 41.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A"
+      },
+      {
+        "name": "A OSHIORNICA MACKI 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 41.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A"
+      },
+      {
+        "name": "A BIO CZEKOL.COCOA 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 13.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "A BIO CZEKOL.COCOA 1 * 13.99 = 13,99 A"
+      },
+      {
+        "name": "C_MC KOPEREK PĘCZEK BYAR 1x =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_MC KOPEREK PĘCZEK BYAR 1x5,99 = 5,99 C"
+      },
+      {
+        "name": "C_MC SAŁATA RZYMSKA 1 × =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_MC SAŁATA RZYMSKA 1 × 5,99 = 5,99 C"
+      },
+      {
+        "name": "C MC BIO KRAKERSY P 1x =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 7.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C MC BIO KRAKERSY P 1x7,99 = 7,99 C"
+      },
+      {
+        "name": "CMC KIEŁKI JARMUZU 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 4.65,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "CMC KIEŁKI JARMUZU 1 * 4,65 = 4,65 C"
+      },
+      {
+        "name": "C_SIMPL POMIDOR DAK 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_SIMPL POMIDOR DAK 1 * 5,99 = 5,99 C"
+      },
+      {
+        "name": "C_SEREK PHILADELPHI 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 7.29,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_SEREK PHILADELPHI 1 * 7,29 = 7,29 C"
+      },
+      {
+        "name": "C BAKALLAND DAKTYL 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 8.49,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C BAKALLAND DAKTYL 1 * 8,49 = 8,49 C"
+      },
+      {
+        "name": "C_JZN CZOSNEK SZTUK 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_JZN CZOSNEK SZTUK 1 * 1,99 = 1,99 C"
+      },
+      {
+        "name": "C BANANY PLANTANY 6 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 14.99,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C BANANY PLANTANY 6 1 * 14.99 = 14.99 C"
+      },
+      {
+        "name": "CHC MANDARYNKI LUZJAVA 1.398-8.99 = €",
+        "quantity": null,
+        "price": null,
+        "total": 12.57,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "CHC MANDARYNKI LUZJAVA 1.398-8.99 = 12.57 €"
+      },
+      {
+        "name": "C_JZN JABŁKA CHAMPI 0,668 * 4,99",
+        "quantity": 0.668,
+        "price": null,
+        "total": 3.33,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C"
+      },
+      {
+        "name": "C.JZN JABŁKA CHAMPI 0,668 * 4,99",
+        "quantity": 0.668,
+        "price": null,
+        "total": 3.33,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C.JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C"
+      },
+      {
+        "name": "C_JZN JABŁKA CHANPI 0.668 * 4.99",
+        "quantity": 0.668,
+        "price": null,
+        "total": -3.33,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_JZN JABŁKA CHANPI 0.668 * 4.99 -3,33 C"
+      },
+      {
+        "name": "C_CYTRYNY LUZ 0,29 9,99",
+        "quantity": null,
+        "price": null,
+        "total": 2.9,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_CYTRYNY LUZ 0,29 9,99 2,90 C"
+      },
+      {
+        "name": "C_TWARÓG WIEJSKI KL 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.79,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_TWARÓG WIEJSKI KL 1 * 5,79 = 5,79 C"
+      },
+      {
+        "name": "CMC BIO AOP SER PA sbob b2ysio 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 20.69,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "CMC BIO AOP SER PA sbob b2ysio 1 * 20,69 = 20.69 C"
+      },
+      {
+        "name": "C_JAJA FARMIO H10 W 1 ×",
+        "quantity": 1.0,
+        "price": null,
+        "total": 13.09,
+        "date": "2025-11-19 00:00:00",
+        "raw_text": "C_JAJA FARMIO H10 W 1 × 13,09 13,09 C"
+      }
+    ],
+    "total_amount": 254.32,
+    "merchant": "carrefour",
+    "store_address": "03-734 Warszawa ul . Targowa 72, fque Tel . ( 22 ) 511-26-00 дом, CARREFOUR Polska Sp . z o . 0 .",
+    "date": "2025-11-19 00:00:00",
+    "receipt_id": "PL_001",
+    "ocr_text": "dul\ngas\nCARREFOUR CH Wileńska\n03-734 Warszawa ul. Targowa 72\nfque Tel. (22) 511-26-00\n2025-11-19\nCARREFOUR Polska Sp. z o. 0.\n03-734 Warszawa ul. Targowa 72\nNr rej. BDO: 000009699\nA TORBA RECYKLING\nA_TORBA RECYKLING\nC_JOG.D/P SKYR H.PR\nC.JOG.D/P SKYR HEN\nC_JOG.D/P SKYR LIND\nC.ZIEMNIAKI SŁODKIE\nC POMELO CZERWONE L\nA OSHIORNICA MACKI\nA OSHIORNICA MACKI\nA BIO CZEKOL.COCOA\nC_MC KOPEREK PĘCZEK\nC_MC SAŁATA RZYMSKA\nC MC BIO KRAKERSY P\nCMC KIEŁKI JARMUZU\nC_SIMPL POMIDOR DAK\nC_SEREK PHILADELPHI\nC BAKALLAND DAKTYL\nC_JZN CZOSNEK SZTUK\nNIP 937-00-08-168\nGid\nдом\nnr wydr.072002/1258\nPARAGON FISKALNY.072002/15\nPARAG\n1*0.79= 0.79 A\n1*0.79= 0.79 A\nuqu\n1*6.75= 6.75 C\n1*5.75= 5.75 C\n1*5,99= 5,99 C\n0,694*9.99 6,93 C\n0.762*9.99= 7.61 C\n1*41.99= 41.99 A\n1*41.99= 41.99 A\n1*13.99= 13,99 A\n1x5,99= 5,99 C\nBYAR\n1×5,99= 5,99 C\n1x7,99= 7,99 C\n1*4,65= 4,65 C\n1*5,99= 5,99 C\n1*7,29= 7,29 C\n1*8,49= 8,49 C\n1*1,99= 1,99 C\n1*14.99= 14.99 C\nC\n0,668*4,99 3,33 C\n0,668*4,99 3,33 C\nCHC MANDARYNKI LUZJAVA 1.398-8.99= 12.57 €\nC BANANY PLANTANY 6\nC_JZN JABŁKA CHAMPI\nC.JZN JABŁKA CHAMPI\nC_JZN JABŁKA CHANPI\n0.668*4.99 -3,33 C\n***Anulovano sprzedaż***\nC_CYTRYNY LUZ\nC_TWARÓG WIEJSKI KL\nCMC BIO AOP SER PA\nC_JAJA FARMIO H10 W\nSprzed. opod. PTU A\nKwota A 23,00%\nSprzed. opod. PTU C\nKuota C 05,00%\nsbob b2ysio\n0,29 9,99 2,90 C\n1*5,79= 5,79 C\n1*20,69= 20.69 C\n1×13,09 13,09 C\n99.55\n18.62\n154.77\n7.37\n25.99\nPodatek PTU\nSUMA PLN YAH ob 254.32\n000106 #019 038\n19647F707FD77CC40E 48F7975FEF9AE5F9C238DD\n18:10\nPCCO 1701480375\n00111019254772511193\nPłatność: KARTAPIATNI\nKasjer\n254,32\n038\nNr transakcji\n25477\nZ kartę PAYBACK zyskałbyś 84 punktów!",
+    "detected_locale": "pl_PL",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 27.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "dul",
+        "y_position": 45,
+        "x_min": 614,
+        "x_max": 644,
+        "confidence": 0.8352282047271729,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "gas CARREFOUR CH Wileńska Gid",
+        "y_position": 101,
+        "x_min": 311,
+        "x_max": 683,
+        "confidence": 0.7131028771400452,
+        "line_number": 1,
+        "words_count": 5
+      },
+      {
+        "text": "03-734 Warszawa ul . Targowa 72",
+        "y_position": 117,
+        "x_min": 384,
+        "x_max": 602,
+        "confidence": 0.9156910081704458,
+        "line_number": 2,
+        "words_count": 6
+      },
+      {
+        "text": "fque Tel . ( 22 ) 511-26-00 дом",
+        "y_position": 133,
+        "x_min": 325,
+        "x_max": 666,
+        "confidence": 0.8496204987168312,
+        "line_number": 3,
+        "words_count": 8
+      },
+      {
+        "text": "CARREFOUR Polska Sp . z o . 0 .",
+        "y_position": 151,
+        "x_min": 391,
+        "x_max": 593,
+        "confidence": 0.8599121570587158,
+        "line_number": 4,
+        "words_count": 9
+      },
+      {
+        "text": "03-734 Warszawa ul . Targowa 72",
+        "y_position": 171,
+        "x_min": 383,
+        "x_max": 602,
+        "confidence": 0.928006629149119,
+        "line_number": 5,
+        "words_count": 6
+      },
+      {
+        "text": "Nr rej . BDO : 000009699",
+        "y_position": 190,
+        "x_min": 413,
+        "x_max": 574,
+        "confidence": 0.9448621074358622,
+        "line_number": 6,
+        "words_count": 6
+      },
+      {
+        "text": "NIP 937-00-08-168",
+        "y_position": 208,
+        "x_min": 434,
+        "x_max": 559,
+        "confidence": 0.9834440350532532,
+        "line_number": 7,
+        "words_count": 2
+      },
+      {
+        "text": "2025-11-19 PARAGON PARAG FISKALNY.072002 nr wydr.072002 / / 15 1258",
+        "y_position": 224,
+        "x_min": 288,
+        "x_max": 694,
+        "confidence": 0.7944156944751739,
+        "line_number": 8,
+        "words_count": 10
+      },
+      {
+        "text": "A TORBA RECYKLING 1 * 0.79 = 0.79 A",
+        "y_position": 263,
+        "x_min": 289,
+        "x_max": 693,
+        "confidence": 0.878729866610633,
+        "line_number": 9,
+        "words_count": 9
+      },
+      {
+        "text": "A_TORBA RECYKLING uqu 1 * 0.79 = 0.79 A",
+        "y_position": 279,
+        "x_min": 289,
+        "x_max": 694,
+        "confidence": 0.8656528658337064,
+        "line_number": 10,
+        "words_count": 9
+      },
+      {
+        "text": "C_JOG.D / P SKYR H.PR 1 * 6.75 = 6.75 C",
+        "y_position": 301,
+        "x_min": 288,
+        "x_max": 694,
+        "confidence": 0.8816111954775724,
+        "line_number": 11,
+        "words_count": 11
+      },
+      {
+        "text": "C.JOG.D / P SKYR HEN 1 * 5.75 = 5.75 C",
+        "y_position": 320,
+        "x_min": 289,
+        "x_max": 693,
+        "confidence": 0.898340490731326,
+        "line_number": 12,
+        "words_count": 11
+      },
+      {
+        "text": "C_JOG.D / P SKYR LIND 1 * 5,99 = 5,99 C",
+        "y_position": 339,
+        "x_min": 289,
+        "x_max": 692,
+        "confidence": 0.8839937611059709,
+        "line_number": 13,
+        "words_count": 11
+      },
+      {
+        "text": "C.ZIEMNIAKI SŁODKIE 0,694 * 9.99 6,93 C",
+        "y_position": 358,
+        "x_min": 290,
+        "x_max": 692,
+        "confidence": 0.8405692492212568,
+        "line_number": 14,
+        "words_count": 7
+      },
+      {
+        "text": "C POMELO CZERWONE L 0.762 * 9.99 = 7.61 C",
+        "y_position": 377,
+        "x_min": 290,
+        "x_max": 692,
+        "confidence": 0.8828039824962616,
+        "line_number": 15,
+        "words_count": 10
+      },
+      {
+        "text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A",
+        "y_position": 396,
+        "x_min": 290,
+        "x_max": 692,
+        "confidence": 0.8924110068215264,
+        "line_number": 16,
+        "words_count": 9
+      },
+      {
+        "text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A",
+        "y_position": 418,
+        "x_min": 290,
+        "x_max": 694,
+        "confidence": 0.8606982164912753,
+        "line_number": 17,
+        "words_count": 9
+      },
+      {
+        "text": "A BIO CZEKOL.COCOA 1 * 13.99 = 13,99 A",
+        "y_position": 434,
+        "x_min": 290,
+        "x_max": 692,
+        "confidence": 0.8821615775426229,
+        "line_number": 18,
+        "words_count": 9
+      },
+      {
+        "text": "C_MC KOPEREK PĘCZEK BYAR 1x5,99 = 5,99 C",
+        "y_position": 456,
+        "x_min": 290,
+        "x_max": 692,
+        "confidence": 0.7980890199542046,
+        "line_number": 19,
+        "words_count": 8
+      },
+      {
+        "text": "C_MC SAŁATA RZYMSKA 1 × 5,99 = 5,99 C",
+        "y_position": 476,
+        "x_min": 289,
+        "x_max": 691,
+        "confidence": 0.8351582917902205,
+        "line_number": 20,
+        "words_count": 9
+      },
+      {
+        "text": "C MC BIO KRAKERSY P 1x7,99 = 7,99 C",
+        "y_position": 493,
+        "x_min": 290,
+        "x_max": 691,
+        "confidence": 0.9187510742081536,
+        "line_number": 21,
+        "words_count": 9
+      },
+      {
+        "text": "CMC KIEŁKI JARMUZU 1 * 4,65 = 4,65 C",
+        "y_position": 514,
+        "x_min": 289,
+        "x_max": 691,
+        "confidence": 0.8554351064893935,
+        "line_number": 22,
+        "words_count": 9
+      },
+      {
+        "text": "C_SIMPL POMIDOR DAK 1 * 5,99 = 5,99 C",
+        "y_position": 532,
+        "x_min": 290,
+        "x_max": 691,
+        "confidence": 0.862550954023997,
+        "line_number": 23,
+        "words_count": 9
+      },
+      {
+        "text": "C_SEREK PHILADELPHI 1 * 7,29 = 7,29 C",
+        "y_position": 551,
+        "x_min": 290,
+        "x_max": 690,
+        "confidence": 0.8800301253795624,
+        "line_number": 24,
+        "words_count": 8
+      },
+      {
+        "text": "C BAKALLAND DAKTYL 1 * 8,49 = 8,49 C",
+        "y_position": 570,
+        "x_min": 289,
+        "x_max": 691,
+        "confidence": 0.8512937989499834,
+        "line_number": 25,
+        "words_count": 9
+      },
+      {
+        "text": "C_JZN CZOSNEK SZTUK 1 * 1,99 = 1,99 C",
+        "y_position": 589,
+        "x_min": 290,
+        "x_max": 691,
+        "confidence": 0.8344943159156375,
+        "line_number": 26,
+        "words_count": 9
+      },
+      {
+        "text": "CHC C BANANY MANDARYNKI PLANTANY LUZJAVA 6 1.398-8.99 1 * 14.99 = = 12.57 14.99 € C",
+        "y_position": 608,
+        "x_min": 288,
+        "x_max": 690,
+        "confidence": 0.7579593974001267,
+        "line_number": 27,
+        "words_count": 17
+      },
+      {
+        "text": "C",
+        "y_position": 627,
+        "x_min": 681,
+        "x_max": 690,
+        "confidence": 0.7683707475662231,
+        "line_number": 28,
+        "words_count": 1
+      },
+      {
+        "text": "C_JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C",
+        "y_position": 644,
+        "x_min": 290,
+        "x_max": 690,
+        "confidence": 0.8593015074729919,
+        "line_number": 29,
+        "words_count": 8
+      },
+      {
+        "text": "C.JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C",
+        "y_position": 663,
+        "x_min": 290,
+        "x_max": 690,
+        "confidence": 0.8730251044034958,
+        "line_number": 30,
+        "words_count": 8
+      },
+      {
+        "text": "C_JZN JABŁKA CHANPI 0.668 * 4.99 -3,33 C",
+        "y_position": 682,
+        "x_min": 290,
+        "x_max": 690,
+        "confidence": 0.876271516084671,
+        "line_number": 31,
+        "words_count": 8
+      },
+      {
+        "text": "*** Anulovano sprzedaż ***",
+        "y_position": 700,
+        "x_min": 402,
+        "x_max": 575,
+        "confidence": 0.7675364017486572,
+        "line_number": 32,
+        "words_count": 4
+      },
+      {
+        "text": "C_CYTRYNY LUZ 0,29 9,99 2,90 C",
+        "y_position": 718,
+        "x_min": 289,
+        "x_max": 692,
+        "confidence": 0.9426829814910889,
+        "line_number": 33,
+        "words_count": 6
+      },
+      {
+        "text": "C_TWARÓG WIEJSKI KL 1 * 5,79 = 5,79 C",
+        "y_position": 736,
+        "x_min": 288,
+        "x_max": 691,
+        "confidence": 0.8706838952170478,
+        "line_number": 34,
+        "words_count": 9
+      },
+      {
+        "text": "CMC BIO AOP SER PA sbob b2ysio 1 * 20,69 = 20.69 C",
+        "y_position": 757,
+        "x_min": 287,
+        "x_max": 690,
+        "confidence": 0.8623404823816739,
+        "line_number": 35,
+        "words_count": 13
+      },
+      {
+        "text": "C_JAJA FARMIO H10 W 1 × 13,09 13,09 C",
+        "y_position": 775,
+        "x_min": 287,
+        "x_max": 691,
+        "confidence": 0.8118636674351163,
+        "line_number": 36,
+        "words_count": 9
+      },
+      {
+        "text": "Sprzed . opod . PTU A 99.55",
+        "y_position": 811,
+        "x_min": 287,
+        "x_max": 675,
+        "confidence": 0.9392587712832859,
+        "line_number": 37,
+        "words_count": 7
+      },
+      {
+        "text": "Kwota A 23,00 % 18.62",
+        "y_position": 831,
+        "x_min": 286,
+        "x_max": 676,
+        "confidence": 0.9526116132736206,
+        "line_number": 38,
+        "words_count": 5
+      },
+      {
+        "text": "Sprzed . opod . PTU C 154.77",
+        "y_position": 849,
+        "x_min": 286,
+        "x_max": 674,
+        "confidence": 0.9434502720832825,
+        "line_number": 39,
+        "words_count": 7
+      },
+      {
+        "text": "Kuota C 05,00 % 7.37",
+        "y_position": 867,
+        "x_min": 286,
+        "x_max": 675,
+        "confidence": 0.8979580640792847,
+        "line_number": 40,
+        "words_count": 5
+      },
+      {
+        "text": "SUMA Podatek PTU PLN YAH ob 254.32 25.99",
+        "y_position": 885,
+        "x_min": 284,
+        "x_max": 688,
+        "confidence": 0.8872237652540207,
+        "line_number": 41,
+        "words_count": 8
+      },
+      {
+        "text": "000106 # 019 19647F707FD77CC40E 038 48F7975FEF9AE5F9C238DD 18:10",
+        "y_position": 949,
+        "x_min": 286,
+        "x_max": 690,
+        "confidence": 0.9793870789664132,
+        "line_number": 42,
+        "words_count": 7
+      },
+      {
+        "text": "PCCO 1701480375",
+        "y_position": 988,
+        "x_min": 432,
+        "x_max": 566,
+        "confidence": 0.8274553418159485,
+        "line_number": 43,
+        "words_count": 2
+      },
+      {
+        "text": "00111019254772511193",
+        "y_position": 1144,
+        "x_min": 302,
+        "x_max": 678,
+        "confidence": 0.9854166507720947,
+        "line_number": 44,
+        "words_count": 1
+      },
+      {
+        "text": "Płatność : KARTAPIATNI 254,32",
+        "y_position": 1186,
+        "x_min": 282,
+        "x_max": 689,
+        "confidence": 0.8812922984361649,
+        "line_number": 45,
+        "words_count": 4
+      },
+      {
+        "text": "Kasjer 25477 038",
+        "y_position": 1208,
+        "x_min": 285,
+        "x_max": 688,
+        "confidence": 0.9515902201334635,
+        "line_number": 46,
+        "words_count": 3
+      },
+      {
+        "text": "Nr transakcji kartę PAYBACK zyskałbyś 84 punktów !",
+        "y_position": 1226,
+        "x_min": 284,
+        "x_max": 615,
+        "confidence": 0.9281594008207321,
+        "line_number": 47,
+        "words_count": 8
+      },
+      {
+        "text": "Z",
+        "y_position": 1242,
+        "x_min": 350,
+        "x_max": 359,
+        "confidence": 0.5240509510040283,
+        "line_number": 48,
+        "words_count": 1
+      }
+    ],
+    "image_width": 960,
+    "image_height": 1280,
+    "total_words": 359,
+    "total_lines": 49
+  },
+  "locale": {
+    "locale_code": "pl_PL",
+    "confidence": 0.2631578947368421,
+    "matched_keywords": [
+      "suma",
+      "ptu",
+      "pln",
+      "paragon",
+      "fiskalny"
+    ],
+    "scores": {
+      "pt_PT": 1,
+      "cs_CZ": 1,
+      "es_ES": 1,
+      "pl_PL": 5,
+      "de_DE": 0
+    }
+  },
+  "store": {
+    "store_name": "carrefour",
+    "store_address": "03-734 Warszawa ul . Targowa 72, fque Tel . ( 22 ) 511-26-00 дом, CARREFOUR Polska Sp . z o . 0 .",
+    "confidence": 1.0,
+    "matched_in_line": 1
+  },
+  "metadata": {
+    "receipt_date": "2025-11-19",
+    "receipt_total": 254.32,
+    "currency": "PLN",
+    "date_raw": "2025-11-19",
+    "total_raw": "254.32 ",
+    "total_line_number": 41
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "A TORBA RECYKLING 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 0.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "A TORBA RECYKLING 1 * 0.79 = 0.79 A"
+      },
+      {
+        "name": "A_TORBA RECYKLING uqu 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 0.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "A_TORBA RECYKLING uqu 1 * 0.79 = 0.79 A"
+      },
+      {
+        "name": "C_JOG.D / P SKYR H.PR 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 6.75,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "C_JOG.D / P SKYR H.PR 1 * 6.75 = 6.75 C"
+      },
+      {
+        "name": "C.JOG.D / P SKYR HEN 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.75,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "C.JOG.D / P SKYR HEN 1 * 5.75 = 5.75 C"
+      },
+      {
+        "name": "C_JOG.D / P SKYR LIND 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "C_JOG.D / P SKYR LIND 1 * 5,99 = 5,99 C"
+      },
+      {
+        "name": "C.ZIEMNIAKI SŁODKIE 0,694 * 9.99",
+        "quantity": 0.694,
+        "price": null,
+        "total": 6.93,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "C.ZIEMNIAKI SŁODKIE 0,694 * 9.99 6,93 C"
+      },
+      {
+        "name": "C POMELO CZERWONE L 0.762 * 9.99 =",
+        "quantity": 0.762,
+        "price": null,
+        "total": 7.61,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "C POMELO CZERWONE L 0.762 * 9.99 = 7.61 C"
+      },
+      {
+        "name": "A OSHIORNICA MACKI 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 41.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A"
+      },
+      {
+        "name": "A OSHIORNICA MACKI 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 41.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A"
+      },
+      {
+        "name": "A BIO CZEKOL.COCOA 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 13.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "A BIO CZEKOL.COCOA 1 * 13.99 = 13,99 A"
+      },
+      {
+        "name": "C_MC KOPEREK PĘCZEK BYAR 1x =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "C_MC KOPEREK PĘCZEK BYAR 1x5,99 = 5,99 C"
+      },
+      {
+        "name": "C_MC SAŁATA RZYMSKA 1 × =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "C_MC SAŁATA RZYMSKA 1 × 5,99 = 5,99 C"
+      },
+      {
+        "name": "C MC BIO KRAKERSY P 1x =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 7.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "C MC BIO KRAKERSY P 1x7,99 = 7,99 C"
+      },
+      {
+        "name": "CMC KIEŁKI JARMUZU 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 4.65,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "CMC KIEŁKI JARMUZU 1 * 4,65 = 4,65 C"
+      },
+      {
+        "name": "C_SIMPL POMIDOR DAK 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 23,
+        "raw_text": "C_SIMPL POMIDOR DAK 1 * 5,99 = 5,99 C"
+      },
+      {
+        "name": "C_SEREK PHILADELPHI 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 7.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "C_SEREK PHILADELPHI 1 * 7,29 = 7,29 C"
+      },
+      {
+        "name": "C BAKALLAND DAKTYL 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 8.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "C BAKALLAND DAKTYL 1 * 8,49 = 8,49 C"
+      },
+      {
+        "name": "C_JZN CZOSNEK SZTUK 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 26,
+        "raw_text": "C_JZN CZOSNEK SZTUK 1 * 1,99 = 1,99 C"
+      },
+      {
+        "name": "C BANANY PLANTANY 6 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 14.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "C BANANY PLANTANY 6 1 * 14.99 = 14.99 C"
+      },
+      {
+        "name": "CHC MANDARYNKI LUZJAVA 1.398-8.99 = €",
+        "quantity": null,
+        "price": null,
+        "total": 12.57,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "CHC MANDARYNKI LUZJAVA 1.398-8.99 = 12.57 €"
+      },
+      {
+        "name": "C_JZN JABŁKA CHAMPI 0,668 * 4,99",
+        "quantity": 0.668,
+        "price": null,
+        "total": 3.33,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 29,
+        "raw_text": "C_JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C"
+      },
+      {
+        "name": "C.JZN JABŁKA CHAMPI 0,668 * 4,99",
+        "quantity": 0.668,
+        "price": null,
+        "total": 3.33,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 30,
+        "raw_text": "C.JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C"
+      },
+      {
+        "name": "C_JZN JABŁKA CHANPI 0.668 * 4.99",
+        "quantity": 0.668,
+        "price": null,
+        "total": -3.33,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 31,
+        "raw_text": "C_JZN JABŁKA CHANPI 0.668 * 4.99 -3,33 C"
+      },
+      {
+        "name": "C_CYTRYNY LUZ 0,29 9,99",
+        "quantity": null,
+        "price": null,
+        "total": 2.9,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 33,
+        "raw_text": "C_CYTRYNY LUZ 0,29 9,99 2,90 C"
+      },
+      {
+        "name": "C_TWARÓG WIEJSKI KL 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 5.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 34,
+        "raw_text": "C_TWARÓG WIEJSKI KL 1 * 5,79 = 5,79 C"
+      },
+      {
+        "name": "CMC BIO AOP SER PA sbob b2ysio 1 * =",
+        "quantity": 1.0,
+        "price": null,
+        "total": 20.69,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 35,
+        "raw_text": "CMC BIO AOP SER PA sbob b2ysio 1 * 20,69 = 20.69 C"
+      },
+      {
+        "name": "C_JAJA FARMIO H10 W 1 ×",
+        "quantity": 1.0,
+        "price": null,
+        "total": 13.09,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 36,
+        "raw_text": "C_JAJA FARMIO H10 W 1 × 13,09 13,09 C"
+      }
+    ],
+    "discounts": [],
+    "items_count": 27,
+    "discounts_count": 0,
+    "items_total": 254.32000000000008,
+    "discounts_total": 0,
+    "skipped_lines": 19,
+    "parsed_lines": 27
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 254.32000000000008,
+    "discounts_sum": 0,
+    "calculated_total": 254.32,
+    "receipt_total": 254.32,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 22.027015686035156,
+  "stages_completed": 6
+}

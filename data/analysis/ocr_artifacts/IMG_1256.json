@@ -1,0 +1,44 @@
+{
+  "id": "unknown_IMG_1256",
+  "receipt_id": "IMG_1256",
+  "locale": "unknown",
+  "store": "unknown",
+  "source_file": "IMG_1256",
+  "artifacts": [
+    {
+      "type": "GARBAGE",
+      "ocr_text": "***************",
+      "expected_text": "",
+      "context": "ocard\nEUR 47,44\nPAN ***************1364\n",
+      "suggestion": "Удалить: Множественные звёздочки"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "***",
+      "expected_text": "",
+      "context": "ocard\nEUR 47,44\nPAN ***************1364\n",
+      "suggestion": "Удалить: Множественные звёздочки"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "***",
+      "expected_text": "",
+      "context": "ocard\nEUR 47,44\nPAN ***************1364\n",
+      "suggestion": "Удалить: Множественные звёздочки"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "********",
+      "expected_text": "",
+      "context": "ocard\nEUR 47,44\nPAN ***************1364\n",
+      "suggestion": "Удалить: Маскированные символы"
+    }
+  ],
+  "statistics": {
+    "total_words": 0,
+    "artifacts_found": 4,
+    "by_type": {
+      "GARBAGE": 4
+    }
+  }
+}

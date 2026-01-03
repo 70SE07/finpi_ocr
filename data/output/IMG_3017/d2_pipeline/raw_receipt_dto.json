@@ -1,0 +1,16 @@
+{
+  "items": [],
+  "total_amount": 179.24,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": null,
+  "receipt_id": "IMG_3017",
+  "ocr_text": "2019\nPreisvorteil\n5149.0\nhauser Auel 1\nLachsseite m.h.\n1,369 kg x 14,99\nDattelcherrytomaten\nBio Avocado 2Stück\nth-Vilkerath\nЯO EUR\n9620,52 A\n1,3)\n5.97 A\nA\nKnoblauch\n0,\n0,89\n10\nGurken\n0.75 x 2 1,50 A\nDill\n1.39 A\nBioland Zwiebeln\n1,79 A\nSaure Sahne 10%\n0,69 x 4\n2,76 A\nDevgan Fam 33% Fett\n2,29 x 4\n9,16 A\nFrischkäse Sahnige\n1,69 x\n4\n6,76 A\nButterkase [OGT]\n2,99 x 2\n5,98 A\nFarmerschinken\n2,29 A\nThisiter Scheiben\n2,99 x 2\n5,98 A\nEdamer Scheiben\n2,99 x 2\n5,98 A\nEdelsalami geschnit.\n1,79 A\nPreisvorteil\nble. Schinken\n29 A\nHaltbare Sahne\n0,99 x 9 8,01 A\nRabattaktion\n-0,90\nSchmand\n0,99 x 4 3,96 A\nRabattaktion\n-0.40\nEier Freiland. XXL\nPaprika edelsüß\n23TTABAS\n3,99 A\n0,85 A\nThunfisch in öl\n4,99 A\nOro d.P stück.Tomate\n1,99 x\n4\n7,96 A\nBio Passierte Tomat.\n0,69 x\n2\n1,38 A\nWasser still\n0,29 x\n18\n5,22 B\nPfand 0,25 EM\n0,25 x\n18\n4,50 B\nFarmer Cookies Hazel\n1,79 A\nHamburger Brötchen\n0,99 A\nMegaBurger/Hamburger 0,99 x\n2\n1,98 A\nWeizen Sandwi. Toast 1,09 x\n2\n2,18 A\nMilchbrötchen\n1,99 A\nPreisvorteil\n-0.10\nFarmer Cookies White\n1,79 A\nFarmer Cookie Triple\n1,79 A\nSchinkengulasch 5,79 x 2 11,58 A\nMinutensteaks\n5,59 A\nHackfleisch gemischt 5,99 x 2 11,98 A\nHamburger v. Rind\nHähnchenbrustfilet\n10,99 A\n9,99 A\nKarte\nzu zahlen\nGesamter Preisvorteil\nM179,24\n99A 179,24\n1,60\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n11,09\n158,43\n169,52\nB 19 %\nSumme\n1,55\n12,64\n8,17\n166,60\n9,72\n179,24\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 0.0,
+    "validation_passed": 0.0,
+    "validation_difference": 179.24
+  }
+}

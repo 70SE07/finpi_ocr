@@ -1,0 +1,441 @@
+{
+  "dto": {
+    "items": [],
+    "total_amount": 25.87,
+    "merchant": "Netto",
+    "store_address": null,
+    "date": "2025-09-11 00:00:00",
+    "receipt_id": "IMG_1761",
+    "ocr_text": "LODL\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nMeistersteaks BBQ 4,95 x 2 9,90 A\nHähnchenflügel Diav.\n5,99 A\nQSHähn.Grill-&Ofenp. 4,99 x\n2\n9,98 A\nzu zahlen\n2014\n25,87\nKarte\n25,87\nMWSTX\nMWST + Netto =\nBrutto\nA 7 %\nSumme\nMAD 1.69\n24,18\n25,87\n1,69\n24,18\n25,87\nMU\nTSE Transaktionsnummer: 1261303\nSeriennr. Kasse: LDL-000-6496-83\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: SQSRIrbZnKIsnd4Ue6Q011WBpHrcYQK5\nkd5tQgBfrnmm3LjP1WBeIq5rY91Br54CscySNL28+E\nhLk+txuw0Inb9dzwevb9mwdG7dpZ52JERQqmYtJjoz\nwpdFOqDWOzZr\nSignaturzähler: 2574734\n2025-09-11T15:43:06.000Z\n2025-09-11T15:43:40.000Z\n6496 021102/83\n814060660\n11.09.25 17:43\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n25,87 EUR\n11.09.2025\n17:42 T-ID 60197391\nTA-Nr. 077679\nBeleg-Nr. 3956\nKartennr.\n###############1324 12\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nEMV-Daten:\nAutorisierungsnummer 574034\nAutorisierungsantwortcode LCE HO 00\nA0000003591010028001/00\n**\nAutorisierung erfolgt\n**",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 0.0,
+      "validation_passed": 0.0,
+      "validation_difference": 25.87
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LODL",
+        "y_position": 315,
+        "x_min": 483,
+        "x_max": 661,
+        "confidence": 0.7715562582015991,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 375,
+        "x_min": 388,
+        "x_max": 752,
+        "confidence": 0.9856870969136556,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 414,
+        "x_min": 344,
+        "x_max": 798,
+        "confidence": 0.9739304780960083,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 449,
+        "x_min": 884,
+        "x_max": 947,
+        "confidence": 0.9640791416168213,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "Meistersteaks BBQ 4,95 x 2 9,90 A",
+        "y_position": 484,
+        "x_min": 137,
+        "x_max": 1010,
+        "confidence": 0.9348915219306946,
+        "line_number": 4,
+        "words_count": 7
+      },
+      {
+        "text": "Hähnchenflügel Diav . 5,99 A",
+        "y_position": 524,
+        "x_min": 136,
+        "x_max": 991,
+        "confidence": 0.9675858974456787,
+        "line_number": 5,
+        "words_count": 5
+      },
+      {
+        "text": "QSHähn.Grill- & Ofenp . 4,99 x 2 9,98 A",
+        "y_position": 570,
+        "x_min": 136,
+        "x_max": 1012,
+        "confidence": 0.9418272508515252,
+        "line_number": 6,
+        "words_count": 9
+      },
+      {
+        "text": "zahlen 2014 25,87",
+        "y_position": 625,
+        "x_min": 196,
+        "x_max": 947,
+        "confidence": 0.9702945351600647,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "zu",
+        "y_position": 644,
+        "x_min": 136,
+        "x_max": 177,
+        "confidence": 0.9762880206108093,
+        "line_number": 8,
+        "words_count": 1
+      },
+      {
+        "text": "Karte 25,87",
+        "y_position": 672,
+        "x_min": 137,
+        "x_max": 949,
+        "confidence": 0.9710234701633453,
+        "line_number": 9,
+        "words_count": 2
+      },
+      {
+        "text": "MWST + Netto = Brutto",
+        "y_position": 728,
+        "x_min": 406,
+        "x_max": 951,
+        "confidence": 0.9415592432022095,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "MWSTX",
+        "y_position": 744,
+        "x_min": 159,
+        "x_max": 261,
+        "confidence": 0.8983765840530396,
+        "line_number": 11,
+        "words_count": 1
+      },
+      {
+        "text": "A 7 % MAD 1.69 24,18 25,87",
+        "y_position": 772,
+        "x_min": 138,
+        "x_max": 950,
+        "confidence": 0.8703924247196743,
+        "line_number": 12,
+        "words_count": 7
+      },
+      {
+        "text": "Summe 1,69 24,18 25,87",
+        "y_position": 817,
+        "x_min": 140,
+        "x_max": 949,
+        "confidence": 0.9762521833181381,
+        "line_number": 13,
+        "words_count": 4
+      },
+      {
+        "text": "MU",
+        "y_position": 862,
+        "x_min": 908,
+        "x_max": 992,
+        "confidence": 0.6258969306945801,
+        "line_number": 14,
+        "words_count": 1
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1261303",
+        "y_position": 985,
+        "x_min": 146,
+        "x_max": 781,
+        "confidence": 0.9736784249544144,
+        "line_number": 15,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-83",
+        "y_position": 1027,
+        "x_min": 145,
+        "x_max": 801,
+        "confidence": 0.9602648956435067,
+        "line_number": 16,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga + dvZbaId8",
+        "y_position": 1066,
+        "x_min": 145,
+        "x_max": 1013,
+        "confidence": 0.906253559248788,
+        "line_number": 17,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1116,
+        "x_min": 147,
+        "x_max": 495,
+        "confidence": 0.9445951282978058,
+        "line_number": 18,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : SQSRIrbZnKIsnd4Ue6Q011WBpHrcYQK5",
+        "y_position": 1153,
+        "x_min": 148,
+        "x_max": 1013,
+        "confidence": 0.9264260530471802,
+        "line_number": 19,
+        "words_count": 3
+      },
+      {
+        "text": "kd5tQgBfrnmm3LjP1WBeIq5rY91Br54CscySNL28 + E",
+        "y_position": 1199,
+        "x_min": 150,
+        "x_max": 1014,
+        "confidence": 0.9580376545588175,
+        "line_number": 20,
+        "words_count": 3
+      },
+      {
+        "text": "hLk + txuw0Inb9dzwevb9mwdG7dpZ52JERQqmYtJjoz",
+        "y_position": 1245,
+        "x_min": 152,
+        "x_max": 1012,
+        "confidence": 0.9560152490933737,
+        "line_number": 21,
+        "words_count": 3
+      },
+      {
+        "text": "wpdFOqDWOzZr",
+        "y_position": 1291,
+        "x_min": 154,
+        "x_max": 395,
+        "confidence": 0.8972011208534241,
+        "line_number": 22,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2574734",
+        "y_position": 1331,
+        "x_min": 154,
+        "x_max": 619,
+        "confidence": 0.9853289326032003,
+        "line_number": 23,
+        "words_count": 3
+      },
+      {
+        "text": "2025-09-11T15 : 43 : 06.000Z",
+        "y_position": 1377,
+        "x_min": 155,
+        "x_max": 637,
+        "confidence": 0.979541790485382,
+        "line_number": 24,
+        "words_count": 5
+      },
+      {
+        "text": "2025-09-11T15 : 43 : 40.000Z",
+        "y_position": 1416,
+        "x_min": 155,
+        "x_max": 636,
+        "confidence": 0.9737329244613647,
+        "line_number": 25,
+        "words_count": 5
+      },
+      {
+        "text": "6496 021102/83 11.09.25 17:43",
+        "y_position": 1456,
+        "x_min": 157,
+        "x_max": 1012,
+        "confidence": 0.9906963109970093,
+        "line_number": 26,
+        "words_count": 4
+      },
+      {
+        "text": "814060660",
+        "y_position": 1500,
+        "x_min": 456,
+        "x_max": 640,
+        "confidence": 0.9903342723846436,
+        "line_number": 27,
+        "words_count": 1
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1556,
+        "x_min": 332,
+        "x_max": 764,
+        "confidence": 0.8451687154315767,
+        "line_number": 28,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 1596,
+        "x_min": 331,
+        "x_max": 786,
+        "confidence": 0.9766719043254852,
+        "line_number": 29,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag 25,87 EUR",
+        "y_position": 1651,
+        "x_min": 146,
+        "x_max": 971,
+        "confidence": 0.9907640218734741,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "11.09.2025 17:42 T - ID 60197391",
+        "y_position": 1706,
+        "x_min": 147,
+        "x_max": 966,
+        "confidence": 0.9591563244660696,
+        "line_number": 31,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 077679 Beleg - Nr . 3956",
+        "y_position": 1750,
+        "x_min": 142,
+        "x_max": 973,
+        "confidence": 0.950936245918274,
+        "line_number": 32,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . ############### 1324 12",
+        "y_position": 1795,
+        "x_min": 140,
+        "x_max": 971,
+        "confidence": 0.8917724967002869,
+        "line_number": 33,
+        "words_count": 5
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 1834,
+        "x_min": 141,
+        "x_max": 973,
+        "confidence": 0.9378575285275778,
+        "line_number": 34,
+        "words_count": 3
+      },
+      {
+        "text": "VU - Nummer 9801706496",
+        "y_position": 1880,
+        "x_min": 141,
+        "x_max": 867,
+        "confidence": 0.9755097776651382,
+        "line_number": 35,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 574034",
+        "y_position": 1904,
+        "x_min": 140,
+        "x_max": 974,
+        "confidence": 0.8981673717498779,
+        "line_number": 36,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode LCE HO 00",
+        "y_position": 1961,
+        "x_min": 143,
+        "x_max": 974,
+        "confidence": 0.6716861054301262,
+        "line_number": 37,
+        "words_count": 4
+      },
+      {
+        "text": "EMV - Daten : A0000003591010028001 / 00",
+        "y_position": 2005,
+        "x_min": 146,
+        "x_max": 971,
+        "confidence": 0.9847651464598519,
+        "line_number": 38,
+        "words_count": 7
+      },
+      {
+        "text": "** Autorisierung erfolgt **",
+        "y_position": 2058,
+        "x_min": 148,
+        "x_max": 973,
+        "confidence": 0.9554163664579391,
+        "line_number": 39,
+        "words_count": 4
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 172,
+    "total_lines": 40
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.1935483870967742,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "netto",
+      "brutto",
+      "eur",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 1,
+      "cs_CZ": 0,
+      "es_ES": 2,
+      "pl_PL": 0,
+      "de_DE": 6
+    }
+  },
+  "store": {
+    "store_name": "Netto",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 10
+  },
+  "metadata": {
+    "receipt_date": "2025-09-11",
+    "receipt_total": 25.87,
+    "currency": "EUR",
+    "date_raw": "2025-09-11",
+    "total_raw": "25,87 EUR",
+    "total_line_number": 30
+  },
+  "semantic": {
+    "items": [],
+    "discounts": [],
+    "items_count": 0,
+    "discounts_count": 0,
+    "items_total": 0,
+    "discounts_total": 0,
+    "skipped_lines": 25,
+    "parsed_lines": 0
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 0,
+    "discounts_sum": 0,
+    "calculated_total": 0,
+    "receipt_total": 25.87,
+    "difference": 25.87,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=0, receipt=25.87, diff=25.87 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.932985305786133,
+  "stages_completed": 6
+}

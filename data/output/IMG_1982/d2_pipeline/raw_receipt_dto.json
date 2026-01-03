@@ -1,0 +1,101 @@
+{
+  "items": [
+    {
+      "name": "REWE Feinkostsau ( 226 )",
+      "quantity": null,
+      "price": null,
+      "total": 1.39,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Cornichons ( 434 )",
+      "quantity": null,
+      "price": null,
+      "total": 2.49,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Ültje Erdnüsse ( 504 )",
+      "quantity": null,
+      "price": null,
+      "total": 4.69,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Beinscheibe mix ( 510 ) B",
+      "quantity": null,
+      "price": null,
+      "total": 21.73,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Oliven o . Stein ( 202 )",
+      "quantity": null,
+      "price": null,
+      "total": 4.29,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Häagen - Dazs Belgian ( 716 )",
+      "quantity": null,
+      "price": null,
+      "total": 6.99,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Häagen - Dazs Pint ( 713 )",
+      "quantity": null,
+      "price": null,
+      "total": 6.99,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Coca - Cola ( 977 )",
+      "quantity": null,
+      "price": null,
+      "total": 2.78,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "2x €",
+      "quantity": 2.0,
+      "price": null,
+      "total": 1.39,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "HIT Papiertraget ( 257 )",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "Pfand 0,25 ( 005 )",
+      "quantity": null,
+      "price": null,
+      "total": 0.5,
+      "date": "2025-09-20 00:00:00"
+    },
+    {
+      "name": "2x €",
+      "quantity": 2.0,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-09-20 00:00:00"
+    }
+  ],
+  "total_amount": 52.1,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": "2025-09-20 00:00:00",
+  "receipt_id": "IMG_1982",
+  "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nLEBENSMITTEL\nPreis €\nREWE Feinkostsau\n(226)\n1,39 B\nCornichons\n(434)\n2,49 B\n*** Discount Preis ***\nÜltje Erdnüsse\n(504)\n4,69 B\nTHEKE/SBHF\nBedientheke\nBeinscheibe mix\n(510)\n21,73 B F\nGEKÜHLTE LEBENSMITTEL\nOliven o. Stein\n(202)\n4,29 B\nTIEFKÜHLKOST\nHäagen-Dazs Belgian\n(716)\n6,99 B\nHäagen-Dazs Pint\n(713)\n6,99 B\nGETRÄNKE\nCoca-Cola\n(977)\n2,78 A\n2x 1,39 €\nNON FOOD\nHIT Papiertraget\n(257)\n0,25 A\nPFAND/LEERGUT\nPfand 0,25\n(005)\n0,50 A*\n2x 0,25 €\nSUMME [10]\nEC-Lastschrift\n52,10\n52,10\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID :\nTA-Nr 300975\nKartenzahlung\nSEPA-ELV\nOnline\nEUR 52,10\n61724231\nBNr 1374\nCDGM\nKurz-BLZ\n#####\nKto.\nKarte 0\nIBAN\nG-ID\nM-ID\n######1136\ngültig bis 12/26\nDE2037############1136\nDE52ZZZ00000041034\n6172423113742509201850\nAIDPara\n000161064D\nDatum 20.09.25 18:50 Uhr\n*** Karte akzeptiert ***\nBITTE BELEG AUFBEWAHREN\nDie Belastung erfolgt zum über-\nnächsten Bankgeschäftstag\nSteuer\nA=19,00%\nB= 7,00%\nNETTO [e] MWST [€] BRUTTO [€]\n2,97\n45,39\n0,56\n3,18\n3,53\n48,57\nKennzeichenlegende\nDie mit * gekennzeichneten Artikel sind\nnicht rabattfähig. Die wie folgt\ngekennzeichneten Artikel sowie die\ndarauf entfallene MWST werden verkauft\nim Namen und Rechnung von:\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n****************\n*****\nSie erhalten mit diesem Kauf\n10 Treuepunkt (e)!\n0014033200925002000242\n******\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 12.0,
+    "validation_passed": 0.0,
+    "validation_difference": 1.6400000000000006
+  }
+}

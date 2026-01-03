@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "name": "Magnum DoubleCherry",
+      "quantity": null,
+      "price": null,
+      "total": 1.99,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "A",
+      "quantity": null,
+      "price": null,
+      "total": 3.99,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "Gouda",
+      "quantity": null,
+      "price": null,
+      "total": -0.5,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "in ScheibenXXL",
+      "quantity": null,
+      "price": null,
+      "total": 4.29,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "Frischkäse Sahnige 121,69 x 2 AT",
+      "quantity": 121.69,
+      "price": null,
+      "total": 3.38,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "H - Milch3,5 % HF3 1,09 × 12",
+      "quantity": 1.09,
+      "price": null,
+      "total": 13.08,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "Mineralwasser still 0,29 x 18",
+      "quantity": 0.29,
+      "price": null,
+      "total": 5.22,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "Pfand EM x 18",
+      "quantity": 0.25,
+      "price": 0.25,
+      "total": 4.5,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "Schwammtuch 5er",
+      "quantity": null,
+      "price": null,
+      "total": 0.85,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "Edelstahltopfreinig .",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "GSM Konzentrat gelb",
+      "quantity": null,
+      "price": null,
+      "total": 0.95,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "Thobsheim",
+      "quantity": null,
+      "price": null,
+      "total": 44.81,
+      "date": "2025-10-23 00:00:00"
+    },
+    {
+      "name": "",
+      "quantity": null,
+      "price": null,
+      "total": 3.4,
+      "date": "2025-10-23 00:00:00"
+    }
+  ],
+  "total_amount": 44.81,
+  "merchant": "Lidl",
+  "store_address": "Steinhauser Auel 1, 514910verath - Vilkerath",
+  "date": "2025-10-23 00:00:00",
+  "receipt_id": "IMG_2643",
+  "ocr_text": "LIDL shenjt\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nWassereisWass.melone\n1,99 A\nMagnum DoubleCherry\n3,99 A\nPreisvorteil\n-1,20\nButterkäse [OGT]\n2,99 A\nPreisvorteil\n-0,50\nGouda in ScheibenXXL\n4,29 A\nPreisvorteil\n-0,70\nTilsiter Scheiben alq\n2,99 A\nPreisvorteil\n-0,50\nEdamer Scheiben\n2,99 A\nPreisvorteil\n-0,50\nFrischkäse Sahnige\n121,69 x\n2 AT 3,38 A\nH-Milch3,5% HF3\n1,09 ×\n12\n13,08 A\nMineralwasser still\n0,29 x\n18\n5,22 B\nPfand 0,25 EM\n0,25 x 18\n4,50 B\nSchwammtuch 5er\nEdelstahltopfreinig.\nGSM Konzentrat gelb\n0,85 B\n0,99 B\n0,95 B\nzu zahlen\n90A 2019 1644,8190\nKarte\nGesamter Preisvorteil\nThobsheim 44.81\n3,40\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n2,11\n30,19\n32,30\nB 19 %\n2,00\n10,51\n12,51\nSumme\n4,11\n40,70\n44,81\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1313953\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJ0GxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: d63fiRU71+ZKaFRtWd1XQ8Q0+1/7V0H5\nus+V5Axu7moPoqCRVmagwGe1MbnTxhSma1iMyGBZWs\nZGBGrg6i7fDoA9BsU7q+mHvCdwB9pFBFET1h0ixwji\nSMCjkQhmSZWJ\nSignaturzähler: 2682469\n2025-10-23T12:51:47.000Z\n2025-10-23T12:53:30.000Z\n6496 026894/81\n23.10.25 14:51\n814060660 Azul bilanie\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n44,81 EUR\n23.10.2025\n14:52\nT-ID 60155117\nTA-Nr. 220855\nBeleg-Nr. 1221\nKartennr.\n####\n#####1364 00\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nAutorisierungsnummer\n883035\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000003591010028001/00\n**\nAutorisierung erfolgt\n**",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 13.0,
+    "validation_passed": 0.0,
+    "validation_difference": 30.269999999999996
+  }
+}

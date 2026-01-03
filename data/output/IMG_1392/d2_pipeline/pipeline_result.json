@@ -1,0 +1,623 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "WSH HIT Klassik ( 568 )",
+        "quantity": null,
+        "price": null,
+        "total": 11.32,
+        "date": "2025-08-14 00:00:00"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 5.66,
+        "date": "2025-08-14 00:00:00"
+      },
+      {
+        "name": "Coraya Surimi ( 762 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-08-14 00:00:00"
+      }
+    ],
+    "total_amount": 12.81,
+    "merchant": "Hit",
+    "store_address": null,
+    "date": "2025-08-14 00:00:00",
+    "receipt_id": "IMG_1392",
+    "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nTHEKE/SB HF\nPreis €\n*** Discount Preis ***\nWSH HIT Klassik\n(568)\n11,32 B F\n2x 5,66 €\nGEKÜHLTE LEBENSMITTEL\nCoraya Surimi\n(762)\n1,49 B F\nSUMME [2]\n12,81\nGirocard\n12,81\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID:\nTA-Nr 271278\nKartenzahlung\nkontaktlos\ngirocard\nEUR 12,81\n61724235\nBNr 9273\nPAN\n########1324\nKarte 1\ngültig bis\n##/##\nEMV-AID\nA0000003591010028001\nVU-Nr\n290777\nDatum 14.08.25\nGenehmigungs-Nr\nEMV-Daten\n504684\n15:48 Uhr\nE800///3030\n00 Zahlung erfolgt\nBITTE BELEG AUFBEWAHREN\nSteuer\nB= 7,00%\nNETTO [€] MWST [€] BRUTTO [€]\n0,84\n11,97\nKennzeichenlegende\n12,81\nDie wie folgt gekennzeichneten Artikel\nsowie die darauf entfallene MWST werden\nverkauft im Namen und Rechnung von:\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n***\n*****\nSie erhalten mit diesem Kauf\n2 Treuepunkt (e)!\n0014033140825006000057\n*****\n*****\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025\nDatum Zeit Fil. Pos Bon Lade\n14.08.25 15:48 4033 06 0057 5\nVielen Dank für Ihren Einkauf!",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 3.0,
+      "validation_passed": 0.0,
+      "validation_difference": 5.659999999999998
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "HIT",
+        "y_position": 218,
+        "x_min": 442,
+        "x_max": 551,
+        "confidence": 0.9804914593696594,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "VIELFALT ECHTE .",
+        "y_position": 257,
+        "x_min": 453,
+        "x_max": 541,
+        "confidence": 0.8572145303090414,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "HIT 033 Overath",
+        "y_position": 330,
+        "x_min": 398,
+        "x_max": 576,
+        "confidence": 0.9871479074160258,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 354,
+        "x_min": 372,
+        "x_max": 612,
+        "confidence": 0.9735862910747528,
+        "line_number": 3,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 384,
+        "x_min": 408,
+        "x_max": 562,
+        "confidence": 0.9892987906932831,
+        "line_number": 4,
+        "words_count": 2
+      },
+      {
+        "text": "Öffnungszeiten",
+        "y_position": 408,
+        "x_min": 397,
+        "x_max": 565,
+        "confidence": 0.9536619186401367,
+        "line_number": 5,
+        "words_count": 1
+      },
+      {
+        "text": "MO - SA 08 : 00-22 : 00 Uhr",
+        "y_position": 433,
+        "x_min": 363,
+        "x_max": 611,
+        "confidence": 0.974881649017334,
+        "line_number": 6,
+        "words_count": 9
+      },
+      {
+        "text": "THEKE / SB HF Preis €",
+        "y_position": 482,
+        "x_min": 255,
+        "x_max": 670,
+        "confidence": 0.9790571630001068,
+        "line_number": 7,
+        "words_count": 6
+      },
+      {
+        "text": "*** Discount Preis *** F",
+        "y_position": 516,
+        "x_min": 329,
+        "x_max": 717,
+        "confidence": 0.9234812021255493,
+        "line_number": 8,
+        "words_count": 5
+      },
+      {
+        "text": "WSH HIT Klassik ( 568 ) 11,32 B",
+        "y_position": 533,
+        "x_min": 256,
+        "x_max": 681,
+        "confidence": 0.983137920498848,
+        "line_number": 9,
+        "words_count": 8
+      },
+      {
+        "text": "2x 5,66 €",
+        "y_position": 566,
+        "x_min": 279,
+        "x_max": 390,
+        "confidence": 0.9440841277440389,
+        "line_number": 10,
+        "words_count": 3
+      },
+      {
+        "text": "GEKÜHLTE LEBENSMITTEL",
+        "y_position": 593,
+        "x_min": 258,
+        "x_max": 506,
+        "confidence": 0.9726433455944061,
+        "line_number": 11,
+        "words_count": 2
+      },
+      {
+        "text": "Coraya Surimi ( 762 ) 1,49 B F",
+        "y_position": 613,
+        "x_min": 256,
+        "x_max": 719,
+        "confidence": 0.9848812222480774,
+        "line_number": 12,
+        "words_count": 8
+      },
+      {
+        "text": "SUMME [ 2 ] 12,81",
+        "y_position": 668,
+        "x_min": 257,
+        "x_max": 716,
+        "confidence": 0.9438216090202332,
+        "line_number": 13,
+        "words_count": 5
+      },
+      {
+        "text": "Girocard 12,81",
+        "y_position": 695,
+        "x_min": 255,
+        "x_max": 715,
+        "confidence": 0.9665451645851135,
+        "line_number": 14,
+        "words_count": 2
+      },
+      {
+        "text": "-K - U - N - D - E - N - B - E - L - E - G-",
+        "y_position": 752,
+        "x_min": 343,
+        "x_max": 607,
+        "confidence": 0.917822573866163,
+        "line_number": 15,
+        "words_count": 21
+      },
+      {
+        "text": "HIT 4033 Overath",
+        "y_position": 778,
+        "x_min": 280,
+        "x_max": 473,
+        "confidence": 0.9826896786689758,
+        "line_number": 16,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistr . 18-22",
+        "y_position": 804,
+        "x_min": 281,
+        "x_max": 495,
+        "confidence": 0.9135903716087341,
+        "line_number": 17,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 831,
+        "x_min": 281,
+        "x_max": 440,
+        "confidence": 0.977673351764679,
+        "line_number": 18,
+        "words_count": 2
+      },
+      {
+        "text": "Terminal - ID : 61724235",
+        "y_position": 852,
+        "x_min": 281,
+        "x_max": 680,
+        "confidence": 0.9754016637802124,
+        "line_number": 19,
+        "words_count": 5
+      },
+      {
+        "text": "TA - Nr 271278 BNr 9273",
+        "y_position": 882,
+        "x_min": 281,
+        "x_max": 680,
+        "confidence": 0.9642826616764069,
+        "line_number": 20,
+        "words_count": 6
+      },
+      {
+        "text": "Kartenzahlung",
+        "y_position": 914,
+        "x_min": 402,
+        "x_max": 554,
+        "confidence": 0.9909910559654236,
+        "line_number": 21,
+        "words_count": 1
+      },
+      {
+        "text": "kontaktlos",
+        "y_position": 940,
+        "x_min": 424,
+        "x_max": 542,
+        "confidence": 0.9849271774291992,
+        "line_number": 22,
+        "words_count": 1
+      },
+      {
+        "text": "girocard",
+        "y_position": 969,
+        "x_min": 436,
+        "x_max": 532,
+        "confidence": 0.9925965070724487,
+        "line_number": 23,
+        "words_count": 1
+      },
+      {
+        "text": "EUR 12,81",
+        "y_position": 994,
+        "x_min": 378,
+        "x_max": 587,
+        "confidence": 0.9609194695949554,
+        "line_number": 24,
+        "words_count": 2
+      },
+      {
+        "text": "PAN ######## 1324",
+        "y_position": 1043,
+        "x_min": 280,
+        "x_max": 680,
+        "confidence": 0.9547602931658427,
+        "line_number": 25,
+        "words_count": 3
+      },
+      {
+        "text": "Karte 1 gültig bis ## / ##",
+        "y_position": 1069,
+        "x_min": 279,
+        "x_max": 680,
+        "confidence": 0.9607409579413277,
+        "line_number": 26,
+        "words_count": 7
+      },
+      {
+        "text": "EMV - AID A0000003591010028001",
+        "y_position": 1097,
+        "x_min": 280,
+        "x_max": 679,
+        "confidence": 0.9887165129184723,
+        "line_number": 27,
+        "words_count": 4
+      },
+      {
+        "text": "VU - Nr 290777",
+        "y_position": 1125,
+        "x_min": 279,
+        "x_max": 682,
+        "confidence": 0.9718402177095413,
+        "line_number": 28,
+        "words_count": 4
+      },
+      {
+        "text": "Genehmigungs - Nr 504684",
+        "y_position": 1149,
+        "x_min": 279,
+        "x_max": 684,
+        "confidence": 0.9783559590578079,
+        "line_number": 29,
+        "words_count": 4
+      },
+      {
+        "text": "Datum 14.08.25 15:48 Uhr",
+        "y_position": 1178,
+        "x_min": 278,
+        "x_max": 681,
+        "confidence": 0.985904261469841,
+        "line_number": 30,
+        "words_count": 4
+      },
+      {
+        "text": "EMV - Daten",
+        "y_position": 1205,
+        "x_min": 279,
+        "x_max": 388,
+        "confidence": 0.9882563551266988,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "E800 /// 3030",
+        "y_position": 1231,
+        "x_min": 278,
+        "x_max": 412,
+        "confidence": 0.9760450720787048,
+        "line_number": 32,
+        "words_count": 3
+      },
+      {
+        "text": "00 Zahlung erfolgt",
+        "y_position": 1258,
+        "x_min": 277,
+        "x_max": 495,
+        "confidence": 0.9758003751436869,
+        "line_number": 33,
+        "words_count": 3
+      },
+      {
+        "text": "BITTE BELEG AUFBEWAHREN",
+        "y_position": 1284,
+        "x_min": 338,
+        "x_max": 613,
+        "confidence": 0.9841678937276205,
+        "line_number": 34,
+        "words_count": 3
+      },
+      {
+        "text": "Steuer NETTO [ € ] MWST [ € ] BRUTTO [ € ]",
+        "y_position": 1365,
+        "x_min": 250,
+        "x_max": 729,
+        "confidence": 0.7826199669104356,
+        "line_number": 35,
+        "words_count": 13
+      },
+      {
+        "text": "B = 7,00 % 11,97 0,84 12,81",
+        "y_position": 1392,
+        "x_min": 249,
+        "x_max": 728,
+        "confidence": 0.9698373079299927,
+        "line_number": 36,
+        "words_count": 7
+      },
+      {
+        "text": "Kennzeichenlegende",
+        "y_position": 1417,
+        "x_min": 384,
+        "x_max": 601,
+        "confidence": 0.9801624417304993,
+        "line_number": 37,
+        "words_count": 1
+      },
+      {
+        "text": "Die wie folgt gekennzeichneten Artikel",
+        "y_position": 1443,
+        "x_min": 248,
+        "x_max": 703,
+        "confidence": 0.9902046203613282,
+        "line_number": 38,
+        "words_count": 5
+      },
+      {
+        "text": "sowie die darauf entfallene MWST werden",
+        "y_position": 1473,
+        "x_min": 247,
+        "x_max": 720,
+        "confidence": 0.9851191739241282,
+        "line_number": 39,
+        "words_count": 6
+      },
+      {
+        "text": "verkauft im Namen und Rechnung von :",
+        "y_position": 1501,
+        "x_min": 247,
+        "x_max": 670,
+        "confidence": 0.9777347700936454,
+        "line_number": 40,
+        "words_count": 7
+      },
+      {
+        "text": "F = HIT Frische GmbH & Co. KG ,",
+        "y_position": 1528,
+        "x_min": 247,
+        "x_max": 583,
+        "confidence": 0.907771090666453,
+        "line_number": 41,
+        "words_count": 9
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 1554,
+        "x_min": 246,
+        "x_max": 490,
+        "confidence": 0.968692272901535,
+        "line_number": 42,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath , USt - ID - Nr .: DE122274982",
+        "y_position": 1580,
+        "x_min": 245,
+        "x_max": 709,
+        "confidence": 0.9587171971797943,
+        "line_number": 43,
+        "words_count": 10
+      },
+      {
+        "text": "*** *****",
+        "y_position": 1615,
+        "x_min": 246,
+        "x_max": 728,
+        "confidence": 0.8780587613582611,
+        "line_number": 44,
+        "words_count": 2
+      },
+      {
+        "text": "Sie erhalten mit diesem Kauf",
+        "y_position": 1638,
+        "x_min": 318,
+        "x_max": 659,
+        "confidence": 0.9730769991874695,
+        "line_number": 45,
+        "words_count": 5
+      },
+      {
+        "text": "2 Treuepunkt ( e ) !",
+        "y_position": 1666,
+        "x_min": 392,
+        "x_max": 586,
+        "confidence": 0.9483126898606619,
+        "line_number": 46,
+        "words_count": 6
+      },
+      {
+        "text": "***** *****",
+        "y_position": 1698,
+        "x_min": 244,
+        "x_max": 728,
+        "confidence": 0.7896286845207214,
+        "line_number": 47,
+        "words_count": 2
+      },
+      {
+        "text": "0014033140825006000057",
+        "y_position": 1721,
+        "x_min": 368,
+        "x_max": 635,
+        "confidence": 0.9906201958656311,
+        "line_number": 48,
+        "words_count": 1
+      },
+      {
+        "text": "HIT Verbrauchermarkt Overath GmbH &",
+        "y_position": 1828,
+        "x_min": 268,
+        "x_max": 695,
+        "confidence": 0.962670087814331,
+        "line_number": 49,
+        "words_count": 5
+      },
+      {
+        "text": "USt - ID : DE276299025",
+        "y_position": 1857,
+        "x_min": 366,
+        "x_max": 599,
+        "confidence": 0.9206690788269043,
+        "line_number": 50,
+        "words_count": 5
+      },
+      {
+        "text": "Datum Zeit Fil . Pos Bon Lade",
+        "y_position": 2088,
+        "x_min": 242,
+        "x_max": 710,
+        "confidence": 0.944248480456216,
+        "line_number": 51,
+        "words_count": 7
+      },
+      {
+        "text": "14.08.25 15:48 4033 06 0057 5",
+        "y_position": 2112,
+        "x_min": 243,
+        "x_max": 673,
+        "confidence": 0.9861173133055369,
+        "line_number": 52,
+        "words_count": 6
+      },
+      {
+        "text": "Vielen Dank für Ihren Einkauf !",
+        "y_position": 2141,
+        "x_min": 302,
+        "x_max": 671,
+        "confidence": 0.9711739917596182,
+        "line_number": 53,
+        "words_count": 6
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 248,
+    "total_lines": 54
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.2903225806451613,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "ust",
+      "steuer",
+      "netto",
+      "brutto",
+      "eur",
+      "vielen dank",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 1,
+      "cs_CZ": 0,
+      "es_ES": 1,
+      "pl_PL": 0,
+      "de_DE": 9
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-08-14",
+    "receipt_total": 12.81,
+    "currency": "EUR",
+    "date_raw": "14.08.25",
+    "total_raw": "12,81",
+    "total_line_number": 13
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "WSH HIT Klassik ( 568 )",
+        "quantity": null,
+        "price": null,
+        "total": 11.32,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "WSH HIT Klassik ( 568 ) 11,32 B"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 5.66,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "2x 5,66 €"
+      },
+      {
+        "name": "Coraya Surimi ( 762 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Coraya Surimi ( 762 ) 1,49 B F"
+      }
+    ],
+    "discounts": [],
+    "items_count": 3,
+    "discounts_count": 0,
+    "items_total": 18.47,
+    "discounts_total": 0,
+    "skipped_lines": 44,
+    "parsed_lines": 3
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 18.47,
+    "discounts_sum": 0,
+    "calculated_total": 18.47,
+    "receipt_total": 12.81,
+    "difference": 5.659999999999998,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=18.47, receipt=12.81, diff=5.66 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.411087036132812,
+  "stages_completed": 6
+}

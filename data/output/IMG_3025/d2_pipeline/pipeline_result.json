@@ -1,0 +1,425 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Taylors Ruby Sel ( 536 )",
+        "quantity": null,
+        "price": null,
+        "total": 13.99,
+        "date": "2025-06-17 00:00:00"
+      }
+    ],
+    "total_amount": 13.99,
+    "merchant": "Hit",
+    "store_address": null,
+    "date": "2025-06-17 00:00:00",
+    "receipt_id": "IMG_3025",
+    "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nWEIN/SPIRITUOSEN/SEKT/CHAMPAPreis €\nTaylors Ruby Sel\nSUMME [1]\nGirocard\n(536) 13,99 A\n13,99\n13,99\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID :\nTA-Nr 258856\nKartenzahlung\nkontaktlos\ngirocard\nEUR 13,99\n61724235\nBNr 1536\nPAN\n###\n######1364\nKarte 0\ngültig bis ##/##\nEMV-AID\nA0000003591010028001\nVU-Nr\n290777\nDatum 17.06.25\nGenehmigungs-Nr\nEMV-Daten\n565071\n20:17 Uhr\nE800///3030\n00 Zahlung erfolgt\nBITTE BELEG AUFBEWAHREN\nNETTO [e] MWST [€] BRUTTO [€]\nSteuer\nA=19,00%\n11,76\n2.23\n13100 32\nN033\n02\n0130\n13.00",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 1.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "HIT",
+        "y_position": 402,
+        "x_min": 523,
+        "x_max": 700,
+        "confidence": 0.854197084903717,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "ECHTE",
+        "y_position": 479,
+        "x_min": 566,
+        "x_max": 648,
+        "confidence": 0.9914758801460266,
+        "line_number": 1,
+        "words_count": 1
+      },
+      {
+        "text": "VIELFALT .",
+        "y_position": 500,
+        "x_min": 544,
+        "x_max": 681,
+        "confidence": 0.8678489625453949,
+        "line_number": 2,
+        "words_count": 2
+      },
+      {
+        "text": "HIT 033 Overath",
+        "y_position": 611,
+        "x_min": 464,
+        "x_max": 733,
+        "confidence": 0.9820037682851156,
+        "line_number": 3,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 651,
+        "x_min": 426,
+        "x_max": 784,
+        "confidence": 0.974535346031189,
+        "line_number": 4,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 691,
+        "x_min": 480,
+        "x_max": 712,
+        "confidence": 0.9898855984210968,
+        "line_number": 5,
+        "words_count": 2
+      },
+      {
+        "text": "Öffnungszeiten",
+        "y_position": 731,
+        "x_min": 462,
+        "x_max": 711,
+        "confidence": 0.9565511345863342,
+        "line_number": 6,
+        "words_count": 1
+      },
+      {
+        "text": "MO - SA 08 : 00-22 : 00 Uhr",
+        "y_position": 770,
+        "x_min": 409,
+        "x_max": 779,
+        "confidence": 0.9773353603151109,
+        "line_number": 7,
+        "words_count": 9
+      },
+      {
+        "text": "WEIN / SPIRITUOSEN / SEKT / CHAMPAPreis €",
+        "y_position": 846,
+        "x_min": 250,
+        "x_max": 866,
+        "confidence": 0.9451029226183891,
+        "line_number": 8,
+        "words_count": 8
+      },
+      {
+        "text": "Taylors Ruby Sel ( 536 ) 13,99 A",
+        "y_position": 885,
+        "x_min": 248,
+        "x_max": 883,
+        "confidence": 0.9759324863553047,
+        "line_number": 9,
+        "words_count": 8
+      },
+      {
+        "text": "SUMME [ 1 ] 13,99",
+        "y_position": 966,
+        "x_min": 249,
+        "x_max": 935,
+        "confidence": 0.9439872860908508,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "Girocard 13,99",
+        "y_position": 1005,
+        "x_min": 247,
+        "x_max": 932,
+        "confidence": 0.9804291725158691,
+        "line_number": 11,
+        "words_count": 2
+      },
+      {
+        "text": "-K - U - N - D - E - N - B - E - L - E - G-",
+        "y_position": 1086,
+        "x_min": 373,
+        "x_max": 772,
+        "confidence": 0.9464843301546007,
+        "line_number": 12,
+        "words_count": 21
+      },
+      {
+        "text": "HIT 4033 Overath",
+        "y_position": 1123,
+        "x_min": 282,
+        "x_max": 566,
+        "confidence": 0.9860589504241943,
+        "line_number": 13,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistr . 18-22",
+        "y_position": 1162,
+        "x_min": 281,
+        "x_max": 601,
+        "confidence": 0.9482805927594503,
+        "line_number": 14,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 1203,
+        "x_min": 280,
+        "x_max": 512,
+        "confidence": 0.989642858505249,
+        "line_number": 15,
+        "words_count": 2
+      },
+      {
+        "text": "Terminal - ID : 61724235",
+        "y_position": 1241,
+        "x_min": 279,
+        "x_max": 876,
+        "confidence": 0.9832211852073669,
+        "line_number": 16,
+        "words_count": 5
+      },
+      {
+        "text": "TA - Nr 258856 BNr 1536",
+        "y_position": 1283,
+        "x_min": 280,
+        "x_max": 874,
+        "confidence": 0.9709750811258951,
+        "line_number": 17,
+        "words_count": 6
+      },
+      {
+        "text": "Kartenzahlung",
+        "y_position": 1320,
+        "x_min": 457,
+        "x_max": 685,
+        "confidence": 0.9918224215507507,
+        "line_number": 18,
+        "words_count": 1
+      },
+      {
+        "text": "kontaktlos",
+        "y_position": 1362,
+        "x_min": 490,
+        "x_max": 668,
+        "confidence": 0.9870861172676086,
+        "line_number": 19,
+        "words_count": 1
+      },
+      {
+        "text": "girocard",
+        "y_position": 1402,
+        "x_min": 506,
+        "x_max": 651,
+        "confidence": 0.98890221118927,
+        "line_number": 20,
+        "words_count": 1
+      },
+      {
+        "text": "EUR 13,99",
+        "y_position": 1440,
+        "x_min": 421,
+        "x_max": 731,
+        "confidence": 0.9707669615745544,
+        "line_number": 21,
+        "words_count": 2
+      },
+      {
+        "text": "PAN ### ###### 1364",
+        "y_position": 1518,
+        "x_min": 274,
+        "x_max": 876,
+        "confidence": 0.9483278840780258,
+        "line_number": 22,
+        "words_count": 4
+      },
+      {
+        "text": "Karte 0 gültig bis ## / ##",
+        "y_position": 1560,
+        "x_min": 272,
+        "x_max": 878,
+        "confidence": 0.9341512237276349,
+        "line_number": 23,
+        "words_count": 7
+      },
+      {
+        "text": "EMV - AID A0000003591010028001",
+        "y_position": 1596,
+        "x_min": 274,
+        "x_max": 875,
+        "confidence": 0.9904120415449142,
+        "line_number": 24,
+        "words_count": 4
+      },
+      {
+        "text": "VU - Nr 290777",
+        "y_position": 1631,
+        "x_min": 275,
+        "x_max": 872,
+        "confidence": 0.9612108170986176,
+        "line_number": 25,
+        "words_count": 4
+      },
+      {
+        "text": "Genehmigungs - Nr 565071",
+        "y_position": 1665,
+        "x_min": 278,
+        "x_max": 868,
+        "confidence": 0.9687935262918472,
+        "line_number": 26,
+        "words_count": 4
+      },
+      {
+        "text": "Datum 17.06.25 20:17 Uhr",
+        "y_position": 1701,
+        "x_min": 277,
+        "x_max": 868,
+        "confidence": 0.9861781895160675,
+        "line_number": 27,
+        "words_count": 4
+      },
+      {
+        "text": "EMV - Daten",
+        "y_position": 1736,
+        "x_min": 278,
+        "x_max": 436,
+        "confidence": 0.9849696755409241,
+        "line_number": 28,
+        "words_count": 3
+      },
+      {
+        "text": "E800 /// 3030",
+        "y_position": 1773,
+        "x_min": 278,
+        "x_max": 470,
+        "confidence": 0.9745396574338278,
+        "line_number": 29,
+        "words_count": 3
+      },
+      {
+        "text": "00 Zahlung erfolgt",
+        "y_position": 1807,
+        "x_min": 278,
+        "x_max": 591,
+        "confidence": 0.983578085899353,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "BITTE BELEG AUFBEWAHREN",
+        "y_position": 1843,
+        "x_min": 365,
+        "x_max": 760,
+        "confidence": 0.9895441929499308,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "Steuer NETTO [ e ] MWST [ € ] BRUTTO [ € ]",
+        "y_position": 1953,
+        "x_min": 245,
+        "x_max": 926,
+        "confidence": 0.7944186559090247,
+        "line_number": 32,
+        "words_count": 13
+      },
+      {
+        "text": "A = 19,00 % 11,76 2.23 13.00",
+        "y_position": 1994,
+        "x_min": 244,
+        "x_max": 923,
+        "confidence": 0.8929125155721392,
+        "line_number": 33,
+        "words_count": 7
+      },
+      {
+        "text": "32 N033 02 0130",
+        "y_position": 2150,
+        "x_min": 314,
+        "x_max": 798,
+        "confidence": 0.6353130489587784,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "13100",
+        "y_position": 2167,
+        "x_min": 205,
+        "x_max": 297,
+        "confidence": 0.5275239944458008,
+        "line_number": 35,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 153,
+    "total_lines": 36
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.22580645161290322,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "steuer",
+      "netto",
+      "brutto",
+      "eur",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 1,
+      "cs_CZ": 0,
+      "es_ES": 1,
+      "pl_PL": 0,
+      "de_DE": 7
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-06-17",
+    "receipt_total": 13.99,
+    "currency": "EUR",
+    "date_raw": "17.06.25",
+    "total_raw": "13,99",
+    "total_line_number": 10
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Taylors Ruby Sel ( 536 )",
+        "quantity": null,
+        "price": null,
+        "total": 13.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Taylors Ruby Sel ( 536 ) 13,99 A"
+      }
+    ],
+    "discounts": [],
+    "items_count": 1,
+    "discounts_count": 0,
+    "items_total": 13.99,
+    "discounts_total": 0,
+    "skipped_lines": 28,
+    "parsed_lines": 1
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 13.99,
+    "discounts_sum": 0,
+    "calculated_total": 13.99,
+    "receipt_total": 13.99,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 20.045042037963867,
+  "stages_completed": 6
+}

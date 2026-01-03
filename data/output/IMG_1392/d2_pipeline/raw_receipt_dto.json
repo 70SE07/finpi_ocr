@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "name": "WSH HIT Klassik ( 568 )",
+      "quantity": null,
+      "price": null,
+      "total": 11.32,
+      "date": "2025-08-14 00:00:00"
+    },
+    {
+      "name": "2x €",
+      "quantity": 2.0,
+      "price": null,
+      "total": 5.66,
+      "date": "2025-08-14 00:00:00"
+    },
+    {
+      "name": "Coraya Surimi ( 762 ) B",
+      "quantity": null,
+      "price": null,
+      "total": 1.49,
+      "date": "2025-08-14 00:00:00"
+    }
+  ],
+  "total_amount": 12.81,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": "2025-08-14 00:00:00",
+  "receipt_id": "IMG_1392",
+  "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nTHEKE/SB HF\nPreis €\n*** Discount Preis ***\nWSH HIT Klassik\n(568)\n11,32 B F\n2x 5,66 €\nGEKÜHLTE LEBENSMITTEL\nCoraya Surimi\n(762)\n1,49 B F\nSUMME [2]\n12,81\nGirocard\n12,81\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID:\nTA-Nr 271278\nKartenzahlung\nkontaktlos\ngirocard\nEUR 12,81\n61724235\nBNr 9273\nPAN\n########1324\nKarte 1\ngültig bis\n##/##\nEMV-AID\nA0000003591010028001\nVU-Nr\n290777\nDatum 14.08.25\nGenehmigungs-Nr\nEMV-Daten\n504684\n15:48 Uhr\nE800///3030\n00 Zahlung erfolgt\nBITTE BELEG AUFBEWAHREN\nSteuer\nB= 7,00%\nNETTO [€] MWST [€] BRUTTO [€]\n0,84\n11,97\nKennzeichenlegende\n12,81\nDie wie folgt gekennzeichneten Artikel\nsowie die darauf entfallene MWST werden\nverkauft im Namen und Rechnung von:\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n***\n*****\nSie erhalten mit diesem Kauf\n2 Treuepunkt (e)!\n0014033140825006000057\n*****\n*****\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025\nDatum Zeit Fil. Pos Bon Lade\n14.08.25 15:48 4033 06 0057 5\nVielen Dank für Ihren Einkauf!",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 3.0,
+    "validation_passed": 0.0,
+    "validation_difference": 5.659999999999998
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "name": "A",
+      "quantity": null,
+      "price": null,
+      "total": 1.19,
+      "date": "2025-08-14 00:00:00"
+    },
+    {
+      "name": "Joghurtgetränk",
+      "quantity": null,
+      "price": null,
+      "total": 1.49,
+      "date": "2025-08-14 00:00:00"
+    },
+    {
+      "name": "0,89 x 5",
+      "quantity": 0.89,
+      "price": null,
+      "total": 4.45,
+      "date": "2025-08-14 00:00:00"
+    },
+    {
+      "name": "Dovgan Fam.33 % Fett 2,29 x 5",
+      "quantity": 2.29,
+      "price": null,
+      "total": 11.45,
+      "date": "2025-08-14 00:00:00"
+    },
+    {
+      "name": "zahlen",
+      "quantity": null,
+      "price": null,
+      "total": 18.57,
+      "date": "2025-08-14 00:00:00"
+    },
+    {
+      "name": "Bio Gurken Ayran Kefir ",
+      "quantity": null,
+      "price": null,
+      "total": 18.57,
+      "date": "2025-08-14 00:00:00"
+    }
+  ],
+  "total_amount": 18.57,
+  "merchant": "Lidl",
+  "store_address": "Steinhauser Auel 1, 514910verath - Vilkerath",
+  "date": "2025-08-14 00:00:00",
+  "receipt_id": "IMG_1390",
+  "ocr_text": "LIDL\nSteinhauser Auel 1\n514910verath-Vilkerath\n99A 2014\nEUR\nDattelcherrytomaten\n1,99 A\nBio Gurken\n1,19 A\nAyran Joghurtgetränk\n1,49 A\nKefir\n0,89 x\n5\n4,45 A\nDovgan Fam.33% Fett\n2,29 x\n5\n11,45 A\nPreisvorteil\n-2,00\nzu zahlen\n18,57\nKarte\n18,57\nGesamter Preisvorteil\n2,00\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n1,21\n17,36\n18,57\nSumme\n1,21\n17,36\n18,57\nTSE Transaktionsnummer: 1225379\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 2bqEmwamB1h8spkdL2yrs93rNBCTdq04\nyWTCdnoSjNfKenzGUwljkyX21jqM8Yci/zsCb0y2Tk\nKY+7d7mtT2mhqsgqJ/ISQ5rhs5q5GCPwXo4Q1JWR4G\nNJZtTbz58M3u\nSignaturzähler: 2501059\n2025-08-14T13:14:41.000Z\n2025-08-14T13:16:24.000Z\n6496 019653/81\n814060660\n190\n14.08.25 15:14\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n18,57 EUR\n14.08.2025\n15:15 T-ID 60155117\nTA-Nr. 214073\nBeleg-Nr. 4716\nKartennr.\n###############1324 01\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nAutorisierungsnummer\nEMV-Daten:\n482361\nAutorisierungsantwortcode\n00\nA0000003591010028001/00\n**\nAutorisierung erfolgt",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 6.0,
+    "validation_passed": 0.0,
+    "validation_difference": 35.15
+  }
+}

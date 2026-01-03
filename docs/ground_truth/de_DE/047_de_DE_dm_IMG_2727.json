@@ -1,0 +1,37 @@
+{
+  "id": "047",
+  "source_file": "data/input/DM/IMG_2727.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "dm-drogerie markt",
+    "address": "Steinhofplatz 1, 51491 Overath",
+    "tax_id": "34092/30007"
+  },
+  "metadata": {
+    "date": "05.11.2025",
+    "time": "10:42",
+    "currency": "EUR",
+    "payment_method": "Kartenzahlung girocard",
+    "receipt_total": 2.80
+  },
+  "items": [
+    {
+      "raw_name": "Copyservice",
+      "quantity": 1,
+      "unit_price": 1.00,
+      "total_price": 1.00
+    },
+    {
+      "raw_name": "Lemonaid Limette 330ml+0,25€Pf",
+      "quantity": 1,
+      "unit_price": 1.55,
+      "total_price": 1.55
+    },
+    {
+      "raw_name": "Einwegpfand",
+      "quantity": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25
+    }
+  ]
+}

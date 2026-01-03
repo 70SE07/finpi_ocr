@@ -1,0 +1,38 @@
+{
+  "id": "de_DE_013_de_DE_edeka_IMG_1525",
+  "receipt_id": "013_de_DE_edeka_IMG_1525",
+  "locale": "de_DE",
+  "store": "unknown",
+  "source_file": "IMG_1525",
+  "artifacts": [
+    {
+      "type": "WORD_SPLIT",
+      "ocr_text": "NOT FOUND",
+      "expected_text": "Red Bull 0,25l",
+      "context": "Red Bull 0,25l",
+      "suggestion": "Проверить разрыв слова или потерю символов"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "***",
+      "expected_text": "",
+      "context": "00 075 00\n16:06 Uhr\n*** Autorisierung er",
+      "suggestion": "Удалить: Множественные звёздочки"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "***",
+      "expected_text": "",
+      "context": "00 075 00\n16:06 Uhr\n*** Autorisierung er",
+      "suggestion": "Удалить: Множественные звёздочки"
+    }
+  ],
+  "statistics": {
+    "total_words": 195,
+    "artifacts_found": 3,
+    "by_type": {
+      "WORD_SPLIT": 1,
+      "GARBAGE": 2
+    }
+  }
+}

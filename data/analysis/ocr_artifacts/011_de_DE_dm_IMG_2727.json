@@ -1,0 +1,45 @@
+{
+  "id": "de_DE_011_de_DE_dm_IMG_2727",
+  "receipt_id": "011_de_DE_dm_IMG_2727",
+  "locale": "de_DE",
+  "store": "unknown",
+  "source_file": "IMG_2727",
+  "artifacts": [
+    {
+      "type": "WORD_SPLIT",
+      "ocr_text": "NOT FOUND",
+      "expected_text": "Lemonaid Limette 330ml+0,25Pf",
+      "context": "Lemonaid Limette 330ml+0,25Pf",
+      "suggestion": "Проверить разрыв слова или потерю символов"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "*******",
+      "expected_text": "",
+      "context": "uer-Nr.:34092/30007\n******* FISKALINFORM",
+      "suggestion": "Удалить: Множественные звёздочки"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "*******",
+      "expected_text": "",
+      "context": "uer-Nr.:34092/30007\n******* FISKALINFORM",
+      "suggestion": "Удалить: Множественные звёздочки"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "***",
+      "expected_text": "",
+      "context": "uer-Nr.:34092/30007\n******* FISKALINFORM",
+      "suggestion": "Удалить: Множественные звёздочки"
+    }
+  ],
+  "statistics": {
+    "total_words": 208,
+    "artifacts_found": 4,
+    "by_type": {
+      "WORD_SPLIT": 1,
+      "GARBAGE": 3
+    }
+  }
+}

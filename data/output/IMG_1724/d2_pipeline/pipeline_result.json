@@ -1,0 +1,1465 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "826945 Allzwecktragetasch",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "826945 Allzwecktragetasch 0,99 B"
+      },
+      {
+        "name": "826945 Allzweck tragetasch",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "826945 Allzweck tragetasch 0,99 B"
+      },
+      {
+        "name": "2938 Zucker Raffinade CAW",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "2938 Zucker Raffinade CAW 0,89 A"
+      },
+      {
+        "name": "728573 Gouda 400g",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "728573 Gouda 400g 2,99 A"
+      },
+      {
+        "name": "728573 Gouda 400g",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "728573 Gouda 400g 2,99 A"
+      },
+      {
+        "name": "834128 Gewürzmühle",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "834128 Gewürzmühle 0,99 A"
+      },
+      {
+        "name": "839397 Pfannengemüse 750g",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "839397 Pfannengemüse 750g 1,99 A"
+      },
+      {
+        "name": "807611 Bio FT Lose Banane",
+        "quantity": null,
+        "price": null,
+        "total": 1.66,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "807611 Bio FT Lose Banane 1,66 A"
+      },
+      {
+        "name": "715057 Eier Bodenh . 18er",
+        "quantity": null,
+        "price": null,
+        "total": 3.39,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+      },
+      {
+        "name": "839397 Pfannengemüse 750g",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "839397 Pfannengemüse 750g 1,99 A"
+      },
+      {
+        "name": "61863 Dill Bund",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "61863 Dill Bund 1,49 A"
+      },
+      {
+        "name": "835467 Wattestäbchen BioЯ",
+        "quantity": null,
+        "price": 0.7,
+        "total": 0.7,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "835467 Wattestäbchen BioЯ90,70 B"
+      },
+      {
+        "name": "807490 Avocado 500g Netz",
+        "quantity": null,
+        "price": null,
+        "total": 1.89,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "807490 Avocado 500g Netz 1,89 A"
+      },
+      {
+        "name": "841978 Bio Olivenol",
+        "quantity": null,
+        "price": null,
+        "total": 6.95,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "841978 Bio Olivenol6,95 A"
+      },
+      {
+        "name": "848344 Ketchup Mix 500ml",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "848344 Ketchup Mix 500ml 1,29 A"
+      },
+      {
+        "name": "6254 Kern . Roggenvollk .",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "6254 Kern . Roggenvollk . 0,79 A"
+      },
+      {
+        "name": "814922 Basmati Reis",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "814922 Basmati Reis 2,99 A"
+      },
+      {
+        "name": "823033 Deo Roll - on",
+        "quantity": null,
+        "price": null,
+        "total": 0.6,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "823033 Deo Roll - on 0,60 B"
+      },
+      {
+        "name": "814922 Basmati Reis",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "814922 Basmati Reis 2,99 A"
+      },
+      {
+        "name": "733244 F & G Häh Min.schn",
+        "quantity": null,
+        "price": null,
+        "total": 5.49,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "733244 F & G Häh Min.schn 5,49 A"
+      },
+      {
+        "name": "812921 Mayonnaise 500ml",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "812921 Mayonnaise 500ml 1,59 A"
+      },
+      {
+        "name": "823532 Mini Romari spent .",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "823532 Mini Romari spent . 1,49 A"
+      },
+      {
+        "name": "733246 F & G Häh Brustfil",
+        "quantity": null,
+        "price": null,
+        "total": 9.49,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "733246 F & G Häh Brustfil 9,49 A"
+      },
+      {
+        "name": "46478 Frischwurst - Sortim",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "46478 Frischwurst - Sortim 1,29 A"
+      },
+      {
+        "name": "4528 Geflügel - Frischwur",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "4528 Geflügel - Frischwur 1,29 A"
+      },
+      {
+        "name": "837483 Rahmspinat 450g",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "837483 Rahmspinat 450g 0,89 A"
+      },
+      {
+        "name": "808696 Red Bull regular",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "808696 Red Bull regular 0,89 B"
+      },
+      {
+        "name": "6205 Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "6205 Pfand 0,25 B"
+      },
+      {
+        "name": "6254 Kern . Roggenvollk.MU",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "6254 Kern . Roggenvollk.MU 0,79 A"
+      },
+      {
+        "name": "810319 45979 Gurke Creme Stück Fraiche 2009 200g AW",
+        "quantity": null,
+        "price": null,
+        "total": 1.09,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "810319 45979 Gurke Creme Stück Fraiche 2009 200g AW 1,09 A"
+      },
+      {
+        "name": "61896 BioZwiebeln750g ge",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "61896 BioZwiebeln750g ge 1,49 A"
+      },
+      {
+        "name": "4528 Geflügel - Frischwur",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "4528 Geflügel - Frischwur 1,29 A"
+      },
+      {
+        "name": "786346 Kart . Vwfk 2.5kg",
+        "quantity": null,
+        "price": null,
+        "total": 1.89,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "786346 Kart . Vwfk 2.5kg 1,89 A"
+      },
+      {
+        "name": "45979 Creme Fraiche 200g",
+        "quantity": null,
+        "price": null,
+        "total": 1.09,
+        "date": "2025-09-06 00:00:00",
+        "raw_text": "45979 Creme Fraiche 200g 1,09 A"
+      }
+    ],
+    "total_amount": 72.19,
+    "merchant": "aldi",
+    "store_address": "TH3 Wiesenauel 1018, 51491 Overath",
+    "date": "2025-09-06 00:00:00",
+    "receipt_id": "IMG_1724",
+    "ocr_text": "TH3\nALDI SUD\nWiesenauel 1018\n51491 Overath\nEUR\n826945 Allzwecktragetasch\n826945 Allzweck tragetasch\n2938 Zucker Raffinade\n0,99 B\n0,99 B\n728573 Gouda 400g\nCAW 0,89 A\n2,99 A\n728573 Gouda 400g\n2,99 A\n834128 Gewürzmühle\n0,99 A\n839397 Pfannengemüse 750g\n1,99 A\n807611 Bio FT Lose Banane\n1,66 A\n0,834 kg x 1,99 EUR/kg\n715057 Eier Bodenh. 18er\n3,39 A\n839397 Pfannengemüse 750g\n1,99 A\n61863 Dill Bund\n1,49 A\n838294 Datteltomaten 500g\nM701946 Meggle Butter 250g A22,19 A\n1,89 A\n835467 Wattestäbchen BioЯ90,70 B\n807490 Avocado 500g Netz\n841978 Bio Olivenol6,95 A\n1,89 A\n848344 Ketchup Mix 500ml\n1,29 A\n6254 Kern. Roggenvollk.\n0,79 A\n814922 Basmati Reis\n2,99 A\n823033 Deo Roll-on\n0,60 B\n814922 Basmati Reis\n2,99 A\n733244 F&G Häh Min.schn\n5,49 A\nRabatt\n30,0%\n-1,65 A\n812921 Mayonnaise 500ml\n1,59 A\n823532 Mini Romari spent.\n1,49 A\n733246 F&G Häh Brustfil\n9,49 A\n46478 Frischwurst-Sortim\n1,29 A\n4528 Geflügel-Frischwur\n018\n1,29 A\n837483 Rahmspinat 450g\n0,89 A\n808696 Red Bull regular\n0,89 B\n6205 Pfand\n0,25 B\n6254 Kern. Roggenvollk.MU 0,79 A\n45979 Creme Fraiche 200g\n810319 Gurke Stück 2009 AW 1,09 A\n61896 BioZwiebeln750g ge\n4528 Geflügel-Frischwur\n786346 Kart. Vwfk 2.5kg\n45979 Creme Fraiche 200g\nK-U-N-D-E-N-B-E-L-E-G\n1,49 A\n1,29 A\n1,89 A\n1,09 A\nMUS Kartenzahlung girocard\nBetrag THAWED THU 72,19 EUR\n06.09.2025ЯHA16:39 TXT-ID 65289431\nTA-Nr. 063619\nKartennr.\nKontaktlos Chip\nBestätigt durch mobiles Kundengerät\nBeleg-Nr. 0521\n###############1324 12\nOnline\n1079289431\n930804\n00\nVU-Nummer\nAutorisierungsnummer\nAutorisierungsantwortcode\nEMV-Daten:\n///010002//000\n0000008001/0000////010002//0000000002202\n**\n00000008001000001/35EAF2F5/80\nTH Zahlung erfolgt 018\nSumme\n72,19\n72,19\n**\ngirocard\nEUR\nA 07,0% Netto\n63,34 MwSt\nB 19,0% Netto\n4,43\n3,71 MwSt 2AW 0,71\n*4975 035/026/003/015 06.09.25 16:38\nUnsere Öffnungszeiten:\nMo Sa: 8:00 Uhr - 20:00 Uhr\nUST-ID-Nr.: DE 813192189\nVIELEN DANK FÜR DEINEN EINKAUF\n*******\nALDI SÜD - Gutes für alle.\nЯ100% natürlicher\nEntdecke unser vie\n*\nx\nNUR NUR NATUR Sortiment und\n*\n*******\nerlebe Bio, das weiter geht!\n*\nKasse:\nTSE:\nStart:\nInternational.D.035.026.03\n/2+db+XG8V78bkQC6ICVm7ix3IsL2zSmb3\nF98Bcetag=\n2025-09-06 16:38:42\nEnde: 2025-09-06 16:40:11\nT.-Nr.: 108887\nS.-Nr.: 217913 200,00\nSig.:\nC6T+LkqPPhwr T95CcXCZyct TbHZjm1+Btn\nUUWT5WcfwoLksMoawK7fQLn2CNFv6qGdtx\nwdZI8bMJCTrXsDyAsu90j1xCXDZQJjMQpb\nzjGXaeaHS17SIthDifNbVT8ymw",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 34.0,
+      "validation_passed": 0.0,
+      "validation_difference": 4.969999999999999
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "ALDI SUD",
+        "y_position": 74,
+        "x_min": 558,
+        "x_max": 639,
+        "confidence": 0.9353294670581818,
+        "line_number": 0,
+        "words_count": 2
+      },
+      {
+        "text": "TH3 Wiesenauel 1018",
+        "y_position": 90,
+        "x_min": 484,
+        "x_max": 736,
+        "confidence": 0.9029069542884827,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 113,
+        "x_min": 528,
+        "x_max": 660,
+        "confidence": 0.9867792725563049,
+        "line_number": 2,
+        "words_count": 2
+      },
+      {
+        "text": "EUR",
+        "y_position": 152,
+        "x_min": 731,
+        "x_max": 793,
+        "confidence": 0.9921504259109497,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "826945 Allzwecktragetasch 0,99 B",
+        "y_position": 171,
+        "x_min": 436,
+        "x_max": 801,
+        "confidence": 0.9608307033777237,
+        "line_number": 4,
+        "words_count": 4
+      },
+      {
+        "text": "826945 Allzweck tragetasch 0,99 B",
+        "y_position": 190,
+        "x_min": 435,
+        "x_max": 801,
+        "confidence": 0.9598447680473328,
+        "line_number": 5,
+        "words_count": 5
+      },
+      {
+        "text": "2938 Zucker Raffinade CAW 0,89 A",
+        "y_position": 206,
+        "x_min": 455,
+        "x_max": 803,
+        "confidence": 0.9206403195858002,
+        "line_number": 6,
+        "words_count": 6
+      },
+      {
+        "text": "728573 Gouda 400g 2,99 A",
+        "y_position": 231,
+        "x_min": 435,
+        "x_max": 799,
+        "confidence": 0.9823437809944153,
+        "line_number": 7,
+        "words_count": 5
+      },
+      {
+        "text": "728573 Gouda 400g 2,99 A",
+        "y_position": 248,
+        "x_min": 435,
+        "x_max": 800,
+        "confidence": 0.9855570912361145,
+        "line_number": 8,
+        "words_count": 5
+      },
+      {
+        "text": "834128 Gewürzmühle 0,99 A",
+        "y_position": 270,
+        "x_min": 434,
+        "x_max": 801,
+        "confidence": 0.972332090139389,
+        "line_number": 9,
+        "words_count": 4
+      },
+      {
+        "text": "839397 Pfannengemüse 750g 1,99 A",
+        "y_position": 287,
+        "x_min": 433,
+        "x_max": 802,
+        "confidence": 0.9820807695388794,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "807611 Bio FT Lose Banane 1,66 A",
+        "y_position": 306,
+        "x_min": 433,
+        "x_max": 802,
+        "confidence": 0.9522328887666974,
+        "line_number": 11,
+        "words_count": 7
+      },
+      {
+        "text": "0,834 kg x 1,99 EUR / kg",
+        "y_position": 327,
+        "x_min": 463,
+        "x_max": 709,
+        "confidence": 0.9594183308737618,
+        "line_number": 12,
+        "words_count": 7
+      },
+      {
+        "text": "715057 Eier Bodenh . 18er 3,39 A",
+        "y_position": 346,
+        "x_min": 433,
+        "x_max": 803,
+        "confidence": 0.9216276407241821,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "839397 Pfannengemüse 750g 1,99 A",
+        "y_position": 365,
+        "x_min": 432,
+        "x_max": 800,
+        "confidence": 0.9813305497169494,
+        "line_number": 14,
+        "words_count": 5
+      },
+      {
+        "text": "61863 Dill Bund 1,49 A",
+        "y_position": 386,
+        "x_min": 442,
+        "x_max": 804,
+        "confidence": 0.9031054377555847,
+        "line_number": 15,
+        "words_count": 5
+      },
+      {
+        "text": "M701946 Meggle Butter 250g A22,19 A",
+        "y_position": 405,
+        "x_min": 403,
+        "x_max": 804,
+        "confidence": 0.949017326037089,
+        "line_number": 16,
+        "words_count": 6
+      },
+      {
+        "text": "838294 Datteltomaten 500g 1,89 A",
+        "y_position": 424,
+        "x_min": 431,
+        "x_max": 804,
+        "confidence": 0.9878397226333618,
+        "line_number": 17,
+        "words_count": 5
+      },
+      {
+        "text": "835467 Wattestäbchen BioЯ90,70 B",
+        "y_position": 444,
+        "x_min": 431,
+        "x_max": 803,
+        "confidence": 0.8996324390172958,
+        "line_number": 18,
+        "words_count": 4
+      },
+      {
+        "text": "807490 Avocado 500g Netz 1,89 A",
+        "y_position": 466,
+        "x_min": 430,
+        "x_max": 802,
+        "confidence": 0.9731813569863638,
+        "line_number": 19,
+        "words_count": 6
+      },
+      {
+        "text": "841978 Bio Olivenol6,95 A",
+        "y_position": 484,
+        "x_min": 429,
+        "x_max": 803,
+        "confidence": 0.8471522033214569,
+        "line_number": 20,
+        "words_count": 4
+      },
+      {
+        "text": "848344 Ketchup Mix 500ml 1,29 A",
+        "y_position": 509,
+        "x_min": 430,
+        "x_max": 801,
+        "confidence": 0.9731132586797079,
+        "line_number": 21,
+        "words_count": 6
+      },
+      {
+        "text": "6254 Kern . Roggenvollk . 0,79 A",
+        "y_position": 531,
+        "x_min": 450,
+        "x_max": 802,
+        "confidence": 0.9540680817195347,
+        "line_number": 22,
+        "words_count": 7
+      },
+      {
+        "text": "814922 Basmati Reis 2,99 A",
+        "y_position": 552,
+        "x_min": 429,
+        "x_max": 802,
+        "confidence": 0.9892447590827942,
+        "line_number": 23,
+        "words_count": 5
+      },
+      {
+        "text": "823033 Deo Roll - on 0,60 B",
+        "y_position": 571,
+        "x_min": 429,
+        "x_max": 803,
+        "confidence": 0.9375392539160592,
+        "line_number": 24,
+        "words_count": 7
+      },
+      {
+        "text": "814922 Basmati Reis 2,99 A",
+        "y_position": 594,
+        "x_min": 428,
+        "x_max": 802,
+        "confidence": 0.9852336287498474,
+        "line_number": 25,
+        "words_count": 5
+      },
+      {
+        "text": "733244 F & G Häh Min.schn 5,49 A",
+        "y_position": 614,
+        "x_min": 429,
+        "x_max": 802,
+        "confidence": 0.9464499354362488,
+        "line_number": 26,
+        "words_count": 8
+      },
+      {
+        "text": "Rabatt 30,0 % -1,65 A",
+        "y_position": 635,
+        "x_min": 386,
+        "x_max": 804,
+        "confidence": 0.9733632326126098,
+        "line_number": 27,
+        "words_count": 5
+      },
+      {
+        "text": "812921 Mayonnaise 500ml 1,59 A",
+        "y_position": 657,
+        "x_min": 428,
+        "x_max": 804,
+        "confidence": 0.9759884119033814,
+        "line_number": 28,
+        "words_count": 5
+      },
+      {
+        "text": "823532 Mini Romari spent . 1,49 A",
+        "y_position": 679,
+        "x_min": 428,
+        "x_max": 802,
+        "confidence": 0.9576095938682556,
+        "line_number": 29,
+        "words_count": 7
+      },
+      {
+        "text": "733246 F & G Häh Brustfil 9,49 A",
+        "y_position": 700,
+        "x_min": 428,
+        "x_max": 802,
+        "confidence": 0.9619770869612694,
+        "line_number": 30,
+        "words_count": 8
+      },
+      {
+        "text": "46478 Frischwurst - Sortim 018 1,29 A",
+        "y_position": 721,
+        "x_min": 438,
+        "x_max": 801,
+        "confidence": 0.974509767123631,
+        "line_number": 31,
+        "words_count": 7
+      },
+      {
+        "text": "4528 Geflügel - Frischwur 1,29 A",
+        "y_position": 743,
+        "x_min": 448,
+        "x_max": 804,
+        "confidence": 0.9707874755064646,
+        "line_number": 32,
+        "words_count": 6
+      },
+      {
+        "text": "837483 Rahmspinat 450g 0,89 A",
+        "y_position": 763,
+        "x_min": 427,
+        "x_max": 802,
+        "confidence": 0.9821424007415771,
+        "line_number": 33,
+        "words_count": 5
+      },
+      {
+        "text": "808696 Red Bull regular 0,89 B",
+        "y_position": 783,
+        "x_min": 427,
+        "x_max": 803,
+        "confidence": 0.9881818691889445,
+        "line_number": 34,
+        "words_count": 6
+      },
+      {
+        "text": "6205 Pfand 0,25 B",
+        "y_position": 805,
+        "x_min": 447,
+        "x_max": 802,
+        "confidence": 0.9821233153343201,
+        "line_number": 35,
+        "words_count": 4
+      },
+      {
+        "text": "6254 Kern . Roggenvollk.MU 0,79 A",
+        "y_position": 827,
+        "x_min": 447,
+        "x_max": 804,
+        "confidence": 0.9299716254075369,
+        "line_number": 36,
+        "words_count": 6
+      },
+      {
+        "text": "810319 45979 Gurke Creme Stück Fraiche 2009 200g AW 1,09 A",
+        "y_position": 848,
+        "x_min": 424,
+        "x_max": 805,
+        "confidence": 0.8300784176046198,
+        "line_number": 37,
+        "words_count": 11
+      },
+      {
+        "text": "61896 BioZwiebeln750g ge 1,49 A",
+        "y_position": 888,
+        "x_min": 436,
+        "x_max": 803,
+        "confidence": 0.9791256546974182,
+        "line_number": 38,
+        "words_count": 5
+      },
+      {
+        "text": "4528 Geflügel - Frischwur 1,29 A",
+        "y_position": 912,
+        "x_min": 446,
+        "x_max": 802,
+        "confidence": 0.9733273188273112,
+        "line_number": 39,
+        "words_count": 6
+      },
+      {
+        "text": "786346 Kart . Vwfk 2.5kg 1,89 A",
+        "y_position": 932,
+        "x_min": 426,
+        "x_max": 802,
+        "confidence": 0.907861590385437,
+        "line_number": 40,
+        "words_count": 7
+      },
+      {
+        "text": "45979 Creme Fraiche 200g 1,09 A",
+        "y_position": 954,
+        "x_min": 435,
+        "x_max": 802,
+        "confidence": 0.983256459236145,
+        "line_number": 41,
+        "words_count": 6
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 998,
+        "x_min": 476,
+        "x_max": 698,
+        "confidence": 0.9452209018525624,
+        "line_number": 42,
+        "words_count": 21
+      },
+      {
+        "text": "MUS Kartenzahlung girocard",
+        "y_position": 1058,
+        "x_min": 393,
+        "x_max": 708,
+        "confidence": 0.9044910073280334,
+        "line_number": 43,
+        "words_count": 3
+      },
+      {
+        "text": "Betrag THAWED THU 72,19 EUR",
+        "y_position": 1103,
+        "x_min": 379,
+        "x_max": 805,
+        "confidence": 0.755114609003067,
+        "line_number": 44,
+        "words_count": 5
+      },
+      {
+        "text": "06.09.2025ЯHA16 : 39 TXT - ID 65289431",
+        "y_position": 1146,
+        "x_min": 379,
+        "x_max": 804,
+        "confidence": 0.9097526924950736,
+        "line_number": 45,
+        "words_count": 7
+      },
+      {
+        "text": "TA - Nr . 063619 Beleg - Nr . 0521",
+        "y_position": 1168,
+        "x_min": 379,
+        "x_max": 805,
+        "confidence": 0.9363889753818512,
+        "line_number": 46,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . ############### 1324 12",
+        "y_position": 1190,
+        "x_min": 379,
+        "x_max": 804,
+        "confidence": 0.9112102627754212,
+        "line_number": 47,
+        "words_count": 5
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 1211,
+        "x_min": 378,
+        "x_max": 804,
+        "confidence": 0.9827930132548014,
+        "line_number": 48,
+        "words_count": 3
+      },
+      {
+        "text": "Bestätigt durch mobiles Kundengerät",
+        "y_position": 1232,
+        "x_min": 399,
+        "x_max": 771,
+        "confidence": 0.9820267409086227,
+        "line_number": 49,
+        "words_count": 4
+      },
+      {
+        "text": "VU - Nummer 1079289431",
+        "y_position": 1256,
+        "x_min": 378,
+        "x_max": 803,
+        "confidence": 0.9769084453582764,
+        "line_number": 50,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 930804",
+        "y_position": 1276,
+        "x_min": 378,
+        "x_max": 804,
+        "confidence": 0.9768140017986298,
+        "line_number": 51,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 1299,
+        "x_min": 378,
+        "x_max": 805,
+        "confidence": 0.9877430498600006,
+        "line_number": 52,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - Daten : /// 010002 // 000",
+        "y_position": 1322,
+        "x_min": 378,
+        "x_max": 697,
+        "confidence": 0.8524404168128967,
+        "line_number": 53,
+        "words_count": 8
+      },
+      {
+        "text": "0000008001/0000 //// 010002 // 0000000002202",
+        "y_position": 1342,
+        "x_min": 378,
+        "x_max": 804,
+        "confidence": 0.9755181908607483,
+        "line_number": 54,
+        "words_count": 5
+      },
+      {
+        "text": "00000008001000001 / 35EAF2F5 / 80",
+        "y_position": 1364,
+        "x_min": 431,
+        "x_max": 740,
+        "confidence": 0.9834782481193542,
+        "line_number": 55,
+        "words_count": 5
+      },
+      {
+        "text": "** TH Zahlung erfolgt 018 **",
+        "y_position": 1406,
+        "x_min": 376,
+        "x_max": 801,
+        "confidence": 0.8207732538382212,
+        "line_number": 56,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 72,19",
+        "y_position": 1454,
+        "x_min": 365,
+        "x_max": 791,
+        "confidence": 0.9524978399276733,
+        "line_number": 57,
+        "words_count": 2
+      },
+      {
+        "text": "girocard EUR 72,19",
+        "y_position": 1477,
+        "x_min": 375,
+        "x_max": 784,
+        "confidence": 0.9910952846209208,
+        "line_number": 58,
+        "words_count": 3
+      },
+      {
+        "text": "A 07,0 % Netto 63,34 MwSt 4,43",
+        "y_position": 1521,
+        "x_min": 363,
+        "x_max": 771,
+        "confidence": 0.9621386102267674,
+        "line_number": 59,
+        "words_count": 7
+      },
+      {
+        "text": "B 19,0 % Netto 3,71 MwSt 2AW 0,71",
+        "y_position": 1543,
+        "x_min": 363,
+        "x_max": 772,
+        "confidence": 0.9420789480209351,
+        "line_number": 60,
+        "words_count": 8
+      },
+      {
+        "text": "* 4975 035/026/003/015 06.09.25 16:38",
+        "y_position": 1564,
+        "x_min": 351,
+        "x_max": 739,
+        "confidence": 0.9715667724609375,
+        "line_number": 61,
+        "words_count": 5
+      },
+      {
+        "text": "Unsere Öffnungszeiten :",
+        "y_position": 1588,
+        "x_min": 459,
+        "x_max": 695,
+        "confidence": 0.97002245982488,
+        "line_number": 62,
+        "words_count": 3
+      },
+      {
+        "text": "Mo Sa : 8:00 Uhr - 20:00 Uhr",
+        "y_position": 1612,
+        "x_min": 415,
+        "x_max": 728,
+        "confidence": 0.8894183486700058,
+        "line_number": 63,
+        "words_count": 8
+      },
+      {
+        "text": "UST - ID - Nr .: DE 813192189",
+        "y_position": 1657,
+        "x_min": 457,
+        "x_max": 718,
+        "confidence": 0.9195169359445572,
+        "line_number": 64,
+        "words_count": 8
+      },
+      {
+        "text": "VIELEN DANK FÜR DEINEN EINKAUF",
+        "y_position": 1678,
+        "x_min": 425,
+        "x_max": 751,
+        "confidence": 0.980132257938385,
+        "line_number": 65,
+        "words_count": 5
+      },
+      {
+        "text": "ALDI SÜD - Gutes für alle .",
+        "y_position": 1724,
+        "x_min": 446,
+        "x_max": 725,
+        "confidence": 0.9098489114216396,
+        "line_number": 66,
+        "words_count": 7
+      },
+      {
+        "text": "******* natürlicher",
+        "y_position": 1774,
+        "x_min": 371,
+        "x_max": 641,
+        "confidence": 0.8726630508899689,
+        "line_number": 67,
+        "words_count": 2
+      },
+      {
+        "text": "Я100 %",
+        "y_position": 1792,
+        "x_min": 410,
+        "x_max": 509,
+        "confidence": 0.8127049505710602,
+        "line_number": 68,
+        "words_count": 2
+      },
+      {
+        "text": "* Entdecke unser vie",
+        "y_position": 1811,
+        "x_min": 371,
+        "x_max": 638,
+        "confidence": 0.8109241425991058,
+        "line_number": 69,
+        "words_count": 4
+      },
+      {
+        "text": "x NUR NUR NATUR Sortiment und",
+        "y_position": 1835,
+        "x_min": 371,
+        "x_max": 729,
+        "confidence": 0.8815234998861948,
+        "line_number": 70,
+        "words_count": 6
+      },
+      {
+        "text": "* erlebe Bio , das weiter geht ! *",
+        "y_position": 1858,
+        "x_min": 370,
+        "x_max": 801,
+        "confidence": 0.8760535385873582,
+        "line_number": 71,
+        "words_count": 9
+      },
+      {
+        "text": "*******",
+        "y_position": 1885,
+        "x_min": 370,
+        "x_max": 440,
+        "confidence": 0.7934581637382507,
+        "line_number": 72,
+        "words_count": 1
+      },
+      {
+        "text": "Kasse : International.D.035.026.03",
+        "y_position": 1966,
+        "x_min": 348,
+        "x_max": 716,
+        "confidence": 0.9571916460990906,
+        "line_number": 73,
+        "words_count": 3
+      },
+      {
+        "text": "TSE : / 2 + db + XG8V78bkQC6ICVm7ix3IsL2zSmb3",
+        "y_position": 1988,
+        "x_min": 348,
+        "x_max": 805,
+        "confidence": 0.8313358649611473,
+        "line_number": 74,
+        "words_count": 8
+      },
+      {
+        "text": "F98Bcetag =",
+        "y_position": 2010,
+        "x_min": 434,
+        "x_max": 541,
+        "confidence": 0.7505179345607758,
+        "line_number": 75,
+        "words_count": 2
+      },
+      {
+        "text": "Start : 2025-09-06 16:38:42",
+        "y_position": 2028,
+        "x_min": 349,
+        "x_max": 641,
+        "confidence": 0.9647365659475327,
+        "line_number": 76,
+        "words_count": 4
+      },
+      {
+        "text": "Ende : 2025-09-06 16:40:11",
+        "y_position": 2048,
+        "x_min": 350,
+        "x_max": 638,
+        "confidence": 0.9609448164701462,
+        "line_number": 77,
+        "words_count": 4
+      },
+      {
+        "text": "T. - Nr .: 108887",
+        "y_position": 2070,
+        "x_min": 350,
+        "x_max": 501,
+        "confidence": 0.8452123045921326,
+        "line_number": 78,
+        "words_count": 5
+      },
+      {
+        "text": "S. - Nr .: 217913 200,00",
+        "y_position": 2090,
+        "x_min": 350,
+        "x_max": 729,
+        "confidence": 0.7884059796730677,
+        "line_number": 79,
+        "words_count": 6
+      },
+      {
+        "text": "Sig .: C6T + LkqPPhwr T95CcXCZyct TbHZjm1 + Btn",
+        "y_position": 2111,
+        "x_min": 350,
+        "x_max": 802,
+        "confidence": 0.906997475359175,
+        "line_number": 80,
+        "words_count": 9
+      },
+      {
+        "text": "UUWT5WcfwoLksMoawK7fQLn2CNFv6qGdtx",
+        "y_position": 2130,
+        "x_min": 436,
+        "x_max": 801,
+        "confidence": 0.9091882705688477,
+        "line_number": 81,
+        "words_count": 1
+      },
+      {
+        "text": "wdZI8bMJCTrXsDyAsu90j1xCXDZQJjMQpb",
+        "y_position": 2150,
+        "x_min": 438,
+        "x_max": 801,
+        "confidence": 0.8937730193138123,
+        "line_number": 82,
+        "words_count": 1
+      },
+      {
+        "text": "zjGXaeaHS17SIthDifNbVT8ymw",
+        "y_position": 2169,
+        "x_min": 437,
+        "x_max": 715,
+        "confidence": 0.9428170919418335,
+        "line_number": 83,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 444,
+    "total_lines": 84
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.2903225806451613,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "ust",
+      "netto",
+      "aldi",
+      "eur",
+      "vielen dank",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 0,
+      "es_ES": 2,
+      "pl_PL": 0,
+      "de_DE": 9
+    }
+  },
+  "store": {
+    "store_name": "aldi",
+    "store_address": "TH3 Wiesenauel 1018, 51491 Overath",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-09-06",
+    "receipt_total": 72.19,
+    "currency": "EUR",
+    "date_raw": "06.09.2025",
+    "total_raw": "72,19",
+    "total_line_number": 57
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "826945 Allzwecktragetasch",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "826945 Allzwecktragetasch 0,99 B"
+      },
+      {
+        "name": "826945 Allzweck tragetasch",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "826945 Allzweck tragetasch 0,99 B"
+      },
+      {
+        "name": "2938 Zucker Raffinade CAW",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "2938 Zucker Raffinade CAW 0,89 A"
+      },
+      {
+        "name": "728573 Gouda 400g",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 7,
+        "raw_text": "728573 Gouda 400g 2,99 A"
+      },
+      {
+        "name": "728573 Gouda 400g",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "728573 Gouda 400g 2,99 A"
+      },
+      {
+        "name": "834128 Gewürzmühle",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "834128 Gewürzmühle 0,99 A"
+      },
+      {
+        "name": "839397 Pfannengemüse 750g",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "839397 Pfannengemüse 750g 1,99 A"
+      },
+      {
+        "name": "807611 Bio FT Lose Banane",
+        "quantity": null,
+        "price": null,
+        "total": 1.66,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "807611 Bio FT Lose Banane 1,66 A"
+      },
+      {
+        "name": "715057 Eier Bodenh . 18er",
+        "quantity": null,
+        "price": null,
+        "total": 3.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+      },
+      {
+        "name": "839397 Pfannengemüse 750g",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "839397 Pfannengemüse 750g 1,99 A"
+      },
+      {
+        "name": "61863 Dill Bund",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "61863 Dill Bund 1,49 A"
+      },
+      {
+        "name": "835467 Wattestäbchen BioЯ",
+        "quantity": null,
+        "price": 0.7,
+        "total": 0.7,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "835467 Wattestäbchen BioЯ90,70 B"
+      },
+      {
+        "name": "807490 Avocado 500g Netz",
+        "quantity": null,
+        "price": null,
+        "total": 1.89,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "807490 Avocado 500g Netz 1,89 A"
+      },
+      {
+        "name": "841978 Bio Olivenol",
+        "quantity": null,
+        "price": null,
+        "total": 6.95,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "841978 Bio Olivenol6,95 A"
+      },
+      {
+        "name": "848344 Ketchup Mix 500ml",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "848344 Ketchup Mix 500ml 1,29 A"
+      },
+      {
+        "name": "6254 Kern . Roggenvollk .",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "6254 Kern . Roggenvollk . 0,79 A"
+      },
+      {
+        "name": "814922 Basmati Reis",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 23,
+        "raw_text": "814922 Basmati Reis 2,99 A"
+      },
+      {
+        "name": "823033 Deo Roll - on",
+        "quantity": null,
+        "price": null,
+        "total": 0.6,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "823033 Deo Roll - on 0,60 B"
+      },
+      {
+        "name": "814922 Basmati Reis",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "814922 Basmati Reis 2,99 A"
+      },
+      {
+        "name": "733244 F & G Häh Min.schn",
+        "quantity": null,
+        "price": null,
+        "total": 5.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 26,
+        "raw_text": "733244 F & G Häh Min.schn 5,49 A"
+      },
+      {
+        "name": "812921 Mayonnaise 500ml",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 28,
+        "raw_text": "812921 Mayonnaise 500ml 1,59 A"
+      },
+      {
+        "name": "823532 Mini Romari spent .",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 29,
+        "raw_text": "823532 Mini Romari spent . 1,49 A"
+      },
+      {
+        "name": "733246 F & G Häh Brustfil",
+        "quantity": null,
+        "price": null,
+        "total": 9.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 30,
+        "raw_text": "733246 F & G Häh Brustfil 9,49 A"
+      },
+      {
+        "name": "46478 Frischwurst - Sortim",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 31,
+        "raw_text": "46478 Frischwurst - Sortim 1,29 A"
+      },
+      {
+        "name": "4528 Geflügel - Frischwur",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 32,
+        "raw_text": "4528 Geflügel - Frischwur 1,29 A"
+      },
+      {
+        "name": "837483 Rahmspinat 450g",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 33,
+        "raw_text": "837483 Rahmspinat 450g 0,89 A"
+      },
+      {
+        "name": "808696 Red Bull regular",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 34,
+        "raw_text": "808696 Red Bull regular 0,89 B"
+      },
+      {
+        "name": "6205 Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 35,
+        "raw_text": "6205 Pfand 0,25 B"
+      },
+      {
+        "name": "6254 Kern . Roggenvollk.MU",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 36,
+        "raw_text": "6254 Kern . Roggenvollk.MU 0,79 A"
+      },
+      {
+        "name": "810319 45979 Gurke Creme Stück Fraiche 2009 200g AW",
+        "quantity": null,
+        "price": null,
+        "total": 1.09,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 37,
+        "raw_text": "810319 45979 Gurke Creme Stück Fraiche 2009 200g AW 1,09 A"
+      },
+      {
+        "name": "61896 BioZwiebeln750g ge",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 38,
+        "raw_text": "61896 BioZwiebeln750g ge 1,49 A"
+      },
+      {
+        "name": "4528 Geflügel - Frischwur",
+        "quantity": null,
+        "price": null,
+        "total": 1.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 39,
+        "raw_text": "4528 Geflügel - Frischwur 1,29 A"
+      },
+      {
+        "name": "786346 Kart . Vwfk 2.5kg",
+        "quantity": null,
+        "price": null,
+        "total": 1.89,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 40,
+        "raw_text": "786346 Kart . Vwfk 2.5kg 1,89 A"
+      },
+      {
+        "name": "45979 Creme Fraiche 200g",
+        "quantity": null,
+        "price": null,
+        "total": 1.09,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 41,
+        "raw_text": "45979 Creme Fraiche 200g 1,09 A"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Rabatt 30,0 %",
+        "quantity": null,
+        "price": null,
+        "total": -1.65,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "Rabatt 30,0 % -1,65 A"
+      }
+    ],
+    "items_count": 34,
+    "discounts_count": 1,
+    "items_total": 68.87000000000002,
+    "discounts_total": 1.65,
+    "skipped_lines": 34,
+    "parsed_lines": 35
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 68.87000000000002,
+    "discounts_sum": 1.65,
+    "calculated_total": 67.22,
+    "receipt_total": 72.19,
+    "difference": 4.969999999999999,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=67.22, receipt=72.19, diff=4.97 (tolerance=0.05)"
+  },
+  "processing_time_ms": 23.064136505126953,
+  "stages_completed": 6
+}

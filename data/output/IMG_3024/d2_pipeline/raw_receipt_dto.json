@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "B.19 %",
+      "quantity": null,
+      "price": null,
+      "total": 4.15,
+      "date": "2025-05-31 00:00:00"
+    }
+  ],
+  "total_amount": 4.15,
+  "merchant": "Netto",
+  "store_address": null,
+  "date": "2025-05-31 00:00:00",
+  "receipt_id": "IMG_3024",
+  "ocr_text": "LODL\nSteinhauser Auel 1\n51491 Overath-Vilkerath\nEUR\nRed Bull Energy\n19,99 B\nPfand 6,00 M\nSAЯ 6,00 B\nzu zahlen\n25,99\nKreditkarte\n25,99\nMWSTX\nMWST +\nNetto = Brutto\nB.19 %\n4,15\n21,84\n25,99\nSumme\n4,15\n21,84\n25,99\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nISE Transaktionsnummer: 1130081\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJ0GX0ZRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPON40VCBSFZ4P-6FxmobHtkp2MrPu\nRIZ133. SZYNYJBz4bc3d32gHdinsg5mUOTCgkZT\nq2oPGX1/68plliu9E+YCUP1RWijhSpDpP+yEyryh\nSXQyeJ/\nSignaturzahler: 2305750\n2075-05-31116.29:26.00OZ\n2025 05-31 18:29:47.000Z\n6496\n01193\n81\n502\n31.05.25 20:29\nUST D-NR: DE814060660\nK-D-E-N-B-E-L-E-G\nluna VICA\nrag\n31.05.2025\n20:28\nJD 60155177\n1A Nr. 206943\ng-Nr. 7868\nKartenn\nVisa kontaktlos Chip\n*******8130 00\nVU-Nummer\nAutorisierungsnum\nBestatiul durch mobiles ku ngeral\nAutorisierungsantwortcode\nEMV-Daten:\nAutorisierung erfoll\nOnline\n455500535769\n542071\n00\n30 TH 1010/00",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 1.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

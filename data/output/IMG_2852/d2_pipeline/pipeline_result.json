@@ -1,0 +1,1237 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Banane",
+        "quantity": null,
+        "price": null,
+        "total": 1.8,
+        "date": null
+      },
+      {
+        "name": "Kartof.mehr.koch 2kg",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "date": null
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "date": null
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": null
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": null
+      },
+      {
+        "name": "2 0,89 x 2",
+        "quantity": 0.89,
+        "price": null,
+        "total": 1.78,
+        "date": null
+      },
+      {
+        "name": "K.champignons",
+        "quantity": null,
+        "price": null,
+        "total": 2.19,
+        "date": null
+      },
+      {
+        "name": "kraus TTAA",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "date": null
+      },
+      {
+        "name": "Dill",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "date": null
+      },
+      {
+        "name": "Fresh.BioGem.Franz .",
+        "quantity": null,
+        "price": null,
+        "total": 2.49,
+        "date": null
+      },
+      {
+        "name": "Bio Brechbohnen",
+        "quantity": null,
+        "price": null,
+        "total": 2.69,
+        "date": null
+      },
+      {
+        "name": "qqA zu19 bij",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": null
+      },
+      {
+        "name": "Edamer Scheiben",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": null
+      },
+      {
+        "name": "Gouda Scheiben",
+        "quantity": null,
+        "price": null,
+        "total": 2.49,
+        "date": null
+      },
+      {
+        "name": "Frischkäse Sahnige 1,69 x 2",
+        "quantity": 1.69,
+        "price": null,
+        "total": 3.38,
+        "date": null
+      },
+      {
+        "name": "Speisequark 40 % ( OGT ) 1,78 x 2",
+        "quantity": 1.78,
+        "price": null,
+        "total": 3.56,
+        "date": null
+      },
+      {
+        "name": "Latte Macchiato",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": null
+      },
+      {
+        "name": "Pfand 7 % EM",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": null
+      },
+      {
+        "name": "KaffeegetLatteMacch .",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": null
+      },
+      {
+        "name": "Pfand 7XEM",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": null
+      },
+      {
+        "name": "Ayran Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 0.49,
+        "date": null
+      },
+      {
+        "name": "Eier Freiland . XXL",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "date": null
+      },
+      {
+        "name": "Eier Bodenhalt . 18er 3,39 x 5",
+        "quantity": 3.39,
+        "price": null,
+        "total": 16.95,
+        "date": null
+      },
+      {
+        "name": "Sonnenmais",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": null
+      },
+      {
+        "name": "Wasser medium A MI0,29 x 30H",
+        "quantity": null,
+        "price": null,
+        "total": 38.7,
+        "date": null
+      },
+      {
+        "name": "EM x 30",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 7.5,
+        "date": null
+      },
+      {
+        "name": "Multivitaminsaft",
+        "quantity": null,
+        "price": null,
+        "total": 2.15,
+        "date": null
+      },
+      {
+        "name": "Red Bull Energy",
+        "quantity": null,
+        "price": null,
+        "total": 1.75,
+        "date": null
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": null
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": null
+      },
+      {
+        "name": "Weizen Sandwi . Toast 1,09 x 2",
+        "quantity": 1.09,
+        "price": null,
+        "total": 2.18,
+        "date": null
+      },
+      {
+        "name": "Tortilla Wraps Weiz . 1,29 x 2",
+        "quantity": 1.29,
+        "price": null,
+        "total": 2.58,
+        "date": null
+      },
+      {
+        "name": "Croissant Wien . 0,99 x 4",
+        "quantity": 0.99,
+        "price": null,
+        "total": 3.96,
+        "date": null
+      },
+      {
+        "name": "Hähnchenbrustfilet",
+        "quantity": null,
+        "price": null,
+        "total": 9.99,
+        "date": null
+      }
+    ],
+    "total_amount": 105.79,
+    "merchant": null,
+    "store_address": null,
+    "date": null,
+    "receipt_id": "IMG_2852",
+    "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nEUR\nBanane lose\n1,80 A\n1,398 kg x 1,29 EUR/kg\nKartof.mehr.koch 2kg\n1,59 A\nPaprika rot\n1,59 A\nBauerngurken\n2,99 A\nAvocado\n2,99 A\nDattelcherrytomaten\n1,89 x\n3\n5,67 A\nGurken\n2 0,89 x\n2\n1.78 A\nK.champignons\n2,19 A\nPetersilie kraus\nTTAA\n0,89 A\nDill\n1,59 A\nFresh.BioGem.Franz.\n2,49 A\nBio Brechbohnen\nButterkäse [OGT]\nqqA zu19 bij 2.99 A\n2,69 A\nPreisvorteil\nInobshetani -0,50\nEdamer Scheiben\n2,99 A\nPreisvorteil\n-0,50\nGouda Scheiben\n2,49 A\nPreisvorteil\n-0,40\nFrischkäse Sahnige\n1,69 x 2\n3,38 A\nSpeisequark 40%(OGT)\n1,78 x\n2\n3,56 A\nLatte Macchiato\n0,99 A\nPfand 0,25 7%EM\nKaffeegetLatteMacch.\nPfand 0,25 7XEM\nAyran Joghurtgetränk\nEier Freiland. XXL\nEier Bodenhalt. 18er 3,39 x 5 16,95 A\n0,25 A\n0,99 A\n0,25 A\n0,49 A\n3,99 A\nSonnenmais\n0,99 A\nWasser medium A\nMI0,29 x\n30H38,70 B\nPfand 0,25 EM\n0,25 x\n30\n7,50 B\nMultivitaminsaft\n2,15 B\nRed Bull Energy\n1,75 B\nPfand 0,25 M\n0,25 B\nWeizen Sandwi. Toast 1,09 x 2 2,18 A\nRABATT 20%\n-0,44\nTortilla Wraps Weiz.\n1,29 x\n2\n2,58 A\nCroissant Wien.\n0,99 x\n4\n3,96 A\nHähnchenbrustfilet\n9,99 A\nzu zahlen\n105,79\nKarte\n105,79\nGesamter Preisvorteil\n1,84\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n5,59\n79,85 85,44\nB 19 %\n3,25\n17,10\n20,35\nSumme\n8,84\n96,95\n105,79\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 34.0,
+      "validation_passed": 0.0,
+      "validation_difference": 24.58
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 60,
+        "x_min": 605,
+        "x_max": 872,
+        "confidence": 0.9646576841672262,
+        "line_number": 0,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 95,
+        "x_min": 574,
+        "x_max": 903,
+        "confidence": 0.9616944591204325,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 123,
+        "x_min": 962,
+        "x_max": 1011,
+        "confidence": 0.9884691834449768,
+        "line_number": 2,
+        "words_count": 1
+      },
+      {
+        "text": "Banane 1,80 A",
+        "y_position": 157,
+        "x_min": 427,
+        "x_max": 1041,
+        "confidence": 0.983924130598704,
+        "line_number": 3,
+        "words_count": 3
+      },
+      {
+        "text": "lose",
+        "y_position": 175,
+        "x_min": 535,
+        "x_max": 594,
+        "confidence": 0.9661149978637695,
+        "line_number": 4,
+        "words_count": 1
+      },
+      {
+        "text": "1,398 kg x 1,29 EUR / kg",
+        "y_position": 202,
+        "x_min": 460,
+        "x_max": 816,
+        "confidence": 0.965040351663317,
+        "line_number": 5,
+        "words_count": 7
+      },
+      {
+        "text": "Kartof.mehr.koch 2kg 1,59 A",
+        "y_position": 230,
+        "x_min": 428,
+        "x_max": 1041,
+        "confidence": 0.9838541150093079,
+        "line_number": 6,
+        "words_count": 4
+      },
+      {
+        "text": "1,59 A",
+        "y_position": 267,
+        "x_min": 950,
+        "x_max": 1040,
+        "confidence": 0.9862792789936066,
+        "line_number": 7,
+        "words_count": 2
+      },
+      {
+        "text": "Paprika rot",
+        "y_position": 287,
+        "x_min": 429,
+        "x_max": 595,
+        "confidence": 0.9667922854423523,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "2,99 A",
+        "y_position": 305,
+        "x_min": 947,
+        "x_max": 1042,
+        "confidence": 0.9761996567249298,
+        "line_number": 9,
+        "words_count": 2
+      },
+      {
+        "text": "Bauerngurken",
+        "y_position": 325,
+        "x_min": 432,
+        "x_max": 612,
+        "confidence": 0.984368622303009,
+        "line_number": 10,
+        "words_count": 1
+      },
+      {
+        "text": "2,99 A",
+        "y_position": 345,
+        "x_min": 949,
+        "x_max": 1044,
+        "confidence": 0.987050324678421,
+        "line_number": 11,
+        "words_count": 2
+      },
+      {
+        "text": "Avocado",
+        "y_position": 362,
+        "x_min": 431,
+        "x_max": 539,
+        "confidence": 0.9922219514846802,
+        "line_number": 12,
+        "words_count": 1
+      },
+      {
+        "text": "Dattelcherrytomaten 1,89 x 3 5,67 A",
+        "y_position": 379,
+        "x_min": 432,
+        "x_max": 1056,
+        "confidence": 0.9466186463832855,
+        "line_number": 13,
+        "words_count": 6
+      },
+      {
+        "text": "2 0,89 x 2 1.78 A",
+        "y_position": 416,
+        "x_min": 717,
+        "x_max": 1059,
+        "confidence": 0.9020403424898783,
+        "line_number": 14,
+        "words_count": 6
+      },
+      {
+        "text": "Gurken",
+        "y_position": 434,
+        "x_min": 433,
+        "x_max": 526,
+        "confidence": 0.9829425811767578,
+        "line_number": 15,
+        "words_count": 1
+      },
+      {
+        "text": "K.champignons 2,19 A",
+        "y_position": 453,
+        "x_min": 433,
+        "x_max": 1043,
+        "confidence": 0.9817298849423727,
+        "line_number": 16,
+        "words_count": 3
+      },
+      {
+        "text": "kraus TTAA 0,89 A",
+        "y_position": 482,
+        "x_min": 596,
+        "x_max": 1045,
+        "confidence": 0.7857167273759842,
+        "line_number": 17,
+        "words_count": 4
+      },
+      {
+        "text": "Petersilie",
+        "y_position": 499,
+        "x_min": 434,
+        "x_max": 585,
+        "confidence": 0.9892967343330383,
+        "line_number": 18,
+        "words_count": 1
+      },
+      {
+        "text": "Dill 1,59 A",
+        "y_position": 526,
+        "x_min": 435,
+        "x_max": 1045,
+        "confidence": 0.9835954109827677,
+        "line_number": 19,
+        "words_count": 3
+      },
+      {
+        "text": "Fresh.BioGem.Franz . 2,49 A",
+        "y_position": 563,
+        "x_min": 436,
+        "x_max": 1045,
+        "confidence": 0.9720093607902527,
+        "line_number": 20,
+        "words_count": 4
+      },
+      {
+        "text": "Bio Brechbohnen 2,69 A",
+        "y_position": 598,
+        "x_min": 435,
+        "x_max": 1045,
+        "confidence": 0.9867020547389984,
+        "line_number": 21,
+        "words_count": 4
+      },
+      {
+        "text": "qqA zu19 bij 2.99 A",
+        "y_position": 621,
+        "x_min": 735,
+        "x_max": 1046,
+        "confidence": 0.6949151456356049,
+        "line_number": 22,
+        "words_count": 5
+      },
+      {
+        "text": "Butterkäse [ OGT ]",
+        "y_position": 643,
+        "x_min": 436,
+        "x_max": 673,
+        "confidence": 0.9299597144126892,
+        "line_number": 23,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil Inobshetani -0,50",
+        "y_position": 671,
+        "x_min": 436,
+        "x_max": 1030,
+        "confidence": 0.7767984171708425,
+        "line_number": 24,
+        "words_count": 3
+      },
+      {
+        "text": "Edamer Scheiben 2,99 A",
+        "y_position": 708,
+        "x_min": 439,
+        "x_max": 1046,
+        "confidence": 0.979361280798912,
+        "line_number": 25,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,50",
+        "y_position": 745,
+        "x_min": 438,
+        "x_max": 1033,
+        "confidence": 0.9715681672096252,
+        "line_number": 26,
+        "words_count": 2
+      },
+      {
+        "text": "Gouda Scheiben 2,49 A",
+        "y_position": 780,
+        "x_min": 439,
+        "x_max": 1048,
+        "confidence": 0.9876008629798889,
+        "line_number": 27,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,40",
+        "y_position": 816,
+        "x_min": 438,
+        "x_max": 1033,
+        "confidence": 0.9634879231452942,
+        "line_number": 28,
+        "words_count": 2
+      },
+      {
+        "text": "Frischkäse Sahnige 1,69 x 2 3,38 A",
+        "y_position": 854,
+        "x_min": 441,
+        "x_max": 1063,
+        "confidence": 0.9246631264686584,
+        "line_number": 29,
+        "words_count": 7
+      },
+      {
+        "text": "Speisequark 40 % ( OGT ) 1,78 x 2 3,56 A",
+        "y_position": 890,
+        "x_min": 440,
+        "x_max": 1064,
+        "confidence": 0.9234109791842374,
+        "line_number": 30,
+        "words_count": 11
+      },
+      {
+        "text": "Latte Macchiato 0,99 A",
+        "y_position": 926,
+        "x_min": 443,
+        "x_max": 1052,
+        "confidence": 0.9874354302883148,
+        "line_number": 31,
+        "words_count": 4
+      },
+      {
+        "text": "Pfand 0,25 7 % EM 0,25 A",
+        "y_position": 960,
+        "x_min": 443,
+        "x_max": 1050,
+        "confidence": 0.9529956919806344,
+        "line_number": 32,
+        "words_count": 7
+      },
+      {
+        "text": "KaffeegetLatteMacch . 0,99 A",
+        "y_position": 996,
+        "x_min": 444,
+        "x_max": 1050,
+        "confidence": 0.9736475795507431,
+        "line_number": 33,
+        "words_count": 4
+      },
+      {
+        "text": "Pfand 0,25 7XEM 0,25 A",
+        "y_position": 1032,
+        "x_min": 439,
+        "x_max": 1052,
+        "confidence": 0.8924792289733887,
+        "line_number": 34,
+        "words_count": 5
+      },
+      {
+        "text": "Ayran Joghurtgetränk 0,49 A",
+        "y_position": 1068,
+        "x_min": 445,
+        "x_max": 1053,
+        "confidence": 0.9760961085557938,
+        "line_number": 35,
+        "words_count": 4
+      },
+      {
+        "text": "Eier Freiland . XXL 3,99 A",
+        "y_position": 1105,
+        "x_min": 446,
+        "x_max": 1052,
+        "confidence": 0.9591244558493296,
+        "line_number": 36,
+        "words_count": 6
+      },
+      {
+        "text": "Eier Bodenhalt . 18er 3,39 x 5 16,95 A",
+        "y_position": 1139,
+        "x_min": 448,
+        "x_max": 1069,
+        "confidence": 0.9450129999054803,
+        "line_number": 37,
+        "words_count": 9
+      },
+      {
+        "text": "Sonnenmais 0,99 A",
+        "y_position": 1173,
+        "x_min": 441,
+        "x_max": 1054,
+        "confidence": 0.9758604764938354,
+        "line_number": 38,
+        "words_count": 3
+      },
+      {
+        "text": "Wasser medium A MI0,29 x 30H38,70 B",
+        "y_position": 1212,
+        "x_min": 446,
+        "x_max": 1070,
+        "confidence": 0.870717602116721,
+        "line_number": 39,
+        "words_count": 7
+      },
+      {
+        "text": "0,25 EM 0,25 x 30 7,50 B",
+        "y_position": 1244,
+        "x_min": 534,
+        "x_max": 1071,
+        "confidence": 0.9400168912751334,
+        "line_number": 40,
+        "words_count": 7
+      },
+      {
+        "text": "Pfand",
+        "y_position": 1260,
+        "x_min": 446,
+        "x_max": 525,
+        "confidence": 0.9838402271270752,
+        "line_number": 41,
+        "words_count": 1
+      },
+      {
+        "text": "Multivitaminsaft 2,15 B",
+        "y_position": 1286,
+        "x_min": 446,
+        "x_max": 1059,
+        "confidence": 0.9822708964347839,
+        "line_number": 42,
+        "words_count": 3
+      },
+      {
+        "text": "Red Bull Energy 1,75 B",
+        "y_position": 1322,
+        "x_min": 447,
+        "x_max": 1058,
+        "confidence": 0.9823161840438843,
+        "line_number": 43,
+        "words_count": 5
+      },
+      {
+        "text": "Pfand 0,25 M 0,25 B",
+        "y_position": 1357,
+        "x_min": 447,
+        "x_max": 1059,
+        "confidence": 0.9819269418716431,
+        "line_number": 44,
+        "words_count": 5
+      },
+      {
+        "text": "Weizen Sandwi . Toast 1,09 x 2 2,18 A",
+        "y_position": 1393,
+        "x_min": 449,
+        "x_max": 1075,
+        "confidence": 0.9323088129361471,
+        "line_number": 45,
+        "words_count": 9
+      },
+      {
+        "text": "RABATT 20 % -0,44",
+        "y_position": 1432,
+        "x_min": 525,
+        "x_max": 1033,
+        "confidence": 0.9823419004678726,
+        "line_number": 46,
+        "words_count": 4
+      },
+      {
+        "text": "Tortilla Wraps Weiz . 1,29 x 2 2,58 A",
+        "y_position": 1467,
+        "x_min": 451,
+        "x_max": 1076,
+        "confidence": 0.9528587857882181,
+        "line_number": 47,
+        "words_count": 9
+      },
+      {
+        "text": "Croissant Wien . 0,99 x 4 3,96 A",
+        "y_position": 1505,
+        "x_min": 452,
+        "x_max": 1077,
+        "confidence": 0.9555951282382011,
+        "line_number": 48,
+        "words_count": 8
+      },
+      {
+        "text": "Hähnchenbrustfilet 9,99 A",
+        "y_position": 1542,
+        "x_min": 454,
+        "x_max": 1061,
+        "confidence": 0.9829679727554321,
+        "line_number": 49,
+        "words_count": 3
+      },
+      {
+        "text": "zu zahlen 105,79",
+        "y_position": 1615,
+        "x_min": 456,
+        "x_max": 1035,
+        "confidence": 0.9844650427500407,
+        "line_number": 50,
+        "words_count": 3
+      },
+      {
+        "text": "Karte 105,79",
+        "y_position": 1651,
+        "x_min": 456,
+        "x_max": 1035,
+        "confidence": 0.9874728620052338,
+        "line_number": 51,
+        "words_count": 2
+      },
+      {
+        "text": "Gesamter Preisvorteil 1,84",
+        "y_position": 1725,
+        "x_min": 457,
+        "x_max": 1084,
+        "confidence": 0.96978626648585,
+        "line_number": 52,
+        "words_count": 3
+      },
+      {
+        "text": "MWST % MWST + Netto = Brutto",
+        "y_position": 1793,
+        "x_min": 473,
+        "x_max": 1037,
+        "confidence": 0.8947973208768027,
+        "line_number": 53,
+        "words_count": 7
+      },
+      {
+        "text": "A 7 % 5,59 79,85 85,44",
+        "y_position": 1832,
+        "x_min": 459,
+        "x_max": 1039,
+        "confidence": 0.9651672542095184,
+        "line_number": 54,
+        "words_count": 6
+      },
+      {
+        "text": "B 19 % 3,25 17,10 20,35",
+        "y_position": 1865,
+        "x_min": 460,
+        "x_max": 1038,
+        "confidence": 0.9488498071829478,
+        "line_number": 55,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 8,84 96,95 105,79",
+        "y_position": 1902,
+        "x_min": 461,
+        "x_max": 1038,
+        "confidence": 0.9588196873664856,
+        "line_number": 56,
+        "words_count": 4
+      },
+      {
+        "text": "¦ Lade dir die Lidl Plus App herunter",
+        "y_position": 2006,
+        "x_min": 462,
+        "x_max": 1024,
+        "confidence": 0.8682442605495453,
+        "line_number": 57,
+        "words_count": 8
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 2041,
+        "x_min": 477,
+        "x_max": 1039,
+        "confidence": 0.9730647036007473,
+        "line_number": 58,
+        "words_count": 7
+      }
+    ],
+    "image_width": 1650,
+    "image_height": 2200,
+    "total_words": 255,
+    "total_lines": 59
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "zu zahlen",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": null,
+    "store_address": null,
+    "confidence": 0.0,
+    "matched_in_line": -1
+  },
+  "metadata": {
+    "receipt_date": null,
+    "receipt_total": 105.79,
+    "currency": "EUR",
+    "date_raw": null,
+    "total_raw": "105,79",
+    "total_line_number": 50
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Banane",
+        "quantity": null,
+        "price": null,
+        "total": 1.8,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 3,
+        "raw_text": "Banane 1,80 A"
+      },
+      {
+        "name": "Kartof.mehr.koch 2kg",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "Kartof.mehr.koch 2kg 1,59 A"
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 7,
+        "raw_text": "1,59 A"
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "2,99 A"
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "2,99 A"
+      },
+      {
+        "name": "2 0,89 x 2",
+        "quantity": 0.89,
+        "price": null,
+        "total": 1.78,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "2 0,89 x 2 1.78 A"
+      },
+      {
+        "name": "K.champignons",
+        "quantity": null,
+        "price": null,
+        "total": 2.19,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "K.champignons 2,19 A"
+      },
+      {
+        "name": "kraus TTAA",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "kraus TTAA 0,89 A"
+      },
+      {
+        "name": "Dill",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "Dill 1,59 A"
+      },
+      {
+        "name": "Fresh.BioGem.Franz .",
+        "quantity": null,
+        "price": null,
+        "total": 2.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "Fresh.BioGem.Franz . 2,49 A"
+      },
+      {
+        "name": "Bio Brechbohnen",
+        "quantity": null,
+        "price": null,
+        "total": 2.69,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Bio Brechbohnen 2,69 A"
+      },
+      {
+        "name": "qqA zu19 bij",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "qqA zu19 bij 2.99 A"
+      },
+      {
+        "name": "Edamer Scheiben",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "Edamer Scheiben 2,99 A"
+      },
+      {
+        "name": "Gouda Scheiben",
+        "quantity": null,
+        "price": null,
+        "total": 2.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "Gouda Scheiben 2,49 A"
+      },
+      {
+        "name": "Frischkäse Sahnige 1,69 x 2",
+        "quantity": 1.69,
+        "price": null,
+        "total": 3.38,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 29,
+        "raw_text": "Frischkäse Sahnige 1,69 x 2 3,38 A"
+      },
+      {
+        "name": "Speisequark 40 % ( OGT ) 1,78 x 2",
+        "quantity": 1.78,
+        "price": null,
+        "total": 3.56,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 30,
+        "raw_text": "Speisequark 40 % ( OGT ) 1,78 x 2 3,56 A"
+      },
+      {
+        "name": "Latte Macchiato",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 31,
+        "raw_text": "Latte Macchiato 0,99 A"
+      },
+      {
+        "name": "Pfand 7 % EM",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 32,
+        "raw_text": "Pfand 0,25 7 % EM 0,25 A"
+      },
+      {
+        "name": "KaffeegetLatteMacch .",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 33,
+        "raw_text": "KaffeegetLatteMacch . 0,99 A"
+      },
+      {
+        "name": "Pfand 7XEM",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 34,
+        "raw_text": "Pfand 0,25 7XEM 0,25 A"
+      },
+      {
+        "name": "Ayran Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 0.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 35,
+        "raw_text": "Ayran Joghurtgetränk 0,49 A"
+      },
+      {
+        "name": "Eier Freiland . XXL",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 36,
+        "raw_text": "Eier Freiland . XXL 3,99 A"
+      },
+      {
+        "name": "Eier Bodenhalt . 18er 3,39 x 5",
+        "quantity": 3.39,
+        "price": null,
+        "total": 16.95,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 37,
+        "raw_text": "Eier Bodenhalt . 18er 3,39 x 5 16,95 A"
+      },
+      {
+        "name": "Sonnenmais",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 38,
+        "raw_text": "Sonnenmais 0,99 A"
+      },
+      {
+        "name": "Wasser medium A MI0,29 x 30H",
+        "quantity": null,
+        "price": null,
+        "total": 38.7,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 39,
+        "raw_text": "Wasser medium A MI0,29 x 30H38,70 B"
+      },
+      {
+        "name": "EM x 30",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 7.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 40,
+        "raw_text": "0,25 EM 0,25 x 30 7,50 B"
+      },
+      {
+        "name": "Multivitaminsaft",
+        "quantity": null,
+        "price": null,
+        "total": 2.15,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 42,
+        "raw_text": "Multivitaminsaft 2,15 B"
+      },
+      {
+        "name": "Red Bull Energy",
+        "quantity": null,
+        "price": null,
+        "total": 1.75,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 43,
+        "raw_text": "Red Bull Energy 1,75 B"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 44,
+        "raw_text": "Pfand 0,25 M"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 44,
+        "raw_text": "0,25 B"
+      },
+      {
+        "name": "Weizen Sandwi . Toast 1,09 x 2",
+        "quantity": 1.09,
+        "price": null,
+        "total": 2.18,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 45,
+        "raw_text": "Weizen Sandwi . Toast 1,09 x 2 2,18 A"
+      },
+      {
+        "name": "Tortilla Wraps Weiz . 1,29 x 2",
+        "quantity": 1.29,
+        "price": null,
+        "total": 2.58,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 47,
+        "raw_text": "Tortilla Wraps Weiz . 1,29 x 2 2,58 A"
+      },
+      {
+        "name": "Croissant Wien . 0,99 x 4",
+        "quantity": 0.99,
+        "price": null,
+        "total": 3.96,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 48,
+        "raw_text": "Croissant Wien . 0,99 x 4 3,96 A"
+      },
+      {
+        "name": "Hähnchenbrustfilet",
+        "quantity": null,
+        "price": null,
+        "total": 9.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 49,
+        "raw_text": "Hähnchenbrustfilet 9,99 A"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil Inobshetani",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "Preisvorteil Inobshetani -0,50"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 26,
+        "raw_text": "Preisvorteil -0,50"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.4,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 28,
+        "raw_text": "Preisvorteil -0,40"
+      },
+      {
+        "name": "RABATT 20 %",
+        "quantity": null,
+        "price": null,
+        "total": -0.44,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 46,
+        "raw_text": "RABATT 20 % -0,44"
+      }
+    ],
+    "items_count": 34,
+    "discounts_count": 4,
+    "items_total": 132.21000000000004,
+    "discounts_total": 1.8399999999999999,
+    "skipped_lines": 13,
+    "parsed_lines": 38
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 132.21000000000004,
+    "discounts_sum": 1.8399999999999999,
+    "calculated_total": 130.37,
+    "receipt_total": 105.79,
+    "difference": 24.58,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=130.37, receipt=105.79, diff=24.58 (tolerance=0.05)"
+  },
+  "processing_time_ms": 20.5838680267334,
+  "stages_completed": 6
+}

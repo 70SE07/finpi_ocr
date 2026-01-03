@@ -1,0 +1,1965 @@
+{
+  "full_text": "FEDEKA\nEDEKA Felbecker\nPilgerstr. 69-71\n51491 Overath-Marialinden\nTel. 02206/912784\nwww.edeka.de\nRed Bull 0,251\nPfand\nG&G Butterkäse\nG&G Gef.Mortadella\nG&G Mortadella\nHerz.M.Pfl.Tomaten\nG&G Sandw.Toast V.\nPosten: 7\nSUMME €\nMastercard\n** Kundenbeleg **\nEDEKA FELBECKER\nPilgerstr. 69\n51491 Overath\nDatum:\nUhrzeit:\nBeleg-Nr.\nTrace-Nr.\nBezahlung\nContactless\nDEBIT MASTERCARD\nNr.\nVU-Nr.\nEUR\n0,99 BW\n0,25*8\n2,79 A\n1,29 A\n1,29 A\n1,99 A\n1,09 A\n9,69\n9,69\n26.08.2025\n16:06:04 Uhr\n1937\n542782\n####\n#####1407 0000\n159024224\nReferenzpar.\nGenehmigungs-Nr.\nTerminal-ID\nPos-Info\nAS-Zeit 26.08.\nBetrag EUR\n0100000002\n400925\n54527366\n00 075 00\n16:06 Uhr\n*** Autorisierung erfolgt ***\nBitte Beleg aufbewahren\n9,69\nMwSt\n19%\nNETTO\nMwSt UMSATZ\n7,90\n10,55\n8,45\n1,04\n8,20\n1,24\nFür Ihren Einkauf von 9,44 Euro auf\nrabattfähige Artikel hätten Sie\n4 PAYBACK \"P erhalten!\n*Position nicht rabattberechtigt\n0013165260825001001369\nDatum Uhrzeit Filiale Pos Bed Bon\n26.08.25 16:06 0073165 001 002 1369\nSteuernummer: 204/5085/2941\nTSE Transaktionsnummer: 304437\nTSE Seriennummer: 382059FA7EE4EDC56E63A8\n200455242015201",
+  "words": [
+    {
+      "text": "FEDEKA",
+      "bounding_box": {
+        "x": 405,
+        "y": 187,
+        "width": 343,
+        "height": 44
+      },
+      "confidence": 0.8520700335502625
+    },
+    {
+      "text": "EDEKA",
+      "bounding_box": {
+        "x": 484,
+        "y": 258,
+        "width": 51,
+        "height": 20
+      },
+      "confidence": 0.9922082424163818
+    },
+    {
+      "text": "Felbecker",
+      "bounding_box": {
+        "x": 547,
+        "y": 256,
+        "width": 95,
+        "height": 21
+      },
+      "confidence": 0.9900498390197754
+    },
+    {
+      "text": "Pilgerstr",
+      "bounding_box": {
+        "x": 483,
+        "y": 282,
+        "width": 95,
+        "height": 23
+      },
+      "confidence": 0.9656226634979248
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 581,
+        "y": 283,
+        "width": 6,
+        "height": 19
+      },
+      "confidence": 0.7899101972579956
+    },
+    {
+      "text": "69-71",
+      "bounding_box": {
+        "x": 600,
+        "y": 281,
+        "width": 54,
+        "height": 21
+      },
+      "confidence": 0.9879301190376282
+    },
+    {
+      "text": "51491",
+      "bounding_box": {
+        "x": 429,
+        "y": 308,
+        "width": 51,
+        "height": 20
+      },
+      "confidence": 0.9889437556266785
+    },
+    {
+      "text": "Overath",
+      "bounding_box": {
+        "x": 493,
+        "y": 306,
+        "width": 75,
+        "height": 21
+      },
+      "confidence": 0.9929520487785339
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 569,
+        "y": 306,
+        "width": 8,
+        "height": 18
+      },
+      "confidence": 0.9705860614776611
+    },
+    {
+      "text": "Marialinden",
+      "bounding_box": {
+        "x": 579,
+        "y": 303,
+        "width": 117,
+        "height": 22
+      },
+      "confidence": 0.9585832953453064
+    },
+    {
+      "text": "Tel",
+      "bounding_box": {
+        "x": 462,
+        "y": 334,
+        "width": 35,
+        "height": 21
+      },
+      "confidence": 0.9870356321334839
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 496,
+        "y": 334,
+        "width": 6,
+        "height": 19
+      },
+      "confidence": 0.834525465965271
+    },
+    {
+      "text": "02206/912784",
+      "bounding_box": {
+        "x": 515,
+        "y": 330,
+        "width": 150,
+        "height": 23
+      },
+      "confidence": 0.9680452942848206
+    },
+    {
+      "text": "www.edeka.de",
+      "bounding_box": {
+        "x": 505,
+        "y": 355,
+        "width": 130,
+        "height": 23
+      },
+      "confidence": 0.9803130030632019
+    },
+    {
+      "text": "Red",
+      "bounding_box": {
+        "x": 354,
+        "y": 433,
+        "width": 32,
+        "height": 20
+      },
+      "confidence": 0.981353759765625
+    },
+    {
+      "text": "Bull",
+      "bounding_box": {
+        "x": 397,
+        "y": 433,
+        "width": 42,
+        "height": 19
+      },
+      "confidence": 0.9697039127349854
+    },
+    {
+      "text": "0,251",
+      "bounding_box": {
+        "x": 451,
+        "y": 432,
+        "width": 53,
+        "height": 20
+      },
+      "confidence": 0.9606895446777344
+    },
+    {
+      "text": "Pfand",
+      "bounding_box": {
+        "x": 354,
+        "y": 460,
+        "width": 55,
+        "height": 17
+      },
+      "confidence": 0.9895125031471252
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 354,
+        "y": 486,
+        "width": 10,
+        "height": 18
+      },
+      "confidence": 0.9518684148788452
+    },
+    {
+      "text": "&",
+      "bounding_box": {
+        "x": 364,
+        "y": 485,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.9805489182472229
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 375,
+        "y": 485,
+        "width": 12,
+        "height": 18
+      },
+      "confidence": 0.992847740650177
+    },
+    {
+      "text": "Butterkäse",
+      "bounding_box": {
+        "x": 396,
+        "y": 482,
+        "width": 110,
+        "height": 21
+      },
+      "confidence": 0.9718835353851318
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 354,
+        "y": 510,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.9482789039611816
+    },
+    {
+      "text": "&",
+      "bounding_box": {
+        "x": 364,
+        "y": 509,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.974380612373352
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 375,
+        "y": 509,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.9857684373855591
+    },
+    {
+      "text": "Gef.Mortadella",
+      "bounding_box": {
+        "x": 396,
+        "y": 505,
+        "width": 152,
+        "height": 22
+      },
+      "confidence": 0.9634223580360413
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 354,
+        "y": 536,
+        "width": 10,
+        "height": 18
+      },
+      "confidence": 0.9460354447364807
+    },
+    {
+      "text": "&",
+      "bounding_box": {
+        "x": 364,
+        "y": 535,
+        "width": 11,
+        "height": 18
+      },
+      "confidence": 0.9664964079856873
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 374,
+        "y": 535,
+        "width": 12,
+        "height": 18
+      },
+      "confidence": 0.989494264125824
+    },
+    {
+      "text": "Mortadella",
+      "bounding_box": {
+        "x": 396,
+        "y": 531,
+        "width": 110,
+        "height": 22
+      },
+      "confidence": 0.973142147064209
+    },
+    {
+      "text": "Herz.M.Pfl.Tomaten",
+      "bounding_box": {
+        "x": 353,
+        "y": 556,
+        "width": 196,
+        "height": 24
+      },
+      "confidence": 0.9366936087608337
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 353,
+        "y": 586,
+        "width": 11,
+        "height": 19
+      },
+      "confidence": 0.9463915228843689
+    },
+    {
+      "text": "&",
+      "bounding_box": {
+        "x": 364,
+        "y": 585,
+        "width": 12,
+        "height": 19
+      },
+      "confidence": 0.972649335861206
+    },
+    {
+      "text": "G",
+      "bounding_box": {
+        "x": 375,
+        "y": 585,
+        "width": 11,
+        "height": 19
+      },
+      "confidence": 0.9809823632240295
+    },
+    {
+      "text": "Sandw.Toast",
+      "bounding_box": {
+        "x": 397,
+        "y": 582,
+        "width": 120,
+        "height": 22
+      },
+      "confidence": 0.9767024517059326
+    },
+    {
+      "text": "V.",
+      "bounding_box": {
+        "x": 527,
+        "y": 582,
+        "width": 19,
+        "height": 19
+      },
+      "confidence": 0.8622251749038696
+    },
+    {
+      "text": "Posten",
+      "bounding_box": {
+        "x": 353,
+        "y": 610,
+        "width": 66,
+        "height": 19
+      },
+      "confidence": 0.981976330280304
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 422,
+        "y": 610,
+        "width": 6,
+        "height": 17
+      },
+      "confidence": 0.9528113007545471
+    },
+    {
+      "text": "7",
+      "bounding_box": {
+        "x": 441,
+        "y": 610,
+        "width": 11,
+        "height": 17
+      },
+      "confidence": 0.9840754866600037
+    },
+    {
+      "text": "SUMME",
+      "bounding_box": {
+        "x": 352,
+        "y": 637,
+        "width": 111,
+        "height": 34
+      },
+      "confidence": 0.9904826283454895
+    },
+    {
+      "text": "€",
+      "bounding_box": {
+        "x": 520,
+        "y": 637,
+        "width": 22,
+        "height": 34
+      },
+      "confidence": 0.9499770998954773
+    },
+    {
+      "text": "Mastercard",
+      "bounding_box": {
+        "x": 354,
+        "y": 705,
+        "width": 111,
+        "height": 17
+      },
+      "confidence": 0.9890015125274658
+    },
+    {
+      "text": "**",
+      "bounding_box": {
+        "x": 392,
+        "y": 836,
+        "width": 33,
+        "height": 20
+      },
+      "confidence": 0.9146085381507874
+    },
+    {
+      "text": "Kundenbeleg",
+      "bounding_box": {
+        "x": 448,
+        "y": 835,
+        "width": 120,
+        "height": 20
+      },
+      "confidence": 0.9864733219146729
+    },
+    {
+      "text": "**",
+      "bounding_box": {
+        "x": 589,
+        "y": 835,
+        "width": 31,
+        "height": 19
+      },
+      "confidence": 0.9325423240661621
+    },
+    {
+      "text": "EDEKA",
+      "bounding_box": {
+        "x": 357,
+        "y": 861,
+        "width": 54,
+        "height": 20
+      },
+      "confidence": 0.9886003136634827
+    },
+    {
+      "text": "FELBECKER",
+      "bounding_box": {
+        "x": 422,
+        "y": 860,
+        "width": 99,
+        "height": 20
+      },
+      "confidence": 0.9926526546478271
+    },
+    {
+      "text": "Pilgerstr",
+      "bounding_box": {
+        "x": 356,
+        "y": 887,
+        "width": 99,
+        "height": 23
+      },
+      "confidence": 0.9654625654220581
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 459,
+        "y": 888,
+        "width": 6,
+        "height": 21
+      },
+      "confidence": 0.523725688457489
+    },
+    {
+      "text": "69",
+      "bounding_box": {
+        "x": 477,
+        "y": 887,
+        "width": 22,
+        "height": 21
+      },
+      "confidence": 0.9852991700172424
+    },
+    {
+      "text": "51491",
+      "bounding_box": {
+        "x": 357,
+        "y": 915,
+        "width": 55,
+        "height": 20
+      },
+      "confidence": 0.9910610914230347
+    },
+    {
+      "text": "Overath",
+      "bounding_box": {
+        "x": 423,
+        "y": 915,
+        "width": 79,
+        "height": 20
+      },
+      "confidence": 0.970080554485321
+    },
+    {
+      "text": "Datum",
+      "bounding_box": {
+        "x": 358,
+        "y": 969,
+        "width": 56,
+        "height": 18
+      },
+      "confidence": 0.9871240854263306
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 417,
+        "y": 970,
+        "width": 6,
+        "height": 16
+      },
+      "confidence": 0.9772130846977234
+    },
+    {
+      "text": "Uhrzeit",
+      "bounding_box": {
+        "x": 358,
+        "y": 994,
+        "width": 76,
+        "height": 20
+      },
+      "confidence": 0.9278110265731812
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 437,
+        "y": 995,
+        "width": 6,
+        "height": 18
+      },
+      "confidence": 0.9386486411094666
+    },
+    {
+      "text": "Beleg",
+      "bounding_box": {
+        "x": 359,
+        "y": 1021,
+        "width": 55,
+        "height": 19
+      },
+      "confidence": 0.9906368255615234
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 416,
+        "y": 1021,
+        "width": 7,
+        "height": 19
+      },
+      "confidence": 0.9592351317405701
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 426,
+        "y": 1021,
+        "width": 22,
+        "height": 19
+      },
+      "confidence": 0.9728792905807495
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 450,
+        "y": 1021,
+        "width": 7,
+        "height": 19
+      },
+      "confidence": 0.8797315359115601
+    },
+    {
+      "text": "Trace",
+      "bounding_box": {
+        "x": 358,
+        "y": 1048,
+        "width": 55,
+        "height": 17
+      },
+      "confidence": 0.9825016856193542
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 416,
+        "y": 1048,
+        "width": 7,
+        "height": 17
+      },
+      "confidence": 0.9415784478187561
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 426,
+        "y": 1048,
+        "width": 21,
+        "height": 17
+      },
+      "confidence": 0.981478214263916
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 449,
+        "y": 1048,
+        "width": 6,
+        "height": 17
+      },
+      "confidence": 0.9348801374435425
+    },
+    {
+      "text": "Bezahlung",
+      "bounding_box": {
+        "x": 395,
+        "y": 1071,
+        "width": 98,
+        "height": 21
+      },
+      "confidence": 0.991537868976593
+    },
+    {
+      "text": "Contactless",
+      "bounding_box": {
+        "x": 357,
+        "y": 1097,
+        "width": 122,
+        "height": 21
+      },
+      "confidence": 0.9846012592315674
+    },
+    {
+      "text": "DEBIT",
+      "bounding_box": {
+        "x": 358,
+        "y": 1124,
+        "width": 53,
+        "height": 20
+      },
+      "confidence": 0.9915167689323425
+    },
+    {
+      "text": "MASTERCARD",
+      "bounding_box": {
+        "x": 423,
+        "y": 1123,
+        "width": 111,
+        "height": 20
+      },
+      "confidence": 0.9848008155822754
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 358,
+        "y": 1181,
+        "width": 23,
+        "height": 17
+      },
+      "confidence": 0.9794600009918213
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 384,
+        "y": 1181,
+        "width": 7,
+        "height": 17
+      },
+      "confidence": 0.9697839617729187
+    },
+    {
+      "text": "VU",
+      "bounding_box": {
+        "x": 357,
+        "y": 1207,
+        "width": 23,
+        "height": 17
+      },
+      "confidence": 0.9554990530014038
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 382,
+        "y": 1207,
+        "width": 7,
+        "height": 17
+      },
+      "confidence": 0.9715502858161926
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 391,
+        "y": 1207,
+        "width": 22,
+        "height": 17
+      },
+      "confidence": 0.9368979930877686
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 417,
+        "y": 1207,
+        "width": 6,
+        "height": 17
+      },
+      "confidence": 0.8017411231994629
+    },
+    {
+      "text": "EUR",
+      "bounding_box": {
+        "x": 712,
+        "y": 405,
+        "width": 33,
+        "height": 16
+      },
+      "confidence": 0.9926686882972717
+    },
+    {
+      "text": "0,99",
+      "bounding_box": {
+        "x": 700,
+        "y": 429,
+        "width": 42,
+        "height": 18
+      },
+      "confidence": 0.975841224193573
+    },
+    {
+      "text": "BW",
+      "bounding_box": {
+        "x": 753,
+        "y": 429,
+        "width": 24,
+        "height": 17
+      },
+      "confidence": 0.9901022911071777
+    },
+    {
+      "text": "0,25",
+      "bounding_box": {
+        "x": 701,
+        "y": 455,
+        "width": 42,
+        "height": 17
+      },
+      "confidence": 0.9533612728118896
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 745,
+        "y": 455,
+        "width": 9,
+        "height": 17
+      },
+      "confidence": 0.8649650812149048
+    },
+    {
+      "text": "8",
+      "bounding_box": {
+        "x": 755,
+        "y": 455,
+        "width": 11,
+        "height": 17
+      },
+      "confidence": 0.6412842869758606
+    },
+    {
+      "text": "2,79",
+      "bounding_box": {
+        "x": 701,
+        "y": 479,
+        "width": 43,
+        "height": 20
+      },
+      "confidence": 0.9878866672515869
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 754,
+        "y": 481,
+        "width": 12,
+        "height": 18
+      },
+      "confidence": 0.9850175976753235
+    },
+    {
+      "text": "1,29",
+      "bounding_box": {
+        "x": 703,
+        "y": 506,
+        "width": 42,
+        "height": 17
+      },
+      "confidence": 0.9834672808647156
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 754,
+        "y": 506,
+        "width": 12,
+        "height": 17
+      },
+      "confidence": 0.9860281348228455
+    },
+    {
+      "text": "1,29",
+      "bounding_box": {
+        "x": 703,
+        "y": 531,
+        "width": 40,
+        "height": 19
+      },
+      "confidence": 0.9806433916091919
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 754,
+        "y": 531,
+        "width": 12,
+        "height": 18
+      },
+      "confidence": 0.9857772588729858
+    },
+    {
+      "text": "1,99",
+      "bounding_box": {
+        "x": 704,
+        "y": 557,
+        "width": 42,
+        "height": 18
+      },
+      "confidence": 0.9811747074127197
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 755,
+        "y": 557,
+        "width": 12,
+        "height": 18
+      },
+      "confidence": 0.9877361059188843
+    },
+    {
+      "text": "1,09",
+      "bounding_box": {
+        "x": 704,
+        "y": 580,
+        "width": 41,
+        "height": 22
+      },
+      "confidence": 0.9889920949935913
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 755,
+        "y": 580,
+        "width": 13,
+        "height": 20
+      },
+      "confidence": 0.9805534482002258
+    },
+    {
+      "text": "9,69",
+      "bounding_box": {
+        "x": 680,
+        "y": 634,
+        "width": 84,
+        "height": 38
+      },
+      "confidence": 0.9867751598358154
+    },
+    {
+      "text": "9,69",
+      "bounding_box": {
+        "x": 704,
+        "y": 702,
+        "width": 44,
+        "height": 17
+      },
+      "confidence": 0.9681541323661804
+    },
+    {
+      "text": "26.08.2025",
+      "bounding_box": {
+        "x": 685,
+        "y": 960,
+        "width": 107,
+        "height": 21
+      },
+      "confidence": 0.9922120571136475
+    },
+    {
+      "text": "16:06:04",
+      "bounding_box": {
+        "x": 666,
+        "y": 987,
+        "width": 84,
+        "height": 21
+      },
+      "confidence": 0.9903805255889893
+    },
+    {
+      "text": "Uhr",
+      "bounding_box": {
+        "x": 761,
+        "y": 986,
+        "width": 33,
+        "height": 20
+      },
+      "confidence": 0.9614020586013794
+    },
+    {
+      "text": "1937",
+      "bounding_box": {
+        "x": 753,
+        "y": 1014,
+        "width": 41,
+        "height": 17
+      },
+      "confidence": 0.9938496947288513
+    },
+    {
+      "text": "542782",
+      "bounding_box": {
+        "x": 729,
+        "y": 1038,
+        "width": 65,
+        "height": 20
+      },
+      "confidence": 0.9918057918548584
+    },
+    {
+      "text": "####",
+      "bounding_box": {
+        "x": 569,
+        "y": 1177,
+        "width": 40,
+        "height": 16
+      },
+      "confidence": 0.924001157283783
+    },
+    {
+      "text": "#####",
+      "bounding_box": {
+        "x": 646,
+        "y": 1172,
+        "width": 51,
+        "height": 20
+      },
+      "confidence": 0.9677395224571228
+    },
+    {
+      "text": "1407",
+      "bounding_box": {
+        "x": 701,
+        "y": 1171,
+        "width": 39,
+        "height": 19
+      },
+      "confidence": 0.9888077974319458
+    },
+    {
+      "text": "0000",
+      "bounding_box": {
+        "x": 752,
+        "y": 1170,
+        "width": 44,
+        "height": 19
+      },
+      "confidence": 0.9927549362182617
+    },
+    {
+      "text": "159024224",
+      "bounding_box": {
+        "x": 701,
+        "y": 1197,
+        "width": 96,
+        "height": 19
+      },
+      "confidence": 0.9909338355064392
+    },
+    {
+      "text": "Referenzpar",
+      "bounding_box": {
+        "x": 357,
+        "y": 1232,
+        "width": 124,
+        "height": 20
+      },
+      "confidence": 0.9886471629142761
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 483,
+        "y": 1233,
+        "width": 7,
+        "height": 18
+      },
+      "confidence": 0.9197746515274048
+    },
+    {
+      "text": "Genehmigungs",
+      "bounding_box": {
+        "x": 357,
+        "y": 1256,
+        "width": 133,
+        "height": 23
+      },
+      "confidence": 0.9919832348823547
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 493,
+        "y": 1257,
+        "width": 7,
+        "height": 20
+      },
+      "confidence": 0.9685097336769104
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 502,
+        "y": 1256,
+        "width": 22,
+        "height": 20
+      },
+      "confidence": 0.9299860596656799
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 525,
+        "y": 1256,
+        "width": 7,
+        "height": 20
+      },
+      "confidence": 0.9128872156143188
+    },
+    {
+      "text": "Terminal",
+      "bounding_box": {
+        "x": 357,
+        "y": 1283,
+        "width": 89,
+        "height": 22
+      },
+      "confidence": 0.9823213815689087
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 447,
+        "y": 1283,
+        "width": 7,
+        "height": 19
+      },
+      "confidence": 0.984803318977356
+    },
+    {
+      "text": "ID",
+      "bounding_box": {
+        "x": 458,
+        "y": 1282,
+        "width": 23,
+        "height": 20
+      },
+      "confidence": 0.9629886150360107
+    },
+    {
+      "text": "Pos",
+      "bounding_box": {
+        "x": 355,
+        "y": 1312,
+        "width": 35,
+        "height": 21
+      },
+      "confidence": 0.9569053649902344
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 390,
+        "y": 1312,
+        "width": 11,
+        "height": 19
+      },
+      "confidence": 0.960750937461853
+    },
+    {
+      "text": "Info",
+      "bounding_box": {
+        "x": 401,
+        "y": 1309,
+        "width": 46,
+        "height": 22
+      },
+      "confidence": 0.9847489595413208
+    },
+    {
+      "text": "AS",
+      "bounding_box": {
+        "x": 355,
+        "y": 1338,
+        "width": 23,
+        "height": 22
+      },
+      "confidence": 0.9832922220230103
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 379,
+        "y": 1339,
+        "width": 9,
+        "height": 20
+      },
+      "confidence": 0.9886967539787292
+    },
+    {
+      "text": "Zeit",
+      "bounding_box": {
+        "x": 388,
+        "y": 1337,
+        "width": 46,
+        "height": 22
+      },
+      "confidence": 0.9916956424713135
+    },
+    {
+      "text": "26.08",
+      "bounding_box": {
+        "x": 445,
+        "y": 1336,
+        "width": 57,
+        "height": 21
+      },
+      "confidence": 0.9907128214836121
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 504,
+        "y": 1336,
+        "width": 6,
+        "height": 20
+      },
+      "confidence": 0.9666775465011597
+    },
+    {
+      "text": "Betrag",
+      "bounding_box": {
+        "x": 355,
+        "y": 1365,
+        "width": 68,
+        "height": 26
+      },
+      "confidence": 0.9866423010826111
+    },
+    {
+      "text": "EUR",
+      "bounding_box": {
+        "x": 434,
+        "y": 1362,
+        "width": 34,
+        "height": 25
+      },
+      "confidence": 0.943245530128479
+    },
+    {
+      "text": "0100000002",
+      "bounding_box": {
+        "x": 689,
+        "y": 1222,
+        "width": 109,
+        "height": 21
+      },
+      "confidence": 0.9918233752250671
+    },
+    {
+      "text": "400925",
+      "bounding_box": {
+        "x": 733,
+        "y": 1248,
+        "width": 66,
+        "height": 21
+      },
+      "confidence": 0.9908047318458557
+    },
+    {
+      "text": "54527366",
+      "bounding_box": {
+        "x": 712,
+        "y": 1277,
+        "width": 87,
+        "height": 18
+      },
+      "confidence": 0.9916540384292603
+    },
+    {
+      "text": "00",
+      "bounding_box": {
+        "x": 701,
+        "y": 1304,
+        "width": 22,
+        "height": 19
+      },
+      "confidence": 0.979529857635498
+    },
+    {
+      "text": "075",
+      "bounding_box": {
+        "x": 734,
+        "y": 1303,
+        "width": 33,
+        "height": 19
+      },
+      "confidence": 0.9755874872207642
+    },
+    {
+      "text": "00",
+      "bounding_box": {
+        "x": 777,
+        "y": 1302,
+        "width": 23,
+        "height": 19
+      },
+      "confidence": 0.9826197624206543
+    },
+    {
+      "text": "16:06",
+      "bounding_box": {
+        "x": 704,
+        "y": 1330,
+        "width": 53,
+        "height": 20
+      },
+      "confidence": 0.9778087139129639
+    },
+    {
+      "text": "Uhr",
+      "bounding_box": {
+        "x": 767,
+        "y": 1330,
+        "width": 32,
+        "height": 19
+      },
+      "confidence": 0.9511793255805969
+    },
+    {
+      "text": "***",
+      "bounding_box": {
+        "x": 414,
+        "y": 1393,
+        "width": 36,
+        "height": 46
+      },
+      "confidence": 0.9670003652572632
+    },
+    {
+      "text": "Autorisierung",
+      "bounding_box": {
+        "x": 458,
+        "y": 1388,
+        "width": 149,
+        "height": 50
+      },
+      "confidence": 0.9496279954910278
+    },
+    {
+      "text": "erfolgt",
+      "bounding_box": {
+        "x": 616,
+        "y": 1386,
+        "width": 78,
+        "height": 47
+      },
+      "confidence": 0.9860957264900208
+    },
+    {
+      "text": "***",
+      "bounding_box": {
+        "x": 705,
+        "y": 1384,
+        "width": 36,
+        "height": 46
+      },
+      "confidence": 0.9662646055221558
+    },
+    {
+      "text": "Bitte",
+      "bounding_box": {
+        "x": 393,
+        "y": 1464,
+        "width": 57,
+        "height": 23
+      },
+      "confidence": 0.9600301384925842
+    },
+    {
+      "text": "Beleg",
+      "bounding_box": {
+        "x": 460,
+        "y": 1463,
+        "width": 56,
+        "height": 22
+      },
+      "confidence": 0.9929516911506653
+    },
+    {
+      "text": "aufbewahren",
+      "bounding_box": {
+        "x": 526,
+        "y": 1459,
+        "width": 126,
+        "height": 25
+      },
+      "confidence": 0.992446780204773
+    },
+    {
+      "text": "9,69",
+      "bounding_box": {
+        "x": 757,
+        "y": 1357,
+        "width": 42,
+        "height": 20
+      },
+      "confidence": 0.9868468046188354
+    },
+    {
+      "text": "MwSt",
+      "bounding_box": {
+        "x": 355,
+        "y": 1625,
+        "width": 49,
+        "height": 21
+      },
+      "confidence": 0.7269582748413086
+    },
+    {
+      "text": "19",
+      "bounding_box": {
+        "x": 388,
+        "y": 1678,
+        "width": 18,
+        "height": 17
+      },
+      "confidence": 0.8559719324111938
+    },
+    {
+      "text": "%",
+      "bounding_box": {
+        "x": 405,
+        "y": 1678,
+        "width": 13,
+        "height": 16
+      },
+      "confidence": 0.9660407900810242
+    },
+    {
+      "text": "NETTO",
+      "bounding_box": {
+        "x": 529,
+        "y": 1622,
+        "width": 56,
+        "height": 17
+      },
+      "confidence": 0.9892774224281311
+    },
+    {
+      "text": "MwSt",
+      "bounding_box": {
+        "x": 651,
+        "y": 1622,
+        "width": 43,
+        "height": 18
+      },
+      "confidence": 0.9621425867080688
+    },
+    {
+      "text": "UMSATZ",
+      "bounding_box": {
+        "x": 741,
+        "y": 1617,
+        "width": 67,
+        "height": 20
+      },
+      "confidence": 0.9909152984619141
+    },
+    {
+      "text": "7,90",
+      "bounding_box": {
+        "x": 551,
+        "y": 1648,
+        "width": 45,
+        "height": 19
+      },
+      "confidence": 0.9810563325881958
+    },
+    {
+      "text": "10,55",
+      "bounding_box": {
+        "x": 643,
+        "y": 1647,
+        "width": 54,
+        "height": 22
+      },
+      "confidence": 0.8758527040481567
+    },
+    {
+      "text": "8,45",
+      "bounding_box": {
+        "x": 763,
+        "y": 1642,
+        "width": 46,
+        "height": 23
+      },
+      "confidence": 0.9776796102523804
+    },
+    {
+      "text": "1,04",
+      "bounding_box": {
+        "x": 553,
+        "y": 1673,
+        "width": 42,
+        "height": 19
+      },
+      "confidence": 0.9879109859466553
+    },
+    {
+      "text": "8,20",
+      "bounding_box": {
+        "x": 650,
+        "y": 1674,
+        "width": 48,
+        "height": 21
+      },
+      "confidence": 0.8679317831993103
+    },
+    {
+      "text": "1,24",
+      "bounding_box": {
+        "x": 765,
+        "y": 1671,
+        "width": 46,
+        "height": 20
+      },
+      "confidence": 0.9490802884101868
+    },
+    {
+      "text": "Für",
+      "bounding_box": {
+        "x": 386,
+        "y": 1727,
+        "width": 34,
+        "height": 20
+      },
+      "confidence": 0.9463870525360107
+    },
+    {
+      "text": "Ihren",
+      "bounding_box": {
+        "x": 431,
+        "y": 1727,
+        "width": 55,
+        "height": 20
+      },
+      "confidence": 0.9795922040939331
+    },
+    {
+      "text": "Einkauf",
+      "bounding_box": {
+        "x": 497,
+        "y": 1727,
+        "width": 78,
+        "height": 20
+      },
+      "confidence": 0.9824954271316528
+    },
+    {
+      "text": "von",
+      "bounding_box": {
+        "x": 586,
+        "y": 1727,
+        "width": 33,
+        "height": 20
+      },
+      "confidence": 0.9703851938247681
+    },
+    {
+      "text": "9,44",
+      "bounding_box": {
+        "x": 630,
+        "y": 1727,
+        "width": 46,
+        "height": 20
+      },
+      "confidence": 0.9725216627120972
+    },
+    {
+      "text": "Euro",
+      "bounding_box": {
+        "x": 688,
+        "y": 1727,
+        "width": 44,
+        "height": 20
+      },
+      "confidence": 0.9800305366516113
+    },
+    {
+      "text": "auf",
+      "bounding_box": {
+        "x": 742,
+        "y": 1727,
+        "width": 35,
+        "height": 20
+      },
+      "confidence": 0.9884488582611084
+    },
+    {
+      "text": "rabattfähige",
+      "bounding_box": {
+        "x": 409,
+        "y": 1751,
+        "width": 132,
+        "height": 24
+      },
+      "confidence": 0.9849289059638977
+    },
+    {
+      "text": "Artikel",
+      "bounding_box": {
+        "x": 551,
+        "y": 1750,
+        "width": 79,
+        "height": 24
+      },
+      "confidence": 0.9794327020645142
+    },
+    {
+      "text": "hätten",
+      "bounding_box": {
+        "x": 641,
+        "y": 1751,
+        "width": 68,
+        "height": 22
+      },
+      "confidence": 0.9808008074760437
+    },
+    {
+      "text": "Sie",
+      "bounding_box": {
+        "x": 720,
+        "y": 1750,
+        "width": 34,
+        "height": 22
+      },
+      "confidence": 0.9837623238563538
+    },
+    {
+      "text": "4",
+      "bounding_box": {
+        "x": 463,
+        "y": 1779,
+        "width": 15,
+        "height": 20
+      },
+      "confidence": 0.9341536164283752
+    },
+    {
+      "text": "PAYBACK",
+      "bounding_box": {
+        "x": 486,
+        "y": 1779,
+        "width": 79,
+        "height": 20
+      },
+      "confidence": 0.9913393259048462
+    },
+    {
+      "text": "\"",
+      "bounding_box": {
+        "x": 578,
+        "y": 1779,
+        "width": 7,
+        "height": 20
+      },
+      "confidence": 0.616142988204956
+    },
+    {
+      "text": "P",
+      "bounding_box": {
+        "x": 587,
+        "y": 1779,
+        "width": 11,
+        "height": 20
+      },
+      "confidence": 0.8960967063903809
+    },
+    {
+      "text": "erhalten",
+      "bounding_box": {
+        "x": 609,
+        "y": 1779,
+        "width": 91,
+        "height": 20
+      },
+      "confidence": 0.9919372200965881
+    },
+    {
+      "text": "!",
+      "bounding_box": {
+        "x": 701,
+        "y": 1779,
+        "width": 9,
+        "height": 20
+      },
+      "confidence": 0.9690918326377869
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 362,
+        "y": 1807,
+        "width": 13,
+        "height": 22
+      },
+      "confidence": 0.8119147419929504
+    },
+    {
+      "text": "Position",
+      "bounding_box": {
+        "x": 382,
+        "y": 1807,
+        "width": 95,
+        "height": 22
+      },
+      "confidence": 0.8468930721282959
+    },
+    {
+      "text": "nicht",
+      "bounding_box": {
+        "x": 486,
+        "y": 1807,
+        "width": 56,
+        "height": 22
+      },
+      "confidence": 0.991019070148468
+    },
+    {
+      "text": "rabattberechtigt",
+      "bounding_box": {
+        "x": 555,
+        "y": 1807,
+        "width": 180,
+        "height": 22
+      },
+      "confidence": 0.9800854921340942
+    },
+    {
+      "text": "0013165260825001001369",
+      "bounding_box": {
+        "x": 449,
+        "y": 1857,
+        "width": 306,
+        "height": 25
+      },
+      "confidence": 0.991281270980835
+    },
+    {
+      "text": "Datum",
+      "bounding_box": {
+        "x": 366,
+        "y": 1975,
+        "width": 57,
+        "height": 24
+      },
+      "confidence": 0.9263806939125061
+    },
+    {
+      "text": "Uhrzeit",
+      "bounding_box": {
+        "x": 432,
+        "y": 1974,
+        "width": 77,
+        "height": 24
+      },
+      "confidence": 0.9765995740890503
+    },
+    {
+      "text": "Filiale",
+      "bounding_box": {
+        "x": 532,
+        "y": 1972,
+        "width": 81,
+        "height": 24
+      },
+      "confidence": 0.9852977991104126
+    },
+    {
+      "text": "Pos",
+      "bounding_box": {
+        "x": 619,
+        "y": 1971,
+        "width": 37,
+        "height": 23
+      },
+      "confidence": 0.9213384985923767
+    },
+    {
+      "text": "Bed",
+      "bounding_box": {
+        "x": 666,
+        "y": 1970,
+        "width": 37,
+        "height": 24
+      },
+      "confidence": 0.9604337811470032
+    },
+    {
+      "text": "Bon",
+      "bounding_box": {
+        "x": 709,
+        "y": 1969,
+        "width": 39,
+        "height": 24
+      },
+      "confidence": 0.9689049124717712
+    },
+    {
+      "text": "26.08.25",
+      "bounding_box": {
+        "x": 366,
+        "y": 2003,
+        "width": 90,
+        "height": 24
+      },
+      "confidence": 0.9421266913414001
+    },
+    {
+      "text": "16:06",
+      "bounding_box": {
+        "x": 469,
+        "y": 2002,
+        "width": 55,
+        "height": 23
+      },
+      "confidence": 0.9875831604003906
+    },
+    {
+      "text": "0073165",
+      "bounding_box": {
+        "x": 533,
+        "y": 2000,
+        "width": 78,
+        "height": 24
+      },
+      "confidence": 0.9917484521865845
+    },
+    {
+      "text": "001",
+      "bounding_box": {
+        "x": 622,
+        "y": 1999,
+        "width": 32,
+        "height": 23
+      },
+      "confidence": 0.9856432676315308
+    },
+    {
+      "text": "002",
+      "bounding_box": {
+        "x": 667,
+        "y": 1998,
+        "width": 34,
+        "height": 23
+      },
+      "confidence": 0.9913749098777771
+    },
+    {
+      "text": "1369",
+      "bounding_box": {
+        "x": 713,
+        "y": 1997,
+        "width": 45,
+        "height": 23
+      },
+      "confidence": 0.9763554930686951
+    },
+    {
+      "text": "Steuernummer",
+      "bounding_box": {
+        "x": 434,
+        "y": 2085,
+        "width": 135,
+        "height": 28
+      },
+      "confidence": 0.9837698936462402
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 569,
+        "y": 2085,
+        "width": 7,
+        "height": 23
+      },
+      "confidence": 0.934248149394989
+    },
+    {
+      "text": "204/5085/2941",
+      "bounding_box": {
+        "x": 590,
+        "y": 2079,
+        "width": 146,
+        "height": 29
+      },
+      "confidence": 0.9913663864135742
+    },
+    {
+      "text": "TSE",
+      "bounding_box": {
+        "x": 367,
+        "y": 2144,
+        "width": 33,
+        "height": 24
+      },
+      "confidence": 0.9749107956886292
+    },
+    {
+      "text": "Transaktionsnummer",
+      "bounding_box": {
+        "x": 411,
+        "y": 2137,
+        "width": 205,
+        "height": 29
+      },
+      "confidence": 0.9710984826087952
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 617,
+        "y": 2137,
+        "width": 8,
+        "height": 22
+      },
+      "confidence": 0.9528166651725769
+    },
+    {
+      "text": "304437",
+      "bounding_box": {
+        "x": 636,
+        "y": 2134,
+        "width": 69,
+        "height": 25
+      },
+      "confidence": 0.9855817556381226
+    },
+    {
+      "text": "TSE",
+      "bounding_box": {
+        "x": 368,
+        "y": 2170,
+        "width": 33,
+        "height": 25
+      },
+      "confidence": 0.9784440994262695
+    },
+    {
+      "text": "Seriennummer",
+      "bounding_box": {
+        "x": 412,
+        "y": 2166,
+        "width": 136,
+        "height": 28
+      },
+      "confidence": 0.9919472336769104
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 550,
+        "y": 2166,
+        "width": 6,
+        "height": 23
+      },
+      "confidence": 0.9608337879180908
+    },
+    {
+      "text": "382059FA7EE4EDC56E63A8",
+      "bounding_box": {
+        "x": 569,
+        "y": 2157,
+        "width": 247,
+        "height": 32
+      },
+      "confidence": 0.9861152172088623
+    },
+    {
+      "text": "200455242015201",
+      "bounding_box": {
+        "x": 635,
+        "y": 2190,
+        "width": 182,
+        "height": 9
+      },
+      "confidence": 0.585078775882721
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_1525",
+    "image_width": 1237,
+    "image_height": 2200,
+    "processed_at": "2026-01-03T03:15:18.436270",
+    "preprocessing_applied": [
+      "compression",
+      "grayscale"
+    ]
+  }
+}

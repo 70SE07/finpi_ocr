@@ -1,0 +1,987 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Erdbeeren kg",
+        "quantity": null,
+        "price": null,
+        "total": 3.2,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "WassereisWass.melone",
+        "quantity": null,
+        "price": null,
+        "total": 2.39,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Magnum Classic",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Dovgan Fam.33 % Fett 2,29 x 2",
+        "quantity": 2.29,
+        "price": null,
+        "total": 4.58,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Dovgan Fam.2,5 % Fett 2,29 x 2",
+        "quantity": 2.29,
+        "price": null,
+        "total": 4.58,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Gouda in ScheibenXXL",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Schmand 0,89 x 3",
+        "quantity": 0.89,
+        "price": null,
+        "total": 2.67,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Eier Freiland . XXL",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Schmelzkäse Toast",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Schmelzkäse Cheddary",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Croissant Cremefüll .",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Rosinenstuten",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Pfandrückgabe",
+        "quantity": null,
+        "price": null,
+        "total": -23.0,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "92",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "Pfandrückgabe",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "date": "2025-06-13 00:00:00"
+      },
+      {
+        "name": "MBRU",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-06-13 00:00:00"
+      }
+    ],
+    "total_amount": 13.48,
+    "merchant": "Lidl",
+    "store_address": "02, Steinhauser Auel 1 , HOAM, 51491 Overath - Vilkerath",
+    "date": "2025-06-13 00:00:00",
+    "receipt_id": "pfandruckgabe_001",
+    "ocr_text": "LIDL STOR\n02\nSteinhauser Auel 1, HOAM\n51491 Overath-Vilkerath\nEUR\nErdbeeren kg\n3,20 A\n0,698 kg x 4,58 EUR/kg\nWassereisWass.melone\n2,39 A\nPreisvorteil\n-0,40\nMagnum Classic\n3,99 A\nDovgan Fam.33% Fett\n2,29 x\n2\n4,58 A\nDovgan Fam.2,5% Fett\n2,29 x\n2\n4,58 A\nGouda in ScheibenXXL\n4,29 A\nSchmand\n0,89 x 3\n2,67 A\nRabattaktion\n-0,27\nEier Freiland. XXL\n3.99 A\nSchmelzkäse Toast\n1,99 A\nPreisvorteil\n-0,20\nSchmelzkäse Cheddary\n1,99 A\nPreisvorteil\nCroissant Cremefüll.\nRosinenstuten\nPreisvorteil\nPfandrückgabe\n-92 x\nPfandrückgabe\n-0,20\n2,99 A\n1,49 A\n-0,10\n-23,00 B\n0,25\n-0,50 A\n-2 x\n0,25 MBRU\nzu zahlen\n213,48\nKarte\n13,48\nMAARETTA AT\nGesamter Preisvorteil\n1,17\nMWSTX\nMWST + Netto = Brutto\nA 7 %\n2,39\n34,09\n36,48\nB 19 %\n-3,67\n-19,33\n-23,00\nSumme\n-1,28\n14,76\n13,48\nLada dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1145339\nSeriennr. Kasse: LDL-000-6496-83\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: PE12jppELD0uqc96061n0cawfEoPvIjE\nNIWXTDhAPH+MAMDHuy/NaKTYXnfRkXUtobXctYyXA8\n/u2i2wekXueo+02pRUkGSgzYEJbPLJeNBq5vxZ+tUq\nYqYRrreXpooL\nSignaturzähler: 2337112\n2025-06-13T11:02:52.000Z\n2025-06-13111:12:01.000Z\n6496 012038/83\n13.06.25 13:02\nUST-ID-NR: DE814060660 H2A\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n13,48 EUR\n13:06:2025\n13:11\nT-ID 60197391\nTA-Nr. 069232\nBeleg-Nr. 5835\nKartennr.\n**************#1364 11\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nAutorisierungsnummer\n820121\nEMV-Daten:\nAutorisierungsantwortcode\n00\nA0000003591010028001/00\nAutorisierung erfolgt\n****",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 16.0,
+      "validation_passed": 0.0,
+      "validation_difference": 0.5
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LIDL STOR",
+        "y_position": 98,
+        "x_min": 543,
+        "x_max": 847,
+        "confidence": 0.506224662065506,
+        "line_number": 0,
+        "words_count": 2
+      },
+      {
+        "text": "02",
+        "y_position": 128,
+        "x_min": 846,
+        "x_max": 895,
+        "confidence": 0.8723766207695007,
+        "line_number": 1,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser Auel 1 , HOAM",
+        "y_position": 173,
+        "x_min": 478,
+        "x_max": 890,
+        "confidence": 0.7328404009342193,
+        "line_number": 2,
+        "words_count": 5
+      },
+      {
+        "text": "51491 Overath - Vilkerath",
+        "y_position": 215,
+        "x_min": 434,
+        "x_max": 778,
+        "confidence": 0.9724393635988235,
+        "line_number": 3,
+        "words_count": 4
+      },
+      {
+        "text": "EUR",
+        "y_position": 245,
+        "x_min": 837,
+        "x_max": 886,
+        "confidence": 0.9847872257232666,
+        "line_number": 4,
+        "words_count": 1
+      },
+      {
+        "text": "Erdbeeren kg 3,20 A",
+        "y_position": 279,
+        "x_min": 305,
+        "x_max": 914,
+        "confidence": 0.9887111783027649,
+        "line_number": 5,
+        "words_count": 4
+      },
+      {
+        "text": "0,698 kg x 4,58 EUR / kg",
+        "y_position": 318,
+        "x_min": 335,
+        "x_max": 689,
+        "confidence": 0.957294191632952,
+        "line_number": 6,
+        "words_count": 7
+      },
+      {
+        "text": "WassereisWass.melone 2,39 A",
+        "y_position": 348,
+        "x_min": 307,
+        "x_max": 910,
+        "confidence": 0.966419537862142,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "Preisvorteil -0,40",
+        "y_position": 383,
+        "x_min": 380,
+        "x_max": 880,
+        "confidence": 0.9776862263679504,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "Magnum Classic 3,99 A",
+        "y_position": 416,
+        "x_min": 310,
+        "x_max": 907,
+        "confidence": 0.9771031141281128,
+        "line_number": 9,
+        "words_count": 4
+      },
+      {
+        "text": "Dovgan Fam.33 % Fett 2,29 x 2 4,58 A",
+        "y_position": 449,
+        "x_min": 310,
+        "x_max": 922,
+        "confidence": 0.9826588696903653,
+        "line_number": 10,
+        "words_count": 9
+      },
+      {
+        "text": "Dovgan Fam.2,5 % Fett 2,29 x 2 4,58 A",
+        "y_position": 483,
+        "x_min": 310,
+        "x_max": 919,
+        "confidence": 0.9620928168296814,
+        "line_number": 11,
+        "words_count": 9
+      },
+      {
+        "text": "Gouda in ScheibenXXL 4,29 A",
+        "y_position": 513,
+        "x_min": 311,
+        "x_max": 904,
+        "confidence": 0.9807542562484741,
+        "line_number": 12,
+        "words_count": 5
+      },
+      {
+        "text": "Schmand 0,89 x 3 2,67 A",
+        "y_position": 545,
+        "x_min": 310,
+        "x_max": 917,
+        "confidence": 0.9545935789744059,
+        "line_number": 13,
+        "words_count": 6
+      },
+      {
+        "text": "Rabattaktion -0,27",
+        "y_position": 577,
+        "x_min": 382,
+        "x_max": 871,
+        "confidence": 0.9824191629886627,
+        "line_number": 14,
+        "words_count": 2
+      },
+      {
+        "text": "Eier Freiland . XXL 3.99 A",
+        "y_position": 605,
+        "x_min": 313,
+        "x_max": 900,
+        "confidence": 0.9273010989030203,
+        "line_number": 15,
+        "words_count": 6
+      },
+      {
+        "text": "Schmelzkäse Toast 1,99 A",
+        "y_position": 637,
+        "x_min": 311,
+        "x_max": 903,
+        "confidence": 0.9757730811834335,
+        "line_number": 16,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,20",
+        "y_position": 668,
+        "x_min": 384,
+        "x_max": 875,
+        "confidence": 0.9734042286872864,
+        "line_number": 17,
+        "words_count": 2
+      },
+      {
+        "text": "Schmelzkäse Cheddary 1,99 A",
+        "y_position": 699,
+        "x_min": 311,
+        "x_max": 903,
+        "confidence": 0.9708609879016876,
+        "line_number": 18,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,20",
+        "y_position": 729,
+        "x_min": 384,
+        "x_max": 877,
+        "confidence": 0.9726029634475708,
+        "line_number": 19,
+        "words_count": 2
+      },
+      {
+        "text": "Croissant Cremefüll . 2,99 A",
+        "y_position": 760,
+        "x_min": 312,
+        "x_max": 902,
+        "confidence": 0.9678761243820191,
+        "line_number": 20,
+        "words_count": 5
+      },
+      {
+        "text": "Rosinenstuten 1,49 A",
+        "y_position": 790,
+        "x_min": 314,
+        "x_max": 903,
+        "confidence": 0.980687141418457,
+        "line_number": 21,
+        "words_count": 3
+      },
+      {
+        "text": "Preisvorteil -0,10",
+        "y_position": 822,
+        "x_min": 387,
+        "x_max": 876,
+        "confidence": 0.9499370157718658,
+        "line_number": 22,
+        "words_count": 2
+      },
+      {
+        "text": "Pfandrückgabe -23,00 B",
+        "y_position": 848,
+        "x_min": 313,
+        "x_max": 904,
+        "confidence": 0.9750500321388245,
+        "line_number": 23,
+        "words_count": 3
+      },
+      {
+        "text": "-92 x 0,25",
+        "y_position": 885,
+        "x_min": 347,
+        "x_max": 619,
+        "confidence": 0.8830961585044861,
+        "line_number": 24,
+        "words_count": 3
+      },
+      {
+        "text": "Pfandrückgabe -0,50 A",
+        "y_position": 912,
+        "x_min": 314,
+        "x_max": 905,
+        "confidence": 0.9815499981244405,
+        "line_number": 25,
+        "words_count": 3
+      },
+      {
+        "text": "0,25 MBRU",
+        "y_position": 932,
+        "x_min": 557,
+        "x_max": 760,
+        "confidence": 0.6356196254491806,
+        "line_number": 26,
+        "words_count": 2
+      },
+      {
+        "text": "-2 x",
+        "y_position": 949,
+        "x_min": 361,
+        "x_max": 420,
+        "confidence": 0.8175261616706848,
+        "line_number": 27,
+        "words_count": 2
+      },
+      {
+        "text": "zu zahlen 213,48",
+        "y_position": 980,
+        "x_min": 314,
+        "x_max": 872,
+        "confidence": 0.7486811478932699,
+        "line_number": 28,
+        "words_count": 3
+      },
+      {
+        "text": "Karte AT 13,48",
+        "y_position": 1014,
+        "x_min": 317,
+        "x_max": 873,
+        "confidence": 0.7939934730529785,
+        "line_number": 29,
+        "words_count": 3
+      },
+      {
+        "text": "MAARETTA",
+        "y_position": 1030,
+        "x_min": 494,
+        "x_max": 709,
+        "confidence": 0.5958285331726074,
+        "line_number": 30,
+        "words_count": 1
+      },
+      {
+        "text": "Gesamter Preisvorteil 1,17",
+        "y_position": 1050,
+        "x_min": 317,
+        "x_max": 918,
+        "confidence": 0.9769843816757202,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "MWSTX MWST + Netto = Brutto",
+        "y_position": 1088,
+        "x_min": 333,
+        "x_max": 876,
+        "confidence": 0.8810306837161382,
+        "line_number": 32,
+        "words_count": 6
+      },
+      {
+        "text": "A 7 % 2,39 34,09 36,48",
+        "y_position": 1117,
+        "x_min": 317,
+        "x_max": 875,
+        "confidence": 0.9777716994285583,
+        "line_number": 33,
+        "words_count": 6
+      },
+      {
+        "text": "B 19 % -3,67 -19,33 -23,00",
+        "y_position": 1147,
+        "x_min": 318,
+        "x_max": 878,
+        "confidence": 0.9672322571277618,
+        "line_number": 34,
+        "words_count": 6
+      },
+      {
+        "text": "Summe -1,28 14,76 13,48",
+        "y_position": 1174,
+        "x_min": 318,
+        "x_max": 878,
+        "confidence": 0.9641745090484619,
+        "line_number": 35,
+        "words_count": 4
+      },
+      {
+        "text": "Lada dir die Lidl Plus App herunter",
+        "y_position": 1219,
+        "x_min": 362,
+        "x_max": 864,
+        "confidence": 0.9438299025808062,
+        "line_number": 36,
+        "words_count": 7
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 1250,
+        "x_min": 334,
+        "x_max": 878,
+        "confidence": 0.9530184183801923,
+        "line_number": 37,
+        "words_count": 7
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1145339",
+        "y_position": 1378,
+        "x_min": 318,
+        "x_max": 767,
+        "confidence": 0.9609982818365097,
+        "line_number": 38,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-83",
+        "y_position": 1406,
+        "x_min": 318,
+        "x_max": 784,
+        "confidence": 0.9462542193276542,
+        "line_number": 39,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga + dvZbaId8",
+        "y_position": 1434,
+        "x_min": 319,
+        "x_max": 932,
+        "confidence": 0.8989213109016418,
+        "line_number": 40,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1472,
+        "x_min": 319,
+        "x_max": 566,
+        "confidence": 0.9044316709041595,
+        "line_number": 41,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : PE12jppELD0uqc96061n0cawfEoPvIjE",
+        "y_position": 1494,
+        "x_min": 319,
+        "x_max": 932,
+        "confidence": 0.9296344121297201,
+        "line_number": 42,
+        "words_count": 3
+      },
+      {
+        "text": "NIWXTDhAPH + MAMDHuy / NaKTYXnfRkXUtobXctYyXA8",
+        "y_position": 1525,
+        "x_min": 321,
+        "x_max": 931,
+        "confidence": 0.9013704061508179,
+        "line_number": 43,
+        "words_count": 5
+      },
+      {
+        "text": "/ u2i2wekXueo + 02pRUkGSgzYEJbPLJeNBq5vxZ + tUq",
+        "y_position": 1559,
+        "x_min": 319,
+        "x_max": 933,
+        "confidence": 0.9316789408524832,
+        "line_number": 44,
+        "words_count": 6
+      },
+      {
+        "text": "YqYRrreXpooL",
+        "y_position": 1600,
+        "x_min": 320,
+        "x_max": 495,
+        "confidence": 0.9365034699440002,
+        "line_number": 45,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2337112",
+        "y_position": 1627,
+        "x_min": 320,
+        "x_max": 657,
+        "confidence": 0.9744461377461752,
+        "line_number": 46,
+        "words_count": 3
+      },
+      {
+        "text": "2025-06-13T11 : 02 : 52.000Z",
+        "y_position": 1660,
+        "x_min": 319,
+        "x_max": 671,
+        "confidence": 0.9749301195144653,
+        "line_number": 47,
+        "words_count": 5
+      },
+      {
+        "text": "2025-06-13111 : 12 : 01.000Z",
+        "y_position": 1689,
+        "x_min": 320,
+        "x_max": 671,
+        "confidence": 0.9676237940788269,
+        "line_number": 48,
+        "words_count": 5
+      },
+      {
+        "text": "6496 012038/83 13.06.25 13:02",
+        "y_position": 1719,
+        "x_min": 320,
+        "x_max": 942,
+        "confidence": 0.9907810091972351,
+        "line_number": 49,
+        "words_count": 4
+      },
+      {
+        "text": "UST - ID - NR : DE814060660 H2A",
+        "y_position": 1753,
+        "x_min": 453,
+        "x_max": 882,
+        "confidence": 0.9391352906823158,
+        "line_number": 50,
+        "words_count": 8
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1794,
+        "x_min": 452,
+        "x_max": 766,
+        "confidence": 0.910746020930154,
+        "line_number": 51,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 1823,
+        "x_min": 451,
+        "x_max": 781,
+        "confidence": 0.9840992391109467,
+        "line_number": 52,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag 13,48 EUR",
+        "y_position": 1859,
+        "x_min": 319,
+        "x_max": 915,
+        "confidence": 0.9813639918963114,
+        "line_number": 53,
+        "words_count": 3
+      },
+      {
+        "text": "2025 13:11 T - ID 60197391",
+        "y_position": 1896,
+        "x_min": 408,
+        "x_max": 910,
+        "confidence": 0.968489537636439,
+        "line_number": 54,
+        "words_count": 6
+      },
+      {
+        "text": "13 : 06 : Beleg - Nr . 5835",
+        "y_position": 1912,
+        "x_min": 323,
+        "x_max": 916,
+        "confidence": 0.9551859762933519,
+        "line_number": 55,
+        "words_count": 9
+      },
+      {
+        "text": "TA - Nr . 069232 ************** # 1364 11",
+        "y_position": 1936,
+        "x_min": 323,
+        "x_max": 913,
+        "confidence": 0.8834684193134308,
+        "line_number": 56,
+        "words_count": 9
+      },
+      {
+        "text": "Kartennr . Online",
+        "y_position": 1966,
+        "x_min": 325,
+        "x_max": 912,
+        "confidence": 0.9315361579259237,
+        "line_number": 57,
+        "words_count": 3
+      },
+      {
+        "text": "Kontaktlos Chip 9801706496",
+        "y_position": 1987,
+        "x_min": 327,
+        "x_max": 839,
+        "confidence": 0.9854167302449545,
+        "line_number": 58,
+        "words_count": 3
+      },
+      {
+        "text": "VU - Nummer 820121",
+        "y_position": 2014,
+        "x_min": 330,
+        "x_max": 908,
+        "confidence": 0.9279853254556656,
+        "line_number": 59,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 00",
+        "y_position": 2035,
+        "x_min": 333,
+        "x_max": 910,
+        "confidence": 0.9786779284477234,
+        "line_number": 60,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode A0000003591010028001 / 00",
+        "y_position": 2051,
+        "x_min": 335,
+        "x_max": 908,
+        "confidence": 0.9783206582069397,
+        "line_number": 61,
+        "words_count": 4
+      },
+      {
+        "text": "EMV - Daten :",
+        "y_position": 2075,
+        "x_min": 340,
+        "x_max": 479,
+        "confidence": 0.9641930311918259,
+        "line_number": 62,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierung erfolgt ****",
+        "y_position": 2091,
+        "x_min": 467,
+        "x_max": 904,
+        "confidence": 0.7836508254210154,
+        "line_number": 63,
+        "words_count": 3
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 284,
+    "total_lines": 64
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3548387096774194,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "zu zahlen",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 11
+    }
+  },
+  "store": {
+    "store_name": "Lidl",
+    "store_address": "02, Steinhauser Auel 1 , HOAM, 51491 Overath - Vilkerath",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-06-13",
+    "receipt_total": 13.48,
+    "currency": "EUR",
+    "date_raw": "2025-06-13",
+    "total_raw": "13,48 EUR",
+    "total_line_number": 53
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Erdbeeren kg",
+        "quantity": null,
+        "price": null,
+        "total": 3.2,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "Erdbeeren kg 3,20 A"
+      },
+      {
+        "name": "WassereisWass.melone",
+        "quantity": null,
+        "price": null,
+        "total": 2.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 7,
+        "raw_text": "WassereisWass.melone 2,39 A"
+      },
+      {
+        "name": "Magnum Classic",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Magnum Classic 3,99 A"
+      },
+      {
+        "name": "Dovgan Fam.33 % Fett 2,29 x 2",
+        "quantity": 2.29,
+        "price": null,
+        "total": 4.58,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "Dovgan Fam.33 % Fett 2,29 x 2 4,58 A"
+      },
+      {
+        "name": "Dovgan Fam.2,5 % Fett 2,29 x 2",
+        "quantity": 2.29,
+        "price": null,
+        "total": 4.58,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Dovgan Fam.2,5 % Fett 2,29 x 2 4,58 A"
+      },
+      {
+        "name": "Gouda in ScheibenXXL",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Gouda in ScheibenXXL 4,29 A"
+      },
+      {
+        "name": "Schmand 0,89 x 3",
+        "quantity": 0.89,
+        "price": null,
+        "total": 2.67,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "Schmand 0,89 x 3 2,67 A"
+      },
+      {
+        "name": "Eier Freiland . XXL",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "Eier Freiland . XXL 3.99 A"
+      },
+      {
+        "name": "Schmelzkäse Toast",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "Schmelzkäse Toast 1,99 A"
+      },
+      {
+        "name": "Schmelzkäse Cheddary",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "Schmelzkäse Cheddary 1,99 A"
+      },
+      {
+        "name": "Croissant Cremefüll .",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "Croissant Cremefüll . 2,99 A"
+      },
+      {
+        "name": "Rosinenstuten",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Rosinenstuten 1,49 A"
+      },
+      {
+        "name": "Pfandrückgabe",
+        "quantity": null,
+        "price": null,
+        "total": -23.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 23,
+        "raw_text": "Pfandrückgabe -23,00 B"
+      },
+      {
+        "name": "92",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "-92 x 0,25"
+      },
+      {
+        "name": "Pfandrückgabe",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "Pfandrückgabe -0,50 A"
+      },
+      {
+        "name": "MBRU",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 26,
+        "raw_text": "0,25 MBRU"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.4,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "Preisvorteil -0,40"
+      },
+      {
+        "name": "Rabattaktion",
+        "quantity": null,
+        "price": null,
+        "total": -0.27,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "Rabattaktion -0,27"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.2,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "Preisvorteil -0,20"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.2,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "Preisvorteil -0,20"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.1,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "Preisvorteil -0,10"
+      }
+    ],
+    "items_count": 16,
+    "discounts_count": 5,
+    "items_total": 15.150000000000006,
+    "discounts_total": 1.1700000000000002,
+    "skipped_lines": 22,
+    "parsed_lines": 21
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 15.150000000000006,
+    "discounts_sum": 1.1700000000000002,
+    "calculated_total": 13.98,
+    "receipt_total": 13.48,
+    "difference": 0.5,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=13.98, receipt=13.48, diff=0.50 (tolerance=0.05)"
+  },
+  "processing_time_ms": 17.820119857788086,
+  "stages_completed": 6
+}

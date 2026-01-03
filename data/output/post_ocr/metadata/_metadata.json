@@ -1,0 +1,16 @@
+{
+  "store_name": "Unknown",
+  "receipt_date": null,
+  "total_receipt_amount": null,
+  "store_brand": null,
+  "store_address": null,
+  "store_phone": null,
+  "store_vat_id": null,
+  "confidence_score": {
+    "store": 0.0,
+    "receipt_date": 0.0,
+    "total_amount": 0.0,
+    "address": 0.0,
+    "requisites": 0.0
+  }
+}

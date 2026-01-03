@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "name": "715057 Eier Bodenh . 18er",
+      "quantity": null,
+      "price": null,
+      "total": 3.39,
+      "date": "2025-10-15 00:00:00",
+      "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+    },
+    {
+      "name": "715057 Eier Bodenh . 18er Я",
+      "quantity": null,
+      "price": 3.39,
+      "total": 3.39,
+      "date": "2025-10-15 00:00:00",
+      "raw_text": "715057 Eier Bodenh . 18er Я923.39 A"
+    },
+    {
+      "name": "715057 Eier Bodenh . 18er",
+      "quantity": null,
+      "price": null,
+      "total": 3.39,
+      "date": "2025-10-15 00:00:00",
+      "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+    }
+  ],
+  "total_amount": 10.17,
+  "merchant": "aldi",
+  "store_address": "Wiesenauel 1, 51491 Overath",
+  "date": "2025-10-15 00:00:00",
+  "receipt_id": "IMG_2529",
+  "ocr_text": "ALDI SÜD\nWiesenauel 1\n51491 Overath\nEUR\n715057 Eier Bodenh. 18er\n3,39 A\n715057 Eier Bodenh. 18er Я923.39 A\n715057 Eier Bodenh. 18er\n3,39 A\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n10,17 EUR\n15.10.2025\n13:01\nT-ID 65299524\nTA-Nr. 121107\nBeleg-Nr. 5173\nKartennr.\n###############1364 00\nKontaktlos Chip\nOnline\nVU-Nummer\n1079299524\nAutorisierungsnummer\n245510\nAutorisierungsantwortcode\nEMV-Daten:\n00\n0000008001/0000////1F0302//0000000002202\n**\n00000008001000001/92445229/80\nMA\nZahlung erfolgt\nSumme\n**\ngirocard\nA 07,0% Netto\nEUR\n9,50 MwSt\n10,17\n10,17\n0,67\n*6221 035/026/002/024 15.10.25 13:01\nUnsere Öffnungszeiten:\nMo Sa: 8:00 Uhr 20:00\nUST-ID-Nr. DE 813192189\nVIELEN DANK FÜR DEINEN EINKAUF\nALDI SUD - Gutes für alle.\n* Qualität, die dich nicht loslässt. *\n* Entdecke jetzt die vielfältigen\n*\n*\nEigenmarken von ALDI SÜD\nin deiner Filiale!\nKasse:\nTSE:\nInternational.D.035.026.02\n/2+db+XG8V78bkQC6ICVm7ix3IsL2zSmb3\nF98Bcetag=\nStart: 2025-10-15 13:01:32\nEnde: 2025-10-15 13:01:57\nT.-Nr.: 160010\nSOM UG\nS.-Nr.: 320242\nSig.: Hk3aXRTLKHHXvm1sNgX02oYm4nXaaVE9NG\nbP2PuJ7Vc/vhpUc9tsPRajLX1s1uA8IгRG\nUcF1BPKJNFUXjzUhq+BSf+yingXYkN110s\nNRJ8dEZXZXeRWtMAw1vrZL1Lyo\nnittliche Nährwerte\nJe 100 g",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 3.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

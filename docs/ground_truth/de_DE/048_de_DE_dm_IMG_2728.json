@@ -1,0 +1,25 @@
+{
+  "id": "048",
+  "source_file": "data/input/DM/IMG_2728.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "dm-drogerie markt",
+    "address": "Steinhofplatz 1, 51491 Overath",
+    "tax_id": "34092/30007"
+  },
+  "metadata": {
+    "date": "05.11.2025",
+    "time": "11:22",
+    "currency": "EUR",
+    "payment_method": "BAR",
+    "receipt_total": 1.75
+  },
+  "items": [
+    {
+      "raw_name": "dmBio Vollmil. Schokolade 100g",
+      "quantity": 1,
+      "unit_price": 1.75,
+      "total_price": 1.75
+    }
+  ]
+}

@@ -1,10 +1,13 @@
 {
   "id": "015",
-  "source_file": "photo/GOODS/Edeka/IMG_1931.jpeg",
+  "source_file": "data/input/Edeka/IMG_1931.jpeg",
   "locale": "de_DE",
   "store": {
     "name": "EDEKA Felbecker",
-    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden"
+    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden",
+    "phone": "02206 / 912784",
+    "website": "www.edeka.de",
+    "steuernummer": "204/5085/2941"
   },
   "metadata": {
     "date": "19.09.2025",
@@ -48,7 +51,7 @@
       "tax_class": "B"
     },
     {
-      "raw_name": "Dov.Kondensm1",
+      "raw_name": "Dov.Kondensmi",
       "quantity": 2,
       "unit_price": 2.09,
       "total_price": 4.18,
@@ -101,7 +104,7 @@
       "raw_name": "Pfand",
       "quantity": 1,
       "total_price": 0.25,
-      "tax_class": "+B",
+      "tax_class": "*B",
       "is_pfand": true
     }
   ],
@@ -112,8 +115,11 @@
     "discrepancy": 0.0
   },
   "notes": [
+    "Posten: 14 - number of items",
+    "SUMME € format",
     "Qty format: 2,09 € x 2 (price before qty!)",
-    "Tax codes: A, AW, B, +B",
-    "Posten: 14"
+    "Extended tax codes: A, AW, B, *B",
+    "Pfand with *B tax class",
+    "*Position nicht rabattberechtigt"
   ]
 }

@@ -1,0 +1,432 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "TORBA PAPIEROWA 1",
+        "quantity": 1.0,
+        "price": null,
+        "total": 1.0,
+        "date": "2025-11-12 00:00:00"
+      },
+      {
+        "name": "H7177 - XXX - ONE 1 *",
+        "quantity": 1.0,
+        "price": null,
+        "total": 69.99,
+        "date": "2025-11-12 00:00:00"
+      },
+      {
+        "name": "686AT - 08X - XXL KOSZULKA MĘSKA",
+        "quantity": null,
+        "price": null,
+        "total": 69.99,
+        "date": "2025-11-12 00:00:00"
+      },
+      {
+        "name": "XXL KOSZULKA MĘSKA 1 *",
+        "quantity": 1.0,
+        "price": null,
+        "total": 59.99,
+        "date": "2025-11-12 00:00:00"
+      }
+    ],
+    "total_amount": 200.97,
+    "merchant": null,
+    "store_address": null,
+    "date": "2025-11-12 00:00:00",
+    "receipt_id": "PL_002",
+    "ocr_text": "CROPP 1512016\nLPP S.A. 80-769 Gdańsk, ul. Łąkowa 39/44\nBD0000002920\n00-120 Warszawa\nul. Złota 59\nNIP 583-10-14-898\nnr wydr. 270400/0851\nPARAGON FISKALNY\nH7177-XXX-ONE TORBA PAPIEROWA\n1\n* 1,00 1,00 A\n686AT-08X-XXL KOSZULKA MĘSKA\n1\n* 69.99 69.99 A\n686AT-08X-XXL KOSZULKA MĘSKA\n* 69,99 69.99 A\n571FN-78X-XXL KOSZULKA MĘSKA\n1\n* 59,99 59,99 A\nSprzed. opod. PTU A\n200,97\nSUMA PTU\nKwota PTU A 23,00%\nSUMA PLN\n37,58\n37,58\n200,97\nROZLICZENIE PŁATNOŚCI\nKarta kredytowa\nWpłacono razem\n200,97\n200,97\n000158/0851\n2025-11-12\n#45 1894608722\n17:19\n16CD1443F7DA30479AF7FC069EFF10922AD44AD7\nTEAW1901777551\n1512016*45*25*1*35645\nNr transakcji\nDOKUMENT\nPRACUJ 2\n16*45*25*1*35645\n0851",
+    "detected_locale": "pl_PL",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 4.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "CROPP 1512016 Łąkowa 39/44",
+        "y_position": 240,
+        "x_min": 232,
+        "x_max": 465,
+        "confidence": 0.9523316323757172,
+        "line_number": 0,
+        "words_count": 4
+      },
+      {
+        "text": "LPP S.A. 80-769 Gdańsk , ul .",
+        "y_position": 260,
+        "x_min": 111,
+        "x_max": 345,
+        "confidence": 0.9555087344987052,
+        "line_number": 1,
+        "words_count": 7
+      },
+      {
+        "text": "BD0000002920",
+        "y_position": 280,
+        "x_min": 231,
+        "x_max": 339,
+        "confidence": 0.9653546810150146,
+        "line_number": 2,
+        "words_count": 1
+      },
+      {
+        "text": "00-120 Warszawa",
+        "y_position": 301,
+        "x_min": 222,
+        "x_max": 357,
+        "confidence": 0.9890073239803314,
+        "line_number": 3,
+        "words_count": 2
+      },
+      {
+        "text": "ul . Złota 59",
+        "y_position": 327,
+        "x_min": 232,
+        "x_max": 340,
+        "confidence": 0.9360066950321198,
+        "line_number": 4,
+        "words_count": 4
+      },
+      {
+        "text": "NIP 583-10-14-898 270400/0851",
+        "y_position": 348,
+        "x_min": 216,
+        "x_max": 542,
+        "confidence": 0.9913751681645712,
+        "line_number": 5,
+        "words_count": 3
+      },
+      {
+        "text": "nr wydr .",
+        "y_position": 369,
+        "x_min": 358,
+        "x_max": 430,
+        "confidence": 0.9565124114354452,
+        "line_number": 6,
+        "words_count": 3
+      },
+      {
+        "text": "PARAGON FISKALNY 1,00 A",
+        "y_position": 395,
+        "x_min": 220,
+        "x_max": 544,
+        "confidence": 0.9892209023237228,
+        "line_number": 7,
+        "words_count": 4
+      },
+      {
+        "text": "TORBA PAPIEROWA 1 * 1,00",
+        "y_position": 412,
+        "x_min": 170,
+        "x_max": 478,
+        "confidence": 0.9544421434402466,
+        "line_number": 8,
+        "words_count": 5
+      },
+      {
+        "text": "H7177 - XXX - ONE 1 * 69.99 69.99 A",
+        "y_position": 429,
+        "x_min": 52,
+        "x_max": 544,
+        "confidence": 0.9522928595542908,
+        "line_number": 9,
+        "words_count": 10
+      },
+      {
+        "text": "686AT - 08X - XXL KOSZULKA MĘSKA 69,99 69.99 A",
+        "y_position": 445,
+        "x_min": 54,
+        "x_max": 545,
+        "confidence": 0.9593234777450561,
+        "line_number": 10,
+        "words_count": 10
+      },
+      {
+        "text": "686AT - 08X - XXL KOSZULKA MĘSKA *",
+        "y_position": 464,
+        "x_min": 55,
+        "x_max": 416,
+        "confidence": 0.9354287534952164,
+        "line_number": 11,
+        "words_count": 8
+      },
+      {
+        "text": "XXL KOSZULKA MĘSKA 1 * 59,99 59,99 A",
+        "y_position": 481,
+        "x_min": 141,
+        "x_max": 545,
+        "confidence": 0.9216457456350327,
+        "line_number": 12,
+        "words_count": 8
+      },
+      {
+        "text": "571FN - 78X -",
+        "y_position": 497,
+        "x_min": 55,
+        "x_max": 143,
+        "confidence": 0.9860091358423233,
+        "line_number": 13,
+        "words_count": 4
+      },
+      {
+        "text": "Sprzed . opod . PTU A 200,97",
+        "y_position": 527,
+        "x_min": 57,
+        "x_max": 524,
+        "confidence": 0.9485769782747541,
+        "line_number": 14,
+        "words_count": 7
+      },
+      {
+        "text": "Kwota PTU A 23,00 % 37,58",
+        "y_position": 551,
+        "x_min": 59,
+        "x_max": 525,
+        "confidence": 0.979007343451182,
+        "line_number": 15,
+        "words_count": 6
+      },
+      {
+        "text": "SUMA PTU 37,58",
+        "y_position": 573,
+        "x_min": 60,
+        "x_max": 525,
+        "confidence": 0.972635825475057,
+        "line_number": 16,
+        "words_count": 3
+      },
+      {
+        "text": "SUMA PLN 200,97",
+        "y_position": 595,
+        "x_min": 61,
+        "x_max": 545,
+        "confidence": 0.986410915851593,
+        "line_number": 17,
+        "words_count": 3
+      },
+      {
+        "text": "ROZLICZENIE PŁATNOŚCI",
+        "y_position": 651,
+        "x_min": 222,
+        "x_max": 397,
+        "confidence": 0.9013160765171051,
+        "line_number": 18,
+        "words_count": 2
+      },
+      {
+        "text": "Karta kredytowa 200,97",
+        "y_position": 670,
+        "x_min": 64,
+        "x_max": 545,
+        "confidence": 0.9856444994608561,
+        "line_number": 19,
+        "words_count": 3
+      },
+      {
+        "text": "Wpłacono razem 200,97",
+        "y_position": 692,
+        "x_min": 65,
+        "x_max": 546,
+        "confidence": 0.9465934832890829,
+        "line_number": 20,
+        "words_count": 3
+      },
+      {
+        "text": "000158/0851 # 45 1894608722",
+        "y_position": 734,
+        "x_min": 66,
+        "x_max": 548,
+        "confidence": 0.9819789528846741,
+        "line_number": 21,
+        "words_count": 4
+      },
+      {
+        "text": "2025-11-12 17:19",
+        "y_position": 755,
+        "x_min": 67,
+        "x_max": 547,
+        "confidence": 0.9925739169120789,
+        "line_number": 22,
+        "words_count": 2
+      },
+      {
+        "text": "16CD1443F7DA30479AF7FC069EFF10922AD44AD7",
+        "y_position": 771,
+        "x_min": 142,
+        "x_max": 479,
+        "confidence": 0.9880341291427612,
+        "line_number": 23,
+        "words_count": 1
+      },
+      {
+        "text": "TEAW1901777551",
+        "y_position": 801,
+        "x_min": 239,
+        "x_max": 390,
+        "confidence": 0.9057886004447937,
+        "line_number": 24,
+        "words_count": 1
+      },
+      {
+        "text": "1512016 * 45 * 25 * 1 * 35645",
+        "y_position": 818,
+        "x_min": 202,
+        "x_max": 435,
+        "confidence": 0.9476026958889432,
+        "line_number": 25,
+        "words_count": 9
+      },
+      {
+        "text": "16 * 45 * 25 * 1 * 35645",
+        "y_position": 945,
+        "x_min": 418,
+        "x_max": 552,
+        "confidence": 0.9104585316446092,
+        "line_number": 26,
+        "words_count": 9
+      },
+      {
+        "text": "Nr transakcji",
+        "y_position": 974,
+        "x_min": 78,
+        "x_max": 196,
+        "confidence": 0.9597091376781464,
+        "line_number": 27,
+        "words_count": 2
+      },
+      {
+        "text": "0851",
+        "y_position": 990,
+        "x_min": 520,
+        "x_max": 551,
+        "confidence": 0.9923853278160095,
+        "line_number": 28,
+        "words_count": 1
+      },
+      {
+        "text": "DOKUMENT",
+        "y_position": 1052,
+        "x_min": 251,
+        "x_max": 320,
+        "confidence": 0.9269510507583618,
+        "line_number": 29,
+        "words_count": 1
+      },
+      {
+        "text": "PRACUJ 2",
+        "y_position": 1093,
+        "x_min": 224,
+        "x_max": 361,
+        "confidence": 0.9251517355442047,
+        "line_number": 30,
+        "words_count": 2
+      }
+    ],
+    "image_width": 720,
+    "image_height": 1280,
+    "total_words": 132,
+    "total_lines": 31
+  },
+  "locale": {
+    "locale_code": "pl_PL",
+    "confidence": 0.42105263157894735,
+    "matched_keywords": [
+      "suma",
+      "razem",
+      "ptu",
+      "pln",
+      "zl",
+      "zł",
+      "paragon",
+      "fiskalny"
+    ],
+    "scores": {
+      "pt_PT": 1,
+      "cs_CZ": 1,
+      "es_ES": 0,
+      "pl_PL": 8,
+      "de_DE": 0
+    }
+  },
+  "store": {
+    "store_name": null,
+    "store_address": null,
+    "confidence": 0.0,
+    "matched_in_line": -1
+  },
+  "metadata": {
+    "receipt_date": "2025-11-12",
+    "receipt_total": 200.97,
+    "currency": "PLN",
+    "date_raw": "2025-11-12",
+    "total_raw": "200,97",
+    "total_line_number": 17
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "TORBA PAPIEROWA 1",
+        "quantity": 1.0,
+        "price": null,
+        "total": 1.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "TORBA PAPIEROWA 1 * 1,00"
+      },
+      {
+        "name": "H7177 - XXX - ONE 1 *",
+        "quantity": 1.0,
+        "price": null,
+        "total": 69.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "H7177 - XXX - ONE 1 * 69.99 69.99 A"
+      },
+      {
+        "name": "686AT - 08X - XXL KOSZULKA MĘSKA",
+        "quantity": null,
+        "price": null,
+        "total": 69.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "686AT - 08X - XXL KOSZULKA MĘSKA 69,99 69.99 A"
+      },
+      {
+        "name": "XXL KOSZULKA MĘSKA 1 *",
+        "quantity": 1.0,
+        "price": null,
+        "total": 59.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "XXL KOSZULKA MĘSKA 1 * 59,99 59,99 A"
+      }
+    ],
+    "discounts": [],
+    "items_count": 4,
+    "discounts_count": 0,
+    "items_total": 200.97,
+    "discounts_total": 0,
+    "skipped_lines": 20,
+    "parsed_lines": 4
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 200.97,
+    "discounts_sum": 0,
+    "calculated_total": 200.97,
+    "receipt_total": 200.97,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 22.463321685791016,
+  "stages_completed": 6
+}

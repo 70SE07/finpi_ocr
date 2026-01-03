@@ -12,52 +12,16 @@
     "fix_rule": "rebe → PRESS в начале чека (контекстно)"
   },
   {
-    "id": "de_DE_002_IMG_1292",
-    "receipt_id": "IMG_1292",
-    "type": "CHAR_MISS",
-    "ocr_text": "Schweinenackenbraten",
-    "expected_text": "Schweinenackenbraten",
-    "position": "item_name",
-    "context": "Schweinenackenbraten 10,85 A (пропуск n)",
-    "frequency": "occasional",
-    "verified": true,
-    "fix_rule": "Добавить пропущенную n в слове Schweinenacken"
-  },
-  {
     "id": "de_DE_003_IMG_1292",
     "receipt_id": "IMG_1292",
     "type": "CHAR_SUB",
     "ocr_text": "Olivenöle",
     "expected_text": "Olivenöl",
     "position": "word",
-    "context": "Olivenöle natur (дополнительные символы)",
+    "context": "Olivenöle natur (лишняя e на конце)",
     "frequency": "occasional",
     "verified": true,
-    "fix_rule": "Öl → Öl (регулярное выражение по словарю)"
-  },
-  {
-    "id": "de_DE_004_IMG_1292",
-    "receipt_id": "IMG_1292",
-    "type": "CHAR_SUB",
-    "ocr_text": "Bull'sEyeFeink",
-    "expected_text": "Bull'sEyeFeink",
-    "position": "word",
-    "context": "Bull'sEyeFeink.Honey (k → ?)",
-    "frequency": "rare",
-    "verified": true,
-    "fix_rule": "Feink → Feink (k вместо k в середине слова)"
-  },
-  {
-    "id": "de_DE_005_IMG_1292",
-    "receipt_id": "IMG_1292",
-    "type": "WORD_SPLIT",
-    "ocr_text": "Baguettes Knoblauch",
-    "expected_text": "Baguettes Knoblauch",
-    "position": "word",
-    "context": "Baguettes Knoblauch 1,95 A (разделение без пробела?)",
-    "frequency": "occasional",
-    "verified": false,
-    "suggestion": "Требуется визуальная проверка - возможно Knoblauch разделён на 2 строки"
+    "fix_rule": "Olivenöle → Olivenöl (убрать лишнюю e)"
   },
   {
     "id": "de_DE_006_IMG_1292",
@@ -69,19 +33,7 @@
     "context": "Hähn.Keulen Diavolo (потеря chen, точка вместо chen)",
     "frequency": "occasional",
     "verified": true,
-    "fix_rule": "Hähn.Keulen → Hähnchenkeulen (распознать . как chen или восстановить по словарю)"
-  },
-  {
-    "id": "de_DE_007_IMG_1292",
-    "receipt_id": "IMG_1292",
-    "type": "CHAR_MISS",
-    "ocr_text": "Zwiebeln rot",
-    "expected_text": "Zwiebeln rot",
-    "position": "word",
-    "context": "Zwiebeln rot 1,99 A",
-    "frequency": "rare",
-    "verified": false,
-    "suggestion": "Слово распознано верно - возможно ошибка в ground_truth"
+    "fix_rule": "Hähn.Keulen → Hähnchenkeulen (распознать . как chen)"
   },
   {
     "id": "de_DE_008_IMG_1292",
@@ -105,6 +57,150 @@
     "context": "Слияние двух слов через точку вместо пробела",
     "frequency": "rare",
     "verified": true,
-    "fix_rule": "Разделить по точке: Bull'sEyeFeink.Honey → Bull'sEyeFeink Honey"
+    "fix_rule": "Разделить по точке: .Honey → Honey"
+  },
+  {
+    "id": "de_DE_003_IMG_1256",
+    "receipt_id": "IMG_1256",
+    "type": "GARBAGE",
+    "ocr_text": "***************",
+    "expected_text": "",
+    "position": "footer",
+    "context": "Маскированные символы в PIN-коде",
+    "frequency": "common",
+    "verified": true,
+    "fix_rule": "Удалить последовательности из звёздочек длиной > 5"
+  },
+  {
+    "id": "de_DE_004_IMG_1256",
+    "receipt_id": "IMG_1256",
+    "type": "GARBAGE",
+    "ocr_text": "***",
+    "expected_text": "",
+    "position": "footer",
+    "context": "Множественные звёздочки",
+    "frequency": "common",
+    "verified": true,
+    "fix_rule": "Удалить последовательности из 3 и более звёздочек"
+  },
+  {
+    "id": "de_DE_008_1_IMG_1724",
+    "receipt_id": "IMG_1724",
+    "type": "WORD_SPLIT",
+    "ocr_text": "NOT FOUND",
+    "expected_text": "Bio Olivenöl",
+    "position": "item_name",
+    "context": "Товар не найден в OCR",
+    "frequency": "occasional",
+    "verified": true,
+    "suggestion": "Требуется визуальная проверка - возможно слово разделено на части"
+  },
+  {
+    "id": "de_DE_008_2_IMG_1724",
+    "receipt_id": "IMG_1724",
+    "type": "WORD_SPLIT",
+    "ocr_text": "NOT FOUND",
+    "expected_text": "F&G Häh Min.schri",
+    "position": "item_name",
+    "context": "Товар не найден в OCR",
+    "frequency": "occasional",
+    "verified": true,
+    "suggestion": "Требуется визуальная проверка - возможно слово разделено на части"
+  },
+  {
+    "id": "de_DE_008_3_IMG_1724",
+    "receipt_id": "IMG_1724",
+    "type": "GARBAGE",
+    "ocr_text": "*******",
+    "expected_text": "",
+    "position": "header",
+    "context": "Множественные звёздочки в заголовке",
+    "frequency": "common",
+    "verified": true,
+    "fix_rule": "Удалить последовательности из 7 и более звёздочек"
+  },
+  {
+    "id": "de_DE_010_1_IMG_1400",
+    "receipt_id": "IMG_1400",
+    "type": "GARBAGE",
+    "ocr_text": "*******",
+    "expected_text": "",
+    "position": "header",
+    "context": "Множественные звёздочки в заголовке",
+    "frequency": "common",
+    "verified": true,
+    "fix_rule": "Удалить последовательности из 7 и более звёздочек"
+  },
+  {
+    "id": "de_DE_011_1_IMG_2727",
+    "receipt_id": "IMG_2727",
+    "type": "WORD_SPLIT",
+    "ocr_text": "NOT FOUND",
+    "expected_text": "Lemonaid Limette 330ml+0,25Pf",
+    "position": "item_name",
+    "context": "Товар не найден в OCR",
+    "frequency": "occasional",
+    "verified": true,
+    "suggestion": "Требуется визуальная проверка - возможно слово разделено на части"
+  },
+  {
+    "id": "de_DE_011_2_IMG_2727",
+    "receipt_id": "IMG_2727",
+    "type": "GARBAGE",
+    "ocr_text": "*******",
+    "expected_text": "",
+    "position": "header",
+    "context": "Множественные звёздочки в заголовке",
+    "frequency": "common",
+    "verified": true,
+    "fix_rule": "Удалить последовательности из 7 и более звёздочек"
+  },
+  {
+    "id": "de_DE_013_1_IMG_1525",
+    "receipt_id": "IMG_1525",
+    "type": "WORD_SPLIT",
+    "ocr_text": "NOT FOUND",
+    "expected_text": "Red Bull 0,25l",
+    "position": "item_name",
+    "context": "Товар не найден в OCR",
+    "frequency": "occasional",
+    "verified": true,
+    "suggestion": "Требуется визуальная проверка - возможно слово разделено на части"
+  },
+  {
+    "id": "de_DE_013_2_IMG_1525",
+    "receipt_id": "IMG_1525",
+    "type": "GARBAGE",
+    "ocr_text": "***",
+    "expected_text": "",
+    "position": "header",
+    "context": "Множественные звёздочки в заголовке",
+    "frequency": "common",
+    "verified": true,
+    "fix_rule": "Удалить последовательности из 3 и более звёздочек"
+  },
+  {
+    "id": "de_DE_014_IMG_1896",
+    "receipt_id": "IMG_1896",
+    "type": "WORD_SPLIT",
+    "ocr_text": "NOT FOUND",
+    "expected_text": "Red Bull 0,25l",
+    "position": "item_name",
+    "context": "Товар не найден в OCR",
+    "frequency": "occasional",
+    "verified": true,
+    "suggestion": "Требуется визуальная проверка - возможно слово разделено на части"
+  },
+  {
+    "id": "de_DE_015_IMG_1931",
+    "receipt_id": "IMG_1931",
+    "type": "WORD_SPLIT",
+    "ocr_text": "NOT FOUND",
+    "expected_text": "Xoxo Waterm.0,33l-",
+    "position": "item_name",
+    "context": "Товар не найден в OCR",
+    "frequency": "occasional",
+    "verified": true,
+    "suggestion": "Требуется визуальная проверка - возможно слово разделено на части"
   }
 ]

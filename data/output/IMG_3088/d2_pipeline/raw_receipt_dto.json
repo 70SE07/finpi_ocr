@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "name": "Petersilie kraus ( 033 )",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-09-18 00:00:00"
+    },
+    {
+      "name": "Happy Mix ( 035 ) B * EH",
+      "quantity": null,
+      "price": null,
+      "total": 16.99,
+      "date": "2025-09-18 00:00:00"
+    },
+    {
+      "name": "Coraya Surimi ( 762 ) B",
+      "quantity": null,
+      "price": null,
+      "total": 1.49,
+      "date": "2025-09-18 00:00:00"
+    },
+    {
+      "name": "Eier M Bodenhalt ( 602 )",
+      "quantity": null,
+      "price": null,
+      "total": 1.99,
+      "date": "2025-09-18 00:00:00"
+    }
+  ],
+  "total_amount": 21.46,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": "2025-09-18 00:00:00",
+  "receipt_id": "IMG_3088",
+  "ocr_text": "HIT\nECHTE\nVIELFALT\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nOBST & GEMÜSE\nPreis €\nPetersilie kraus\n(033) 0,99 B\nLEBENSMITTEL\nHappy Mix\n(035) 16,99 B* EH\nGEKÜHLTE LEBENSMITTEL\nCoraya Surimi\n(762)\n1,49 B F\n*** Discount Preis ***\nEier M Bodenhalt\n(602)\n1,99 B\nSUMME [4]\n21,46\nGirocard\n21,46\nHIT 4033 Overath\n-K-U-N-D-E-N-B-E-L-E-G-\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID:\n61724233\nTA-Nr 390954\nBNr 9268\nKartenzahlung\nkontaktlos\ngirocard\nEUR 21,46\nPAN\n###############1364\nKarte 0\ngültig bis ##/##\nEMV-AID\nA0000003591010028001\nVU-Nr\n290777\nDatum 18.09.25\nGenehmigungs-Nr\nEMV-Daten\n690920\n20:01 Uhr\nE800///3030\n00 Zahlung erfolgt\nBITTE BELEG AUFBEWAHREN\nSteuer NETTO [e] MWST [€] BRUTTO [€]\nB= 7,00%\n20,06 1,40 21,46\nKennzeichenlegende\nDie mit * gekennzeichneten Artikel sind\nnicht rabattfähig. Die wie folgt\ngekennzeichneten Artikel sowie die\ndarauf entfallene MWST werden verkauft\nim Namen und Rechnung von:\nEH-EatHappy Tolio GmoH. Hohenzollernring\n31-35 50672 Köln,\nUSt-ID-Nr.: DE293743681.\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n0014033180925005000510\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 4.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

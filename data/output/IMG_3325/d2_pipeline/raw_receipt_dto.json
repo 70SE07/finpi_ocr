@@ -1,0 +1,143 @@
+{
+  "items": [
+    {
+      "name": "Möhren",
+      "quantity": null,
+      "price": null,
+      "total": 1.49,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Bio Gurken 1,49 x 2",
+      "quantity": 1.49,
+      "price": null,
+      "total": 2.98,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Datteicherrytomaten 1,99 x 2",
+      "quantity": 1.99,
+      "price": null,
+      "total": 3.98,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Butterschmalz 7,49 x 2",
+      "quantity": 7.49,
+      "price": null,
+      "total": 14.98,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Diamant Puderzucker",
+      "quantity": null,
+      "price": null,
+      "total": 0.49,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Dr.Oetker Backin",
+      "quantity": null,
+      "price": null,
+      "total": 1.29,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Eier Freiland . XXL 3,99 x 2",
+      "quantity": 3.99,
+      "price": null,
+      "total": 7.98,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Gewürzgurken Auslese",
+      "quantity": null,
+      "price": null,
+      "total": 1.19,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Christkindl Glühwein",
+      "quantity": null,
+      "price": null,
+      "total": 1.99,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Traubensaft rot",
+      "quantity": null,
+      "price": null,
+      "total": 1.39,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Mineralwasser still 0,29 x 12",
+      "quantity": 0.29,
+      "price": null,
+      "total": 3.48,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Pfand EM x 12",
+      "quantity": 0.25,
+      "price": 0.25,
+      "total": 3.0,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Baguette Bauern",
+      "quantity": null,
+      "price": null,
+      "total": 0.79,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Walnusskerne 2,49 x 2",
+      "quantity": 2.49,
+      "price": null,
+      "total": 4.98,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Mandeln Honig / Salz",
+      "quantity": null,
+      "price": null,
+      "total": 1.99,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "Hähnchenbrustfilet",
+      "quantity": null,
+      "price": null,
+      "total": 9.99,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "zu zählen",
+      "quantity": null,
+      "price": null,
+      "total": 57.29,
+      "date": "2025-12-23 00:00:00"
+    },
+    {
+      "name": "EUR gespart",
+      "quantity": null,
+      "price": null,
+      "total": 0.3,
+      "date": "2025-12-23 00:00:00"
+    }
+  ],
+  "total_amount": 57.29,
+  "merchant": "Lidl",
+  "store_address": "Steinhauser Auel 1 02, 514910verath - Vilkerath",
+  "date": "2025-12-23 00:00:00",
+  "receipt_id": "IMG_3325",
+  "ocr_text": "LIDL\nSteinhauser Auel 1\n514910verath-Vilkerath\n02\nEUR\nMöhren\n1,49 A\nBio Gurken\n1,49 x 2\n2,98 A\nDatteicherrytomaten 1,99 x 2\n3,98 A\nPreisvorteil\n-0,80\nButterschmalz\n7,49 x 2\n14,98 A\nPreisvorteil\nqqA 2014 Ibi-3,000\nDiamant Puderzucker\n0,49 A\nDr.Oetker Backin\n1,29 A\nEier Freiland. XXL 3,99 x 2 7,98 A\nGewürzgurken Auslese\n1,19 A\nChristkindl Glühwein\n1,99 B\nPreisvorteil\n-0,60\nTraubensaft rot\n1,39 B\nMineralwasser still\n0,29 x\n12\n3,48 B\nPfand 0,25 EM\n0,25 x\n12\n3,00 B\nBaguette Bauern\n0,79 A\nLidl Plus Rabatt\n-0,30\nWalnusskerne\n2,49 x 2 4,98 A\nMandeln Honig/Salz\n1,99 A\nHähnchenbrustfilet\n9,99 A\nzu zählen\n57,29\nKarte\n57,29\nGesamter Preisvorteil\nMUA XV4,70\nMWST%\nMEMWST +\nNetto = Brutto\nA 7 %\n3,14\n44,89\n48,03\nB 19 %\n1,48\n7,78\n9,26\nSumme\n4,62\n52,67\n57,29\nMit Lidl Plus\n0,30 EUR gespart\nTSE Transaktionsnummer: 1395832\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: lavbRk8Iej8I/uCQu3WqqTN3SXXZihng\ndYR4+tj19KXmKRyOtcDePKrL3EGFH1aAEgJg6iKfбv\n2Px0DwBah8U4jP333U6dt+wC60CxB/FUAC2XnB39Rw\n9VJ4ydTKBLFT\nSignaturzähler: 2849588\n2025-12-23T15:15:50.000Z\n2025-12-23T15:18:17.000Z\n6496 033554/81\n814060660\n23.12.25 16:15\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard ATIDIG\nBetrag BUS M3 57,29 EUR\nBUAXИ\n16:17 T-ID 60155117\n23.12.2025\nTA-Nr. 227126\nKartennr.\nKontaktlos Chip\nBeleg-Nr. 7261\n####1364 11\nOnline\nBestätigt durch mobiles Kundengerät\nVU-Nummer\n9801706496\nAutorisierungsnummer\n961781\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000003591010028001/00\n**\nZahlung erfolgt\n**",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 18.0,
+    "validation_passed": 0.0,
+    "validation_difference": 60.589999999999996
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Apfelschorle 0,43 x 2",
+        "quantity": 0.43,
+        "price": null,
+        "total": 0.86,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Pfand EM x 2",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 0.5,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 1.75,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "Pfand M8",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-12-23 00:00:00"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-12-23 00:00:00"
+      }
+    ],
+    "total_amount": 3.36,
+    "merchant": "Lidl",
+    "store_address": "Steinhauser Auel 1, 514910verath Vilkerath",
+    "date": "2025-12-23 00:00:00",
+    "receipt_id": "IMG_3324",
+    "ocr_text": "LIDL\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nApfelschorle\n0,43 x 2\n0,86 B\nPfand 0,25 EM\n0,25 x 2\n0,50 B\nRed Bull Energy\n1,75 B\nPfand 0,25 M8\n0,25 B\nzu zahlen\nM33,36\nKarte\n3,36\nMWST%\nMWST +\n=\nNetto = Brutto\nB 19 %\n0,54\n2,82\n3,36\nSumme\n0,54\n2,82\n3,36\nLade die\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1394659\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJ0GxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 1vJ20D8MEzab3FuCxiqgagrDfPrBsHmB\nS2e9vhtSShzz3xPcnpz2zZchZKNYq/Ntx+rRdGcTsV\nBS7KByloPdLRdбswvt71QaFfz800AZAZGje3EV1DFD\nu+QAMeb4bnw7\nSignaturzähler: 2847214\n2025-12-23T07:33:13.000Z\n2025-12-23T07:33:55.000Z\n6496 033462/81\n814060660\n23.12.25 08:33\nMEM K-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n3,36 EUR\n23.12.2025\n08:33\nT-ID 60155117\nTA-Nr. 227036\nBeleg-Nr. 7174\nKartennr.\n###\n#####0118 00\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nEMV-Daten:\nAutorisierungsnummer\nAutorisierungsantwortcode behind 00\nA0000003591010028001/00\n729358\nZahlung erfolgt\n**",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 5.0,
+      "validation_passed": 0.0,
+      "validation_difference": 0.25
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LIDL",
+        "y_position": 79,
+        "x_min": 469,
+        "x_max": 658,
+        "confidence": 0.7271252870559692,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 164,
+        "x_min": 376,
+        "x_max": 752,
+        "confidence": 0.9793113072713217,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath Vilkerath",
+        "y_position": 215,
+        "x_min": 334,
+        "x_max": 798,
+        "confidence": 0.9828517735004425,
+        "line_number": 2,
+        "words_count": 2
+      },
+      {
+        "text": "-",
+        "y_position": 231,
+        "x_min": 589,
+        "x_max": 606,
+        "confidence": 0.9760544896125793,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "EUR",
+        "y_position": 263,
+        "x_min": 880,
+        "x_max": 947,
+        "confidence": 0.9920805096626282,
+        "line_number": 4,
+        "words_count": 1
+      },
+      {
+        "text": "Apfelschorle 0,43 x 2 0,86 B",
+        "y_position": 290,
+        "x_min": 123,
+        "x_max": 1007,
+        "confidence": 0.9688286383946737,
+        "line_number": 5,
+        "words_count": 6
+      },
+      {
+        "text": "Pfand 0,25 EM 0,25 x 2 0,50 B",
+        "y_position": 334,
+        "x_min": 123,
+        "x_max": 1008,
+        "confidence": 0.9765137210488319,
+        "line_number": 6,
+        "words_count": 8
+      },
+      {
+        "text": "Red Bull Energy",
+        "y_position": 376,
+        "x_min": 126,
+        "x_max": 442,
+        "confidence": 0.9875551462173462,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "1,75 B",
+        "y_position": 392,
+        "x_min": 859,
+        "x_max": 984,
+        "confidence": 0.9778430163860321,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "Pfand 0,25 M8 0,25 B",
+        "y_position": 428,
+        "x_min": 126,
+        "x_max": 985,
+        "confidence": 0.8935998558998108,
+        "line_number": 9,
+        "words_count": 5
+      },
+      {
+        "text": "zu zahlen M33,36",
+        "y_position": 488,
+        "x_min": 128,
+        "x_max": 938,
+        "confidence": 0.8454611301422119,
+        "line_number": 10,
+        "words_count": 3
+      },
+      {
+        "text": "Karte 3,36",
+        "y_position": 532,
+        "x_min": 129,
+        "x_max": 939,
+        "confidence": 0.98689004778862,
+        "line_number": 11,
+        "words_count": 2
+      },
+      {
+        "text": "MWST % MWST + Netto = = Brutto",
+        "y_position": 588,
+        "x_min": 149,
+        "x_max": 940,
+        "confidence": 0.8555934019386768,
+        "line_number": 12,
+        "words_count": 8
+      },
+      {
+        "text": "B 19 % 0,54 2,82 3,36",
+        "y_position": 631,
+        "x_min": 130,
+        "x_max": 939,
+        "confidence": 0.9171769718329111,
+        "line_number": 13,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 0,54 2,82 3,36",
+        "y_position": 674,
+        "x_min": 131,
+        "x_max": 938,
+        "confidence": 0.9739864617586136,
+        "line_number": 14,
+        "words_count": 4
+      },
+      {
+        "text": "Lade die",
+        "y_position": 718,
+        "x_min": 184,
+        "x_max": 449,
+        "confidence": 0.8060474395751953,
+        "line_number": 15,
+        "words_count": 2
+      },
+      {
+        "text": "Lade dir die Lidl Plus App herunter",
+        "y_position": 746,
+        "x_min": 194,
+        "x_max": 917,
+        "confidence": 0.961305524621691,
+        "line_number": 16,
+        "words_count": 7
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 789,
+        "x_min": 152,
+        "x_max": 935,
+        "confidence": 0.9754708239010402,
+        "line_number": 17,
+        "words_count": 7
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1394659",
+        "y_position": 964,
+        "x_min": 133,
+        "x_max": 768,
+        "confidence": 0.9723903089761734,
+        "line_number": 18,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-81",
+        "y_position": 1004,
+        "x_min": 132,
+        "x_max": 788,
+        "confidence": 0.9461318509919303,
+        "line_number": 19,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJ0GxOzRGtqga + dvZbaId8",
+        "y_position": 1046,
+        "x_min": 132,
+        "x_max": 1000,
+        "confidence": 0.8880103400775364,
+        "line_number": 20,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1089,
+        "x_min": 132,
+        "x_max": 480,
+        "confidence": 0.9155694842338562,
+        "line_number": 21,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : 1vJ20D8MEzab3FuCxiqgagrDfPrBsHmB",
+        "y_position": 1130,
+        "x_min": 131,
+        "x_max": 999,
+        "confidence": 0.9359374245007833,
+        "line_number": 22,
+        "words_count": 3
+      },
+      {
+        "text": "S2e9vhtSShzz3xPcnpz2zZchZKNYq / Ntx + rRdGcTsV",
+        "y_position": 1177,
+        "x_min": 131,
+        "x_max": 1000,
+        "confidence": 0.9243250846862793,
+        "line_number": 23,
+        "words_count": 5
+      },
+      {
+        "text": "BS7KByloPdLRdбswvt71QaFfz800AZAZGje3EV1DFD",
+        "y_position": 1217,
+        "x_min": 134,
+        "x_max": 999,
+        "confidence": 0.9033719301223755,
+        "line_number": 24,
+        "words_count": 1
+      },
+      {
+        "text": "u + QAMeb4bnw7",
+        "y_position": 1265,
+        "x_min": 134,
+        "x_max": 378,
+        "confidence": 0.922778844833374,
+        "line_number": 25,
+        "words_count": 3
+      },
+      {
+        "text": "Signaturzähler : 2847214",
+        "y_position": 1304,
+        "x_min": 135,
+        "x_max": 606,
+        "confidence": 0.9743799368540446,
+        "line_number": 26,
+        "words_count": 3
+      },
+      {
+        "text": "2025-12-23T07 : 33 : 13.000Z",
+        "y_position": 1348,
+        "x_min": 136,
+        "x_max": 621,
+        "confidence": 0.9782575726509094,
+        "line_number": 27,
+        "words_count": 5
+      },
+      {
+        "text": "2025-12-23T07 : 33 : 55.000Z",
+        "y_position": 1387,
+        "x_min": 138,
+        "x_max": 622,
+        "confidence": 0.9661518096923828,
+        "line_number": 28,
+        "words_count": 5
+      },
+      {
+        "text": "6496 033462/81 23.12.25 08:33",
+        "y_position": 1430,
+        "x_min": 137,
+        "x_max": 1001,
+        "confidence": 0.990455374121666,
+        "line_number": 29,
+        "words_count": 4
+      },
+      {
+        "text": "814060660",
+        "y_position": 1479,
+        "x_min": 437,
+        "x_max": 625,
+        "confidence": 0.9913012385368347,
+        "line_number": 30,
+        "words_count": 1
+      },
+      {
+        "text": "MEM K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1527,
+        "x_min": 198,
+        "x_max": 751,
+        "confidence": 0.8808821453289553,
+        "line_number": 31,
+        "words_count": 22
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 1568,
+        "x_min": 314,
+        "x_max": 774,
+        "confidence": 0.98261559009552,
+        "line_number": 32,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag 3,36 EUR",
+        "y_position": 1623,
+        "x_min": 130,
+        "x_max": 961,
+        "confidence": 0.9832728505134583,
+        "line_number": 33,
+        "words_count": 3
+      },
+      {
+        "text": "23.12.2025 08:33 T - ID 60155117",
+        "y_position": 1678,
+        "x_min": 128,
+        "x_max": 960,
+        "confidence": 0.9841965635617574,
+        "line_number": 34,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 227036 Beleg - Nr . 7174",
+        "y_position": 1721,
+        "x_min": 130,
+        "x_max": 963,
+        "confidence": 0.9731987714767456,
+        "line_number": 35,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . ### ##### 0118 00",
+        "y_position": 1763,
+        "x_min": 128,
+        "x_max": 961,
+        "confidence": 0.9297946194807688,
+        "line_number": 36,
+        "words_count": 6
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 1800,
+        "x_min": 129,
+        "x_max": 958,
+        "confidence": 0.9850776394208273,
+        "line_number": 37,
+        "words_count": 3
+      },
+      {
+        "text": "VU - Nummer 9801706496",
+        "y_position": 1841,
+        "x_min": 132,
+        "x_max": 958,
+        "confidence": 0.9637092798948288,
+        "line_number": 38,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 729358",
+        "y_position": 1873,
+        "x_min": 137,
+        "x_max": 956,
+        "confidence": 0.9887997210025787,
+        "line_number": 39,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode behind 00",
+        "y_position": 1898,
+        "x_min": 140,
+        "x_max": 955,
+        "confidence": 0.8000232974688212,
+        "line_number": 40,
+        "words_count": 3
+      },
+      {
+        "text": "EMV - Daten : A0000003591010028001 / 00",
+        "y_position": 1923,
+        "x_min": 149,
+        "x_max": 956,
+        "confidence": 0.982305143560682,
+        "line_number": 41,
+        "words_count": 7
+      },
+      {
+        "text": "Zahlung erfolgt",
+        "y_position": 1948,
+        "x_min": 391,
+        "x_max": 690,
+        "confidence": 0.8841529786586761,
+        "line_number": 42,
+        "words_count": 2
+      },
+      {
+        "text": "**",
+        "y_position": 1979,
+        "x_min": 914,
+        "x_max": 951,
+        "confidence": 0.8826150894165039,
+        "line_number": 43,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 192,
+    "total_lines": 44
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.2903225806451613,
+    "matched_keywords": [
+      "summe",
+      "zu zahlen",
+      "mwst",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 9
+    }
+  },
+  "store": {
+    "store_name": "Lidl",
+    "store_address": "Steinhauser Auel 1, 514910verath Vilkerath",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-12-23",
+    "receipt_total": 3.36,
+    "currency": "EUR",
+    "date_raw": "2025-12-23",
+    "total_raw": "3,36 EUR",
+    "total_line_number": 33
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Apfelschorle 0,43 x 2",
+        "quantity": 0.43,
+        "price": null,
+        "total": 0.86,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "Apfelschorle 0,43 x 2 0,86 B"
+      },
+      {
+        "name": "Pfand EM x 2",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 0.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "Pfand 0,25 EM 0,25 x 2 0,50 B"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 1.75,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "1,75 B"
+      },
+      {
+        "name": "Pfand M8",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Pfand 0,25 M8"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "0,25 B"
+      }
+    ],
+    "discounts": [],
+    "items_count": 5,
+    "discounts_count": 0,
+    "items_total": 3.61,
+    "discounts_total": 0,
+    "skipped_lines": 20,
+    "parsed_lines": 5
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 3.61,
+    "discounts_sum": 0,
+    "calculated_total": 3.61,
+    "receipt_total": 3.36,
+    "difference": 0.25,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=3.61, receipt=3.36, diff=0.25 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.921302795410156,
+  "stages_completed": 6
+}

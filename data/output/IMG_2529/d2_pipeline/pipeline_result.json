@@ -1,0 +1,607 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "715057 Eier Bodenh . 18er",
+        "quantity": null,
+        "price": null,
+        "total": 3.39,
+        "date": "2025-10-15 00:00:00",
+        "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+      },
+      {
+        "name": "715057 Eier Bodenh . 18er Я",
+        "quantity": null,
+        "price": 3.39,
+        "total": 3.39,
+        "date": "2025-10-15 00:00:00",
+        "raw_text": "715057 Eier Bodenh . 18er Я923.39 A"
+      },
+      {
+        "name": "715057 Eier Bodenh . 18er",
+        "quantity": null,
+        "price": null,
+        "total": 3.39,
+        "date": "2025-10-15 00:00:00",
+        "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+      }
+    ],
+    "total_amount": 10.17,
+    "merchant": "aldi",
+    "store_address": "Wiesenauel 1, 51491 Overath",
+    "date": "2025-10-15 00:00:00",
+    "receipt_id": "IMG_2529",
+    "ocr_text": "ALDI SÜD\nWiesenauel 1\n51491 Overath\nEUR\n715057 Eier Bodenh. 18er\n3,39 A\n715057 Eier Bodenh. 18er Я923.39 A\n715057 Eier Bodenh. 18er\n3,39 A\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n10,17 EUR\n15.10.2025\n13:01\nT-ID 65299524\nTA-Nr. 121107\nBeleg-Nr. 5173\nKartennr.\n###############1364 00\nKontaktlos Chip\nOnline\nVU-Nummer\n1079299524\nAutorisierungsnummer\n245510\nAutorisierungsantwortcode\nEMV-Daten:\n00\n0000008001/0000////1F0302//0000000002202\n**\n00000008001000001/92445229/80\nMA\nZahlung erfolgt\nSumme\n**\ngirocard\nA 07,0% Netto\nEUR\n9,50 MwSt\n10,17\n10,17\n0,67\n*6221 035/026/002/024 15.10.25 13:01\nUnsere Öffnungszeiten:\nMo Sa: 8:00 Uhr 20:00\nUST-ID-Nr. DE 813192189\nVIELEN DANK FÜR DEINEN EINKAUF\nALDI SUD - Gutes für alle.\n* Qualität, die dich nicht loslässt. *\n* Entdecke jetzt die vielfältigen\n*\n*\nEigenmarken von ALDI SÜD\nin deiner Filiale!\nKasse:\nTSE:\nInternational.D.035.026.02\n/2+db+XG8V78bkQC6ICVm7ix3IsL2zSmb3\nF98Bcetag=\nStart: 2025-10-15 13:01:32\nEnde: 2025-10-15 13:01:57\nT.-Nr.: 160010\nSOM UG\nS.-Nr.: 320242\nSig.: Hk3aXRTLKHHXvm1sNgX02oYm4nXaaVE9NG\nbP2PuJ7Vc/vhpUc9tsPRajLX1s1uA8IгRG\nUcF1BPKJNFUXjzUhq+BSf+yingXYkN110s\nNRJ8dEZXZXeRWtMAw1vrZL1Lyo\nnittliche Nährwerte\nJe 100 g",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 3.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "ALDI SÜD",
+        "y_position": 108,
+        "x_min": 523,
+        "x_max": 652,
+        "confidence": 0.96760293841362,
+        "line_number": 0,
+        "words_count": 2
+      },
+      {
+        "text": "Wiesenauel 1",
+        "y_position": 140,
+        "x_min": 490,
+        "x_max": 680,
+        "confidence": 0.839443564414978,
+        "line_number": 1,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 173,
+        "x_min": 473,
+        "x_max": 680,
+        "confidence": 0.983132392168045,
+        "line_number": 2,
+        "words_count": 2
+      },
+      {
+        "text": "EUR",
+        "y_position": 240,
+        "x_min": 788,
+        "x_max": 887,
+        "confidence": 0.989935040473938,
+        "line_number": 3,
+        "words_count": 1
+      },
+      {
+        "text": "715057 Eier Bodenh . 18er 3,39 A",
+        "y_position": 273,
+        "x_min": 331,
+        "x_max": 901,
+        "confidence": 0.977001028401511,
+        "line_number": 4,
+        "words_count": 7
+      },
+      {
+        "text": "715057 Eier Bodenh . 18er Я923.39 A",
+        "y_position": 301,
+        "x_min": 330,
+        "x_max": 900,
+        "confidence": 0.9137794545718602,
+        "line_number": 5,
+        "words_count": 7
+      },
+      {
+        "text": "715057 Eier Bodenh . 18er 3,39 A",
+        "y_position": 336,
+        "x_min": 330,
+        "x_max": 900,
+        "confidence": 0.9718382273401532,
+        "line_number": 6,
+        "words_count": 7
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 403,
+        "x_min": 405,
+        "x_max": 735,
+        "confidence": 0.9631024513925824,
+        "line_number": 7,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 497,
+        "x_min": 402,
+        "x_max": 752,
+        "confidence": 0.9734131991863251,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag 10,17 EUR",
+        "y_position": 561,
+        "x_min": 260,
+        "x_max": 895,
+        "confidence": 0.9631996552149454,
+        "line_number": 9,
+        "words_count": 3
+      },
+      {
+        "text": "15.10.2025 13:01 T - ID 65299524",
+        "y_position": 628,
+        "x_min": 261,
+        "x_max": 892,
+        "confidence": 0.9880124926567078,
+        "line_number": 10,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 121107 Beleg - Nr . 5173",
+        "y_position": 660,
+        "x_min": 259,
+        "x_max": 889,
+        "confidence": 0.9439425706863404,
+        "line_number": 11,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . ############### 1364 00",
+        "y_position": 690,
+        "x_min": 257,
+        "x_max": 887,
+        "confidence": 0.8878042578697205,
+        "line_number": 12,
+        "words_count": 5
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 719,
+        "x_min": 256,
+        "x_max": 887,
+        "confidence": 0.978286345799764,
+        "line_number": 13,
+        "words_count": 3
+      },
+      {
+        "text": "VU - Nummer 1079299524 Nährwerte g 100",
+        "y_position": 754,
+        "x_min": 257,
+        "x_max": 1196,
+        "confidence": 0.9438563329832894,
+        "line_number": 14,
+        "words_count": 7
+      },
+      {
+        "text": "Autorisierungsnummer 245510 Je",
+        "y_position": 786,
+        "x_min": 256,
+        "x_max": 1195,
+        "confidence": 0.9530207514762878,
+        "line_number": 15,
+        "words_count": 3
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 820,
+        "x_min": 255,
+        "x_max": 884,
+        "confidence": 0.981487512588501,
+        "line_number": 16,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - Daten : nittliche",
+        "y_position": 851,
+        "x_min": 256,
+        "x_max": 1175,
+        "confidence": 0.960853886604309,
+        "line_number": 17,
+        "words_count": 5
+      },
+      {
+        "text": "0000008001/0000 //// 1F0302 // 0000000002202",
+        "y_position": 884,
+        "x_min": 256,
+        "x_max": 882,
+        "confidence": 0.9533718347549438,
+        "line_number": 18,
+        "words_count": 5
+      },
+      {
+        "text": "00000008001000001/92445229/80",
+        "y_position": 918,
+        "x_min": 331,
+        "x_max": 784,
+        "confidence": 0.9920990467071533,
+        "line_number": 19,
+        "words_count": 1
+      },
+      {
+        "text": "MA",
+        "y_position": 951,
+        "x_min": 551,
+        "x_max": 703,
+        "confidence": 0.5771521329879761,
+        "line_number": 20,
+        "words_count": 1
+      },
+      {
+        "text": "** Zahlung erfolgt",
+        "y_position": 984,
+        "x_min": 254,
+        "x_max": 672,
+        "confidence": 0.8865716060002645,
+        "line_number": 21,
+        "words_count": 3
+      },
+      {
+        "text": "**",
+        "y_position": 1003,
+        "x_min": 844,
+        "x_max": 873,
+        "confidence": 0.9398988485336304,
+        "line_number": 22,
+        "words_count": 1
+      },
+      {
+        "text": "Summe",
+        "y_position": 1041,
+        "x_min": 234,
+        "x_max": 514,
+        "confidence": 0.921362578868866,
+        "line_number": 23,
+        "words_count": 1
+      },
+      {
+        "text": "10,17",
+        "y_position": 1057,
+        "x_min": 703,
+        "x_max": 858,
+        "confidence": 0.925452470779419,
+        "line_number": 24,
+        "words_count": 1
+      },
+      {
+        "text": "girocard EUR 10,17",
+        "y_position": 1075,
+        "x_min": 250,
+        "x_max": 844,
+        "confidence": 0.9777621229489645,
+        "line_number": 25,
+        "words_count": 3
+      },
+      {
+        "text": "A 07,0 % Netto 9,50 MwSt 0,67",
+        "y_position": 1138,
+        "x_min": 234,
+        "x_max": 823,
+        "confidence": 0.9559969816889081,
+        "line_number": 26,
+        "words_count": 7
+      },
+      {
+        "text": "* 6221 035/026/002/024 15.10.25",
+        "y_position": 1166,
+        "x_min": 217,
+        "x_max": 681,
+        "confidence": 0.9738789796829224,
+        "line_number": 27,
+        "words_count": 4
+      },
+      {
+        "text": "13:01",
+        "y_position": 1182,
+        "x_min": 697,
+        "x_max": 775,
+        "confidence": 0.9913344979286194,
+        "line_number": 28,
+        "words_count": 1
+      },
+      {
+        "text": "Unsere Öffnungszeiten :",
+        "y_position": 1202,
+        "x_min": 370,
+        "x_max": 708,
+        "confidence": 0.9645130038261414,
+        "line_number": 29,
+        "words_count": 3
+      },
+      {
+        "text": "Mo Sa : 8:00 Uhr 20:00",
+        "y_position": 1235,
+        "x_min": 307,
+        "x_max": 701,
+        "confidence": 0.8698852260907491,
+        "line_number": 30,
+        "words_count": 6
+      },
+      {
+        "text": "UST - ID - Nr . DE 813192189",
+        "y_position": 1300,
+        "x_min": 365,
+        "x_max": 742,
+        "confidence": 0.7100666090846062,
+        "line_number": 31,
+        "words_count": 8
+      },
+      {
+        "text": "VIELEN DANK FÜR DEINEN EINKAUF",
+        "y_position": 1326,
+        "x_min": 319,
+        "x_max": 785,
+        "confidence": 0.9732734680175781,
+        "line_number": 32,
+        "words_count": 5
+      },
+      {
+        "text": "ALDI SUD - Gutes für alle",
+        "y_position": 1390,
+        "x_min": 349,
+        "x_max": 741,
+        "confidence": 0.8995390435059866,
+        "line_number": 33,
+        "words_count": 6
+      },
+      {
+        "text": ".",
+        "y_position": 1407,
+        "x_min": 741,
+        "x_max": 752,
+        "confidence": 0.9477428197860718,
+        "line_number": 34,
+        "words_count": 1
+      },
+      {
+        "text": "* Qualität , die dich nicht",
+        "y_position": 1483,
+        "x_min": 235,
+        "x_max": 656,
+        "confidence": 0.9122045536835989,
+        "line_number": 35,
+        "words_count": 6
+      },
+      {
+        "text": "* loslässt . *",
+        "y_position": 1502,
+        "x_min": 234,
+        "x_max": 859,
+        "confidence": 0.7835198044776917,
+        "line_number": 36,
+        "words_count": 4
+      },
+      {
+        "text": "Entdecke jetzt die vielfältigen",
+        "y_position": 1518,
+        "x_min": 296,
+        "x_max": 784,
+        "confidence": 0.9804084450006485,
+        "line_number": 37,
+        "words_count": 4
+      },
+      {
+        "text": "* Eigenmarken von ALDI SÜD",
+        "y_position": 1552,
+        "x_min": 235,
+        "x_max": 735,
+        "confidence": 0.9392272233963013,
+        "line_number": 38,
+        "words_count": 5
+      },
+      {
+        "text": "* in deiner Filiale !",
+        "y_position": 1588,
+        "x_min": 236,
+        "x_max": 699,
+        "confidence": 0.9338430881500244,
+        "line_number": 39,
+        "words_count": 5
+      },
+      {
+        "text": "Kasse : International.D.035.026.02",
+        "y_position": 1736,
+        "x_min": 198,
+        "x_max": 727,
+        "confidence": 0.9668916861216227,
+        "line_number": 40,
+        "words_count": 3
+      },
+      {
+        "text": "TSE : / 2 + db + XG8V78bkQC6ICVm7ix3IsL2zSmb3",
+        "y_position": 1770,
+        "x_min": 197,
+        "x_max": 854,
+        "confidence": 0.9051778540015221,
+        "line_number": 41,
+        "words_count": 8
+      },
+      {
+        "text": "F98Bcetag =",
+        "y_position": 1806,
+        "x_min": 319,
+        "x_max": 475,
+        "confidence": 0.8798466324806213,
+        "line_number": 42,
+        "words_count": 2
+      },
+      {
+        "text": "Start : 2025-10-15",
+        "y_position": 1831,
+        "x_min": 196,
+        "x_max": 475,
+        "confidence": 0.9590254624684652,
+        "line_number": 43,
+        "words_count": 3
+      },
+      {
+        "text": "13:01:32",
+        "y_position": 1847,
+        "x_min": 490,
+        "x_max": 614,
+        "confidence": 0.9907050132751465,
+        "line_number": 44,
+        "words_count": 1
+      },
+      {
+        "text": "Ende : 2025-10-15 13:01:57",
+        "y_position": 1864,
+        "x_min": 195,
+        "x_max": 614,
+        "confidence": 0.9807350784540176,
+        "line_number": 45,
+        "words_count": 4
+      },
+      {
+        "text": "T. - Nr .: 160010 SOM UG",
+        "y_position": 1894,
+        "x_min": 194,
+        "x_max": 760,
+        "confidence": 0.805449094091143,
+        "line_number": 46,
+        "words_count": 7
+      },
+      {
+        "text": "S. - Nr .: 320242",
+        "y_position": 1927,
+        "x_min": 192,
+        "x_max": 412,
+        "confidence": 0.9028958082199097,
+        "line_number": 47,
+        "words_count": 5
+      },
+      {
+        "text": "Sig .: Hk3aXRTLKHHXvm1sNgX02oYm4nXaaVE9NG",
+        "y_position": 1957,
+        "x_min": 193,
+        "x_max": 846,
+        "confidence": 0.9234839479128519,
+        "line_number": 48,
+        "words_count": 3
+      },
+      {
+        "text": "bP2PuJ7Vc / vhpUc9tsPRajLX1s1uA8IгRG",
+        "y_position": 1993,
+        "x_min": 317,
+        "x_max": 844,
+        "confidence": 0.9101930061976115,
+        "line_number": 49,
+        "words_count": 3
+      },
+      {
+        "text": "UcF1BPKJNFUXjzUhq + BSf + yingXYkN110s",
+        "y_position": 2021,
+        "x_min": 315,
+        "x_max": 842,
+        "confidence": 0.7345122039318085,
+        "line_number": 50,
+        "words_count": 5
+      },
+      {
+        "text": "NRJ8dEZXZXeRWtMAw1vrZL1Lyo",
+        "y_position": 2048,
+        "x_min": 317,
+        "x_max": 716,
+        "confidence": 0.8753079175949097,
+        "line_number": 51,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 221,
+    "total_lines": 52
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.25806451612903225,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "ust",
+      "netto",
+      "aldi",
+      "eur",
+      "vielen dank",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 0,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 8
+    }
+  },
+  "store": {
+    "store_name": "aldi",
+    "store_address": "Wiesenauel 1, 51491 Overath",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-10-15",
+    "receipt_total": 10.17,
+    "currency": "EUR",
+    "date_raw": "15.10.2025",
+    "total_raw": "10,17 EUR",
+    "total_line_number": 9
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "715057 Eier Bodenh . 18er",
+        "quantity": null,
+        "price": null,
+        "total": 3.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+      },
+      {
+        "name": "715057 Eier Bodenh . 18er Я",
+        "quantity": null,
+        "price": 3.39,
+        "total": 3.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "715057 Eier Bodenh . 18er Я923.39 A"
+      },
+      {
+        "name": "715057 Eier Bodenh . 18er",
+        "quantity": null,
+        "price": null,
+        "total": 3.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "715057 Eier Bodenh . 18er 3,39 A"
+      }
+    ],
+    "discounts": [],
+    "items_count": 3,
+    "discounts_count": 0,
+    "items_total": 10.17,
+    "discounts_total": 0,
+    "skipped_lines": 46,
+    "parsed_lines": 3
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 10.17,
+    "discounts_sum": 0,
+    "calculated_total": 10.17,
+    "receipt_total": 10.17,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 23.761272430419922,
+  "stages_completed": 6
+}

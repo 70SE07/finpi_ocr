@@ -1,0 +1,789 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Lammkarree fr . ( 399 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 6.01,
+        "date": "2025-08-12 00:00:00"
+      },
+      {
+        "name": "Spieße Kreta ( 945 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 6.05,
+        "date": "2025-08-12 00:00:00"
+      },
+      {
+        "name": "Schw.Nacken ( 527 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 21.83,
+        "date": "2025-08-12 00:00:00"
+      },
+      {
+        "name": "Filetspieẞ Jalap ( 189 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 46.26,
+        "date": "2025-08-12 00:00:00"
+      },
+      {
+        "name": "TawnyPortAlvarez ( 341 )",
+        "quantity": null,
+        "price": null,
+        "total": 12.98,
+        "date": "2025-08-12 00:00:00"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 6.49,
+        "date": "2025-08-12 00:00:00"
+      },
+      {
+        "name": "Taylors Ruby Sel ( 536 )",
+        "quantity": null,
+        "price": null,
+        "total": 13.99,
+        "date": "2025-08-12 00:00:00"
+      }
+    ],
+    "total_amount": 107.12,
+    "merchant": "Hit",
+    "store_address": null,
+    "date": "2025-08-12 00:00:00",
+    "receipt_id": "IMG_1373",
+    "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nTHEKE/SBHF\nBedientheke\nPreis €\nLammkarree fr. (399)\n6,01 B F\nSpieße Kreta\n(945)\n6,05 B F\nSchw.Nacken\n(527)\n21,83 B F\nFiletspieẞ Jalap (189)\n46,26 B F\nWEIN/SPIRITUOSEN/SEKT/CHAMPAGNER\n*** Discount Preis ***\nTawnyPortAlvarez\n(341)\n12,98 A\n2x 6,49 €\nTaylors Ruby Sel\n(536)\n13,99 A\nSUMME[3]\n107,12\nEC-Lastschrift\n107,12\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID :\n61724234\nBNr 3699\nTA-Nr 408344\nKartenzahlung\nSEPA-ELV\nOnline\nEUR 107,12\nCDGM\nKurz-BLZ\nKto.\nKarte 2\n#####\nIBAN\nG-ID\nM-ID\n######8132\ngültig bis 12/28\nDE3537#####*#*#*##8132\nDE52ZZZ00000041034\n6172423436992508122032\nAIDPara\n0001610648\nDatum 12.08.25 20:32 Uhr\n*** Karte akzeptiert ***\nBITTE BELEG AUFBEWAHREN\nDie Belastung erfolgt zum über-\nnächsten Bankgeschäftstag\nSteuer\nA=19,00%\nB= 7,00%\nNETTO [6] MWST [€] BRUTTO [€]\n22,66\n74,91\n4,31\n5,24\n26,97\n80,15\n11\nKennzeichenlegende\nDie wie folgt gekennzeichneten Artikel\nsowie die darauf entfallene MWST werden\nverkauft im Namen und Rechnung von:\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n********************\n***************\nSie erhalten mit diesem Kauf\n21 Treuepunkt(e)!\n**********\n*************\n0014033120825004000525\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025\nLade\n34\nDatum\n12.08.25\nZeit\n20:33\nF11.\n4033\nPos Bon\n04\n0525\nVielen Dank für Ihren Einkauf!",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 7.0,
+      "validation_passed": 0.0,
+      "validation_difference": 6.489999999999995
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "HIT",
+        "y_position": 122,
+        "x_min": 549,
+        "x_max": 662,
+        "confidence": 0.9839916229248047,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "VIELFALT ECHTE .",
+        "y_position": 164,
+        "x_min": 562,
+        "x_max": 647,
+        "confidence": 0.8965667684872946,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "HIT 033 Overath",
+        "y_position": 246,
+        "x_min": 513,
+        "x_max": 681,
+        "confidence": 0.9877180854479471,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 272,
+        "x_min": 490,
+        "x_max": 715,
+        "confidence": 0.9698014855384827,
+        "line_number": 3,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 299,
+        "x_min": 525,
+        "x_max": 668,
+        "confidence": 0.9912156462669373,
+        "line_number": 4,
+        "words_count": 2
+      },
+      {
+        "text": "Öffnungszeiten",
+        "y_position": 325,
+        "x_min": 513,
+        "x_max": 669,
+        "confidence": 0.9488481879234314,
+        "line_number": 5,
+        "words_count": 1
+      },
+      {
+        "text": "MO - SA 08 : 00-22 : 00 Uhr",
+        "y_position": 351,
+        "x_min": 481,
+        "x_max": 711,
+        "confidence": 0.9756825698746575,
+        "line_number": 6,
+        "words_count": 9
+      },
+      {
+        "text": "THEKE / SBHF Preis €",
+        "y_position": 401,
+        "x_min": 382,
+        "x_max": 766,
+        "confidence": 0.9054526567459107,
+        "line_number": 7,
+        "words_count": 5
+      },
+      {
+        "text": "Bedientheke",
+        "y_position": 429,
+        "x_min": 382,
+        "x_max": 506,
+        "confidence": 0.9878654479980469,
+        "line_number": 8,
+        "words_count": 1
+      },
+      {
+        "text": "Lammkarree fr . ( 399 ) 6,01 B F",
+        "y_position": 455,
+        "x_min": 416,
+        "x_max": 811,
+        "confidence": 0.9697985980245802,
+        "line_number": 9,
+        "words_count": 9
+      },
+      {
+        "text": "Spieße Kreta ( 945 ) 6,05 B F",
+        "y_position": 481,
+        "x_min": 416,
+        "x_max": 812,
+        "confidence": 0.9782294929027557,
+        "line_number": 10,
+        "words_count": 8
+      },
+      {
+        "text": "Schw.Nacken ( 527 ) 21,83 B F",
+        "y_position": 508,
+        "x_min": 417,
+        "x_max": 809,
+        "confidence": 0.9805707335472107,
+        "line_number": 11,
+        "words_count": 7
+      },
+      {
+        "text": "Filetspieẞ Jalap ( 189 ) 46,26 B F",
+        "y_position": 532,
+        "x_min": 416,
+        "x_max": 808,
+        "confidence": 0.9760922864079475,
+        "line_number": 12,
+        "words_count": 8
+      },
+      {
+        "text": "WEIN / SPIRITUOSEN / SEKT / CHAMPAGNER",
+        "y_position": 569,
+        "x_min": 384,
+        "x_max": 732,
+        "confidence": 0.9707021457808358,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "*** Discount Preis *** A",
+        "y_position": 599,
+        "x_min": 451,
+        "x_max": 772,
+        "confidence": 0.9486989378929138,
+        "line_number": 14,
+        "words_count": 5
+      },
+      {
+        "text": "TawnyPortAlvarez ( 341 ) 12,98",
+        "y_position": 616,
+        "x_min": 384,
+        "x_max": 749,
+        "confidence": 0.9750208139419556,
+        "line_number": 15,
+        "words_count": 5
+      },
+      {
+        "text": "2x 6,49 €",
+        "y_position": 648,
+        "x_min": 407,
+        "x_max": 506,
+        "confidence": 0.9406600197156271,
+        "line_number": 16,
+        "words_count": 3
+      },
+      {
+        "text": "Taylors Ruby Sel ( 536 ) 13,99 A",
+        "y_position": 664,
+        "x_min": 385,
+        "x_max": 770,
+        "confidence": 0.9870196580886841,
+        "line_number": 17,
+        "words_count": 8
+      },
+      {
+        "text": "SUMME [ 3 ] 107,12",
+        "y_position": 715,
+        "x_min": 388,
+        "x_max": 801,
+        "confidence": 0.9442994236946106,
+        "line_number": 18,
+        "words_count": 5
+      },
+      {
+        "text": "EC - Lastschrift 107,12",
+        "y_position": 740,
+        "x_min": 388,
+        "x_max": 801,
+        "confidence": 0.9830961525440216,
+        "line_number": 19,
+        "words_count": 4
+      },
+      {
+        "text": "-K - U - N - D - E - N - B - E - L - E - G-",
+        "y_position": 801,
+        "x_min": 465,
+        "x_max": 705,
+        "confidence": 0.9560124107769558,
+        "line_number": 20,
+        "words_count": 21
+      },
+      {
+        "text": "HIT 4033 Overath",
+        "y_position": 825,
+        "x_min": 412,
+        "x_max": 583,
+        "confidence": 0.9871035615603129,
+        "line_number": 21,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistr . 18-22",
+        "y_position": 850,
+        "x_min": 412,
+        "x_max": 603,
+        "confidence": 0.7530072728792826,
+        "line_number": 22,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 875,
+        "x_min": 411,
+        "x_max": 549,
+        "confidence": 0.9900708198547363,
+        "line_number": 23,
+        "words_count": 2
+      },
+      {
+        "text": "Terminal - ID : 61724234",
+        "y_position": 896,
+        "x_min": 410,
+        "x_max": 774,
+        "confidence": 0.9326320648193359,
+        "line_number": 24,
+        "words_count": 5
+      },
+      {
+        "text": "TA - Nr 408344 BNr 3699",
+        "y_position": 918,
+        "x_min": 409,
+        "x_max": 774,
+        "confidence": 0.9585192700227102,
+        "line_number": 25,
+        "words_count": 6
+      },
+      {
+        "text": "Kartenzahlung",
+        "y_position": 942,
+        "x_min": 511,
+        "x_max": 653,
+        "confidence": 0.988007664680481,
+        "line_number": 26,
+        "words_count": 1
+      },
+      {
+        "text": "SEPA - ELV",
+        "y_position": 967,
+        "x_min": 543,
+        "x_max": 631,
+        "confidence": 0.9860243995984396,
+        "line_number": 27,
+        "words_count": 3
+      },
+      {
+        "text": "Online",
+        "y_position": 990,
+        "x_min": 552,
+        "x_max": 617,
+        "confidence": 0.9876657128334045,
+        "line_number": 28,
+        "words_count": 1
+      },
+      {
+        "text": "EUR 107,12",
+        "y_position": 1014,
+        "x_min": 488,
+        "x_max": 702,
+        "confidence": 0.9774563610553741,
+        "line_number": 29,
+        "words_count": 2
+      },
+      {
+        "text": "CDGM",
+        "y_position": 1066,
+        "x_min": 406,
+        "x_max": 448,
+        "confidence": 0.9901338815689087,
+        "line_number": 30,
+        "words_count": 1
+      },
+      {
+        "text": "Kurz - BLZ #####",
+        "y_position": 1088,
+        "x_min": 408,
+        "x_max": 771,
+        "confidence": 0.9726055562496185,
+        "line_number": 31,
+        "words_count": 4
+      },
+      {
+        "text": "Kto . ###### 8132",
+        "y_position": 1114,
+        "x_min": 410,
+        "x_max": 770,
+        "confidence": 0.9472687393426895,
+        "line_number": 32,
+        "words_count": 4
+      },
+      {
+        "text": "Karte 2 gültig bis 12/28",
+        "y_position": 1136,
+        "x_min": 409,
+        "x_max": 770,
+        "confidence": 0.9736304163932801,
+        "line_number": 33,
+        "words_count": 5
+      },
+      {
+        "text": "IBAN DE3537 ##### * # * # * ## 8132",
+        "y_position": 1158,
+        "x_min": 411,
+        "x_max": 771,
+        "confidence": 0.7155813634395599,
+        "line_number": 34,
+        "words_count": 10
+      },
+      {
+        "text": "G - ID DE52ZZZ00000041034",
+        "y_position": 1184,
+        "x_min": 409,
+        "x_max": 771,
+        "confidence": 0.9786605834960938,
+        "line_number": 35,
+        "words_count": 4
+      },
+      {
+        "text": "M - ID 6172423436992508122032",
+        "y_position": 1211,
+        "x_min": 410,
+        "x_max": 773,
+        "confidence": 0.9852562993764877,
+        "line_number": 36,
+        "words_count": 4
+      },
+      {
+        "text": "AIDPara 0001610648",
+        "y_position": 1238,
+        "x_min": 409,
+        "x_max": 778,
+        "confidence": 0.9843124151229858,
+        "line_number": 37,
+        "words_count": 2
+      },
+      {
+        "text": "Datum 12.08.25 20:32 Uhr",
+        "y_position": 1262,
+        "x_min": 408,
+        "x_max": 666,
+        "confidence": 0.9677130877971649,
+        "line_number": 38,
+        "words_count": 4
+      },
+      {
+        "text": "*** Karte akzeptiert ***",
+        "y_position": 1290,
+        "x_min": 460,
+        "x_max": 722,
+        "confidence": 0.962517186999321,
+        "line_number": 39,
+        "words_count": 4
+      },
+      {
+        "text": "BITTE BELEG AUFBEWAHREN",
+        "y_position": 1315,
+        "x_min": 460,
+        "x_max": 714,
+        "confidence": 0.9870733221371969,
+        "line_number": 40,
+        "words_count": 3
+      },
+      {
+        "text": "Die Belastung erfolgt zum über-",
+        "y_position": 1338,
+        "x_min": 405,
+        "x_max": 778,
+        "confidence": 0.9759269237518311,
+        "line_number": 41,
+        "words_count": 5
+      },
+      {
+        "text": "nächsten Bankgeschäftstag",
+        "y_position": 1364,
+        "x_min": 405,
+        "x_max": 680,
+        "confidence": 0.9624807834625244,
+        "line_number": 42,
+        "words_count": 2
+      },
+      {
+        "text": "Steuer NETTO [ 6 ] MWST [ € ] BRUTTO [ € ]",
+        "y_position": 1445,
+        "x_min": 383,
+        "x_max": 826,
+        "confidence": 0.7285227477550507,
+        "line_number": 43,
+        "words_count": 13
+      },
+      {
+        "text": "A = 19,00 % 22,66 4,31 26,97",
+        "y_position": 1470,
+        "x_min": 383,
+        "x_max": 825,
+        "confidence": 0.9571784564426967,
+        "line_number": 44,
+        "words_count": 7
+      },
+      {
+        "text": "B = 7,00 % 74,91 5,24 80,15",
+        "y_position": 1494,
+        "x_min": 384,
+        "x_max": 826,
+        "confidence": 0.964315150465284,
+        "line_number": 45,
+        "words_count": 7
+      },
+      {
+        "text": "Kennzeichenlegende gekennzeichneten Artikel",
+        "y_position": 1522,
+        "x_min": 502,
+        "x_max": 801,
+        "confidence": 0.9575634598731995,
+        "line_number": 46,
+        "words_count": 3
+      },
+      {
+        "text": "Die wie folgt",
+        "y_position": 1541,
+        "x_min": 385,
+        "x_max": 525,
+        "confidence": 0.9884467522303263,
+        "line_number": 47,
+        "words_count": 3
+      },
+      {
+        "text": "sowie die darauf entfallene MWST werden",
+        "y_position": 1562,
+        "x_min": 387,
+        "x_max": 813,
+        "confidence": 0.9863440891106924,
+        "line_number": 48,
+        "words_count": 6
+      },
+      {
+        "text": "verkauft im Namen und Rechnung von :",
+        "y_position": 1598,
+        "x_min": 387,
+        "x_max": 771,
+        "confidence": 0.9693736859730312,
+        "line_number": 49,
+        "words_count": 7
+      },
+      {
+        "text": "F = HIT Frische GmbH & Co. KG ,",
+        "y_position": 1621,
+        "x_min": 388,
+        "x_max": 694,
+        "confidence": 0.8795859085188972,
+        "line_number": 50,
+        "words_count": 9
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 1643,
+        "x_min": 390,
+        "x_max": 608,
+        "confidence": 0.9788819253444672,
+        "line_number": 51,
+        "words_count": 2
+      },
+      {
+        "text": "11 51491 Overath DE122274982",
+        "y_position": 1661,
+        "x_min": 39,
+        "x_max": 804,
+        "confidence": 0.9213531017303467,
+        "line_number": 52,
+        "words_count": 4
+      },
+      {
+        "text": "******************** , USt - ID - Nr .: ***************",
+        "y_position": 1680,
+        "x_min": 394,
+        "x_max": 822,
+        "confidence": 0.9475512835714552,
+        "line_number": 53,
+        "words_count": 9
+      },
+      {
+        "text": "Sie erhalten diesem Kauf",
+        "y_position": 1715,
+        "x_min": 456,
+        "x_max": 760,
+        "confidence": 0.984767496585846,
+        "line_number": 54,
+        "words_count": 4
+      },
+      {
+        "text": "Treuepunkt mit ( e ) !",
+        "y_position": 1731,
+        "x_min": 540,
+        "x_max": 696,
+        "confidence": 0.9366024831930796,
+        "line_number": 55,
+        "words_count": 6
+      },
+      {
+        "text": "21 *************",
+        "y_position": 1750,
+        "x_min": 508,
+        "x_max": 824,
+        "confidence": 0.9030139744281769,
+        "line_number": 56,
+        "words_count": 2
+      },
+      {
+        "text": "**********",
+        "y_position": 1769,
+        "x_min": 397,
+        "x_max": 498,
+        "confidence": 0.8812769055366516,
+        "line_number": 57,
+        "words_count": 1
+      },
+      {
+        "text": "0014033120825004000525",
+        "y_position": 1788,
+        "x_min": 490,
+        "x_max": 734,
+        "confidence": 0.9857935905456543,
+        "line_number": 58,
+        "words_count": 1
+      },
+      {
+        "text": "HIT Verbrauchermarkt Overath GmbH &",
+        "y_position": 1866,
+        "x_min": 416,
+        "x_max": 803,
+        "confidence": 0.96241375207901,
+        "line_number": 59,
+        "words_count": 5
+      },
+      {
+        "text": "USt - ID : DE276299025",
+        "y_position": 1904,
+        "x_min": 502,
+        "x_max": 715,
+        "confidence": 0.9183976888656616,
+        "line_number": 60,
+        "words_count": 5
+      },
+      {
+        "text": "Bon Lade",
+        "y_position": 2081,
+        "x_min": 710,
+        "x_max": 812,
+        "confidence": 0.9698376655578613,
+        "line_number": 61,
+        "words_count": 2
+      },
+      {
+        "text": "Datum Zeit F11 . Pos 04 0525 34",
+        "y_position": 2098,
+        "x_min": 416,
+        "x_max": 794,
+        "confidence": 0.8251866102218628,
+        "line_number": 62,
+        "words_count": 8
+      },
+      {
+        "text": "12.08.25 20:33 Dank 4033 für Ihren Einkauf !",
+        "y_position": 2114,
+        "x_min": 420,
+        "x_max": 783,
+        "confidence": 0.895629771053791,
+        "line_number": 63,
+        "words_count": 8
+      },
+      {
+        "text": "Vielen",
+        "y_position": 2131,
+        "x_min": 470,
+        "x_max": 535,
+        "confidence": 0.8809630274772644,
+        "line_number": 64,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 308,
+    "total_lines": 65
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.25806451612903225,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "ust",
+      "steuer",
+      "netto",
+      "brutto",
+      "eur",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 0,
+      "es_ES": 1,
+      "pl_PL": 0,
+      "de_DE": 8
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-08-12",
+    "receipt_total": 107.12,
+    "currency": "EUR",
+    "date_raw": "12.08.25",
+    "total_raw": "107,12",
+    "total_line_number": 18
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Lammkarree fr . ( 399 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 6.01,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Lammkarree fr . ( 399 ) 6,01 B F"
+      },
+      {
+        "name": "Spieße Kreta ( 945 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 6.05,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "Spieße Kreta ( 945 ) 6,05 B F"
+      },
+      {
+        "name": "Schw.Nacken ( 527 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 21.83,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Schw.Nacken ( 527 ) 21,83 B F"
+      },
+      {
+        "name": "Filetspieẞ Jalap ( 189 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 46.26,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Filetspieẞ Jalap ( 189 ) 46,26 B F"
+      },
+      {
+        "name": "TawnyPortAlvarez ( 341 )",
+        "quantity": null,
+        "price": null,
+        "total": 12.98,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "TawnyPortAlvarez ( 341 ) 12,98"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 6.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "2x 6,49 €"
+      },
+      {
+        "name": "Taylors Ruby Sel ( 536 )",
+        "quantity": null,
+        "price": null,
+        "total": 13.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "Taylors Ruby Sel ( 536 ) 13,99 A"
+      }
+    ],
+    "discounts": [],
+    "items_count": 7,
+    "discounts_count": 0,
+    "items_total": 113.61,
+    "discounts_total": 0,
+    "skipped_lines": 49,
+    "parsed_lines": 7
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 113.61,
+    "discounts_sum": 0,
+    "calculated_total": 113.61,
+    "receipt_total": 107.12,
+    "difference": 6.489999999999995,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=113.61, receipt=107.12, diff=6.49 (tolerance=0.05)"
+  },
+  "processing_time_ms": 18.618106842041016,
+  "stages_completed": 6
+}

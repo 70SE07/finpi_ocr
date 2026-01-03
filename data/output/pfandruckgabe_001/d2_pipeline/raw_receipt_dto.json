@@ -1,0 +1,129 @@
+{
+  "items": [
+    {
+      "name": "Erdbeeren kg",
+      "quantity": null,
+      "price": null,
+      "total": 3.2,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "WassereisWass.melone",
+      "quantity": null,
+      "price": null,
+      "total": 2.39,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Magnum Classic",
+      "quantity": null,
+      "price": null,
+      "total": 3.99,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Dovgan Fam.33 % Fett 2,29 x 2",
+      "quantity": 2.29,
+      "price": null,
+      "total": 4.58,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Dovgan Fam.2,5 % Fett 2,29 x 2",
+      "quantity": 2.29,
+      "price": null,
+      "total": 4.58,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Gouda in ScheibenXXL",
+      "quantity": null,
+      "price": null,
+      "total": 4.29,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Schmand 0,89 x 3",
+      "quantity": 0.89,
+      "price": null,
+      "total": 2.67,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Eier Freiland . XXL",
+      "quantity": null,
+      "price": null,
+      "total": 3.99,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Schmelzkäse Toast",
+      "quantity": null,
+      "price": null,
+      "total": 1.99,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Schmelzkäse Cheddary",
+      "quantity": null,
+      "price": null,
+      "total": 1.99,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Croissant Cremefüll .",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Rosinenstuten",
+      "quantity": null,
+      "price": null,
+      "total": 1.49,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Pfandrückgabe",
+      "quantity": null,
+      "price": null,
+      "total": -23.0,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "92",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "Pfandrückgabe",
+      "quantity": null,
+      "price": null,
+      "total": -0.5,
+      "date": "2025-06-13 00:00:00"
+    },
+    {
+      "name": "MBRU",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-06-13 00:00:00"
+    }
+  ],
+  "total_amount": 13.48,
+  "merchant": "Lidl",
+  "store_address": "02, Steinhauser Auel 1 , HOAM, 51491 Overath - Vilkerath",
+  "date": "2025-06-13 00:00:00",
+  "receipt_id": "pfandruckgabe_001",
+  "ocr_text": "LIDL STOR\n02\nSteinhauser Auel 1, HOAM\n51491 Overath-Vilkerath\nEUR\nErdbeeren kg\n3,20 A\n0,698 kg x 4,58 EUR/kg\nWassereisWass.melone\n2,39 A\nPreisvorteil\n-0,40\nMagnum Classic\n3,99 A\nDovgan Fam.33% Fett\n2,29 x\n2\n4,58 A\nDovgan Fam.2,5% Fett\n2,29 x\n2\n4,58 A\nGouda in ScheibenXXL\n4,29 A\nSchmand\n0,89 x 3\n2,67 A\nRabattaktion\n-0,27\nEier Freiland. XXL\n3.99 A\nSchmelzkäse Toast\n1,99 A\nPreisvorteil\n-0,20\nSchmelzkäse Cheddary\n1,99 A\nPreisvorteil\nCroissant Cremefüll.\nRosinenstuten\nPreisvorteil\nPfandrückgabe\n-92 x\nPfandrückgabe\n-0,20\n2,99 A\n1,49 A\n-0,10\n-23,00 B\n0,25\n-0,50 A\n-2 x\n0,25 MBRU\nzu zahlen\n213,48\nKarte\n13,48\nMAARETTA AT\nGesamter Preisvorteil\n1,17\nMWSTX\nMWST + Netto = Brutto\nA 7 %\n2,39\n34,09\n36,48\nB 19 %\n-3,67\n-19,33\n-23,00\nSumme\n-1,28\n14,76\n13,48\nLada dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1145339\nSeriennr. Kasse: LDL-000-6496-83\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: PE12jppELD0uqc96061n0cawfEoPvIjE\nNIWXTDhAPH+MAMDHuy/NaKTYXnfRkXUtobXctYyXA8\n/u2i2wekXueo+02pRUkGSgzYEJbPLJeNBq5vxZ+tUq\nYqYRrreXpooL\nSignaturzähler: 2337112\n2025-06-13T11:02:52.000Z\n2025-06-13111:12:01.000Z\n6496 012038/83\n13.06.25 13:02\nUST-ID-NR: DE814060660 H2A\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n13,48 EUR\n13:06:2025\n13:11\nT-ID 60197391\nTA-Nr. 069232\nBeleg-Nr. 5835\nKartennr.\n**************#1364 11\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nAutorisierungsnummer\n820121\nEMV-Daten:\nAutorisierungsantwortcode\n00\nA0000003591010028001/00\nAutorisierung erfolgt\n****",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 16.0,
+    "validation_passed": 0.0,
+    "validation_difference": 0.5
+  }
+}

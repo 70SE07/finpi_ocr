@@ -1,0 +1,622 @@
+{
+  "full_text": "CP ALL, 7-Eleven al\n2(09585)\nTAX#0107542000011 (VAT Included)\nVat Code 07437 POS #E06770000201326\nafa\nu/lun\n2\n*\n: * @30.00\n60.00\n*\n150\n15.00\na\n3 fu\n75.00\n**/*\n80.00\n5.00\nR#0000819406P3 :0958506 09/10/68 02:10\n0-2826-7744 **\nJu\nE-Book\n\"",
+  "words": [
+    {
+      "text": "CP",
+      "bounding_box": {
+        "x": 316,
+        "y": 787,
+        "width": 42,
+        "height": 45
+      },
+      "confidence": 0.7099564075469971
+    },
+    {
+      "text": "ALL",
+      "bounding_box": {
+        "x": 373,
+        "y": 786,
+        "width": 68,
+        "height": 45
+      },
+      "confidence": 0.9129107594490051
+    },
+    {
+      "text": ",",
+      "bounding_box": {
+        "x": 439,
+        "y": 786,
+        "width": 12,
+        "height": 44
+      },
+      "confidence": 0.894711971282959
+    },
+    {
+      "text": "7",
+      "bounding_box": {
+        "x": 459,
+        "y": 786,
+        "width": 21,
+        "height": 44
+      },
+      "confidence": 0.851814866065979
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 479,
+        "y": 786,
+        "width": 19,
+        "height": 44
+      },
+      "confidence": 0.9542455673217773
+    },
+    {
+      "text": "Eleven",
+      "bounding_box": {
+        "x": 497,
+        "y": 784,
+        "width": 128,
+        "height": 46
+      },
+      "confidence": 0.9866793751716614
+    },
+    {
+      "text": "al",
+      "bounding_box": {
+        "x": 689,
+        "y": 783,
+        "width": 65,
+        "height": 45
+      },
+      "confidence": 0.5389188528060913
+    },
+    {
+      "text": "2",
+      "bounding_box": {
+        "x": 884,
+        "y": 782,
+        "width": 21,
+        "height": 44
+      },
+      "confidence": 0.9641468524932861
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 915,
+        "y": 782,
+        "width": 13,
+        "height": 44
+      },
+      "confidence": 0.9591411352157593
+    },
+    {
+      "text": "09585",
+      "bounding_box": {
+        "x": 928,
+        "y": 780,
+        "width": 112,
+        "height": 46
+      },
+      "confidence": 0.9838516116142273
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 1044,
+        "y": 781,
+        "width": 10,
+        "height": 44
+      },
+      "confidence": 0.5932497382164001
+    },
+    {
+      "text": "TAX",
+      "bounding_box": {
+        "x": 353,
+        "y": 849,
+        "width": 58,
+        "height": 39
+      },
+      "confidence": 0.9815566539764404
+    },
+    {
+      "text": "#",
+      "bounding_box": {
+        "x": 414,
+        "y": 849,
+        "width": 17,
+        "height": 39
+      },
+      "confidence": 0.9749051332473755
+    },
+    {
+      "text": "0107542000011",
+      "bounding_box": {
+        "x": 432,
+        "y": 849,
+        "width": 273,
+        "height": 39
+      },
+      "confidence": 0.9910337328910828
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 733,
+        "y": 849,
+        "width": 12,
+        "height": 39
+      },
+      "confidence": 0.9501007795333862
+    },
+    {
+      "text": "VAT",
+      "bounding_box": {
+        "x": 749,
+        "y": 849,
+        "width": 63,
+        "height": 39
+      },
+      "confidence": 0.9801518321037292
+    },
+    {
+      "text": "Included",
+      "bounding_box": {
+        "x": 838,
+        "y": 849,
+        "width": 174,
+        "height": 39
+      },
+      "confidence": 0.9754273891448975
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 1013,
+        "y": 849,
+        "width": 15,
+        "height": 39
+      },
+      "confidence": 0.8574321269989014
+    },
+    {
+      "text": "Vat",
+      "bounding_box": {
+        "x": 331,
+        "y": 909,
+        "width": 60,
+        "height": 38
+      },
+      "confidence": 0.8609240651130676
+    },
+    {
+      "text": "Code",
+      "bounding_box": {
+        "x": 410,
+        "y": 909,
+        "width": 83,
+        "height": 38
+      },
+      "confidence": 0.9868379831314087
+    },
+    {
+      "text": "07437",
+      "bounding_box": {
+        "x": 515,
+        "y": 909,
+        "width": 103,
+        "height": 38
+      },
+      "confidence": 0.9893114566802979
+    },
+    {
+      "text": "POS",
+      "bounding_box": {
+        "x": 643,
+        "y": 909,
+        "width": 61,
+        "height": 38
+      },
+      "confidence": 0.9555352330207825
+    },
+    {
+      "text": "#",
+      "bounding_box": {
+        "x": 707,
+        "y": 909,
+        "width": 19,
+        "height": 38
+      },
+      "confidence": 0.8251730799674988
+    },
+    {
+      "text": "E06770000201326",
+      "bounding_box": {
+        "x": 729,
+        "y": 909,
+        "width": 325,
+        "height": 38
+      },
+      "confidence": 0.9909631609916687
+    },
+    {
+      "text": "afa",
+      "bounding_box": {
+        "x": 440,
+        "y": 983,
+        "width": 77,
+        "height": 42
+      },
+      "confidence": 0.385843962430954
+    },
+    {
+      "text": "u",
+      "bounding_box": {
+        "x": 586,
+        "y": 984,
+        "width": 28,
+        "height": 41
+      },
+      "confidence": 0.4584568440914154
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 612,
+        "y": 985,
+        "width": 26,
+        "height": 41
+      },
+      "confidence": 0.8299845457077026
+    },
+    {
+      "text": "lun",
+      "bounding_box": {
+        "x": 634,
+        "y": 985,
+        "width": 74,
+        "height": 42
+      },
+      "confidence": 0.5427819490432739
+    },
+    {
+      "text": "2",
+      "bounding_box": {
+        "x": 273,
+        "y": 1052,
+        "width": 15,
+        "height": 28
+      },
+      "confidence": 0.9726108312606812
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 438,
+        "y": 1049,
+        "width": 20,
+        "height": 35
+      },
+      "confidence": 0.31745967268943787
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 605,
+        "y": 1051,
+        "width": 20,
+        "height": 35
+      },
+      "confidence": 0.5227672457695007
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 644,
+        "y": 1051,
+        "width": 18,
+        "height": 35
+      },
+      "confidence": 0.36493080854415894
+    },
+    {
+      "text": "@",
+      "bounding_box": {
+        "x": 735,
+        "y": 1052,
+        "width": 17,
+        "height": 35
+      },
+      "confidence": 0.9537187218666077
+    },
+    {
+      "text": "30.00",
+      "bounding_box": {
+        "x": 753,
+        "y": 1052,
+        "width": 106,
+        "height": 37
+      },
+      "confidence": 0.9870952367782593
+    },
+    {
+      "text": "60.00",
+      "bounding_box": {
+        "x": 962,
+        "y": 1047,
+        "width": 97,
+        "height": 37
+      },
+      "confidence": 0.9905121922492981
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 395,
+        "y": 1106,
+        "width": 21,
+        "height": 39
+      },
+      "confidence": 0.4169616401195526
+    },
+    {
+      "text": "150",
+      "bounding_box": {
+        "x": 560,
+        "y": 1108,
+        "width": 62,
+        "height": 41
+      },
+      "confidence": 0.9561027884483337
+    },
+    {
+      "text": "15.00",
+      "bounding_box": {
+        "x": 954,
+        "y": 1106,
+        "width": 99,
+        "height": 34
+      },
+      "confidence": 0.9930785298347473
+    },
+    {
+      "text": "a",
+      "bounding_box": {
+        "x": 290,
+        "y": 1176,
+        "width": 20,
+        "height": 30
+      },
+      "confidence": 0.5125068426132202
+    },
+    {
+      "text": "3",
+      "bounding_box": {
+        "x": 475,
+        "y": 1169,
+        "width": 19,
+        "height": 36
+      },
+      "confidence": 0.9061240553855896
+    },
+    {
+      "text": "fu",
+      "bounding_box": {
+        "x": 514,
+        "y": 1169,
+        "width": 45,
+        "height": 38
+      },
+      "confidence": 0.4136704206466675
+    },
+    {
+      "text": "75.00",
+      "bounding_box": {
+        "x": 749,
+        "y": 1170,
+        "width": 99,
+        "height": 37
+      },
+      "confidence": 0.991739809513092
+    },
+    {
+      "text": "**",
+      "bounding_box": {
+        "x": 328,
+        "y": 1227,
+        "width": 45,
+        "height": 37
+      },
+      "confidence": 0.2914990782737732
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 370,
+        "y": 1227,
+        "width": 22,
+        "height": 36
+      },
+      "confidence": 0.7549985647201538
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 451,
+        "y": 1229,
+        "width": 24,
+        "height": 37
+      },
+      "confidence": 0.6065579652786255
+    },
+    {
+      "text": "80.00",
+      "bounding_box": {
+        "x": 743,
+        "y": 1227,
+        "width": 105,
+        "height": 36
+      },
+      "confidence": 0.9922524690628052
+    },
+    {
+      "text": "5.00",
+      "bounding_box": {
+        "x": 968,
+        "y": 1225,
+        "width": 81,
+        "height": 33
+      },
+      "confidence": 0.9915304183959961
+    },
+    {
+      "text": "R",
+      "bounding_box": {
+        "x": 269,
+        "y": 1286,
+        "width": 21,
+        "height": 41
+      },
+      "confidence": 0.9406328797340393
+    },
+    {
+      "text": "#",
+      "bounding_box": {
+        "x": 289,
+        "y": 1285,
+        "width": 18,
+        "height": 41
+      },
+      "confidence": 0.9698789715766907
+    },
+    {
+      "text": "0000819406P3",
+      "bounding_box": {
+        "x": 308,
+        "y": 1283,
+        "width": 244,
+        "height": 44
+      },
+      "confidence": 0.987841010093689
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 580,
+        "y": 1283,
+        "width": 10,
+        "height": 41
+      },
+      "confidence": 0.988479495048523
+    },
+    {
+      "text": "0958506",
+      "bounding_box": {
+        "x": 596,
+        "y": 1282,
+        "width": 145,
+        "height": 43
+      },
+      "confidence": 0.9875941872596741
+    },
+    {
+      "text": "09/10/68",
+      "bounding_box": {
+        "x": 799,
+        "y": 1281,
+        "width": 166,
+        "height": 43
+      },
+      "confidence": 0.9907611608505249
+    },
+    {
+      "text": "02:10",
+      "bounding_box": {
+        "x": 988,
+        "y": 1279,
+        "width": 104,
+        "height": 43
+      },
+      "confidence": 0.9903199076652527
+    },
+    {
+      "text": "0-2826-7744",
+      "bounding_box": {
+        "x": 681,
+        "y": 1338,
+        "width": 232,
+        "height": 45
+      },
+      "confidence": 0.889327883720398
+    },
+    {
+      "text": "**",
+      "bounding_box": {
+        "x": 934,
+        "y": 1337,
+        "width": 41,
+        "height": 39
+      },
+      "confidence": 0.9373566508293152
+    },
+    {
+      "text": "Ju",
+      "bounding_box": {
+        "x": 344,
+        "y": 1518,
+        "width": 459,
+        "height": 58
+      },
+      "confidence": 0.31601381301879883
+    },
+    {
+      "text": "E",
+      "bounding_box": {
+        "x": 489,
+        "y": 1726,
+        "width": 27,
+        "height": 35
+      },
+      "confidence": 0.9856972694396973
+    },
+    {
+      "text": "-",
+      "bounding_box": {
+        "x": 517,
+        "y": 1726,
+        "width": 17,
+        "height": 34
+      },
+      "confidence": 0.9872268438339233
+    },
+    {
+      "text": "Book",
+      "bounding_box": {
+        "x": 540,
+        "y": 1726,
+        "width": 119,
+        "height": 38
+      },
+      "confidence": 0.975982129573822
+    },
+    {
+      "text": "\"",
+      "bounding_box": {
+        "x": 335,
+        "y": 1773,
+        "width": 34,
+        "height": 30
+      },
+      "confidence": 0.5718315839767456
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_2467",
+    "image_width": 1350,
+    "image_height": 2400,
+    "processed_at": "2026-01-02T06:13:55.436640",
+    "preprocessing_applied": []
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "PIZZA FIAMBRE E QUEIJO fun",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "date": "2025-11-08 00:00:00",
+        "raw_text": "PIZZA FIAMBRE E QUEIJO fun 0,89 A"
+      },
+      {
+        "name": "FOLHADO DE CARNE MISTO",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-11-08 00:00:00",
+        "raw_text": "FOLHADO DE CARNE MISTO 1,49 A"
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": "2025-11-08 00:00:00",
+        "raw_text": "0.99 A"
+      }
+    ],
+    "total_amount": 3.37,
+    "merchant": "lidl",
+    "store_address": null,
+    "date": "2025-11-08 00:00:00",
+    "receipt_id": "PT_001",
+    "ocr_text": "LIDL Vale mesmo a pena.\nsbo 10 oh\nLIDL & Cia - LISBOA - R MARIA DA FONTE\nR M. Fonte M. F. Tijolo, Lj37 Lisboa\nNIF:503340855 C. S. 498.880 EUR\nRua Pé de Mouro 18, 2714-510 Sintra\nC. R. C Sintra N10628 SIRPEE PT000048\nFATURA SIMPLIFICADA\nOriginal Data de Venda:\nNo FS 018800125/205509\nNIF... CONSUMIDOR FINAL\n2025-11-08\nEUR\nTRANCA COM NOZ PECA\nfun 0,89 A\nPIZZA FIAMBRE E QUEIJO\nFOLHADO DE CARNE MISTO\n1,49 A\n0.99 A\nTotal\n3,37\nMULTIBANCO\n3.37\nA 23%\nTaxa Base Imp.\n2,74\nVal. Total\n3.37\nVal. IVA\n0.63\nRegiste se no Lidl Plus e\npoupe nas suas próximas compras\nATCUD: JJY7FV5R-205509\npulousia\n0188 233189/01\nDA 08.11.25 17:11\nPpqM Processado por Programa\ncertificado n.º 1050/AT\nDocumento válido como recibo.\nA pensar na sua comodidade neste\nperiodo de Natal, as devoluções\nou trocas de produtos não\nalimentares adquiridos entre\n24. 10.25 e 15. 12.25 poderão ser\nfeitas mediante apresentação do\ntalão de compra excecionalmente\nté dia 16/01/26 exceto artigos\nCartao Credito\nTOTAL A PASAR\ntos e po\nTotal de desc-\n6.002\n---------\n--Process\n7691 0001",
+    "detected_locale": "pt_PT",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 3.0,
+      "validation_passed": 1.0,
+      "validation_difference": 0.0
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LIDL Vale mesmo pena .",
+        "y_position": 184,
+        "x_min": 326,
+        "x_max": 565,
+        "confidence": 0.8566332697868347,
+        "line_number": 0,
+        "words_count": 5
+      },
+      {
+        "text": "a",
+        "y_position": 200,
+        "x_min": 497,
+        "x_max": 507,
+        "confidence": 0.9932703375816345,
+        "line_number": 1,
+        "words_count": 1
+      },
+      {
+        "text": "sbo 10 oh",
+        "y_position": 229,
+        "x_min": 309,
+        "x_max": 385,
+        "confidence": 0.5210739572842916,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "LIDL & Cia - LISBOA - R MARIA DA FONTE",
+        "y_position": 247,
+        "x_min": 307,
+        "x_max": 566,
+        "confidence": 0.8983543157577515,
+        "line_number": 3,
+        "words_count": 10
+      },
+      {
+        "text": "R M. Fonte M. F. Tijolo , Lj37 Lisboa",
+        "y_position": 265,
+        "x_min": 299,
+        "x_max": 564,
+        "confidence": 0.9636993739340041,
+        "line_number": 4,
+        "words_count": 9
+      },
+      {
+        "text": "NIF : 503340855 C. S. 498.880 EUR",
+        "y_position": 283,
+        "x_min": 326,
+        "x_max": 537,
+        "confidence": 0.9719199963978359,
+        "line_number": 5,
+        "words_count": 7
+      },
+      {
+        "text": "C. Rua R. C Pé Sintra de Mouro 18 , 2714-510 Sintra",
+        "y_position": 299,
+        "x_min": 308,
+        "x_max": 549,
+        "confidence": 0.9533359011014303,
+        "line_number": 6,
+        "words_count": 12
+      },
+      {
+        "text": "N10628 SIRPEE PT000048",
+        "y_position": 316,
+        "x_min": 399,
+        "x_max": 549,
+        "confidence": 0.968948761622111,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "FATURA SIMPLIFICADA",
+        "y_position": 355,
+        "x_min": 272,
+        "x_max": 404,
+        "confidence": 0.9886342883110046,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "No Original Data de Venda",
+        "y_position": 372,
+        "x_min": 268,
+        "x_max": 451,
+        "confidence": 0.9781587481498718,
+        "line_number": 9,
+        "words_count": 5
+      },
+      {
+        "text": "NIF FS 018800125/205509 : 2025-11-08",
+        "y_position": 388,
+        "x_min": 267,
+        "x_max": 545,
+        "confidence": 0.9632829070091248,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "... CONSUMIDOR FINAL",
+        "y_position": 405,
+        "x_min": 286,
+        "x_max": 437,
+        "confidence": 0.8876298069953918,
+        "line_number": 11,
+        "words_count": 3
+      },
+      {
+        "text": "TRANCA COM NOZ PECA EUR",
+        "y_position": 468,
+        "x_min": 263,
+        "x_max": 554,
+        "confidence": 0.9718693256378174,
+        "line_number": 12,
+        "words_count": 5
+      },
+      {
+        "text": "PIZZA FIAMBRE E QUEIJO fun 0,89 A",
+        "y_position": 485,
+        "x_min": 262,
+        "x_max": 568,
+        "confidence": 0.8564714448792594,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "FOLHADO DE CARNE MISTO 1,49 A",
+        "y_position": 501,
+        "x_min": 262,
+        "x_max": 568,
+        "confidence": 0.9493919114271799,
+        "line_number": 14,
+        "words_count": 6
+      },
+      {
+        "text": "0.99 A",
+        "y_position": 520,
+        "x_min": 525,
+        "x_max": 567,
+        "confidence": 0.9404999613761902,
+        "line_number": 15,
+        "words_count": 2
+      },
+      {
+        "text": "Total 3,37",
+        "y_position": 538,
+        "x_min": 265,
+        "x_max": 553,
+        "confidence": 0.9750057458877563,
+        "line_number": 16,
+        "words_count": 2
+      },
+      {
+        "text": "MULTIBANCO 3.37",
+        "y_position": 572,
+        "x_min": 265,
+        "x_max": 551,
+        "confidence": 0.959436297416687,
+        "line_number": 17,
+        "words_count": 2
+      },
+      {
+        "text": "Taxa Base Imp . Val . Total Val . IVA",
+        "y_position": 605,
+        "x_min": 277,
+        "x_max": 552,
+        "confidence": 0.9564342021942138,
+        "line_number": 18,
+        "words_count": 10
+      },
+      {
+        "text": "A 23 % 2,74 3.37 0.63",
+        "y_position": 622,
+        "x_min": 269,
+        "x_max": 550,
+        "confidence": 0.9323944548765818,
+        "line_number": 19,
+        "words_count": 6
+      },
+      {
+        "text": "Registe se no Lidl Plus e",
+        "y_position": 674,
+        "x_min": 329,
+        "x_max": 504,
+        "confidence": 0.9466249346733093,
+        "line_number": 20,
+        "words_count": 6
+      },
+      {
+        "text": "poupe nas suas próximas compras",
+        "y_position": 691,
+        "x_min": 310,
+        "x_max": 525,
+        "confidence": 0.9368711471557617,
+        "line_number": 21,
+        "words_count": 5
+      },
+      {
+        "text": "ATCUD : JJY7FV5R - 205509",
+        "y_position": 798,
+        "x_min": 336,
+        "x_max": 494,
+        "confidence": 0.9572378873825074,
+        "line_number": 22,
+        "words_count": 5
+      },
+      {
+        "text": "pulousia",
+        "y_position": 886,
+        "x_min": 513,
+        "x_max": 567,
+        "confidence": 0.48713773488998413,
+        "line_number": 23,
+        "words_count": 1
+      },
+      {
+        "text": "0188 233189/01 DA 08.11.25 17:11",
+        "y_position": 1028,
+        "x_min": 257,
+        "x_max": 565,
+        "confidence": 0.9170219779014588,
+        "line_number": 24,
+        "words_count": 5
+      },
+      {
+        "text": "PpqM Processado por Programa",
+        "y_position": 1065,
+        "x_min": 306,
+        "x_max": 510,
+        "confidence": 0.8901515603065491,
+        "line_number": 25,
+        "words_count": 4
+      },
+      {
+        "text": "certificado n.º 1050 / AT",
+        "y_position": 1082,
+        "x_min": 328,
+        "x_max": 491,
+        "confidence": 0.9243313908576966,
+        "line_number": 26,
+        "words_count": 5
+      },
+      {
+        "text": "Documento válido como recibo neste .",
+        "y_position": 1098,
+        "x_min": 313,
+        "x_max": 524,
+        "confidence": 0.9342778623104095,
+        "line_number": 27,
+        "words_count": 6
+      },
+      {
+        "text": "pensar na sua comodidade devoluções",
+        "y_position": 1118,
+        "x_min": 312,
+        "x_max": 525,
+        "confidence": 0.9500106573104858,
+        "line_number": 28,
+        "words_count": 5
+      },
+      {
+        "text": "A periodo de Natal , as não Total Cartao TOTAL",
+        "y_position": 1136,
+        "x_min": 297,
+        "x_max": 948,
+        "confidence": 0.9364642441272736,
+        "line_number": 29,
+        "words_count": 10
+      },
+      {
+        "text": "ou trocas de produtos --Process A",
+        "y_position": 1153,
+        "x_min": 326,
+        "x_max": 950,
+        "confidence": 0.8914219737052917,
+        "line_number": 30,
+        "words_count": 6
+      },
+      {
+        "text": "alimentares adquiridos entre --------- de Credito PASAR",
+        "y_position": 1169,
+        "x_min": 313,
+        "x_max": 957,
+        "confidence": 0.9100414769990104,
+        "line_number": 31,
+        "words_count": 7
+      },
+      {
+        "text": "e 15. 12.25 poderão ser desc-",
+        "y_position": 1186,
+        "x_min": 369,
+        "x_max": 893,
+        "confidence": 0.8689170479774475,
+        "line_number": 32,
+        "words_count": 6
+      },
+      {
+        "text": "24. 10.25 mediante apresentação do 6.002",
+        "y_position": 1202,
+        "x_min": 304,
+        "x_max": 850,
+        "confidence": 0.9214567939440409,
+        "line_number": 33,
+        "words_count": 6
+      },
+      {
+        "text": "feitas excecionalmente 7691 tos",
+        "y_position": 1218,
+        "x_min": 304,
+        "x_max": 903,
+        "confidence": 0.9350144863128662,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "talão de compra exceto artigos 0001",
+        "y_position": 1237,
+        "x_min": 305,
+        "x_max": 805,
+        "confidence": 0.9589254458745321,
+        "line_number": 35,
+        "words_count": 6
+      },
+      {
+        "text": "té dia 16/01/26 e po",
+        "y_position": 1253,
+        "x_min": 312,
+        "x_max": 910,
+        "confidence": 0.8681386530399322,
+        "line_number": 36,
+        "words_count": 5
+      }
+    ],
+    "image_width": 960,
+    "image_height": 1280,
+    "total_words": 197,
+    "total_lines": 37
+  },
+  "locale": {
+    "locale_code": "pt_PT",
+    "confidence": 0.4444444444444444,
+    "matched_keywords": [
+      "total",
+      "iva",
+      "taxa",
+      "lidl",
+      "eur",
+      "recibo",
+      "nif",
+      "pt"
+    ],
+    "scores": {
+      "pt_PT": 8,
+      "cs_CZ": 1,
+      "es_ES": 6,
+      "pl_PL": 1,
+      "de_DE": 2
+    }
+  },
+  "store": {
+    "store_name": "lidl",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-11-08",
+    "receipt_total": 3.37,
+    "currency": "EUR",
+    "date_raw": "2025-11-08",
+    "total_raw": "3,37",
+    "total_line_number": 16
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "PIZZA FIAMBRE E QUEIJO fun",
+        "quantity": null,
+        "price": null,
+        "total": 0.89,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "PIZZA FIAMBRE E QUEIJO fun 0,89 A"
+      },
+      {
+        "name": "FOLHADO DE CARNE MISTO",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "FOLHADO DE CARNE MISTO 1,49 A"
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "0.99 A"
+      }
+    ],
+    "discounts": [],
+    "items_count": 3,
+    "discounts_count": 0,
+    "items_total": 3.37,
+    "discounts_total": 0,
+    "skipped_lines": 25,
+    "parsed_lines": 3
+  },
+  "validation": {
+    "passed": true,
+    "items_sum": 3.37,
+    "discounts_sum": 0,
+    "calculated_total": 3.37,
+    "receipt_total": 3.37,
+    "difference": 0.0,
+    "tolerance": 0.05,
+    "error_message": null
+  },
+  "processing_time_ms": 24.733781814575195,
+  "stages_completed": 6
+}

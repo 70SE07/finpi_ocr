@@ -1,0 +1,255 @@
+{
+  "items": [
+    {
+      "name": "Banane",
+      "quantity": null,
+      "price": null,
+      "total": 1.8,
+      "date": null
+    },
+    {
+      "name": "Kartof.mehr.koch 2kg",
+      "quantity": null,
+      "price": null,
+      "total": 1.59,
+      "date": null
+    },
+    {
+      "name": "A",
+      "quantity": null,
+      "price": null,
+      "total": 1.59,
+      "date": null
+    },
+    {
+      "name": "A",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": null
+    },
+    {
+      "name": "A",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": null
+    },
+    {
+      "name": "2 0,89 x 2",
+      "quantity": 0.89,
+      "price": null,
+      "total": 1.78,
+      "date": null
+    },
+    {
+      "name": "K.champignons",
+      "quantity": null,
+      "price": null,
+      "total": 2.19,
+      "date": null
+    },
+    {
+      "name": "kraus TTAA",
+      "quantity": null,
+      "price": null,
+      "total": 0.89,
+      "date": null
+    },
+    {
+      "name": "Dill",
+      "quantity": null,
+      "price": null,
+      "total": 1.59,
+      "date": null
+    },
+    {
+      "name": "Fresh.BioGem.Franz .",
+      "quantity": null,
+      "price": null,
+      "total": 2.49,
+      "date": null
+    },
+    {
+      "name": "Bio Brechbohnen",
+      "quantity": null,
+      "price": null,
+      "total": 2.69,
+      "date": null
+    },
+    {
+      "name": "qqA zu19 bij",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": null
+    },
+    {
+      "name": "Edamer Scheiben",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": null
+    },
+    {
+      "name": "Gouda Scheiben",
+      "quantity": null,
+      "price": null,
+      "total": 2.49,
+      "date": null
+    },
+    {
+      "name": "Frischkäse Sahnige 1,69 x 2",
+      "quantity": 1.69,
+      "price": null,
+      "total": 3.38,
+      "date": null
+    },
+    {
+      "name": "Speisequark 40 % ( OGT ) 1,78 x 2",
+      "quantity": 1.78,
+      "price": null,
+      "total": 3.56,
+      "date": null
+    },
+    {
+      "name": "Latte Macchiato",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": null
+    },
+    {
+      "name": "Pfand 7 % EM",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": null
+    },
+    {
+      "name": "KaffeegetLatteMacch .",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": null
+    },
+    {
+      "name": "Pfand 7XEM",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": null
+    },
+    {
+      "name": "Ayran Joghurtgetränk",
+      "quantity": null,
+      "price": null,
+      "total": 0.49,
+      "date": null
+    },
+    {
+      "name": "Eier Freiland . XXL",
+      "quantity": null,
+      "price": null,
+      "total": 3.99,
+      "date": null
+    },
+    {
+      "name": "Eier Bodenhalt . 18er 3,39 x 5",
+      "quantity": 3.39,
+      "price": null,
+      "total": 16.95,
+      "date": null
+    },
+    {
+      "name": "Sonnenmais",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": null
+    },
+    {
+      "name": "Wasser medium A MI0,29 x 30H",
+      "quantity": null,
+      "price": null,
+      "total": 38.7,
+      "date": null
+    },
+    {
+      "name": "EM x 30",
+      "quantity": 0.25,
+      "price": 0.25,
+      "total": 7.5,
+      "date": null
+    },
+    {
+      "name": "Multivitaminsaft",
+      "quantity": null,
+      "price": null,
+      "total": 2.15,
+      "date": null
+    },
+    {
+      "name": "Red Bull Energy",
+      "quantity": null,
+      "price": null,
+      "total": 1.75,
+      "date": null
+    },
+    {
+      "name": "Pfand",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": null
+    },
+    {
+      "name": "B",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": null
+    },
+    {
+      "name": "Weizen Sandwi . Toast 1,09 x 2",
+      "quantity": 1.09,
+      "price": null,
+      "total": 2.18,
+      "date": null
+    },
+    {
+      "name": "Tortilla Wraps Weiz . 1,29 x 2",
+      "quantity": 1.29,
+      "price": null,
+      "total": 2.58,
+      "date": null
+    },
+    {
+      "name": "Croissant Wien . 0,99 x 4",
+      "quantity": 0.99,
+      "price": null,
+      "total": 3.96,
+      "date": null
+    },
+    {
+      "name": "Hähnchenbrustfilet",
+      "quantity": null,
+      "price": null,
+      "total": 9.99,
+      "date": null
+    }
+  ],
+  "total_amount": 105.79,
+  "merchant": null,
+  "store_address": null,
+  "date": null,
+  "receipt_id": "IMG_2852",
+  "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nEUR\nBanane lose\n1,80 A\n1,398 kg x 1,29 EUR/kg\nKartof.mehr.koch 2kg\n1,59 A\nPaprika rot\n1,59 A\nBauerngurken\n2,99 A\nAvocado\n2,99 A\nDattelcherrytomaten\n1,89 x\n3\n5,67 A\nGurken\n2 0,89 x\n2\n1.78 A\nK.champignons\n2,19 A\nPetersilie kraus\nTTAA\n0,89 A\nDill\n1,59 A\nFresh.BioGem.Franz.\n2,49 A\nBio Brechbohnen\nButterkäse [OGT]\nqqA zu19 bij 2.99 A\n2,69 A\nPreisvorteil\nInobshetani -0,50\nEdamer Scheiben\n2,99 A\nPreisvorteil\n-0,50\nGouda Scheiben\n2,49 A\nPreisvorteil\n-0,40\nFrischkäse Sahnige\n1,69 x 2\n3,38 A\nSpeisequark 40%(OGT)\n1,78 x\n2\n3,56 A\nLatte Macchiato\n0,99 A\nPfand 0,25 7%EM\nKaffeegetLatteMacch.\nPfand 0,25 7XEM\nAyran Joghurtgetränk\nEier Freiland. XXL\nEier Bodenhalt. 18er 3,39 x 5 16,95 A\n0,25 A\n0,99 A\n0,25 A\n0,49 A\n3,99 A\nSonnenmais\n0,99 A\nWasser medium A\nMI0,29 x\n30H38,70 B\nPfand 0,25 EM\n0,25 x\n30\n7,50 B\nMultivitaminsaft\n2,15 B\nRed Bull Energy\n1,75 B\nPfand 0,25 M\n0,25 B\nWeizen Sandwi. Toast 1,09 x 2 2,18 A\nRABATT 20%\n-0,44\nTortilla Wraps Weiz.\n1,29 x\n2\n2,58 A\nCroissant Wien.\n0,99 x\n4\n3,96 A\nHähnchenbrustfilet\n9,99 A\nzu zahlen\n105,79\nKarte\n105,79\nGesamter Preisvorteil\n1,84\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n5,59\n79,85 85,44\nB 19 %\n3,25\n17,10\n20,35\nSumme\n8,84\n96,95\n105,79\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 34.0,
+    "validation_passed": 0.0,
+    "validation_difference": 24.58
+  }
+}

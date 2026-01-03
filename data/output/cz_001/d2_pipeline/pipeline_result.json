@@ -1,0 +1,589 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "SOUCET [ 21 ] CZK",
+        "quantity": null,
+        "price": null,
+        "total": 1135.78,
+        "date": null
+      },
+      {
+        "name": "Zaokrouhleni",
+        "quantity": null,
+        "price": null,
+        "total": 1136.0,
+        "date": null
+      },
+      {
+        "name": "HŘEBÍK STAVEBNÍ ZH 1 52,40 1 ",
+        "quantity": null,
+        "price": null,
+        "total": 0.22,
+        "date": null
+      },
+      {
+        "name": "Vráceno CZK",
+        "quantity": null,
+        "price": null,
+        "total": -64.0,
+        "date": null
+      }
+    ],
+    "total_amount": 1135.78,
+    "merchant": null,
+    "store_address": null,
+    "date": null,
+    "receipt_id": "cz_001",
+    "ocr_text": "436 2398\n98 Prand\n0 225 357 000\nSídlo: Chlumecká 2398, 198 00 P\nDIC CZ47117559\nArt/Ean 7144934\n1,000 JedVýk x\nOPRAVA DESEK/MATERIA\nArt/Ean 8596140003596\n1 Kus X\nPapirová taška HORNB\nArt/Ean 4013307334026\n1 Kus\nRouno zakrývací 1x 3\nArt/Ean 8595100133175\n1 Kus ×\nHYDROIZOLACE JEDNOSL\nArt/Ean 8592390065636\n2 Pár x\nBUCK BILE vel. 10\"/X\nArt/Ean 4004338329914\n20,00\n20,00 1\n7,00\n7,00 1\n95,00\n95,00 1\n575,00\n575,00 1\n22,00\n44,00 1\n4 Kus x\nSedlový úhelník s v\n21,00\n84,00 1\nArt/Ean 4004338332853\n4 Kus\n19,00\nrohový úhelník pozin\n76,00 1\nArt/Ean 8590804039105\n2 Kus\n30,00\nSTERKA VÍCEÚČELOVA P\n60,00 1\nArt/Ean 8595026063846\n1 Kus x\nVáleček malířský 12c\n59,00\n59,00 1\nArt/Ean 4013307322672\n1 Kus x\nNůž odlamovací 18mm,\n23,00\n23,00 1\nArt/Ean 8524\n0,020 kg\nx 613,00\nHAK S METR ZAVITEM Z\n12,26 1\nArt/Ean 9867\n0,099 kg x 284,00\nVRUT UNIV. ZH 4,5x20\n28,12 1\nArt/Ean 6302\n0,246 kg x 213,00\nHŘEBÍK STAVEBNÍ ZH 1\n52,40 1\nSOUCET [21]\nCZK\n1135,78\nZaokrouhleni\nK zaplacení:\nDANO Hotovost\n0,22\n1136,00\nCZK 1200,00\nCZK\nCZK -64,00\nVráceno\nBRUTTO\n1 21 % 1135,78\nDPH\n197,12\nNETTO\n938,66\n55506602203200074376\nčas evidence tržby: 18:05:26\nčíslo pokladny: 11/660/7\nPořadové číslo účtenky: 648560\nOznačení provozovny: 11\nBKP: 2652DA52-EA8A77EC-502B5AD2-BF81F673\n-7E6E6143\nFIK: F002834c-768e-40a2-a365-a51f4782e9d\nc-01\nRežim tržby: běžný\nObsloužil Vás:\nM. Černá\nDěkujeme Vám za Vaši návštěvu.",
+    "detected_locale": "cs_CZ",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 4.0,
+      "validation_passed": 0.0,
+      "validation_difference": 1072.22
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "436 98 Prand 2398",
+        "y_position": 20,
+        "x_min": 446,
+        "x_max": 496,
+        "confidence": 0.732011966407299,
+        "line_number": 0,
+        "words_count": 4
+      },
+      {
+        "text": "Sídlo : Chlumecká 0 2398 225 , 357 198 000 00 P",
+        "y_position": 42,
+        "x_min": 339,
+        "x_max": 525,
+        "confidence": 0.878578801949819,
+        "line_number": 1,
+        "words_count": 12
+      },
+      {
+        "text": "DIC CZ47117559",
+        "y_position": 61,
+        "x_min": 413,
+        "x_max": 496,
+        "confidence": 0.8764033615589142,
+        "line_number": 2,
+        "words_count": 2
+      },
+      {
+        "text": "Art / Ean 1,000 7144934 JedVýk x 20,00",
+        "y_position": 115,
+        "x_min": 333,
+        "x_max": 510,
+        "confidence": 0.9345771595835686,
+        "line_number": 3,
+        "words_count": 8
+      },
+      {
+        "text": "OPRAVA DESEK / MATERIA 20,00 1",
+        "y_position": 135,
+        "x_min": 333,
+        "x_max": 573,
+        "confidence": 0.9761750996112823,
+        "line_number": 4,
+        "words_count": 6
+      },
+      {
+        "text": "Art / Ean 1 Kus 8596140003596 X 7,00",
+        "y_position": 157,
+        "x_min": 332,
+        "x_max": 513,
+        "confidence": 0.9070690758526325,
+        "line_number": 5,
+        "words_count": 8
+      },
+      {
+        "text": "Papirová taška HORNB 7,00 1",
+        "y_position": 176,
+        "x_min": 331,
+        "x_max": 574,
+        "confidence": 0.9429527640342712,
+        "line_number": 6,
+        "words_count": 5
+      },
+      {
+        "text": "Art / Ean Kus 4013307334026 95,00",
+        "y_position": 199,
+        "x_min": 331,
+        "x_max": 513,
+        "confidence": 0.9625137050946554,
+        "line_number": 7,
+        "words_count": 6
+      },
+      {
+        "text": "Rouno 1 zakrývací 1x 3 95,00 1",
+        "y_position": 215,
+        "x_min": 330,
+        "x_max": 578,
+        "confidence": 0.9427225589752197,
+        "line_number": 8,
+        "words_count": 7
+      },
+      {
+        "text": "Art / Ean Kus 8595100133175 × 575,00",
+        "y_position": 243,
+        "x_min": 331,
+        "x_max": 515,
+        "confidence": 0.8652820714882442,
+        "line_number": 9,
+        "words_count": 7
+      },
+      {
+        "text": "HYDROIZOLACE 1 JEDNOSL 575,00 1",
+        "y_position": 259,
+        "x_min": 331,
+        "x_max": 580,
+        "confidence": 0.9437480449676514,
+        "line_number": 10,
+        "words_count": 5
+      },
+      {
+        "text": "Art / Ean 2 Pár 8592390065636 x 22,00",
+        "y_position": 290,
+        "x_min": 330,
+        "x_max": 518,
+        "confidence": 0.9248309955000877,
+        "line_number": 11,
+        "words_count": 8
+      },
+      {
+        "text": "BUCK BILE vel . 10 \" / X 44,00 1",
+        "y_position": 312,
+        "x_min": 331,
+        "x_max": 580,
+        "confidence": 0.866580355167389,
+        "line_number": 12,
+        "words_count": 10
+      },
+      {
+        "text": "Art / Ean 4004338329914 21,00",
+        "y_position": 336,
+        "x_min": 330,
+        "x_max": 518,
+        "confidence": 0.9679726839065552,
+        "line_number": 13,
+        "words_count": 5
+      },
+      {
+        "text": "Sedlový 4 Kus úhelník x s v 84,00 1",
+        "y_position": 353,
+        "x_min": 330,
+        "x_max": 582,
+        "confidence": 0.8813077078925239,
+        "line_number": 14,
+        "words_count": 9
+      },
+      {
+        "text": "Art / Ean 4 Kus 4004338332853 19,00",
+        "y_position": 386,
+        "x_min": 329,
+        "x_max": 519,
+        "confidence": 0.9652604375566755,
+        "line_number": 15,
+        "words_count": 7
+      },
+      {
+        "text": "rohový úhelník pozin 76,00 1",
+        "y_position": 406,
+        "x_min": 329,
+        "x_max": 585,
+        "confidence": 0.9375503659248352,
+        "line_number": 16,
+        "words_count": 5
+      },
+      {
+        "text": "Art / Ean 8590804039105 30,00",
+        "y_position": 431,
+        "x_min": 328,
+        "x_max": 521,
+        "confidence": 0.9574604153633117,
+        "line_number": 17,
+        "words_count": 5
+      },
+      {
+        "text": "STERKA 2 Kus VÍCEÚČELOVA P 60,00 1",
+        "y_position": 447,
+        "x_min": 328,
+        "x_max": 588,
+        "confidence": 0.9297026651246207,
+        "line_number": 18,
+        "words_count": 7
+      },
+      {
+        "text": "Art / Ean 1 Kus 8595026063846 x 59,00",
+        "y_position": 483,
+        "x_min": 328,
+        "x_max": 524,
+        "confidence": 0.905138410627842,
+        "line_number": 19,
+        "words_count": 8
+      },
+      {
+        "text": "Váleček malířský 12c 59,00 1",
+        "y_position": 505,
+        "x_min": 327,
+        "x_max": 589,
+        "confidence": 0.927249813079834,
+        "line_number": 20,
+        "words_count": 5
+      },
+      {
+        "text": "Art / Ean 4013307322672 23,00",
+        "y_position": 533,
+        "x_min": 327,
+        "x_max": 524,
+        "confidence": 0.9672478437423706,
+        "line_number": 21,
+        "words_count": 5
+      },
+      {
+        "text": "Nůž 1 odlamovací Kus x 18mm , 23,00 1",
+        "y_position": 549,
+        "x_min": 327,
+        "x_max": 592,
+        "confidence": 0.8767038914892409,
+        "line_number": 22,
+        "words_count": 9
+      },
+      {
+        "text": "Art / Ean 0,020 8524 kg x 613,00",
+        "y_position": 586,
+        "x_min": 326,
+        "x_max": 525,
+        "confidence": 0.878468744456768,
+        "line_number": 23,
+        "words_count": 8
+      },
+      {
+        "text": "HAK S METR ZAVITEM Z 12,26 1",
+        "y_position": 610,
+        "x_min": 327,
+        "x_max": 593,
+        "confidence": 0.900733300617763,
+        "line_number": 24,
+        "words_count": 7
+      },
+      {
+        "text": "Art / Ean 0,099 9867 kg x 284,00",
+        "y_position": 640,
+        "x_min": 325,
+        "x_max": 527,
+        "confidence": 0.8609368838369846,
+        "line_number": 25,
+        "words_count": 8
+      },
+      {
+        "text": "VRUT UNIV . ZH 4,5x20 28,12 1",
+        "y_position": 665,
+        "x_min": 326,
+        "x_max": 597,
+        "confidence": 0.9140812924930027,
+        "line_number": 26,
+        "words_count": 7
+      },
+      {
+        "text": "Art / Ean 0,246 6302 kg x 213,00",
+        "y_position": 693,
+        "x_min": 324,
+        "x_max": 528,
+        "confidence": 0.8736022114753723,
+        "line_number": 27,
+        "words_count": 8
+      },
+      {
+        "text": "HŘEBÍK STAVEBNÍ ZH 1 52,40 1",
+        "y_position": 720,
+        "x_min": 324,
+        "x_max": 599,
+        "confidence": 0.9433569808801016,
+        "line_number": 28,
+        "words_count": 6
+      },
+      {
+        "text": "SOUCET [ 21 ] CZK 1135,78",
+        "y_position": 761,
+        "x_min": 322,
+        "x_max": 588,
+        "confidence": 0.8646161258220673,
+        "line_number": 29,
+        "words_count": 6
+      },
+      {
+        "text": "Zaokrouhleni 1136,00 0,22",
+        "y_position": 792,
+        "x_min": 322,
+        "x_max": 590,
+        "confidence": 0.9519769549369812,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "K zaplacení :",
+        "y_position": 809,
+        "x_min": 322,
+        "x_max": 408,
+        "confidence": 0.874864399433136,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "DANO Hotovost CZK CZK 1200,00",
+        "y_position": 849,
+        "x_min": 322,
+        "x_max": 590,
+        "confidence": 0.802781754732132,
+        "line_number": 32,
+        "words_count": 5
+      },
+      {
+        "text": "Vráceno CZK -64,00",
+        "y_position": 880,
+        "x_min": 321,
+        "x_max": 592,
+        "confidence": 0.9554834167162577,
+        "line_number": 33,
+        "words_count": 3
+      },
+      {
+        "text": "BRUTTO DPH 938,66 NETTO",
+        "y_position": 910,
+        "x_min": 394,
+        "x_max": 616,
+        "confidence": 0.9845580607652664,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "1 21 % 1135,78 197,12",
+        "y_position": 926,
+        "x_min": 319,
+        "x_max": 527,
+        "confidence": 0.9225306630134582,
+        "line_number": 35,
+        "words_count": 5
+      },
+      {
+        "text": "55506602203200074376",
+        "y_position": 993,
+        "x_min": 396,
+        "x_max": 547,
+        "confidence": 0.9910478591918945,
+        "line_number": 36,
+        "words_count": 1
+      },
+      {
+        "text": "čas evidence tržby : 18:05:26",
+        "y_position": 1063,
+        "x_min": 317,
+        "x_max": 532,
+        "confidence": 0.9235018610954284,
+        "line_number": 37,
+        "words_count": 5
+      },
+      {
+        "text": "číslo pokladny : 11/660/7 648560",
+        "y_position": 1080,
+        "x_min": 317,
+        "x_max": 547,
+        "confidence": 0.9172831535339355,
+        "line_number": 38,
+        "words_count": 5
+      },
+      {
+        "text": "Pořadové číslo účtenky :",
+        "y_position": 1096,
+        "x_min": 316,
+        "x_max": 491,
+        "confidence": 0.9294804185628891,
+        "line_number": 39,
+        "words_count": 4
+      },
+      {
+        "text": "Označení 2652DA52 provozovny EA8A77EC : 11 - 502B5AD2 - BF81F673",
+        "y_position": 1115,
+        "x_min": 316,
+        "x_max": 627,
+        "confidence": 0.9655730128288269,
+        "line_number": 40,
+        "words_count": 10
+      },
+      {
+        "text": "BKP : -",
+        "y_position": 1131,
+        "x_min": 316,
+        "x_max": 423,
+        "confidence": 0.9410229523976644,
+        "line_number": 41,
+        "words_count": 3
+      },
+      {
+        "text": "-7E6E6143 F002834c 768e - 40a2 - a365 - a51f4782e9d",
+        "y_position": 1149,
+        "x_min": 315,
+        "x_max": 627,
+        "confidence": 0.9651644494798448,
+        "line_number": 42,
+        "words_count": 9
+      },
+      {
+        "text": "FIK : -",
+        "y_position": 1165,
+        "x_min": 315,
+        "x_max": 422,
+        "confidence": 0.9406225681304932,
+        "line_number": 43,
+        "words_count": 3
+      },
+      {
+        "text": "c - 01 : běžný",
+        "y_position": 1183,
+        "x_min": 314,
+        "x_max": 455,
+        "confidence": 0.8859678506851196,
+        "line_number": 44,
+        "words_count": 5
+      },
+      {
+        "text": "Režim tržby Vás",
+        "y_position": 1199,
+        "x_min": 314,
+        "x_max": 447,
+        "confidence": 0.9118963479995728,
+        "line_number": 45,
+        "words_count": 3
+      },
+      {
+        "text": "Obsloužil :",
+        "y_position": 1215,
+        "x_min": 345,
+        "x_max": 454,
+        "confidence": 0.8581482768058777,
+        "line_number": 46,
+        "words_count": 2
+      },
+      {
+        "text": "M. Černá",
+        "y_position": 1234,
+        "x_min": 345,
+        "x_max": 410,
+        "confidence": 0.9009993076324463,
+        "line_number": 47,
+        "words_count": 2
+      },
+      {
+        "text": "Děkujeme Vám za Vaši návštěvu .",
+        "y_position": 1264,
+        "x_min": 352,
+        "x_max": 589,
+        "confidence": 0.7600975831349691,
+        "line_number": 48,
+        "words_count": 6
+      }
+    ],
+    "image_width": 960,
+    "image_height": 1280,
+    "total_words": 284,
+    "total_lines": 49
+  },
+  "locale": {
+    "locale_code": "cs_CZ",
+    "confidence": 0.17647058823529413,
+    "matched_keywords": [
+      "k zaplacení",
+      "dph",
+      "czk"
+    ],
+    "scores": {
+      "pt_PT": 0,
+      "cs_CZ": 3,
+      "es_ES": 0,
+      "pl_PL": 0,
+      "de_DE": 2
+    }
+  },
+  "store": {
+    "store_name": null,
+    "store_address": null,
+    "confidence": 0.0,
+    "matched_in_line": -1
+  },
+  "metadata": {
+    "receipt_date": null,
+    "receipt_total": 1135.78,
+    "currency": "CZK",
+    "date_raw": null,
+    "total_raw": "1135,78 ",
+    "total_line_number": 35
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "SOUCET [ 21 ] CZK",
+        "quantity": null,
+        "price": null,
+        "total": 1135.78,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 29,
+        "raw_text": "SOUCET [ 21 ] CZK 1135,78"
+      },
+      {
+        "name": "Zaokrouhleni",
+        "quantity": null,
+        "price": null,
+        "total": 1136.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 30,
+        "raw_text": "Zaokrouhleni 1136,00"
+      },
+      {
+        "name": "HŘEBÍK STAVEBNÍ ZH 1 52,40 1 ",
+        "quantity": null,
+        "price": null,
+        "total": 0.22,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 30,
+        "raw_text": "0,22"
+      },
+      {
+        "name": "Vráceno CZK",
+        "quantity": null,
+        "price": null,
+        "total": -64.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 33,
+        "raw_text": "Vráceno CZK -64,00"
+      }
+    ],
+    "discounts": [],
+    "items_count": 4,
+    "discounts_count": 0,
+    "items_total": 2207.9999999999995,
+    "discounts_total": 0,
+    "skipped_lines": 32,
+    "parsed_lines": 4
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 2207.9999999999995,
+    "discounts_sum": 0,
+    "calculated_total": 2208.0,
+    "receipt_total": 1135.78,
+    "difference": 1072.22,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=2208.0, receipt=1135.78, diff=1072.22 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.3328857421875,
+  "stages_completed": 6
+}

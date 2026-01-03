@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "name": "Mars Einzelriegel , T ( 592 )",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-09-27 00:00:00"
+    },
+    {
+      "name": "Mars Einzelriege , Sn ( 505 )",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-09-27 00:00:00"
+    },
+    {
+      "name": "Pepsi sleek Dose ( 091 )",
+      "quantity": null,
+      "price": null,
+      "total": 0.89,
+      "date": "2025-09-27 00:00:00"
+    },
+    {
+      "name": "Pfand ( 005 )",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-09-27 00:00:00"
+    }
+  ],
+  "total_amount": 3.12,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": "2025-09-27 00:00:00",
+  "receipt_id": "IMG_3007",
+  "ocr_text": "HIT\nECHTE\nVIELFALT\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nLEBENSMITTEL\nPreis €\n*** Discount Preis ***\nMars Einzelriegel, T (592)\n0,99 B\n*** Discount Preis ***\nMars Einzelriege, Sn\n(505)\n0,99 B\nGETRÄNKE\nPepsi sleek Dose\n(091)\n0,89 A\nPFAND/LEERGUT\nPfand 0,25\n(005)\n0,25 A*\nSUMME [4]\n3,12\nGirocard\n3,12\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID :\nTA-Nr 454278\nKartenzahlung\nkontaktlos\ngirocard\nEUR 3,12\n61724238\nBNr 3285\nPAN\nKarte12\nEMV-AID\ngültig bis\nA000000359101002800101\nVU-Nr\nGenehmigungs-Nr\nDatum 27.09.25\n####1324\n##/##\n290777\n432855\n15:55 Uhr\nEMV-Daten\nA800///3030\n00 Zahlung erfolgt\nBITTE BELEG AUFBEWAHREN\nSteuer NETTO [e] MWST [€] BRUTTO [€]\nA=19,00%\nB= 7,00%\n0,96\n1,85\n0,18\n0,13\n1,14\n1.98\nDie mit * gekennzeichneten Artikel sind\nnicht rabattfähig.\n0014033270925010000537\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 4.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "dto": {
+    "items": [],
+    "total_amount": 179.24,
+    "merchant": "Hit",
+    "store_address": null,
+    "date": null,
+    "receipt_id": "IMG_3017",
+    "ocr_text": "2019\nPreisvorteil\n5149.0\nhauser Auel 1\nLachsseite m.h.\n1,369 kg x 14,99\nDattelcherrytomaten\nBio Avocado 2Stück\nth-Vilkerath\nЯO EUR\n9620,52 A\n1,3)\n5.97 A\nA\nKnoblauch\n0,\n0,89\n10\nGurken\n0.75 x 2 1,50 A\nDill\n1.39 A\nBioland Zwiebeln\n1,79 A\nSaure Sahne 10%\n0,69 x 4\n2,76 A\nDevgan Fam 33% Fett\n2,29 x 4\n9,16 A\nFrischkäse Sahnige\n1,69 x\n4\n6,76 A\nButterkase [OGT]\n2,99 x 2\n5,98 A\nFarmerschinken\n2,29 A\nThisiter Scheiben\n2,99 x 2\n5,98 A\nEdamer Scheiben\n2,99 x 2\n5,98 A\nEdelsalami geschnit.\n1,79 A\nPreisvorteil\nble. Schinken\n29 A\nHaltbare Sahne\n0,99 x 9 8,01 A\nRabattaktion\n-0,90\nSchmand\n0,99 x 4 3,96 A\nRabattaktion\n-0.40\nEier Freiland. XXL\nPaprika edelsüß\n23TTABAS\n3,99 A\n0,85 A\nThunfisch in öl\n4,99 A\nOro d.P stück.Tomate\n1,99 x\n4\n7,96 A\nBio Passierte Tomat.\n0,69 x\n2\n1,38 A\nWasser still\n0,29 x\n18\n5,22 B\nPfand 0,25 EM\n0,25 x\n18\n4,50 B\nFarmer Cookies Hazel\n1,79 A\nHamburger Brötchen\n0,99 A\nMegaBurger/Hamburger 0,99 x\n2\n1,98 A\nWeizen Sandwi. Toast 1,09 x\n2\n2,18 A\nMilchbrötchen\n1,99 A\nPreisvorteil\n-0.10\nFarmer Cookies White\n1,79 A\nFarmer Cookie Triple\n1,79 A\nSchinkengulasch 5,79 x 2 11,58 A\nMinutensteaks\n5,59 A\nHackfleisch gemischt 5,99 x 2 11,98 A\nHamburger v. Rind\nHähnchenbrustfilet\n10,99 A\n9,99 A\nKarte\nzu zahlen\nGesamter Preisvorteil\nM179,24\n99A 179,24\n1,60\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n11,09\n158,43\n169,52\nB 19 %\nSumme\n1,55\n12,64\n8,17\n166,60\n9,72\n179,24\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 0.0,
+      "validation_passed": 0.0,
+      "validation_difference": 179.24
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "¦ Summe B A Gesamter Karte zu Hähnchenbrustfilet Hamburger Hackfleisch Minutensteaks Schinkengulasch Farmer Farmer Preisvorteil Milchbrötchen Weizen MegaBurger Hamburger Farmer Pfand Wasser Bio Oro Thunfisch Paprika Eier Schmand Haltbare ble Preisvorteil Edelsalami Edamer Thisiter Farmerschinken Butterkase Frischkäse Devgan Saure",
+        "y_position": 306,
+        "x_min": 21,
+        "x_max": 1597,
+        "confidence": 0.9281969211804562,
+        "line_number": 0,
+        "words_count": 39
+      },
+      {
+        "text": "und MWST Bioland Dill Gurken Knoblauch Preisvorteil Bio Dattelcherrytomaten Lachsseite",
+        "y_position": 323,
+        "x_min": 0,
+        "x_max": 1898,
+        "confidence": 0.9562740683555603,
+        "line_number": 1,
+        "words_count": 10
+      },
+      {
+        "text": "Lade 19 7 zahlen",
+        "y_position": 339,
+        "x_min": 27,
+        "x_max": 403,
+        "confidence": 0.9816669374704361,
+        "line_number": 2,
+        "words_count": 4
+      },
+      {
+        "text": "Passierte d.P . 1,369",
+        "y_position": 358,
+        "x_min": 963,
+        "x_max": 1862,
+        "confidence": 0.9176135659217834,
+        "line_number": 3,
+        "words_count": 4
+      },
+      {
+        "text": "spare % % % Freiland Rabattaktion Rabattaktion Schinken Avocado",
+        "y_position": 374,
+        "x_min": 0,
+        "x_max": 1793,
+        "confidence": 0.9067655404408773,
+        "line_number": 4,
+        "words_count": 9
+      },
+      {
+        "text": "Cookie Cookies Sandwi Cookies 0,25 still Scheiben Sahne",
+        "y_position": 398,
+        "x_min": 621,
+        "x_max": 1596,
+        "confidence": 0.977849580347538,
+        "line_number": 5,
+        "words_count": 8
+      },
+      {
+        "text": "dir stück.Tomate edelsüß Fam",
+        "y_position": 419,
+        "x_min": 34,
+        "x_max": 1563,
+        "confidence": 0.9294902682304382,
+        "line_number": 6,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil v Sahne Scheiben Zwiebeln kg",
+        "y_position": 435,
+        "x_min": 278,
+        "x_max": 1857,
+        "confidence": 0.9640377561251322,
+        "line_number": 7,
+        "words_count": 6
+      },
+      {
+        "text": "bei . / Hamburger Brötchen in",
+        "y_position": 452,
+        "x_min": 0,
+        "x_max": 1059,
+        "confidence": 0.9825236896673838,
+        "line_number": 8,
+        "words_count": 6
+      },
+      {
+        "text": "die 12,64 11,09 gemischt EM geschnit [ Sahnige 33 x m.h. 5149.0",
+        "y_position": 469,
+        "x_min": 36,
+        "x_max": 1955,
+        "confidence": 0.9365969747304916,
+        "line_number": 9,
+        "words_count": 12
+      },
+      {
+        "text": "1,55 MWST Rind . öl . OGT % 10 2Stück",
+        "y_position": 487,
+        "x_min": 157,
+        "x_max": 1787,
+        "confidence": 0.9179024338722229,
+        "line_number": 10,
+        "words_count": 10
+      },
+      {
+        "text": "Triple Tomat % 14,99",
+        "y_position": 504,
+        "x_min": 620,
+        "x_max": 1853,
+        "confidence": 0.9797308892011642,
+        "line_number": 11,
+        "words_count": 4
+      },
+      {
+        "text": "deinem White Toast Hazel XXL ] Fett",
+        "y_position": 520,
+        "x_min": 0,
+        "x_max": 1562,
+        "confidence": 0.9516589045524597,
+        "line_number": 12,
+        "words_count": 7
+      },
+      {
+        "text": "Lidl",
+        "y_position": 536,
+        "x_min": 37,
+        "x_max": 62,
+        "confidence": 0.8257999420166016,
+        "line_number": 13,
+        "words_count": 1
+      },
+      {
+        "text": "hauser 2019",
+        "y_position": 557,
+        "x_min": 1949,
+        "x_max": 2028,
+        "confidence": 0.8013570308685303,
+        "line_number": 14,
+        "words_count": 2
+      },
+      {
+        "text": "+ . 23TTABAS .",
+        "y_position": 575,
+        "x_min": 216,
+        "x_max": 1362,
+        "confidence": 0.8403058052062988,
+        "line_number": 15,
+        "words_count": 4
+      },
+      {
+        "text": "Plus 5,99 5,79 0,99 th",
+        "y_position": 602,
+        "x_min": 35,
+        "x_max": 1940,
+        "confidence": 0.9704697608947754,
+        "line_number": 16,
+        "words_count": 5
+      },
+      {
+        "text": "nächsten 166,60 158,43 Netto M179,24 1,09 0,25 0,29 0,69 1,99 0,99 0,99 2,99 2,99 2,99 1,69 2,29 0,69 0.75",
+        "y_position": 618,
+        "x_min": 0,
+        "x_max": 1690,
+        "confidence": 0.9581963106205589,
+        "line_number": 17,
+        "words_count": 19
+      },
+      {
+        "text": "8,17 1,3 Vilkerath -",
+        "y_position": 634,
+        "x_min": 147,
+        "x_max": 1940,
+        "confidence": 0.9619968980550766,
+        "line_number": 18,
+        "words_count": 4
+      },
+      {
+        "text": "99A Auel",
+        "y_position": 656,
+        "x_min": 339,
+        "x_max": 1977,
+        "confidence": 0.6618747860193253,
+        "line_number": 19,
+        "words_count": 2
+      },
+      {
+        "text": "App x x x x x x x )",
+        "y_position": 672,
+        "x_min": 28,
+        "x_max": 1811,
+        "confidence": 0.8308755954106649,
+        "line_number": 20,
+        "words_count": 9
+      },
+      {
+        "text": "x x x x x x x x x x",
+        "y_position": 688,
+        "x_min": 996,
+        "x_max": 1688,
+        "confidence": 0.7495596289634705,
+        "line_number": 21,
+        "words_count": 10
+      },
+      {
+        "text": "herunter = 18 18 9620,52 1",
+        "y_position": 719,
+        "x_min": 20,
+        "x_max": 1974,
+        "confidence": 0.9219161570072174,
+        "line_number": 22,
+        "words_count": 6
+      },
+      {
+        "text": "Einkauf 2 2 2 2 2 4 4 9 2 2 2 4 4 4 2 ЯO",
+        "y_position": 740,
+        "x_min": 0,
+        "x_max": 1908,
+        "confidence": 0.9201585106989917,
+        "line_number": 23,
+        "words_count": 17
+      },
+      {
+        "text": "179,24 169,52 Brutto 179,24",
+        "y_position": 767,
+        "x_min": 113,
+        "x_max": 378,
+        "confidence": 0.9487141072750092,
+        "line_number": 24,
+        "words_count": 4
+      },
+      {
+        "text": "9,72 9,99 10,99 11,98 5,59 11,58 1,79 1,79 -0.10 1,99 0,99 1,79 4,99 0,85 3,99 -0.40 -0,90",
+        "y_position": 789,
+        "x_min": 153,
+        "x_max": 1226,
+        "confidence": 0.9642922422465157,
+        "line_number": 25,
+        "words_count": 17
+      },
+      {
+        "text": "2,18 1,98 4,50 5,22 1,38 7,96 3,96 8,01 1,79 5,98 5,98 2,29 5,98 6,76 9,16 2,76 1,79 1.39 0,89 0 5.97",
+        "y_position": 807,
+        "x_min": 761,
+        "x_max": 1808,
+        "confidence": 0.9308639566103617,
+        "line_number": 26,
+        "words_count": 21
+      },
+      {
+        "text": "29 1,50 EUR",
+        "y_position": 823,
+        "x_min": 1266,
+        "x_max": 1913,
+        "confidence": 0.8520657817522684,
+        "line_number": 27,
+        "words_count": 3
+      },
+      {
+        "text": "1,60 ,",
+        "y_position": 839,
+        "x_min": 284,
+        "x_max": 1739,
+        "confidence": 0.8375278413295746,
+        "line_number": 28,
+        "words_count": 2
+      },
+      {
+        "text": "A A A A A A A A A A 10",
+        "y_position": 856,
+        "x_min": 485,
+        "x_max": 1744,
+        "confidence": 0.9413707012479956,
+        "line_number": 29,
+        "words_count": 11
+      },
+      {
+        "text": "A A A A A B B A A A A A A A A A A",
+        "y_position": 872,
+        "x_min": 449,
+        "x_max": 1879,
+        "confidence": 0.9742659645922044,
+        "line_number": 30,
+        "words_count": 17
+      },
+      {
+        "text": "A A A A A A A A A",
+        "y_position": 889,
+        "x_min": 1165,
+        "x_max": 1808,
+        "confidence": 0.9816272324985928,
+        "line_number": 31,
+        "words_count": 9
+      }
+    ],
+    "image_width": 2200,
+    "image_height": 1237,
+    "total_words": 286,
+    "total_lines": 32
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "bar",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 12
+  },
+  "metadata": {
+    "receipt_date": null,
+    "receipt_total": 179.24,
+    "currency": "EUR",
+    "date_raw": null,
+    "total_raw": "179,24 ",
+    "total_line_number": 24
+  },
+  "semantic": {
+    "items": [],
+    "discounts": [],
+    "items_count": 0,
+    "discounts_count": 0,
+    "items_total": 0,
+    "discounts_total": 0,
+    "skipped_lines": 23,
+    "parsed_lines": 0
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 0,
+    "discounts_sum": 0,
+    "calculated_total": 0,
+    "receipt_total": 179.24,
+    "difference": 179.24,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=0, receipt=179.24, diff=179.24 (tolerance=0.05)"
+  },
+  "processing_time_ms": 21.70419692993164,
+  "stages_completed": 6
+}

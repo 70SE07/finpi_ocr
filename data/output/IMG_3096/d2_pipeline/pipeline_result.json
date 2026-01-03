@@ -1,0 +1,389 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Verbrauchermarkt rabattfähig Daten AID 4033 [ 1 LEERGUT di",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-05-22 00:00:00"
+      },
+      {
+        "name": "% BITTE 22.05.25 0 252325 Overath -K ]",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-05-22 00:00:00"
+      },
+      {
+        "name": ". AUFBEWAHREN 075 CREDIT N 00-22 Overath",
+        "quantity": null,
+        "price": null,
+        "total": 19.49,
+        "date": "2025-05-22 00:00:00"
+      },
+      {
+        "name": "L - 00 : .",
+        "quantity": null,
+        "price": null,
+        "total": 3.11,
+        "date": "2025-05-22 00:00:00"
+      }
+    ],
+    "total_amount": 19.49,
+    "merchant": "Hit",
+    "store_address": null,
+    "date": "2025-05-22 00:00:00",
+    "receipt_id": "IMG_3096",
+    "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nWEIN/SPIRITUOSEN/SEKT/CHAMPAPreis €\nRonco di Sassi Prim (621)\n19,99 A\nPFAND/LEERGUT\nLeergut 0,25 VMW (108)\n-0,50 A*\n-2x 0,25 €\nSUMME [1]\nVisa\n19,49\n19,49\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID:\n61724235\nTA-Nr 252325\nPAN\nKarte 0\nEMV-AID\nVU-Nr\nKartenzahlung\nVisa kontaktlos\nVISA CREDIT\nEUR\nGenehmigungs-Nr\nDatum 22.05.25\nEMV-Daten\n19,49\nBNr 7461\n############4474\ngültig bis ##/##\nA0000000031010\n4556475983\n0000000000/0000////3030\n00 GENEHMIGUNG KARTE\nGEPRUEFT\nAS-Proc-Code: 00 075 00\nAPPROVED\n396106\n19:58 Uhr\nBITTE BELEG AUFBEWAHREN\nSteuer NETTO [€] MWST [€] BRUTTO [€]\nA=19,00%\n16,38\n3,11\n19.49\nDie mit * gekennzeichneten Artikel sind\nnicht rabattfähig.\n0014033220525006000413\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025\n22.05.25 19:59 4033 06 0413 36\nDatum Zeit Fil. Pos Bon Lade\nVielen Dank für Ihren Einkauf!",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 4.0,
+      "validation_passed": 0.0,
+      "validation_difference": 3.610000000000003
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "22.05.25 Datum nicht Die A Steuer Visa SUMME Leergut PFAND Ronco WEIN",
+        "y_position": 341,
+        "x_min": 118,
+        "x_max": 1706,
+        "confidence": 0.9807068904240926,
+        "line_number": 0,
+        "words_count": 12
+      },
+      {
+        "text": "HIT = 19,00 APPROVED AS GEPRUEFT 00 0000000000/0000 EMV Datum Genehmigungs VU EMV Karte PAN TA Terminal 51491 Probsteistr HIT -2x",
+        "y_position": 361,
+        "x_min": 400,
+        "x_max": 1583,
+        "confidence": 0.9684454458100455,
+        "line_number": 1,
+        "words_count": 21
+      },
+      {
+        "text": "Vielen mit - Proc GENEHMIGUNG - - Nr - - Nr / SPIRITUOSEN /",
+        "y_position": 396,
+        "x_min": 94,
+        "x_max": 1704,
+        "confidence": 0.9702006493295942,
+        "line_number": 2,
+        "words_count": 14
+      },
+      {
+        "text": "Verbrauchermarkt rabattfähig Daten AID 4033 [ 1 0,25 LEERGUT di",
+        "y_position": 414,
+        "x_min": 399,
+        "x_max": 1672,
+        "confidence": 0.9552579581737518,
+        "line_number": 3,
+        "words_count": 10
+      },
+      {
+        "text": "* % BITTE 22.05.25 0 252325 Overath -K ] 0,25",
+        "y_position": 435,
+        "x_min": 569,
+        "x_max": 1613,
+        "confidence": 0.8708987593650818,
+        "line_number": 4,
+        "words_count": 10
+      },
+      {
+        "text": "19:59 Zeit USt 0014033220525006000413 gekennzeichneten NETTO - Code - Sassi MO Probsteistraße",
+        "y_position": 460,
+        "x_min": 129,
+        "x_max": 1850,
+        "confidence": 0.9613653918107351,
+        "line_number": 5,
+        "words_count": 12
+      },
+      {
+        "text": "EUR Visa ID - Overath U - € -",
+        "y_position": 476,
+        "x_min": 1164,
+        "x_max": 1755,
+        "confidence": 0.9687666429413689,
+        "line_number": 6,
+        "words_count": 9
+      },
+      {
+        "text": "Dank BELEG Kartenzahlung N SA Öffnungszeiten HIT",
+        "y_position": 494,
+        "x_min": 105,
+        "x_max": 1874,
+        "confidence": 0.9819498317582267,
+        "line_number": 7,
+        "words_count": 7
+      },
+      {
+        "text": "- ID 16,38 : - VISA . - VMW 51491",
+        "y_position": 510,
+        "x_min": 379,
+        "x_max": 1815,
+        "confidence": 0.9581225395202637,
+        "line_number": 8,
+        "words_count": 10
+      },
+      {
+        "text": "Nr : 18-22 D - Prim 08",
+        "y_position": 529,
+        "x_min": 1005,
+        "x_max": 1755,
+        "confidence": 0.9650243094989231,
+        "line_number": 9,
+        "words_count": 7
+      },
+      {
+        "text": "für 4033 Fil : [ € 00 KARTE //// kontaktlos E / 033 VIELFALT HIT",
+        "y_position": 545,
+        "x_min": 109,
+        "x_max": 2013,
+        "confidence": 0.880261492729187,
+        "line_number": 10,
+        "words_count": 15
+      },
+      {
+        "text": "DE276299025 . ] gültig - SEKT : ECHTE",
+        "y_position": 561,
+        "x_min": 379,
+        "x_max": 1961,
+        "confidence": 0.9396403804421425,
+        "line_number": 11,
+        "words_count": 8
+      },
+      {
+        "text": ". AUFBEWAHREN 075 19,49 CREDIT N 00-22 Overath",
+        "y_position": 577,
+        "x_min": 166,
+        "x_max": 1811,
+        "confidence": 0.9008067697286606,
+        "line_number": 12,
+        "words_count": 8
+      },
+      {
+        "text": "Ihren MWST ############ B - Overath",
+        "y_position": 593,
+        "x_min": 93,
+        "x_max": 1868,
+        "confidence": 0.9605503976345062,
+        "line_number": 13,
+        "words_count": 6
+      },
+      {
+        "text": "06 Pos 3030 A0000000031010 - ( ( /",
+        "y_position": 609,
+        "x_min": 126,
+        "x_max": 1699,
+        "confidence": 0.92388004809618,
+        "line_number": 14,
+        "words_count": 8
+      },
+      {
+        "text": "Overath 00 E 108 621 CHAMPAPreis",
+        "y_position": 628,
+        "x_min": 399,
+        "x_max": 1699,
+        "confidence": 0.9816004037857056,
+        "line_number": 15,
+        "words_count": 6
+      },
+      {
+        "text": "3,11 L - 00 : .",
+        "y_position": 645,
+        "x_min": 623,
+        "x_max": 1945,
+        "confidence": 0.918560783068339,
+        "line_number": 16,
+        "words_count": 6
+      },
+      {
+        "text": "Einkauf [ 4556475983 bis - ) ) 18-22",
+        "y_position": 661,
+        "x_min": 72,
+        "x_max": 1840,
+        "confidence": 0.9492088407278061,
+        "line_number": 17,
+        "words_count": 8
+      },
+      {
+        "text": "0413 Bon Artikel € 19:58 E Uhr",
+        "y_position": 679,
+        "x_min": 111,
+        "x_max": 1753,
+        "confidence": 0.8639931487185615,
+        "line_number": 18,
+        "words_count": 7
+      },
+      {
+        "text": "] 61724235 G- -",
+        "y_position": 698,
+        "x_min": 651,
+        "x_max": 1444,
+        "confidence": 0.8756405115127563,
+        "line_number": 19,
+        "words_count": 4
+      },
+      {
+        "text": "GmbH BRUTTO 396106 BNr -0,50 19,99",
+        "y_position": 714,
+        "x_min": 398,
+        "x_max": 1666,
+        "confidence": 0.9651354551315308,
+        "line_number": 20,
+        "words_count": 6
+      },
+      {
+        "text": "! 36 Lade ## 4474",
+        "y_position": 738,
+        "x_min": 68,
+        "x_max": 1130,
+        "confidence": 0.9625761985778809,
+        "line_number": 21,
+        "words_count": 5
+      },
+      {
+        "text": "Uhr / ## 7461",
+        "y_position": 760,
+        "x_min": 976,
+        "x_max": 1297,
+        "confidence": 0.9609600305557251,
+        "line_number": 22,
+        "words_count": 4
+      },
+      {
+        "text": "& sind 19.49 19,49 19,49 €",
+        "y_position": 779,
+        "x_min": 398,
+        "x_max": 1694,
+        "confidence": 0.9040697614351908,
+        "line_number": 23,
+        "words_count": 6
+      },
+      {
+        "text": "[ A * A",
+        "y_position": 795,
+        "x_min": 651,
+        "x_max": 1666,
+        "confidence": 0.8944268077611923,
+        "line_number": 24,
+        "words_count": 4
+      },
+      {
+        "text": "€ ]",
+        "y_position": 819,
+        "x_min": 651,
+        "x_max": 672,
+        "confidence": 0.642440676689148,
+        "line_number": 25,
+        "words_count": 2
+      }
+    ],
+    "image_width": 2200,
+    "image_height": 1237,
+    "total_words": 215,
+    "total_lines": 26
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "ust",
+      "steuer",
+      "netto",
+      "brutto",
+      "eur",
+      "beleg",
+      "pfand",
+      "leergut"
+    ],
+    "scores": {
+      "pt_PT": 1,
+      "cs_CZ": 0,
+      "es_ES": 1,
+      "pl_PL": 0,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 1
+  },
+  "metadata": {
+    "receipt_date": "2025-05-22",
+    "receipt_total": 19.49,
+    "currency": "EUR",
+    "date_raw": "22.05.25",
+    "total_raw": "19.49 ",
+    "total_line_number": 23
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Verbrauchermarkt rabattfähig Daten AID 4033 [ 1 LEERGUT di",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 3,
+        "raw_text": "Verbrauchermarkt rabattfähig Daten AID 4033 [ 1 0,25 LEERGUT di"
+      },
+      {
+        "name": "% BITTE 22.05.25 0 252325 Overath -K ]",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "* % BITTE 22.05.25 0 252325 Overath -K ] 0,25"
+      },
+      {
+        "name": ". AUFBEWAHREN 075 CREDIT N 00-22 Overath",
+        "quantity": null,
+        "price": null,
+        "total": 19.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": ". AUFBEWAHREN 075 19,49 CREDIT N 00-22 Overath"
+      },
+      {
+        "name": "L - 00 : .",
+        "quantity": null,
+        "price": null,
+        "total": 3.11,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "3,11 L - 00 : ."
+      }
+    ],
+    "discounts": [],
+    "items_count": 4,
+    "discounts_count": 0,
+    "items_total": 23.099999999999998,
+    "discounts_total": 0,
+    "skipped_lines": 11,
+    "parsed_lines": 4
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 23.099999999999998,
+    "discounts_sum": 0,
+    "calculated_total": 23.1,
+    "receipt_total": 19.49,
+    "difference": 3.610000000000003,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=23.1, receipt=19.49, diff=3.61 (tolerance=0.05)"
+  },
+  "processing_time_ms": 19.855260848999023,
+  "stages_completed": 6
+}

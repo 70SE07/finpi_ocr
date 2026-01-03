@@ -1,0 +1,23 @@
+{
+  "id": "de_DE_014_de_DE_edeka_IMG_1896",
+  "receipt_id": "014_de_DE_edeka_IMG_1896",
+  "locale": "de_DE",
+  "store": "unknown",
+  "source_file": "IMG_1896",
+  "artifacts": [
+    {
+      "type": "WORD_SPLIT",
+      "ocr_text": "NOT FOUND",
+      "expected_text": "Red Bull 0,25l",
+      "context": "Red Bull 0,25l",
+      "suggestion": "Проверить разрыв слова или потерю символов"
+    }
+  ],
+  "statistics": {
+    "total_words": 165,
+    "artifacts_found": 1,
+    "by_type": {
+      "WORD_SPLIT": 1
+    }
+  }
+}

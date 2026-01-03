@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "name": "Taschki Pelm.Schwein",
+      "quantity": null,
+      "price": null,
+      "total": 6.99,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Langnese Magnum Mand",
+      "quantity": null,
+      "price": null,
+      "total": 4.49,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Plombir Tutti Frutti",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Edamer Scheiben",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Butterkäse [ OGT ]",
+      "quantity": null,
+      "price": null,
+      "total": 2.99,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Gouda in ScheibenXXL 4,29 x 2",
+      "quantity": 4.29,
+      "price": null,
+      "total": 8.58,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Frischkäse Sahnige 1,69 x 4",
+      "quantity": 1.69,
+      "price": null,
+      "total": 6.76,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Ayran Joghurtgetränk 0,49 x 2",
+      "quantity": 0.49,
+      "price": null,
+      "total": 0.98,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Wasser still 0,29 x 24",
+      "quantity": 0.29,
+      "price": null,
+      "total": 6.96,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Pfand EM x 24",
+      "quantity": 0.25,
+      "price": 0.25,
+      "total": 6.0,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Jack Daniel's & Cola 2,99 x 2",
+      "quantity": 2.99,
+      "price": null,
+      "total": 5.98,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Pfand M 2 x 2",
+      "quantity": 20.25,
+      "price": 0.25,
+      "total": 0.5,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Croissant Wien . 0,99 x 2",
+      "quantity": 0.99,
+      "price": null,
+      "total": 1.98,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Lenor Unstoppa.Fresh",
+      "quantity": null,
+      "price": null,
+      "total": 11.99,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Toilettenpapier XXL",
+      "quantity": null,
+      "price": null,
+      "total": 6.39,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Persil Univer.Pulver Я",
+      "quantity": null,
+      "price": null,
+      "total": 15.99,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Putenbrustfilet HD",
+      "quantity": null,
+      "price": null,
+      "total": 9.29,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Schinkengulasch QS 4,19 x 4",
+      "quantity": 4.19,
+      "price": null,
+      "total": 16.76,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Hackfleisch gem . XXL 6,99 x 4",
+      "quantity": 6.99,
+      "price": null,
+      "total": 27.96,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "Putenbrustschnitzel",
+      "quantity": null,
+      "price": null,
+      "total": 5.29,
+      "date": "2025-08-07 00:00:00"
+    },
+    {
+      "name": "2025-08-07T10 : 53 : OZ",
+      "quantity": null,
+      "price": null,
+      "total": 44.0,
+      "date": "2025-08-07 00:00:00"
+    }
+  ],
+  "total_amount": 146.32,
+  "merchant": null,
+  "store_address": null,
+  "date": "2025-08-07 00:00:00",
+  "receipt_id": "IMG_1336",
+  "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nMU\nEUR\nTaschki Pelm.Schwein\n6,99 A\nLangnese Magnum Mand\n4,49 A\nPlombir Tutti Frutti\n2,99 A\nEdamer Scheiben\n2,99 A\nPreisvorteil\n-0,50\nButterkäse [OGT]\n2,99 A\nGouda in ScheibenXXL\n4,29 x\n2\n8,58 A\nFrischkäse Sahnige\n1,69 x\n4\n6,76 A\nAyran Joghurtgetränk\n0,49 x\n2\n0,98 A\nWasser still\n0,29 x\n24\n6,96 B\nPfand 0,25 EM\n0,25 x 24\n6,00 B\nJack Daniel's & Cola 2,99 x\n2\n5,98 B\nPfand 0,25 M 20,25 x\n2\n0,50 B\nCroissant Wien.\n0,99 x\n2\n1,98 A\nLenor Unstoppa.Fresh\n11,99 B\nToilettenpapier XXL\nPersil Univer.Pulver\nPutenbrustfilet\n6,39 B\nЯ 15,99 B\nRABATT 20%\nHD 9,29 A\n-1,86\nSchinkengulasch QS\n4,19 x\n4 16,76 A\nRabatt Gulasch\n-1,68\nHackfleisch gem. XXL 6,99 x 4 27,96 A\nPutenbrustschnitzel\nPreisvorteil\nzu zahlen\nKarte\n5,29 A\n-1,50\n146,32\n146,32\nGesamter Preisvorteil\n5,54\nMWSTX\nMWST +\nNetto = Brutto\nA 7 %\n6,05\n86,46\n92,51\nB 19 %\n8,59\n45,22\n53,81\nSumme\n14,64\n131,68\n146,32\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf\nTSE Transaktionsnummer: 1216214\nSeriennr. Kasse: LDL-000-6496-1\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: LT0ee/928pUZSMxLa7IYNziNAbac9r8E\n9EgQAoZ2/VxeFMOQcmwmUV2wcz/ReQXeurHzhruxMz\n33mNWPIrpe0bx5PAy03s15pgEg7XNH1e3tw/M874ip\ncp9KFzYJqWu4\nSignaturzähler: 2482255\n2025-08-07T10:53:44.00OZ\n2025-08-07T10:55:03.000Z\n6496 625579/01\n814060660\n07.08.25 12:53\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag MоИ322A\n146,32 EUR\n07.08.2025\n12:53\nT-ID 60155114\nTA-Nr. 159961\nBeleg-Nr. 6424\nKartennr.\n####\n########1324 12\nKontaktlos Chip\nOnline\nBestätigt durch mobiles Kundengerät\nVU-Nummer\n9801706496\nAutorisierungsnummer 620355\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000003591010028001/00\nAutoct.",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 21.0,
+    "validation_passed": 0.0,
+    "validation_difference": 44.0
+  }
+}

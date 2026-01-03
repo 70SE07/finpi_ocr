@@ -1,0 +1,435 @@
+{
+  "dto": {
+    "items": [],
+    "total_amount": 11.41,
+    "merchant": "Netto",
+    "store_address": "A 7 % 0,75 10,66 11,41",
+    "date": "2025-11-05 00:00:00",
+    "receipt_id": "IMG_3062",
+    "ocr_text": "MABAS C\nIndustriestr. 1\n46359 Heiden\nSchweinenackenbraten\n1,227 kg x 8,99\nBrötchen Weizen\nzu zahlen\nqgA 2014 bilEUR\n11,03 A\nEUR/kg 1919\n0,19 x 2 0,38 A\n11,41\nKreditkarte\n11,41\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n0,75\n10,66\n11,41\nSumme\n0,75\n10,66\n11,41\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1153719\nSeriennr. Kasse: LDL-000-3318-1\nSeriennr. TSE: VT1k7HAgUv1kp05hx08Q2LгA2Ve\nYEbZbAXk+mCNs3z8=\nPrüfwert: aNcETNKHAyOdXjgYVAzyBmhQ4mwbprPy\ngZ1XuUgP3tXiDdYMuwxc338gYgedDq5e18HpWHV6YX\nUOHpzChKYikMqTNym9dCu9JpwUng1Sssg/3MzXGe3n\nMg/0K9eKF/1D\nSignaturzähler: 2361692\n2025-11-05T12:33:58.000Z\n2025-11-05T12:34:14.000Z\n.00022 05.11.25 13:33\n3318 567503/01\nUST-ID-NR: DE813758711\nK-U-N-D-E-N-B-E-L-E-G\nBezahlung MasterCard\nBetrag\n11,41 EUR\n05.11.2025\n13:32\nT-ID 60153671\nTA-Nr. 285919\nKartennr.\nBeleg-Nr. 4078\n#########7178 00\nKontaktlos Chip\nOnline\nVU-Nummer\n455600216757\nAutorisierungsnummer\n203900\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000000041010/00\n**\nZahlung erfolgt\n**",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 0.0,
+      "validation_passed": 0.0,
+      "validation_difference": 11.41
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "MABAS C",
+        "y_position": 227,
+        "x_min": 243,
+        "x_max": 518,
+        "confidence": 0.3567715585231781,
+        "line_number": 0,
+        "words_count": 2
+      },
+      {
+        "text": "Industriestr . 1",
+        "y_position": 268,
+        "x_min": 301,
+        "x_max": 448,
+        "confidence": 0.9498565395673116,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "46359 Heiden",
+        "y_position": 294,
+        "x_min": 320,
+        "x_max": 437,
+        "confidence": 0.992908388376236,
+        "line_number": 2,
+        "words_count": 2
+      },
+      {
+        "text": "Schweinenackenbraten qgA 2014 bilEUR",
+        "y_position": 316,
+        "x_min": 174,
+        "x_max": 554,
+        "confidence": 0.6313939020037651,
+        "line_number": 3,
+        "words_count": 4
+      },
+      {
+        "text": "1,227 1919 11,03 A",
+        "y_position": 335,
+        "x_min": 194,
+        "x_max": 571,
+        "confidence": 0.8408884257078171,
+        "line_number": 4,
+        "words_count": 4
+      },
+      {
+        "text": "kg x 8,99 EUR / kg",
+        "y_position": 351,
+        "x_min": 251,
+        "x_max": 426,
+        "confidence": 0.9717867573102316,
+        "line_number": 5,
+        "words_count": 6
+      },
+      {
+        "text": "Brötchen Weizen 0,19 x 2 0,38 A",
+        "y_position": 369,
+        "x_min": 173,
+        "x_max": 581,
+        "confidence": 0.9751538378851754,
+        "line_number": 6,
+        "words_count": 7
+      },
+      {
+        "text": "zu zahlen 11,41",
+        "y_position": 399,
+        "x_min": 174,
+        "x_max": 549,
+        "confidence": 0.9864802360534668,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "Kreditkarte 11,41",
+        "y_position": 420,
+        "x_min": 174,
+        "x_max": 546,
+        "confidence": 0.9904816448688507,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "MWST % MWST + Netto = Brutto",
+        "y_position": 448,
+        "x_min": 184,
+        "x_max": 550,
+        "confidence": 0.9257655995232719,
+        "line_number": 9,
+        "words_count": 7
+      },
+      {
+        "text": "A 7 % 0,75 10,66 11,41",
+        "y_position": 465,
+        "x_min": 174,
+        "x_max": 547,
+        "confidence": 0.9718536734580994,
+        "line_number": 10,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 0,75 10,66 11,41",
+        "y_position": 486,
+        "x_min": 174,
+        "x_max": 547,
+        "confidence": 0.984618753194809,
+        "line_number": 11,
+        "words_count": 4
+      },
+      {
+        "text": "Lade dir die Lidl Plus App herunter",
+        "y_position": 506,
+        "x_min": 201,
+        "x_max": 539,
+        "confidence": 0.9367920160293579,
+        "line_number": 12,
+        "words_count": 7
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 540,
+        "x_min": 186,
+        "x_max": 546,
+        "confidence": 0.9726747104099819,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1153719",
+        "y_position": 619,
+        "x_min": 177,
+        "x_max": 470,
+        "confidence": 0.9558864682912827,
+        "line_number": 14,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-3318-1",
+        "y_position": 640,
+        "x_min": 176,
+        "x_max": 469,
+        "confidence": 0.9300282086644854,
+        "line_number": 15,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : VT1k7HAgUv1kp05hx08Q2LгA2Ve",
+        "y_position": 657,
+        "x_min": 177,
+        "x_max": 575,
+        "confidence": 0.9237458348274231,
+        "line_number": 16,
+        "words_count": 5
+      },
+      {
+        "text": "YEbZbAXk + mCNs3z8 =",
+        "y_position": 678,
+        "x_min": 176,
+        "x_max": 338,
+        "confidence": 0.849419966340065,
+        "line_number": 17,
+        "words_count": 4
+      },
+      {
+        "text": "Prüfwert : aNcETNKHAyOdXjgYVAzyBmhQ4mwbprPy",
+        "y_position": 695,
+        "x_min": 176,
+        "x_max": 574,
+        "confidence": 0.9221492012341818,
+        "line_number": 18,
+        "words_count": 3
+      },
+      {
+        "text": "gZ1XuUgP3tXiDdYMuwxc338gYgedDq5e18HpWHV6YX UOHpzChKYikMqTNym9dCu9JpwUng1Sssg",
+        "y_position": 717,
+        "x_min": 176,
+        "x_max": 574,
+        "confidence": 0.9173220694065094,
+        "line_number": 19,
+        "words_count": 2
+      },
+      {
+        "text": "/ 3MzXGe3n",
+        "y_position": 735,
+        "x_min": 490,
+        "x_max": 575,
+        "confidence": 0.9336078763008118,
+        "line_number": 20,
+        "words_count": 2
+      },
+      {
+        "text": "Mg / 0K9eKF / 1D",
+        "y_position": 756,
+        "x_min": 175,
+        "x_max": 290,
+        "confidence": 0.9336122751235962,
+        "line_number": 21,
+        "words_count": 5
+      },
+      {
+        "text": "Signaturzähler : 2361692",
+        "y_position": 774,
+        "x_min": 174,
+        "x_max": 393,
+        "confidence": 0.9807851314544678,
+        "line_number": 22,
+        "words_count": 3
+      },
+      {
+        "text": "2025-11-05T12 : 33 : 58.000Z",
+        "y_position": 796,
+        "x_min": 174,
+        "x_max": 402,
+        "confidence": 0.9832202434539795,
+        "line_number": 23,
+        "words_count": 5
+      },
+      {
+        "text": "2025-11-05T12 : 34 : 14.000Z .00022 05.11.25 13:33",
+        "y_position": 815,
+        "x_min": 174,
+        "x_max": 577,
+        "confidence": 0.9021324887871742,
+        "line_number": 24,
+        "words_count": 8
+      },
+      {
+        "text": "3318 567503/01",
+        "y_position": 832,
+        "x_min": 174,
+        "x_max": 325,
+        "confidence": 0.9893437027931213,
+        "line_number": 25,
+        "words_count": 2
+      },
+      {
+        "text": "UST - ID - NR : DE813758711",
+        "y_position": 855,
+        "x_min": 259,
+        "x_max": 469,
+        "confidence": 0.9463257874761309,
+        "line_number": 26,
+        "words_count": 7
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 879,
+        "x_min": 259,
+        "x_max": 461,
+        "confidence": 0.9760493636131287,
+        "line_number": 27,
+        "words_count": 21
+      },
+      {
+        "text": "Bezahlung MasterCard",
+        "y_position": 899,
+        "x_min": 268,
+        "x_max": 461,
+        "confidence": 0.9865800738334656,
+        "line_number": 28,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag 11,41 EUR",
+        "y_position": 925,
+        "x_min": 171,
+        "x_max": 560,
+        "confidence": 0.9878485004107157,
+        "line_number": 29,
+        "words_count": 3
+      },
+      {
+        "text": "05.11.2025 13:32 T - ID 60153671",
+        "y_position": 953,
+        "x_min": 169,
+        "x_max": 554,
+        "confidence": 0.981284370024999,
+        "line_number": 30,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 285919 Beleg - Nr . 4078",
+        "y_position": 969,
+        "x_min": 169,
+        "x_max": 555,
+        "confidence": 0.9760165333747863,
+        "line_number": 31,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . ######### 7178 00",
+        "y_position": 987,
+        "x_min": 169,
+        "x_max": 556,
+        "confidence": 0.9578327536582947,
+        "line_number": 32,
+        "words_count": 5
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 1004,
+        "x_min": 168,
+        "x_max": 551,
+        "confidence": 0.9833730459213257,
+        "line_number": 33,
+        "words_count": 3
+      },
+      {
+        "text": "VU - Nummer 455600216757",
+        "y_position": 1022,
+        "x_min": 168,
+        "x_max": 551,
+        "confidence": 0.9759159684181213,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 203900",
+        "y_position": 1039,
+        "x_min": 169,
+        "x_max": 552,
+        "confidence": 0.9827858805656433,
+        "line_number": 35,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 1059,
+        "x_min": 169,
+        "x_max": 551,
+        "confidence": 0.9863559007644653,
+        "line_number": 36,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - Daten : A0000000041010 / 00",
+        "y_position": 1076,
+        "x_min": 172,
+        "x_max": 551,
+        "confidence": 0.9851399915558952,
+        "line_number": 37,
+        "words_count": 7
+      },
+      {
+        "text": "** Zahlung erfolgt **",
+        "y_position": 1103,
+        "x_min": 172,
+        "x_max": 549,
+        "confidence": 0.9169418960809708,
+        "line_number": 38,
+        "words_count": 4
+      }
+    ],
+    "image_width": 720,
+    "image_height": 1280,
+    "total_words": 190,
+    "total_lines": 39
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.2903225806451613,
+    "matched_keywords": [
+      "summe",
+      "zu zahlen",
+      "mwst",
+      "ust",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 9
+    }
+  },
+  "store": {
+    "store_name": "Netto",
+    "store_address": "A 7 % 0,75 10,66 11,41",
+    "confidence": 1.0,
+    "matched_in_line": 9
+  },
+  "metadata": {
+    "receipt_date": "2025-11-05",
+    "receipt_total": 11.41,
+    "currency": "EUR",
+    "date_raw": "2025-11-05",
+    "total_raw": "11,41 EUR",
+    "total_line_number": 29
+  },
+  "semantic": {
+    "items": [],
+    "discounts": [],
+    "items_count": 0,
+    "discounts_count": 0,
+    "items_total": 0,
+    "discounts_total": 0,
+    "skipped_lines": 22,
+    "parsed_lines": 0
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 0,
+    "discounts_sum": 0,
+    "calculated_total": 0,
+    "receipt_total": 11.41,
+    "difference": 11.41,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=0, receipt=11.41, diff=11.41 (tolerance=0.05)"
+  },
+  "processing_time_ms": 20.69091796875,
+  "stages_completed": 6
+}

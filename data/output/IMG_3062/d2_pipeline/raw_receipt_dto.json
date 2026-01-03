@@ -1,0 +1,16 @@
+{
+  "items": [],
+  "total_amount": 11.41,
+  "merchant": "Netto",
+  "store_address": "A 7 % 0,75 10,66 11,41",
+  "date": "2025-11-05 00:00:00",
+  "receipt_id": "IMG_3062",
+  "ocr_text": "MABAS C\nIndustriestr. 1\n46359 Heiden\nSchweinenackenbraten\n1,227 kg x 8,99\nBrötchen Weizen\nzu zahlen\nqgA 2014 bilEUR\n11,03 A\nEUR/kg 1919\n0,19 x 2 0,38 A\n11,41\nKreditkarte\n11,41\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n0,75\n10,66\n11,41\nSumme\n0,75\n10,66\n11,41\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1153719\nSeriennr. Kasse: LDL-000-3318-1\nSeriennr. TSE: VT1k7HAgUv1kp05hx08Q2LгA2Ve\nYEbZbAXk+mCNs3z8=\nPrüfwert: aNcETNKHAyOdXjgYVAzyBmhQ4mwbprPy\ngZ1XuUgP3tXiDdYMuwxc338gYgedDq5e18HpWHV6YX\nUOHpzChKYikMqTNym9dCu9JpwUng1Sssg/3MzXGe3n\nMg/0K9eKF/1D\nSignaturzähler: 2361692\n2025-11-05T12:33:58.000Z\n2025-11-05T12:34:14.000Z\n.00022 05.11.25 13:33\n3318 567503/01\nUST-ID-NR: DE813758711\nK-U-N-D-E-N-B-E-L-E-G\nBezahlung MasterCard\nBetrag\n11,41 EUR\n05.11.2025\n13:32\nT-ID 60153671\nTA-Nr. 285919\nKartennr.\nBeleg-Nr. 4078\n#########7178 00\nKontaktlos Chip\nOnline\nVU-Nummer\n455600216757\nAutorisierungsnummer\n203900\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000000041010/00\n**\nZahlung erfolgt\n**",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 0.0,
+    "validation_passed": 0.0,
+    "validation_difference": 11.41
+  }
+}

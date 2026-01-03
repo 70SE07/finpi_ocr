@@ -1,0 +1,633 @@
+{
+  "full_text": "19:15\n50\nбиллА былгАРИя ЕOOД\nсОOия бул. былгАРиЯ 55\nЕMK: 130007884\nMAгAзИH 530\nBAPHA ул. дубРОвНик 48\nHOMEP 3ДдC:BG130007884\n04, MEXMEДOBA, 9\n4.99\nOTCT. CYNEP LEHA\n-1.20\nПилЕшки долЕН BYT\n4.79\nбискB. мИРАж бOPOB.\n3.39\n-1.10\nПилЕшкИ долЕН бYT\n4.79\nKREO TOH ИлE\n3.09\nCKYMP. KOTЛЕTИ, Д. C\n3.79\nBARILLA ЛИHгуиНи\n3.59\n05шA CYMA\nлВ.\n26.13\n06шA CYMA\nEBPO\n13.36\nKypc 1 EBPO = 1.95583 ЛB.\nПЛATEHO B бРой\nЛВ.\n30.00\nPECTO\nЛВ.\n3.87\n#TИ CПECTи:\nЛВ.\n2.30#\n796 01.09.2025 17:29:57\n7 АРТИкуЛА\nBGCMCTEMEH 60H\nBMLF000530\n2F1268101D67B35380E9D94A99D0663B0B060007\nmastad\nПерезняти\nПрийняти",
+  "lines": [
+    {
+      "text": "19:15",
+      "confidence": 0.9875816106796265,
+      "bounding_box": {
+        "x_min": 71,
+        "y_min": 32,
+        "x_max": 143,
+        "y_max": 52
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "50",
+      "confidence": 0.9907569289207458,
+      "bounding_box": {
+        "x_min": 748,
+        "y_min": 40,
+        "x_max": 778,
+        "y_max": 58
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "биллА былгАРИя ЕOOД сОOия бул . былгАРиЯ 55 ЕMK : 130007884 MAгAзИH 530",
+      "confidence": 0.5326238033863214,
+      "bounding_box": {
+        "x_min": 296,
+        "y_min": 441,
+        "x_max": 526,
+        "y_max": 525
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "BAPHA ул . дубРОвНик 48 HOMEP 3ДдC : BG130007884",
+      "confidence": 0.6159281233946482,
+      "bounding_box": {
+        "x_min": 295,
+        "y_min": 525,
+        "x_max": 525,
+        "y_max": 563
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "04 , MEXMEДOBA , 9",
+      "confidence": 0.8082931518554688,
+      "bounding_box": {
+        "x_min": 184,
+        "y_min": 582,
+        "x_max": 354,
+        "y_max": 609
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "4.99",
+      "confidence": 0.9902715682983398,
+      "bounding_box": {
+        "x_min": 562,
+        "y_min": 624,
+        "x_max": 605,
+        "y_max": 641
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "OTCT . CYNEP LEHA",
+      "confidence": 0.8737811148166656,
+      "bounding_box": {
+        "x_min": 183,
+        "y_min": 643,
+        "x_max": 354,
+        "y_max": 668
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "-1.20",
+      "confidence": 0.977697491645813,
+      "bounding_box": {
+        "x_min": 552,
+        "y_min": 643,
+        "x_max": 607,
+        "y_max": 661
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "ПилЕшки долЕН BYT",
+      "confidence": 0.4466725041468938,
+      "bounding_box": {
+        "x_min": 183,
+        "y_min": 664,
+        "x_max": 362,
+        "y_max": 689
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "4.79",
+      "confidence": 0.9908493757247925,
+      "bounding_box": {
+        "x_min": 560,
+        "y_min": 664,
+        "x_max": 605,
+        "y_max": 683
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "бискB . мИРАж бOPOB .",
+      "confidence": 0.5879250019788742,
+      "bounding_box": {
+        "x_min": 181,
+        "y_min": 684,
+        "x_max": 367,
+        "y_max": 709
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "3.39",
+      "confidence": 0.9868433475494385,
+      "bounding_box": {
+        "x_min": 562,
+        "y_min": 685,
+        "x_max": 603,
+        "y_max": 703
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "-1.10",
+      "confidence": 0.9750537276268005,
+      "bounding_box": {
+        "x_min": 552,
+        "y_min": 708,
+        "x_max": 606,
+        "y_max": 725
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "ПилЕшкИ долЕН бYT",
+      "confidence": 0.3642865717411041,
+      "bounding_box": {
+        "x_min": 182,
+        "y_min": 725,
+        "x_max": 361,
+        "y_max": 749
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "4.79",
+      "confidence": 0.9900569915771484,
+      "bounding_box": {
+        "x_min": 559,
+        "y_min": 729,
+        "x_max": 603,
+        "y_max": 747
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "KREO TOH ИлE",
+      "confidence": 0.7608024179935455,
+      "bounding_box": {
+        "x_min": 180,
+        "y_min": 746,
+        "x_max": 321,
+        "y_max": 769
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "3.09",
+      "confidence": 0.9913853406906128,
+      "bounding_box": {
+        "x_min": 562,
+        "y_min": 750,
+        "x_max": 604,
+        "y_max": 767
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "CKYMP . KOTЛЕTИ , Д. C",
+      "confidence": 0.7671009947856268,
+      "bounding_box": {
+        "x_min": 179,
+        "y_min": 766,
+        "x_max": 362,
+        "y_max": 790
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "3.79",
+      "confidence": 0.9877177476882935,
+      "bounding_box": {
+        "x_min": 561,
+        "y_min": 769,
+        "x_max": 603,
+        "y_max": 788
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "BARILLA ЛИHгуиНи",
+      "confidence": 0.601750060915947,
+      "bounding_box": {
+        "x_min": 180,
+        "y_min": 787,
+        "x_max": 352,
+        "y_max": 809
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "3.59",
+      "confidence": 0.9910106658935547,
+      "bounding_box": {
+        "x_min": 561,
+        "y_min": 791,
+        "x_max": 603,
+        "y_max": 810
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "05шA CYMA",
+      "confidence": 0.7494085431098938,
+      "bounding_box": {
+        "x_min": 179,
+        "y_min": 829,
+        "x_max": 277,
+        "y_max": 849
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "26.13",
+      "confidence": 0.9910821914672852,
+      "bounding_box": {
+        "x_min": 551,
+        "y_min": 831,
+        "x_max": 604,
+        "y_max": 850
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "лВ .",
+      "confidence": 0.5883740484714508,
+      "bounding_box": {
+        "x_min": 453,
+        "y_min": 833,
+        "x_max": 482,
+        "y_max": 851
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "06шA CYMA",
+      "confidence": 0.7304413020610809,
+      "bounding_box": {
+        "x_min": 178,
+        "y_min": 872,
+        "x_max": 277,
+        "y_max": 890
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "EBPO",
+      "confidence": 0.9776288270950317,
+      "bounding_box": {
+        "x_min": 455,
+        "y_min": 873,
+        "x_max": 497,
+        "y_max": 892
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "13.36",
+      "confidence": 0.990619421005249,
+      "bounding_box": {
+        "x_min": 552,
+        "y_min": 873,
+        "x_max": 603,
+        "y_max": 891
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "Kypc 1 EBPO = 1.95583 ЛB .",
+      "confidence": 0.8149367826325553,
+      "bounding_box": {
+        "x_min": 178,
+        "y_min": 892,
+        "x_max": 440,
+        "y_max": 912
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "ПЛATEHO B бРой",
+      "confidence": 0.6665299336115519,
+      "bounding_box": {
+        "x_min": 176,
+        "y_min": 910,
+        "x_max": 349,
+        "y_max": 932
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "30.00",
+      "confidence": 0.9908530712127686,
+      "bounding_box": {
+        "x_min": 551,
+        "y_min": 913,
+        "x_max": 607,
+        "y_max": 933
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "ЛВ .",
+      "confidence": 0.547993078827858,
+      "bounding_box": {
+        "x_min": 453,
+        "y_min": 915,
+        "x_max": 482,
+        "y_max": 931
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "3.87",
+      "confidence": 0.9903713464736938,
+      "bounding_box": {
+        "x_min": 562,
+        "y_min": 933,
+        "x_max": 607,
+        "y_max": 954
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "PECTO",
+      "confidence": 0.9856525659561157,
+      "bounding_box": {
+        "x_min": 175,
+        "y_min": 934,
+        "x_max": 231,
+        "y_max": 951
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "ЛВ .",
+      "confidence": 0.5786423087120056,
+      "bounding_box": {
+        "x_min": 452,
+        "y_min": 934,
+        "x_max": 482,
+        "y_max": 951
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "# TИ CПECTи :",
+      "confidence": 0.6984992623329163,
+      "bounding_box": {
+        "x_min": 174,
+        "y_min": 975,
+        "x_max": 292,
+        "y_max": 994
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "2.30 #",
+      "confidence": 0.9689379930496216,
+      "bounding_box": {
+        "x_min": 553,
+        "y_min": 976,
+        "x_max": 608,
+        "y_max": 996
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "ЛВ .",
+      "confidence": 0.5504432544112206,
+      "bounding_box": {
+        "x_min": 441,
+        "y_min": 977,
+        "x_max": 472,
+        "y_max": 994
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "796 01.09.2025 17:29:57",
+      "confidence": 0.991852601369222,
+      "bounding_box": {
+        "x_min": 185,
+        "y_min": 1036,
+        "x_max": 455,
+        "y_max": 1059
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "7 АРТИкуЛА",
+      "confidence": 0.5755836814641953,
+      "bounding_box": {
+        "x_min": 499,
+        "y_min": 1041,
+        "x_max": 611,
+        "y_max": 1062
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "BGCMCTEMEH 60H",
+      "confidence": 0.7211827039718628,
+      "bounding_box": {
+        "x_min": 312,
+        "y_min": 1208,
+        "x_max": 489,
+        "y_max": 1231
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "BMLF000530",
+      "confidence": 0.9899390935897827,
+      "bounding_box": {
+        "x_min": 350,
+        "y_min": 1258,
+        "x_max": 459,
+        "y_max": 1275
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "2F1268101D67B35380E9D94A99D0663B0B060007",
+      "confidence": 0.9839903712272644,
+      "bounding_box": {
+        "x_min": 169,
+        "y_min": 1302,
+        "x_max": 609,
+        "y_max": 1321
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "mastad",
+      "confidence": 0.6103029251098633,
+      "bounding_box": {
+        "x_min": 679,
+        "y_min": 1327,
+        "x_max": 827,
+        "y_max": 1381
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "Прийняти",
+      "confidence": 0.5508530735969543,
+      "bounding_box": {
+        "x_min": 634,
+        "y_min": 1637,
+        "x_max": 803,
+        "y_max": 1669
+      },
+      "block_type": "PARAGRAPH"
+    },
+    {
+      "text": "Перезняти",
+      "confidence": 0.5148029923439026,
+      "bounding_box": {
+        "x_min": 25,
+        "y_min": 1638,
+        "x_max": 206,
+        "y_max": 1668
+      },
+      "block_type": "PARAGRAPH"
+    }
+  ],
+  "items": [
+    {
+      "name": "4,99",
+      "price": 4.99,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "-1,20",
+      "price": -1.2,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": true
+    },
+    {
+      "name": "4,79",
+      "price": 4.79,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "3,39",
+      "price": 3.39,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "-1,10",
+      "price": -1.1,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": true
+    },
+    {
+      "name": "4,79",
+      "price": 4.79,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "3,09",
+      "price": 3.09,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "3,79",
+      "price": 3.79,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "3,59",
+      "price": 3.59,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "26,13",
+      "price": 26.13,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "13,36",
+      "price": 13.36,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "30,00",
+      "price": 30.0,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "3,87",
+      "price": 3.87,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    },
+    {
+      "name": "2.30 #",
+      "price": 230.0,
+      "tax": null,
+      "qty": 1.0,
+      "is_discount": false
+    }
+  ],
+  "metadata": {
+    "store_name": "биллА былгАРИя ЕOOД сОOия бул . былгАРиЯ 55 ЕMK : 130007884 MAгAзИH 530",
+    "receipt_date": "2025-09-01",
+    "total_receipt_amount": 3000.0,
+    "store_brand": null,
+    "store_address": "BAPHA ул . дубРОвНик 48 HOMEP 3ДдC :",
+    "store_phone": "130007884",
+    "store_vat_id": null,
+    "confidence_score": {
+      "store": 0.7,
+      "receipt_date": 0.7,
+      "total_amount": 0.4,
+      "address": 0.6,
+      "requisites": 0.4
+    },
+    "total_amount": 3000.0,
+    "date": "2025-09-01",
+    "brand": null,
+    "address": "BAPHA ул . дубРОвНик 48 HOMEP 3ДдC :",
+    "phone": "130007884",
+    "vat_id": null
+  },
+  "source_file": "",
+  "processed_at": "2025-12-25T16:50:02.478565",
+  "ocr_confidence": 0.799495775875858,
+  "pre_ocr_applied": true,
+  "post_ocr_applied": true,
+  "image_width": 0,
+  "image_height": 0,
+  "stats": {
+    "total_lines": 45,
+    "total_characters": 569
+  }
+}

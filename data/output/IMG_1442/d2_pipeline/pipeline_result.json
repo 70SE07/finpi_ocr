@@ -1,0 +1,1017 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "DL Knoblauch",
+        "quantity": null,
+        "price": null,
+        "total": 1.11,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "still 0,29 x 12",
+        "quantity": 0.29,
+        "price": null,
+        "total": 3.48,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Wasser 0,25 x 12",
+        "quantity": 0.25,
+        "price": null,
+        "total": 3.0,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Pfand EM",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.8,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Fanta Exotic",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.8,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Coca Cola Zero",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.8,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Mezzo Mix",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Coca Cola 1,251",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "date": "2025-08-18 00:00:00"
+      },
+      {
+        "name": "Capri - Sun Multi",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "date": "2025-08-18 00:00:00"
+      }
+    ],
+    "total_amount": 6.7,
+    "merchant": null,
+    "store_address": null,
+    "date": "2025-08-18 00:00:00",
+    "receipt_id": "IMG_1442",
+    "ocr_text": "DL\nSteinhauser Auel\n514910verath-Vilkerath\nEUR\nBioland Zwiebeln\n99A 302,15 A\nKnoblauch\n1,11 A\nPreisvorteil\n-0,12\nAyran Joghurtgetränk\n1,49 A\nKefir 1,5%\n0,89 x 12\n10,68 A\nGouda in ScheibenXXL sbslysinut 74,29 A\nWasser still\n0,29 x 12\n3,48 B\nPfand 0,25 EM\n0,25 x 12\n3,00 B\nFanta Exotic\n0,80 B\nPfand 0,25 M\n0,25 B\nCoca Cola Zero\n0,80 B\nPfand 0,25 M\n0,25 B\nMezzo Mix\n0,80 B\nPfand 0,25 M\n0,25 B\nCoca Cola 1,251\n1,59 B\nPfand 0,25 M\n0,25 B\nCapri-Sun Multi\n4,29 B\nButtertoast\n0,79 A\nMarlboro Gold O\n10,00 B\nRindergulasch AX7,39 x 2 14,78 A\nRABATT 20% 230\nOVC-2,96\nHähnchen-Mini-Steaks\nRABATT 20%\n9,29 A\n-1,86\nzu zahlen\nKreditkarte\n65,40\n65,40\nGesamter Preisvorteil\n194,94\nMWSTX\nMWST\nNetto = Brutto\nA 7 %\n2,59\n37,05\n39,64\nB 19 %\n4,11\n21,65\n25,76\nSumme\n6,70\n58,70\n65,40\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1230094\nSeriennr. Kasse: LDL-000-6496-1 AM\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: X3POZXFLOWSmzZ+Fq425CyPnfFSyCaIW\nyML47tCya3JU1STHeiIBhedrYJdHz9QtcJZlblWesd\nhdRj6DFXrHfBQD5hfEjs2YVxceWAuZ2Xo1i7SR9dVg\ng5IgI/D0qEbK\nSignaturzähler: 2510757\n2025-08-18T14:32:35.000Z\n2025-08-18T14:34:08.00OZ\n6496 632962/01\n814060660\n18.08.25 16:32\nK-U-N-D-E-N-B-E-L-E-G\nBezahlung VISA\nBetrag\n18.08.2025\n65,40 EUR\n16:32\nT-ID 60155114\nTA-Nr. 163037\nKartennr.\nVisa kontaktlos Chip\nBestätigt\nBeleg-Nr. 9374\nmobiles Kundengerät\nVU-Nummer durch mo\nAutorisierungsnummer\n#1061.00\nOnline\n455600535769\n424094\n00\nA0000000031010/00\nAutorisierungsantwortcode\nEMV-Daten:\n**\nAutorisierung erfolgt **",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 19.0,
+      "validation_passed": 0.0,
+      "validation_difference": 8.760000000000002
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "Steinhauser Auel",
+        "y_position": 139,
+        "x_min": 442,
+        "x_max": 614,
+        "confidence": 0.8330106735229492,
+        "line_number": 0,
+        "words_count": 2
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 161,
+        "x_min": 423,
+        "x_max": 655,
+        "confidence": 0.9799494743347168,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 183,
+        "x_min": 697,
+        "x_max": 728,
+        "confidence": 0.9924784302711487,
+        "line_number": 2,
+        "words_count": 1
+      },
+      {
+        "text": "Bioland Zwiebeln 99A 302,15 A",
+        "y_position": 207,
+        "x_min": 319,
+        "x_max": 751,
+        "confidence": 0.8185928285121917,
+        "line_number": 3,
+        "words_count": 5
+      },
+      {
+        "text": "DL Knoblauch 1,11 A",
+        "y_position": 234,
+        "x_min": 0,
+        "x_max": 751,
+        "confidence": 0.981540322303772,
+        "line_number": 4,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,12",
+        "y_position": 258,
+        "x_min": 372,
+        "x_max": 732,
+        "confidence": 0.965798020362854,
+        "line_number": 5,
+        "words_count": 2
+      },
+      {
+        "text": "Joghurtgetränk 1,49 A",
+        "y_position": 284,
+        "x_min": 385,
+        "x_max": 753,
+        "confidence": 0.9791348179181417,
+        "line_number": 6,
+        "words_count": 3
+      },
+      {
+        "text": "Ayran 12 10,68 A",
+        "y_position": 300,
+        "x_min": 322,
+        "x_max": 766,
+        "confidence": 0.9773838222026825,
+        "line_number": 7,
+        "words_count": 4
+      },
+      {
+        "text": "Kefir 1,5 % 0,89 x",
+        "y_position": 316,
+        "x_min": 323,
+        "x_max": 616,
+        "confidence": 0.9314614653587341,
+        "line_number": 8,
+        "words_count": 5
+      },
+      {
+        "text": "Gouda in ScheibenXXL sbslysinut 74,29 A",
+        "y_position": 335,
+        "x_min": 324,
+        "x_max": 756,
+        "confidence": 0.8539285957813263,
+        "line_number": 9,
+        "words_count": 6
+      },
+      {
+        "text": "still 0,29 x 12 3,48 B",
+        "y_position": 362,
+        "x_min": 397,
+        "x_max": 765,
+        "confidence": 0.9603314101696014,
+        "line_number": 10,
+        "words_count": 6
+      },
+      {
+        "text": "Wasser 0,25 x 12 3,00 B",
+        "y_position": 378,
+        "x_min": 325,
+        "x_max": 766,
+        "confidence": 0.9700915217399597,
+        "line_number": 11,
+        "words_count": 6
+      },
+      {
+        "text": "Pfand 0,25 EM 0,80 B",
+        "y_position": 401,
+        "x_min": 327,
+        "x_max": 756,
+        "confidence": 0.9852941513061524,
+        "line_number": 12,
+        "words_count": 5
+      },
+      {
+        "text": "Fanta Exotic 0,25 B",
+        "y_position": 427,
+        "x_min": 328,
+        "x_max": 756,
+        "confidence": 0.982288047671318,
+        "line_number": 13,
+        "words_count": 4
+      },
+      {
+        "text": "Pfand 0,25 M 0,80 B",
+        "y_position": 453,
+        "x_min": 328,
+        "x_max": 758,
+        "confidence": 0.9811198353767395,
+        "line_number": 14,
+        "words_count": 5
+      },
+      {
+        "text": "Coca Cola Zero 0,25 B",
+        "y_position": 477,
+        "x_min": 329,
+        "x_max": 758,
+        "confidence": 0.9767010569572449,
+        "line_number": 15,
+        "words_count": 5
+      },
+      {
+        "text": "Pfand 0,25 M 0,80 B",
+        "y_position": 506,
+        "x_min": 330,
+        "x_max": 759,
+        "confidence": 0.980695378780365,
+        "line_number": 16,
+        "words_count": 5
+      },
+      {
+        "text": "Mezzo Mix 0,25 B",
+        "y_position": 533,
+        "x_min": 331,
+        "x_max": 761,
+        "confidence": 0.9876669645309448,
+        "line_number": 17,
+        "words_count": 4
+      },
+      {
+        "text": "Pfand 0,25 M 1,59 B",
+        "y_position": 558,
+        "x_min": 331,
+        "x_max": 759,
+        "confidence": 0.9852928996086121,
+        "line_number": 18,
+        "words_count": 5
+      },
+      {
+        "text": "Coca Cola 1,251 0,25 B",
+        "y_position": 580,
+        "x_min": 331,
+        "x_max": 761,
+        "confidence": 0.9688441634178162,
+        "line_number": 19,
+        "words_count": 5
+      },
+      {
+        "text": "Pfand 0,25 M 4,29 B",
+        "y_position": 609,
+        "x_min": 333,
+        "x_max": 761,
+        "confidence": 0.9857383251190186,
+        "line_number": 20,
+        "words_count": 5
+      },
+      {
+        "text": "Capri - Sun Multi 0,79 A",
+        "y_position": 631,
+        "x_min": 333,
+        "x_max": 763,
+        "confidence": 0.9845122893651327,
+        "line_number": 21,
+        "words_count": 6
+      },
+      {
+        "text": "Buttertoast 10,00 B",
+        "y_position": 657,
+        "x_min": 334,
+        "x_max": 763,
+        "confidence": 0.9803533752759298,
+        "line_number": 22,
+        "words_count": 3
+      },
+      {
+        "text": "Marlboro Gold O 2 14,78 A",
+        "y_position": 683,
+        "x_min": 334,
+        "x_max": 774,
+        "confidence": 0.8824224869410197,
+        "line_number": 23,
+        "words_count": 6
+      },
+      {
+        "text": "Rindergulasch AX7,39 x",
+        "y_position": 701,
+        "x_min": 335,
+        "x_max": 629,
+        "confidence": 0.8352679014205933,
+        "line_number": 24,
+        "words_count": 3
+      },
+      {
+        "text": "RABATT 20 % 230 OVC - 2,96",
+        "y_position": 722,
+        "x_min": 389,
+        "x_max": 744,
+        "confidence": 0.790482257093702,
+        "line_number": 25,
+        "words_count": 7
+      },
+      {
+        "text": "Hähnchen - Mini - Steaks 9,29 A",
+        "y_position": 747,
+        "x_min": 338,
+        "x_max": 765,
+        "confidence": 0.9844089065279279,
+        "line_number": 26,
+        "words_count": 7
+      },
+      {
+        "text": "RABATT 20 % -1,86",
+        "y_position": 776,
+        "x_min": 391,
+        "x_max": 746,
+        "confidence": 0.9815427660942078,
+        "line_number": 27,
+        "words_count": 4
+      },
+      {
+        "text": "zu zahlen 65,40",
+        "y_position": 827,
+        "x_min": 340,
+        "x_max": 746,
+        "confidence": 0.9808212121327718,
+        "line_number": 28,
+        "words_count": 3
+      },
+      {
+        "text": "Kreditkarte 65,40",
+        "y_position": 853,
+        "x_min": 341,
+        "x_max": 748,
+        "confidence": 0.9909579753875732,
+        "line_number": 29,
+        "words_count": 2
+      },
+      {
+        "text": "Gesamter Preisvorteil 194,94",
+        "y_position": 904,
+        "x_min": 342,
+        "x_max": 781,
+        "confidence": 0.9129477540651957,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "MWSTX MWST Netto = Brutto",
+        "y_position": 957,
+        "x_min": 355,
+        "x_max": 753,
+        "confidence": 0.9586990952491761,
+        "line_number": 31,
+        "words_count": 5
+      },
+      {
+        "text": "A 7 % 2,59 37,05 39,64",
+        "y_position": 981,
+        "x_min": 344,
+        "x_max": 752,
+        "confidence": 0.9869070450464884,
+        "line_number": 32,
+        "words_count": 6
+      },
+      {
+        "text": "B 19 % 4,11 21,65 25,76",
+        "y_position": 1007,
+        "x_min": 345,
+        "x_max": 752,
+        "confidence": 0.9559376041094462,
+        "line_number": 33,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 6,70 58,70 65,40",
+        "y_position": 1033,
+        "x_min": 347,
+        "x_max": 754,
+        "confidence": 0.9860488027334213,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "Lade dir die Lidl Plus App herunter",
+        "y_position": 1109,
+        "x_min": 379,
+        "x_max": 746,
+        "confidence": 0.9755870444434029,
+        "line_number": 35,
+        "words_count": 7
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 1133,
+        "x_min": 358,
+        "x_max": 754,
+        "confidence": 0.9652598755700248,
+        "line_number": 36,
+        "words_count": 7
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1230094",
+        "y_position": 1272,
+        "x_min": 352,
+        "x_max": 678,
+        "confidence": 0.9745126217603683,
+        "line_number": 37,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-1 AM",
+        "y_position": 1289,
+        "x_min": 352,
+        "x_max": 752,
+        "confidence": 0.9013537615537643,
+        "line_number": 38,
+        "words_count": 8
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga + dvZbaId8",
+        "y_position": 1318,
+        "x_min": 352,
+        "x_max": 795,
+        "confidence": 0.9477563755852836,
+        "line_number": 39,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1354,
+        "x_min": 353,
+        "x_max": 533,
+        "confidence": 0.9651945233345032,
+        "line_number": 40,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : X3POZXFLOWSmzZ + Fq425CyPnfFSyCaIW",
+        "y_position": 1371,
+        "x_min": 354,
+        "x_max": 796,
+        "confidence": 0.9074197888374329,
+        "line_number": 41,
+        "words_count": 5
+      },
+      {
+        "text": "yML47tCya3JU1STHeiIBhedrYJdHz9QtcJZlblWesd",
+        "y_position": 1395,
+        "x_min": 354,
+        "x_max": 797,
+        "confidence": 0.9300755262374878,
+        "line_number": 42,
+        "words_count": 1
+      },
+      {
+        "text": "hdRj6DFXrHfBQD5hfEjs2YVxceWAuZ2Xo1i7SR9dVg",
+        "y_position": 1422,
+        "x_min": 354,
+        "x_max": 799,
+        "confidence": 0.9227831959724426,
+        "line_number": 43,
+        "words_count": 1
+      },
+      {
+        "text": "g5IgI / D0qEbK",
+        "y_position": 1458,
+        "x_min": 354,
+        "x_max": 483,
+        "confidence": 0.9225955804189047,
+        "line_number": 44,
+        "words_count": 3
+      },
+      {
+        "text": "Signaturzähler : 2510757",
+        "y_position": 1481,
+        "x_min": 355,
+        "x_max": 599,
+        "confidence": 0.9801767468452454,
+        "line_number": 45,
+        "words_count": 3
+      },
+      {
+        "text": "2025-08-18T14 : 32 : 35.000Z",
+        "y_position": 1508,
+        "x_min": 355,
+        "x_max": 609,
+        "confidence": 0.9766470670700074,
+        "line_number": 46,
+        "words_count": 5
+      },
+      {
+        "text": "2025-08-18T14 : 34 : 08.00OZ",
+        "y_position": 1535,
+        "x_min": 356,
+        "x_max": 610,
+        "confidence": 0.9741295218467713,
+        "line_number": 47,
+        "words_count": 5
+      },
+      {
+        "text": "6496 632962/01 18.08.25 16:32",
+        "y_position": 1558,
+        "x_min": 356,
+        "x_max": 803,
+        "confidence": 0.9918342232704163,
+        "line_number": 48,
+        "words_count": 4
+      },
+      {
+        "text": "814060660",
+        "y_position": 1588,
+        "x_min": 516,
+        "x_max": 613,
+        "confidence": 0.9906136989593506,
+        "line_number": 49,
+        "words_count": 1
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1639,
+        "x_min": 453,
+        "x_max": 678,
+        "confidence": 0.9612812712079003,
+        "line_number": 50,
+        "words_count": 21
+      },
+      {
+        "text": "Bezahlung VISA",
+        "y_position": 1664,
+        "x_min": 497,
+        "x_max": 647,
+        "confidence": 0.9882289171218872,
+        "line_number": 51,
+        "words_count": 2
+      },
+      {
+        "text": "65,40 EUR",
+        "y_position": 1713,
+        "x_min": 690,
+        "x_max": 788,
+        "confidence": 0.9764905273914337,
+        "line_number": 52,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag",
+        "y_position": 1729,
+        "x_min": 361,
+        "x_max": 425,
+        "confidence": 0.9917657375335693,
+        "line_number": 53,
+        "words_count": 1
+      },
+      {
+        "text": "18.08.2025 16:32 T - ID 60155114",
+        "y_position": 1767,
+        "x_min": 365,
+        "x_max": 790,
+        "confidence": 0.9858132600784302,
+        "line_number": 54,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 163037 Beleg - Nr . 9374",
+        "y_position": 1791,
+        "x_min": 364,
+        "x_max": 791,
+        "confidence": 0.9625982284545899,
+        "line_number": 55,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . # 1061.00",
+        "y_position": 1819,
+        "x_min": 364,
+        "x_max": 789,
+        "confidence": 0.9555405974388123,
+        "line_number": 56,
+        "words_count": 4
+      },
+      {
+        "text": "Visa kontaktlos Chip Online",
+        "y_position": 1846,
+        "x_min": 364,
+        "x_max": 789,
+        "confidence": 0.9842668771743774,
+        "line_number": 57,
+        "words_count": 4
+      },
+      {
+        "text": "Bestätigt durch mo mobiles Kundengerät",
+        "y_position": 1874,
+        "x_min": 387,
+        "x_max": 758,
+        "confidence": 0.8204137444496155,
+        "line_number": 58,
+        "words_count": 5
+      },
+      {
+        "text": "VU - Nummer 455600535769",
+        "y_position": 1890,
+        "x_min": 361,
+        "x_max": 792,
+        "confidence": 0.8567684590816498,
+        "line_number": 59,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 424094",
+        "y_position": 1927,
+        "x_min": 365,
+        "x_max": 794,
+        "confidence": 0.9813282191753387,
+        "line_number": 60,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 1955,
+        "x_min": 366,
+        "x_max": 794,
+        "confidence": 0.9840867519378662,
+        "line_number": 61,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - Daten : A0000000031010 / 00",
+        "y_position": 1981,
+        "x_min": 368,
+        "x_max": 794,
+        "confidence": 0.9803370748247419,
+        "line_number": 62,
+        "words_count": 7
+      },
+      {
+        "text": "** Autorisierung erfolgt **",
+        "y_position": 2037,
+        "x_min": 368,
+        "x_max": 796,
+        "confidence": 0.9611018896102905,
+        "line_number": 63,
+        "words_count": 4
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 292,
+    "total_lines": 64
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "zu zahlen",
+      "mwst",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 2,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": null,
+    "store_address": null,
+    "confidence": 0.0,
+    "matched_in_line": -1
+  },
+  "metadata": {
+    "receipt_date": "2025-08-18",
+    "receipt_total": 6.7,
+    "currency": "EUR",
+    "date_raw": "2025-08-18",
+    "total_raw": "6,70 ",
+    "total_line_number": 34
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "DL Knoblauch",
+        "quantity": null,
+        "price": null,
+        "total": 1.11,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "DL Knoblauch 1,11 A"
+      },
+      {
+        "name": "Joghurtgetränk",
+        "quantity": null,
+        "price": null,
+        "total": 1.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "Joghurtgetränk 1,49 A"
+      },
+      {
+        "name": "still 0,29 x 12",
+        "quantity": 0.29,
+        "price": null,
+        "total": 3.48,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "still 0,29 x 12 3,48 B"
+      },
+      {
+        "name": "Wasser 0,25 x 12",
+        "quantity": 0.25,
+        "price": null,
+        "total": 3.0,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Wasser 0,25 x 12 3,00 B"
+      },
+      {
+        "name": "Pfand EM",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "Pfand 0,25 EM"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.8,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 12,
+        "raw_text": "0,80 B"
+      },
+      {
+        "name": "Fanta Exotic",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "Fanta Exotic 0,25 B"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "Pfand 0,25 M"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.8,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "0,80 B"
+      },
+      {
+        "name": "Coca Cola Zero",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 15,
+        "raw_text": "Coca Cola Zero 0,25 B"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "Pfand 0,25 M"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 0.8,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "0,80 B"
+      },
+      {
+        "name": "Mezzo Mix",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "Mezzo Mix 0,25 B"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "Pfand 0,25 M"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 1.59,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "1,59 B"
+      },
+      {
+        "name": "Coca Cola 1,251",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "Coca Cola 1,251 0,25 B"
+      },
+      {
+        "name": "Pfand",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "Pfand 0,25 M"
+      },
+      {
+        "name": "B",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 20,
+        "raw_text": "4,29 B"
+      },
+      {
+        "name": "Capri - Sun Multi",
+        "quantity": null,
+        "price": null,
+        "total": 0.79,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Capri - Sun Multi 0,79 A"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.12,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "Preisvorteil -0,12"
+      },
+      {
+        "name": "RABATT 20 % 230 OVC",
+        "quantity": null,
+        "price": null,
+        "total": 2.96,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "RABATT 20 % 230 OVC - 2,96"
+      },
+      {
+        "name": "RABATT 20 %",
+        "quantity": null,
+        "price": null,
+        "total": -1.86,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "RABATT 20 % -1,86"
+      }
+    ],
+    "items_count": 19,
+    "discounts_count": 3,
+    "items_total": 20.400000000000002,
+    "discounts_total": 4.94,
+    "skipped_lines": 38,
+    "parsed_lines": 22
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 20.400000000000002,
+    "discounts_sum": 4.94,
+    "calculated_total": 15.46,
+    "receipt_total": 6.7,
+    "difference": 8.760000000000002,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=15.46, receipt=6.7, diff=8.76 (tolerance=0.05)"
+  },
+  "processing_time_ms": 18.706321716308594,
+  "stages_completed": 6
+}

@@ -1,0 +1,143 @@
+PRESS
+rebe
+Steinhauser Auel 1
+514910verath-Vilkerath
+EUR
+Schweinenackenbraten
+10,85 A
+1,207 kg x 8,99 EUR/kg
+Schweinenackenbraten
+8,51 A
+0,947 kg x 8,99 EUR/kg
+Schw.Spare Ribs BBQ
+7,64 A
+0,900 kg x 8,49 EUR/kg
+Schw.Spare Ribs BBQ
+7,32 A
+0,862 kg x 8,49 EUR/kg
+Spare Ribs mar.
+8,81 A
+1,358 kg x 6,49 EUR/kg
+Dill
+1,39 A
+Frühkart. 2,5kg
+2,69 A
+Preisvorteil
+-0,30
+Fairtrade Rosen
+2,99 x 4
+11,96 A
+Cocktailtomaten
+1,49 A
+Rucola 125g
+0,85 A
+Gurken
+0,95 x
+2
+1,90 A
+Preisvorteil
+-0,40
+Zwiebeln rot
+1,99 A
+Salakis Scheibe Natu 3,79 x 4
+15,16 A
+Zaziki
+1,79 A
+Preisvorteil
+-0,14
+Baguettes Kräuter
+1,95 A
+Baguettes Knoblauch
+1,95 A
+Olivenöle natur
+Bull'sEyeFeink.Honey
+Preisvorteil
+4,99 A
+3,99 A
+-2,00
+Red Bull Energy
+1,75 x 2
+3,50 B
+Pfand 0,25 M
+0,25 x
+2
+0,50 B
+WTG Orangensaft 100%
+2,99 x
+4
+11,96 B
+Bitter Aperitiv 11%
+4,49 B
+Prosecco rosé
+6,99 B
+Grill-Holzkohle
+3,69 B
+Hähn.Keulen Diavolo 3,99 x 2
+7,98 A
+RABATT 20%
+-1,60
+QSHähn.Grill-&Ofenp. 4,49 x
+3
+13,47 A
+zu zahlen
+143,37
+Karte
+143,37
+Gesamter Preisvorteil
+4,44
+MWSTX
+MWST + Netto = Brutto
+A 7 %
+7,34
+104,90
+112,24
+NAV
+B 19 %
+4,97
+26,16
+31,13
+Summe
+12,31
+131,06
+143,37
+Lade dir die Lidl Plus App herunter
+und spare bei deinem nächsten Einkauf.
+TSE Transaktionsnummer: 1207294
+Seriennr. Kasse: LDL-000-6496-3
+Seriennr. TSE: F2vH5JJ0GxOzRGtqga+dvZbaId8
+27h4dRPMFvygLn00=
+Prüfwert: EzrFazMucAFXbB+05/aEV3YF1pU4RZgB
+m7w74vDAZgXImbSIXJdj+yGCoSTUYaIvZqSvTc5L01
++PjtvhmE5hRolREwXS7EpPZevBxmH2p732gBLttCcF
+dBBnTD42G2Ck
+Signaturzähler: 2463948
+2025-07-31T10:41:47.00OZ
+2025-07-31T10:43:08.000Z
+6496 738145/03
+814060660
+PUSH
+31.07.25 12:41
+VOL
+K-U-N-D-E-N-B-E-L-E-G
+Kartenzahlung girocard
+Betrag
+31.07.2025
+12:41
+143,37 EUR
+Kartennr.
+VU-Nummer
+TA-Nr. 2176102Beleg-Nr. 8514
+Kontaktlos Chip
+Autorisierungsnummer
+Autorisierungsantwortcode
+T-ID 60155116
+##########1364 00
+Online
+9801706496
+981034
+00
+EMV-Daten:
+A0000003591010028001/00
+**
+Autorisierung erfolgt
+**

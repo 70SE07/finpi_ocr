@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "name": "Verbrauchermarkt rabattfähig Daten AID 4033 [ 1 LEERGUT di",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-05-22 00:00:00"
+    },
+    {
+      "name": "% BITTE 22.05.25 0 252325 Overath -K ]",
+      "quantity": null,
+      "price": null,
+      "total": 0.25,
+      "date": "2025-05-22 00:00:00"
+    },
+    {
+      "name": ". AUFBEWAHREN 075 CREDIT N 00-22 Overath",
+      "quantity": null,
+      "price": null,
+      "total": 19.49,
+      "date": "2025-05-22 00:00:00"
+    },
+    {
+      "name": "L - 00 : .",
+      "quantity": null,
+      "price": null,
+      "total": 3.11,
+      "date": "2025-05-22 00:00:00"
+    }
+  ],
+  "total_amount": 19.49,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": "2025-05-22 00:00:00",
+  "receipt_id": "IMG_3096",
+  "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nWEIN/SPIRITUOSEN/SEKT/CHAMPAPreis €\nRonco di Sassi Prim (621)\n19,99 A\nPFAND/LEERGUT\nLeergut 0,25 VMW (108)\n-0,50 A*\n-2x 0,25 €\nSUMME [1]\nVisa\n19,49\n19,49\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID:\n61724235\nTA-Nr 252325\nPAN\nKarte 0\nEMV-AID\nVU-Nr\nKartenzahlung\nVisa kontaktlos\nVISA CREDIT\nEUR\nGenehmigungs-Nr\nDatum 22.05.25\nEMV-Daten\n19,49\nBNr 7461\n############4474\ngültig bis ##/##\nA0000000031010\n4556475983\n0000000000/0000////3030\n00 GENEHMIGUNG KARTE\nGEPRUEFT\nAS-Proc-Code: 00 075 00\nAPPROVED\n396106\n19:58 Uhr\nBITTE BELEG AUFBEWAHREN\nSteuer NETTO [€] MWST [€] BRUTTO [€]\nA=19,00%\n16,38\n3,11\n19.49\nDie mit * gekennzeichneten Artikel sind\nnicht rabattfähig.\n0014033220525006000413\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025\n22.05.25 19:59 4033 06 0413 36\nDatum Zeit Fil. Pos Bon Lade\nVielen Dank für Ihren Einkauf!",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 4.0,
+    "validation_passed": 0.0,
+    "validation_difference": 3.610000000000003
+  }
+}

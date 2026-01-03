@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "name": "PIZZA FIAMBRE E QUEIJO fun",
+      "quantity": null,
+      "price": null,
+      "total": 0.89,
+      "date": "2025-11-08 00:00:00",
+      "raw_text": "PIZZA FIAMBRE E QUEIJO fun 0,89 A"
+    },
+    {
+      "name": "FOLHADO DE CARNE MISTO",
+      "quantity": null,
+      "price": null,
+      "total": 1.49,
+      "date": "2025-11-08 00:00:00",
+      "raw_text": "FOLHADO DE CARNE MISTO 1,49 A"
+    },
+    {
+      "name": "A",
+      "quantity": null,
+      "price": null,
+      "total": 0.99,
+      "date": "2025-11-08 00:00:00",
+      "raw_text": "0.99 A"
+    }
+  ],
+  "total_amount": 3.37,
+  "merchant": "lidl",
+  "store_address": null,
+  "date": "2025-11-08 00:00:00",
+  "receipt_id": "PT_001",
+  "ocr_text": "LIDL Vale mesmo a pena.\nsbo 10 oh\nLIDL & Cia - LISBOA - R MARIA DA FONTE\nR M. Fonte M. F. Tijolo, Lj37 Lisboa\nNIF:503340855 C. S. 498.880 EUR\nRua Pé de Mouro 18, 2714-510 Sintra\nC. R. C Sintra N10628 SIRPEE PT000048\nFATURA SIMPLIFICADA\nOriginal Data de Venda:\nNo FS 018800125/205509\nNIF... CONSUMIDOR FINAL\n2025-11-08\nEUR\nTRANCA COM NOZ PECA\nfun 0,89 A\nPIZZA FIAMBRE E QUEIJO\nFOLHADO DE CARNE MISTO\n1,49 A\n0.99 A\nTotal\n3,37\nMULTIBANCO\n3.37\nA 23%\nTaxa Base Imp.\n2,74\nVal. Total\n3.37\nVal. IVA\n0.63\nRegiste se no Lidl Plus e\npoupe nas suas próximas compras\nATCUD: JJY7FV5R-205509\npulousia\n0188 233189/01\nDA 08.11.25 17:11\nPpqM Processado por Programa\ncertificado n.º 1050/AT\nDocumento válido como recibo.\nA pensar na sua comodidade neste\nperiodo de Natal, as devoluções\nou trocas de produtos não\nalimentares adquiridos entre\n24. 10.25 e 15. 12.25 poderão ser\nfeitas mediante apresentação do\ntalão de compra excecionalmente\nté dia 16/01/26 exceto artigos\nCartao Credito\nTOTAL A PASAR\ntos e po\nTotal de desc-\n6.002\n---------\n--Process\n7691 0001",
+  "detected_locale": "pt_PT",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 3.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

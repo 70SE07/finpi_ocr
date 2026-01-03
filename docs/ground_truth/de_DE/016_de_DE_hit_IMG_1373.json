@@ -1,6 +1,6 @@
 {
   "id": "016",
-  "source_file": "photo/GOODS/Hit/IMG_1373.jpeg",
+  "source_file": "data/input/Hit/IMG_1373.jpeg",
   "locale": "de_DE",
   "store": {
     "name": "HIT Verbrauchermarkt Overath GmbH &",
@@ -57,15 +57,15 @@
       "is_fresh": true
     },
     {
-      "raw_name": "Filetspiess Jalap",
+      "raw_name": "Filetspieß Jalap",
       "sku": "(189)",
       "total_price": 46.26,
       "tax_class": "B",
-      "category": "Bedientheke",
+      "category": "WEIN/SPIRITUOSEN",
       "is_fresh": true
     },
     {
-      "raw_name": "TawnyPortAlVarez",
+      "raw_name": "TawnyPortAlvarez",
       "sku": "(341)",
       "quantity": 2,
       "unit_price": 6.49,

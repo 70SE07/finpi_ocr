@@ -1,0 +1,16 @@
+{
+  "items": [],
+  "total_amount": 22.78,
+  "merchant": "Netto",
+  "store_address": null,
+  "date": "2025-11-25 00:00:00",
+  "receipt_id": "IMG_2974",
+  "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nEdamer Scheiben\nPreisvorteil\nEUR\n2,49 A\n-0,04\nRinderschinken Clas. 2,49 x 4 9,96 A\nHeinz Tom.Bl.Ketchup\n1,59 A\nPreisvorteil\n-0,30\nApotheker Rum\n7,99 B\nWeizen Sandwi. Toast\n1,09 A\nzu zahlen\nMBGC 22,78\nKreditkarte\n22,78\nGesamter Preisvorteil\n0,34\nMWSTX\nMWST + Netto = Brutto\nA 7%\n0,97\n13,82\n14,79\nB 19 %\n1,28\n6,71\n7,99\nSumme\n2,25\n20,53\n22,78\n¦ Lade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf. ¦\nTSE Transaktionsnummer: 1357337\nSeriennr. Kasse: LDL-000-6496-1\nRGtqga+dvzbal\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: GDAkNu3ZCBCT6bLL4zSgUNeyxj6ZuGmi\nVNnHQn2Pg+JomEjKbgrGZCA/aOKATh1D4ZklyAkERD\nUKLJUbZINbzhtSETHOkRWUBhMBstr/VsFxV+0S0aX6\nwCbsN1R5PQrQ\nSignaturzähler: 2771091\n2025-11-25T19:38:00.000Z\n2025-11-25T19:38:20.000Z\n6496 703363/01\n814060660\nlbil smis\n25.11.25 20:38\nK-U-N-D-E-N-B-E-L-E-G\nBezahlung VISA\nBetrag\n22,78 EUR\n25.11.2025\n20:36\nT-ID 60155114\nTA-Nr. 192136\nBeleg-Nr. 7207\nKartennr.\n########9223 00\nOnline\n455600535769\nVisa kontaktlos Chip\nBestätigt durch mobiles Kundengerät\nVU-Nummer\nAutorisierungsnummer\nEMV-Daten:\nAutorisierungsantwortcode\nSEA CXPNKC\n00\nA0000000031010/00\nZahlung erfolgt\n**\nqqA zuiq bil",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 0.0,
+    "validation_passed": 0.0,
+    "validation_difference": 22.78
+  }
+}

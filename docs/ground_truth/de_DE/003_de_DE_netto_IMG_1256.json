@@ -1,6 +1,6 @@
 {
   "id": "003",
-  "source_file": "data/input/IMG_1256.jpeg",
+  "source_file": "data/input/Netto/IMG_1256.jpeg",
   "locale": "de_DE",
   "store": {
     "name": "Netto Marken-Discount",
@@ -11,7 +11,7 @@
   },
   "metadata": {
     "date": "29.07.25",
-    "time": "17:34",
+    "time": "17:35",
     "currency": "EUR",
     "payment_method": "Kartenzahlung EUR",
     "receipt_total": 47.44,
@@ -54,21 +54,21 @@
     },
     {
       "raw_name": "Doppio Primitivo BIO 0,75L",
-      "quantity": 3,
-      "unit_price": 3.49,
-      "total_price": 10.47,
-      "tax_class": "A",
-      "note": "3 x 3,49"
+      "quantity": 1,
+      "unit_price": null,
+      "total_price": 7.99,
+      "tax_class": "A"
     },
     {
       "raw_name": "Putensteaks Texas 400g",
-      "quantity": 1,
-      "unit_price": null,
+      "quantity": 3,
+      "unit_price": 3.49,
       "total_price": 10.47,
-      "tax_class": "B"
+      "tax_class": "B",
+      "note": "3 x 3,49"
     },
     {
-      "raw_name": "SB XXL BigWings ca2,5kg9S",
+      "raw_name": "SB XXL BigWings ca2,5kgQS",
       "quantity": 2.897,
       "unit": "kg",
       "unit_price": 4.49,
@@ -77,10 +77,10 @@
     }
   ],
   "validation": {
-    "checksum_method": "SUM(items) == SUMME",
-    "items_sum": 49.92,
+    "checksum_method": "SUM(items.total_price) == receipt_total",
+    "items_sum": 47.44,
     "expected_total": 47.44,
-    "note": "Possible hidden discount or partial list",
+    "discrepancy": 0.00,
     "tax_block_sum": 47.44
   },
   "notes": [

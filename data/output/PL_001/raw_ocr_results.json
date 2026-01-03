@@ -1,0 +1,3602 @@
+{
+  "full_text": "dul\ngas\nCARREFOUR CH Wileńska\n03-734 Warszawa ul. Targowa 72\nfque Tel. (22) 511-26-00\n2025-11-19\nCARREFOUR Polska Sp. z o. 0.\n03-734 Warszawa ul. Targowa 72\nNr rej. BDO: 000009699\nA TORBA RECYKLING\nA_TORBA RECYKLING\nC_JOG.D/P SKYR H.PR\nC.JOG.D/P SKYR HEN\nC_JOG.D/P SKYR LIND\nC.ZIEMNIAKI SŁODKIE\nC POMELO CZERWONE L\nA OSHIORNICA MACKI\nA OSHIORNICA MACKI\nA BIO CZEKOL.COCOA\nC_MC KOPEREK PĘCZEK\nC_MC SAŁATA RZYMSKA\nC MC BIO KRAKERSY P\nCMC KIEŁKI JARMUZU\nC_SIMPL POMIDOR DAK\nC_SEREK PHILADELPHI\nC BAKALLAND DAKTYL\nC_JZN CZOSNEK SZTUK\nNIP 937-00-08-168\nGid\nOM\nnr wydr.072002/1258\nPARAGON FISKALNY.072002/15\nPARAG\n1*0.79= 0.79 A\n1*0.79= 0.79 A\nuqu\n1*6.75= 6.75 C\n1*5.75= 5.75 C\n1*5,99= 5,99 C\n0,694*9.99 6,93 C\n0.762*9.99= 7.61 C\n1*41.99= 41.99 A\n1*41.99= 41.99 A\n1*13.99= 13,99 A\n1x5,99= 5,99 C\nBYAR\n1×5,99= 5,99 C\n1x7,99= 7,99 C\n1*4,65= 4,65 C\n1*5,99= 5,99 C\n1*7,29= 7,29 C\n1*8,49= 8,49 C\n1*1,99= 1,99 C\n1*14.99= 14.99 C\nC\n0,668*4,99 3,33 C\n0,668*4,99 3,33 C\nCHC MANDARYNKI LUZJAVA 1.398-8.99= 12.57 €\nC BANANY PLANTANY 6\nC_JZN JABŁKA CHAMPI\nC.JZN JABŁKA CHAMPI\nC_JZN JABŁKA CHANPI\n0.668*4.99 -3,33 C\n***Anulovano sprzedaż***\nC_CYTRYNY LUZ\nC_TWARÓG WIEJSKI KL\nCMC BIO AOP SER PA\nC_JAJA FARMIO H10 W\nSprzed. opod. PTU A\nKwota A 23,00%\nSprzed. opod. PTU C\nKuota C 05,00%\nsbob b2ysio\n0,29 9,99 2,90 C\n1*5,79= 5,79 C\n1*20,69= 20.69 C\n1×13,09 13,09 C\n99.55\n18.62\n154.77\n7.37\n25.99\nPodatek PTU\nSUMA PLN YAH ob 254.32\n000106 #019 038\n19647F707FD77CC40E 48F7975FEF9AE5F9C238DD\n18:10\nPCCO 1701480375\n00111019254772511193\nPłatność: KARTAPIATNI\nKasjer\n254,32\n038\nNr transakcji\n25477\nZ kartę PAYBACK zyskałbyś 84 punktów!",
+  "words": [
+    {
+      "text": "dul",
+      "bounding_box": {
+        "x": 614,
+        "y": 45,
+        "width": 30,
+        "height": 14
+      },
+      "confidence": 0.8352282047271729
+    },
+    {
+      "text": "gas",
+      "bounding_box": {
+        "x": 311,
+        "y": 101,
+        "width": 42,
+        "height": 20
+      },
+      "confidence": 0.3252487778663635
+    },
+    {
+      "text": "CARREFOUR",
+      "bounding_box": {
+        "x": 413,
+        "y": 101,
+        "width": 67,
+        "height": 16
+      },
+      "confidence": 0.9739689826965332
+    },
+    {
+      "text": "CH",
+      "bounding_box": {
+        "x": 507,
+        "y": 102,
+        "width": 16,
+        "height": 14
+      },
+      "confidence": 0.950269341468811
+    },
+    {
+      "text": "Wileńska",
+      "bounding_box": {
+        "x": 528,
+        "y": 103,
+        "width": 58,
+        "height": 15
+      },
+      "confidence": 0.9380102157592773
+    },
+    {
+      "text": "03-734",
+      "bounding_box": {
+        "x": 384,
+        "y": 117,
+        "width": 44,
+        "height": 15
+      },
+      "confidence": 0.9832289814949036
+    },
+    {
+      "text": "Warszawa",
+      "bounding_box": {
+        "x": 435,
+        "y": 118,
+        "width": 59,
+        "height": 15
+      },
+      "confidence": 0.8919752836227417
+    },
+    {
+      "text": "ul",
+      "bounding_box": {
+        "x": 500,
+        "y": 119,
+        "width": 15,
+        "height": 13
+      },
+      "confidence": 0.800489068031311
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 514,
+        "y": 119,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.9640086889266968
+    },
+    {
+      "text": "Targowa",
+      "bounding_box": {
+        "x": 528,
+        "y": 119,
+        "width": 53,
+        "height": 15
+      },
+      "confidence": 0.9069323539733887
+    },
+    {
+      "text": "72",
+      "bounding_box": {
+        "x": 586,
+        "y": 120,
+        "width": 16,
+        "height": 13
+      },
+      "confidence": 0.9475116729736328
+    },
+    {
+      "text": "fque",
+      "bounding_box": {
+        "x": 325,
+        "y": 133,
+        "width": 63,
+        "height": 23
+      },
+      "confidence": 0.3653005361557007
+    },
+    {
+      "text": "Tel",
+      "bounding_box": {
+        "x": 420,
+        "y": 136,
+        "width": 20,
+        "height": 15
+      },
+      "confidence": 0.9439482092857361
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 443,
+        "y": 136,
+        "width": 4,
+        "height": 15
+      },
+      "confidence": 0.8630297183990479
+    },
+    {
+      "text": "(",
+      "bounding_box": {
+        "x": 458,
+        "y": 136,
+        "width": 5,
+        "height": 15
+      },
+      "confidence": 0.9744616150856018
+    },
+    {
+      "text": "22",
+      "bounding_box": {
+        "x": 463,
+        "y": 136,
+        "width": 15,
+        "height": 15
+      },
+      "confidence": 0.9893745183944702
+    },
+    {
+      "text": ")",
+      "bounding_box": {
+        "x": 478,
+        "y": 136,
+        "width": 6,
+        "height": 15
+      },
+      "confidence": 0.9870311617851257
+    },
+    {
+      "text": "511-26-00",
+      "bounding_box": {
+        "x": 493,
+        "y": 136,
+        "width": 67,
+        "height": 17
+      },
+      "confidence": 0.9902166128158569
+    },
+    {
+      "text": "2025-11-19",
+      "bounding_box": {
+        "x": 288,
+        "y": 224,
+        "width": 73,
+        "height": 16
+      },
+      "confidence": 0.9734379053115845
+    },
+    {
+      "text": "CARREFOUR",
+      "bounding_box": {
+        "x": 391,
+        "y": 151,
+        "width": 65,
+        "height": 18
+      },
+      "confidence": 0.986803412437439
+    },
+    {
+      "text": "Polska",
+      "bounding_box": {
+        "x": 464,
+        "y": 153,
+        "width": 44,
+        "height": 17
+      },
+      "confidence": 0.9467672109603882
+    },
+    {
+      "text": "Sp",
+      "bounding_box": {
+        "x": 513,
+        "y": 155,
+        "width": 18,
+        "height": 15
+      },
+      "confidence": 0.9565751552581787
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 530,
+        "y": 155,
+        "width": 4,
+        "height": 15
+      },
+      "confidence": 0.8390896916389465
+    },
+    {
+      "text": "z",
+      "bounding_box": {
+        "x": 544,
+        "y": 155,
+        "width": 10,
+        "height": 15
+      },
+      "confidence": 0.8756449818611145
+    },
+    {
+      "text": "o",
+      "bounding_box": {
+        "x": 558,
+        "y": 156,
+        "width": 8,
+        "height": 15
+      },
+      "confidence": 0.7648956179618835
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 567,
+        "y": 156,
+        "width": 4,
+        "height": 15
+      },
+      "confidence": 0.9111010432243347
+    },
+    {
+      "text": "0",
+      "bounding_box": {
+        "x": 579,
+        "y": 156,
+        "width": 9,
+        "height": 15
+      },
+      "confidence": 0.5487142205238342
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 588,
+        "y": 156,
+        "width": 5,
+        "height": 15
+      },
+      "confidence": 0.909618079662323
+    },
+    {
+      "text": "03-734",
+      "bounding_box": {
+        "x": 383,
+        "y": 171,
+        "width": 45,
+        "height": 15
+      },
+      "confidence": 0.9859005808830261
+    },
+    {
+      "text": "Warszawa",
+      "bounding_box": {
+        "x": 435,
+        "y": 171,
+        "width": 58,
+        "height": 16
+      },
+      "confidence": 0.8681079745292664
+    },
+    {
+      "text": "ul",
+      "bounding_box": {
+        "x": 499,
+        "y": 172,
+        "width": 16,
+        "height": 15
+      },
+      "confidence": 0.8223733901977539
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 515,
+        "y": 172,
+        "width": 6,
+        "height": 15
+      },
+      "confidence": 0.9672883152961731
+    },
+    {
+      "text": "Targowa",
+      "bounding_box": {
+        "x": 528,
+        "y": 172,
+        "width": 53,
+        "height": 16
+      },
+      "confidence": 0.9437469840049744
+    },
+    {
+      "text": "72",
+      "bounding_box": {
+        "x": 585,
+        "y": 173,
+        "width": 17,
+        "height": 15
+      },
+      "confidence": 0.9806225299835205
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 413,
+        "y": 190,
+        "width": 14,
+        "height": 13
+      },
+      "confidence": 0.9705156683921814
+    },
+    {
+      "text": "rej",
+      "bounding_box": {
+        "x": 436,
+        "y": 190,
+        "width": 21,
+        "height": 13
+      },
+      "confidence": 0.9470192790031433
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 459,
+        "y": 190,
+        "width": 3,
+        "height": 13
+      },
+      "confidence": 0.9119370579719543
+    },
+    {
+      "text": "BDO",
+      "bounding_box": {
+        "x": 471,
+        "y": 190,
+        "width": 21,
+        "height": 13
+      },
+      "confidence": 0.8675940036773682
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 494,
+        "y": 190,
+        "width": 4,
+        "height": 13
+      },
+      "confidence": 0.9824385046958923
+    },
+    {
+      "text": "000009699",
+      "bounding_box": {
+        "x": 507,
+        "y": 190,
+        "width": 67,
+        "height": 15
+      },
+      "confidence": 0.9896681308746338
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 289,
+        "y": 263,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.8921021223068237
+    },
+    {
+      "text": "TORBA",
+      "bounding_box": {
+        "x": 303,
+        "y": 263,
+        "width": 38,
+        "height": 13
+      },
+      "confidence": 0.98603755235672
+    },
+    {
+      "text": "RECYKLING",
+      "bounding_box": {
+        "x": 347,
+        "y": 263,
+        "width": 65,
+        "height": 13
+      },
+      "confidence": 0.9911894798278809
+    },
+    {
+      "text": "A_TORBA",
+      "bounding_box": {
+        "x": 289,
+        "y": 280,
+        "width": 51,
+        "height": 18
+      },
+      "confidence": 0.8937853574752808
+    },
+    {
+      "text": "RECYKLING",
+      "bounding_box": {
+        "x": 345,
+        "y": 279,
+        "width": 67,
+        "height": 18
+      },
+      "confidence": 0.9853124618530273
+    },
+    {
+      "text": "C_JOG.D",
+      "bounding_box": {
+        "x": 288,
+        "y": 301,
+        "width": 53,
+        "height": 15
+      },
+      "confidence": 0.871573805809021
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 340,
+        "y": 301,
+        "width": 7,
+        "height": 15
+      },
+      "confidence": 0.9243075847625732
+    },
+    {
+      "text": "P",
+      "bounding_box": {
+        "x": 346,
+        "y": 301,
+        "width": 9,
+        "height": 15
+      },
+      "confidence": 0.9625890254974365
+    },
+    {
+      "text": "SKYR",
+      "bounding_box": {
+        "x": 361,
+        "y": 301,
+        "width": 30,
+        "height": 15
+      },
+      "confidence": 0.9898442625999451
+    },
+    {
+      "text": "H.PR",
+      "bounding_box": {
+        "x": 398,
+        "y": 301,
+        "width": 30,
+        "height": 15
+      },
+      "confidence": 0.9485108852386475
+    },
+    {
+      "text": "C.JOG.D",
+      "bounding_box": {
+        "x": 289,
+        "y": 320,
+        "width": 50,
+        "height": 15
+      },
+      "confidence": 0.8936011791229248
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 340,
+        "y": 320,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9442169666290283
+    },
+    {
+      "text": "P",
+      "bounding_box": {
+        "x": 347,
+        "y": 320,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.9663161039352417
+    },
+    {
+      "text": "SKYR",
+      "bounding_box": {
+        "x": 361,
+        "y": 320,
+        "width": 29,
+        "height": 14
+      },
+      "confidence": 0.9889875054359436
+    },
+    {
+      "text": "HEN",
+      "bounding_box": {
+        "x": 396,
+        "y": 320,
+        "width": 24,
+        "height": 14
+      },
+      "confidence": 0.9283528327941895
+    },
+    {
+      "text": "C_JOG.D",
+      "bounding_box": {
+        "x": 289,
+        "y": 339,
+        "width": 51,
+        "height": 16
+      },
+      "confidence": 0.8683916330337524
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 340,
+        "y": 340,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.962151825428009
+    },
+    {
+      "text": "P",
+      "bounding_box": {
+        "x": 347,
+        "y": 340,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9653032422065735
+    },
+    {
+      "text": "SKYR",
+      "bounding_box": {
+        "x": 361,
+        "y": 339,
+        "width": 29,
+        "height": 15
+      },
+      "confidence": 0.9923945665359497
+    },
+    {
+      "text": "LIND",
+      "bounding_box": {
+        "x": 397,
+        "y": 339,
+        "width": 29,
+        "height": 14
+      },
+      "confidence": 0.9922000765800476
+    },
+    {
+      "text": "C.ZIEMNIAKI",
+      "bounding_box": {
+        "x": 290,
+        "y": 358,
+        "width": 78,
+        "height": 15
+      },
+      "confidence": 0.9260168075561523
+    },
+    {
+      "text": "SŁODKIE",
+      "bounding_box": {
+        "x": 375,
+        "y": 358,
+        "width": 51,
+        "height": 14
+      },
+      "confidence": 0.9239811301231384
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 290,
+        "y": 379,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.9260001182556152
+    },
+    {
+      "text": "POMELO",
+      "bounding_box": {
+        "x": 302,
+        "y": 378,
+        "width": 45,
+        "height": 13
+      },
+      "confidence": 0.8916434049606323
+    },
+    {
+      "text": "CZERWONE",
+      "bounding_box": {
+        "x": 353,
+        "y": 378,
+        "width": 59,
+        "height": 13
+      },
+      "confidence": 0.9729225635528564
+    },
+    {
+      "text": "L",
+      "bounding_box": {
+        "x": 418,
+        "y": 377,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.9492986798286438
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 290,
+        "y": 398,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9309251308441162
+    },
+    {
+      "text": "OSHIORNICA",
+      "bounding_box": {
+        "x": 303,
+        "y": 396,
+        "width": 72,
+        "height": 16
+      },
+      "confidence": 0.9496882557868958
+    },
+    {
+      "text": "MACKI",
+      "bounding_box": {
+        "x": 382,
+        "y": 396,
+        "width": 37,
+        "height": 14
+      },
+      "confidence": 0.9839394688606262
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 290,
+        "y": 418,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.852103590965271
+    },
+    {
+      "text": "OSHIORNICA",
+      "bounding_box": {
+        "x": 305,
+        "y": 418,
+        "width": 71,
+        "height": 13
+      },
+      "confidence": 0.9172300696372986
+    },
+    {
+      "text": "MACKI",
+      "bounding_box": {
+        "x": 383,
+        "y": 418,
+        "width": 37,
+        "height": 13
+      },
+      "confidence": 0.989739716053009
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 290,
+        "y": 436,
+        "width": 8,
+        "height": 15
+      },
+      "confidence": 0.919222354888916
+    },
+    {
+      "text": "BIO",
+      "bounding_box": {
+        "x": 304,
+        "y": 435,
+        "width": 21,
+        "height": 15
+      },
+      "confidence": 0.914139986038208
+    },
+    {
+      "text": "CZEKOL.COCOA",
+      "bounding_box": {
+        "x": 332,
+        "y": 434,
+        "width": 88,
+        "height": 17
+      },
+      "confidence": 0.9669420719146729
+    },
+    {
+      "text": "C_MC",
+      "bounding_box": {
+        "x": 290,
+        "y": 456,
+        "width": 29,
+        "height": 14
+      },
+      "confidence": 0.8057515025138855
+    },
+    {
+      "text": "KOPEREK",
+      "bounding_box": {
+        "x": 326,
+        "y": 456,
+        "width": 50,
+        "height": 14
+      },
+      "confidence": 0.9917279481887817
+    },
+    {
+      "text": "PĘCZEK",
+      "bounding_box": {
+        "x": 385,
+        "y": 456,
+        "width": 43,
+        "height": 14
+      },
+      "confidence": 0.8906013369560242
+    },
+    {
+      "text": "C_MC",
+      "bounding_box": {
+        "x": 289,
+        "y": 476,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.8261202573776245
+    },
+    {
+      "text": "SAŁATA",
+      "bounding_box": {
+        "x": 326,
+        "y": 476,
+        "width": 43,
+        "height": 13
+      },
+      "confidence": 0.9433293342590332
+    },
+    {
+      "text": "RZYMSKA",
+      "bounding_box": {
+        "x": 377,
+        "y": 476,
+        "width": 50,
+        "height": 13
+      },
+      "confidence": 0.9795166254043579
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 290,
+        "y": 493,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.943111002445221
+    },
+    {
+      "text": "MC",
+      "bounding_box": {
+        "x": 303,
+        "y": 493,
+        "width": 16,
+        "height": 14
+      },
+      "confidence": 0.9761866331100464
+    },
+    {
+      "text": "BIO",
+      "bounding_box": {
+        "x": 327,
+        "y": 493,
+        "width": 21,
+        "height": 14
+      },
+      "confidence": 0.9280723929405212
+    },
+    {
+      "text": "KRAKERSY",
+      "bounding_box": {
+        "x": 356,
+        "y": 493,
+        "width": 56,
+        "height": 16
+      },
+      "confidence": 0.9901602268218994
+    },
+    {
+      "text": "P",
+      "bounding_box": {
+        "x": 420,
+        "y": 494,
+        "width": 9,
+        "height": 14
+      },
+      "confidence": 0.9782437086105347
+    },
+    {
+      "text": "CMC",
+      "bounding_box": {
+        "x": 289,
+        "y": 514,
+        "width": 31,
+        "height": 13
+      },
+      "confidence": 0.8880767822265625
+    },
+    {
+      "text": "KIEŁKI",
+      "bounding_box": {
+        "x": 326,
+        "y": 514,
+        "width": 43,
+        "height": 13
+      },
+      "confidence": 0.9312015175819397
+    },
+    {
+      "text": "JARMUZU",
+      "bounding_box": {
+        "x": 377,
+        "y": 514,
+        "width": 50,
+        "height": 13
+      },
+      "confidence": 0.8121069073677063
+    },
+    {
+      "text": "C_SIMPL",
+      "bounding_box": {
+        "x": 290,
+        "y": 532,
+        "width": 50,
+        "height": 13
+      },
+      "confidence": 0.8150111436843872
+    },
+    {
+      "text": "POMIDOR",
+      "bounding_box": {
+        "x": 347,
+        "y": 532,
+        "width": 53,
+        "height": 13
+      },
+      "confidence": 0.97986900806427
+    },
+    {
+      "text": "DAK",
+      "bounding_box": {
+        "x": 406,
+        "y": 532,
+        "width": 22,
+        "height": 13
+      },
+      "confidence": 0.9890608787536621
+    },
+    {
+      "text": "C_SEREK",
+      "bounding_box": {
+        "x": 290,
+        "y": 551,
+        "width": 50,
+        "height": 14
+      },
+      "confidence": 0.9203908443450928
+    },
+    {
+      "text": "PHILADELPHI",
+      "bounding_box": {
+        "x": 347,
+        "y": 551,
+        "width": 80,
+        "height": 14
+      },
+      "confidence": 0.9927970170974731
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 289,
+        "y": 570,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.9399146437644958
+    },
+    {
+      "text": "BAKALLAND",
+      "bounding_box": {
+        "x": 304,
+        "y": 570,
+        "width": 66,
+        "height": 13
+      },
+      "confidence": 0.9917726516723633
+    },
+    {
+      "text": "DAKTYL",
+      "bounding_box": {
+        "x": 377,
+        "y": 570,
+        "width": 42,
+        "height": 13
+      },
+      "confidence": 0.9863216876983643
+    },
+    {
+      "text": "C_JZN",
+      "bounding_box": {
+        "x": 290,
+        "y": 589,
+        "width": 36,
+        "height": 13
+      },
+      "confidence": 0.8864589929580688
+    },
+    {
+      "text": "CZOSNEK",
+      "bounding_box": {
+        "x": 333,
+        "y": 589,
+        "width": 51,
+        "height": 13
+      },
+      "confidence": 0.963851273059845
+    },
+    {
+      "text": "SZTUK",
+      "bounding_box": {
+        "x": 391,
+        "y": 589,
+        "width": 36,
+        "height": 13
+      },
+      "confidence": 0.9887304306030273
+    },
+    {
+      "text": "NIP",
+      "bounding_box": {
+        "x": 434,
+        "y": 209,
+        "width": 22,
+        "height": 14
+      },
+      "confidence": 0.9831516146659851
+    },
+    {
+      "text": "937-00-08-168",
+      "bounding_box": {
+        "x": 462,
+        "y": 208,
+        "width": 97,
+        "height": 16
+      },
+      "confidence": 0.9837364554405212
+    },
+    {
+      "text": "Gid",
+      "bounding_box": {
+        "x": 650,
+        "y": 103,
+        "width": 33,
+        "height": 20
+      },
+      "confidence": 0.3780170679092407
+    },
+    {
+      "text": "OM",
+      "bounding_box": {
+        "x": 636,
+        "y": 139,
+        "width": 28,
+        "height": 21
+      },
+      "confidence": 0.6431722044944763
+    },
+    {
+      "text": "nr",
+      "bounding_box": {
+        "x": 557,
+        "y": 229,
+        "width": 16,
+        "height": 14
+      },
+      "confidence": 0.8054735660552979
+    },
+    {
+      "text": "wydr.072002",
+      "bounding_box": {
+        "x": 579,
+        "y": 228,
+        "width": 80,
+        "height": 16
+      },
+      "confidence": 0.9790416359901428
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 659,
+        "y": 229,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9793285727500916
+    },
+    {
+      "text": "1258",
+      "bounding_box": {
+        "x": 665,
+        "y": 229,
+        "width": 29,
+        "height": 15
+      },
+      "confidence": 0.9873727560043335
+    },
+    {
+      "text": "PARAGON",
+      "bounding_box": {
+        "x": 428,
+        "y": 230,
+        "width": 58,
+        "height": 31
+      },
+      "confidence": 0.6642146706581116
+    },
+    {
+      "text": "FISKALNY.072002",
+      "bounding_box": {
+        "x": 492,
+        "y": 230,
+        "width": 171,
+        "height": 31
+      },
+      "confidence": 0.6624314785003662
+    },
+    {
+      "text": "/",
+      "bounding_box": {
+        "x": 658,
+        "y": 230,
+        "width": 10,
+        "height": 31
+      },
+      "confidence": 0.641079306602478
+    },
+    {
+      "text": "15",
+      "bounding_box": {
+        "x": 663,
+        "y": 230,
+        "width": 25,
+        "height": 31
+      },
+      "confidence": 0.6079336404800415
+    },
+    {
+      "text": "PARAG",
+      "bounding_box": {
+        "x": 428,
+        "y": 236,
+        "width": 45,
+        "height": 27
+      },
+      "confidence": 0.643843412399292
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 594,
+        "y": 265,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9343706965446472
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 601,
+        "y": 265,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.5643131136894226
+    },
+    {
+      "text": "0.79",
+      "bounding_box": {
+        "x": 608,
+        "y": 264,
+        "width": 29,
+        "height": 16
+      },
+      "confidence": 0.9505119323730469
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 637,
+        "y": 266,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.6373602151870728
+    },
+    {
+      "text": "0.79",
+      "bounding_box": {
+        "x": 650,
+        "y": 265,
+        "width": 30,
+        "height": 16
+      },
+      "confidence": 0.9621654152870178
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 685,
+        "y": 267,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9905182719230652
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 594,
+        "y": 285,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9276519417762756
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 601,
+        "y": 285,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.6254258751869202
+    },
+    {
+      "text": "0.79",
+      "bounding_box": {
+        "x": 606,
+        "y": 285,
+        "width": 32,
+        "height": 15
+      },
+      "confidence": 0.9647494554519653
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 637,
+        "y": 285,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.7825067043304443
+    },
+    {
+      "text": "0.79",
+      "bounding_box": {
+        "x": 649,
+        "y": 286,
+        "width": 30,
+        "height": 15
+      },
+      "confidence": 0.8694899082183838
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 686,
+        "y": 286,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9883028864860535
+    },
+    {
+      "text": "uqu",
+      "bounding_box": {
+        "x": 507,
+        "y": 293,
+        "width": 73,
+        "height": 36
+      },
+      "confidence": 0.7536512017250061
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 594,
+        "y": 304,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9135392308235168
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 601,
+        "y": 304,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.6544002890586853
+    },
+    {
+      "text": "6.75",
+      "bounding_box": {
+        "x": 606,
+        "y": 304,
+        "width": 32,
+        "height": 15
+      },
+      "confidence": 0.9195129871368408
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 637,
+        "y": 304,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.6866346597671509
+    },
+    {
+      "text": "6.75",
+      "bounding_box": {
+        "x": 649,
+        "y": 305,
+        "width": 31,
+        "height": 15
+      },
+      "confidence": 0.876353919506073
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 685,
+        "y": 305,
+        "width": 9,
+        "height": 14
+      },
+      "confidence": 0.9504565000534058
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 594,
+        "y": 324,
+        "width": 5,
+        "height": 13
+      },
+      "confidence": 0.9513256549835205
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 600,
+        "y": 324,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.6500059366226196
+    },
+    {
+      "text": "5.75",
+      "bounding_box": {
+        "x": 606,
+        "y": 324,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.8887022137641907
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 636,
+        "y": 324,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.7878245115280151
+    },
+    {
+      "text": "5.75",
+      "bounding_box": {
+        "x": 649,
+        "y": 324,
+        "width": 31,
+        "height": 13
+      },
+      "confidence": 0.9020464420318604
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 684,
+        "y": 325,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.980366051197052
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 594,
+        "y": 343,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.9549912214279175
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 601,
+        "y": 343,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.6822543144226074
+    },
+    {
+      "text": "5,99",
+      "bounding_box": {
+        "x": 605,
+        "y": 343,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9188904166221619
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 636,
+        "y": 343,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.5263249278068542
+    },
+    {
+      "text": "5,99",
+      "bounding_box": {
+        "x": 649,
+        "y": 343,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9257252812385559
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 684,
+        "y": 344,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.9353038668632507
+    },
+    {
+      "text": "0,694",
+      "bounding_box": {
+        "x": 563,
+        "y": 361,
+        "width": 36,
+        "height": 15
+      },
+      "confidence": 0.9638123512268066
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 600,
+        "y": 361,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.3183326721191406
+    },
+    {
+      "text": "9.99",
+      "bounding_box": {
+        "x": 607,
+        "y": 361,
+        "width": 29,
+        "height": 14
+      },
+      "confidence": 0.8798295259475708
+    },
+    {
+      "text": "6,93",
+      "bounding_box": {
+        "x": 648,
+        "y": 362,
+        "width": 30,
+        "height": 14
+      },
+      "confidence": 0.9535611867904663
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 684,
+        "y": 362,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9184510707855225
+    },
+    {
+      "text": "0.762",
+      "bounding_box": {
+        "x": 563,
+        "y": 381,
+        "width": 35,
+        "height": 14
+      },
+      "confidence": 0.8977512717247009
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 599,
+        "y": 381,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.7609342336654663
+    },
+    {
+      "text": "9.99",
+      "bounding_box": {
+        "x": 605,
+        "y": 381,
+        "width": 30,
+        "height": 14
+      },
+      "confidence": 0.8670691251754761
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 636,
+        "y": 381,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.7511732578277588
+    },
+    {
+      "text": "7.61",
+      "bounding_box": {
+        "x": 649,
+        "y": 381,
+        "width": 28,
+        "height": 14
+      },
+      "confidence": 0.8912545442581177
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 684,
+        "y": 381,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9199926257133484
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 579,
+        "y": 400,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9418559670448303
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 585,
+        "y": 400,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.5780588388442993
+    },
+    {
+      "text": "41.99",
+      "bounding_box": {
+        "x": 590,
+        "y": 400,
+        "width": 39,
+        "height": 14
+      },
+      "confidence": 0.9346989393234253
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 629,
+        "y": 400,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.7503196001052856
+    },
+    {
+      "text": "41.99",
+      "bounding_box": {
+        "x": 640,
+        "y": 400,
+        "width": 37,
+        "height": 15
+      },
+      "confidence": 0.9764172434806824
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 684,
+        "y": 401,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9857956171035767
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 579,
+        "y": 420,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.9131011962890625
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 585,
+        "y": 420,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.6604980826377869
+    },
+    {
+      "text": "41.99",
+      "bounding_box": {
+        "x": 590,
+        "y": 420,
+        "width": 37,
+        "height": 13
+      },
+      "confidence": 0.9652650952339172
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 628,
+        "y": 420,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.4943661689758301
+    },
+    {
+      "text": "41.99",
+      "bounding_box": {
+        "x": 640,
+        "y": 420,
+        "width": 37,
+        "height": 13
+      },
+      "confidence": 0.9641387462615967
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 684,
+        "y": 420,
+        "width": 10,
+        "height": 13
+      },
+      "confidence": 0.9898412823677063
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 578,
+        "y": 439,
+        "width": 5,
+        "height": 13
+      },
+      "confidence": 0.9143114686012268
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 585,
+        "y": 439,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.776679277420044
+    },
+    {
+      "text": "13.99",
+      "bounding_box": {
+        "x": 592,
+        "y": 439,
+        "width": 35,
+        "height": 13
+      },
+      "confidence": 0.919958233833313
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 627,
+        "y": 439,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.5894942283630371
+    },
+    {
+      "text": "13,99",
+      "bounding_box": {
+        "x": 642,
+        "y": 439,
+        "width": 36,
+        "height": 13
+      },
+      "confidence": 0.9502779245376587
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 684,
+        "y": 439,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.9884286522865295
+    },
+    {
+      "text": "1x5,99",
+      "bounding_box": {
+        "x": 592,
+        "y": 458,
+        "width": 42,
+        "height": 13
+      },
+      "confidence": 0.853501558303833
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 635,
+        "y": 458,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.5010285973548889
+    },
+    {
+      "text": "5,99",
+      "bounding_box": {
+        "x": 647,
+        "y": 458,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.8278535604476929
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 683,
+        "y": 458,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.8842552900314331
+    },
+    {
+      "text": "BYAR",
+      "bounding_box": {
+        "x": 451,
+        "y": 467,
+        "width": 84,
+        "height": 24
+      },
+      "confidence": 0.6299923658370972
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 592,
+        "y": 477,
+        "width": 5,
+        "height": 14
+      },
+      "confidence": 0.847232460975647
+    },
+    {
+      "text": "×",
+      "bounding_box": {
+        "x": 598,
+        "y": 477,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.47147199511528015
+    },
+    {
+      "text": "5,99",
+      "bounding_box": {
+        "x": 605,
+        "y": 477,
+        "width": 29,
+        "height": 14
+      },
+      "confidence": 0.9145301580429077
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 634,
+        "y": 477,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.7445939183235168
+    },
+    {
+      "text": "5,99",
+      "bounding_box": {
+        "x": 646,
+        "y": 477,
+        "width": 31,
+        "height": 14
+      },
+      "confidence": 0.8721768856048584
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 477,
+        "width": 9,
+        "height": 14
+      },
+      "confidence": 0.9174529910087585
+    },
+    {
+      "text": "1x7,99",
+      "bounding_box": {
+        "x": 591,
+        "y": 496,
+        "width": 43,
+        "height": 13
+      },
+      "confidence": 0.8391609191894531
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 633,
+        "y": 496,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.7627171874046326
+    },
+    {
+      "text": "7,99",
+      "bounding_box": {
+        "x": 647,
+        "y": 496,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.920348048210144
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 496,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.9307595491409302
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 591,
+        "y": 516,
+        "width": 6,
+        "height": 12
+      },
+      "confidence": 0.9242627024650574
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 598,
+        "y": 516,
+        "width": 7,
+        "height": 12
+      },
+      "confidence": 0.6053865551948547
+    },
+    {
+      "text": "4,65",
+      "bounding_box": {
+        "x": 604,
+        "y": 516,
+        "width": 30,
+        "height": 12
+      },
+      "confidence": 0.9290802478790283
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 634,
+        "y": 516,
+        "width": 7,
+        "height": 12
+      },
+      "confidence": 0.7144973874092102
+    },
+    {
+      "text": "4,65",
+      "bounding_box": {
+        "x": 646,
+        "y": 516,
+        "width": 31,
+        "height": 12
+      },
+      "confidence": 0.9451108574867249
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 683,
+        "y": 516,
+        "width": 8,
+        "height": 12
+      },
+      "confidence": 0.949193000793457
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 592,
+        "y": 534,
+        "width": 5,
+        "height": 13
+      },
+      "confidence": 0.9357991218566895
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 598,
+        "y": 534,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.6402637362480164
+    },
+    {
+      "text": "5,99",
+      "bounding_box": {
+        "x": 604,
+        "y": 534,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.8993626236915588
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 633,
+        "y": 534,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.6474331617355347
+    },
+    {
+      "text": "5,99",
+      "bounding_box": {
+        "x": 646,
+        "y": 534,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.9111558198928833
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 534,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.945003092288971
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 591,
+        "y": 553,
+        "width": 5,
+        "height": 12
+      },
+      "confidence": 0.9501751661300659
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 598,
+        "y": 553,
+        "width": 7,
+        "height": 12
+      },
+      "confidence": 0.6121503710746765
+    },
+    {
+      "text": "7,29",
+      "bounding_box": {
+        "x": 605,
+        "y": 553,
+        "width": 27,
+        "height": 12
+      },
+      "confidence": 0.9320875406265259
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 633,
+        "y": 553,
+        "width": 6,
+        "height": 12
+      },
+      "confidence": 0.7212961912155151
+    },
+    {
+      "text": "7,29",
+      "bounding_box": {
+        "x": 647,
+        "y": 553,
+        "width": 29,
+        "height": 12
+      },
+      "confidence": 0.9383267164230347
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 553,
+        "width": 8,
+        "height": 12
+      },
+      "confidence": 0.973017156124115
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 590,
+        "y": 571,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.9314720034599304
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 597,
+        "y": 571,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.5246006846427917
+    },
+    {
+      "text": "8,49",
+      "bounding_box": {
+        "x": 603,
+        "y": 571,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.9339541792869568
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 632,
+        "y": 571,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.45784881711006165
+    },
+    {
+      "text": "8,49",
+      "bounding_box": {
+        "x": 646,
+        "y": 571,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9376022815704346
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 571,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.9581572413444519
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 590,
+        "y": 590,
+        "width": 6,
+        "height": 12
+      },
+      "confidence": 0.9379942417144775
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 597,
+        "y": 590,
+        "width": 7,
+        "height": 12
+      },
+      "confidence": 0.5679599642753601
+    },
+    {
+      "text": "1,99",
+      "bounding_box": {
+        "x": 605,
+        "y": 590,
+        "width": 27,
+        "height": 12
+      },
+      "confidence": 0.9125341773033142
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 633,
+        "y": 590,
+        "width": 8,
+        "height": 12
+      },
+      "confidence": 0.47599002718925476
+    },
+    {
+      "text": "1,99",
+      "bounding_box": {
+        "x": 647,
+        "y": 590,
+        "width": 30,
+        "height": 12
+      },
+      "confidence": 0.9172759652137756
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 590,
+        "width": 9,
+        "height": 12
+      },
+      "confidence": 0.8596537709236145
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 576,
+        "y": 609,
+        "width": 5,
+        "height": 12
+      },
+      "confidence": 0.9369767308235168
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 583,
+        "y": 609,
+        "width": 7,
+        "height": 12
+      },
+      "confidence": 0.5335909128189087
+    },
+    {
+      "text": "14.99",
+      "bounding_box": {
+        "x": 590,
+        "y": 609,
+        "width": 35,
+        "height": 12
+      },
+      "confidence": 0.9008413553237915
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 626,
+        "y": 609,
+        "width": 8,
+        "height": 12
+      },
+      "confidence": 0.3659980893135071
+    },
+    {
+      "text": "14.99",
+      "bounding_box": {
+        "x": 640,
+        "y": 609,
+        "width": 35,
+        "height": 12
+      },
+      "confidence": 0.9619208574295044
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 609,
+        "width": 8,
+        "height": 12
+      },
+      "confidence": 0.9718311429023743
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 681,
+        "y": 627,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.7683707475662231
+    },
+    {
+      "text": "0,668",
+      "bounding_box": {
+        "x": 561,
+        "y": 646,
+        "width": 35,
+        "height": 12
+      },
+      "confidence": 0.9515072703361511
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 597,
+        "y": 646,
+        "width": 7,
+        "height": 12
+      },
+      "confidence": 0.4477274417877197
+    },
+    {
+      "text": "4,99",
+      "bounding_box": {
+        "x": 603,
+        "y": 646,
+        "width": 29,
+        "height": 12
+      },
+      "confidence": 0.8671823740005493
+    },
+    {
+      "text": "3,33",
+      "bounding_box": {
+        "x": 646,
+        "y": 646,
+        "width": 30,
+        "height": 12
+      },
+      "confidence": 0.9693569540977478
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 681,
+        "y": 646,
+        "width": 9,
+        "height": 12
+      },
+      "confidence": 0.8948900699615479
+    },
+    {
+      "text": "0,668",
+      "bounding_box": {
+        "x": 561,
+        "y": 664,
+        "width": 35,
+        "height": 13
+      },
+      "confidence": 0.9645485877990723
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 597,
+        "y": 664,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.48158687353134155
+    },
+    {
+      "text": "4,99",
+      "bounding_box": {
+        "x": 602,
+        "y": 664,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9172957539558411
+    },
+    {
+      "text": "3,33",
+      "bounding_box": {
+        "x": 646,
+        "y": 664,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.9704679250717163
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 681,
+        "y": 664,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.9667580127716064
+    },
+    {
+      "text": "CHC",
+      "bounding_box": {
+        "x": 288,
+        "y": 620,
+        "width": 33,
+        "height": 20
+      },
+      "confidence": 0.5221441984176636
+    },
+    {
+      "text": "MANDARYNKI",
+      "bounding_box": {
+        "x": 326,
+        "y": 620,
+        "width": 73,
+        "height": 20
+      },
+      "confidence": 0.7223559617996216
+    },
+    {
+      "text": "LUZJAVA",
+      "bounding_box": {
+        "x": 404,
+        "y": 620,
+        "width": 116,
+        "height": 20
+      },
+      "confidence": 0.6274860501289368
+    },
+    {
+      "text": "1.398-8.99",
+      "bounding_box": {
+        "x": 552,
+        "y": 620,
+        "width": 75,
+        "height": 20
+      },
+      "confidence": 0.7435360550880432
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 623,
+        "y": 620,
+        "width": 9,
+        "height": 20
+      },
+      "confidence": 0.353674054145813
+    },
+    {
+      "text": "12.57",
+      "bounding_box": {
+        "x": 639,
+        "y": 620,
+        "width": 38,
+        "height": 20
+      },
+      "confidence": 0.9042736887931824
+    },
+    {
+      "text": "€",
+      "bounding_box": {
+        "x": 680,
+        "y": 620,
+        "width": 10,
+        "height": 20
+      },
+      "confidence": 0.4599076509475708
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 289,
+        "y": 608,
+        "width": 9,
+        "height": 12
+      },
+      "confidence": 0.9267887473106384
+    },
+    {
+      "text": "BANANY",
+      "bounding_box": {
+        "x": 305,
+        "y": 608,
+        "width": 43,
+        "height": 12
+      },
+      "confidence": 0.9812682867050171
+    },
+    {
+      "text": "PLANTANY",
+      "bounding_box": {
+        "x": 356,
+        "y": 608,
+        "width": 57,
+        "height": 12
+      },
+      "confidence": 0.9851030707359314
+    },
+    {
+      "text": "6",
+      "bounding_box": {
+        "x": 419,
+        "y": 608,
+        "width": 8,
+        "height": 12
+      },
+      "confidence": 0.9876129031181335
+    },
+    {
+      "text": "C_JZN",
+      "bounding_box": {
+        "x": 290,
+        "y": 644,
+        "width": 36,
+        "height": 14
+      },
+      "confidence": 0.8605580925941467
+    },
+    {
+      "text": "JABŁKA",
+      "bounding_box": {
+        "x": 333,
+        "y": 644,
+        "width": 42,
+        "height": 13
+      },
+      "confidence": 0.9215983748435974
+    },
+    {
+      "text": "CHAMPI",
+      "bounding_box": {
+        "x": 383,
+        "y": 644,
+        "width": 44,
+        "height": 13
+      },
+      "confidence": 0.9615914821624756
+    },
+    {
+      "text": "C.JZN",
+      "bounding_box": {
+        "x": 290,
+        "y": 663,
+        "width": 35,
+        "height": 14
+      },
+      "confidence": 0.7919151186943054
+    },
+    {
+      "text": "JABŁKA",
+      "bounding_box": {
+        "x": 333,
+        "y": 663,
+        "width": 42,
+        "height": 13
+      },
+      "confidence": 0.914608895778656
+    },
+    {
+      "text": "CHAMPI",
+      "bounding_box": {
+        "x": 383,
+        "y": 663,
+        "width": 42,
+        "height": 13
+      },
+      "confidence": 0.9770196676254272
+    },
+    {
+      "text": "C_JZN",
+      "bounding_box": {
+        "x": 290,
+        "y": 682,
+        "width": 35,
+        "height": 14
+      },
+      "confidence": 0.8490500450134277
+    },
+    {
+      "text": "JABŁKA",
+      "bounding_box": {
+        "x": 334,
+        "y": 682,
+        "width": 43,
+        "height": 14
+      },
+      "confidence": 0.9121491312980652
+    },
+    {
+      "text": "CHANPI",
+      "bounding_box": {
+        "x": 383,
+        "y": 682,
+        "width": 45,
+        "height": 14
+      },
+      "confidence": 0.9903972744941711
+    },
+    {
+      "text": "0.668",
+      "bounding_box": {
+        "x": 554,
+        "y": 683,
+        "width": 35,
+        "height": 13
+      },
+      "confidence": 0.9623655676841736
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 590,
+        "y": 683,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.6421741843223572
+    },
+    {
+      "text": "4.99",
+      "bounding_box": {
+        "x": 595,
+        "y": 683,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9281502962112427
+    },
+    {
+      "text": "-3,33",
+      "bounding_box": {
+        "x": 641,
+        "y": 683,
+        "width": 35,
+        "height": 13
+      },
+      "confidence": 0.8989049792289734
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 683,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.8269806504249573
+    },
+    {
+      "text": "***",
+      "bounding_box": {
+        "x": 402,
+        "y": 700,
+        "width": 25,
+        "height": 14
+      },
+      "confidence": 0.5625253915786743
+    },
+    {
+      "text": "Anulovano",
+      "bounding_box": {
+        "x": 426,
+        "y": 700,
+        "width": 64,
+        "height": 15
+      },
+      "confidence": 0.9201886653900146
+    },
+    {
+      "text": "sprzedaż",
+      "bounding_box": {
+        "x": 497,
+        "y": 700,
+        "width": 56,
+        "height": 15
+      },
+      "confidence": 0.886397123336792
+    },
+    {
+      "text": "***",
+      "bounding_box": {
+        "x": 554,
+        "y": 701,
+        "width": 21,
+        "height": 14
+      },
+      "confidence": 0.701034426689148
+    },
+    {
+      "text": "C_CYTRYNY",
+      "bounding_box": {
+        "x": 289,
+        "y": 718,
+        "width": 64,
+        "height": 15
+      },
+      "confidence": 0.9348700642585754
+    },
+    {
+      "text": "LUZ",
+      "bounding_box": {
+        "x": 360,
+        "y": 718,
+        "width": 22,
+        "height": 14
+      },
+      "confidence": 0.9938410520553589
+    },
+    {
+      "text": "C_TWARÓG",
+      "bounding_box": {
+        "x": 288,
+        "y": 736,
+        "width": 57,
+        "height": 16
+      },
+      "confidence": 0.7927076816558838
+    },
+    {
+      "text": "WIEJSKI",
+      "bounding_box": {
+        "x": 353,
+        "y": 736,
+        "width": 52,
+        "height": 15
+      },
+      "confidence": 0.9739862680435181
+    },
+    {
+      "text": "KL",
+      "bounding_box": {
+        "x": 410,
+        "y": 736,
+        "width": 16,
+        "height": 14
+      },
+      "confidence": 0.9877086281776428
+    },
+    {
+      "text": "CMC",
+      "bounding_box": {
+        "x": 287,
+        "y": 758,
+        "width": 31,
+        "height": 12
+      },
+      "confidence": 0.7897061705589294
+    },
+    {
+      "text": "BIO",
+      "bounding_box": {
+        "x": 325,
+        "y": 758,
+        "width": 22,
+        "height": 12
+      },
+      "confidence": 0.9256702065467834
+    },
+    {
+      "text": "AOP",
+      "bounding_box": {
+        "x": 354,
+        "y": 758,
+        "width": 21,
+        "height": 12
+      },
+      "confidence": 0.9832332134246826
+    },
+    {
+      "text": "SER",
+      "bounding_box": {
+        "x": 383,
+        "y": 758,
+        "width": 21,
+        "height": 12
+      },
+      "confidence": 0.9834730625152588
+    },
+    {
+      "text": "PA",
+      "bounding_box": {
+        "x": 411,
+        "y": 758,
+        "width": 17,
+        "height": 12
+      },
+      "confidence": 0.9754839539527893
+    },
+    {
+      "text": "C_JAJA",
+      "bounding_box": {
+        "x": 287,
+        "y": 776,
+        "width": 44,
+        "height": 15
+      },
+      "confidence": 0.864841878414154
+    },
+    {
+      "text": "FARMIO",
+      "bounding_box": {
+        "x": 338,
+        "y": 776,
+        "width": 44,
+        "height": 14
+      },
+      "confidence": 0.9232842922210693
+    },
+    {
+      "text": "H10",
+      "bounding_box": {
+        "x": 389,
+        "y": 775,
+        "width": 22,
+        "height": 14
+      },
+      "confidence": 0.7444427013397217
+    },
+    {
+      "text": "W",
+      "bounding_box": {
+        "x": 417,
+        "y": 775,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.6773406863212585
+    },
+    {
+      "text": "Sprzed",
+      "bounding_box": {
+        "x": 287,
+        "y": 812,
+        "width": 43,
+        "height": 17
+      },
+      "confidence": 0.9757053256034851
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 332,
+        "y": 812,
+        "width": 3,
+        "height": 16
+      },
+      "confidence": 0.8024841547012329
+    },
+    {
+      "text": "opod",
+      "bounding_box": {
+        "x": 345,
+        "y": 812,
+        "width": 28,
+        "height": 16
+      },
+      "confidence": 0.9699809551239014
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 375,
+        "y": 812,
+        "width": 4,
+        "height": 16
+      },
+      "confidence": 0.9680272936820984
+    },
+    {
+      "text": "PTU",
+      "bounding_box": {
+        "x": 388,
+        "y": 811,
+        "width": 23,
+        "height": 17
+      },
+      "confidence": 0.9757266640663147
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 417,
+        "y": 811,
+        "width": 9,
+        "height": 16
+      },
+      "confidence": 0.982921302318573
+    },
+    {
+      "text": "Kwota",
+      "bounding_box": {
+        "x": 286,
+        "y": 832,
+        "width": 38,
+        "height": 14
+      },
+      "confidence": 0.936682939529419
+    },
+    {
+      "text": "A",
+      "bounding_box": {
+        "x": 330,
+        "y": 832,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9763587117195129
+    },
+    {
+      "text": "23,00",
+      "bounding_box": {
+        "x": 345,
+        "y": 832,
+        "width": 37,
+        "height": 14
+      },
+      "confidence": 0.966498851776123
+    },
+    {
+      "text": "%",
+      "bounding_box": {
+        "x": 382,
+        "y": 832,
+        "width": 8,
+        "height": 14
+      },
+      "confidence": 0.9382281303405762
+    },
+    {
+      "text": "Sprzed",
+      "bounding_box": {
+        "x": 286,
+        "y": 850,
+        "width": 44,
+        "height": 16
+      },
+      "confidence": 0.9866585731506348
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 331,
+        "y": 850,
+        "width": 4,
+        "height": 15
+      },
+      "confidence": 0.8516245484352112
+    },
+    {
+      "text": "opod",
+      "bounding_box": {
+        "x": 344,
+        "y": 850,
+        "width": 29,
+        "height": 15
+      },
+      "confidence": 0.925207257270813
+    },
+    {
+      "text": ".",
+      "bounding_box": {
+        "x": 375,
+        "y": 850,
+        "width": 4,
+        "height": 15
+      },
+      "confidence": 0.9469038844108582
+    },
+    {
+      "text": "PTU",
+      "bounding_box": {
+        "x": 388,
+        "y": 849,
+        "width": 22,
+        "height": 16
+      },
+      "confidence": 0.9721419811248779
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 417,
+        "y": 849,
+        "width": 8,
+        "height": 15
+      },
+      "confidence": 0.9840450882911682
+    },
+    {
+      "text": "Kuota",
+      "bounding_box": {
+        "x": 286,
+        "y": 870,
+        "width": 38,
+        "height": 13
+      },
+      "confidence": 0.8162615299224854
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 330,
+        "y": 870,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.9383493661880493
+    },
+    {
+      "text": "05,00",
+      "bounding_box": {
+        "x": 344,
+        "y": 870,
+        "width": 38,
+        "height": 13
+      },
+      "confidence": 0.9403109550476074
+    },
+    {
+      "text": "%",
+      "bounding_box": {
+        "x": 381,
+        "y": 870,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.888106107711792
+    },
+    {
+      "text": "sbob",
+      "bounding_box": {
+        "x": 443,
+        "y": 760,
+        "width": 49,
+        "height": 23
+      },
+      "confidence": 0.8331817984580994
+    },
+    {
+      "text": "b2ysio",
+      "bounding_box": {
+        "x": 498,
+        "y": 760,
+        "width": 74,
+        "height": 25
+      },
+      "confidence": 0.6813089847564697
+    },
+    {
+      "text": "0,29",
+      "bounding_box": {
+        "x": 568,
+        "y": 720,
+        "width": 28,
+        "height": 13
+      },
+      "confidence": 0.8902834057807922
+    },
+    {
+      "text": "9,99",
+      "bounding_box": {
+        "x": 604,
+        "y": 720,
+        "width": 28,
+        "height": 13
+      },
+      "confidence": 0.9424505233764648
+    },
+    {
+      "text": "2,90",
+      "bounding_box": {
+        "x": 646,
+        "y": 720,
+        "width": 30,
+        "height": 13
+      },
+      "confidence": 0.9094835519790649
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 720,
+        "width": 10,
+        "height": 13
+      },
+      "confidence": 0.9851692914962769
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 590,
+        "y": 739,
+        "width": 6,
+        "height": 12
+      },
+      "confidence": 0.9479833841323853
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 597,
+        "y": 739,
+        "width": 7,
+        "height": 12
+      },
+      "confidence": 0.6235295534133911
+    },
+    {
+      "text": "5,79",
+      "bounding_box": {
+        "x": 603,
+        "y": 739,
+        "width": 30,
+        "height": 12
+      },
+      "confidence": 0.9527784585952759
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 633,
+        "y": 739,
+        "width": 8,
+        "height": 12
+      },
+      "confidence": 0.7090381979942322
+    },
+    {
+      "text": "5,79",
+      "bounding_box": {
+        "x": 646,
+        "y": 739,
+        "width": 30,
+        "height": 12
+      },
+      "confidence": 0.9552299976348877
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 739,
+        "width": 9,
+        "height": 12
+      },
+      "confidence": 0.8931928873062134
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 577,
+        "y": 757,
+        "width": 4,
+        "height": 13
+      },
+      "confidence": 0.8158157467842102
+    },
+    {
+      "text": "*",
+      "bounding_box": {
+        "x": 583,
+        "y": 757,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.650373637676239
+    },
+    {
+      "text": "20,69",
+      "bounding_box": {
+        "x": 589,
+        "y": 757,
+        "width": 37,
+        "height": 13
+      },
+      "confidence": 0.9351429343223572
+    },
+    {
+      "text": "=",
+      "bounding_box": {
+        "x": 626,
+        "y": 757,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.7422402501106262
+    },
+    {
+      "text": "20.69",
+      "bounding_box": {
+        "x": 640,
+        "y": 757,
+        "width": 35,
+        "height": 13
+      },
+      "confidence": 0.9544079899787903
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 757,
+        "width": 8,
+        "height": 13
+      },
+      "confidence": 0.9403883218765259
+    },
+    {
+      "text": "1",
+      "bounding_box": {
+        "x": 576,
+        "y": 777,
+        "width": 6,
+        "height": 13
+      },
+      "confidence": 0.8576329946517944
+    },
+    {
+      "text": "×",
+      "bounding_box": {
+        "x": 582,
+        "y": 777,
+        "width": 7,
+        "height": 13
+      },
+      "confidence": 0.5082740187644958
+    },
+    {
+      "text": "13,09",
+      "bounding_box": {
+        "x": 590,
+        "y": 777,
+        "width": 35,
+        "height": 13
+      },
+      "confidence": 0.8963231444358826
+    },
+    {
+      "text": "13,09",
+      "bounding_box": {
+        "x": 640,
+        "y": 777,
+        "width": 35,
+        "height": 13
+      },
+      "confidence": 0.9239208102226257
+    },
+    {
+      "text": "C",
+      "bounding_box": {
+        "x": 682,
+        "y": 777,
+        "width": 9,
+        "height": 13
+      },
+      "confidence": 0.910712480545044
+    },
+    {
+      "text": "99.55",
+      "bounding_box": {
+        "x": 640,
+        "y": 813,
+        "width": 35,
+        "height": 12
+      },
+      "confidence": 0.8999657034873962
+    },
+    {
+      "text": "18.62",
+      "bounding_box": {
+        "x": 640,
+        "y": 831,
+        "width": 36,
+        "height": 13
+      },
+      "confidence": 0.9452894330024719
+    },
+    {
+      "text": "154.77",
+      "bounding_box": {
+        "x": 633,
+        "y": 849,
+        "width": 41,
+        "height": 13
+      },
+      "confidence": 0.9375705718994141
+    },
+    {
+      "text": "7.37",
+      "bounding_box": {
+        "x": 646,
+        "y": 867,
+        "width": 29,
+        "height": 13
+      },
+      "confidence": 0.9067623615264893
+    },
+    {
+      "text": "25.99",
+      "bounding_box": {
+        "x": 639,
+        "y": 885,
+        "width": 34,
+        "height": 13
+      },
+      "confidence": 0.9226415753364563
+    },
+    {
+      "text": "Podatek",
+      "bounding_box": {
+        "x": 286,
+        "y": 888,
+        "width": 51,
+        "height": 13
+      },
+      "confidence": 0.9718441367149353
+    },
+    {
+      "text": "PTU",
+      "bounding_box": {
+        "x": 343,
+        "y": 888,
+        "width": 24,
+        "height": 13
+      },
+      "confidence": 0.9801742434501648
+    },
+    {
+      "text": "SUMA",
+      "bounding_box": {
+        "x": 284,
+        "y": 899,
+        "width": 58,
+        "height": 33
+      },
+      "confidence": 0.934273362159729
+    },
+    {
+      "text": "PLN",
+      "bounding_box": {
+        "x": 356,
+        "y": 899,
+        "width": 44,
+        "height": 32
+      },
+      "confidence": 0.9807802438735962
+    },
+    {
+      "text": "YAH",
+      "bounding_box": {
+        "x": 416,
+        "y": 897,
+        "width": 69,
+        "height": 33
+      },
+      "confidence": 0.6244686245918274
+    },
+    {
+      "text": "ob",
+      "bounding_box": {
+        "x": 494,
+        "y": 898,
+        "width": 44,
+        "height": 32
+      },
+      "confidence": 0.7377196550369263
+    },
+    {
+      "text": "254.32",
+      "bounding_box": {
+        "x": 599,
+        "y": 896,
+        "width": 89,
+        "height": 33
+      },
+      "confidence": 0.9458882808685303
+    },
+    {
+      "text": "000106",
+      "bounding_box": {
+        "x": 286,
+        "y": 950,
+        "width": 43,
+        "height": 15
+      },
+      "confidence": 0.980343222618103
+    },
+    {
+      "text": "#",
+      "bounding_box": {
+        "x": 336,
+        "y": 950,
+        "width": 7,
+        "height": 14
+      },
+      "confidence": 0.9861466884613037
+    },
+    {
+      "text": "019",
+      "bounding_box": {
+        "x": 343,
+        "y": 950,
+        "width": 22,
+        "height": 14
+      },
+      "confidence": 0.9921896457672119
+    },
+    {
+      "text": "038",
+      "bounding_box": {
+        "x": 372,
+        "y": 949,
+        "width": 23,
+        "height": 15
+      },
+      "confidence": 0.9855857491493225
+    },
+    {
+      "text": "19647F707FD77CC40E",
+      "bounding_box": {
+        "x": 344,
+        "y": 964,
+        "width": 129,
+        "height": 19
+      },
+      "confidence": 0.9643126726150513
+    },
+    {
+      "text": "48F7975FEF9AE5F9C238DD",
+      "bounding_box": {
+        "x": 473,
+        "y": 962,
+        "width": 160,
+        "height": 20
+      },
+      "confidence": 0.9607969522476196
+    },
+    {
+      "text": "18:10",
+      "bounding_box": {
+        "x": 654,
+        "y": 949,
+        "width": 36,
+        "height": 13
+      },
+      "confidence": 0.9863346219062805
+    },
+    {
+      "text": "PCCO",
+      "bounding_box": {
+        "x": 432,
+        "y": 988,
+        "width": 54,
+        "height": 16
+      },
+      "confidence": 0.6661645770072937
+    },
+    {
+      "text": "1701480375",
+      "bounding_box": {
+        "x": 492,
+        "y": 988,
+        "width": 74,
+        "height": 16
+      },
+      "confidence": 0.9887461066246033
+    },
+    {
+      "text": "00111019254772511193",
+      "bounding_box": {
+        "x": 302,
+        "y": 1144,
+        "width": 376,
+        "height": 22
+      },
+      "confidence": 0.9854166507720947
+    },
+    {
+      "text": "Płatność",
+      "bounding_box": {
+        "x": 282,
+        "y": 1188,
+        "width": 60,
+        "height": 18
+      },
+      "confidence": 0.785607635974884
+    },
+    {
+      "text": ":",
+      "bounding_box": {
+        "x": 343,
+        "y": 1189,
+        "width": 6,
+        "height": 15
+      },
+      "confidence": 0.8558880686759949
+    },
+    {
+      "text": "KARTAPIATNI",
+      "bounding_box": {
+        "x": 356,
+        "y": 1186,
+        "width": 81,
+        "height": 18
+      },
+      "confidence": 0.9312158823013306
+    },
+    {
+      "text": "Kasjer",
+      "bounding_box": {
+        "x": 285,
+        "y": 1209,
+        "width": 43,
+        "height": 14
+      },
+      "confidence": 0.8759623169898987
+    },
+    {
+      "text": "254,32",
+      "bounding_box": {
+        "x": 645,
+        "y": 1191,
+        "width": 44,
+        "height": 13
+      },
+      "confidence": 0.95245760679245
+    },
+    {
+      "text": "038",
+      "bounding_box": {
+        "x": 666,
+        "y": 1208,
+        "width": 22,
+        "height": 12
+      },
+      "confidence": 0.9862884283065796
+    },
+    {
+      "text": "Nr",
+      "bounding_box": {
+        "x": 284,
+        "y": 1227,
+        "width": 16,
+        "height": 14
+      },
+      "confidence": 0.9293654561042786
+    },
+    {
+      "text": "transakcji",
+      "bounding_box": {
+        "x": 305,
+        "y": 1226,
+        "width": 72,
+        "height": 14
+      },
+      "confidence": 0.8997639417648315
+    },
+    {
+      "text": "25477",
+      "bounding_box": {
+        "x": 651,
+        "y": 1223,
+        "width": 35,
+        "height": 14
+      },
+      "confidence": 0.9925199151039124
+    },
+    {
+      "text": "Z",
+      "bounding_box": {
+        "x": 350,
+        "y": 1242,
+        "width": 9,
+        "height": 14
+      },
+      "confidence": 0.5240509510040283
+    },
+    {
+      "text": "kartę",
+      "bounding_box": {
+        "x": 363,
+        "y": 1241,
+        "width": 38,
+        "height": 14
+      },
+      "confidence": 0.908922016620636
+    },
+    {
+      "text": "PAYBACK",
+      "bounding_box": {
+        "x": 407,
+        "y": 1241,
+        "width": 51,
+        "height": 14
+      },
+      "confidence": 0.9736361503601074
+    },
+    {
+      "text": "zyskałbyś",
+      "bounding_box": {
+        "x": 464,
+        "y": 1241,
+        "width": 65,
+        "height": 14
+      },
+      "confidence": 0.889947235584259
+    },
+    {
+      "text": "84",
+      "bounding_box": {
+        "x": 536,
+        "y": 1241,
+        "width": 14,
+        "height": 14
+      },
+      "confidence": 0.9740698337554932
+    },
+    {
+      "text": "punktów",
+      "bounding_box": {
+        "x": 558,
+        "y": 1241,
+        "width": 49,
+        "height": 14
+      },
+      "confidence": 0.9166150689125061
+    },
+    {
+      "text": "!",
+      "bounding_box": {
+        "x": 609,
+        "y": 1241,
+        "width": 6,
+        "height": 14
+      },
+      "confidence": 0.9329555034637451
+    }
+  ],
+  "metadata": {
+    "source_file": "PL_001",
+    "image_width": 960,
+    "image_height": 1280,
+    "processed_at": "2026-01-02T18:46:45.611408",
+    "preprocessing_applied": []
+  }
+}

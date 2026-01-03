@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "name": "DIESEL A EUR",
+      "quantity": null,
+      "price": null,
+      "total": 17.67,
+      "date": "2025-08-10 00:00:00"
+    },
+    {
+      "name": "Ja Buttertoast 500g EUR",
+      "quantity": null,
+      "price": null,
+      "total": 1.79,
+      "date": "2025-08-10 00:00:00"
+    },
+    {
+      "name": "Blumberg Schinkenwurst B EUR",
+      "quantity": null,
+      "price": null,
+      "total": 2.09,
+      "date": "2025-08-10 00:00:00"
+    },
+    {
+      "name": "Frischpack Gouda B EUR",
+      "quantity": null,
+      "price": null,
+      "total": 2.19,
+      "date": "2025-08-10 00:00:00"
+    }
+  ],
+  "total_amount": 23.74,
+  "merchant": null,
+  "store_address": null,
+  "date": "2025-08-10 00:00:00",
+  "receipt_id": "IMG_1352",
+  "ocr_text": "5\nSB - TANKSTELLE\nAugust Jaeger Nachfolger GmbH & Co KG\nGut Burghof 2\n51491 Overath\nUSt-ID: DE122 528 616\n11,79 Liter SÄULENNUMMER 6 *\n*\n*DIESEL\nA\n17,67 EUR*\n1,499 EUR/Liter\nJa Buttertoast 500g\n1,79 EUR\nBlumberg Schinkenwurst B\n2,09 EUR\nFrischpack Gouda\nB\n2,19 EUR\n+ KUNDEN BELEG +\nTankstelle Overath\nGut Burghof 2\n51491 Overath\nTerminalnummer\nDatum\n74078926\n10.08.2025\nUhrzeit\nBeleg-Nr.\nTransaktions-Nr.\n10:02:00\n8977\n476970\nKartenzahlung\ngirocard\nBetrag\nKarte\nKartenfolgenummer\nEMV-AID\nGenehmigungs-Nr.\n23,74 EUR\n########1324\n12\nA000000359101002800101\n940520\nEMV-DATA:\n/0000008001//A000000359/3F0002\nContactless\nZahlung erfolgt\ngirocard\n23,74 EUR\nTOTAL\n23,74 EUR\nQuittung\nMWST 19,00% A\n2,82 EUR\nNETTO 14,85 EUR BRUTTO\n17,67 EUR\nMWST 7,00% B\n0,40 EUR\nNETTO\n5,67 EUR BRUTTO\n6,07 EUR\nVolumen kompensiert auf 15 Grad\nausgenommen LPG und Erdgas.\nDaten aus geeichten Anlagenteilen\nsind zur besonderen Kennzeichnung\ndurch Sterne (*) eingeschlossen.\nTechnische Sicherheitseinrichtung\nStart: 2025-08-10108:01:53,000Z\nStop: 2025-08-10108:02:11.0002\nler:\nTransaktion: 2851508-718696000780837906C56B9\nSeriennunger SE:\n2067DCB066C33C9A53778066EE\nSeriennunner Kasse: OCF54813993\n299c01P4t50xdxPvNpr+0xb1HQXYYDh7vIYudgBtb90vpa\n15uFRYZJCLG0mz+dLIchp1XKK8njPFU/+Zpcs3X2GHz06jXXYLOVgB\nParkHJŕNOWOTRCL890iB0n/NGO\n#49324 10.08.25 10:02 Herr Azizi\nTel: 02206/868521 Fax:868522\nVielen Dank & Gute Fahrt\nK.0001",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 4.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

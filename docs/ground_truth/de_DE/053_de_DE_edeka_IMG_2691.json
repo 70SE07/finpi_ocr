@@ -1,0 +1,86 @@
+{
+  "id": "053",
+  "source_file": "data/input/Edeka/IMG_2691.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "EDEKA Felbecker",
+    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden",
+    "phone": "02206/912784",
+    "website": "www.edeka.de",
+    "steuernummer": "204/5085/2941"
+  },
+  "metadata": {
+    "date": "30.10.2025",
+    "time": "17:09:08",
+    "currency": "EUR",
+    "payment_method": "EC-Cash",
+    "posten": 13,
+    "receipt_total": 28.18,
+    "tax_block": {
+      "A": {
+        "rate": "7%",
+        "netto": 26.06,
+        "mwst": 1.82,
+        "umsatz": 27.88
+      },
+      "B": {
+        "rate": "19%",
+        "netto": 0.25,
+        "mwst": 0.05,
+        "umsatz": 0.30
+      }
+    }
+  },
+  "items": [
+    {
+      "raw_name": "G&G Eier BOH",
+      "quantity": 5,
+      "unit_price": 1.99,
+      "total_price": 9.95,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Lindt L.Grandes H.",
+      "quantity": 1,
+      "total_price": 5.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Dovg.Kondensm",
+      "quantity": 4,
+      "unit_price": 1.79,
+      "total_price": 7.16,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Papiertragetasche",
+      "quantity": 1,
+      "total_price": 0.30,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "ML Tomaten",
+      "quantity": 1,
+      "total_price": 3.99,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "G&G Buttertoast",
+      "quantity": 1,
+      "total_price": 0.79,
+      "tax_class": "A"
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "items_sum": 28.18,
+    "expected_total": 28.18,
+    "discrepancy": 0.0
+  },
+  "notes": [
+    "Posten: 13 - number of items",
+    "SUMME € format",
+    "Qty format: 1,99 € x 5 (price before qty!)",
+    "Tax codes: A, B"
+  ]
+}

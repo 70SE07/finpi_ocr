@@ -1,0 +1,95 @@
+{
+  "id": "049",
+  "source_file": "data/input/Edeka/IMG_1696.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "EDEKA Felbecker",
+    "address": "Pilgerstr. 69-71, 51491 Overath-Marialinden",
+    "phone": "02206 / 912784",
+    "website": "www.edeka.de",
+    "steuernummer": "204/5085/2941"
+  },
+  "metadata": {
+    "date": "02.09.2025",
+    "time": "17:12:26",
+    "currency": "EUR",
+    "payment_method": "Mastercard",
+    "posten": 7,
+    "receipt_total": 8.83,
+    "tax_block": {
+      "A": {
+        "rate": "7%",
+        "netto": 5.14,
+        "mwst": 0.36,
+        "umsatz": 5.50
+      },
+      "B": {
+        "rate": "19%",
+        "netto": 2.80,
+        "mwst": 0.53,
+        "umsatz": 3.33
+      }
+    }
+  },
+  "items": [
+    {
+      "raw_name": "Tafeltrauben",
+      "quantity": 0.754,
+      "unit": "kg",
+      "unit_price": 3.99,
+      "total_price": 3.01,
+      "tax_class": "AW"
+    },
+    {
+      "raw_name": "Coca-Cola 1,25l",
+      "quantity": 1,
+      "total_price": 1.59,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "*B",
+      "is_pfand": true
+    },
+    {
+      "raw_name": "ML Kult.Heidelb.",
+      "quantity": 1,
+      "total_price": 2.49,
+      "tax_class": "A"
+    },
+    {
+      "raw_name": "Evian Premium 1l",
+      "quantity": 1,
+      "total_price": 0.99,
+      "tax_class": "B"
+    },
+    {
+      "raw_name": "Pfand",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "*B",
+      "is_pfand": true
+    },
+    {
+      "raw_name": "Papiertragetasche",
+      "quantity": 1,
+      "total_price": 0.25,
+      "tax_class": "B"
+    }
+  ],
+  "validation": {
+    "checksum_method": "SUM(items) == SUMME",
+    "items_sum": 8.83,
+    "expected_total": 8.83,
+    "discrepancy": 0.0
+  },
+  "notes": [
+    "Posten: 7 - number of items",
+    "SUMME € format",
+    "Extended tax codes: AW, B, *B, A",
+    "Pfand items with *B tax class",
+    "*Position nicht rabattberechtigt"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "045",
+  "source_file": "data/input/DM/IMG_2683.jpeg",
+  "locale": "de_DE",
+  "store": {
+    "name": "dm-drogerie markt",
+    "address": "Steinhofplatz 1, 51491 Overath",
+    "tax_id": "34092/30007"
+  },
+  "metadata": {
+    "date": "29.10.2025",
+    "time": "17:41",
+    "currency": "EUR",
+    "payment_method": "BAR",
+    "receipt_total": 14.50
+  },
+  "items": [
+    {
+      "raw_name": "Denkmit Backofen/Grillr.",
+      "quantity": 1,
+      "unit_price": 1.75,
+      "total_price": 1.75
+    },
+    {
+      "raw_name": "Denkmit Fleckenspray 500ml",
+      "quantity": 1,
+      "unit_price": 1.45,
+      "total_price": 1.45
+    },
+    {
+      "raw_name": "Copyservice",
+      "quantity": 1,
+      "unit_price": 0.50,
+      "total_price": 0.50
+    },
+    {
+      "raw_name": "babylove Muttermilchbeutel",
+      "quantity": 1,
+      "unit_price": 3.95,
+      "total_price": 3.95
+    },
+    {
+      "raw_name": "babylove Regenschutz f. Ki.wa.",
+      "quantity": 1,
+      "unit_price": 4.95,
+      "total_price": 4.95
+    },
+    {
+      "raw_name": "ChariTea Mate 330ml+0,25€Pf",
+      "quantity": 1,
+      "unit_price": 1.55,
+      "total_price": 1.55
+    },
+    {
+      "raw_name": "Einwegpfand",
+      "quantity": 1,
+      "unit_price": 0.25,
+      "total_price": 0.25
+    },
+    {
+      "raw_name": "Dontodent WhiteMint m. Xylit",
+      "quantity": 1,
+      "unit_price": 1.55,
+      "total_price": 1.55
+    },
+    {
+      "raw_name": "Dr. Best ZB Hoch-Tief Hart",
+      "quantity": 1,
+      "unit_price": 1.95,
+      "total_price": 1.95
+    },
+    {
+      "raw_name": "Catrice Primer Cor.AntiRedness",
+      "quantity": 1,
+      "unit_price": 4.95,
+      "total_price": 4.95
+    },
+    {
+      "raw_name": "ebelin Peelinghandschuh 1St.",
+      "quantity": 1,
+      "unit_price": 1.65,
+      "total_price": 1.65
+    },
+    {
+      "raw_name": "dm-Geschenkkarte",
+      "quantity": 1,
+      "unit_price": -10.00,
+      "total_price": -10.00,
+      "is_discount": true
+    }
+  ]
+}

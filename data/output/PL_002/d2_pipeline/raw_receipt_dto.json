@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "name": "TORBA PAPIEROWA 1",
+      "quantity": 1.0,
+      "price": null,
+      "total": 1.0,
+      "date": "2025-11-12 00:00:00"
+    },
+    {
+      "name": "H7177 - XXX - ONE 1 *",
+      "quantity": 1.0,
+      "price": null,
+      "total": 69.99,
+      "date": "2025-11-12 00:00:00"
+    },
+    {
+      "name": "686AT - 08X - XXL KOSZULKA MĘSKA",
+      "quantity": null,
+      "price": null,
+      "total": 69.99,
+      "date": "2025-11-12 00:00:00"
+    },
+    {
+      "name": "XXL KOSZULKA MĘSKA 1 *",
+      "quantity": 1.0,
+      "price": null,
+      "total": 59.99,
+      "date": "2025-11-12 00:00:00"
+    }
+  ],
+  "total_amount": 200.97,
+  "merchant": null,
+  "store_address": null,
+  "date": "2025-11-12 00:00:00",
+  "receipt_id": "PL_002",
+  "ocr_text": "CROPP 1512016\nLPP S.A. 80-769 Gdańsk, ul. Łąkowa 39/44\nBD0000002920\n00-120 Warszawa\nul. Złota 59\nNIP 583-10-14-898\nnr wydr. 270400/0851\nPARAGON FISKALNY\nH7177-XXX-ONE TORBA PAPIEROWA\n1\n* 1,00 1,00 A\n686AT-08X-XXL KOSZULKA MĘSKA\n1\n* 69.99 69.99 A\n686AT-08X-XXL KOSZULKA MĘSKA\n* 69,99 69.99 A\n571FN-78X-XXL KOSZULKA MĘSKA\n1\n* 59,99 59,99 A\nSprzed. opod. PTU A\n200,97\nSUMA PTU\nKwota PTU A 23,00%\nSUMA PLN\n37,58\n37,58\n200,97\nROZLICZENIE PŁATNOŚCI\nKarta kredytowa\nWpłacono razem\n200,97\n200,97\n000158/0851\n2025-11-12\n#45 1894608722\n17:19\n16CD1443F7DA30479AF7FC069EFF10922AD44AD7\nTEAW1901777551\n1512016*45*25*1*35645\nNr transakcji\nDOKUMENT\nPRACUJ 2\n16*45*25*1*35645\n0851",
+  "detected_locale": "pl_PL",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 4.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

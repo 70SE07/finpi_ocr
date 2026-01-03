@@ -1,0 +1,937 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "Magnum DoubleCherry",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "Gouda",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "in ScheibenXXL",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "Frischkäse Sahnige 121,69 x 2 AT",
+        "quantity": 121.69,
+        "price": null,
+        "total": 3.38,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "H - Milch3,5 % HF3 1,09 × 12",
+        "quantity": 1.09,
+        "price": null,
+        "total": 13.08,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "Mineralwasser still 0,29 x 18",
+        "quantity": 0.29,
+        "price": null,
+        "total": 5.22,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "Pfand EM x 18",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 4.5,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "Schwammtuch 5er",
+        "quantity": null,
+        "price": null,
+        "total": 0.85,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "Edelstahltopfreinig .",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "GSM Konzentrat gelb",
+        "quantity": null,
+        "price": null,
+        "total": 0.95,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "Thobsheim",
+        "quantity": null,
+        "price": null,
+        "total": 44.81,
+        "date": "2025-10-23 00:00:00"
+      },
+      {
+        "name": "",
+        "quantity": null,
+        "price": null,
+        "total": 3.4,
+        "date": "2025-10-23 00:00:00"
+      }
+    ],
+    "total_amount": 44.81,
+    "merchant": "Lidl",
+    "store_address": "Steinhauser Auel 1, 514910verath - Vilkerath",
+    "date": "2025-10-23 00:00:00",
+    "receipt_id": "IMG_2643",
+    "ocr_text": "LIDL shenjt\nSteinhauser Auel 1\n514910verath-Vilkerath\nEUR\nWassereisWass.melone\n1,99 A\nMagnum DoubleCherry\n3,99 A\nPreisvorteil\n-1,20\nButterkäse [OGT]\n2,99 A\nPreisvorteil\n-0,50\nGouda in ScheibenXXL\n4,29 A\nPreisvorteil\n-0,70\nTilsiter Scheiben alq\n2,99 A\nPreisvorteil\n-0,50\nEdamer Scheiben\n2,99 A\nPreisvorteil\n-0,50\nFrischkäse Sahnige\n121,69 x\n2 AT 3,38 A\nH-Milch3,5% HF3\n1,09 ×\n12\n13,08 A\nMineralwasser still\n0,29 x\n18\n5,22 B\nPfand 0,25 EM\n0,25 x 18\n4,50 B\nSchwammtuch 5er\nEdelstahltopfreinig.\nGSM Konzentrat gelb\n0,85 B\n0,99 B\n0,95 B\nzu zahlen\n90A 2019 1644,8190\nKarte\nGesamter Preisvorteil\nThobsheim 44.81\n3,40\nMWST%\nMWST +\nNetto = Brutto\nA 7 %\n2,11\n30,19\n32,30\nB 19 %\n2,00\n10,51\n12,51\nSumme\n4,11\n40,70\n44,81\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf.\nTSE Transaktionsnummer: 1313953\nSeriennr. Kasse: LDL-000-6496-81\nSeriennr. TSE: F2vH5JJ0GxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: d63fiRU71+ZKaFRtWd1XQ8Q0+1/7V0H5\nus+V5Axu7moPoqCRVmagwGe1MbnTxhSma1iMyGBZWs\nZGBGrg6i7fDoA9BsU7q+mHvCdwB9pFBFET1h0ixwji\nSMCjkQhmSZWJ\nSignaturzähler: 2682469\n2025-10-23T12:51:47.000Z\n2025-10-23T12:53:30.000Z\n6496 026894/81\n23.10.25 14:51\n814060660 Azul bilanie\nK-U-N-D-E-N-B-E-L-E-G\nKartenzahlung girocard\nBetrag\n44,81 EUR\n23.10.2025\n14:52\nT-ID 60155117\nTA-Nr. 220855\nBeleg-Nr. 1221\nKartennr.\n####\n#####1364 00\nKontaktlos Chip\nOnline\nVU-Nummer\n9801706496\nAutorisierungsnummer\n883035\nAutorisierungsantwortcode\n00\nEMV-Daten:\nA0000003591010028001/00\n**\nAutorisierung erfolgt\n**",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 13.0,
+      "validation_passed": 0.0,
+      "validation_difference": 30.269999999999996
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "LIDL shenjt",
+        "y_position": 212,
+        "x_min": 557,
+        "x_max": 927,
+        "confidence": 0.5211279988288879,
+        "line_number": 0,
+        "words_count": 2
+      },
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 262,
+        "x_min": 486,
+        "x_max": 756,
+        "confidence": 0.9728047053019205,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 292,
+        "x_min": 453,
+        "x_max": 789,
+        "confidence": 0.9633712371190389,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "WassereisWass.melone EUR",
+        "y_position": 334,
+        "x_min": 302,
+        "x_max": 892,
+        "confidence": 0.9744462370872498,
+        "line_number": 3,
+        "words_count": 2
+      },
+      {
+        "text": "Magnum DoubleCherry 1,99 A",
+        "y_position": 358,
+        "x_min": 301,
+        "x_max": 923,
+        "confidence": 0.9889594465494156,
+        "line_number": 4,
+        "words_count": 4
+      },
+      {
+        "text": "3,99 A",
+        "y_position": 388,
+        "x_min": 830,
+        "x_max": 923,
+        "confidence": 0.9896632432937622,
+        "line_number": 5,
+        "words_count": 2
+      },
+      {
+        "text": "Preisvorteil -1,20",
+        "y_position": 404,
+        "x_min": 299,
+        "x_max": 907,
+        "confidence": 0.9784365892410278,
+        "line_number": 6,
+        "words_count": 2
+      },
+      {
+        "text": "Butterkäse [ OGT ]",
+        "y_position": 433,
+        "x_min": 300,
+        "x_max": 541,
+        "confidence": 0.9383694976568222,
+        "line_number": 7,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil 2,99 A",
+        "y_position": 449,
+        "x_min": 297,
+        "x_max": 923,
+        "confidence": 0.9834840297698975,
+        "line_number": 8,
+        "words_count": 3
+      },
+      {
+        "text": "Gouda -0,50",
+        "y_position": 482,
+        "x_min": 297,
+        "x_max": 906,
+        "confidence": 0.976161539554596,
+        "line_number": 9,
+        "words_count": 2
+      },
+      {
+        "text": "in ScheibenXXL 4,29 A",
+        "y_position": 500,
+        "x_min": 392,
+        "x_max": 921,
+        "confidence": 0.984438344836235,
+        "line_number": 10,
+        "words_count": 4
+      },
+      {
+        "text": "Preisvorteil -0,70",
+        "y_position": 529,
+        "x_min": 296,
+        "x_max": 905,
+        "confidence": 0.9724161624908447,
+        "line_number": 11,
+        "words_count": 2
+      },
+      {
+        "text": "Tilsiter Scheiben alq",
+        "y_position": 554,
+        "x_min": 295,
+        "x_max": 689,
+        "confidence": 0.7954854667186737,
+        "line_number": 12,
+        "words_count": 3
+      },
+      {
+        "text": "Preisvorteil 2,99 A",
+        "y_position": 579,
+        "x_min": 295,
+        "x_max": 919,
+        "confidence": 0.983103891213735,
+        "line_number": 13,
+        "words_count": 3
+      },
+      {
+        "text": "-0,50",
+        "y_position": 609,
+        "x_min": 827,
+        "x_max": 905,
+        "confidence": 0.9861910343170166,
+        "line_number": 14,
+        "words_count": 1
+      },
+      {
+        "text": "Edamer Scheiben",
+        "y_position": 626,
+        "x_min": 295,
+        "x_max": 524,
+        "confidence": 0.9757519662380219,
+        "line_number": 15,
+        "words_count": 2
+      },
+      {
+        "text": "Preisvorteil 2,99 A",
+        "y_position": 643,
+        "x_min": 293,
+        "x_max": 919,
+        "confidence": 0.9817803104718527,
+        "line_number": 16,
+        "words_count": 3
+      },
+      {
+        "text": "-0,50",
+        "y_position": 672,
+        "x_min": 828,
+        "x_max": 904,
+        "confidence": 0.9868123531341553,
+        "line_number": 17,
+        "words_count": 1
+      },
+      {
+        "text": "Frischkäse Sahnige 121,69 x 2 AT 3,38 A",
+        "y_position": 691,
+        "x_min": 294,
+        "x_max": 934,
+        "confidence": 0.9187840968370438,
+        "line_number": 18,
+        "words_count": 8
+      },
+      {
+        "text": "H - Milch3,5 % HF3 1,09 × 12 13,08",
+        "y_position": 724,
+        "x_min": 293,
+        "x_max": 904,
+        "confidence": 0.8548955221970876,
+        "line_number": 19,
+        "words_count": 9
+      },
+      {
+        "text": "A",
+        "y_position": 740,
+        "x_min": 913,
+        "x_max": 934,
+        "confidence": 0.9686372876167297,
+        "line_number": 20,
+        "words_count": 1
+      },
+      {
+        "text": "Mineralwasser still 0,29 x 18 5,22 B",
+        "y_position": 757,
+        "x_min": 292,
+        "x_max": 933,
+        "confidence": 0.9234768918582371,
+        "line_number": 21,
+        "words_count": 7
+      },
+      {
+        "text": "Pfand 0,25 EM 0,25 x 18 4,50 B",
+        "y_position": 789,
+        "x_min": 291,
+        "x_max": 933,
+        "confidence": 0.9600236713886261,
+        "line_number": 22,
+        "words_count": 8
+      },
+      {
+        "text": "Schwammtuch 5er 0,85 B",
+        "y_position": 821,
+        "x_min": 291,
+        "x_max": 914,
+        "confidence": 0.9748263359069824,
+        "line_number": 23,
+        "words_count": 4
+      },
+      {
+        "text": "Edelstahltopfreinig . 0,99 B",
+        "y_position": 853,
+        "x_min": 293,
+        "x_max": 913,
+        "confidence": 0.9617658108472824,
+        "line_number": 24,
+        "words_count": 4
+      },
+      {
+        "text": "GSM Konzentrat gelb 0,95 B",
+        "y_position": 886,
+        "x_min": 292,
+        "x_max": 914,
+        "confidence": 0.9860975861549377,
+        "line_number": 25,
+        "words_count": 5
+      },
+      {
+        "text": "zu zahlen 90A 2019 1644,8190",
+        "y_position": 932,
+        "x_min": 294,
+        "x_max": 927,
+        "confidence": 0.7645420610904694,
+        "line_number": 26,
+        "words_count": 5
+      },
+      {
+        "text": "Karte",
+        "y_position": 962,
+        "x_min": 293,
+        "x_max": 372,
+        "confidence": 0.988800585269928,
+        "line_number": 27,
+        "words_count": 1
+      },
+      {
+        "text": "Thobsheim 44.81",
+        "y_position": 980,
+        "x_min": 618,
+        "x_max": 886,
+        "confidence": 0.496637299656868,
+        "line_number": 28,
+        "words_count": 2
+      },
+      {
+        "text": "Gesamter Preisvorteil",
+        "y_position": 1002,
+        "x_min": 293,
+        "x_max": 606,
+        "confidence": 0.986891359090805,
+        "line_number": 29,
+        "words_count": 2
+      },
+      {
+        "text": "3,40",
+        "y_position": 1018,
+        "x_min": 861,
+        "x_max": 925,
+        "confidence": 0.8986696004867554,
+        "line_number": 30,
+        "words_count": 1
+      },
+      {
+        "text": "MWST % MWST + Netto = Brutto",
+        "y_position": 1045,
+        "x_min": 309,
+        "x_max": 877,
+        "confidence": 0.8812178713934762,
+        "line_number": 31,
+        "words_count": 7
+      },
+      {
+        "text": "A 7 % 2,11 30,19 32,30",
+        "y_position": 1072,
+        "x_min": 294,
+        "x_max": 875,
+        "confidence": 0.9770777821540833,
+        "line_number": 32,
+        "words_count": 6
+      },
+      {
+        "text": "B 19 % 2,00 10,51 12,51",
+        "y_position": 1101,
+        "x_min": 297,
+        "x_max": 870,
+        "confidence": 0.9823543628056844,
+        "line_number": 33,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 4,11 40,70 44,81",
+        "y_position": 1131,
+        "x_min": 298,
+        "x_max": 869,
+        "confidence": 0.97320157289505,
+        "line_number": 34,
+        "words_count": 4
+      },
+      {
+        "text": "Lade dir die Lidl Plus App herunter",
+        "y_position": 1177,
+        "x_min": 340,
+        "x_max": 856,
+        "confidence": 0.97059280531747,
+        "line_number": 35,
+        "words_count": 7
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf .",
+        "y_position": 1209,
+        "x_min": 309,
+        "x_max": 868,
+        "confidence": 0.973820720400129,
+        "line_number": 36,
+        "words_count": 7
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1313953",
+        "y_position": 1339,
+        "x_min": 292,
+        "x_max": 752,
+        "confidence": 0.9715664684772491,
+        "line_number": 37,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-81",
+        "y_position": 1368,
+        "x_min": 291,
+        "x_max": 765,
+        "confidence": 0.9389134900910514,
+        "line_number": 38,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJ0GxOzRGtqga + dvZbaId8",
+        "y_position": 1397,
+        "x_min": 291,
+        "x_max": 916,
+        "confidence": 0.9240910751479012,
+        "line_number": 39,
+        "words_count": 7
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1431,
+        "x_min": 290,
+        "x_max": 544,
+        "confidence": 0.9205394685268402,
+        "line_number": 40,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : d63fiRU71 + ZKaFRtWd1XQ8Q0 + 1 / 7V0H5",
+        "y_position": 1461,
+        "x_min": 290,
+        "x_max": 917,
+        "confidence": 0.9324161873923408,
+        "line_number": 41,
+        "words_count": 9
+      },
+      {
+        "text": "us + V5Axu7moPoqCRVmagwGe1MbnTxhSma1iMyGBZWs",
+        "y_position": 1495,
+        "x_min": 291,
+        "x_max": 915,
+        "confidence": 0.878292977809906,
+        "line_number": 42,
+        "words_count": 3
+      },
+      {
+        "text": "ZGBGrg6i7fDoA9BsU7q + mHvCdwB9pFBFET1h0ixwji",
+        "y_position": 1523,
+        "x_min": 290,
+        "x_max": 913,
+        "confidence": 0.8574903806050619,
+        "line_number": 43,
+        "words_count": 3
+      },
+      {
+        "text": "SMCjkQhmSZWJ",
+        "y_position": 1556,
+        "x_min": 289,
+        "x_max": 468,
+        "confidence": 0.9248231649398804,
+        "line_number": 44,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2682469",
+        "y_position": 1589,
+        "x_min": 289,
+        "x_max": 632,
+        "confidence": 0.982232948144277,
+        "line_number": 45,
+        "words_count": 3
+      },
+      {
+        "text": "2025-10-23T12 : 51 : 47.000Z",
+        "y_position": 1622,
+        "x_min": 287,
+        "x_max": 645,
+        "confidence": 0.983092725276947,
+        "line_number": 46,
+        "words_count": 5
+      },
+      {
+        "text": "2025-10-23T12 : 53 : 30.000Z",
+        "y_position": 1651,
+        "x_min": 288,
+        "x_max": 645,
+        "confidence": 0.9610666632652283,
+        "line_number": 47,
+        "words_count": 5
+      },
+      {
+        "text": "6496 026894/81 23.10.25 14:51",
+        "y_position": 1681,
+        "x_min": 286,
+        "x_max": 913,
+        "confidence": 0.9904318898916245,
+        "line_number": 48,
+        "words_count": 4
+      },
+      {
+        "text": "814060660 Azul bilanie",
+        "y_position": 1717,
+        "x_min": 508,
+        "x_max": 896,
+        "confidence": 0.6289836863676707,
+        "line_number": 49,
+        "words_count": 3
+      },
+      {
+        "text": "K - U - N - D - E - N - B - E - L - E - G",
+        "y_position": 1760,
+        "x_min": 415,
+        "x_max": 734,
+        "confidence": 0.9393988819349379,
+        "line_number": 50,
+        "words_count": 21
+      },
+      {
+        "text": "Kartenzahlung girocard",
+        "y_position": 1779,
+        "x_min": 417,
+        "x_max": 751,
+        "confidence": 0.9515258967876434,
+        "line_number": 51,
+        "words_count": 2
+      },
+      {
+        "text": "Betrag 44,81 EUR",
+        "y_position": 1825,
+        "x_min": 283,
+        "x_max": 883,
+        "confidence": 0.980711042881012,
+        "line_number": 52,
+        "words_count": 3
+      },
+      {
+        "text": "23.10.2025 14:52 T - ID 60155117",
+        "y_position": 1866,
+        "x_min": 282,
+        "x_max": 884,
+        "confidence": 0.9869785805543264,
+        "line_number": 53,
+        "words_count": 6
+      },
+      {
+        "text": "TA - Nr . 220855 Beleg - Nr . 1221",
+        "y_position": 1897,
+        "x_min": 281,
+        "x_max": 880,
+        "confidence": 0.9723373830318451,
+        "line_number": 54,
+        "words_count": 10
+      },
+      {
+        "text": "Kartennr . #### ##### 1364 00",
+        "y_position": 1929,
+        "x_min": 281,
+        "x_max": 881,
+        "confidence": 0.9425588051478068,
+        "line_number": 55,
+        "words_count": 6
+      },
+      {
+        "text": "Kontaktlos Chip Online",
+        "y_position": 1954,
+        "x_min": 281,
+        "x_max": 883,
+        "confidence": 0.9812578558921814,
+        "line_number": 56,
+        "words_count": 3
+      },
+      {
+        "text": "VU - Nummer 9801706496",
+        "y_position": 1989,
+        "x_min": 280,
+        "x_max": 808,
+        "confidence": 0.977123886346817,
+        "line_number": 57,
+        "words_count": 4
+      },
+      {
+        "text": "Autorisierungsnummer 883035",
+        "y_position": 2019,
+        "x_min": 279,
+        "x_max": 882,
+        "confidence": 0.9863004684448242,
+        "line_number": 58,
+        "words_count": 2
+      },
+      {
+        "text": "Autorisierungsantwortcode 00",
+        "y_position": 2051,
+        "x_min": 280,
+        "x_max": 883,
+        "confidence": 0.9844193756580353,
+        "line_number": 59,
+        "words_count": 2
+      },
+      {
+        "text": "EMV - Daten : A0000003591010028001 / 00",
+        "y_position": 2081,
+        "x_min": 282,
+        "x_max": 881,
+        "confidence": 0.985912195273808,
+        "line_number": 60,
+        "words_count": 7
+      },
+      {
+        "text": "** Autorisierung erfolgt **",
+        "y_position": 2120,
+        "x_min": 283,
+        "x_max": 878,
+        "confidence": 0.9381230175495148,
+        "line_number": 61,
+        "words_count": 4
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 266,
+    "total_lines": 62
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3225806451612903,
+    "matched_keywords": [
+      "summe",
+      "gesamt",
+      "zu zahlen",
+      "mwst",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur",
+      "beleg",
+      "pfand"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 10
+    }
+  },
+  "store": {
+    "store_name": "Lidl",
+    "store_address": "Steinhauser Auel 1, 514910verath - Vilkerath",
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-10-23",
+    "receipt_total": 44.81,
+    "currency": "EUR",
+    "date_raw": "2025-10-23",
+    "total_raw": "44,81 EUR",
+    "total_line_number": 52
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "Magnum DoubleCherry",
+        "quantity": null,
+        "price": null,
+        "total": 1.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 4,
+        "raw_text": "Magnum DoubleCherry 1,99 A"
+      },
+      {
+        "name": "A",
+        "quantity": null,
+        "price": null,
+        "total": 3.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 5,
+        "raw_text": "3,99 A"
+      },
+      {
+        "name": "Gouda",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Gouda -0,50"
+      },
+      {
+        "name": "in ScheibenXXL",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 10,
+        "raw_text": "in ScheibenXXL 4,29 A"
+      },
+      {
+        "name": "Frischkäse Sahnige 121,69 x 2 AT",
+        "quantity": 121.69,
+        "price": null,
+        "total": 3.38,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "Frischkäse Sahnige 121,69 x 2 AT 3,38 A"
+      },
+      {
+        "name": "H - Milch3,5 % HF3 1,09 × 12",
+        "quantity": 1.09,
+        "price": null,
+        "total": 13.08,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "H - Milch3,5 % HF3 1,09 × 12 13,08"
+      },
+      {
+        "name": "Mineralwasser still 0,29 x 18",
+        "quantity": 0.29,
+        "price": null,
+        "total": 5.22,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Mineralwasser still 0,29 x 18 5,22 B"
+      },
+      {
+        "name": "Pfand EM x 18",
+        "quantity": 0.25,
+        "price": 0.25,
+        "total": 4.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "Pfand 0,25 EM 0,25 x 18 4,50 B"
+      },
+      {
+        "name": "Schwammtuch 5er",
+        "quantity": null,
+        "price": null,
+        "total": 0.85,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 23,
+        "raw_text": "Schwammtuch 5er 0,85 B"
+      },
+      {
+        "name": "Edelstahltopfreinig .",
+        "quantity": null,
+        "price": null,
+        "total": 0.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "Edelstahltopfreinig . 0,99 B"
+      },
+      {
+        "name": "GSM Konzentrat gelb",
+        "quantity": null,
+        "price": null,
+        "total": 0.95,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 25,
+        "raw_text": "GSM Konzentrat gelb 0,95 B"
+      },
+      {
+        "name": "Thobsheim",
+        "quantity": null,
+        "price": null,
+        "total": 44.81,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 28,
+        "raw_text": "Thobsheim 44.81"
+      },
+      {
+        "name": "",
+        "quantity": null,
+        "price": null,
+        "total": 3.4,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 30,
+        "raw_text": "3,40"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -1.2,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 6,
+        "raw_text": "Preisvorteil -1,20"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "Preisvorteil 2,99 A"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": -0.7,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Preisvorteil -0,70"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 13,
+        "raw_text": "Preisvorteil 2,99 A"
+      },
+      {
+        "name": "WassereisWass.melone EUR Butterkäse [ OGT ] Tilsiter Scheiben alq ",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "-0,50"
+      },
+      {
+        "name": "Preisvorteil",
+        "quantity": null,
+        "price": null,
+        "total": 2.99,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "Preisvorteil 2,99 A"
+      },
+      {
+        "name": "Edamer Scheiben ",
+        "quantity": null,
+        "price": null,
+        "total": -0.5,
+        "is_discount": true,
+        "is_pfand": false,
+        "line_number": 17,
+        "raw_text": "-0,50"
+      }
+    ],
+    "items_count": 13,
+    "discounts_count": 7,
+    "items_total": 86.95000000000002,
+    "discounts_total": 11.870000000000001,
+    "skipped_lines": 21,
+    "parsed_lines": 20
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 86.95000000000002,
+    "discounts_sum": 11.870000000000001,
+    "calculated_total": 75.08,
+    "receipt_total": 44.81,
+    "difference": 30.269999999999996,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=75.08, receipt=44.81, diff=30.27 (tolerance=0.05)"
+  },
+  "processing_time_ms": 18.73326301574707,
+  "stages_completed": 6
+}

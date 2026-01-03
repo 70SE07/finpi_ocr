@@ -1,0 +1,233 @@
+{
+  "items": [
+    {
+      "name": "A TORBA RECYKLING 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 0.79,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "A TORBA RECYKLING 1 * 0.79 = 0.79 A"
+    },
+    {
+      "name": "A_TORBA RECYKLING uqu 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 0.79,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "A_TORBA RECYKLING uqu 1 * 0.79 = 0.79 A"
+    },
+    {
+      "name": "C_JOG.D / P SKYR H.PR 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 6.75,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_JOG.D / P SKYR H.PR 1 * 6.75 = 6.75 C"
+    },
+    {
+      "name": "C.JOG.D / P SKYR HEN 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 5.75,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C.JOG.D / P SKYR HEN 1 * 5.75 = 5.75 C"
+    },
+    {
+      "name": "C_JOG.D / P SKYR LIND 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 5.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_JOG.D / P SKYR LIND 1 * 5,99 = 5,99 C"
+    },
+    {
+      "name": "C.ZIEMNIAKI SŁODKIE 0,694 * 9.99",
+      "quantity": 0.694,
+      "price": null,
+      "total": 6.93,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C.ZIEMNIAKI SŁODKIE 0,694 * 9.99 6,93 C"
+    },
+    {
+      "name": "C POMELO CZERWONE L 0.762 * 9.99 =",
+      "quantity": 0.762,
+      "price": null,
+      "total": 7.61,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C POMELO CZERWONE L 0.762 * 9.99 = 7.61 C"
+    },
+    {
+      "name": "A OSHIORNICA MACKI 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 41.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A"
+    },
+    {
+      "name": "A OSHIORNICA MACKI 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 41.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "A OSHIORNICA MACKI 1 * 41.99 = 41.99 A"
+    },
+    {
+      "name": "A BIO CZEKOL.COCOA 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 13.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "A BIO CZEKOL.COCOA 1 * 13.99 = 13,99 A"
+    },
+    {
+      "name": "C_MC KOPEREK PĘCZEK BYAR 1x =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 5.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_MC KOPEREK PĘCZEK BYAR 1x5,99 = 5,99 C"
+    },
+    {
+      "name": "C_MC SAŁATA RZYMSKA 1 × =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 5.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_MC SAŁATA RZYMSKA 1 × 5,99 = 5,99 C"
+    },
+    {
+      "name": "C MC BIO KRAKERSY P 1x =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 7.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C MC BIO KRAKERSY P 1x7,99 = 7,99 C"
+    },
+    {
+      "name": "CMC KIEŁKI JARMUZU 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 4.65,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "CMC KIEŁKI JARMUZU 1 * 4,65 = 4,65 C"
+    },
+    {
+      "name": "C_SIMPL POMIDOR DAK 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 5.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_SIMPL POMIDOR DAK 1 * 5,99 = 5,99 C"
+    },
+    {
+      "name": "C_SEREK PHILADELPHI 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 7.29,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_SEREK PHILADELPHI 1 * 7,29 = 7,29 C"
+    },
+    {
+      "name": "C BAKALLAND DAKTYL 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 8.49,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C BAKALLAND DAKTYL 1 * 8,49 = 8,49 C"
+    },
+    {
+      "name": "C_JZN CZOSNEK SZTUK 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 1.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_JZN CZOSNEK SZTUK 1 * 1,99 = 1,99 C"
+    },
+    {
+      "name": "C BANANY PLANTANY 6 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 14.99,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C BANANY PLANTANY 6 1 * 14.99 = 14.99 C"
+    },
+    {
+      "name": "CHC MANDARYNKI LUZJAVA 1.398-8.99 = €",
+      "quantity": null,
+      "price": null,
+      "total": 12.57,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "CHC MANDARYNKI LUZJAVA 1.398-8.99 = 12.57 €"
+    },
+    {
+      "name": "C_JZN JABŁKA CHAMPI 0,668 * 4,99",
+      "quantity": 0.668,
+      "price": null,
+      "total": 3.33,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C"
+    },
+    {
+      "name": "C.JZN JABŁKA CHAMPI 0,668 * 4,99",
+      "quantity": 0.668,
+      "price": null,
+      "total": 3.33,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C.JZN JABŁKA CHAMPI 0,668 * 4,99 3,33 C"
+    },
+    {
+      "name": "C_JZN JABŁKA CHANPI 0.668 * 4.99",
+      "quantity": 0.668,
+      "price": null,
+      "total": -3.33,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_JZN JABŁKA CHANPI 0.668 * 4.99 -3,33 C"
+    },
+    {
+      "name": "C_CYTRYNY LUZ 0,29 9,99",
+      "quantity": null,
+      "price": null,
+      "total": 2.9,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_CYTRYNY LUZ 0,29 9,99 2,90 C"
+    },
+    {
+      "name": "C_TWARÓG WIEJSKI KL 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 5.79,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_TWARÓG WIEJSKI KL 1 * 5,79 = 5,79 C"
+    },
+    {
+      "name": "CMC BIO AOP SER PA sbob b2ysio 1 * =",
+      "quantity": 1.0,
+      "price": null,
+      "total": 20.69,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "CMC BIO AOP SER PA sbob b2ysio 1 * 20,69 = 20.69 C"
+    },
+    {
+      "name": "C_JAJA FARMIO H10 W 1 ×",
+      "quantity": 1.0,
+      "price": null,
+      "total": 13.09,
+      "date": "2025-11-19 00:00:00",
+      "raw_text": "C_JAJA FARMIO H10 W 1 × 13,09 13,09 C"
+    }
+  ],
+  "total_amount": 254.32,
+  "merchant": "carrefour",
+  "store_address": "03-734 Warszawa ul . Targowa 72, fque Tel . ( 22 ) 511-26-00 дом, CARREFOUR Polska Sp . z o . 0 .",
+  "date": "2025-11-19 00:00:00",
+  "receipt_id": "PL_001",
+  "ocr_text": "dul\ngas\nCARREFOUR CH Wileńska\n03-734 Warszawa ul. Targowa 72\nfque Tel. (22) 511-26-00\n2025-11-19\nCARREFOUR Polska Sp. z o. 0.\n03-734 Warszawa ul. Targowa 72\nNr rej. BDO: 000009699\nA TORBA RECYKLING\nA_TORBA RECYKLING\nC_JOG.D/P SKYR H.PR\nC.JOG.D/P SKYR HEN\nC_JOG.D/P SKYR LIND\nC.ZIEMNIAKI SŁODKIE\nC POMELO CZERWONE L\nA OSHIORNICA MACKI\nA OSHIORNICA MACKI\nA BIO CZEKOL.COCOA\nC_MC KOPEREK PĘCZEK\nC_MC SAŁATA RZYMSKA\nC MC BIO KRAKERSY P\nCMC KIEŁKI JARMUZU\nC_SIMPL POMIDOR DAK\nC_SEREK PHILADELPHI\nC BAKALLAND DAKTYL\nC_JZN CZOSNEK SZTUK\nNIP 937-00-08-168\nGid\nдом\nnr wydr.072002/1258\nPARAGON FISKALNY.072002/15\nPARAG\n1*0.79= 0.79 A\n1*0.79= 0.79 A\nuqu\n1*6.75= 6.75 C\n1*5.75= 5.75 C\n1*5,99= 5,99 C\n0,694*9.99 6,93 C\n0.762*9.99= 7.61 C\n1*41.99= 41.99 A\n1*41.99= 41.99 A\n1*13.99= 13,99 A\n1x5,99= 5,99 C\nBYAR\n1×5,99= 5,99 C\n1x7,99= 7,99 C\n1*4,65= 4,65 C\n1*5,99= 5,99 C\n1*7,29= 7,29 C\n1*8,49= 8,49 C\n1*1,99= 1,99 C\n1*14.99= 14.99 C\nC\n0,668*4,99 3,33 C\n0,668*4,99 3,33 C\nCHC MANDARYNKI LUZJAVA 1.398-8.99= 12.57 €\nC BANANY PLANTANY 6\nC_JZN JABŁKA CHAMPI\nC.JZN JABŁKA CHAMPI\nC_JZN JABŁKA CHANPI\n0.668*4.99 -3,33 C\n***Anulovano sprzedaż***\nC_CYTRYNY LUZ\nC_TWARÓG WIEJSKI KL\nCMC BIO AOP SER PA\nC_JAJA FARMIO H10 W\nSprzed. opod. PTU A\nKwota A 23,00%\nSprzed. opod. PTU C\nKuota C 05,00%\nsbob b2ysio\n0,29 9,99 2,90 C\n1*5,79= 5,79 C\n1*20,69= 20.69 C\n1×13,09 13,09 C\n99.55\n18.62\n154.77\n7.37\n25.99\nPodatek PTU\nSUMA PLN YAH ob 254.32\n000106 #019 038\n19647F707FD77CC40E 48F7975FEF9AE5F9C238DD\n18:10\nPCCO 1701480375\n00111019254772511193\nPłatność: KARTAPIATNI\nKasjer\n254,32\n038\nNr transakcji\n25477\nZ kartę PAYBACK zyskałbyś 84 punktów!",
+  "detected_locale": "pl_PL",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 27.0,
+    "validation_passed": 1.0,
+    "validation_difference": 0.0
+  }
+}

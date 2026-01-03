@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "name": "Lammkarree fr . ( 399 ) B",
+      "quantity": null,
+      "price": null,
+      "total": 6.01,
+      "date": "2025-08-12 00:00:00"
+    },
+    {
+      "name": "Spieße Kreta ( 945 ) B",
+      "quantity": null,
+      "price": null,
+      "total": 6.05,
+      "date": "2025-08-12 00:00:00"
+    },
+    {
+      "name": "Schw.Nacken ( 527 ) B",
+      "quantity": null,
+      "price": null,
+      "total": 21.83,
+      "date": "2025-08-12 00:00:00"
+    },
+    {
+      "name": "Filetspieẞ Jalap ( 189 ) B",
+      "quantity": null,
+      "price": null,
+      "total": 46.26,
+      "date": "2025-08-12 00:00:00"
+    },
+    {
+      "name": "TawnyPortAlvarez ( 341 )",
+      "quantity": null,
+      "price": null,
+      "total": 12.98,
+      "date": "2025-08-12 00:00:00"
+    },
+    {
+      "name": "2x €",
+      "quantity": 2.0,
+      "price": null,
+      "total": 6.49,
+      "date": "2025-08-12 00:00:00"
+    },
+    {
+      "name": "Taylors Ruby Sel ( 536 )",
+      "quantity": null,
+      "price": null,
+      "total": 13.99,
+      "date": "2025-08-12 00:00:00"
+    }
+  ],
+  "total_amount": 107.12,
+  "merchant": "Hit",
+  "store_address": null,
+  "date": "2025-08-12 00:00:00",
+  "receipt_id": "IMG_1373",
+  "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nTHEKE/SBHF\nBedientheke\nPreis €\nLammkarree fr. (399)\n6,01 B F\nSpieße Kreta\n(945)\n6,05 B F\nSchw.Nacken\n(527)\n21,83 B F\nFiletspieẞ Jalap (189)\n46,26 B F\nWEIN/SPIRITUOSEN/SEKT/CHAMPAGNER\n*** Discount Preis ***\nTawnyPortAlvarez\n(341)\n12,98 A\n2x 6,49 €\nTaylors Ruby Sel\n(536)\n13,99 A\nSUMME[3]\n107,12\nEC-Lastschrift\n107,12\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID :\n61724234\nBNr 3699\nTA-Nr 408344\nKartenzahlung\nSEPA-ELV\nOnline\nEUR 107,12\nCDGM\nKurz-BLZ\nKto.\nKarte 2\n#####\nIBAN\nG-ID\nM-ID\n######8132\ngültig bis 12/28\nDE3537#####*#*#*##8132\nDE52ZZZ00000041034\n6172423436992508122032\nAIDPara\n0001610648\nDatum 12.08.25 20:32 Uhr\n*** Karte akzeptiert ***\nBITTE BELEG AUFBEWAHREN\nDie Belastung erfolgt zum über-\nnächsten Bankgeschäftstag\nSteuer\nA=19,00%\nB= 7,00%\nNETTO [6] MWST [€] BRUTTO [€]\n22,66\n74,91\n4,31\n5,24\n26,97\n80,15\n11\nKennzeichenlegende\nDie wie folgt gekennzeichneten Artikel\nsowie die darauf entfallene MWST werden\nverkauft im Namen und Rechnung von:\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n********************\n***************\nSie erhalten mit diesem Kauf\n21 Treuepunkt(e)!\n**********\n*************\n0014033120825004000525\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025\nLade\n34\nDatum\n12.08.25\nZeit\n20:33\nF11.\n4033\nPos Bon\n04\n0525\nVielen Dank für Ihren Einkauf!",
+  "detected_locale": "de_DE",
+  "metrics": {
+    "processing_time_ms": 0.0,
+    "items_count": 7.0,
+    "validation_passed": 0.0,
+    "validation_difference": 6.489999999999995
+  }
+}

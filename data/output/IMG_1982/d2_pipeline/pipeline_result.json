@@ -1,0 +1,940 @@
+{
+  "dto": {
+    "items": [
+      {
+        "name": "REWE Feinkostsau ( 226 )",
+        "quantity": null,
+        "price": null,
+        "total": 1.39,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Cornichons ( 434 )",
+        "quantity": null,
+        "price": null,
+        "total": 2.49,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Ültje Erdnüsse ( 504 )",
+        "quantity": null,
+        "price": null,
+        "total": 4.69,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Beinscheibe mix ( 510 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 21.73,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Oliven o . Stein ( 202 )",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Häagen - Dazs Belgian ( 716 )",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Häagen - Dazs Pint ( 713 )",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Coca - Cola ( 977 )",
+        "quantity": null,
+        "price": null,
+        "total": 2.78,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 1.39,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "HIT Papiertraget ( 257 )",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "Pfand 0,25 ( 005 )",
+        "quantity": null,
+        "price": null,
+        "total": 0.5,
+        "date": "2025-09-20 00:00:00"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 0.25,
+        "date": "2025-09-20 00:00:00"
+      }
+    ],
+    "total_amount": 52.1,
+    "merchant": "Hit",
+    "store_address": null,
+    "date": "2025-09-20 00:00:00",
+    "receipt_id": "IMG_1982",
+    "ocr_text": "HIT\nECHTE\nVIELFALT.\nHIT 033 Overath\nProbsteistraße 18-22\n51491 Overath\nÖffnungszeiten\nMO-SA 08:00-22:00 Uhr\nLEBENSMITTEL\nPreis €\nREWE Feinkostsau\n(226)\n1,39 B\nCornichons\n(434)\n2,49 B\n*** Discount Preis ***\nÜltje Erdnüsse\n(504)\n4,69 B\nTHEKE/SBHF\nBedientheke\nBeinscheibe mix\n(510)\n21,73 B F\nGEKÜHLTE LEBENSMITTEL\nOliven o. Stein\n(202)\n4,29 B\nTIEFKÜHLKOST\nHäagen-Dazs Belgian\n(716)\n6,99 B\nHäagen-Dazs Pint\n(713)\n6,99 B\nGETRÄNKE\nCoca-Cola\n(977)\n2,78 A\n2x 1,39 €\nNON FOOD\nHIT Papiertraget\n(257)\n0,25 A\nPFAND/LEERGUT\nPfand 0,25\n(005)\n0,50 A*\n2x 0,25 €\nSUMME [10]\nEC-Lastschrift\n52,10\n52,10\n-K-U-N-D-E-N-B-E-L-E-G-\nHIT 4033 Overath\nProbsteistr. 18-22\n51491 Overath\nTerminal-ID :\nTA-Nr 300975\nKartenzahlung\nSEPA-ELV\nOnline\nEUR 52,10\n61724231\nBNr 1374\nCDGM\nKurz-BLZ\n#####\nKto.\nKarte 0\nIBAN\nG-ID\nM-ID\n######1136\ngültig bis 12/26\nDE2037############1136\nDE52ZZZ00000041034\n6172423113742509201850\nAIDPara\n000161064D\nDatum 20.09.25 18:50 Uhr\n*** Karte akzeptiert ***\nBITTE BELEG AUFBEWAHREN\nDie Belastung erfolgt zum über-\nnächsten Bankgeschäftstag\nSteuer\nA=19,00%\nB= 7,00%\nNETTO [e] MWST [€] BRUTTO [€]\n2,97\n45,39\n0,56\n3,18\n3,53\n48,57\nKennzeichenlegende\nDie mit * gekennzeichneten Artikel sind\nnicht rabattfähig. Die wie folgt\ngekennzeichneten Artikel sowie die\ndarauf entfallene MWST werden verkauft\nim Namen und Rechnung von:\nF=HIT Frische GmbH & Co. KG,\nProbsteistraße 18-22\n51491 Overath, USt-ID-Nr.: DE122274982\n****************\n*****\nSie erhalten mit diesem Kauf\n10 Treuepunkt (e)!\n0014033200925002000242\n******\nHIT Verbrauchermarkt Overath GmbH &\nUSt-ID: DE276299025",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 12.0,
+      "validation_passed": 0.0,
+      "validation_difference": 1.6400000000000006
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "HIT",
+        "y_position": 29,
+        "x_min": 512,
+        "x_max": 620,
+        "confidence": 0.8206339478492737,
+        "line_number": 0,
+        "words_count": 1
+      },
+      {
+        "text": "VIELFALT ECHTE .",
+        "y_position": 76,
+        "x_min": 523,
+        "x_max": 612,
+        "confidence": 0.8459057807922363,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "HIT 033 Overath",
+        "y_position": 159,
+        "x_min": 473,
+        "x_max": 644,
+        "confidence": 0.9875502189000448,
+        "line_number": 2,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 183,
+        "x_min": 450,
+        "x_max": 677,
+        "confidence": 0.9726058542728424,
+        "line_number": 3,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 209,
+        "x_min": 484,
+        "x_max": 631,
+        "confidence": 0.9904393255710602,
+        "line_number": 4,
+        "words_count": 2
+      },
+      {
+        "text": "Öffnungszeiten",
+        "y_position": 235,
+        "x_min": 473,
+        "x_max": 634,
+        "confidence": 0.9576324224472046,
+        "line_number": 5,
+        "words_count": 1
+      },
+      {
+        "text": "MO - SA 08 : 00-22 : 00 Uhr",
+        "y_position": 261,
+        "x_min": 438,
+        "x_max": 677,
+        "confidence": 0.9801448782285055,
+        "line_number": 6,
+        "words_count": 9
+      },
+      {
+        "text": "LEBENSMITTEL Preis €",
+        "y_position": 313,
+        "x_min": 337,
+        "x_max": 734,
+        "confidence": 0.8948130011558533,
+        "line_number": 7,
+        "words_count": 3
+      },
+      {
+        "text": "REWE Feinkostsau ( 226 ) 1,39 B",
+        "y_position": 339,
+        "x_min": 337,
+        "x_max": 745,
+        "confidence": 0.9858086960656303,
+        "line_number": 8,
+        "words_count": 7
+      },
+      {
+        "text": "Cornichons ( 434 ) 2,49 B",
+        "y_position": 365,
+        "x_min": 336,
+        "x_max": 745,
+        "confidence": 0.9809670945008596,
+        "line_number": 9,
+        "words_count": 6
+      },
+      {
+        "text": "*** Discount Preis ***",
+        "y_position": 390,
+        "x_min": 404,
+        "x_max": 653,
+        "confidence": 0.9446908831596375,
+        "line_number": 10,
+        "words_count": 4
+      },
+      {
+        "text": "Ültje Erdnüsse ( 504 ) 4,69 B",
+        "y_position": 413,
+        "x_min": 335,
+        "x_max": 745,
+        "confidence": 0.9558671372277396,
+        "line_number": 11,
+        "words_count": 7
+      },
+      {
+        "text": "THEKE / SBHF",
+        "y_position": 440,
+        "x_min": 336,
+        "x_max": 452,
+        "confidence": 0.9796658953030905,
+        "line_number": 12,
+        "words_count": 3
+      },
+      {
+        "text": "Bedientheke",
+        "y_position": 464,
+        "x_min": 335,
+        "x_max": 462,
+        "confidence": 0.9865210056304932,
+        "line_number": 13,
+        "words_count": 1
+      },
+      {
+        "text": "Beinscheibe mix ( 510 ) 21,73 B F",
+        "y_position": 490,
+        "x_min": 371,
+        "x_max": 780,
+        "confidence": 0.9840139001607895,
+        "line_number": 14,
+        "words_count": 8
+      },
+      {
+        "text": "GEKÜHLTE LEBENSMITTEL",
+        "y_position": 514,
+        "x_min": 337,
+        "x_max": 575,
+        "confidence": 0.9691431224346161,
+        "line_number": 15,
+        "words_count": 2
+      },
+      {
+        "text": "Oliven o . Stein ( 202 ) 4,29 B",
+        "y_position": 544,
+        "x_min": 336,
+        "x_max": 746,
+        "confidence": 0.955923510922326,
+        "line_number": 16,
+        "words_count": 9
+      },
+      {
+        "text": "TIEFKÜHLKOST",
+        "y_position": 570,
+        "x_min": 338,
+        "x_max": 473,
+        "confidence": 0.9581571221351624,
+        "line_number": 17,
+        "words_count": 1
+      },
+      {
+        "text": "Häagen - Dazs Belgian ( 716 ) 6,99 B",
+        "y_position": 597,
+        "x_min": 338,
+        "x_max": 746,
+        "confidence": 0.9681560728285048,
+        "line_number": 18,
+        "words_count": 9
+      },
+      {
+        "text": "Häagen - Dazs Pint ( 713 ) 6,99 B",
+        "y_position": 622,
+        "x_min": 338,
+        "x_max": 746,
+        "confidence": 0.9777177373568217,
+        "line_number": 19,
+        "words_count": 9
+      },
+      {
+        "text": "GETRÄNKE",
+        "y_position": 649,
+        "x_min": 339,
+        "x_max": 429,
+        "confidence": 0.9725653529167175,
+        "line_number": 20,
+        "words_count": 1
+      },
+      {
+        "text": "Coca - Cola ( 977 ) 2,78 A",
+        "y_position": 675,
+        "x_min": 339,
+        "x_max": 748,
+        "confidence": 0.9830333441495895,
+        "line_number": 21,
+        "words_count": 8
+      },
+      {
+        "text": "2x 1,39 €",
+        "y_position": 702,
+        "x_min": 361,
+        "x_max": 463,
+        "confidence": 0.9439918597539266,
+        "line_number": 22,
+        "words_count": 3
+      },
+      {
+        "text": "NON FOOD",
+        "y_position": 727,
+        "x_min": 339,
+        "x_max": 432,
+        "confidence": 0.9950876533985138,
+        "line_number": 23,
+        "words_count": 2
+      },
+      {
+        "text": "HIT Papiertraget ( 257 ) 0,25 A",
+        "y_position": 752,
+        "x_min": 340,
+        "x_max": 748,
+        "confidence": 0.985777131148747,
+        "line_number": 24,
+        "words_count": 7
+      },
+      {
+        "text": "PFAND / LEERGUT",
+        "y_position": 779,
+        "x_min": 341,
+        "x_max": 487,
+        "confidence": 0.8870391647020975,
+        "line_number": 25,
+        "words_count": 3
+      },
+      {
+        "text": "Pfand 0,25 ( 005 ) 0,50 A *",
+        "y_position": 804,
+        "x_min": 341,
+        "x_max": 757,
+        "confidence": 0.9667193964123726,
+        "line_number": 26,
+        "words_count": 8
+      },
+      {
+        "text": "2x 0,25 €",
+        "y_position": 831,
+        "x_min": 363,
+        "x_max": 466,
+        "confidence": 0.9278145829836527,
+        "line_number": 27,
+        "words_count": 3
+      },
+      {
+        "text": "SUMME [ 10 ] 52,10",
+        "y_position": 883,
+        "x_min": 342,
+        "x_max": 784,
+        "confidence": 0.9606616497039795,
+        "line_number": 28,
+        "words_count": 5
+      },
+      {
+        "text": "EC - Lastschrift 52,10",
+        "y_position": 908,
+        "x_min": 342,
+        "x_max": 780,
+        "confidence": 0.9806552082300186,
+        "line_number": 29,
+        "words_count": 4
+      },
+      {
+        "text": "-K - U - N - D - E - N - B - E - L - E - G-",
+        "y_position": 960,
+        "x_min": 424,
+        "x_max": 680,
+        "confidence": 0.9548210132689703,
+        "line_number": 30,
+        "words_count": 21
+      },
+      {
+        "text": "HIT 4033 Overath",
+        "y_position": 986,
+        "x_min": 366,
+        "x_max": 546,
+        "confidence": 0.9857974251111349,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "Probsteistr . 18-22",
+        "y_position": 1010,
+        "x_min": 366,
+        "x_max": 569,
+        "confidence": 0.9654163718223572,
+        "line_number": 32,
+        "words_count": 3
+      },
+      {
+        "text": "51491 Overath",
+        "y_position": 1035,
+        "x_min": 365,
+        "x_max": 513,
+        "confidence": 0.9896349608898163,
+        "line_number": 33,
+        "words_count": 2
+      },
+      {
+        "text": "Terminal - ID : 61724231",
+        "y_position": 1064,
+        "x_min": 365,
+        "x_max": 745,
+        "confidence": 0.9548635005950927,
+        "line_number": 34,
+        "words_count": 5
+      },
+      {
+        "text": "TA - Nr 300975 BNr 1374",
+        "y_position": 1090,
+        "x_min": 366,
+        "x_max": 749,
+        "confidence": 0.9733502169450124,
+        "line_number": 35,
+        "words_count": 6
+      },
+      {
+        "text": "Kartenzahlung",
+        "y_position": 1114,
+        "x_min": 479,
+        "x_max": 626,
+        "confidence": 0.9889261722564697,
+        "line_number": 36,
+        "words_count": 1
+      },
+      {
+        "text": "SEPA - ELV",
+        "y_position": 1141,
+        "x_min": 513,
+        "x_max": 603,
+        "confidence": 0.9849079847335815,
+        "line_number": 37,
+        "words_count": 3
+      },
+      {
+        "text": "Online",
+        "y_position": 1165,
+        "x_min": 525,
+        "x_max": 593,
+        "confidence": 0.982820451259613,
+        "line_number": 38,
+        "words_count": 1
+      },
+      {
+        "text": "EUR 52,10",
+        "y_position": 1193,
+        "x_min": 458,
+        "x_max": 659,
+        "confidence": 0.9698948860168457,
+        "line_number": 39,
+        "words_count": 2
+      },
+      {
+        "text": "CDGM",
+        "y_position": 1245,
+        "x_min": 365,
+        "x_max": 411,
+        "confidence": 0.9890182614326477,
+        "line_number": 40,
+        "words_count": 1
+      },
+      {
+        "text": "Kurz - BLZ #####",
+        "y_position": 1267,
+        "x_min": 366,
+        "x_max": 749,
+        "confidence": 0.9750258177518845,
+        "line_number": 41,
+        "words_count": 4
+      },
+      {
+        "text": "Kto . ###### 1136",
+        "y_position": 1294,
+        "x_min": 365,
+        "x_max": 750,
+        "confidence": 0.9544585645198822,
+        "line_number": 42,
+        "words_count": 4
+      },
+      {
+        "text": "Karte 0 gültig bis 12/26",
+        "y_position": 1318,
+        "x_min": 366,
+        "x_max": 749,
+        "confidence": 0.8953045606613159,
+        "line_number": 43,
+        "words_count": 5
+      },
+      {
+        "text": "IBAN DE2037 ############ 1136",
+        "y_position": 1345,
+        "x_min": 366,
+        "x_max": 750,
+        "confidence": 0.9807932525873184,
+        "line_number": 44,
+        "words_count": 4
+      },
+      {
+        "text": "G - ID DE52ZZZ00000041034",
+        "y_position": 1370,
+        "x_min": 365,
+        "x_max": 750,
+        "confidence": 0.9802657961845398,
+        "line_number": 45,
+        "words_count": 4
+      },
+      {
+        "text": "M - ID 6172423113742509201850",
+        "y_position": 1397,
+        "x_min": 365,
+        "x_max": 751,
+        "confidence": 0.9873123615980148,
+        "line_number": 46,
+        "words_count": 4
+      },
+      {
+        "text": "AIDPara 000161064D",
+        "y_position": 1422,
+        "x_min": 366,
+        "x_max": 751,
+        "confidence": 0.9831463396549225,
+        "line_number": 47,
+        "words_count": 2
+      },
+      {
+        "text": "Datum 20.09.25 18:50 Uhr",
+        "y_position": 1447,
+        "x_min": 366,
+        "x_max": 636,
+        "confidence": 0.9898187220096588,
+        "line_number": 48,
+        "words_count": 4
+      },
+      {
+        "text": "*** Karte akzeptiert ***",
+        "y_position": 1475,
+        "x_min": 423,
+        "x_max": 693,
+        "confidence": 0.9497316628694534,
+        "line_number": 49,
+        "words_count": 4
+      },
+      {
+        "text": "BITTE BELEG AUFBEWAHREN",
+        "y_position": 1499,
+        "x_min": 423,
+        "x_max": 682,
+        "confidence": 0.9901269276936849,
+        "line_number": 50,
+        "words_count": 3
+      },
+      {
+        "text": "Die Belastung erfolgt zum über-",
+        "y_position": 1525,
+        "x_min": 365,
+        "x_max": 751,
+        "confidence": 0.9790342092514038,
+        "line_number": 51,
+        "words_count": 5
+      },
+      {
+        "text": "nächsten Bankgeschäftstag",
+        "y_position": 1551,
+        "x_min": 366,
+        "x_max": 651,
+        "confidence": 0.9647155702114105,
+        "line_number": 52,
+        "words_count": 2
+      },
+      {
+        "text": "Steuer NETTO [ e ] MWST [ € ] BRUTTO [ € ]",
+        "y_position": 1630,
+        "x_min": 343,
+        "x_max": 795,
+        "confidence": 0.7901959808973166,
+        "line_number": 53,
+        "words_count": 13
+      },
+      {
+        "text": "A = 19,00 % 2,97 0,56 3,53",
+        "y_position": 1656,
+        "x_min": 343,
+        "x_max": 798,
+        "confidence": 0.9634527223450797,
+        "line_number": 54,
+        "words_count": 7
+      },
+      {
+        "text": "B = 7,00 % 45,39 3,18 48,57",
+        "y_position": 1681,
+        "x_min": 343,
+        "x_max": 795,
+        "confidence": 0.9629792826516288,
+        "line_number": 55,
+        "words_count": 7
+      },
+      {
+        "text": "Kennzeichenlegende",
+        "y_position": 1708,
+        "x_min": 468,
+        "x_max": 675,
+        "confidence": 0.9862341284751892,
+        "line_number": 56,
+        "words_count": 1
+      },
+      {
+        "text": "Die mit * gekennzeichneten Artikel sind",
+        "y_position": 1731,
+        "x_min": 343,
+        "x_max": 785,
+        "confidence": 0.9055738051732382,
+        "line_number": 57,
+        "words_count": 6
+      },
+      {
+        "text": "nicht rabattfähig . Die wie folgt",
+        "y_position": 1758,
+        "x_min": 344,
+        "x_max": 707,
+        "confidence": 0.9852633575598398,
+        "line_number": 58,
+        "words_count": 6
+      },
+      {
+        "text": "gekennzeichneten Artikel sowie die",
+        "y_position": 1780,
+        "x_min": 343,
+        "x_max": 730,
+        "confidence": 0.9826646000146866,
+        "line_number": 59,
+        "words_count": 4
+      },
+      {
+        "text": "darauf entfallene MWST werden verkauft",
+        "y_position": 1807,
+        "x_min": 345,
+        "x_max": 773,
+        "confidence": 0.9910037398338318,
+        "line_number": 60,
+        "words_count": 5
+      },
+      {
+        "text": "im Namen und Rechnung von :",
+        "y_position": 1835,
+        "x_min": 345,
+        "x_max": 639,
+        "confidence": 0.9605363309383392,
+        "line_number": 61,
+        "words_count": 6
+      },
+      {
+        "text": "F = HIT Frische GmbH & Co. KG ,",
+        "y_position": 1860,
+        "x_min": 344,
+        "x_max": 659,
+        "confidence": 0.8918944266107347,
+        "line_number": 62,
+        "words_count": 9
+      },
+      {
+        "text": "Probsteistraße 18-22",
+        "y_position": 1885,
+        "x_min": 344,
+        "x_max": 570,
+        "confidence": 0.9747995734214783,
+        "line_number": 63,
+        "words_count": 2
+      },
+      {
+        "text": "51491 Overath , USt - ID - Nr .: DE122274982",
+        "y_position": 1906,
+        "x_min": 343,
+        "x_max": 774,
+        "confidence": 0.9385841310024261,
+        "line_number": 64,
+        "words_count": 10
+      },
+      {
+        "text": "**************** ******",
+        "y_position": 1940,
+        "x_min": 344,
+        "x_max": 794,
+        "confidence": 0.8968863487243652,
+        "line_number": 65,
+        "words_count": 2
+      },
+      {
+        "text": "Sie erhalten mit diesem Kauf",
+        "y_position": 1961,
+        "x_min": 411,
+        "x_max": 729,
+        "confidence": 0.9598785758018493,
+        "line_number": 66,
+        "words_count": 5
+      },
+      {
+        "text": "10 Treuepunkt ( e ) !",
+        "y_position": 1987,
+        "x_min": 470,
+        "x_max": 661,
+        "confidence": 0.9163086911042532,
+        "line_number": 67,
+        "words_count": 6
+      },
+      {
+        "text": "*****",
+        "y_position": 2019,
+        "x_min": 344,
+        "x_max": 395,
+        "confidence": 0.7647915482521057,
+        "line_number": 68,
+        "words_count": 1
+      },
+      {
+        "text": "0014033200925002000242",
+        "y_position": 2038,
+        "x_min": 448,
+        "x_max": 700,
+        "confidence": 0.9913294911384583,
+        "line_number": 69,
+        "words_count": 1
+      },
+      {
+        "text": "HIT Verbrauchermarkt Overath GmbH &",
+        "y_position": 2134,
+        "x_min": 366,
+        "x_max": 765,
+        "confidence": 0.9504044771194458,
+        "line_number": 70,
+        "words_count": 5
+      },
+      {
+        "text": "USt - ID : DE276299025",
+        "y_position": 2161,
+        "x_min": 457,
+        "x_max": 674,
+        "confidence": 0.7558695554733277,
+        "line_number": 71,
+        "words_count": 5
+      }
+    ],
+    "image_width": 1237,
+    "image_height": 2200,
+    "total_words": 328,
+    "total_lines": 72
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.3548387096774194,
+    "matched_keywords": [
+      "summe",
+      "mwst",
+      "ust",
+      "steuer",
+      "netto",
+      "brutto",
+      "rewe",
+      "eur",
+      "beleg",
+      "pfand",
+      "leergut"
+    ],
+    "scores": {
+      "pt_PT": 2,
+      "cs_CZ": 0,
+      "es_ES": 1,
+      "pl_PL": 0,
+      "de_DE": 11
+    }
+  },
+  "store": {
+    "store_name": "Hit",
+    "store_address": null,
+    "confidence": 1.0,
+    "matched_in_line": 0
+  },
+  "metadata": {
+    "receipt_date": "2025-09-20",
+    "receipt_total": 52.1,
+    "currency": "EUR",
+    "date_raw": "20.09.25",
+    "total_raw": "52,10",
+    "total_line_number": 28
+  },
+  "semantic": {
+    "items": [
+      {
+        "name": "REWE Feinkostsau ( 226 )",
+        "quantity": null,
+        "price": null,
+        "total": 1.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 8,
+        "raw_text": "REWE Feinkostsau ( 226 ) 1,39 B"
+      },
+      {
+        "name": "Cornichons ( 434 )",
+        "quantity": null,
+        "price": null,
+        "total": 2.49,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 9,
+        "raw_text": "Cornichons ( 434 ) 2,49 B"
+      },
+      {
+        "name": "Ültje Erdnüsse ( 504 )",
+        "quantity": null,
+        "price": null,
+        "total": 4.69,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 11,
+        "raw_text": "Ültje Erdnüsse ( 504 ) 4,69 B"
+      },
+      {
+        "name": "Beinscheibe mix ( 510 ) B",
+        "quantity": null,
+        "price": null,
+        "total": 21.73,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 14,
+        "raw_text": "Beinscheibe mix ( 510 ) 21,73 B F"
+      },
+      {
+        "name": "Oliven o . Stein ( 202 )",
+        "quantity": null,
+        "price": null,
+        "total": 4.29,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 16,
+        "raw_text": "Oliven o . Stein ( 202 ) 4,29 B"
+      },
+      {
+        "name": "Häagen - Dazs Belgian ( 716 )",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 18,
+        "raw_text": "Häagen - Dazs Belgian ( 716 ) 6,99 B"
+      },
+      {
+        "name": "Häagen - Dazs Pint ( 713 )",
+        "quantity": null,
+        "price": null,
+        "total": 6.99,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 19,
+        "raw_text": "Häagen - Dazs Pint ( 713 ) 6,99 B"
+      },
+      {
+        "name": "Coca - Cola ( 977 )",
+        "quantity": null,
+        "price": null,
+        "total": 2.78,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 21,
+        "raw_text": "Coca - Cola ( 977 ) 2,78 A"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 1.39,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 22,
+        "raw_text": "2x 1,39 €"
+      },
+      {
+        "name": "HIT Papiertraget ( 257 )",
+        "quantity": null,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 24,
+        "raw_text": "HIT Papiertraget ( 257 ) 0,25 A"
+      },
+      {
+        "name": "Pfand 0,25 ( 005 )",
+        "quantity": null,
+        "price": null,
+        "total": 0.5,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 26,
+        "raw_text": "Pfand 0,25 ( 005 ) 0,50 A *"
+      },
+      {
+        "name": "2x €",
+        "quantity": 2.0,
+        "price": null,
+        "total": 0.25,
+        "is_discount": false,
+        "is_pfand": false,
+        "line_number": 27,
+        "raw_text": "2x 0,25 €"
+      }
+    ],
+    "discounts": [],
+    "items_count": 12,
+    "discounts_count": 0,
+    "items_total": 53.74000000000001,
+    "discounts_total": 0,
+    "skipped_lines": 48,
+    "parsed_lines": 12
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 53.74000000000001,
+    "discounts_sum": 0,
+    "calculated_total": 53.74,
+    "receipt_total": 52.1,
+    "difference": 1.6400000000000006,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=53.74, receipt=52.1, diff=1.64 (tolerance=0.05)"
+  },
+  "processing_time_ms": 17.763853073120117,
+  "stages_completed": 6
+}

@@ -1,0 +1,389 @@
+{
+  "dto": {
+    "items": [],
+    "total_amount": 0.27,
+    "merchant": "Netto",
+    "store_address": "A 7 % 0,27 3,82 4,09",
+    "date": "2025-11-25 00:00:00",
+    "receipt_id": "IMG_2975",
+    "ocr_text": "Steinhauser Auel 1\n514910verath-Vilkerath\nEUR\nBiol. Apfel rot 700g\n2,59 A\nProteinr.veg.Almond\n0,75 A\nProteinr.veg.Lemon\n0,75 A\nzu zahlen 2019\n4,09\nBar\n4,10\nRückgeld\n-0,01\nMWSTX\nSMWST + Netto = Brutto\nA 7 %\n0,27\nSumme\n0,27\n3,82\n3,82\n4,09\n4,09\nOXHO\nLade dir die Lidl Plus App herunter\nund spare bei deinem nächsten Einkauf. ¦\nTSE Transaktionsnummer: 1357346\nSeriennr. Kasse: LDL-000-6496-1\nSeriennr. TSE: F2vH5JJOGxOzRGtqga+dvZbaId8\n27h4dRPMFvygLn00=\nPrüfwert: 70XmfMgN9EJ/4rst1GEXmGB7K/gFiulf\n/bEYWBX9V0jLRZfSp/c4QV6jpzDj1tvRGPfpy2zRCK\ncan2PLpD6SRpnJviOrROoPTmWvg1x0+rvGKGcQDtty\nv6Qnp3iHWwE1\nSignaturzähler: 2771107\n2025-11-25T19:38:48.00OZ\n2025-11-25T19:39:08.00025 0:3\n102\n6496 703368/01\n25.11.25 20:38\n814060660",
+    "detected_locale": "de_DE",
+    "metrics": {
+      "processing_time_ms": 0.0,
+      "items_count": 0.0,
+      "validation_passed": 0.0,
+      "validation_difference": 0.27
+    }
+  },
+  "layout": {
+    "lines": [
+      {
+        "text": "Steinhauser Auel 1",
+        "y_position": 278,
+        "x_min": 662,
+        "x_max": 1036,
+        "confidence": 0.9829736948013306,
+        "line_number": 0,
+        "words_count": 3
+      },
+      {
+        "text": "514910verath - Vilkerath",
+        "y_position": 324,
+        "x_min": 619,
+        "x_max": 1084,
+        "confidence": 0.973154604434967,
+        "line_number": 1,
+        "words_count": 3
+      },
+      {
+        "text": "EUR",
+        "y_position": 376,
+        "x_min": 1171,
+        "x_max": 1235,
+        "confidence": 0.99239581823349,
+        "line_number": 2,
+        "words_count": 1
+      },
+      {
+        "text": "Biol . Apfel rot 700g 2,59 A",
+        "y_position": 409,
+        "x_min": 404,
+        "x_max": 1277,
+        "confidence": 0.9826971633093697,
+        "line_number": 3,
+        "words_count": 7
+      },
+      {
+        "text": "Proteinr.veg.Almond 0,75 A",
+        "y_position": 462,
+        "x_min": 403,
+        "x_max": 1279,
+        "confidence": 0.9859503308931986,
+        "line_number": 4,
+        "words_count": 3
+      },
+      {
+        "text": "Proteinr.veg.Lemon 0,75 A",
+        "y_position": 514,
+        "x_min": 402,
+        "x_max": 1280,
+        "confidence": 0.9824570020039877,
+        "line_number": 5,
+        "words_count": 3
+      },
+      {
+        "text": "zu zahlen 2019 4,09",
+        "y_position": 615,
+        "x_min": 402,
+        "x_max": 1234,
+        "confidence": 0.9714542627334595,
+        "line_number": 6,
+        "words_count": 4
+      },
+      {
+        "text": "Bar 4,10",
+        "y_position": 673,
+        "x_min": 404,
+        "x_max": 1231,
+        "confidence": 0.961456298828125,
+        "line_number": 7,
+        "words_count": 2
+      },
+      {
+        "text": "Rückgeld -0,01",
+        "y_position": 778,
+        "x_min": 402,
+        "x_max": 1226,
+        "confidence": 0.980852484703064,
+        "line_number": 8,
+        "words_count": 2
+      },
+      {
+        "text": "MWSTX SMWST + Netto = Brutto",
+        "y_position": 868,
+        "x_min": 423,
+        "x_max": 1225,
+        "confidence": 0.7440546999375025,
+        "line_number": 9,
+        "words_count": 6
+      },
+      {
+        "text": "A 7 % 0,27 3,82 4,09",
+        "y_position": 932,
+        "x_min": 399,
+        "x_max": 1227,
+        "confidence": 0.9744457999865214,
+        "line_number": 10,
+        "words_count": 6
+      },
+      {
+        "text": "Summe 0,27 3,82 4,09",
+        "y_position": 984,
+        "x_min": 402,
+        "x_max": 1224,
+        "confidence": 0.9760327190160751,
+        "line_number": 11,
+        "words_count": 4
+      },
+      {
+        "text": "OXHO",
+        "y_position": 1034,
+        "x_min": 425,
+        "x_max": 647,
+        "confidence": 0.46676623821258545,
+        "line_number": 12,
+        "words_count": 1
+      },
+      {
+        "text": "Lade dir die Lidl Plus App herunter",
+        "y_position": 1135,
+        "x_min": 461,
+        "x_max": 1204,
+        "confidence": 0.9672900353159223,
+        "line_number": 13,
+        "words_count": 7
+      },
+      {
+        "text": "und spare bei deinem nächsten Einkauf . ¦",
+        "y_position": 1189,
+        "x_min": 420,
+        "x_max": 1258,
+        "confidence": 0.9165995270013809,
+        "line_number": 14,
+        "words_count": 8
+      },
+      {
+        "text": "TSE Transaktionsnummer : 1357346",
+        "y_position": 1451,
+        "x_min": 395,
+        "x_max": 1053,
+        "confidence": 0.9618528634309769,
+        "line_number": 15,
+        "words_count": 4
+      },
+      {
+        "text": "Seriennr . Kasse : LDL - 000-6496-1",
+        "y_position": 1502,
+        "x_min": 394,
+        "x_max": 1048,
+        "confidence": 0.9816613367625645,
+        "line_number": 16,
+        "words_count": 7
+      },
+      {
+        "text": "Seriennr . TSE : F2vH5JJOGxOzRGtqga",
+        "y_position": 1548,
+        "x_min": 393,
+        "x_max": 1098,
+        "confidence": 0.9328788757324219,
+        "line_number": 17,
+        "words_count": 5
+      },
+      {
+        "text": "+ dvZbaId8",
+        "y_position": 1571,
+        "x_min": 1098,
+        "x_max": 1301,
+        "confidence": 0.9626972377300262,
+        "line_number": 18,
+        "words_count": 2
+      },
+      {
+        "text": "27h4dRPMFvygLn00 =",
+        "y_position": 1611,
+        "x_min": 393,
+        "x_max": 754,
+        "confidence": 0.9665616452693939,
+        "line_number": 19,
+        "words_count": 2
+      },
+      {
+        "text": "Prüfwert : 70XmfMgN9EJ / 4rst1GEXmGB7K",
+        "y_position": 1651,
+        "x_min": 390,
+        "x_max": 1144,
+        "confidence": 0.9348900556564331,
+        "line_number": 20,
+        "words_count": 5
+      },
+      {
+        "text": "/ gFiulf",
+        "y_position": 1677,
+        "x_min": 1141,
+        "x_max": 1296,
+        "confidence": 0.9742741286754608,
+        "line_number": 21,
+        "words_count": 2
+      },
+      {
+        "text": "/ bEYWBX9V0jLRZfSp / c4QV6jpzDj1tvRGPfpy2zRCK",
+        "y_position": 1706,
+        "x_min": 393,
+        "x_max": 1298,
+        "confidence": 0.9029107093811035,
+        "line_number": 22,
+        "words_count": 4
+      },
+      {
+        "text": "can2PLpD6SRpnJviOrROoPTmWvg1x0",
+        "y_position": 1756,
+        "x_min": 390,
+        "x_max": 1030,
+        "confidence": 0.8410470485687256,
+        "line_number": 23,
+        "words_count": 1
+      },
+      {
+        "text": "+ rvGKGcQDtty",
+        "y_position": 1777,
+        "x_min": 1032,
+        "x_max": 1295,
+        "confidence": 0.9174306690692902,
+        "line_number": 24,
+        "words_count": 2
+      },
+      {
+        "text": "v6Qnp3iHWwE1",
+        "y_position": 1815,
+        "x_min": 390,
+        "x_max": 640,
+        "confidence": 0.9401432275772095,
+        "line_number": 25,
+        "words_count": 1
+      },
+      {
+        "text": "Signaturzähler : 2771107",
+        "y_position": 1866,
+        "x_min": 390,
+        "x_max": 880,
+        "confidence": 0.9689429601033529,
+        "line_number": 26,
+        "words_count": 3
+      },
+      {
+        "text": "2025-11-25T19 : 38 : 48.00OZ",
+        "y_position": 1921,
+        "x_min": 388,
+        "x_max": 897,
+        "confidence": 0.975538694858551,
+        "line_number": 27,
+        "words_count": 5
+      },
+      {
+        "text": "2025-11-25T19 102",
+        "y_position": 1947,
+        "x_min": 386,
+        "x_max": 1246,
+        "confidence": 0.9750714600086212,
+        "line_number": 28,
+        "words_count": 2
+      },
+      {
+        "text": ": 39 : 08.00025",
+        "y_position": 1970,
+        "x_min": 666,
+        "x_max": 1128,
+        "confidence": 0.9449163228273392,
+        "line_number": 29,
+        "words_count": 4
+      },
+      {
+        "text": "0 : 3",
+        "y_position": 2002,
+        "x_min": 1195,
+        "x_max": 1270,
+        "confidence": 0.6248311599095663,
+        "line_number": 30,
+        "words_count": 3
+      },
+      {
+        "text": "6496 703368/01 25.11.25",
+        "y_position": 2025,
+        "x_min": 387,
+        "x_max": 1118,
+        "confidence": 0.9912730058034261,
+        "line_number": 31,
+        "words_count": 3
+      },
+      {
+        "text": "20:38",
+        "y_position": 2047,
+        "x_min": 1179,
+        "x_max": 1294,
+        "confidence": 0.9902862310409546,
+        "line_number": 32,
+        "words_count": 1
+      },
+      {
+        "text": "814060660",
+        "y_position": 2082,
+        "x_min": 705,
+        "x_max": 899,
+        "confidence": 0.990300178527832,
+        "line_number": 33,
+        "words_count": 1
+      }
+    ],
+    "image_width": 1650,
+    "image_height": 2200,
+    "total_words": 117,
+    "total_lines": 34
+  },
+  "locale": {
+    "locale_code": "de_DE",
+    "confidence": 0.25806451612903225,
+    "matched_keywords": [
+      "summe",
+      "zu zahlen",
+      "bar",
+      "mwst",
+      "netto",
+      "brutto",
+      "lidl",
+      "eur"
+    ],
+    "scores": {
+      "pt_PT": 3,
+      "cs_CZ": 1,
+      "es_ES": 2,
+      "pl_PL": 1,
+      "de_DE": 8
+    }
+  },
+  "store": {
+    "store_name": "Netto",
+    "store_address": "A 7 % 0,27 3,82 4,09",
+    "confidence": 1.0,
+    "matched_in_line": 9
+  },
+  "metadata": {
+    "receipt_date": "2025-11-25",
+    "receipt_total": 0.27,
+    "currency": "EUR",
+    "date_raw": "2025-11-25",
+    "total_raw": "0,27 ",
+    "total_line_number": 11
+  },
+  "semantic": {
+    "items": [],
+    "discounts": [],
+    "items_count": 0,
+    "discounts_count": 0,
+    "items_total": 0,
+    "discounts_total": 0,
+    "skipped_lines": 34,
+    "parsed_lines": 0
+  },
+  "validation": {
+    "passed": false,
+    "items_sum": 0,
+    "discounts_sum": 0,
+    "calculated_total": 0,
+    "receipt_total": 0.27,
+    "difference": 0.27,
+    "tolerance": 0.05,
+    "error_message": "Checksum mismatch: calculated=0, receipt=0.27, diff=0.27 (tolerance=0.05)"
+  },
+  "processing_time_ms": 20.478010177612305,
+  "stages_completed": 6
+}

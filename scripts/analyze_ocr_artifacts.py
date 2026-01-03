@@ -29,21 +29,26 @@ class ArtifactAnalyzer:
         self.receipt_id = receipt_id
         self.artifacts = []
         self.metadata = {}
+        # Извлекаем IMG_XXXX из receipt_id (например, IMG_1292 из 001_de_DE_lidl_IMG_1292)
+        # Ищем подстроку вида IMG_XXXXX
+        match = re.search(r'IMG_\d+', receipt_id)
+        self.image_id = match.group(0) if match else receipt_id
 
     def load_data(self) -> Tuple[Optional[dict], Optional[dict]]:
         """Загружает raw_ocr и ground_truth данные."""
-        # Поиск raw_ocr.json
-        raw_ocr_paths = list(PROJECT_ROOT.glob(f"data/output/{self.receipt_id}*/raw_ocr.json"))
+        # Поиск raw_ocr_results.json (используем image_id)
+        raw_ocr_paths = list(PROJECT_ROOT.glob(f"data/output/{self.image_id}/raw_ocr_results.json"))
         if not raw_ocr_paths:
-            print(f"❌ raw_ocr.json не найден для {self.receipt_id}")
+            print(f"❌ raw_ocr_results.json не найден для {self.image_id}")
             return None, None
 
         raw_ocr_path = raw_ocr_paths[0]
         with open(raw_ocr_path, 'r', encoding='utf-8') as f:
             raw_ocr = json.load(f)
 
-        # Поиск ground_truth
-        gt_paths = list(PROJECT_ROOT.glob(f"docs/ground_truth/*{self.receipt_id}*.json"))
+        # Поиск ground_truth (используем receipt_id)
+        gt_paths = list(PROJECT_ROOT.glob("docs/ground_truth/**/*.json"))
+        gt_paths = [p for p in gt_paths if self.receipt_id in p.stem]
         if not gt_paths:
             print(f"⚠️  ground_truth не найден для {self.receipt_id}")
             return raw_ocr, None

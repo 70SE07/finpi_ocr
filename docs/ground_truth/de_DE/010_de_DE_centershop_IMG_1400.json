@@ -1,10 +1,10 @@
 {
   "id": "010",
-  "source_file": "photo/GOODS/CentrShop/IMG_1400.jpeg",
+  "source_file": "data/input/CentrShop/IMG_1400.jpeg",
   "locale": "de_DE",
   "store": {
     "name": "CENTERSHOP Korn Vertriebs GmbH & Co.KG",
-    "address": "Olper Str. 107-117, 51491 Overath",
+    "address": "Olper Str. 107-117 51491 Overath",
     "type": "Non-food store"
   },
   "metadata": {
@@ -36,7 +36,7 @@
       "quantity": 1,
       "total_price": 0.25,
       "is_pfand": true,
-      "note": "*0.25"
+      "note": "На чеке указано *0.2 *0.25, но итоговая сумма 0.25 соответствует 1 единице Pfand"
     },
     {
       "raw_name": "20Stk Poliboy Stau",
