@@ -34,10 +34,8 @@ class IImagePreprocessor(ABC):
         Args:
             image_path: Путь к файлу изображения
             context: Dict с контекстом для Stage 3 Selector (опционально):
-              - shop: str - название магазина (Rewe, Aldi, DM, Edeka, ...)
-              - material: str - материал чека (paper, thermal, ...)
-              - lighting: str - качество освещения (good, poor, ...)
-              - device: str - модель устройства (iphone_12, pixel, ...)
+              - strategy: Dict с retry стратегией для Feedback Loop
+                        {"name": "adaptive"|"aggressive"|"minimal"}
             
         Returns:
             (image_bytes, metadata) где:
@@ -127,11 +125,14 @@ class ISelectorStage(IPreprocessingStage):
         context: Optional[Dict[str, Any]] = None
     ) -> list[str]:
         """
-        Выбирает план обработки на основе метрик и контекста.
+        Выбирает план обработки на основе метрик (DEPRECATED).
+        
+        DEPRECATED: Используйте select_filters() вместо этого метода.
+        Этот метод оставлен для обратной совместимости.
         
         Args:
             metrics: Dict с метриками изображения
-            context: Dict с контекстом (shop, material, lighting, device)
+            context: Dict с контекстом (не используется)
         """
         pass
 

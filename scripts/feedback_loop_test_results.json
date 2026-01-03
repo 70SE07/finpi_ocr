@@ -1,0 +1,85 @@
+{
+  "test_image": "/Users/sergejevsukov/Downloads/Finpi_OCR/data/input/IMG_3064.jpeg",
+  "image_size_kb": 171.466796875,
+  "results": [
+    {
+      "strategy": "adaptive",
+      "success": true,
+      "errors": [],
+      "image": "IMG_3064.jpeg",
+      "output_size_kb": 260.0732421875,
+      "metrics": {
+        "brightness": 135.61,
+        "contrast": 43.1,
+        "noise": 2581.12,
+        "blue_dominance": -13.68
+      },
+      "filter_plan": {
+        "filters": [
+          "grayscale",
+          "clahe",
+          "denoise"
+        ],
+        "quality": "low",
+        "reason": "Плохое качество + низкий контраст (43.1) + высокий шум (2581)"
+      },
+      "preprocessing_applied": [
+        "grayscale",
+        "clahe",
+        "denoise"
+      ]
+    },
+    {
+      "strategy": "aggressive",
+      "success": true,
+      "errors": [],
+      "image": "IMG_3064.jpeg",
+      "output_size_kb": 465.255859375,
+      "metrics": {
+        "brightness": 135.61,
+        "contrast": 43.1,
+        "noise": 2581.12,
+        "blue_dominance": -13.68
+      },
+      "filter_plan": {
+        "filters": [
+          "grayscale",
+          "clahe",
+          "denoise",
+          "sharpen"
+        ],
+        "quality": "bad",
+        "reason": "Aggressive retry: форсируем максимум обработки"
+      },
+      "preprocessing_applied": [
+        "grayscale",
+        "clahe",
+        "denoise",
+        "sharpen"
+      ]
+    },
+    {
+      "strategy": "minimal",
+      "success": true,
+      "errors": [],
+      "image": "IMG_3064.jpeg",
+      "output_size_kb": 902.7607421875,
+      "metrics": {
+        "brightness": 135.61,
+        "contrast": 43.1,
+        "noise": 2581.12,
+        "blue_dominance": -13.68
+      },
+      "filter_plan": {
+        "filters": [
+          "grayscale"
+        ],
+        "quality": "high",
+        "reason": "Minimal retry: только базовая обработка"
+      },
+      "preprocessing_applied": [
+        "grayscale"
+      ]
+    }
+  ]
+}

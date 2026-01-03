@@ -2,491 +2,269 @@
 
 ## Обзор
 
-Finpi OCR - тренировочный стенд для экспериментов с Google Vision OCR и обработкой чеков из 100+ стран.
+Finpi OCR - это система для оцифровки чеков из 100+ стран с использованием Google Vision OCR и языковой модели.
+
+**Ключевые принципы:**
+- Domain-Driven Design
+- Quality-Based Filter Selection (БЕЗ МАГАЗИННОЙ ЛОГИКИ!)
+- Адаптивный Feedback Loop
+- Контрактная безопасность (Pydantic)
 
 ## Три домена системы
 
-Система разделена на три независимых домена согласно принципу SRP (Single Responsibility Principle).
+```
+[Изображение чека] → Extraction домен → [RawOCRResult] → Parsing домен → [Structured Result]
+                  (независимый)      (контракт)        (независимый)
+```
 
-| Домен | Название | ЦКП (Ценный Конечный Продукт) | Вход | Выход |
-|-------|----------|-------------------------------|------|-------|
-| **D1** | Extraction | Оцифрованный текст без потерь | Изображение чека | `RawOCRResult` |
-| **D2** | Parsing | Структурированные данные чека | `RawOCRResult` | `RawReceiptDTO` |
-| **D3** | Categorization | Категоризированные товары (L1-L5) | `RawReceiptDTO` | `ParseResultDTO` |
+## Extraction домен (src/extraction/)
 
-### Принципы разделения
+### Ответственность
+- **ЦКП:** Оцифрованный текст чека без потерь
+- **Выход:** `RawOCRResult` (контракт D1→D2)
 
-1. **D1 (Extraction)** - language-agnostic
-   - Не знает о языках и локалях
-   - Google Vision сам определяет язык
-   - Задача: оцифровать текст с изображения
+### 6-Stage Adaptive Preprocessing Pipeline
 
-2. **D2 (Parsing)** - locale-aware
-   - Определяет локаль чека
-   - Извлекает структуру (товары, цены, метаданные)
-   - Работает с YAML-конфигурациями локалей
+**Stage 0: Compression (адаптивное сжатие)**
+- Адаптивное вычисление целевого размера БЕЗ загрузки изображения
+- Оптимизация размера/веса для быстрой передачи в Google Vision API
+- Контракт: `CompressionRequest/Response`
 
-3. **D3 (Categorization)** - внешний домен
-   - Реализован в `finpi_parser_photo/`
-   - Использует LLM + Constitution + Directories
-   - Не наша зона ответственности
+**Stage 1: Preparation (загрузка + resize)**
+- Загрузка изображения сразу в целевом размере
+- Оптимизация использования памяти
+- Контракт: `PreparationRequest/Response`
 
-### Подробная документация
+**Stage 2: Analyzer (анализ метрик качества)**
+- Вычисление метрик из сжатого изображения:
+  - `brightness` [0-255] - средняя яркость
+  - `contrast` [0-∞] - RMS контраст
+  - `noise` [0-∞] - шум/резкость (Laplacian variance)
+  - `blue_dominance` [-100, 100] - доминирование синего канала
+- Контракт: `ImageMetrics` (валидация no NaN/Inf)
 
-| Тема | Документ |
-|------|----------|
-| Почему 3 домена | [ADR-001: Разделение на домены](decisions/001_domain_separation.md) |
-| ЦКП каждого домена | [ADR-002: Ответственности доменов](decisions/002_domain_responsibilities.md) |
-| Архитектура D3 | [ADR-007: D3 Categorization](decisions/007_d3_categorization_overview.md) |
+**Stage 3: Selector (выбор фильтров по качеству)**
+- **КРИТИЧЕСКИ ВАЖНО:** БЕЗ МАГАЗИННОЙ ЛОГИКИ!
+- Классификация качества съёмки: BAD/LOW/MEDIUM/HIGH
+- Выбор фильтров на основе ТОЛЬКО качества, не магазина/локали/камеры
+- Фильтры: grayscale, CLAHE, denoise
+- Контракт: `FilterPlan` (валидация порядка: GRAYSCALE всегда первый)
 
-## Принципы проектирования
+**Stage 4: Executor (применение фильтров)**
+- Применение выбранных фильтров к изображению
+- Grayscale (всегда), затем опционально CLAHE и denoise
+- Контракт: `ExecutorRequest/Response`
 
-1. **Независимые домены (Domain-Driven Design)**
-   - Extraction домен: preprocessing + OCR
-   - Parsing домен: layout, locale, metadata, semantic extraction
-   - Домены изолированы и могут развиваться независимо
+**Stage 5: Encoder (кодирование в JPEG)**
+- Кодирование обработанного изображения в JPEG для отправки в Google Vision API
+- Адаптивное качество JPEG в зависимости от стратегии
+- Контракт: `EncoderRequest/Response`
 
-2. **Контракт между доменами (Pydantic)**
-   - D1→D2: `contracts/d1_extraction_dto.py` — `RawOCRResult` (words + full_text)
-   - D2→D3: `contracts/d2_parsing_dto.py` — `RawReceiptDTO`
-   - D3→Orchestrator: `contracts/d3_categorization_dto.py` — `ParseResultDTO`
+### Quality-Based Filter Selection
 
-3. **Интерфейсы и адаптеры**
-   - Каждый домен имеет свои интерфейсы (абстрактные классы)
-   - Адаптеры для существующих компонентов
-   - Легкая замена реализаций без изменения архитектуры
+**Почему НЕ магазинная логика:**
+- Шум = шум, независимо от магазина
+- Яркость = яркость, независимо от локали
+- Контраст = контраст, независимо от камеры
+- Универсальное решение для 100+ магазинов
 
-4. **Чистый код**
-   - Нет манипуляций с `sys.path` в файлах внутри `src/`
-   - Корень проекта добавляется один раз в `src/__init__.py`
-   - Структурированные исключения для каждого домена
+**Пороги для каждого уровня качества:**
+
+| Quality | Noise Threshold | CLAHE Threshold | Фильтры |
+|---------|-----------------|------------------|----------|
+| BAD | <900 | <40 | grayscale, clahe, denoise |
+| LOW | <1100 | <50 | grayscale, clahe, denoise |
+| MEDIUM | <1300 | <60 | grayscale, clahe, denoise |
+| HIGH | <1500 | <80 | grayscale |
+
+**Где определены:** `config/settings.py`
+- `NOISE_BAD_MIN`, `NOISE_MEDIUM_MAX`, `NOISE_HIGH_MAX`
+- `CONTRAST_BAD_MAX`, `CONTRAST_MEDIUM_MIN`, `CONTRAST_HIGH_MIN`
+- `CLAHE_CONTRAST_THRESHOLD` (в QualityBasedFilterSelector для каждого качества)
+
+### Feedback Loop (адаптивный retry)
+
+**3 стратегии:**
+
+1. **Adaptive (по умолчанию)**
+   - Quality-based выбор фильтров
+   - Если confidence низкий → retry с другой стратегией
+
+2. **Aggressive (retry #1)**
+   - Форсировать BAD качество
+   - Применять максимум фильтров: grayscale, clahe, denoise, sharpen
+   - Повышать JPEG качество до 95%
+
+3. **Minimal (retry #2)**
+   - Форсировать HIGH качество
+   - Только grayscale (минимум обработки)
+   - PNG без сжатия (качество 100%)
+
+**Логика retry:**
+- Пороги конфигурации в `config/settings.py`
+- `CONFIDENCE_EXCELLENT_THRESHOLD = 0.95`
+- `CONFIDENCE_ACCEPTABLE_THRESHOLD = 0.90`
+- `CONFIDENCE_RETRY_THRESHOLD = 0.85`
+- `CONFIDENCE_MIN_WORD_THRESHOLD = 0.70`
+- `CONFIDENCE_MAX_LOW_RATIO = 0.20`
+- `MAX_RETRIES = 2`
+
+### Google Vision OCR Integration
+
+- Провайдер: `GoogleVisionOCR` (инфраструктура)
+- Интерфейс: `IOCRProvider`
+- Контракт: `RawOCRResult` (контракт D1→D2)
+- Вход: байты обработанного изображения
+- Выход: `full_text` + `words[]` с координатами
+
+## Parsing домен (src/parsing/)
+
+### Ответственность
+- **ЦКП:** Структурированные данные чека
+- **Вход:** `RawOCRResult` (контракт от Extraction)
+- **Выход:** `Structured Result`
+
+### Конфигурация локалей (src/parsing/locales/)
+
+Конфигурации локалей в формате YAML для 100+ стран:
+- `de_DE/` - Германия (EUR, German)
+- `pl_PL/` - Польша (PLN, Polish)
+- `[98 других локалей]`
+
+Структура конфигурации:
+- `locale:` - код, название, язык, регион
+- `currency:` - код, символ, разделители, формат
+- `date_formats:` - форматы даты
+- `patterns:` - ключевые слова, бренды, исключения
+
+## Контракты между доменами
+
+### D1→D2 (Extraction → Parsing)
+
+**Контракт:** `contracts/d1_extraction_dto.py`
+
+**RawOCRResult:**
+```json
+{
+  "full_text": "Полный текст чека...",
+  "words": [
+    {
+      "text": "REWE",
+      "bounding_box": {"x": 100, "y": 50, "width": 80, "height": 20},
+      "confidence": 0.98
+    },
+    {
+      "text": "Milch",
+      "bounding_box": {"x": 50, "y": 200, "width": 60, "height": 18},
+      "confidence": 0.95
+    }
+  ],
+  "metadata": {
+    "source_file": "IMG_1292",
+    "image_width": 800,
+    "image_height": 1200,
+    "processed_at": "2024-12-31T10:30:00",
+    "preprocessing_applied": ["grayscale", "denoise"]
+  }
+}
+```
+
+**Ключевые особенности:**
+- `words[]` - список слов с координатами
+- `full_text` - полный текст чека (гарантия 100% качества OCR)
+- Валидация через Pydantic контракты
+- Метаданные для дебага и анализа
 
 ## Структура проекта
 
 ```
 Finpi_OCR/
-├── config/                     # Конфигурация
-│   ├── settings.py            # Настройки системы
-│   └── google_credentials.json # Google Cloud credentials
+├── config/                       # Настройки
+│   ├── settings.py              # Параметры системы
+│   └── google_credentials.json   # Google Cloud credentials (НЕ в git!)
 │
-├── contracts/                 # Контракты между доменами (Pydantic)
-│   ├── d1_extraction_dto.py  # D1→D2: RawOCRResult
-│   ├── d2_parsing_dto.py     # D2→D3: RawReceiptDTO
-│   └── d3_categorization_dto.py # D3→Orchestrator
+├── contracts/                    # Контракты между доменами (Pydantic)
+│   ├── d1_extraction_dto.py    # D1→D2: RawOCRResult (words + full_text)
+│   ├── d2_parsing_dto.py       # D2→D3: RawReceiptDTO
+│   └── d3_categorization_dto.py # D3→Orchestrator: ParseResultDTO
 │
-├── data/                      # Данные
-│   ├── input/                 # Входные изображения чеков
-│   └── output/                # Результаты обработки
-│       └── raw_ocr/          # Сырые результаты OCR
+├── data/                         # Данные
+│   ├── input/                   # Входные изображения чеков
+│   └── output/                  # Результаты обработки
+│       └── raw_ocr/            # Сырые результаты OCR
 │
-├── docs/                      # Документация
-│   ├── architecture/           # Архитектурные решения
+├── docs/                         # Документация
+│   ├── architecture/             # Архитектурные решения
+│   │   ├── architecture_overview.md  # Обзор архитектуры (этот файл)
 │   │   ├── contract_registry.md      # Реестр контрактов модулей
-│   │   └── architecture_overview.md  # Обзор архитектуры (этот файл)
-│   └── hypotheses/            # Гипотезы и эксперименты
+│   │   └── decisions/              # Архитектурные решения (ADR)
+│   ├── locales/                  # Конфигурации локалей
+│   ├── ground_truth/             # Ground truth данные для тестов
+│   └── ocr_quality/             # Метрики качества OCR
 │
-├── src/                       # Исходный код
-│   ├── __init__.py           # Настройка sys.path
+├── src/                          # Исходный код
+│   ├── domain/                  # Контракты доменов
+│   │   └── contracts.py        # Все контракты (ImageMetrics, FilterPlan, etc.)
 │   │
-│   ├── extraction/            # Домен Extraction (независимый)
-│   │   ├── domain/           # Бизнес-логика и интерфейсы
-│   │   │   ├── interfaces.py         # IOCRProvider, IImagePreprocessor, IExtractionPipeline
-│   │   │   └── exceptions.py         # ExtractionError, ImageProcessingError, OCRProcessingError
-│   │   │
-│   │   ├── application/      # Оркестрация use cases
-│   │   │   ├── factory.py            # ExtractionComponentFactory
-│   │   │   └── extraction_pipeline.py # ExtractionPipeline
-│   │   │
-│   │   ├── infrastructure/    # Реализации
-│   │   │   ├── ocr/
-│   │   │   │   └── google_vision_ocr.py  # GoogleVisionOCR (Google Vision API)
-│   │   │   └── file_manager.py       # ExtractionFileManager
-│   │   │
-│   │   └── pre_ocr/         # Preprocessing
-│   │       ├── pipeline.py         # PreOCRPipeline (оркестратор)
-│   │       ├── image_file_reader.py # ImageFileReader
-│   │       ├── image_encoder.py     # ImageEncoder
-│   │       └── elements/
-│   │           ├── image_compressor.py # Сжатие изображений
-│   │           └── grayscale.py        # Конвертация в ч/б
+│   ├── extraction/               # Домен Extraction (независимый)
+│   │   ├── domain/              # Интерфейсы и исключения
+│   │   ├── application/          # Factory + Pipeline
+│   │   ├── infrastructure/       # Адаптеры и реализации
+│   │   │   └── ocr/            # Google Vision OCR
+│   │   └── pre_ocr/            # 6-stage preprocessing pipeline
+│   │       ├── s0_compression/   # Stage 0: Compression
+│   │       ├── s1_preparation/   # Stage 1: Preparation
+│   │       ├── s2_analyzer/      # Stage 2: Analyzer
+│   │       │   └── quality_classifier.py  # Классификация качества
+│   │       ├── s3_selector/      # Stage 3: Selector
+│   │       │   └── quality_based_filter_selector.py  # Quality-based выбор фильтров
+│   │       ├── s4_executor/      # Stage 4: Executor
+│   │       └── s5_encoder/       # Stage 5: Encoder
 │   │
-│   ├── parsing/              # Домен Parsing (независимый)
-│   │   ├── domain/           # Бизнес-логика и интерфейсы
-│   │   │   ├── interfaces.py         # IReceiptParser, ILayoutProcessor, ILocaleDetector, IMetadataExtractor, ISemanticExtractor
-│   │   │   └── exceptions.py         # ParsingError, LayoutProcessingError, MetadataExtractionError
-│   │   │
-│   │   ├── application/      # Оркестрация use cases
-│   │   │   ├── factory.py            # ParsingComponentFactory
-│   │   │   ├── receipt_parser.py     # ReceiptParser
-│   │   │   └── parsing_pipeline.py  # ParsingPipeline
-│   │   │
-│   │   ├── infrastructure/    # Реализации и адаптеры
-│   │   │   ├── adapters/
-│   │   │   │   ├── layout_processor_adapter.py    # LayoutProcessorAdapter
-│   │   │   │   ├── locale_detector_adapter.py     # LocaleDetectorAdapter
-│   │   │   │   ├── metadata_extractor_adapter.py  # MetadataExtractorAdapter
-│   │   │   │   └── semantic_extractor_adapter.py  # SemanticExtractorAdapter
-│   │   │   └── file_manager.py       # ParsingFileManager
-│   │   │
-│   │   ├── locales/          # Конфигурации локалей (100+ стран)
-│   │   │   ├── de_DE/                # Германия
-│   │   │   ├── pl_PL/                # Польша
-│   │   │   ├── locale_config.py       # LocaleConfig DTO
-│   │   │   ├── locale_config_loader.py # Загрузчик YAML конфигураций
-│   │   │   └── locale_detector.py    # Детектор локали
-│   │   │
-│   │   ├── metadata/         # Экстракторы метаданных
-│   │   │   ├── metadata_extractor.py # Оркестратор метаданных
-│   │   │   ├── store_detector.py      # Детектор магазина
-│   │   │   ├── address_extractor.py   # Экстрактор адреса
-│   │   │   ├── date_extractor.py     # Экстрактор даты
-│   │   │   ├── total_extractor.py     # Экстрактор итоговой суммы
-│   │   │   └── requisites_extractor.py # Экстрактор реквизитов
-│   │   │
-│   │   ├── layout/           # Обработка layout
-│   │   │   └── layout_processor.py    # LayoutProcessor
-│   │   │
-│   │   ├── extraction/       # Семантическое извлечение
-│   │   │   ├── semantic_extractor.py   # SemanticExtractor
-│   │   │   ├── line_classifier.py     # Классификатор строк
-│   │   │   ├── price_parser.py        # Парсер цен
-│   │   │   ├── quantity_parser.py     # Парсер количества
-│   │   │   └── [другие экстракторы]
-│   │   │
-│   │   └── old_project/     # Устаревший код (не используется)
-│   │       └── address_fix.py
+│   ├── parsing/                  # Домен Parsing (независимый)
+│   │   ├── domain/              # Интерфейсы и исключения
+│   │   ├── application/          # Factory + Pipeline
+│   │   ├── infrastructure/       # Адаптеры и реализации
+│   │   ├── locales/             # Конфигурации 100+ стран
+│   │   ├── metadata/            # Экстракторы метаданных
+│   │   ├── layout/              # Обработка layout
+│   │   └── extraction/           # Семантическое извлечение товаров
 │   │
-│   └── infrastructure/       # Общая инфраструктура
-│       └── adapters/
+│   └── infrastructure/           # Общая инфраструктура
 │
-├── scripts/                  # Точки входа
-│   ├── run_pipeline.py      # Полный пайплайн (Extraction + Parsing)
-│   ├── extract_raw_ocr.py   # Extraction домен
-│   └── parse_receipt.py     # Parsing домен
+├── scripts/                      # Точки входа
+│   ├── run_pipeline.py          # Полный пайплайн (Extraction + Parsing)
+│   ├── extract_raw_ocr.py       # Extraction домен
+│   └── parse_receipt.py         # Parsing домен
 │
-└── requirements.txt          # Зависимости
+└── requirements.txt             # Зависимости
 ```
 
-## Домен Extraction
+## Принципы разработки
 
-### Ответственность
-- Preprocessing изображений (deskew, rotation, grayscale, compression)
-- OCR распознавание текста
-- Сохранение сырых результатов в формате `RawOCRResult`
+### 1. Systemic-First Principle
+- Решать проблемы на архитектурном уровне
+- Использовать абстракции (`locales/`) вместо локальных фиксов
+- Решения масштабируются на 100+ стран
 
-### Интерфейсы
-- `IOCRProvider` - интерфейс для провайдеров OCR
-- `IImagePreprocessor` - интерфейс для препроцессоров изображений
-- `IExtractionPipeline` - интерфейс для пайплайна extraction
+### 2. No Pivot Rule
+- Google Vision OCR — основная технология
+- Оптимизация внутри текущего стека (preprocessing)
+- Не менять технологию без крайней необходимости
 
-### Использование
+### 3. Independent Domains
+- Extraction и Parsing развиваются независимо
+- Контракт между доменами стабилен
+- Лёгкая замена реализаций через адаптеры
 
-```python
-from src.extraction.application.factory import ExtractionComponentFactory
-from pathlib import Path
+## Конфигурация Extraction
 
-# Создание пайплайна extraction
-pipeline = ExtractionComponentFactory.create_default_extraction_pipeline()
+Система использует динамический подбор параметров. Значения по умолчанию:
 
-# Обработка изображения
-result = pipeline.process_image(Path("data/input/receipt.jpg"))
-
-# Результат - словарь с raw_ocr данными
-raw_ocr_file = result['file_path']  # data/output/raw_ocr/receipt/raw_ocr.json
-```
-
-### Замена компонентов
-
-```python
-from src.extraction.application.factory import ExtractionComponentFactory
-
-# Кастомный провайдер OCR (например, для GPT-4 Vision)
-pipeline = ExtractionComponentFactory.create_extraction_pipeline(
-    ocr_provider=CustomOCRProvider()
-)
-
-# Кастомный препроцессор
-pipeline = ExtractionComponentFactory.create_extraction_pipeline(
-    image_preprocessor=CustomPreOCRPipeline()
-)
-```
-
-## Домен Parsing
-
-### Ответственность
-- Обработка layout сырых данных OCR
-- Определение локали чека
-- Извлечение метаданных (магазин, дата, сумма, адрес, реквизиты)
-- Семантическое извлечение товаров (название, количество, цена)
-- Сохранение структурированных результатов
-
-### Архитектура (6-этапный пайплайн по ADR-015)
-
-```
-src/parsing/stages/
-├── stage_1_layout.py      # Layout: группировка слов в строки
-├── stage_2_locale.py      # Locale: определение языка/локали
-├── stage_3_store.py       # Store: определение магазина
-├── stage_4_metadata.py    # Metadata: дата, сумма, валюта
-├── stage_5_semantic.py    # Semantic: извлечение товаров
-├── stage_6_validation.py  # Validation: checksum
-└── pipeline.py            # ParsingPipeline (оркестратор)
-```
-
-### Использование
-
-```python
-from src.parsing import ParsingPipeline
-from contracts.d1_extraction_dto import RawOCRResult
-import json
-
-# Создание пайплайна
-pipeline = ParsingPipeline()
-
-# Загрузка RawOCRResult от D1
-with open("data/output/IMG_1292/raw_ocr_results.json") as f:
-    raw_ocr = RawOCRResult.model_validate(json.load(f))
-
-# Обработка (6 этапов)
-result = pipeline.process(raw_ocr)
-
-# Результат
-print(f"Локаль: {result.locale.locale_code}")
-print(f"Магазин: {result.store.store_name}")
-print(f"Дата: {result.metadata.receipt_date}")
-print(f"Итог: {result.metadata.receipt_total}")
-print(f"Товаров: {len(result.dto.items)}")
-print(f"Checksum: {'PASSED' if result.validation.passed else 'FAILED'}")
-```
-
-### Локализация
-
-```
-src/parsing/locales/
-├── config_loader.py       # ConfigLoader - загрузка конфигов
-├── de_DE/
-│   ├── parsing.yaml       # Паттерны для немецкого
-│   └── stores.yaml        # Магазины
-├── pl_PL/
-├── pt_PT/
-└── ...
-```
-
-## Точка входа (scripts/run_pipeline.py)
-
-Точка входа для запуска полного пайплайна (Extraction + Parsing).
-
-### Использование
-
-```bash
-# Обработать все изображения из data/input/
-python scripts/run_pipeline.py
-
-# Обработать конкретное изображение
-python scripts/run_pipeline.py path/to/image.jpg
-
-# Принудительный перезапуск (игнорировать кэш)
-python scripts/run_pipeline.py --no-cache
-```
-
-### Поток выполнения
-
-```
-[data/input/IMG_XXXX.jpeg]
-    ↓
-[scripts/run_pipeline.py]
-    ↓
-┌─────────────────────────────────────┐
-│  Extraction домен (независимый)   │
-│  - Preprocessing                  │
-│  - OCR (Google Vision)            │
-│  - Сохранение raw_ocr.json        │
-└─────────────────────────────────────┘
-    ↓
-[data/output/raw_ocr/IMG_XXXX/raw_ocr.json]
-    ↓
-┌─────────────────────────────────────┐
-│   Parsing домен (независимый)     │
-│   - Layout processing              │
-│   - Locale detection              │
-│   - Metadata extraction           │
-│   - Semantic extraction            │
-│   - Сохранение result.json        │
-└─────────────────────────────────────┘
-    ↓
-[data/output/IMG_XXXX/result.json]
-```
-
-## Контракты между доменами
-
-### Архитектура контрактов
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                      ЗОНА СВОБОДЫ (D1 → D2)                         │
-│                                                                     │
-│   D1 (Extraction)  ───────────→  D2 (Parsing)                       │
-│                                                                     │
-│   - Любая структура данных                                          │
-│   - Оптимизируем для качества 100%                                  │
-│   - МЫ АВТОРЫ                                                       │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌─────────────────────────────────────────────────────────────────────┐
-│                 ЖЕСТКИЕ КОНТРАКТЫ (1 в 1 с finpi_parser_photo)      │
-│                                                                     │
-│   D2 ──→ D3:           RawReceiptDTO                                │
-│   D3 ──→ Orchestrator: ParseResultDTO                               │
-│                                                                     │
-│   НЕЛЬЗЯ МЕНЯТЬ - внешние сервисы зависят                           │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-### Верифицированные контракты
-
-| Контракт | Наш файл | Источник истины | Статус |
-|----------|----------|-----------------|--------|
-| D1 → D2 | `contracts/d1_extraction_dto.py` | Наш дизайн | Гибкий |
-| D2 → D3 | `contracts/d2_parsing_dto.py` | `finpi_parser_photo/domain/dto/raw_receipt_dto.py` | **1 в 1** |
-| D3 → Orchestrator | `contracts/d3_categorization_dto.py` | `finpi_parser_photo/domain/dto/parse_receipt_dto.py` | **1 в 1** |
-
-### D1 → D2: RawOCRResult (Гибкий)
-
-Структура данных от Extraction к Parsing. Наша зона - определяем сами.
-
-```python
-@dataclass
-class RawOCRResult:
-    full_text: str
-    blocks: List[TextBlock]       # Текстовые блоки с bounding boxes
-    raw_annotations: List[Dict]   # Сырые аннотации от OCR
-    metadata: Optional[OCRMetadata]
-```
-
-### D2 → D3: RawReceiptDTO (Жесткий, 1 в 1)
-
-Структура данных от Parsing к Categorization. **Нельзя менять.**
-
-```python
-class RawReceiptItem(BaseModel):
-    name: str                     # Название товара
-    quantity: float | None
-    price: float | None
-    total: float | None
-    date: datetime | None
-
-class RawReceiptDTO(BaseModel):
-    items: list[RawReceiptItem]
-    total_amount: float | None
-    merchant: str | None
-    store_address: str | None
-    date: datetime | None
-    receipt_id: str | None
-    ocr_text: str | None
-    detected_locale: str | None
-    metrics: dict[str, float]
-```
-
-### D3 → Orchestrator: ParseResultDTO (Жесткий, 1 в 1)
-
-Финальный результат системы. **Нельзя менять.**
-
-```python
-class ReceiptItem(BaseModel):
-    name: str
-    quantity: float | None
-    price: float | None
-    total: float | None
-    product_type: str           # L1
-    product_category: str       # L2
-    product_subcategory_l1: str # L3
-    product_subcategory_l2: str | None  # L4
-    product_subcategory_l3: list[str] | None  # L5
-    needs_manual_review: bool | None
-    merchant: str | None
-    store_address: str | None
-    date: datetime | None
-
-class ParseResultDTO(BaseModel):
-    success: bool
-    items: list[ReceiptItem]
-    sums: ReceiptSums | None
-    error: str | None
-    receipt_id: str | None
-    data_validity: DataValidityInfo | None
-    total_amount: float | None  # deprecated
-```
-
-**Почему это важно:**
-- D2→D3 и D3→Orchestrator - публичные контракты
-- Внешние сервисы (Telegram, Frontend) зависят от них
-- D1→D2 - наша зона, оптимизируем для качества
-
-## Система локалей
-
-### Структура
-
-```
-src/parsing/locales/
-├── de_DE/
-│   └── config.yaml          # Конфигурация Германии
-├── pl_PL/
-│   └── config.yaml          # Конфигурация Польши
-├── [98 других локалей]
-├── locale_config.py         # DTO конфигурации локали
-├── locale_config_loader.py   # Загрузчик YAML конфигураций
-└── locale_detector.py        # Детектор локали
-```
-
-### Конфигурация локали (пример: de_DE/config.yaml)
-
-```yaml
-locale:
-  code: de_DE
-  name: Germany
-  language: de
-  region: DE
-  rtl: false
-
-currency:
-  code: EUR
-  symbol: "€"
-  decimal_separator: ","
-  thousands_separator: "."
-  symbol_position: after
-  format: "1.234,56"
-
-date_formats:
-  - "DD.MM.YYYY"
-  - "DD.MM.YY"
-  - "DD.MM."
-
-patterns:
-  total_keywords:
-    - "gesamtbetrag"
-    - "summe"
-    - "zu zahlen"
-  discount_keywords:
-    - "preisvorteil"
-    - "rabatt"
-  noise_keywords:
-    - "tel."
-    - "fax."
-    - "obj.-nr."
-
-extractors:
-  store_detection:
-    known_brands:
-      - "rewe"
-      - "aldi"
-      - "lidl"
-  total_detection:
-    bottom_n_lines: 10
-    amount_range: [0.01, 100000.0]
-```
+| Параметр | Default | Стратегия при сбоe |
+|----------|---------|-------------------|
+| MAX_IMAGE_SIZE | 2200px | Уменьшение до 1800px при OOM |
+| JPEG_QUALITY | 85% | Повышение до 100% (PNG) при низком Confidence |
 
 ## Масштабирование на 100+ локалей
 
@@ -497,61 +275,10 @@ extractors:
 - ✅ Система локалей через YAML
 - ✅ Чистый код (без `sys.path` манипуляций в файлах внутри `src/`)
 
-### Следующие шаги для масштабирования
-
-1. **Валидация YAML конфигураций локалей**
-   - Pydantic для валидации структуры
-   - Проверка обязательных полей
-   - Понятные ошибки при невалидной конфигурации
-
-2. **Фолбэк-локаль**
-   - Настроить дефолтную локаль (например, `en_US` или `de_DE`)
-   - Логирование случаев использования фолбэка
-   - Предупреждения о необходимости добавить конфигурацию
-
-3. **Централизованный реестр локалей**
-   - Автоматическое сканирование папки `locales/`
-   - Регистрация всех локалей при старте
-   - Метод `get_available_locales()`
-
-4. **Кэширование конфигураций**
-   - Не загружать YAML файл каждый раз
-   - Кэшировать в памяти
-
-5. **Мониторинг и логирование**
-   - Логировать время выполнения по этапам
-   - Логировать время для каждой локали
-   - Метрики успеха/неудач
-
-6. **Контракт для Parsing**
-   - Определить структуру результатов Parsing
-   - Стабильный контракт для клиентов (Telegram, Frontend, Google Sheets)
-
-## Принципы разработки
-
-1. **Systemic-First Principle**
-   - Решать проблемы на архитектурном уровне
-   - Использовать абстракции (`locales/`) вместо локальных фиксов
-   - Решения должны масштабироваться на 100+ стран
-
-2. **No Pivot Rule**
-   - Google Vision OCR - основная технология
-   - Оптимизация внутри текущего стека
-   - Не менять технологию без крайней необходимости
-
-3. **Immutable Boundaries**
-   - Публичный контракт API сохраняется
-   - Внутренняя реализация может меняться
-   - При необходимости - адаптерный слой
-
-## Заключение
-
-Архитектура Finpi OCR спроектирована для масштабирования на 100+ локалей и 100000+ вариаций чеков.
-
-**Ключевые преимущества:**
-- Независимые домены → параллельная разработка
-- Стабильный контракт → безопасная эволюция
-- Интерфейсы и адаптеры → гибкость замены компонентов
-- Система локалей → поддержка 100+ стран
-- Чистый код → легкая поддержка и тестирование
-
+### Следующие шаги
+1. Валидация YAML конфигураций локалей через Pydantic
+2. Фоллбэк-локаль для неопределённых случаев
+3. Централизованный реестр локалей
+4. Шифрование конфигураций локалей
+5. Мониторинг и логирование
+6. Контракт для Parsing (Structured Result)

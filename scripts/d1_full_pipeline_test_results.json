@@ -1,0 +1,76 @@
+{
+  "test_image": "/Users/sergejevsukov/Downloads/Finpi_OCR/data/input/IMG_3064.jpeg",
+  "image_size_kb": 171.466796875,
+  "result": {
+    "success": true,
+    "image": "IMG_3064.jpeg",
+    "full_text_length": 1212,
+    "words_count": 230,
+    "avg_confidence": 0.923,
+    "min_confidence": 0.422,
+    "max_confidence": 0.993,
+    "image_size": "720x1280",
+    "preprocessing": [
+      "grayscale",
+      "clahe",
+      "denoise"
+    ],
+    "sample_words": [
+      {
+        "text": "as",
+        "confidence": 0.957,
+        "bbox": "200,87,51x23"
+      },
+      {
+        "text": "【",
+        "confidence": 0.522,
+        "bbox": "447,46,38x27"
+      },
+      {
+        "text": "優",
+        "confidence": 0.463,
+        "bbox": "462,45,38x27"
+      },
+      {
+        "text": "consum",
+        "confidence": 0.988,
+        "bbox": "330,62,202x53"
+      },
+      {
+        "text": "Juntos",
+        "confidence": 0.966,
+        "bbox": "317,104,61x17"
+      }
+    ],
+    "retry_info": {
+      "was_retried": true,
+      "attempts": 2,
+      "final_avg_confidence": 0.9225,
+      "final_min_confidence": 0.4222,
+      "final_low_conf_ratio": 0.1304,
+      "strategies_used": [
+        "adaptive",
+        "aggressive"
+      ],
+      "attempt_details": [
+        {
+          "attempt": 1,
+          "strategy": "adaptive",
+          "average_confidence": 0.9225,
+          "min_confidence": 0.4222,
+          "low_confidence_ratio": 0.1304,
+          "words_count": 230
+        },
+        {
+          "attempt": 2,
+          "strategy": "aggressive",
+          "average_confidence": 0.7138,
+          "min_confidence": 0.2631,
+          "low_confidence_ratio": 0.656,
+          "words_count": 218
+        }
+      ],
+      "all_attempts_failed": true
+    }
+  }
+}

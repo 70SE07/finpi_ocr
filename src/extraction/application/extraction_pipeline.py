@@ -172,9 +172,7 @@ class ExtractionPipeline(IExtractionPipeline):
                     component="ExtractionPipeline"
                 )
             
-            # TODO: В будущем передавать strategy в preprocessor для изменения параметров
-            # Пока что preprocessor работает адаптивно без внешних стратегий
-            return self.image_preprocessor.process(image_path)
+            return self.image_preprocessor.process(image_path, strategy=strategy)
             
         except Exception as e:
             raise ImageProcessingError(

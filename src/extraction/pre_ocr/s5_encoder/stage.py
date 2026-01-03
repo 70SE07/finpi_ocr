@@ -1,7 +1,7 @@
 """
 Stage 5: Encoder (Кодировщик).
 
-Кодирует обработанное изображение в JPEG bytes для отправки в Google Vision API.
+Кодирует обработанное изображение в JPEG/PNG bytes для отправки в Google Vision API.
 
 КОНТРАКТЫ:
   Входные: EncoderRequest (валидированный quality [50-95])
@@ -11,9 +11,10 @@ Stage 5: Encoder (Кодировщик).
 - image: np.ndarray (ЧБ, обработанное, после Stage 4)
 - quality: int (рекомендуемое качество, от Stage 0)
 - image_size: tuple (ширина, высота) для адаптивного качества
+- format: str ("jpeg" или "png", для стратегии minimal)
 
 Выходные данные:
-- bytes (JPEG кодированное изображение)
+- bytes (JPEG/PNG кодированное изображение)
 """
 
 import cv2
@@ -49,20 +50,22 @@ class ImageEncoderStage:
         self, 
         image: npt.NDArray[np.uint8], 
         quality: Optional[int] = None, 
-        image_size: Optional[tuple[int, int]] = None
+        image_size: Optional[tuple[int, int]] = None,
+        image_format: str = "jpeg"
     ) -> bytes:
         """
-        Кодирует изображение в JPEG bytes.
+        Кодирует изображение в JPEG или PNG bytes.
         
-        ВОЗВРАЩАЕТ: Гарантированный валидный JPEG (EncoderResponse валидирован)
+        ВОЗВРАЩАЕТ: Гарантированный валидный JPEG/PNG (EncoderResponse валидирован)
         
         Args:
             image: np.ndarray (ЧБ или BGR)
             quality: int (0-100), если None используется из config
             image_size: tuple (w, h) для адаптивного качества
+            image_format: str ("jpeg" или "png", для стратегии minimal)
             
         Returns:
-            bytes (JPEG)
+            bytes (JPEG или PNG)
             
         Raises:
             ContractValidationError: если качество невалидно или кодирование не удалось
@@ -84,8 +87,8 @@ class ImageEncoderStage:
         except ValidationError as e:
             raise ContractValidationError("S5", "EncoderRequest", e.errors())
         
-        # Адаптивное качество на основе размера изображения
-        if image_size:
+        # Адаптивное качество на основе размера изображения (только для JPEG)
+        if image_format == "jpeg" and image_size:
             orig_w, orig_h = image_size
             pixels = orig_w * orig_h
             
@@ -98,15 +101,21 @@ class ImageEncoderStage:
                 quality = min(quality, 85)
                 logger.debug(f"[Stage 5] Большое изображение ({pixels} px) → качество {quality}%")
         
-        # Кодирование в JPEG
+        # Кодирование в JPEG или PNG
         original_size_bytes = w * h
         
-        success, encoded_img = cv2.imencode('.jpg', image, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
-        
-        # ✅ ПРОВЕРКА: успешно ли кодирование
-        if not success or encoded_img is None:
-            logger.error("[Stage 5] Ошибка кодирования JPEG")
-            raise ValueError("Failed to encode image to JPEG")
+        if image_format == "png":
+            # PNG без сжатия (для стратегии minimal)
+            success, encoded_img = cv2.imencode('.png', image, [int(cv2.IMWRITE_PNG_COMPRESSION), 0])
+            if not success or encoded_img is None:
+                logger.error("[Stage 5] Ошибка кодирования PNG")
+                raise ValueError("Failed to encode image to PNG")
+        else:
+            # JPEG с указанным качеством
+            success, encoded_img = cv2.imencode('.jpg', image, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
+            if not success or encoded_img is None:
+                logger.error("[Stage 5] Ошибка кодирования JPEG")
+                raise ValueError("Failed to encode image to JPEG")
         
         image_bytes = encoded_img.tobytes()
         encoded_size_bytes = len(image_bytes)
@@ -124,7 +133,7 @@ class ImageEncoderStage:
             raise ContractValidationError("S5", "EncoderResponse", e.errors())
         
         logger.debug(
-            f"[Stage 5] ✅ Закодировано в JPEG: {encoded_size_bytes} bytes, "
+            f"[Stage 5] ✅ Закодировано в {image_format.upper()}: {encoded_size_bytes} bytes, "
             f"качество {quality}%, ratio {encoder_response.compression_ratio:.2f}x"
         )
         

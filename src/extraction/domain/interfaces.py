@@ -58,7 +58,8 @@ class IImagePreprocessor(ABC):
     def process(
         self, 
         image_path: Path, 
-        context: Optional[Dict[str, Any]] = None
+        context: Optional[Dict[str, Any]] = None,
+        strategy: Optional[Dict[str, Any]] = None
     ) -> Tuple[bytes, Dict[str, Any]]:
         """
         Обрабатывает изображение перед OCR.
@@ -66,6 +67,10 @@ class IImagePreprocessor(ABC):
         Args:
             image_path: Путь к файлу изображения
             context: Dict с контекстом для Stage 3 Selector (опционально)
+            strategy: Стратегия retry для Feedback Loop (опционально):
+                      {"name": "aggressive"} - форсировать максимум обработки
+                      {"name": "minimal"} - минимум обработки (только GRAYSCALE)
+                      None/{"name": "adaptive"} - адаптивный режим (по умолчанию)
             
         Returns:
             Кортеж: (обработанные байты, метаданные обработки)

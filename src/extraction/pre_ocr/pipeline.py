@@ -53,7 +53,12 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
         self.encoder = ImageEncoderStage()
         logger.info("[AdaptivePreOCRPipeline] Инициализирован (6 stages, с контрактами)")
 
-    def process(self, image_path: Path, context: Optional[Dict[str, Any]] = None) -> Tuple[bytes, Dict[str, Any]]:
+    def process(
+        self, 
+        image_path: Path, 
+        context: Optional[Dict[str, Any]] = None,
+        strategy: Optional[Dict[str, Any]] = None
+    ) -> Tuple[bytes, Dict[str, Any]]:
         """
         Обрабатывает изображение через 6-stage пайплайн (ОПТИМИЗИРОВАННЫЙ).
         
@@ -65,13 +70,15 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
         ВАЛИДАЦИЯ: На каждой стадии выходные данные валидируются через контракты.
         Если контракт нарушен, выбрасывается ContractValidationError с деталями.
         
+        СТРАТЕГИИ RETRY:
+        - None/{"name": "adaptive"}: адаптивный режим (качество-ориентированный)
+        - {"name": "aggressive"}: форсировать BAD quality (максимум фильтров)
+        - {"name": "minimal"}: только GRAYSCALE (без CLAHE/DENOISE)
+        
         Args:
             image_path: Путь к файлу изображения
-            context: Dict с контекстом для Stage 3 Selector (опционально):
-              - shop: str - название магазина (ИГНОРИРУЕТСЯ, используется только качество)
-              - material: str - материал чека (опционально)
-              - lighting: str - качество освещения (опционально)
-              - device: str - модель устройства (опционально)
+            context: Dict с контекстом для Stage 3 Selector (опционально)
+            strategy: Стратегия retry (для Feedback Loop)
               
         Returns:
             (image_bytes, metadata)
@@ -82,6 +89,7 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
             ContractValidationError: если какой-либо контракт нарушен
         """
         context = context or {}
+        strategy = strategy or {}
         
         logger.debug(f"[AdaptivePreOCRPipeline] Обработка: {image_path.name}")
         
@@ -137,9 +145,46 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
 
         # Stage 3: Selector (теперь работает только с качеством, без магазинов!)
         # ✅ ВАЛИДАЦИЯ: select_filters() возвращает валидированный FilterPlan
-        logger.debug("[AdaptivePreOCRPipeline] Stage 3: Selector (качество-ориентированный)")
+        # ✅ СТРАТЕГИЯ: если передана strategy, форсируем нужные фильтры
+        strategy_name = strategy.get("name", "adaptive") if strategy else "adaptive"
+        logger.debug(f"[AdaptivePreOCRPipeline] Stage 3: Selector (стратегия: {strategy_name})")
+        
         try:
-            filter_plan: FilterPlan = self.selector.select_filters(metrics)
+            # Применяем стратегию для изменения фильтров
+            if strategy_name == "aggressive":
+                # Aggressive: форсируем BAD quality (максимум фильтров)
+                from src.domain.contracts import QualityLevel, FilterType
+                logger.info("[AdaptivePreOCRPipeline] AGGRESSIVE стратегия: форсируем максимум фильтров")
+                filter_plan = FilterPlan(
+                    filters=[FilterType.GRAYSCALE, FilterType.CLAHE, FilterType.DENOISE, FilterType.SHARPEN],
+                    quality_level=QualityLevel.BAD,
+                    reason="Aggressive retry: форсируем максимум обработки",
+                    metrics_snapshot={
+                        "brightness": metrics.brightness,
+                        "contrast": metrics.contrast,
+                        "noise": metrics.noise,
+                        "blue_dominance": metrics.blue_dominance
+                    }
+                )
+            elif strategy_name == "minimal":
+                # Minimal: только GRAYSCALE (минимум обработки)
+                from src.domain.contracts import QualityLevel, FilterType
+                logger.info("[AdaptivePreOCRPipeline] MINIMAL стратегия: только GRAYSCALE")
+                filter_plan = FilterPlan(
+                    filters=[FilterType.GRAYSCALE],
+                    quality_level=QualityLevel.HIGH,
+                    reason="Minimal retry: только базовая обработка",
+                    metrics_snapshot={
+                        "brightness": metrics.brightness,
+                        "contrast": metrics.contrast,
+                        "noise": metrics.noise,
+                        "blue_dominance": metrics.blue_dominance
+                    }
+                )
+            else:
+                # Adaptive (по умолчанию): качество-ориентированный выбор
+                filter_plan = self.selector.select_filters(metrics)
+            
             logger.debug(f"[AdaptivePreOCRPipeline] S3 план фильтров валидирован: "
                         f"{[f.value for f in filter_plan.filters]} "
                         f"(quality={filter_plan.quality_level.value}, reason={filter_plan.reason})")
@@ -154,7 +199,18 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
 
         # Stage 5: Encoder (с адаптивным качеством)
         logger.debug("[AdaptivePreOCRPipeline] Stage 5: Encoder")
-        image_bytes = self.encoder.encode(processed_image, quality=compression_quality, image_size=compressed_size)
+        
+        # Определяем формат изображения на основе стратегии
+        image_format = "png" if strategy_name == "minimal" else "jpeg"
+        if strategy_name == "minimal":
+            logger.info("[AdaptivePreOCRPipeline] MINIMAL: используем PNG без сжатия")
+        
+        image_bytes = self.encoder.encode(
+            processed_image, 
+            quality=compression_quality, 
+            image_size=compressed_size,
+            image_format=image_format
+        )
 
         # Формируем metadata для ExtractionPipeline
         # ВАЖНО: Ключ "applied" а не "preprocessing_plan"!
@@ -173,7 +229,8 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
                 "quality": filter_plan.quality_level.value
             },
             "compression_metadata": compression_metadata,
-            "preprocessing_quality": compression_quality
+            "preprocessing_quality": compression_quality,
+            "image_format": image_format  # Добавляем формат изображения (jpeg/png)
         }
         
         logger.info(
