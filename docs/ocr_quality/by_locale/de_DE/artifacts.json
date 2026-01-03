@@ -1,0 +1,110 @@
+[
+  {
+    "id": "de_DE_001_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "CHAR_SUB",
+    "ocr_text": "rebe",
+    "expected_text": "PRESS",
+    "position": "header",
+    "context": "Начало чека: rebe вместо PRESS",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": "rebe → PRESS в начале чека (контекстно)"
+  },
+  {
+    "id": "de_DE_002_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "CHAR_MISS",
+    "ocr_text": "Schweinenackenbraten",
+    "expected_text": "Schweinenackenbraten",
+    "position": "item_name",
+    "context": "Schweinenackenbraten 10,85 A (пропуск n)",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": "Добавить пропущенную n в слове Schweinenacken"
+  },
+  {
+    "id": "de_DE_003_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "CHAR_SUB",
+    "ocr_text": "Olivenöle",
+    "expected_text": "Olivenöl",
+    "position": "word",
+    "context": "Olivenöle natur (дополнительные символы)",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": "Öl → Öl (регулярное выражение по словарю)"
+  },
+  {
+    "id": "de_DE_004_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "CHAR_SUB",
+    "ocr_text": "Bull'sEyeFeink",
+    "expected_text": "Bull'sEyeFeink",
+    "position": "word",
+    "context": "Bull'sEyeFeink.Honey (k → ?)",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": "Feink → Feink (k вместо k в середине слова)"
+  },
+  {
+    "id": "de_DE_005_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "WORD_SPLIT",
+    "ocr_text": "Baguettes Knoblauch",
+    "expected_text": "Baguettes Knoblauch",
+    "position": "word",
+    "context": "Baguettes Knoblauch 1,95 A (разделение без пробела?)",
+    "frequency": "occasional",
+    "verified": false,
+    "suggestion": "Требуется визуальная проверка - возможно Knoblauch разделён на 2 строки"
+  },
+  {
+    "id": "de_DE_006_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "CHAR_MISS",
+    "ocr_text": "Hähn.Keulen",
+    "expected_text": "Hähnchenkeulen",
+    "position": "item_name",
+    "context": "Hähn.Keulen Diavolo (потеря chen, точка вместо chen)",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": "Hähn.Keulen → Hähnchenkeulen (распознать . как chen или восстановить по словарю)"
+  },
+  {
+    "id": "de_DE_007_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "CHAR_MISS",
+    "ocr_text": "Zwiebeln rot",
+    "expected_text": "Zwiebeln rot",
+    "position": "word",
+    "context": "Zwiebeln rot 1,99 A",
+    "frequency": "rare",
+    "verified": false,
+    "suggestion": "Слово распознано верно - возможно ошибка в ground_truth"
+  },
+  {
+    "id": "de_DE_008_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "DIAC_LOSS",
+    "ocr_text": "Prosecco rose",
+    "expected_text": "Prosecco rosé",
+    "position": "word",
+    "context": "Prosecco rosé 6,99 B (потеря é)",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": "rose → rosé (восстановить диакритику é в конце слова)"
+  },
+  {
+    "id": "de_DE_009_IMG_1292",
+    "receipt_id": "IMG_1292",
+    "type": "GARBAGE",
+    "ocr_text": "Bull'sEyeFeink.Honey",
+    "expected_text": "Bull'sEyeFeink Honey",
+    "position": "word",
+    "context": "Слияние двух слов через точку вместо пробела",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": "Разделить по точке: Bull'sEyeFeink.Honey → Bull'sEyeFeink Honey"
+  }
+]

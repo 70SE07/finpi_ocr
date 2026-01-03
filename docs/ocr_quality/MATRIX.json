@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2025-01-03",
+    "total_receipts": 2,
+    "total_artifacts": 25
+  },
+  "global_summary": {
+    "by_type": {
+      "CHAR_SUB": {"count": 9, "percentage": 36.0},
+      "GARBAGE": {"count": 7, "percentage": 28.0},
+      "CHAR_MISS": {"count": 3, "percentage": 12.0},
+      "DIAC_LOSS": {"count": 3, "percentage": 12.0},
+      "WORD_SPLIT": {"count": 1, "percentage": 4.0},
+      "WORD_MERGE": {"count": 1, "percentage": 4.0},
+      "CHAR_EXTRA": {"count": 0, "percentage": 0.0},
+      "CASE_ERR": {"count": 0, "percentage": 0.0},
+      "SCRIPT_MIX": {"count": 0, "percentage": 0.0},
+      "NUM_FMT": {"count": 0, "percentage": 0.0}
+    },
+    "top_patterns": [
+      {"type": "CHAR_SUB", "count": 9, "percentage": 36.0, "description": "Character substitution"},
+      {"type": "GARBAGE", "count": 7, "percentage": 28.0, "description": "Garbage symbols"},
+      {"type": "CHAR_MISS", "count": 3, "percentage": 12.0, "description": "Missing characters"},
+      {"type": "DIAC_LOSS", "count": 3, "percentage": 12.0, "description": "Diacritics loss"}
+    ]
+  },
+  "locales": {
+    "de_DE": {
+      "receipts_analyzed": 1,
+      "stores_covered": ["lidl"],
+      "total_artifacts": 9,
+      "artifact_rate": 0.025,
+      "by_type": {
+        "CHAR_SUB": {"count": 2, "percentage": 22.2},
+        "CHAR_MISS": {"count": 3, "percentage": 33.3},
+        "DIAC_LOSS": {"count": 1, "percentage": 11.1},
+        "WORD_SPLIT": {"count": 1, "percentage": 11.1},
+        "GARBAGE": {"count": 1, "percentage": 11.1}
+      },
+      "top_patterns": [
+        {"type": "CHAR_MISS", "count": 3, "examples": ["Hähn.Keulen → Hähnchenkeulen"]},
+        {"type": "CHAR_SUB", "count": 2, "examples": ["Olivenöle → Olivenöl", "rebe → PRESS"]},
+        {"type": "DIAC_LOSS", "count": 1, "examples": ["rose → rosé"]}
+      ],
+      "cleanup_rules": [
+        {"id": "de_DE_001", "type": "CHAR_SUB", "pattern": "^rebe$", "replacement": "PRESS", "confidence": 0.90},
+        {"id": "de_DE_002", "type": "CHAR_MISS", "pattern": "Hähn\\.Keulen", "replacement": "Hähnchenkeulen", "confidence": 0.80},
+        {"id": "de_DE_003", "type": "DIAC_LOSS", "pattern": "rose$", "replacement": "rosé", "confidence": 0.90},
+        {"id": "de_DE_004", "type": "CHAR_SUB", "pattern": "Olivenöle", "replacement": "Olivenöl", "confidence": 0.95},
+        {"id": "de_DE_005", "type": "GARBAGE", "pattern": "\\.Honey", "replacement": " Honey", "confidence": 0.95}
+      ]
+    },
+    "pl_PL": {
+      "receipts_analyzed": 1,
+      "stores_covered": ["carrefour"],
+      "total_artifacts": 16,
+      "artifact_rate": 0.045,
+      "by_type": {
+        "CHAR_SUB": {"count": 7, "percentage": 43.8},
+        "GARBAGE": {"count": 6, "percentage": 37.5},
+        "DIAC_LOSS": {"count": 2, "percentage": 12.5},
+        "WORD_MERGE": {"count": 1, "percentage": 6.2}
+      },
+      "top_patterns": [
+        {"type": "CHAR_SUB", "count": 7, "examples": ["C.JOG → C_JOG", "CMC → C_MC", "HEN → MEN"]},
+        {"type": "GARBAGE", "count": 6, "examples": ["dul", "gas", "fque", "uqu", "BYAR"]},
+        {"type": "DIAC_LOSS", "count": 2, "examples": ["OŚMIORNICA → OSHIORNICA", "JARMUŻU → JARMUZU"]}
+      ],
+      "cleanup_rules": [
+        {"id": "pl_PL_001", "type": "DIAC_LOSS", "pattern": "OSHIORNICA", "replacement": "OŚMIORNICA", "confidence": 0.95},
+        {"id": "pl_PL_002", "type": "DIAC_LOSS", "pattern": "JARMUZU", "replacement": "JARMUŻU", "confidence": 0.95},
+        {"id": "pl_PL_003", "type": "CHAR_SUB", "pattern": "^([AC])\\.", "replacement": "$1_", "confidence": 0.95},
+        {"id": "pl_PL_004", "type": "CHAR_SUB", "pattern": "^([AC]) ", "replacement": "$1_", "confidence": 0.95},
+        {"id": "pl_PL_005", "type": "CHAR_SUB", "pattern": "^CMC", "replacement": "C_MC", "confidence": 0.90},
+        {"id": "pl_PL_006", "type": "CHAR_SUB", "pattern": "HEN$", "replacement": "MEN", "confidence": 0.85},
+        {"id": "pl_PL_007", "type": "CHAR_SUB", "pattern": "CHANPI", "replacement": "CHAMPI", "confidence": 0.85},
+        {"id": "pl_PL_008", "type": "CHAR_SUB", "pattern": "KARTAPIATNI", "replacement": "KARTAPŁATNI", "confidence": 0.90},
+        {"id": "pl_PL_009", "type": "CHAR_SUB", "pattern": "Kuota", "replacement": "Kwota", "confidence": 0.95},
+        {"id": "pl_PL_010", "type": "WORD_MERGE", "pattern": "LUZJAVA", "replacement": "LUZ", "confidence": 0.85},
+        {"id": "pl_PL_011", "type": "GARBAGE", "pattern": "sbob b2ysio", "replacement": "", "confidence": 0.95}
+      ],
+      "special_patterns": {
+        "tax_prefix": {
+          "description": "Carrefour uses A_ and C_ prefixes for tax class",
+          "issues": ["_ often recognized as . or space", "Sometimes lost entirely (CMC instead of C_MC)"]
+        },
+        "polish_diacritics": {
+          "description": "Polish diacritics: ą, ć, ę, ł, ń, ó, ś, ź, ż",
+          "issues": ["Ś often → SH or S", "Ż often → Z", "Ł often → L or I"]
+        }
+      }
+    },
+    "th_TH": {
+      "receipts_analyzed": 0,
+      "stores_covered": [],
+      "total_artifacts": 0,
+      "artifact_rate": 0.0,
+      "by_type": {},
+      "top_patterns": [],
+      "cleanup_rules": []
+    },
+    "uk_UA": {
+      "receipts_analyzed": 0,
+      "stores_covered": [],
+      "total_artifacts": 0,
+      "artifact_rate": 0.0,
+      "by_type": {},
+      "top_patterns": [],
+      "cleanup_rules": []
+    },
+    "bg_BG": {
+      "receipts_analyzed": 0,
+      "stores_covered": [],
+      "total_artifacts": 0,
+      "artifact_rate": 0.0,
+      "by_type": {},
+      "top_patterns": [],
+      "cleanup_rules": []
+    }
+  },
+  "universal_rules": [
+    {
+      "id": "UNIV_001",
+      "type": "GARBAGE",
+      "pattern": "^(dul|gas|fque)\\n",
+      "replacement": "",
+      "confidence": 0.95,
+      "description": "Remove garbage at header"
+    },
+    {
+      "id": "UNIV_002",
+      "type": "GARBAGE",
+      "pattern": "\\n(uqu|BYAR)\\n",
+      "replacement": "\\n",
+      "confidence": 0.95,
+      "description": "Remove garbage between lines"
+    },
+    {
+      "id": "UNIV_003",
+      "type": "WORD_MERGE",
+      "pattern": "([A-Za-z])\\.([A-Z])",
+      "replacement": "$1 $2",
+      "confidence": 0.90,
+      "description": "Split words on period before uppercase"
+    }
+  ],
+  "locale_specific_rules": {
+    "de_DE": [
+      "Use German dictionary for common words",
+      "Restore diacritics: ö, ä, ü, ß",
+      "Fix common character substitutions: 0→O, 1→l"
+    ],
+    "pl_PL": [
+      "Normalize tax prefix: . or space → underscore",
+      "Use Polish dictionary for diacritics restoration",
+      "Handle Ś→SH, Ż→Z, Ł→L/I substitutions",
+      "Filter garbage symbols in header and between items"
+    ],
+    "th_TH": [],
+    "uk_UA": [],
+    "bg_BG": []
+  }
+}

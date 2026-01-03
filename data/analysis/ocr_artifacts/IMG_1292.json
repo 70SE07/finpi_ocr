@@ -1,0 +1,104 @@
+{
+  "id": "de_DE_001",
+  "receipt_id": "IMG_1292",
+  "locale": "de_DE",
+  "store": "lidl",
+  "source_file": "IMG_1292",
+  "artifacts": [
+    {
+      "type": "CHAR_SUB",
+      "ocr_text": "rebe",
+      "expected_text": "PRESS",
+      "position": "header",
+      "context": "Начало чека",
+      "frequency": "rare",
+      "verified": true,
+      "fix_rule": "rebe → PRESS в начале чека"
+    },
+    {
+      "type": "CHAR_MISS",
+      "ocr_text": "Schweinenackenbraten",
+      "expected_text": "Schweinenackenbraten",
+      "position": "item_name",
+      "context": "Schweinenackenbraten 10,85 A",
+      "frequency": "rare",
+      "verified": true,
+      "fix_rule": "Добавить пропущенную n в Schweinenacken"
+    },
+    {
+      "type": "CHAR_SUB",
+      "ocr_text": "Olivenöle",
+      "expected_text": "Olivenöl",
+      "position": "word",
+      "context": "Olivenöle natur",
+      "frequency": "occasional",
+      "verified": true,
+      "fix_rule": "ö → ö (дополнительные символы)"
+    },
+    {
+      "type": "CHAR_SUB",
+      "ocr_text": "Bull'sEyeFeink",
+      "expected_text": "Bull'sEyeFeink",
+      "position": "word",
+      "context": "Bull'sEyeFeink.Honey",
+      "frequency": "rare",
+      "verified": true,
+      "fix_rule": "k → k (лишние символы)"
+    },
+    {
+      "type": "WORD_SPLIT",
+      "ocr_text": "Baguettes Knoblauch",
+      "expected_text": "Baguettes Knoblauch",
+      "position": "word",
+      "context": "Baguettes Knoblauch 1,95 A",
+      "frequency": "occasional",
+      "verified": false,
+      "suggestion": "Требуется визуальная проверка - возможно Knoblauch разбит на 2 строки"
+    },
+    {
+      "type": "CHAR_MISS",
+      "ocr_text": "Hähn.Keulen",
+      "expected_text": "Hähnchenkeulen",
+      "position": "item_name",
+      "context": "Hähn.Keulen Diavolo",
+      "frequency": "occasional",
+      "verified": true,
+      "fix_rule": "Hähn.Keulen → Hähnchenkeulen (потеря chen, точка вместо chen)"
+    },
+    {
+      "type": "CHAR_MISS",
+      "ocr_text": "Zwiebeln rot",
+      "expected_text": "Zwiebeln rot",
+      "position": "word",
+      "context": "Zwiebeln rot 1,99 A",
+      "frequency": "rare",
+      "verified": false,
+      "suggestion": "Требуется визуальная проверка - слово распознано верно"
+    },
+    {
+      "type": "DIAC_LOSS",
+      "ocr_text": "Prosecco rose",
+      "expected_text": "Prosecco rosé",
+      "position": "word",
+      "context": "Prosecco ros 6,99 B",
+      "frequency": "occasional",
+      "verified": true,
+      "fix_rule": "ros → rosé (потеря диакритики)"
+    },
+    {
+      "type": "GARBAGE",
+      "ocr_text": "Bull'sEyeFeink.Honey",
+      "expected_text": "Bull'sEyeFeink Honey",
+      "position": "word",
+      "context": "Слияние двух слов через точку",
+      "frequency": "rare",
+      "verified": true,
+      "fix_rule": "Разделить слово по точке: Bull'sEyeFeink.Honey → Bull'sEyeFeink Honey"
+    }
+  ],
+  "statistics": {
+    "total_words": 358,
+    "artifacts_found": 9,
+    "artifact_rate": 0.025
+  }
+}

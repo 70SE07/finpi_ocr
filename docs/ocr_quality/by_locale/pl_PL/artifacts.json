@@ -1,0 +1,274 @@
+[
+  {
+    "id": "pl_PL_001_PL_001",
+    "receipt_id": "PL_001",
+    "type": "DIAC_LOSS",
+    "ocr_text": "OSHIORNICA",
+    "expected_text": "OŚMIORNICA",
+    "position": "item_name",
+    "context": "A OSHIORNICA MACKI - потеря Ś",
+    "frequency": "frequent",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "OSHIORNICA",
+      "replacement": "OŚMIORNICA",
+      "confidence": 0.95,
+      "context": "dictionary lookup for polish seafood"
+    }
+  },
+  {
+    "id": "pl_PL_002_PL_001",
+    "receipt_id": "PL_001",
+    "type": "DIAC_LOSS",
+    "ocr_text": "JARMUZU",
+    "expected_text": "JARMUŻU",
+    "position": "item_name",
+    "context": "CMC KIEŁKI JARMUZU - потеря Ż",
+    "frequency": "frequent",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "JARMUZU",
+      "replacement": "JARMUŻU",
+      "confidence": 0.95,
+      "context": "dictionary lookup for polish vegetables"
+    }
+  },
+  {
+    "id": "pl_PL_003_PL_001",
+    "receipt_id": "PL_001",
+    "type": "CHAR_SUB",
+    "ocr_text": "C.JOG",
+    "expected_text": "C_JOG",
+    "position": "tax_prefix",
+    "context": "C.JOG.D/P SKYR HEN - точка вместо подчёркивания",
+    "frequency": "frequent",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "^([AC])\\.",
+      "replacement": "$1_",
+      "confidence": 0.95,
+      "context": "tax prefix format correction"
+    }
+  },
+  {
+    "id": "pl_PL_004_PL_001",
+    "receipt_id": "PL_001",
+    "type": "CHAR_SUB",
+    "ocr_text": "A TORBA",
+    "expected_text": "A_TORBA",
+    "position": "tax_prefix",
+    "context": "A TORBA RECYKLING - пробел вместо подчёркивания",
+    "frequency": "frequent",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "^([AC]) ",
+      "replacement": "$1_",
+      "confidence": 0.95,
+      "context": "tax prefix format correction"
+    }
+  },
+  {
+    "id": "pl_PL_005_PL_001",
+    "receipt_id": "PL_001",
+    "type": "CHAR_SUB",
+    "ocr_text": "CMC",
+    "expected_text": "C_MC",
+    "position": "tax_prefix",
+    "context": "CMC KIEŁKI JARMUZU - потеря подчёркивания",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "^CMC",
+      "replacement": "C_MC",
+      "confidence": 0.90,
+      "context": "restore underscore in tax prefix"
+    }
+  },
+  {
+    "id": "pl_PL_006_PL_001",
+    "receipt_id": "PL_001",
+    "type": "CHAR_SUB",
+    "ocr_text": "HEN",
+    "expected_text": "MEN",
+    "position": "item_name",
+    "context": "C_JOG.D/P SKYR HEN - H вместо M",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "SKYR HEN",
+      "replacement": "SKYR MEN",
+      "confidence": 0.85,
+      "context": "H→M substitution in product name"
+    }
+  },
+  {
+    "id": "pl_PL_007_PL_001",
+    "receipt_id": "PL_001",
+    "type": "CHAR_SUB",
+    "ocr_text": "CHANPI",
+    "expected_text": "CHAMPI",
+    "position": "item_name",
+    "context": "C_JZN JABŁKA CHANPI - N вместо M",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "CHANPI",
+      "replacement": "CHAMPI",
+      "confidence": 0.85,
+      "context": "N→M substitution in product name"
+    }
+  },
+  {
+    "id": "pl_PL_008_PL_001",
+    "receipt_id": "PL_001",
+    "type": "GARBAGE",
+    "ocr_text": "dul",
+    "expected_text": "",
+    "position": "header",
+    "context": "Мусор в начале чека: dul",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "^dul\\n",
+      "replacement": "",
+      "confidence": 0.95,
+      "context": "remove garbage at start"
+    }
+  },
+  {
+    "id": "pl_PL_009_PL_001",
+    "receipt_id": "PL_001",
+    "type": "GARBAGE",
+    "ocr_text": "gas",
+    "expected_text": "",
+    "position": "header",
+    "context": "Мусор в начале чека: gas",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "^gas\\n",
+      "replacement": "",
+      "confidence": 0.95,
+      "context": "remove garbage at start"
+    }
+  },
+  {
+    "id": "pl_PL_010_PL_001",
+    "receipt_id": "PL_001",
+    "type": "GARBAGE",
+    "ocr_text": "fque",
+    "expected_text": "",
+    "position": "header",
+    "context": "Мусор после адреса: fque",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "fque\\s",
+      "replacement": "",
+      "confidence": 0.95,
+      "context": "remove garbage near address"
+    }
+  },
+  {
+    "id": "pl_PL_011_PL_001",
+    "receipt_id": "PL_001",
+    "type": "GARBAGE",
+    "ocr_text": "uqu",
+    "expected_text": "",
+    "position": "items",
+    "context": "Мусор между товарами: uqu",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "\\nuqu\\n",
+      "replacement": "\\n",
+      "confidence": 0.95,
+      "context": "remove garbage between items"
+    }
+  },
+  {
+    "id": "pl_PL_012_PL_001",
+    "receipt_id": "PL_001",
+    "type": "GARBAGE",
+    "ocr_text": "BYAR",
+    "expected_text": "",
+    "position": "items",
+    "context": "Мусор между товарами: BYAR",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "\\nBYAR\\n",
+      "replacement": "\\n",
+      "confidence": 0.95,
+      "context": "remove garbage between items"
+    }
+  },
+  {
+    "id": "pl_PL_013_PL_001",
+    "receipt_id": "PL_001",
+    "type": "CHAR_SUB",
+    "ocr_text": "KARTAPIATNI",
+    "expected_text": "KARTAPŁATNI",
+    "position": "payment",
+    "context": "Płatność: KARTAPIATNI - потеря Ł, I вместо Ł",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "KARTAPIATNI",
+      "replacement": "KARTAPŁATNI",
+      "confidence": 0.90,
+      "context": "restore Ł in payment method"
+    }
+  },
+  {
+    "id": "pl_PL_014_PL_001",
+    "receipt_id": "PL_001",
+    "type": "WORD_MERGE",
+    "ocr_text": "CHC MANDARYNKI LUZJAVA",
+    "expected_text": "C_MC MANDARYNKI LUZ",
+    "position": "item_name",
+    "context": "Слияние с мусором: LUZJAVA вместо LUZ",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "LUZJAVA",
+      "replacement": "LUZ",
+      "confidence": 0.85,
+      "context": "remove garbage suffix"
+    }
+  },
+  {
+    "id": "pl_PL_015_PL_001",
+    "receipt_id": "PL_001",
+    "type": "CHAR_SUB",
+    "ocr_text": "Kuota",
+    "expected_text": "Kwota",
+    "position": "tax_block",
+    "context": "Kuota C 05,00% - u вместо w",
+    "frequency": "occasional",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "Kuota",
+      "replacement": "Kwota",
+      "confidence": 0.95,
+      "context": "u→w substitution in tax keyword"
+    }
+  },
+  {
+    "id": "pl_PL_016_PL_001",
+    "receipt_id": "PL_001",
+    "type": "GARBAGE",
+    "ocr_text": "sbob b2ysio",
+    "expected_text": "",
+    "position": "tax_block",
+    "context": "Мусор в налоговом блоке: sbob b2ysio",
+    "frequency": "rare",
+    "verified": true,
+    "fix_rule": {
+      "pattern": "sbob b2ysio",
+      "replacement": "",
+      "confidence": 0.95,
+      "context": "remove garbage in tax block"
+    }
+  }
+]

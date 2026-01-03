@@ -1,0 +1,50 @@
+{
+  "locale": "pl_PL",
+  "receipts_analyzed": 1,
+  "stores_covered": ["carrefour"],
+  "total_words": 359,
+  "total_artifacts": 16,
+  "artifact_rate": 0.045,
+  "by_type": {
+    "DIAC_LOSS": {"count": 2, "percentage": 12.5},
+    "CHAR_SUB": {"count": 7, "percentage": 43.8},
+    "GARBAGE": {"count": 6, "percentage": 37.5},
+    "WORD_MERGE": {"count": 1, "percentage": 6.2}
+  },
+  "top_patterns": [
+    {
+      "pattern": "CHAR_SUB - замены символов (особенно в tax prefix)",
+      "type": "CHAR_SUB",
+      "occurrences": 7,
+      "percentage": 43.8,
+      "examples": ["C.JOG → C_JOG", "A TORBA → A_TORBA", "CMC → C_MC", "HEN → MEN", "CHANPI → CHAMPI", "KARTAPIATNI → KARTAPŁATNI", "Kuota → Kwota"]
+    },
+    {
+      "pattern": "GARBAGE - мусорные символы",
+      "type": "GARBAGE",
+      "occurrences": 6,
+      "percentage": 37.5,
+      "examples": ["dul", "gas", "fque", "uqu", "BYAR", "sbob b2ysio"]
+    },
+    {
+      "pattern": "DIAC_LOSS - потеря польской диакритики",
+      "type": "DIAC_LOSS",
+      "occurrences": 2,
+      "percentage": 12.5,
+      "examples": ["OŚMIORNICA → OSHIORNICA (Ś→SH)", "JARMUŻU → JARMUZU (Ż→Z)"]
+    }
+  ],
+  "special_patterns": [
+    {
+      "name": "Tax Prefix Format",
+      "description": "Carrefour использует A_ и C_ prefixes для tax class",
+      "ocr_issues": ["_ часто распознается как . или пробел", "Иногда теряется полностью (CMC вместо C_MC)"]
+    },
+    {
+      "name": "Polish Diacritics",
+      "description": "Польская диакритика: ą, ć, ę, ł, ń, ó, ś, ź, ż",
+      "ocr_issues": ["Ś часто → SH или S", "Ż часто → Z", "Ł часто → L или I"]
+    }
+  ],
+  "last_updated": "2025-01-03"
+}

@@ -1,0 +1,39 @@
+{
+  "locale": "de_DE",
+  "receipts_analyzed": 1,
+  "stores_covered": ["lidl"],
+  "total_words": 358,
+  "total_artifacts": 9,
+  "artifact_rate": 0.025,
+  "by_type": {
+    "CHAR_SUB": {"count": 2, "percentage": 22.2},
+    "CHAR_MISS": {"count": 3, "percentage": 33.3},
+    "DIAC_LOSS": {"count": 1, "percentage": 11.1},
+    "WORD_SPLIT": {"count": 1, "percentage": 11.1},
+    "GARBAGE": {"count": 1, "percentage": 11.1}
+  },
+  "top_patterns": [
+    {
+      "pattern": "CHAR_MISS - пропуски символов в словах",
+      "type": "CHAR_MISS",
+      "occurrences": 3,
+      "percentage": 33.3,
+      "examples": ["Schweinenackenbraten → Schweinenackenbraten", "Hähn.Keulen → Hähnchenkeulen"]
+    },
+    {
+      "pattern": "CHAR_SUB - замены символов",
+      "type": "CHAR_SUB",
+      "occurrences": 2,
+      "percentage": 22.2,
+      "examples": ["Olivenöle → Olivenöl", "rebe → PRESS"]
+    },
+    {
+      "pattern": "DIAC_LOSS - потеря диакритики",
+      "type": "DIAC_LOSS",
+      "occurrences": 1,
+      "percentage": 11.1,
+      "examples": ["Prosecco rosé → Prosecco ros"]
+    }
+  ],
+  "last_updated": "2025-01-03"
+}
