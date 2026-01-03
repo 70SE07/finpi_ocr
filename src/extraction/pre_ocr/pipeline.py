@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Tuple, Dict, Any, Optional
 from loguru import logger
 
-from .domain.interfaces import IImagePreprocessor
+from ..domain.interfaces import IImagePreprocessor
 from .s0_compression import ImageCompressionStage
 from .s1_preparation import ImagePreparationStage
 from .s2_analyzer import ImageAnalyzerStage

@@ -3,7 +3,7 @@ import tempfile
 import cv2
 import numpy as np
 from pathlib import Path
-from src.extraction.pre_ocr.stages.stage_1_preparation import ImagePreparationStage
+from src.extraction.pre_ocr.s1_preparation.stage import ImagePreparationStage
 
 
 @pytest.fixture

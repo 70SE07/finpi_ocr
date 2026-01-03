@@ -194,7 +194,8 @@ class GoogleVisionOCR(IOCRProvider):
             image_width=api_image_width or 1,
             image_height=api_image_height or 1,
             processed_at=datetime.now().isoformat(),
-            preprocessing_applied=[]
+            preprocessing_applied=[],
+            retry_info=None
         )
         
         return RawOCRResult(

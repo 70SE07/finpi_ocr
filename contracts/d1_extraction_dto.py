@@ -13,7 +13,7 @@ DTO контракт: D1 (Extraction) -> D2 (Parsing)
 """
 
 from pydantic import BaseModel, Field, ConfigDict, field_validator
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 
 
 class BoundingBox(BaseModel):
@@ -61,6 +61,7 @@ class OCRMetadata(BaseModel):
     - source_file не может быть пустым
     - image_width, image_height > 0
     - processed_at в формате ISO 8601
+    - retry_info опционален (добавляется если был Feedback Loop)
     """
     source_file: str = Field(..., min_length=1, description="Имя исходного файла")
     image_width: int = Field(..., gt=0, description="Ширина изображения (px)")
@@ -69,6 +70,14 @@ class OCRMetadata(BaseModel):
     preprocessing_applied: List[str] = Field(
         default_factory=list, 
         description="Что применено (grayscale, deskew, etc.)"
+    )
+    retry_info: Optional[Dict[str, Any]] = Field(
+        None,
+        description=(
+            "Информация о Feedback Loop retry попытках. "
+            "Содержит: attempts, final_avg_confidence, final_min_confidence, "
+            "strategies_used, was_retried, attempt_details"
+        )
     )
     
     model_config = ConfigDict(frozen=True)

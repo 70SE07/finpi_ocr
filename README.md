@@ -32,8 +32,9 @@
 ```
 
 ### Extraction домен (src/extraction/)
-- Preprocessing изображений (deskew, rotation, grayscale, compression)
-- OCR распознавание текста через Google Vision API
+- **Adaptive Preprocessing** (интеллектуальный подбор параметров обработки)
+- Стратегии Retry/Refine (повторная обработка при низком Confidence)
+- OCR распознавание текста через Google Vision API (ядро)
 - Сохранение сырых результатов в формате `RawOCRResult`
 
 ### Parsing домен (src/parsing/)
@@ -292,12 +293,15 @@ patterns:
    - Контракт между доменами стабилен
    - Легкая замена реализаций через адаптеры
 
-## Настройки Pre-OCR
+## Конфигурация Adaptive Extraction
 
-| Параметр | Значение | Описание |
-|----------|----------|----------|
-| MAX_IMAGE_SIZE | 2200px | Максимальный размер стороны |
-| JPEG_QUALITY | 85% | Качество сжатия |
+Система использует динамический подбор параметров. Значения по умолчанию:
+
+| Параметр | Default | Стратегия при сбое |
+|----------|---------|-------------------|
+| MAX_IMAGE_SIZE | 2200px | Уменьшение до 1800px при OOM |
+| JPEG_QUALITY | 85% | Повышение до 100% (PNG) при низком Confidence |
+| FILTERS | None | Auto-Contrast -> Binarization при шуме |
 
 ## Текущие локали
 
