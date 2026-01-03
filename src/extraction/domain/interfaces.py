@@ -11,7 +11,7 @@
 
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import Dict, Any, Tuple
+from typing import Dict, Any, Tuple, Optional
 
 from contracts.d1_extraction_dto import RawOCRResult
 
@@ -55,12 +55,17 @@ class IImagePreprocessor(ABC):
     """Интерфейс для препроцессоров изображений (домен Extraction)."""
     
     @abstractmethod
-    def process(self, image_path: Path) -> Tuple[bytes, Dict[str, Any]]:
+    def process(
+        self, 
+        image_path: Path, 
+        context: Optional[Dict] = None
+    ) -> Tuple[bytes, Dict[str, Any]]:
         """
         Обрабатывает изображение перед OCR.
         
         Args:
             image_path: Путь к файлу изображения
+            context: Dict с контекстом для Stage 3 Selector (опционально)
             
         Returns:
             Кортеж: (обработанные байты, метаданные обработки)

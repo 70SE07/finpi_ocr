@@ -10,7 +10,7 @@
 """
 
 # Экспортируем основные классы
-from .pre_ocr.pipeline import PreOCRPipeline
+from .pre_ocr import AdaptivePreOCRPipeline
 from .infrastructure.ocr.google_vision_ocr import GoogleVisionOCR
 
 # Экспортируем application слой
@@ -18,11 +18,8 @@ from .application.factory import ExtractionComponentFactory
 from .application.extraction_pipeline import ExtractionPipeline
 
 __all__ = [
-    # Основные классы
-    "PreOCRPipeline",
-    "GoogleVisionOCR",
-    
-    # Application слой
-    "ExtractionComponentFactory",
-    "ExtractionPipeline",
+    'AdaptivePreOCRPipeline',
+    'GoogleVisionOCR',
+    'ExtractionComponentFactory',
+    'ExtractionPipeline',
 ]

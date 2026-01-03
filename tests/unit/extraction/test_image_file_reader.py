@@ -3,13 +3,13 @@ import tempfile
 import cv2
 import numpy as np
 from pathlib import Path
-from src.extraction.pre_ocr.image_file_reader import ImageFileReader
+from src.extraction.pre_ocr.stages.stage_1_preparation import ImagePreparationStage
 
 
 @pytest.fixture
 def reader():
-    """Fixture для ImageFileReader."""
-    return ImageFileReader()
+    """Fixture для ImagePreparationStage."""
+    return ImagePreparationStage()
 
 
 @pytest.fixture

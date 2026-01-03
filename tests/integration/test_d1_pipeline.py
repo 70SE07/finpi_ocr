@@ -10,7 +10,8 @@ import pytest
 import re
 from pathlib import Path
 
-from src.extraction import PreOCRPipeline, GoogleVisionOCR
+from src.extraction.pre_ocr import AdaptivePreOCRPipeline
+from src.extraction.infrastructure.ocr.google_vision_ocr import GoogleVisionOCR
 from src.extraction.application.extraction_pipeline import ExtractionPipeline
 from contracts.d1_extraction_dto import RawOCRResult, Word, BoundingBox, OCRMetadata
 
@@ -29,7 +30,7 @@ def extraction_pipeline():
     scope="module" - один раз на весь модуль (экономим время инициализации).
     """
     try:
-        pre_ocr = PreOCRPipeline()
+        pre_ocr = AdaptivePreOCRPipeline()
         ocr = GoogleVisionOCR()
         return ExtractionPipeline(ocr_provider=ocr, image_preprocessor=pre_ocr)
     except (ValueError, FileNotFoundError) as e:

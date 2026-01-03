@@ -27,7 +27,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from config.settings import validate_config, INPUT_DIR, OUTPUT_DIR
 from src.extraction.application.extraction_pipeline import ExtractionPipeline
-from src.extraction import PreOCRPipeline, GoogleVisionOCR
+from src.extraction import AdaptivePreOCRPipeline, GoogleVisionOCR
 from contracts.d1_extraction_dto import RawOCRResult
 
 
@@ -61,7 +61,7 @@ def process_image(image_path: Path, output_dir: Path, no_cache: bool = False) ->
         
         pipeline = ExtractionPipeline(
             ocr_provider=GoogleVisionOCR(),
-            image_preprocessor=PreOCRPipeline()
+            image_preprocessor=AdaptivePreOCRPipeline()
         )
         raw_result = pipeline.process_image(image_path)
         

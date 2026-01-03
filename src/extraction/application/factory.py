@@ -12,7 +12,7 @@ from loguru import logger
 
 from ..domain.interfaces import IOCRProvider, IImagePreprocessor
 from ..infrastructure.ocr.google_vision_ocr import GoogleVisionOCR
-from ..pre_ocr.pipeline import PreOCRPipeline
+from ..pre_ocr.pipeline import AdaptivePreOCRPipeline
 from .extraction_pipeline import ExtractionPipeline
 
 
@@ -49,7 +49,7 @@ class ExtractionComponentFactory:
             Препроцессор изображений, реализующий интерфейс IImagePreprocessor
         """
         logger.debug("[Extraction] Создание препроцессора изображений")
-        return PreOCRPipeline()
+        return AdaptivePreOCRPipeline()
     
     @staticmethod
     def create_extraction_pipeline(
@@ -117,7 +117,7 @@ class ExtractionComponentFactory:
             "output": "RawOCRResult (контракт D1->D2)",
             "components": {
                 "ocr_provider": "GoogleVisionOCR",
-                "image_preprocessor": "PreOCRPipeline",
+                "image_preprocessor": "AdaptivePreOCRPipeline",
                 "extraction_pipeline": "ExtractionPipeline"
             },
             "capabilities": [

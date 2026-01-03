@@ -2,7 +2,8 @@ import pytest
 from pathlib import Path
 import re
 
-from src.extraction import PreOCRPipeline, GoogleVisionOCR
+from src.extraction.pre_ocr import AdaptivePreOCRPipeline
+from src.extraction.infrastructure.ocr.google_vision_ocr import GoogleVisionOCR
 from src.extraction.application.extraction_pipeline import ExtractionPipeline
 from contracts.d1_extraction_dto import RawOCRResult
 
@@ -21,8 +22,8 @@ def test_receipt_path():
 
 @pytest.fixture
 def pre_ocr_pipeline():
-    """Fixture: PreOCRPipeline."""
-    return PreOCRPipeline()
+    """Fixture: AdaptivePreOCRPipeline."""
+    return AdaptivePreOCRPipeline()
 
 
 @pytest.fixture

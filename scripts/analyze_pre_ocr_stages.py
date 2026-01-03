@@ -14,9 +14,9 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from config.settings import JPEG_QUALITY
-from src.extraction.pre_ocr.image_file_reader import ImageFileReader
-from src.extraction.pre_ocr.elements.image_compressor import ImageCompressor
-from src.extraction.pre_ocr.elements.grayscale import GrayscaleConverter
+from src.extraction.pre_ocr.s0_compression import ImageCompressionStage
+from src.extraction.pre_ocr.s1_preparation import ImagePreparationStage
+from src.extraction.pre_ocr.infrastructure import apply_grayscale
 
 
 # 12 чеков из 10 локалей для анализа
@@ -67,28 +67,32 @@ def analyze_receipt(gt_path: str, output_dir: Path):
     logger.info(f"Processing: {gt_name}")
     logger.info(f"  Source: {image_path}")
     
-    # Stage 0: Читаем оригинал
-    reader = ImageFileReader()
-    image, raw_bytes = reader.read(image_path)
+    # Stage 1: Preparation (Load image)
+    preparation = ImagePreparationStage()
+    image = preparation.process(image_path)
+    
+    # Read original file size
+    with open(image_path, 'rb') as f:
+        raw_bytes = f.read()
+    original_bytes = len(raw_bytes)
     original_shape = image.shape
     logger.info(f"  Original: {original_shape}")
     
     # Сохраняем уменьшенную копию оригинала для сравнения
     cv2.imwrite(str(receipt_output_dir / "0_original.jpg"), image, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY])
     
-    # Stage 1: Compress
-    compressor = ImageCompressor(mode='adaptive')
-    comp_result = compressor.compress(image, original_bytes=len(raw_bytes))
+    # Stage 0: Compress
+    compressor = ImageCompressionStage(mode='adaptive')
+    comp_result = compressor.compress(image, original_bytes=original_bytes)
     compressed_shape = comp_result.image.shape
     logger.info(f"  Compressed: {compressed_shape}")
     cv2.imwrite(str(receipt_output_dir / "1_compressed.jpg"), comp_result.image, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY])
     
-    # Stage 2: Grayscale (Blue Channel)
-    converter = GrayscaleConverter()
-    gray_result = converter.process(comp_result.image)
-    gray_shape = gray_result.image.shape
-    logger.info(f"  Grayscale: {gray_shape}, method: {gray_result.method_used}")
-    cv2.imwrite(str(receipt_output_dir / "2_grayscale.jpg"), gray_result.image, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY])
+    # Stage 4: Grayscale
+    gray_image = apply_grayscale(comp_result.image)
+    gray_shape = gray_image.shape
+    logger.info(f"  Grayscale: {gray_shape}")
+    cv2.imwrite(str(receipt_output_dir / "2_grayscale.jpg"), gray_image, [cv2.IMWRITE_JPEG_QUALITY, JPEG_QUALITY])
     
     # Сохраняем метаданные
     metadata = {
@@ -97,12 +101,12 @@ def analyze_receipt(gt_path: str, output_dir: Path):
         "original_shape": list(original_shape),
         "compressed_shape": list(compressed_shape),
         "grayscale_shape": list(gray_shape),
-        "grayscale_method": gray_result.method_used,
     }
     with open(receipt_output_dir / "metadata.json", 'w', encoding='utf-8') as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
     
     logger.info(f"  Saved to: {receipt_output_dir}")
+
 
 
 def main():

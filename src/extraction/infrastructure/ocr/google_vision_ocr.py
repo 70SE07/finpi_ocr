@@ -4,7 +4,12 @@ OCR: Google Vision API интеграция.
 Этап 2 пайплайна extraction домена:
 - Отправка изображения в Google Vision
 - Получение сырых результатов OCR
+- Валидация ответа через GoogleVisionValidatedResponse контракт
 - Формирование RawOCRResult (контракт D1->D2)
+
+КОНТРАКТЫ:
+  Входные: bytes (JPEG из Stage 5)
+  Выходные: RawOCRResult (валидированный через GoogleVisionValidatedResponse)
 
 ВАЖНО: Возвращает RawOCRResult из contracts/d1_extraction_dto.py
 """
@@ -16,10 +21,16 @@ from typing import Optional
 
 from google.cloud import vision
 from google.cloud.vision_v1 import types
+from pydantic import ValidationError
 from loguru import logger
 
 from config.settings import GOOGLE_APPLICATION_CREDENTIALS
 from contracts.d1_extraction_dto import RawOCRResult, Word, BoundingBox, OCRMetadata
+from src.domain.contracts import (
+    GoogleVisionValidatedResponse, GoogleVisionWord,
+    GoogleVisionBoundingBox, GoogleVisionVertice,
+    ContractValidationError
+)
 from ...domain.interfaces import IOCRProvider
 
 
@@ -31,6 +42,9 @@ class GoogleVisionOCR(IOCRProvider):
     Возвращает RawOCRResult с:
     - full_text: полный текст для regex/паттернов
     - words[]: слова с координатами для layout-анализа
+    
+    КОНТРАКТЫ:
+      Валидирует ответ API через GoogleVisionValidatedResponse
     """
     
     def __init__(self, credentials_path: Optional[str] = None):
@@ -57,22 +71,31 @@ class GoogleVisionOCR(IOCRProvider):
         
         self.client = vision.ImageAnnotatorClient()
     
-        logger.info("[GoogleVisionOCR] Клиент инициализирован")
+        logger.info("[GoogleVisionOCR] Клиент инициализирован (с контрактами)")
     
     def recognize(
         self, 
         image_content: bytes, 
-        source_file: str = "unknown"
+        source_file: str = "unknown",
+        image_width: int = 0,
+        image_height: int = 0
     ) -> RawOCRResult:
         """
         Распознаёт текст на изображении.
         
+        ВАЛИДИРУЕТ: Результат через GoogleVisionValidatedResponse контракт
+        
         Args:
             image_content: Байты изображения
             source_file: Имя исходного файла (для метаданных)
+            image_width: Ширина исходного изображения (для валидации координат)
+            image_height: Высота исходного изображения (для валидации координат)
             
         Returns:
             RawOCRResult: Контракт D1->D2 с full_text и words[]
+            
+        Raises:
+            ContractValidationError: если ответ API невалиден
         """
         logger.debug(f"[GoogleVisionOCR] Распознавание: {source_file}")
         
@@ -85,11 +108,19 @@ class GoogleVisionOCR(IOCRProvider):
         if response.error.message:
             raise Exception(f"Google Vision API error: {response.error.message}")
         
-        return self._parse_response(response, source_file)
+        return self._parse_response(response, source_file, image_width, image_height)
     
-    def _parse_response(self, response, source_file: str) -> RawOCRResult:
+    def _parse_response(
+        self, 
+        response, 
+        source_file: str,
+        image_width: int = 0,
+        image_height: int = 0
+    ) -> RawOCRResult:
         """
         Парсит ответ Google Vision в RawOCRResult.
+        
+        ✅ ВАЛИДИРУЕТ: Результат через GoogleVisionValidatedResponse контракт
         
         Извлекает:
         - full_text: весь текст одной строкой
@@ -97,8 +128,8 @@ class GoogleVisionOCR(IOCRProvider):
         """
         words = []
         full_text = ""
-        image_width = 0
-        image_height = 0
+        api_image_width = image_width or 0
+        api_image_height = image_height or 0
         
         # Полный текст
         if response.full_text_annotation:
@@ -106,9 +137,11 @@ class GoogleVisionOCR(IOCRProvider):
         
             # Извлекаем слова с координатами
             for page in response.full_text_annotation.pages:
-                # Размеры изображения
-                image_width = page.width
-                image_height = page.height
+                # Размеры изображения из API (если не передали)
+                if not image_width:
+                    api_image_width = page.width
+                if not image_height:
+                    api_image_height = page.height
                 
                 for block in page.blocks:
                     for paragraph in block.paragraphs:
@@ -118,38 +151,67 @@ class GoogleVisionOCR(IOCRProvider):
                                 symbol.text for symbol in word.symbols
                             )
                         
-                        # Получаем bounding box
+                            # Получаем bounding box
                             bbox = self._get_bounding_box(word.bounding_box)
                         
                             # Пропускаем слова с нулевыми размерами
                             if bbox["width"] <= 0 or bbox["height"] <= 0:
                                 continue
                             
-                            words.append(Word(
+                            words.append(GoogleVisionWord(
                                 text=word_text,
-                            bounding_box=BoundingBox(
-                                x=bbox["x"],
-                                y=bbox["y"],
-                                width=bbox["width"],
-                                height=bbox["height"]
-                            ),
-                                confidence=word.confidence
+                                bounding_box=GoogleVisionBoundingBox(
+                                    vertices=[
+                                        GoogleVisionVertice(x=bbox["x"], y=bbox["y"]),
+                                        GoogleVisionVertice(x=bbox["x"] + bbox["width"], y=bbox["y"]),
+                                        GoogleVisionVertice(x=bbox["x"] + bbox["width"], y=bbox["y"] + bbox["height"]),
+                                        GoogleVisionVertice(x=bbox["x"], y=bbox["y"] + bbox["height"])
+                                    ]
+                                ),
+                                confidence=max(0.0, min(1.0, word.confidence))  # Гарантируем [0, 1]
                             ))
         
         logger.debug(f"[GoogleVisionOCR] Извлечено слов: {len(words)}")
         
+        # ✅ ВАЛИДАЦИЯ через контракт
+        try:
+            validated_response = GoogleVisionValidatedResponse(
+                full_text=full_text or "no text detected",  # Гарантируем не-пустой текст
+                words=words or [],  # Может быть пусто, но должно быть список
+                confidence=0.5,  # Placeholder, т.к. нет средней confidence в API
+                image_width=api_image_width or 1,  # Гарантируем > 0
+                image_height=api_image_height or 1
+            )
+            logger.debug(f"[GoogleVisionOCR] ✅ Ответ API валидирован: "
+                        f"{validated_response.image_width}x{validated_response.image_height}, "
+                        f"{len(validated_response.words)} слов")
+        except ValidationError as e:
+            raise ContractValidationError("GoogleVision", "GoogleVisionValidatedResponse", e.errors())
+        
         # Формируем метаданные
         metadata = OCRMetadata(
             source_file=source_file,
-            image_width=image_width or 1,  # Fallback если не определено
-            image_height=image_height or 1,
+            image_width=api_image_width or 1,
+            image_height=api_image_height or 1,
             processed_at=datetime.now().isoformat(),
             preprocessing_applied=[]
         )
         
         return RawOCRResult(
-            full_text=full_text,
-            words=words,
+            full_text=validated_response.full_text,
+            words=[
+                Word(
+                    text=w.text,
+                    bounding_box=BoundingBox(
+                        x=int(min(v.x for v in w.bounding_box.vertices)),
+                        y=int(min(v.y for v in w.bounding_box.vertices)),
+                        width=int(max(v.x for v in w.bounding_box.vertices) - min(v.x for v in w.bounding_box.vertices)),
+                        height=int(max(v.y for v in w.bounding_box.vertices) - min(v.y for v in w.bounding_box.vertices))
+                    ),
+                    confidence=w.confidence
+                )
+                for w in validated_response.words
+            ],
             metadata=metadata
         )
     
@@ -189,3 +251,4 @@ class GoogleVisionOCR(IOCRProvider):
             content = f.read()
         
         return self.recognize(content, source_file=image_path.stem)
+

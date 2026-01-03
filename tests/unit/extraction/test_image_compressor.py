@@ -1,11 +1,11 @@
 import pytest
 import numpy as np
-from src.extraction.pre_ocr.elements.image_compressor import ImageCompressor
+from src.extraction.pre_ocr.s0_compression import ImageCompressionStage
 from config.settings import MAX_IMAGE_SIZE, JPEG_QUALITY
 
 @pytest.fixture
 def compressor():
-    return ImageCompressor(mode="adaptive")
+    return ImageCompressionStage(mode="adaptive")
 
 def test_compress_returns_numpy(compressor):
     # Создаем фиктивное изображение

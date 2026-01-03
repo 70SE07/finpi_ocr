@@ -1,6 +1,3 @@
-from .pipeline import PreOCRPipeline
+from .pipeline import AdaptivePreOCRPipeline
 
-__all__ = ['PreOCRPipeline']
-
-
-
+__all__ = ['AdaptivePreOCRPipeline']

@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-from src.extraction.pre_ocr.image_encoder import ImageEncoder
+from src.extraction.pre_ocr.s5_encoder import ImageEncoderStage
 
 
 @pytest.fixture
@@ -23,7 +23,8 @@ def grayscale_image():
 
 def test_encode_rgb_image(rgb_image):
     """Тест: кодирование RGB изображения."""
-    encoded = ImageEncoder.encode(rgb_image)
+    encoder = ImageEncoderStage()
+    encoded = encoder.encode(rgb_image)
     
     # Проверка: возвращает bytes
     assert isinstance(encoded, bytes)
