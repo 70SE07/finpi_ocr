@@ -20,6 +20,7 @@ Stage 4: Executor (Руки).
 
 import cv2
 import numpy as np
+import numpy.typing as npt
 import time
 from typing import List, Union
 from pydantic import ValidationError
@@ -49,14 +50,14 @@ class ImageExecutorStage:
       Выходные: ExecutorResponse (validated dimensions, applied_filters)
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         logger.debug("[Stage 4: Executor] Инициализирован (с контрактами)")
 
     def execute(
         self, 
-        image: np.ndarray, 
+        image: npt.NDArray[np.uint8], 
         filter_plan: Union[FilterPlan, List[str]]
-    ) -> np.ndarray:
+    ) -> npt.NDArray[np.uint8]:
         """
         Применяет фильтры согласно плану.
         
@@ -88,11 +89,11 @@ class ImageExecutorStage:
             raise ValueError(f"Первый фильтр должен быть GRAYSCALE, получено: {filters[0] if filters else 'пусто'}")
         
         processed = image.copy()
-        applied_filters = []
+        applied_filters: List[FilterType] = []
 
         # 1. Grayscale Conversion (Обязательный шаг)
         logger.debug(f"[Stage 4] Применяю {filters[0].value}")
-        processed = cv2.cvtColor(processed, cv2.COLOR_BGR2GRAY)
+        processed = cv2.cvtColor(processed, cv2.COLOR_BGR2GRAY)  # type: ignore[assignment]
         applied_filters.append(filters[0])
 
         # 2. Дополнительные фильтры (в порядке из плана)
@@ -106,7 +107,7 @@ class ImageExecutorStage:
                     clipLimit=CLAHE_CLIP_LIMIT,
                     tileGridSize=(CLAHE_TILE_SIZE, CLAHE_TILE_SIZE)
                 )
-                processed = clahe.apply(processed)
+                processed = clahe.apply(processed)  # type: ignore[assignment]
                 applied_filters.append(filter_type)
             
             elif filter_type == FilterType.DENOISE:
@@ -125,7 +126,7 @@ class ImageExecutorStage:
                 if result is None:
                     raise ValueError("cv2.fastNlMeansDenoising вернул None")
                 
-                processed = result
+                processed = result  # type: ignore[assignment]
                 applied_filters.append(filter_type)
             
             elif filter_type == FilterType.SHARPEN:
@@ -133,7 +134,7 @@ class ImageExecutorStage:
                 kernel = np.array([[-1, -1, -1],
                                  [-1,  9, -1],
                                  [-1, -1, -1]])
-                processed = cv2.filter2D(processed, -1, kernel)
+                processed = cv2.filter2D(processed, -1, kernel)  # type: ignore[assignment]
                 applied_filters.append(filter_type)
             
             else:

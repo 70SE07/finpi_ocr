@@ -20,8 +20,10 @@ Stage 0: Compression (Сжатие).
 """
 
 import numpy as np
+import numpy.typing as npt
 import cv2
 from dataclasses import dataclass
+from typing import Dict, Any
 from loguru import logger
 from pydantic import ValidationError
 
@@ -37,14 +39,14 @@ from config.settings import (
 @dataclass
 class CompressionResult:
     """Результат сжатия изображения."""
-    image: np.ndarray
+    image: npt.NDArray[np.uint8]
     original_size: tuple[int, int]  # (width, height)
     compressed_size: tuple[int, int]  # (width, height)
     scale_factor: float
     quality: int
     method: str  # "adaptive", "fixed", "none"
     was_compressed: bool
-    metadata: dict  # Для экспорта в pipeline
+    metadata: Dict[str, Any]  # Для экспорта в pipeline
 
 
 class ImageCompressionStage(IImageCompressionStage):
@@ -106,7 +108,7 @@ class ImageCompressionStage(IImageCompressionStage):
         else:  # adaptive
             return self._get_adaptive_size(width, height, density)
     
-    def compress(self, image: np.ndarray, original_bytes: int) -> CompressionResult:
+    def compress(self, image: npt.NDArray[np.uint8], original_bytes: int) -> CompressionResult:
         """
         Сжимает уже загруженное изображение.
         
@@ -196,7 +198,7 @@ class ImageCompressionStage(IImageCompressionStage):
             raise ContractValidationError("S0", "CompressionResponse", e.errors())
         
         return CompressionResult(
-            image=compressed,
+            image=compressed,  # type: ignore[arg-type]
             original_size=original_size,
             compressed_size=target_size,
             scale_factor=scale_factor,

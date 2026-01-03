@@ -58,7 +58,7 @@ class IImagePreprocessor(ABC):
     def process(
         self, 
         image_path: Path, 
-        context: Optional[Dict] = None
+        context: Optional[Dict[str, Any]] = None
     ) -> Tuple[bytes, Dict[str, Any]]:
         """
         Обрабатывает изображение перед OCR.

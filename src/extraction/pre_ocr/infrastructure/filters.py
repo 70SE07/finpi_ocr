@@ -6,17 +6,18 @@ Pre-OCR Infrastructure: Фильтры и операции обработки и
 
 import cv2
 import numpy as np
+import numpy.typing as npt
 from typing import Dict, Any
 
 
-def apply_grayscale(image: np.ndarray) -> np.ndarray:
+def apply_grayscale(image: npt.NDArray[np.uint8]) -> npt.NDArray[np.uint8]:
     """Преобразует изображение в grayscale."""
     if len(image.shape) == 2:
         return image
-    return cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    return cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)  # type: ignore[return-value]
 
 
-def apply_clahe(image: np.ndarray, clip_limit: float = 2.0, tile_size: int = 8) -> np.ndarray:
+def apply_clahe(image: npt.NDArray[np.uint8], clip_limit: float = 2.0, tile_size: int = 8) -> npt.NDArray[np.uint8]:
     """
     CLAHE (Contrast Limited Adaptive Histogram Equalization).
     
@@ -29,10 +30,10 @@ def apply_clahe(image: np.ndarray, clip_limit: float = 2.0, tile_size: int = 8) 
         image = apply_grayscale(image)
     
     clahe = cv2.createCLAHE(clipLimit=clip_limit, tileGridSize=(tile_size, tile_size))
-    return clahe.apply(image)
+    return clahe.apply(image)  # type: ignore[return-value]
 
 
-def apply_denoise(image: np.ndarray, strength: int = 10) -> np.ndarray:
+def apply_denoise(image: npt.NDArray[np.uint8], strength: int = 10) -> npt.NDArray[np.uint8]:
     """
     Денойзинг (удаление шума).
     
@@ -41,12 +42,12 @@ def apply_denoise(image: np.ndarray, strength: int = 10) -> np.ndarray:
         strength: Интенсивность (1-100, default 10)
     """
     if len(image.shape) == 2:
-        return cv2.fastNlMeansDenoising(image, h=strength)
+        return cv2.fastNlMeansDenoising(image, h=strength)  # type: ignore[return-value]
     else:
-        return cv2.fastNlMeansDenoisingColored(image, h=strength)
+        return cv2.fastNlMeansDenoisingColored(image, h=strength)  # type: ignore[return-value]
 
 
-def apply_bilateral_filter(image: np.ndarray, diameter: int = 9, sigma_color: float = 75.0, sigma_space: float = 75.0) -> np.ndarray:
+def apply_bilateral_filter(image: npt.NDArray[np.uint8], diameter: int = 9, sigma_color: float = 75.0, sigma_space: float = 75.0) -> npt.NDArray[np.uint8]:
     """
     Bilateral Filter (сглаживание с сохранением границ).
     
@@ -56,10 +57,10 @@ def apply_bilateral_filter(image: np.ndarray, diameter: int = 9, sigma_color: fl
         sigma_color: Стандартное отклонение по цвету (default 75.0)
         sigma_space: Стандартное отклонение по пространству (default 75.0)
     """
-    return cv2.bilateralFilter(image, diameter, sigma_color, sigma_space)
+    return cv2.bilateralFilter(image, diameter, sigma_color, sigma_space)  # type: ignore[return-value]
 
 
-def apply_morphological_closing(image: np.ndarray, kernel_size: int = 5) -> np.ndarray:
+def apply_morphological_closing(image: npt.NDArray[np.uint8], kernel_size: int = 5) -> npt.NDArray[np.uint8]:
     """
     Морфологическое закрытие (замыкание маленьких отверстий).
     
@@ -68,10 +69,10 @@ def apply_morphological_closing(image: np.ndarray, kernel_size: int = 5) -> np.n
         kernel_size: Размер ядра (нечётное число)
     """
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (kernel_size, kernel_size))
-    return cv2.morphologyEx(image, cv2.MORPH_CLOSE, kernel)
+    return cv2.morphologyEx(image, cv2.MORPH_CLOSE, kernel)  # type: ignore[return-value]
 
 
-def apply_morphological_opening(image: np.ndarray, kernel_size: int = 5) -> np.ndarray:
+def apply_morphological_opening(image: npt.NDArray[np.uint8], kernel_size: int = 5) -> npt.NDArray[np.uint8]:
     """
     Морфологическое открытие (удаление мелкого шума).
     
@@ -80,10 +81,10 @@ def apply_morphological_opening(image: np.ndarray, kernel_size: int = 5) -> np.n
         kernel_size: Размер ядра (нечётное число)
     """
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (kernel_size, kernel_size))
-    return cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
+    return cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)  # type: ignore[return-value]
 
 
-def calculate_brightness(image: np.ndarray) -> float:
+def calculate_brightness(image: npt.NDArray[np.uint8]) -> float:
     """
     Вычисляет среднюю яркость изображения.
     
@@ -94,11 +95,15 @@ def calculate_brightness(image: np.ndarray) -> float:
         Значение яркости (0-255)
     """
     if len(image.shape) == 3:
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    return float(cv2.mean(image)[0])
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # type: ignore[assignment]
+    mean_result = cv2.mean(image)
+    # cv2.mean() возвращает tuple[float, ...], берем первый элемент
+    if isinstance(mean_result, (tuple, list)):
+        return float(mean_result[0])
+    return float(mean_result)  # type: ignore[arg-type]
 
 
-def calculate_contrast(image: np.ndarray) -> float:
+def calculate_contrast(image: npt.NDArray[np.uint8]) -> float:
     """
     Вычисляет контраст изображения (стандартное отклонение).
     
@@ -109,11 +114,11 @@ def calculate_contrast(image: np.ndarray) -> float:
         Значение контраста
     """
     if len(image.shape) == 3:
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # type: ignore[assignment]
     return float(image.std())
 
 
-def calculate_sharpness(image: np.ndarray) -> float:
+def calculate_sharpness(image: npt.NDArray[np.uint8]) -> float:
     """
     Вычисляет резкость изображения (Laplacian variance).
     
@@ -124,12 +129,12 @@ def calculate_sharpness(image: np.ndarray) -> float:
         Значение резкости
     """
     if len(image.shape) == 3:
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # type: ignore[assignment]
     laplacian = cv2.Laplacian(image, cv2.CV_64F)
     return float(laplacian.var())
 
 
-def calculate_histogram_entropy(image: np.ndarray) -> float:
+def calculate_histogram_entropy(image: npt.NDArray[np.uint8]) -> float:
     """
     Вычисляет энтропию гистограммы.
     
@@ -140,7 +145,7 @@ def calculate_histogram_entropy(image: np.ndarray) -> float:
         Значение энтропии
     """
     if len(image.shape) == 3:
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # type: ignore[assignment]
     
     histogram = cv2.calcHist([image], [0], None, [256], [0, 256])
     histogram = histogram.ravel() / histogram.sum()

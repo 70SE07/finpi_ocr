@@ -13,6 +13,7 @@ Stage 1: Preparation (Подготовка).
 
 import cv2
 import numpy as np
+import numpy.typing as npt
 from pathlib import Path
 from typing import Optional, Tuple
 from loguru import logger
@@ -33,7 +34,7 @@ class ImagePreparationStage(IImagePreparationStage):
         self.max_size = max_size
         logger.debug(f"[Stage 1: Preparation] Инициализирована (max_size={max_size}px)")
 
-    def process(self, image_path: Path, target_size: Optional[Tuple[int, int]] = None) -> np.ndarray:
+    def process(self, image_path: Path, target_size: Optional[Tuple[int, int]] = None) -> npt.NDArray[np.uint8]:
         """
         Загружает и нормализует размер изображения.
         
@@ -79,4 +80,4 @@ class ImagePreparationStage(IImagePreparationStage):
                 image = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_AREA)
                 logger.debug(f"[Stage 1] Нормализовано (MAX): {w}x{h} → {new_w}x{new_h}")
             
-        return image
+        return image  # type: ignore[return-value]

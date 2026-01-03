@@ -17,7 +17,7 @@ OCR: Google Vision API интеграция.
 import os
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Any
 
 from google.cloud import vision
 from google.cloud.vision_v1 import types
@@ -112,7 +112,7 @@ class GoogleVisionOCR(IOCRProvider):
     
     def _parse_response(
         self, 
-        response, 
+        response: Any, 
         source_file: str,
         image_width: int = 0,
         image_height: int = 0
@@ -215,7 +215,7 @@ class GoogleVisionOCR(IOCRProvider):
             metadata=metadata
         )
     
-    def _get_bounding_box(self, bounding_poly) -> dict:
+    def _get_bounding_box(self, bounding_poly: Any) -> dict[str, Any]:
         """Преобразует bounding_poly в простой bbox."""
         vertices = bounding_poly.vertices
         

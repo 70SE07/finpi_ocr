@@ -49,7 +49,8 @@ class ExtractionComponentFactory:
             Препроцессор изображений, реализующий интерфейс IImagePreprocessor
         """
         logger.debug("[Extraction] Создание препроцессора изображений")
-        return AdaptivePreOCRPipeline()
+        # AdaptivePreOCRPipeline реализует IImagePreprocessor
+        return AdaptivePreOCRPipeline()  # type: ignore[return-value]
     
     @staticmethod
     def create_extraction_pipeline(

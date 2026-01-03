@@ -8,6 +8,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import Tuple, Dict, Any, Optional
 import numpy as np
+import numpy.typing as npt
 
 # Импортируем контракты для типизации
 from src.domain.contracts import ImageMetrics, FilterPlan, FilterType, ExecutorResponse
@@ -25,7 +26,7 @@ class IImagePreprocessor(ABC):
     def process(
         self, 
         image_path: Path, 
-        context: Optional[Dict] = None
+        context: Optional[Dict[str, Any]] = None
     ) -> Tuple[bytes, Dict[str, Any]]:
         """
         Обрабатывает изображение через весь pipeline.
@@ -75,7 +76,7 @@ class IImageCompressionStage(IPreprocessingStage):
         pass
     
     @abstractmethod
-    def compress(self, image: np.ndarray, original_bytes: int) -> Any:
+    def compress(self, image: npt.NDArray[np.uint8], original_bytes: int) -> Any:
         """
         Сжимает изображение адаптивно.
         
@@ -91,8 +92,8 @@ class IImagePreparationStage(IPreprocessingStage):
     def process(
         self, 
         image_path: Path, 
-        target_size: Optional[tuple] = None
-    ) -> np.ndarray:
+        target_size: Optional[Tuple[int, int]] = None
+    ) -> npt.NDArray[np.uint8]:
         """
         Загружает и нормализует размер изображения.
         
@@ -107,7 +108,7 @@ class IAnalyzerStage(IPreprocessingStage):
     """Stage 2: Analyzer (анализ метрик)."""
     
     @abstractmethod
-    def analyze(self, image: np.ndarray):
+    def analyze(self, image: npt.NDArray[np.uint8]) -> Any:
         """
         Анализирует метрики изображения.
         
@@ -123,8 +124,8 @@ class ISelectorStage(IPreprocessingStage):
     def select_plan(
         self, 
         metrics: Dict[str, float], 
-        context: Optional[Dict] = None
-    ) -> list:
+        context: Optional[Dict[str, Any]] = None
+    ) -> list[str]:
         """
         Выбирает план обработки на основе метрик и контекста.
         
@@ -141,9 +142,9 @@ class IExecutorStage(IPreprocessingStage):
     @abstractmethod
     def execute(
         self, 
-        image: np.ndarray,
+        image: npt.NDArray[np.uint8],
         filter_plan: Any  # FilterPlan или List[str]
-    ) -> np.ndarray:
+    ) -> npt.NDArray[np.uint8]:
         """
         Применяет фильтры согласно плану.
         
@@ -161,6 +162,11 @@ class IEncoderStage(IPreprocessingStage):
     """Stage 5: Encoder (кодирование в JPEG)."""
     
     @abstractmethod
-    def encode(self, image: np.ndarray, quality: int = None, image_size: tuple = None) -> bytes:
+    def encode(
+        self, 
+        image: npt.NDArray[np.uint8], 
+        quality: Optional[int] = None, 
+        image_size: Optional[Tuple[int, int]] = None
+    ) -> bytes:
         """Кодирует изображение в JPEG bytes."""
         pass

@@ -45,7 +45,7 @@ Stage 3: Filter Selector (Мозг).
 Один универсальный алгоритм работает для всех условий!
 """
 
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Any
 from loguru import logger
 
 from ..domain.interfaces import ISelectorStage
@@ -66,7 +66,7 @@ class FilterSelectorStage(ISelectorStage):
       Выходные: FilterPlan (валидированный)
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         self.quality_classifier = ImageQualityClassifier()
         self.filter_selector = QualityBasedFilterSelector()
         logger.debug("[Stage 3: Filter Selector] Инициализирован (качество-ориентированная система, с контрактами)")
@@ -110,7 +110,7 @@ class FilterSelectorStage(ISelectorStage):
         
         # ШАГ 2: Выбираем фильтры на основе ТОЛЬКО качества
         # ✅ ВАЛИДАЦИЯ: select_filters вернёт валидный FilterPlan
-        filter_plan = self.filter_selector.select_filters(metrics, quality)
+        filter_plan = self.filter_selector.select_filters(metrics, quality)  # type: ignore[arg-type]
         
         logger.info(
             f"[Stage 3] Финальный план: {[f.value for f in filter_plan.filters]} "
@@ -123,7 +123,7 @@ class FilterSelectorStage(ISelectorStage):
     def select_plan(
         self, 
         metrics: Dict[str, float],
-        context: Optional[Dict] = None
+        context: Optional[Dict[str, Any]] = None
     ) -> List[str]:
         """
         DEPRECATED: Используй select_filters() вместо этого.
@@ -140,8 +140,8 @@ class FilterSelectorStage(ISelectorStage):
             contrast=metrics.get('contrast', 50),
             noise=metrics.get('noise', 500),
             blue_dominance=metrics.get('blue_dominance', 0),
-            image_width=metrics.get('image_width', 2400),
-            image_height=metrics.get('image_height', 1800)
+            image_width=int(metrics.get('image_width', 2400)),
+            image_height=int(metrics.get('image_height', 1800))
         )
         
         filter_plan = self.select_filters(metrics_obj)

@@ -18,7 +18,9 @@ Stage 5: Encoder (Кодировщик).
 
 import cv2
 import numpy as np
+import numpy.typing as npt
 import math
+from typing import Optional
 from pydantic import ValidationError
 from loguru import logger
 
@@ -40,14 +42,14 @@ class ImageEncoderStage:
       Выходные: EncoderResponse (validated sizes, quality, ratio)
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         logger.debug("[Stage 5: Encoder] Инициализирован (с контрактами)")
 
     def encode(
         self, 
-        image: np.ndarray, 
-        quality: int = None, 
-        image_size: tuple = None
+        image: npt.NDArray[np.uint8], 
+        quality: Optional[int] = None, 
+        image_size: Optional[tuple[int, int]] = None
     ) -> bytes:
         """
         Кодирует изображение в JPEG bytes.

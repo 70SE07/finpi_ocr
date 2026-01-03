@@ -20,6 +20,8 @@ Stage 2: Analyzer (Анализатор).
 
 import cv2
 import numpy as np
+import numpy.typing as npt
+from typing import Any
 from pydantic import ValidationError
 from loguru import logger
 
@@ -34,10 +36,10 @@ class ImageAnalyzerStage:
     На основе этих метрик Stage 3 (Selector) выбирает стратегию обработки.
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         logger.debug("[Stage 2: Analyzer] Инициализирован")
 
-    def analyze(self, image: np.ndarray):
+    def analyze(self, image: npt.NDArray[np.uint8]) -> Any:
         """
         Анализирует СЖАТОЕ изображение и возвращает метрики.
         
@@ -56,8 +58,8 @@ class ImageAnalyzerStage:
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
         # Основные метрики
-        mean_brightness = np.mean(gray)
-        std_contrast = gray.std() # RMS Contrast
+        mean_brightness = float(np.mean(gray))  # type: ignore[arg-type]
+        std_contrast = float(gray.std())  # RMS Contrast
         
         # Оценка шума/резкости (Laplacian Variance)
         # Низкое значение (<100) = размыто, Высокое (>1000) = шумно или очень резко
@@ -66,8 +68,8 @@ class ImageAnalyzerStage:
         # Анализ каналов для детекции цветных чернил (Blue Ink Paradox)
         # BGR формат
         b, g, r = cv2.split(image)
-        b_mean = np.mean(b)
-        r_mean = np.mean(r)
+        b_mean = float(np.mean(b))  # type: ignore[arg-type]
+        r_mean = float(np.mean(r))  # type: ignore[arg-type]
         
         # Если синий канал значительно ярче красного, возможно это синие чернила на белой бумаге
         blue_dominance = b_mean - r_mean

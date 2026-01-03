@@ -151,7 +151,7 @@ class ImageMetrics(BaseModel):
     
     @field_validator('contrast', 'noise')
     @classmethod
-    def reasonable_ranges(cls, v: float, info) -> float:
+    def reasonable_ranges(cls, v: float, info: Any) -> float:
         """Проверить разумность диапазонов (широкие границы для реальных данных)."""
         field_name = info.field_name
         
@@ -375,7 +375,7 @@ class GoogleVisionValidatedResponse(BaseModel):
     
     @field_validator('words')
     @classmethod
-    def coordinates_within_bounds(cls, v: List[GoogleVisionWord], info) -> List[GoogleVisionWord]:
+    def coordinates_within_bounds(cls, v: List[GoogleVisionWord], info: Any) -> List[GoogleVisionWord]:
         """Координаты слов должны быть в пределах размеров изображения."""
         if 'image_width' not in info.data or 'image_height' not in info.data:
             # При валидации без контекста этот check пропускается

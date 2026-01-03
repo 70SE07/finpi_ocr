@@ -11,7 +11,7 @@
 """
 
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 from loguru import logger
 
 from contracts.d1_extraction_dto import RawOCRResult
@@ -109,7 +109,7 @@ class ExtractionPipeline(IExtractionPipeline):
                 original_error=e
             )
     
-    def _preprocess_image(self, image_path: Path) -> tuple[bytes, dict]:
+    def _preprocess_image(self, image_path: Path) -> tuple[bytes, Dict[str, Any]]:
         """Выполняет preprocessing изображения."""
         try:
             if not self.image_preprocessor:
@@ -139,7 +139,7 @@ class ExtractionPipeline(IExtractionPipeline):
                 original_error=e
             )
     
-    def batch_process(self, image_paths: List[Path]) -> dict:
+    def batch_process(self, image_paths: List[Path]) -> Dict[str, Any]:
         """
         Обрабатывает несколько изображений.
         
@@ -149,7 +149,7 @@ class ExtractionPipeline(IExtractionPipeline):
         Returns:
             dict: Статистика обработки
         """
-        results = {
+        results: Dict[str, Any] = {
             "processed": 0,
             "success": 0,
             "failed": 0,

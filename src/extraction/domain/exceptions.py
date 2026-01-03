@@ -4,11 +4,18 @@
 Специфичные для обработки изображений и OCR ошибки.
 """
 
+from typing import Optional
+
 
 class ExtractionError(Exception):
     """Базовое исключение для ошибок домена Extraction."""
     
-    def __init__(self, message: str, component: str = None, original_error: Exception = None):
+    def __init__(
+        self, 
+        message: str, 
+        component: Optional[str] = None, 
+        original_error: Optional[Exception] = None
+    ):
         self.message = message
         self.component = component
         self.original_error = original_error

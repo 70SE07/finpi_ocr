@@ -44,7 +44,7 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
     5. Encoder: Encode to Bytes
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         self.compression = ImageCompressionStage(mode="adaptive")
         self.preparation = ImagePreparationStage()
         self.analyzer = ImageAnalyzerStage()
@@ -53,7 +53,7 @@ class AdaptivePreOCRPipeline(IImagePreprocessor):
         self.encoder = ImageEncoderStage()
         logger.info("[AdaptivePreOCRPipeline] Инициализирован (6 stages, с контрактами)")
 
-    def process(self, image_path: Path, context: Optional[Dict] = None) -> Tuple[bytes, Dict[str, Any]]:
+    def process(self, image_path: Path, context: Optional[Dict[str, Any]] = None) -> Tuple[bytes, Dict[str, Any]]:
         """
         Обрабатывает изображение через 6-stage пайплайн (ОПТИМИЗИРОВАННЫЙ).
         

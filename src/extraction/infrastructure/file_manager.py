@@ -68,7 +68,7 @@ class ExtractionFileManager:
                 )
             
             with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+                data: dict[str, Any] = json.load(f)
             
             logger.debug(f"[Extraction] Файл загружен: {file_path}")
             return data
@@ -153,7 +153,7 @@ class ExtractionFileManager:
             # Поддерживаемые форматы
             image_extensions = ['.jpg', '.jpeg', '.png', '.webp', '.bmp', '.tiff']
             
-            image_files = []
+            image_files: list[Path] = []
             for ext in image_extensions:
                 image_files.extend(directory_path.glob(f'*{ext}'))
                 image_files.extend(directory_path.glob(f'*{ext.upper()}'))

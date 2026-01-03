@@ -15,6 +15,7 @@ Quality-Based Filter Selector
 - HIGH качество → минимум (базовая обработка)
 """
 
+from typing import Dict, List
 from pydantic import ValidationError
 from loguru import logger
 
@@ -35,13 +36,13 @@ class QualityBasedFilterSelector:
     Шум остаётся шумом, темнота - темнотой, независимо от источника.
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         """Инициализация селектора фильтров"""
         logger.debug("[QualityFilterSelector] Инициализирован")
         
         # Пороги для каждого уровня качества
         # Эти пороги неизменны и универсальны
-        self.thresholds = {
+        self.thresholds: Dict[QualityLevel, Dict[str, float]] = {
             QualityLevel.BAD: {
                 "denoise_noise_threshold": 900,      # Более агрессивный
                 "clahe_contrast_threshold": 40,       # Более агрессивный
@@ -145,7 +146,7 @@ class QualityBasedFilterSelector:
         self,
         metrics: ImageMetrics,
         quality: QualityLevel,
-        thresholds: dict
+        thresholds: Dict[str, float]
     ) -> bool:
         """
         Определяет нужно ли применить CLAHE (контрастирование).
@@ -159,7 +160,7 @@ class QualityBasedFilterSelector:
         self,
         metrics: ImageMetrics,
         quality: QualityLevel,
-        thresholds: dict
+        thresholds: Dict[str, float]
     ) -> bool:
         """
         Определяет нужно ли применить DENOISE (удаление шума).
@@ -169,7 +170,7 @@ class QualityBasedFilterSelector:
         threshold = thresholds["denoise_noise_threshold"]
         return metrics.noise > threshold
     
-    def _generate_reason(self, metrics: ImageMetrics, quality: QualityLevel, filters: list) -> str:
+    def _generate_reason(self, metrics: ImageMetrics, quality: QualityLevel, filters: List[FilterType]) -> str:
         """Генерирует человеко-читаемое объяснение выбора фильтров."""
         reasons = []
         
